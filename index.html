@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daily Briefing</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: #0b0f1a;
+  color: #e2e8f0;
+  min-height: 100vh;
+  padding: 40px 32px 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header { margin-bottom: 40px; }
+.greeting { font-size: 30px; font-weight: 700; color: #f8fafc; letter-spacing: -0.5px; }
+.dateline { font-size: 14px; color: #475569; margin-top: 4px; }
+
+.section { margin-top: 36px; }
+.section-label {
+  font-size: 10px; font-weight: 700; letter-spacing: 0.12em;
+  text-transform: uppercase; color: #334155; margin-bottom: 14px;
+}
+
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 12px; }
+.card {
+  background: #141b2d; border: 1px solid #1e2d45;
+  border-radius: 14px; padding: 18px 20px; transition: border-color 0.15s;
+}
+.card:hover { border-color: #2d4a6e; }
+.label { font-size: 12px; color: #475569; font-weight: 500; margin-bottom: 8px; }
+.value { font-size: 22px; font-weight: 600; color: #f1f5f9; font-variant-numeric: tabular-nums; }
+.holding { font-size: 13px; color: #64748b; margin-top: 4px; font-variant-numeric: tabular-nums; }
+.up { color: #22c55e; } .down { color: #ef4444; }
+.change { font-size: 13px; font-weight: 500; margin-top: 5px; }
+.total { font-size: 13px; color: #475569; margin-top: 14px; }
+.total-val { color: #f1f5f9; font-weight: 600; font-size: 18px; margin-left: 6px; }
+.total-daily { font-size: 14px; font-weight: 500; margin-left: 8px; }
+
+.fixtures-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: 10px; margin-top: 14px; }
+.fixture { background: #141b2d; border: 1px solid #1e2d45; border-radius: 12px; padding: 14px 18px; }
+.fixture.chelsea { border-color: #1d4ed8; background: rgba(29,78,216,0.07); }
+.fix-meta { display: flex; gap: 8px; align-items: center; margin-bottom: 6px; }
+.gw {
+  font-size: 10px; font-weight: 700; color: #3b82f6;
+  background: rgba(59,130,246,0.1); padding: 2px 7px; border-radius: 20px;
+}
+.fix-time { font-size: 12px; color: #475569; }
+.fix-teams { font-size: 14px; color: #cbd5e1; font-weight: 500; }
+.fix-teams em { font-style: normal; color: #475569; margin: 0 5px; font-size: 12px; }
+
+.company-card {
+  background: #141b2d; border: 1px solid #1e2d45;
+  border-left: 3px solid #3b82f6; border-radius: 14px; padding: 24px 28px;
+}
+.company-tag {
+  display: inline-block; font-size: 10px; font-weight: 700; letter-spacing: 0.1em;
+  text-transform: uppercase; color: #3b82f6; background: rgba(59,130,246,0.1);
+  padding: 3px 10px; border-radius: 20px; margin-bottom: 12px;
+}
+.company-name { font-size: 24px; font-weight: 700; color: #f8fafc; margin-bottom: 10px; }
+.company-what { font-size: 14px; color: #cbd5e1; line-height: 1.6; margin-bottom: 8px; }
+.company-why { font-size: 13.5px; color: #64748b; line-height: 1.6; margin-bottom: 16px; font-style: italic; }
+.company-link { font-size: 13px; color: #3b82f6; text-decoration: none; }
+.company-link:hover { color: #93c5fd; }
+
+.news-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; margin-top: 14px; }
+.news-col { background: #141b2d; border: 1px solid #1e2d45; border-radius: 14px; padding: 22px; }
+.col-title {
+  font-size: 11px; font-weight: 700; letter-spacing: 0.1em;
+  text-transform: uppercase; color: #3b82f6; margin-bottom: 16px;
+}
+.story {
+  display: block; padding: 9px 0; border-bottom: 1px solid #1e2d45;
+  text-decoration: none; color: #94a3b8; font-size: 13.5px; line-height: 1.45; transition: color 0.15s;
+}
+.story:last-child { border-bottom: none; padding-bottom: 0; }
+.story:first-child { padding-top: 0; }
+.story:hover { color: #f1f5f9; }
+.empty { color: #334155; font-size: 13px; }
+
+.skeleton { background: #1e2d45; border-radius: 6px; animation: pulse 1.5s ease-in-out infinite; }
+@keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: 0.4; } }
+.skel-card { height: 90px; border-radius: 14px; }
+
+.footer { margin-top: 48px; font-size: 12px; color: #1e2d45; text-align: center; }
+
+@media (max-width: 600px) {
+  body { padding: 24px 16px 40px; }
+  .greeting { font-size: 24px; }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="greeting" id="greeting">Good morning, Jonno.</div>
+  <div class="dateline" id="dateline"></div>
+</div>
+
+<div class="section">
+  <div class="section-label">Your Portfolio</div>
+  <div class="cards" id="portfolio"><div class="skeleton skel-card"></div><div class="skeleton skel-card"></div><div class="skeleton skel-card"></div></div>
+  <div id="portfolio-total"></div>
+</div>
+
+<div class="section">
+  <div class="section-label">Markets</div>
+  <div class="cards" id="markets"><div class="skeleton skel-card"></div><div class="skeleton skel-card"></div><div class="skeleton skel-card"></div><div class="skeleton skel-card"></div></div>
+</div>
+
+<div class="section">
+  <div class="section-label">Upcoming Fixtures</div>
+  <div class="fixtures-grid" id="fixtures"><div class="skeleton skel-card"></div><div class="skeleton skel-card"></div><div class="skeleton skel-card"></div></div>
+</div>
+
+<div class="section">
+  <div class="section-label">Company to Watch</div>
+  <div id="company"></div>
+</div>
+
+<div class="section">
+  <div class="section-label">Today's Briefing</div>
+  <div class="news-grid" id="news"></div>
+</div>
+
+<div class="footer" id="footer"></div>
+
+<script>
+// ── Config ────────────────────────────────────────────────────────────────────
+
+const PORTFOLIO = { "AIAG": "AIAG.L", "All World": "VWRP.L", "US 500": "VUSA.L" };
+const UNITS     = { "AIAG": 74, "All World": 45, "US 500": 35.99 };
+const INDICES   = { "FTSE 100": "^FTSE", "S&P 500": "^GSPC", "Bitcoin": "BTC-USD", "Gold": "GC=F" };
+const FEEDS     = {
+  "World":          ["https://feeds.bbci.co.uk/news/world/rss.xml", 5],
+  "Premier League": ["https://feeds.bbci.co.uk/sport/football/premier-league/rss.xml", 4],
+  "Tech":           ["https://feeds.arstechnica.com/arstechnica/index", 4],
+  "AI":             ["https://venturebeat.com/category/ai/feed/", 4],
+};
+
+const COMPANIES = [
+  { name: "Anthropic", tag: "AI Safety", url: "anthropic.com",
+    what: "AI safety company building Claude, a family of large language models.",
+    why: "One of the few labs treating safety as a core research priority — and building some of the world's most capable models alongside it." },
+  { name: "Palantir", tag: "Data & AI", url: "palantir.com",
+    what: "Builds data analytics and AI platforms for governments and large enterprises.",
+    why: "Quietly powers decision-making at the CIA, NHS, and US Army — most people have no idea how embedded it is." },
+  { name: "Physical Intelligence", tag: "Robotics", url: "physicalintelligence.company",
+    what: "Building foundation models for robots — essentially GPT but for physical tasks.",
+    why: "If they succeed, a single AI model could control any robot body, transforming manufacturing and logistics overnight." },
+  { name: "Figure AI", tag: "Robotics", url: "figure.ai",
+    what: "Developing humanoid robots designed to work alongside humans in warehouses and factories.",
+    why: "Humanoid robots doing physical labour could address the ageing workforce problem across the developed world." },
+  { name: "Waymo", tag: "Autonomous Vehicles", url: "waymo.com",
+    what: "Google's self-driving car division, now operating fully driverless robotaxis in multiple US cities.",
+    why: "The only company with a genuinely commercial robotaxi service — years ahead of any serious competitor." },
+  { name: "Commonwealth Fusion Systems", tag: "Energy", url: "cfs.energy",
+    what: "Pursuing commercial nuclear fusion using high-temperature superconducting magnets.",
+    why: "Could unlock near-limitless clean energy — their 2021 magnet breakthrough was the most significant fusion milestone in decades." },
+  { name: "Helion Energy", tag: "Energy", url: "helionenergy.com",
+    what: "Private fusion company backed by Sam Altman, targeting commercial electricity by the late 2020s.",
+    why: "Has a signed contract to sell fusion power to Microsoft — the first fusion power purchase agreement in history." },
+  { name: "Anduril Industries", tag: "Defence Tech", url: "anduril.com",
+    what: "Silicon Valley defence company building autonomous systems, drones, and AI-powered surveillance.",
+    why: "Reshaping how Western militaries buy technology — from decade-long procurement cycles to fast, software-driven iteration." },
+  { name: "Mistral AI", tag: "AI", url: "mistral.ai",
+    what: "French AI lab releasing powerful open-weight models competitive with frontier closed models.",
+    why: "Europe's best answer to US AI dominance — and open-weight models are a genuine alternative to closed API products." },
+  { name: "Groq", tag: "AI Infrastructure", url: "groq.com",
+    what: "Builds LPU inference chips that run AI models dramatically faster than GPUs.",
+    why: "Speed is a real competitive edge in AI products — Groq runs large models 10× faster than standard GPU setups." },
+  { name: "Perplexity AI", tag: "AI Search", url: "perplexity.ai",
+    what: "AI-powered search engine that answers questions with cited sources rather than a list of links.",
+    why: "The most credible threat to Google Search in 20 years — growing fast and already preferred by millions." },
+  { name: "Recursion Pharmaceuticals", tag: "Biotech", url: "recursion.com",
+    what: "Uses AI and robotics to run millions of biology experiments to discover new drugs.",
+    why: "Drug discovery takes 12 years and costs billions — Recursion is compressing that timeline using software." },
+  { name: "Isomorphic Labs", tag: "Biotech", url: "isomorphiclabs.com",
+    what: "DeepMind spinout applying AlphaFold-style AI to drug design and molecular discovery.",
+    why: "AlphaFold solved protein structure — this is the next step: using that to actually build new medicines." },
+  { name: "Neuralink", tag: "Biotech", url: "neuralink.com",
+    what: "Developing implantable brain-computer interfaces that let paralysed patients control devices with thought.",
+    why: "First human patient is already using it — long-term implications for what it means to be human are enormous." },
+  { name: "xAI", tag: "AI", url: "x.ai",
+    what: "Elon Musk's AI company building Grok, trained on real-time X (Twitter) data.",
+    why: "Real-time social data gives it information no other lab has — and Musk's resources mean rapid scaling." },
+  { name: "Scale AI", tag: "AI Infrastructure", url: "scale.com",
+    what: "Provides the human-labelled training data that powers most major AI models.",
+    why: "Behind the scenes of almost every AI product you use — AI quality is only as good as its training data." },
+  { name: "Cerebras Systems", tag: "AI Infrastructure", url: "cerebras.net",
+    what: "Makes wafer-scale processors — single chips the size of a dinner plate — for AI training.",
+    why: "Can train models in hours that would take days on GPUs — a direct challenge to Nvidia's stranglehold." },
+  { name: "Tenstorrent", tag: "AI Infrastructure", url: "tenstorrent.com",
+    what: "Building open-source AI chips led by Jim Keller, the architect behind AMD Zen and Apple Silicon.",
+    why: "Open-source silicon could do to AI hardware what Linux did to software — one of the more credible Nvidia challengers." },
+  { name: "Shield AI", tag: "Defence Tech", url: "shield.ai",
+    what: "Builds Hivemind — AI pilot software that can fly military jets and drones without GPS or comms.",
+    why: "Autonomous AI pilots in GPS-denied environments represent a genuine step-change in military capability." },
+  { name: "Altos Labs", tag: "Longevity", url: "altoslabs.com",
+    what: "Biotech company researching cellular reprogramming to reverse the biological process of ageing.",
+    why: "Backed by Jeff Bezos and world-leading ageing scientists — if cellular reprogramming works, everything changes." },
+  { name: "Einride", tag: "Transport", url: "einride.tech",
+    what: "Swedish company operating electric autonomous freight trucks commercially in Europe and the US.",
+    why: "Unlike most AV companies still in testing, Einride is actually moving freight autonomously at commercial scale today." },
+  { name: "Insilico Medicine", tag: "Biotech", url: "insilico.com",
+    what: "AI drug discovery company with the first fully AI-designed drug now in Phase 2 clinical trials.",
+    why: "Proof that AI can design a drug from scratch that works in humans — a genuine historic first." },
+  { name: "Generate:Biomedicines", tag: "Biotech", url: "generatebiomedicines.com",
+    what: "Using generative AI to design entirely new proteins and medicines that don't exist in nature.",
+    why: "Applying the generative AI revolution to drug discovery — very early but potentially transformative." },
+  { name: "Etched", tag: "AI Infrastructure", url: "etched.com",
+    what: "Building a chip hardwired specifically for transformer models — the architecture behind every major LLM.",
+    why: "Purpose-built hardware can be 100× more efficient than general GPUs — a big bet that transformers are permanent." },
+  { name: "Zipline", tag: "Logistics", url: "flyzipline.com",
+    what: "Autonomous drone delivery company operating at national scale in Rwanda, Ghana, and the US.",
+    why: "Already delivering blood and medicine by drone across entire countries — not a concept, a working business." },
+  { name: "Hadrian", tag: "Manufacturing", url: "hadrian.io",
+    what: "AI-powered precision manufacturing company making aerospace and defence parts, fast.",
+    why: "US defence manufacturing is a critical bottleneck — Hadrian uses software to run factories like tech companies." },
+  { name: "Weaviate", tag: "AI Infrastructure", url: "weaviate.io",
+    what: "Open-source vector database that lets AI applications store and search information by meaning.",
+    why: "Vector databases are the memory layer of AI — without them, every AI conversation starts from scratch." },
+  { name: "ElevenLabs", tag: "AI", url: "elevenlabs.io",
+    what: "AI voice synthesis platform capable of cloning any voice and generating ultra-realistic speech.",
+    why: "Voice is the next major AI interface — ElevenLabs is setting the quality benchmark for the whole industry." },
+  { name: "Cohere", tag: "AI", url: "cohere.com",
+    what: "Enterprise AI company building LLMs for businesses that need data privacy and regulatory compliance.",
+    why: "Banks, hospitals, and governments can't send data to OpenAI — Cohere is built for exactly that constraint." },
+  { name: "Hugging Face", tag: "AI", url: "huggingface.co",
+    what: "Open-source platform hosting tens of thousands of AI models, datasets, and developer tools.",
+    why: "The GitHub of AI — if open-source wins over closed models, this sits at the centre of everything." },
+  { name: "Apptronik", tag: "Robotics", url: "apptronik.com",
+    what: "Building Apollo, a humanoid robot designed for logistics and manufacturing tasks.",
+    why: "Backed by Google, partnered with NASA — one of the more credible and well-resourced humanoid robotics plays." },
+  { name: "Joby Aviation", tag: "Transport", url: "jobyaviation.com",
+    what: "Building electric air taxis for short urban and suburban flights.",
+    why: "Further ahead on FAA certification than any competitor — urban electric flight could be a reality this decade." },
+];
+
+// ── Helpers ───────────────────────────────────────────────────────────────────
+
+function toGBP(price, currency) {
+  if (price == null) return null;
+  return currency === "GBp" ? price / 100 : price;
+}
+
+function fmtPrice(price, currency) {
+  if (price == null) return "—";
+  const p = toGBP(price, currency);
+  if (p > 10000) return p.toLocaleString("en-GB", { maximumFractionDigits: 0 });
+  if (p > 10)    return "£" + p.toLocaleString("en-GB", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+  return "£" + p.toFixed(4);
+}
+
+function fmtChange(change) {
+  if (change == null) return "";
+  const cls   = change >= 0 ? "up" : "down";
+  const arrow = change >= 0 ? "▲" : "▼";
+  const sign  = change >= 0 ? "+" : "";
+  return `<div class="change ${cls}">${arrow} ${sign}${change.toFixed(2)}%</div>`;
+}
+
+function getCompanyOfDay() {
+  const start  = new Date(new Date().getFullYear(), 0, 0);
+  const dayNum = Math.floor((Date.now() - start) / 86400000);
+  return COMPANIES[dayNum % COMPANIES.length];
+}
+
+// ── Data fetching ─────────────────────────────────────────────────────────────
+
+async function fetchPrice(ticker) {
+  const url = `https://query1.finance.yahoo.com/v8/finance/chart/${encodeURIComponent(ticker)}?interval=1d&range=2d`;
+  const urls = [url, `https://corsproxy.io/?${encodeURIComponent(url)}`];
+  for (const u of urls) {
+    try {
+      const res  = await fetch(u);
+      const data = await res.json();
+      const result   = data.chart.result[0];
+      const currency = result.meta.currency || "";
+      const closes   = result.indicators.quote[0].close.filter(c => c != null);
+      if (closes.length >= 2) {
+        const change = ((closes.at(-1) - closes.at(-2)) / closes.at(-2)) * 100;
+        return { price: closes.at(-1), change, currency };
+      }
+      if (closes.length === 1) return { price: closes[0], change: 0, currency };
+    } catch (_) {}
+  }
+  return { price: null, change: null, currency: "" };
+}
+
+async function fetchFeed(rssUrl, limit) {
+  const api = `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(rssUrl)}&count=${limit}`;
+  try {
+    const res  = await fetch(api);
+    const data = await res.json();
+    if (data.status === "ok") return data.items.map(i => ({ title: i.title, link: i.link }));
+  } catch (_) {}
+  return [];
+}
+
+async function fetchFixtures() {
+  const proxy = u => `https://corsproxy.io/?${encodeURIComponent(u)}`;
+  try {
+    const [bsRes, fixRes] = await Promise.all([
+      fetch(proxy("https://fantasy.premierleague.com/api/bootstrap-static/")),
+      fetch(proxy("https://fantasy.premierleague.com/api/fixtures/?future=1")),
+    ]);
+    const bootstrap = await bsRes.json();
+    const allFix    = await fixRes.json();
+
+    const teams     = Object.fromEntries(bootstrap.teams.map(t => [t.id, t.name]));
+    const chelseaId = bootstrap.teams.find(t => t.name.includes("Chelsea"))?.id;
+    const topNames  = new Set(["Arsenal","Manchester City","Liverpool","Manchester United",
+                               "Chelsea","Tottenham Hotspur","Newcastle United","Aston Villa"]);
+    const topIds    = new Set(bootstrap.teams.filter(t => topNames.has(t.name)).map(t => t.id));
+
+    const upcoming = allFix
+      .filter(f => !f.finished && f.kickoff_time)
+      .sort((a, b) => a.kickoff_time.localeCompare(b.kickoff_time));
+
+    const chelseaFix = upcoming.find(f => chelseaId && (f.team_a === chelseaId || f.team_h === chelseaId));
+    const topFixes   = upcoming
+      .filter(f => f !== chelseaFix && topIds.has(f.team_a) && topIds.has(f.team_h))
+      .slice(0, 3);
+
+    return [chelseaFix, ...topFixes].filter(Boolean).map(f => {
+      const dt  = new Date(f.kickoff_time);
+      const day = dt.toLocaleDateString("en-GB", { weekday: "short", day: "numeric", month: "short" });
+      const tm  = dt.toLocaleTimeString("en-GB", { hour: "2-digit", minute: "2-digit" });
+      return {
+        home: teams[f.team_h] || "?", away: teams[f.team_a] || "?",
+        time: `${day} · ${tm}`, gw: f.event,
+        chelsea: !!(chelseaId && (f.team_h === chelseaId || f.team_a === chelseaId)),
+      };
+    });
+  } catch (_) { return []; }
+}
+
+// ── Rendering ─────────────────────────────────────────────────────────────────
+
+function priceCard(name, data, units) {
+  const { price, change, currency } = data;
+  const gbp = toGBP(price, currency);
+  const holdingHtml = (units && gbp) ? `<div class="holding">£${(units * gbp).toLocaleString("en-GB", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</div>` : "";
+  return `<div class="card">
+  <div class="label">${name}</div>
+  <div class="value">${fmtPrice(price, currency)}</div>
+  ${holdingHtml}
+  ${fmtChange(change)}
+</div>`;
+}
+
+function renderPortfolio(portfolio) {
+  document.getElementById("portfolio").innerHTML =
+    Object.entries(portfolio).map(([n, d]) => priceCard(n, d, UNITS[n])).join("");
+
+  let total = 0, daily = 0;
+  for (const [name, data] of Object.entries(portfolio)) {
+    const gbp = toGBP(data.price, data.currency);
+    const u   = UNITS[name] || 0;
+    if (gbp && u) { const val = gbp * u; total += val; daily += val * (data.change || 0) / 100; }
+  }
+  if (total) {
+    const color = daily >= 0 ? "#22c55e" : "#ef4444";
+    const sign  = daily >= 0 ? "+" : "";
+    document.getElementById("portfolio-total").innerHTML =
+      `<div class="total">Total <span class="total-val">£${total.toLocaleString("en-GB", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</span>` +
+      `<span class="total-daily" style="color:${color}">${sign}£${Math.abs(daily).toLocaleString("en-GB", { minimumFractionDigits: 2, maximumFractionDigits: 2 })} today</span></div>`;
+  }
+}
+
+function renderMarkets(indices) {
+  document.getElementById("markets").innerHTML =
+    Object.entries(indices).map(([n, d]) => priceCard(n, d, null)).join("");
+}
+
+function renderFixtures(fixtures) {
+  if (!fixtures.length) { document.getElementById("fixtures").innerHTML = '<p class="empty">Fixtures unavailable</p>'; return; }
+  document.getElementById("fixtures").innerHTML = fixtures.map(f => `
+<div class="fixture${f.chelsea ? " chelsea" : ""}">
+  <div class="fix-meta">${f.gw ? `<span class="gw">GW${f.gw}</span>` : ""}<span class="fix-time">${f.time}</span></div>
+  <div class="fix-teams">${f.home} <em>vs</em> ${f.away}</div>
+</div>`).join("");
+}
+
+function renderCompany() {
+  const c = getCompanyOfDay();
+  document.getElementById("company").innerHTML = `
+<div class="company-card">
+  <div class="company-tag">${c.tag}</div>
+  <div class="company-name">${c.name}</div>
+  <div class="company-what">${c.what}</div>
+  <div class="company-why">${c.why}</div>
+  <a class="company-link" href="https://${c.url}" target="_blank" rel="noopener">${c.url} →</a>
+</div>`;
+}
+
+function renderNews(allNews) {
+  document.getElementById("news").innerHTML = Object.entries(allNews).map(([name, items]) => {
+    if (!items.length) return `<div class="news-col"><div class="col-title">${name}</div><p class="empty">Unavailable</p></div>`;
+    const stories = items.map(i => `<a class="story" href="${i.link}" target="_blank" rel="noopener">${i.title}</a>`).join("");
+    return `<div class="news-col"><div class="col-title">${name}</div>${stories}</div>`;
+  }).join("");
+}
+
+// ── Init ──────────────────────────────────────────────────────────────────────
+
+async function init() {
+  // Header
+  const now    = new Date();
+  const hour   = now.getHours();
+  const greet  = hour < 12 ? "Good morning" : hour < 17 ? "Good afternoon" : "Good evening";
+  const dateStr = now.toLocaleDateString("en-GB", { weekday: "long", day: "numeric", month: "long", year: "numeric" });
+  const timeStr = now.toLocaleTimeString("en-GB", { hour: "2-digit", minute: "2-digit" });
+  document.getElementById("greeting").textContent  = `${greet}, Jonno.`;
+  document.getElementById("dateline").textContent  = `${dateStr} · Updated at ${timeStr}`;
+  document.getElementById("footer").textContent    = `briefing · ${dateStr} · ${timeStr}`;
+
+  // Company (no network needed)
+  renderCompany();
+
+  // All network fetches in parallel
+  const portfolioPrices = Object.entries(PORTFOLIO).map(([name, ticker]) =>
+    fetchPrice(ticker).then(data => [name, data])
+  );
+  const indexPrices = Object.entries(INDICES).map(([name, ticker]) =>
+    fetchPrice(ticker).then(data => [name, data])
+  );
+  const feedFetches = Object.entries(FEEDS).map(([name, [url, limit]]) =>
+    fetchFeed(url, limit).then(items => [name, items])
+  );
+
+  const [portfolioEntries, indexEntries, newsEntries, fixtures] = await Promise.all([
+    Promise.all(portfolioPrices),
+    Promise.all(indexPrices),
+    Promise.all(feedFetches),
+    fetchFixtures(),
+  ]);
+
+  renderPortfolio(Object.fromEntries(portfolioEntries));
+  renderMarkets(Object.fromEntries(indexEntries));
+  renderNews(Object.fromEntries(newsEntries));
+  renderFixtures(fixtures);
+
+  // Update timestamp
+  const done = new Date().toLocaleTimeString("en-GB", { hour: "2-digit", minute: "2-digit" });
+  document.getElementById("dateline").textContent = `${dateStr} · Updated at ${done}`;
+}
+
+init();
+</script>
+</body>
+</html>
