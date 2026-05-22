@@ -274,97 +274,26 @@ function getCompanyOfDay() {
 
 // ── Data fetching ─────────────────────────────────────────────────────────────
 
-const PROXY = u => `https://api.allorigins.win/raw?url=${encodeURIComponent(u)}`;
-
-async function timedFetch(url, ms = 6000) {
-  const ctrl = new AbortController();
-  const tid  = setTimeout(() => ctrl.abort(), ms);
+// Prices + fixtures come from the Vercel serverless function (no CORS issues)
+let _serverData = null;
+async function getServerData() {
+  if (_serverData) return _serverData;
   try {
-    const res = await fetch(url, { signal: ctrl.signal });
-    clearTimeout(tid);
-    return res;
-  } catch (e) { clearTimeout(tid); throw e; }
-}
-
-async function fetchPrice(ticker) {
-  const url  = `https://query1.finance.yahoo.com/v8/finance/chart/${encodeURIComponent(ticker)}?interval=1d&range=2d`;
-  for (const u of [url, PROXY(url)]) {
-    try {
-      const res  = await timedFetch(u);
-      const data = await res.json();
-      const result   = data.chart.result[0];
-      const currency = result.meta.currency || "";
-      const closes   = result.indicators.quote[0].close.filter(c => c != null);
-      const last = closes[closes.length - 1];
-      const prev = closes[closes.length - 2];
-      if (closes.length >= 2) return { price: last, change: ((last - prev) / prev) * 100, currency };
-      if (closes.length === 1) return { price: last, change: 0, currency };
-    } catch (_) {}
+    const res = await fetch('/api/data');
+    _serverData = await res.json();
+  } catch (_) {
+    _serverData = { prices: {}, fixtures: [] };
   }
-  return { price: null, change: null, currency: "" };
-}
-
-function parseXML(text, limit) {
-  try {
-    const doc   = new DOMParser().parseFromString(text, "text/xml");
-    const items = Array.from(doc.querySelectorAll("item")).slice(0, limit);
-    return items.map(i => ({
-      title: i.querySelector("title")?.textContent?.trim() || "",
-      link:  i.querySelector("link")?.textContent?.trim()  || "#",
-    })).filter(i => i.title);
-  } catch (_) { return []; }
+  return _serverData;
 }
 
 async function fetchFeed(rssUrl, limit) {
-  // Try rss2json first (purpose-built, handles CORS)
   try {
-    const res  = await timedFetch(`https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(rssUrl)}&count=${limit}`);
+    const res  = await fetch(`https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(rssUrl)}&count=${limit}`);
     const data = await res.json();
     if (data.status === "ok" && data.items?.length) return data.items.map(i => ({ title: i.title, link: i.link }));
   } catch (_) {}
-  // Fall back to allorigins + parse XML ourselves
-  try {
-    const res  = await timedFetch(PROXY(rssUrl));
-    return parseXML(await res.text(), limit);
-  } catch (_) {}
   return [];
-}
-
-async function fetchFixtures() {
-  try {
-    const [bsRes, fixRes] = await Promise.all([
-      timedFetch(PROXY("https://fantasy.premierleague.com/api/bootstrap-static/")),
-      timedFetch(PROXY("https://fantasy.premierleague.com/api/fixtures/?future=1")),
-    ]);
-    const bootstrap = await bsRes.json();
-    const allFix    = await fixRes.json();
-
-    const teams     = Object.fromEntries(bootstrap.teams.map(t => [t.id, t.name]));
-    const chelseaId = bootstrap.teams.find(t => t.name.includes("Chelsea"))?.id;
-    const topNames  = new Set(["Arsenal","Manchester City","Liverpool","Manchester United",
-                               "Chelsea","Tottenham Hotspur","Newcastle United","Aston Villa"]);
-    const topIds    = new Set(bootstrap.teams.filter(t => topNames.has(t.name)).map(t => t.id));
-
-    const upcoming = allFix
-      .filter(f => !f.finished && f.kickoff_time)
-      .sort((a, b) => a.kickoff_time.localeCompare(b.kickoff_time));
-
-    const chelseaFix = upcoming.find(f => chelseaId && (f.team_a === chelseaId || f.team_h === chelseaId));
-    const topFixes   = upcoming
-      .filter(f => f !== chelseaFix && topIds.has(f.team_a) && topIds.has(f.team_h))
-      .slice(0, 3);
-
-    return [chelseaFix, ...topFixes].filter(Boolean).map(f => {
-      const dt  = new Date(f.kickoff_time);
-      const day = dt.toLocaleDateString("en-GB", { weekday: "short", day: "numeric", month: "short" });
-      const tm  = dt.toLocaleTimeString("en-GB", { hour: "2-digit", minute: "2-digit" });
-      return {
-        home: teams[f.team_h] || "?", away: teams[f.team_a] || "?",
-        time: `${day} · ${tm}`, gw: f.event,
-        chelsea: !!(chelseaId && (f.team_h === chelseaId || f.team_a === chelseaId)),
-      };
-    });
-  } catch (_) { return []; }
 }
 
 // ── Rendering ─────────────────────────────────────────────────────────────────
@@ -450,17 +379,21 @@ async function init() {
   // Company (no network needed)
   renderCompany();
 
-  // Each section fetches and renders independently — no waiting for others
-  Promise.all(Object.entries(PORTFOLIO).map(([n, t]) => fetchPrice(t).then(d => [n, d])))
-    .then(e => renderPortfolio(Object.fromEntries(e)));
-
-  Promise.all(Object.entries(INDICES).map(([n, t]) => fetchPrice(t).then(d => [n, d])))
-    .then(e => renderMarkets(Object.fromEntries(e)));
+  // Prices + fixtures from server (one call), news from rss2json (browser-friendly)
+  getServerData().then(data => {
+    const empty = { price: null, change: null, currency: "" };
+    renderPortfolio(Object.fromEntries(Object.keys(PORTFOLIO).map(n => [n, data.prices[n] || empty])));
+    renderMarkets(Object.fromEntries(Object.keys(INDICES).map(n => [n, data.prices[n] || empty])));
+    renderFixtures((data.fixtures || []).map(f => {
+      const dt  = new Date(f.kickoff);
+      const day = dt.toLocaleDateString("en-GB", { weekday: "short", day: "numeric", month: "short" });
+      const tm  = dt.toLocaleTimeString("en-GB", { hour: "2-digit", minute: "2-digit" });
+      return { ...f, time: `${day} · ${tm}` };
+    }));
+  });
 
   Promise.all(Object.entries(FEEDS).map(([n, [u, l]]) => fetchFeed(u, l).then(items => [n, items])))
     .then(e => renderNews(Object.fromEntries(e)));
-
-  fetchFixtures().then(renderFixtures);
 }
 
 init();
