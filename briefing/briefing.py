@@ -154,7 +154,7 @@ def build_html(portfolio, indices, news):
     now = datetime.now()
     hour = now.hour
     greeting = "Good morning" if hour < 12 else ("Good afternoon" if hour < 17 else "Good evening")
-    date_str = now.strftime("%A, %-d %B %Y")
+    date_str = now.strftime("%A, %d %B %Y").replace(" 0", " ")
     time_str = now.strftime("%H:%M")
 
     portfolio_cards = "\n".join(
