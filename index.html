@@ -274,42 +274,67 @@ function getCompanyOfDay() {
 
 // ── Data fetching ─────────────────────────────────────────────────────────────
 
+const PROXY = u => `https://api.allorigins.win/raw?url=${encodeURIComponent(u)}`;
+
+async function timedFetch(url, ms = 6000) {
+  const ctrl = new AbortController();
+  const tid  = setTimeout(() => ctrl.abort(), ms);
+  try {
+    const res = await fetch(url, { signal: ctrl.signal });
+    clearTimeout(tid);
+    return res;
+  } catch (e) { clearTimeout(tid); throw e; }
+}
+
 async function fetchPrice(ticker) {
-  const url = `https://query1.finance.yahoo.com/v8/finance/chart/${encodeURIComponent(ticker)}?interval=1d&range=2d`;
-  const urls = [url, `https://corsproxy.io/?${encodeURIComponent(url)}`];
-  for (const u of urls) {
+  const url  = `https://query1.finance.yahoo.com/v8/finance/chart/${encodeURIComponent(ticker)}?interval=1d&range=2d`;
+  for (const u of [url, PROXY(url)]) {
     try {
-      const res  = await fetch(u);
+      const res  = await timedFetch(u);
       const data = await res.json();
       const result   = data.chart.result[0];
       const currency = result.meta.currency || "";
       const closes   = result.indicators.quote[0].close.filter(c => c != null);
-      if (closes.length >= 2) {
-        const change = ((closes.at(-1) - closes.at(-2)) / closes.at(-2)) * 100;
-        return { price: closes.at(-1), change, currency };
-      }
-      if (closes.length === 1) return { price: closes[0], change: 0, currency };
+      const last = closes[closes.length - 1];
+      const prev = closes[closes.length - 2];
+      if (closes.length >= 2) return { price: last, change: ((last - prev) / prev) * 100, currency };
+      if (closes.length === 1) return { price: last, change: 0, currency };
     } catch (_) {}
   }
   return { price: null, change: null, currency: "" };
 }
 
-async function fetchFeed(rssUrl, limit) {
-  const api = `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(rssUrl)}&count=${limit}`;
+function parseXML(text, limit) {
   try {
-    const res  = await fetch(api);
+    const doc   = new DOMParser().parseFromString(text, "text/xml");
+    const items = Array.from(doc.querySelectorAll("item")).slice(0, limit);
+    return items.map(i => ({
+      title: i.querySelector("title")?.textContent?.trim() || "",
+      link:  i.querySelector("link")?.textContent?.trim()  || "#",
+    })).filter(i => i.title);
+  } catch (_) { return []; }
+}
+
+async function fetchFeed(rssUrl, limit) {
+  // Try rss2json first (purpose-built, handles CORS)
+  try {
+    const res  = await timedFetch(`https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(rssUrl)}&count=${limit}`);
     const data = await res.json();
-    if (data.status === "ok") return data.items.map(i => ({ title: i.title, link: i.link }));
+    if (data.status === "ok" && data.items?.length) return data.items.map(i => ({ title: i.title, link: i.link }));
+  } catch (_) {}
+  // Fall back to allorigins + parse XML ourselves
+  try {
+    const res  = await timedFetch(PROXY(rssUrl));
+    return parseXML(await res.text(), limit);
   } catch (_) {}
   return [];
 }
 
 async function fetchFixtures() {
-  const proxy = u => `https://corsproxy.io/?${encodeURIComponent(u)}`;
   try {
     const [bsRes, fixRes] = await Promise.all([
-      fetch(proxy("https://fantasy.premierleague.com/api/bootstrap-static/")),
-      fetch(proxy("https://fantasy.premierleague.com/api/fixtures/?future=1")),
+      timedFetch(PROXY("https://fantasy.premierleague.com/api/bootstrap-static/")),
+      timedFetch(PROXY("https://fantasy.premierleague.com/api/fixtures/?future=1")),
     ]);
     const bootstrap = await bsRes.json();
     const allFix    = await fixRes.json();
@@ -425,32 +450,17 @@ async function init() {
   // Company (no network needed)
   renderCompany();
 
-  // All network fetches in parallel
-  const portfolioPrices = Object.entries(PORTFOLIO).map(([name, ticker]) =>
-    fetchPrice(ticker).then(data => [name, data])
-  );
-  const indexPrices = Object.entries(INDICES).map(([name, ticker]) =>
-    fetchPrice(ticker).then(data => [name, data])
-  );
-  const feedFetches = Object.entries(FEEDS).map(([name, [url, limit]]) =>
-    fetchFeed(url, limit).then(items => [name, items])
-  );
+  // Each section fetches and renders independently — no waiting for others
+  Promise.all(Object.entries(PORTFOLIO).map(([n, t]) => fetchPrice(t).then(d => [n, d])))
+    .then(e => renderPortfolio(Object.fromEntries(e)));
 
-  const [portfolioEntries, indexEntries, newsEntries, fixtures] = await Promise.all([
-    Promise.all(portfolioPrices),
-    Promise.all(indexPrices),
-    Promise.all(feedFetches),
-    fetchFixtures(),
-  ]);
+  Promise.all(Object.entries(INDICES).map(([n, t]) => fetchPrice(t).then(d => [n, d])))
+    .then(e => renderMarkets(Object.fromEntries(e)));
 
-  renderPortfolio(Object.fromEntries(portfolioEntries));
-  renderMarkets(Object.fromEntries(indexEntries));
-  renderNews(Object.fromEntries(newsEntries));
-  renderFixtures(fixtures);
+  Promise.all(Object.entries(FEEDS).map(([n, [u, l]]) => fetchFeed(u, l).then(items => [n, items])))
+    .then(e => renderNews(Object.fromEntries(e)));
 
-  // Update timestamp
-  const done = new Date().toLocaleTimeString("en-GB", { hour: "2-digit", minute: "2-digit" });
-  document.getElementById("dateline").textContent = `${dateStr} · Updated at ${done}`;
+  fetchFixtures().then(renderFixtures);
 }
 
 init();
