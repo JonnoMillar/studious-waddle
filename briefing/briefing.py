@@ -17,6 +17,13 @@ PORTFOLIO = {
     "US 500": "VUSA.L",
 }
 
+# Units held for each fund
+UNITS = {
+    "AIAG": 74,
+    "All World": 45,
+    "US 500": 35.99,
+}
+
 INDICES = {
     "FTSE 100": "^FTSE",
     "S&P 500": "^GSPC",
@@ -115,18 +122,33 @@ def fmt_price(price, ticker):
     return f"{price:.4f}"
 
 
-def price_card(name, data, ticker=""):
-    price = data.get("price")
+def to_gbp(price, ticker):
+    """LSE tickers are quoted in pence — divide by 100 for pounds."""
+    if price is None:
+        return None
+    return price / 100 if ticker.endswith(".L") else price
+
+
+def price_card(name, data, ticker="", units=None):
+    raw_price = data.get("price")
     change = data.get("change", 0.0)
+    price = to_gbp(raw_price, ticker)
     color = "#22c55e" if change >= 0 else "#ef4444"
     arrow = "▲" if change >= 0 else "▼"
     sign = "+" if change >= 0 else ""
-    price_str = fmt_price(price, ticker)
-    change_html = f'<div class="change" style="color:{color}">{arrow} {sign}{change:.2f}%</div>' if price else ""
+    price_str = fmt_price(raw_price, ticker)
+
+    holding_html = ""
+    if units and price:
+        value = units * price
+        holding_html = f'<div class="holding">£{value:,.2f}</div>'
+
+    change_html = f'<div class="change" style="color:{color}">{arrow} {sign}{change:.2f}%</div>' if raw_price else ""
 
     return f"""<div class="card">
   <div class="label">{name}</div>
   <div class="value">{price_str}</div>
+  {holding_html}
   {change_html}
 </div>"""
 
@@ -158,8 +180,14 @@ def build_html(portfolio, indices, news):
     time_str = now.strftime("%H:%M")
 
     portfolio_cards = "\n".join(
-        price_card(name, data, PORTFOLIO[name]) for name, data in portfolio.items()
+        price_card(name, data, PORTFOLIO[name], UNITS.get(name)) for name, data in portfolio.items()
     )
+
+    total = sum(
+        (to_gbp(data["price"], PORTFOLIO[name]) or 0) * UNITS.get(name, 0)
+        for name, data in portfolio.items()
+    )
+    total_html = f'<div class="total">Total <span>£{total:,.2f}</span></div>' if total else ""
     index_cards = "\n".join(
         price_card(name, data, INDICES[name]) for name, data in indices.items()
     )
@@ -219,6 +247,9 @@ body {{
 .label {{ font-size: 12px; color: #475569; font-weight: 500; margin-bottom: 8px; }}
 .value {{ font-size: 22px; font-weight: 600; color: #f1f5f9; font-variant-numeric: tabular-nums; }}
 .change {{ font-size: 13px; font-weight: 500; margin-top: 5px; }}
+.holding {{ font-size: 13px; color: #64748b; margin-top: 4px; font-variant-numeric: tabular-nums; }}
+.total {{ font-size: 13px; color: #475569; margin-top: 14px; }}
+.total span {{ color: #f1f5f9; font-weight: 600; font-size: 18px; margin-left: 6px; }}
 
 /* ── News grid ── */
 .news-grid {{
@@ -279,6 +310,7 @@ body {{
 <div class="section">
   <div class="section-label">Your Portfolio</div>
   <div class="cards">{portfolio_cards}</div>
+  {total_html}
 </div>
 
 <div class="section">
