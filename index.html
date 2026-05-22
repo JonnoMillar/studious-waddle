@@ -6,23 +6,23 @@
 <title>Daily Briefing</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,900;1,900&family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
   --bg:     #ffffff;
-  --ink:    #0f0f0f;
-  --ink-2:  #374151;
+  --ink:    #0d0d0d;
+  --ink-2:  #2d2d2d;
   --ink-3:  #6b7280;
   --ink-4:  #e5e7eb;
-  --ink-5:  #f9fafb;
+  --ink-5:  #f7f7f7;
   --accent: #E8451A;
   --green:  #16a34a;
   --red:    #dc2626;
-  --f-d:    'Playfair Display', Georgia, serif;
-  --f-m:    'JetBrains Mono', 'Courier New', monospace;
-  --f-b:    'Plus Jakarta Sans', -apple-system, sans-serif;
+  --f-d: 'Playfair Display', Georgia, serif;
+  --f-m: 'JetBrains Mono', monospace;
+  --f-b: 'Plus Jakarta Sans', -apple-system, sans-serif;
 }
 
 html { scroll-behavior: smooth; }
@@ -34,206 +34,151 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* ── Layout ──────────────────────────────────────────────────── */
-.wrap {
-  max-width: 1160px;
-  margin: 0 auto;
-  padding: 48px 40px 80px;
+/* ── Page loader ─────────────────────────────────────────────── */
+#page-bar {
+  position: fixed; top: 0; left: 0; right: 0;
+  height: 2px; background: var(--accent);
+  width: 0; z-index: 9999;
+  transition: width 0.4s ease, opacity 0.4s ease;
 }
+
+/* ── Layout ──────────────────────────────────────────────────── */
+.wrap { max-width: 1160px; margin: 0 auto; padding: 48px 40px 80px; }
 
 /* ── Header ──────────────────────────────────────────────────── */
 .header {
-  display: flex;
-  align-items: flex-start;
+  display: flex; align-items: flex-start;
   justify-content: space-between;
   padding-bottom: 32px;
-  border-bottom: 1px solid var(--ink-4);
+  border-bottom: 2px solid var(--ink);
   margin-bottom: 0;
 }
 .greeting {
   font-family: var(--f-d);
-  font-size: clamp(1.9rem, 4vw, 2.6rem);
-  font-weight: 900;
-  color: var(--ink);
-  letter-spacing: -0.02em;
-  line-height: 1.1;
+  font-size: clamp(2rem, 4.5vw, 3.2rem);
+  font-weight: 900; color: var(--ink);
+  letter-spacing: -0.03em; line-height: 1.05;
 }
-.header-meta {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  margin-top: 7px;
-}
+.header-meta { margin-top: 8px; display: flex; flex-direction: column; gap: 3px; }
 .dateline, .weather-line {
-  font-family: var(--f-m);
-  font-size: 11px;
-  color: var(--ink-3);
-  letter-spacing: 0.02em;
+  font-family: var(--f-m); font-size: 11px;
+  color: var(--ink-3); letter-spacing: 0.02em;
 }
 .header-right {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  gap: 8px;
-  flex-shrink: 0;
-  margin-top: 4px;
+  display: flex; flex-direction: column;
+  align-items: flex-end; gap: 8px;
+  flex-shrink: 0; padding-top: 4px;
 }
 .live-badge {
-  display: flex;
-  align-items: center;
-  gap: 7px;
-  font-family: var(--f-m);
-  font-size: 11px;
-  font-weight: 500;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--ink-3);
+  display: flex; align-items: center; gap: 6px;
+  font-family: var(--f-m); font-size: 11px; font-weight: 500;
+  letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-3);
 }
 .live-dot {
-  width: 7px; height: 7px;
-  border-radius: 50%;
-  background: var(--accent);
-  animation: livePulse 2s ease-in-out infinite;
-  flex-shrink: 0;
+  width: 7px; height: 7px; border-radius: 50%;
+  background: var(--accent); flex-shrink: 0;
+  animation: pulse 2s ease-in-out infinite;
 }
-@keyframes livePulse { 0%,100% { opacity:1; } 50% { opacity:0.3; } }
+@keyframes pulse { 0%,100%{opacity:1;} 50%{opacity:0.3;} }
 
-/* ── Section labels ──────────────────────────────────────────── */
-.section { margin-top: 44px; }
+/* ── Section ─────────────────────────────────────────────────── */
+.section {
+  margin-top: 48px;
+  opacity: 0; transform: translateY(14px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.section.visible { opacity: 1; transform: translateY(0); }
 .lbl {
-  font-family: var(--f-m);
-  font-size: 10px;
-  font-weight: 500;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  color: var(--ink-3);
-  margin-bottom: 16px;
+  font-family: var(--f-m); font-size: 10px; font-weight: 500;
+  letter-spacing: 0.18em; text-transform: uppercase;
+  color: var(--ink-3); margin-bottom: 16px;
 }
 
 /* ── Ticker ──────────────────────────────────────────────────── */
 .ticker-outer {
-  background: var(--ink);
-  margin: 32px -40px 0;
-  padding: 11px 0;
-  overflow: hidden;
-  position: relative;
+  background: var(--ink); margin: 32px -40px 0;
+  padding: 11px 0; overflow: hidden; position: relative;
 }
-.ticker-outer::before,
-.ticker-outer::after {
-  content: '';
-  position: absolute;
-  top: 0; bottom: 0; width: 64px; z-index: 2; pointer-events: none;
+.ticker-outer::before, .ticker-outer::after {
+  content: ''; position: absolute; top:0; bottom:0;
+  width: 72px; z-index: 2; pointer-events: none;
 }
-.ticker-outer::before { left:  0; background: linear-gradient(to right, var(--ink), transparent); }
-.ticker-outer::after  { right: 0; background: linear-gradient(to left,  var(--ink), transparent); }
+.ticker-outer::before { left:0; background: linear-gradient(to right, var(--ink), transparent); }
+.ticker-outer::after  { right:0; background: linear-gradient(to left, var(--ink), transparent); }
 .ticker-track {
-  display: flex;
-  white-space: nowrap;
-  animation: tickerMove 45s linear infinite;
+  display: flex; white-space: nowrap;
+  animation: tickerMove 50s linear infinite;
 }
 .ticker-track:hover { animation-play-state: paused; }
-@keyframes tickerMove { from { transform:translateX(0); } to { transform:translateX(-50%); } }
+@keyframes tickerMove { from{transform:translateX(0);} to{transform:translateX(-50%);} }
 .tick-item {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  padding: 0 24px;
-  border-right: 1px solid rgba(255,255,255,0.07);
+  display: inline-flex; align-items: center; gap: 9px;
+  padding: 0 26px; border-right: 1px solid rgba(255,255,255,0.08);
 }
-.t-name  { font-family: var(--f-m); font-size: 10px; color: rgba(255,255,255,0.32); letter-spacing: 0.1em; text-transform: uppercase; }
-.t-price { font-family: var(--f-m); font-size: 13px; font-weight: 500; color: #fff; }
-.t-chg   { font-family: var(--f-m); font-size: 11px; }
-.t-chg.up   { color: #4ade80; }
-.t-chg.down { color: #f87171; }
+.t-name  { font-family:var(--f-m); font-size:10px; color:rgba(255,255,255,0.3); letter-spacing:0.1em; text-transform:uppercase; }
+.t-price { font-family:var(--f-m); font-size:13px; font-weight:500; color:#fff; }
+.t-chg   { font-family:var(--f-m); font-size:11px; }
+.t-chg.up{color:#4ade80;} .t-chg.down{color:#f87171;}
 
 /* ── Markets ─────────────────────────────────────────────────── */
 .indices-strip {
-  display: flex;
-  background: var(--ink-5);
-  border: 1px solid var(--ink-4);
-  border-radius: 8px;
-  overflow: hidden;
-  margin-bottom: 16px;
+  display: flex; background: var(--ink-5);
+  border: 1px solid var(--ink-4); border-radius: 6px;
+  overflow: hidden; margin-bottom: 16px;
 }
 .idx-cell {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 12px 18px;
+  flex: 1; display: flex; align-items: center;
+  gap: 10px; padding: 13px 18px;
   border-right: 1px solid var(--ink-4);
 }
 .idx-cell:last-child { border-right: none; }
-.idx-name  { font-family: var(--f-m); font-size: 10px; color: var(--ink-3); letter-spacing: 0.08em; text-transform: uppercase; white-space: nowrap; }
-.idx-price { font-family: var(--f-m); font-size: 14px; font-weight: 500; color: var(--ink); }
-.idx-chg   { font-family: var(--f-m); font-size: 11px; margin-left: auto; white-space: nowrap; }
-.idx-chg.up   { color: var(--green); }
-.idx-chg.down { color: var(--red); }
+.idx-name  { font-family:var(--f-m); font-size:10px; color:var(--ink-3); letter-spacing:0.08em; text-transform:uppercase; white-space:nowrap; }
+.idx-price { font-family:var(--f-m); font-size:15px; font-weight:500; color:var(--ink); }
+.idx-chg   { font-family:var(--f-m); font-size:11px; margin-left:auto; white-space:nowrap; }
+.idx-chg.up{color:var(--green);} .idx-chg.down{color:var(--red);}
 
 .movers-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  border: 1px solid var(--ink-4);
-  border-radius: 8px;
-  overflow: hidden;
+  display: grid; grid-template-columns: 1fr 1fr;
+  border: 1px solid var(--ink-4); border-radius: 6px; overflow: hidden;
 }
-.movers-col { }
 .movers-col:first-child { border-right: 1px solid var(--ink-4); }
 .movers-head {
-  font-family: var(--f-m);
-  font-size: 10px;
-  font-weight: 500;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--ink-3);
-  padding: 11px 18px;
-  border-bottom: 1px solid var(--ink-4);
+  font-family:var(--f-m); font-size:10px; font-weight:500;
+  letter-spacing:0.12em; text-transform:uppercase; color:var(--ink-3);
+  padding: 11px 18px; border-bottom: 1px solid var(--ink-4);
   background: var(--ink-5);
 }
 .mover-row {
-  display: grid;
-  grid-template-columns: 1fr auto auto;
-  gap: 14px;
-  align-items: center;
-  padding: 11px 18px;
-  border-bottom: 1px solid var(--ink-4);
+  display: grid; grid-template-columns: 1fr auto auto;
+  gap: 14px; align-items: center;
+  padding: 11px 18px; border-bottom: 1px solid var(--ink-4);
+  opacity: 0; transform: translateX(0);
+  animation: fadeIn 0.3s ease forwards;
 }
+@keyframes fadeIn { to{ opacity:1; transform:translateX(0); } }
 .mover-row:last-child { border-bottom: none; }
-.m-name  { font-family: var(--f-b); font-size: 13px; font-weight: 600; color: var(--ink); }
-.m-price { font-family: var(--f-m); font-size: 12px; color: var(--ink-3); }
-.m-chg   { font-family: var(--f-m); font-size: 13px; font-weight: 500; min-width: 58px; text-align: right; }
-.m-chg.up   { color: var(--green); }
-.m-chg.down { color: var(--red); }
+.m-name  { font-family:var(--f-b); font-size:13px; font-weight:600; color:var(--ink); }
+.m-price { font-family:var(--f-m); font-size:12px; color:var(--ink-3); }
+.m-chg   { font-family:var(--f-m); font-size:13px; font-weight:500; min-width:58px; text-align:right; }
+.m-chg.up{color:var(--green);} .m-chg.down{color:var(--red);}
 
-/* ── Company Carousel ────────────────────────────────────────── */
+/* ── Carousel ────────────────────────────────────────────────── */
 .carousel {
-  border: 1px solid var(--ink-4);
-  border-left: 3px solid var(--accent);
-  border-radius: 8px;
-  overflow: hidden;
+  border: 1px solid var(--ink-4); border-left: 3px solid var(--accent);
+  border-radius: 6px; overflow: hidden;
 }
 .carousel-tabs {
-  display: flex;
-  border-bottom: 1px solid var(--ink-4);
-  overflow-x: auto;
-  scrollbar-width: none;
+  display: flex; border-bottom: 1px solid var(--ink-4);
+  overflow-x: auto; scrollbar-width: none;
 }
 .carousel-tabs::-webkit-scrollbar { display: none; }
 .ctab {
-  flex: 1; min-width: 0;
-  padding: 11px 14px;
-  background: var(--ink-5);
-  border: none;
-  border-right: 1px solid var(--ink-4);
-  cursor: pointer;
-  font-family: var(--f-m);
-  font-size: 10px;
-  font-weight: 500;
-  letter-spacing: 0.04em;
-  color: var(--ink-3);
-  text-align: left;
-  white-space: nowrap;
-  overflow: hidden;
+  flex: 1; min-width: 0; padding: 11px 14px;
+  background: var(--ink-5); border: none;
+  border-right: 1px solid var(--ink-4); cursor: pointer;
+  font-family: var(--f-m); font-size: 10px; font-weight: 500;
+  letter-spacing: 0.04em; color: var(--ink-3);
+  text-align: left; white-space: nowrap; overflow: hidden;
   text-overflow: ellipsis;
   transition: background 0.15s, color 0.15s;
 }
@@ -241,192 +186,170 @@ body {
 .ctab:hover  { background: var(--bg); color: var(--ink-2); }
 .ctab.active { background: var(--bg); color: var(--ink); }
 .carousel-body {
-  display: grid;
-  grid-template-columns: 1fr 148px;
-  gap: 32px;
-  padding: 26px 30px;
-  min-height: 140px;
-  align-items: start;
+  display: grid; grid-template-columns: 1fr 148px;
+  gap: 32px; padding: 26px 30px;
+  min-height: 140px; align-items: start;
 }
 .c-tag {
-  display: inline-block;
-  font-family: var(--f-m);
-  font-size: 9px; font-weight: 500;
-  letter-spacing: 0.12em; text-transform: uppercase;
-  color: var(--accent);
+  display: inline-block; font-family: var(--f-m);
+  font-size: 9px; font-weight: 500; letter-spacing: 0.12em;
+  text-transform: uppercase; color: var(--accent);
   background: rgba(232,69,26,0.07);
-  padding: 3px 10px; border-radius: 3px;
-  margin-bottom: 10px;
+  padding: 3px 10px; border-radius: 2px; margin-bottom: 10px;
 }
 .c-name {
-  font-family: var(--f-d);
-  font-size: 24px; font-weight: 900;
-  color: var(--ink);
-  line-height: 1.15; letter-spacing: -0.02em;
+  font-family: var(--f-d); font-size: 26px; font-weight: 900;
+  color: var(--ink); line-height: 1.1; letter-spacing: -0.02em;
   margin-bottom: 9px;
 }
-.c-desc {
-  font-family: var(--f-b);
-  font-size: 14px; color: var(--ink-2); line-height: 1.6;
-  margin-bottom: 14px;
-}
-.c-link {
-  font-family: var(--f-m);
-  font-size: 12px; color: var(--ink-3);
-  text-decoration: none; transition: color 0.12s;
-}
-.c-link:hover { color: var(--ink); }
-.c-spark-wrap {
-  display: flex; flex-direction: column;
-  align-items: flex-end; gap: 8px; padding-top: 4px;
-}
-.c-spark-lbl {
-  font-family: var(--f-m);
-  font-size: 10px; letter-spacing: 0.06em;
-}
+.c-desc { font-family: var(--f-b); font-size: 14px; color: var(--ink-2); line-height: 1.6; margin-bottom: 14px; }
+.c-link { font-family: var(--f-m); font-size: 12px; color: var(--ink-3); text-decoration: none; transition: color 0.12s; }
+.c-link:hover { color: var(--accent); }
+.c-spark-wrap { display: flex; flex-direction: column; align-items: flex-end; gap: 8px; padding-top: 4px; }
+.c-spark-lbl  { font-family: var(--f-m); font-size: 10px; letter-spacing: 0.06em; }
 .carousel-progress { height: 3px; background: var(--ink-4); }
 .carousel-bar      { height: 3px; width: 0; background: var(--accent); }
 
 /* ── Fixtures ────────────────────────────────────────────────── */
-.fixtures-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
-  gap: 10px;
-}
+.fixtures-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 10px; }
 .fixture {
-  border: 1px solid var(--ink-4);
-  border-radius: 8px;
+  border: 1px solid var(--ink-4); border-radius: 6px;
   padding: 14px 18px;
-  transition: border-color 0.15s;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  cursor: default;
 }
-.fixture:hover { border-color: #9ca3af; }
+.fixture:hover { border-color: var(--ink-3); box-shadow: 0 2px 12px rgba(0,0,0,0.06); }
 .fixture.chelsea { border-left: 3px solid var(--accent); }
-.fix-meta {
-  display: flex; gap: 8px; align-items: center;
-  margin-bottom: 10px;
-}
+.fix-meta { display: flex; gap: 8px; align-items: center; margin-bottom: 10px; }
 .gw {
   font-family: var(--f-m); font-size: 9px; font-weight: 500;
   letter-spacing: 0.1em; text-transform: uppercase;
   color: var(--ink-3); background: var(--ink-5);
-  padding: 2px 7px; border-radius: 3px;
+  padding: 2px 7px; border-radius: 2px;
 }
 .fix-time { font-family: var(--f-m); font-size: 11px; color: var(--ink-3); }
 .fix-matchup { display: flex; align-items: center; gap: 8px; }
-.fix-team    { display: flex; align-items: center; gap: 7px; flex: 1; min-width: 0; }
-.fix-team-r  { justify-content: flex-end; }
-.fix-badge   { width: 22px; height: 22px; object-fit: contain; flex-shrink: 0; }
-.fix-name    { font-family: var(--f-b); font-size: 13px; font-weight: 600; color: var(--ink); line-height: 1.2; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-.fix-vs      { font-family: var(--f-m); font-size: 10px; color: var(--ink-3); flex-shrink: 0; }
+.fix-team   { display: flex; align-items: center; gap: 7px; flex: 1; min-width: 0; }
+.fix-team-r { justify-content: flex-end; }
+.fix-badge  { width: 22px; height: 22px; object-fit: contain; flex-shrink: 0; }
+.fix-name   { font-family: var(--f-b); font-size: 13px; font-weight: 600; color: var(--ink); line-height: 1.2; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.fix-vs     { font-family: var(--f-m); font-size: 10px; color: var(--ink-3); flex-shrink: 0; }
+.fix-odds {
+  display: flex; gap: 6px; margin-top: 10px;
+  padding-top: 10px; border-top: 1px solid var(--ink-4);
+}
+.odds-btn {
+  flex: 1; display: flex; flex-direction: column;
+  align-items: center; gap: 2px; padding: 6px 4px;
+  background: var(--ink-5); border: 1px solid var(--ink-4);
+  border-radius: 4px;
+  transition: background 0.15s, border-color 0.15s;
+  cursor: default;
+}
+.odds-btn:hover { background: var(--bg); border-color: var(--ink-3); }
+.odds-lbl { font-family: var(--f-m); font-size: 9px; color: var(--ink-3); letter-spacing: 0.06em; }
+.odds-val { font-family: var(--f-m); font-size: 13px; font-weight: 500; color: var(--ink); }
+.fix-toggle {
+  display: flex; align-items: center; justify-content: center;
+  margin-top: 10px; width: 100%; padding: 10px 16px;
+  background: none; border: 1px solid var(--ink-4);
+  border-radius: 6px; cursor: pointer;
+  font-family: var(--f-m); font-size: 11px; font-weight: 500;
+  letter-spacing: 0.08em; color: var(--ink-3);
+  transition: border-color 0.15s, color 0.15s;
+}
+.fix-toggle:hover { border-color: var(--accent); color: var(--accent); }
 
-/* ── Portfolio (compact) ─────────────────────────────────────── */
-.portfolio-compact {
-  border: 1px solid var(--ink-4);
-  border-radius: 8px;
-  overflow: hidden;
-}
+/* ── Portfolio ────────────────────────────────────────────────── */
+.portfolio-compact { border: 1px solid var(--ink-4); border-radius: 6px; overflow: hidden; }
 .pc-total-row {
-  display: grid;
-  grid-template-columns: 1fr auto auto;
-  gap: 20px;
-  align-items: center;
-  padding: 18px 22px;
-  background: var(--ink-5);
+  display: grid; grid-template-columns: 1fr auto auto;
+  gap: 20px; align-items: center;
+  padding: 18px 22px; background: var(--ink-5);
   border-bottom: 1px solid var(--ink-4);
 }
-.pc-total-label {
-  font-family: var(--f-m);
-  font-size: 10px; font-weight: 500;
-  letter-spacing: 0.12em; text-transform: uppercase;
-  color: var(--ink-3);
-}
-.pc-total-val {
-  font-family: var(--f-d);
-  font-size: 1.9rem; font-weight: 900;
-  color: var(--ink); letter-spacing: -0.02em; line-height: 1;
-}
-.pc-total-chg { font-family: var(--f-m); font-size: 13px; font-weight: 500; }
-.pc-total-chg.up   { color: var(--green); }
-.pc-total-chg.down { color: var(--red); }
+.pc-total-label { font-family:var(--f-m); font-size:10px; font-weight:500; letter-spacing:0.12em; text-transform:uppercase; color:var(--ink-3); }
+.pc-total-val   { font-family:var(--f-d); font-size:1.9rem; font-weight:900; color:var(--ink); letter-spacing:-0.02em; line-height:1; }
+.pc-total-chg   { font-family:var(--f-m); font-size:13px; font-weight:500; }
+.pc-total-chg.up{color:var(--green);} .pc-total-chg.down{color:var(--red);}
 .pc-row {
-  display: grid;
-  grid-template-columns: 1fr auto auto;
-  gap: 20px;
-  align-items: center;
-  padding: 14px 22px;
-  border-bottom: 1px solid var(--ink-4);
+  display: grid; grid-template-columns: 1fr auto auto;
+  gap: 20px; align-items: center;
+  padding: 14px 22px; border-bottom: 1px solid var(--ink-4);
 }
 .pc-row:last-child { border-bottom: none; }
-.pc-name { font-family: var(--f-b); font-size: 14px; font-weight: 600; color: var(--ink); }
-.pc-sub  { font-family: var(--f-m); font-size: 10px; color: var(--ink-3); margin-top: 3px; }
-.pc-val  { font-family: var(--f-m); font-size: 14px; font-weight: 500; color: var(--ink); text-align: right; }
-.pc-chg  { font-family: var(--f-m); font-size: 12px; min-width: 64px; text-align: right; }
-.pc-chg.up   { color: var(--green); }
-.pc-chg.down { color: var(--red); }
+.pc-name { font-family:var(--f-b); font-size:14px; font-weight:600; color:var(--ink); }
+.pc-sub  { font-family:var(--f-m); font-size:10px; color:var(--ink-3); margin-top:3px; }
+.pc-val  { font-family:var(--f-m); font-size:14px; font-weight:500; color:var(--ink); text-align:right; }
+.pc-chg  { font-family:var(--f-m); font-size:12px; min-width:64px; text-align:right; }
+.pc-chg.up{color:var(--green);} .pc-chg.down{color:var(--red);}
 
-/* ── News ────────────────────────────────────────────────────── */
-.news-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  background: var(--ink-4);
-  border: 1px solid var(--ink-4);
-  border-radius: 8px;
-  overflow: hidden;
-  gap: 1px;
+/* ── Golf ─────────────────────────────────────────────────────── */
+.golf-dates {
+  display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 18px;
 }
-.news-col {
+.golf-date-btn {
+  display: flex; flex-direction: column; align-items: center;
+  padding: 10px 16px; border: 1px solid var(--ink-4);
+  border-radius: 6px; text-decoration: none;
+  transition: border-color 0.15s, box-shadow 0.15s;
   background: var(--bg);
-  padding: 22px 24px;
 }
+.golf-date-btn:hover { border-color: var(--accent); box-shadow: 0 2px 8px rgba(232,69,26,0.08); }
+.golf-date-day  { font-family: var(--f-b); font-size: 13px; font-weight: 700; color: var(--ink); }
+.golf-date-date { font-family: var(--f-m); font-size: 10px; color: var(--ink-3); margin-top: 2px; }
+.golf-courses-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 10px;
+}
+.golf-course {
+  border: 1px solid var(--ink-4); border-radius: 6px;
+  padding: 14px 18px; text-decoration: none;
+  transition: border-color 0.15s, box-shadow 0.15s; display: block;
+}
+.golf-course:hover { border-color: var(--ink-3); box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
+.gc-name { font-family: var(--f-b); font-size: 13px; font-weight: 600; color: var(--ink); margin-bottom: 4px; }
+.gc-meta { font-family: var(--f-m); font-size: 10px; color: var(--ink-3); letter-spacing: 0.04em; }
+
+/* ── News ─────────────────────────────────────────────────────── */
+.news-grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1px; background: var(--ink-4);
+  border: 1px solid var(--ink-4); border-radius: 6px; overflow: hidden;
+}
+.news-col { background: var(--bg); padding: 22px 24px; }
 .news-col-title {
-  font-family: var(--f-m);
-  font-size: 10px; font-weight: 500;
-  letter-spacing: 0.16em; text-transform: uppercase;
-  color: var(--ink-3);
-  margin-bottom: 14px; padding-bottom: 12px;
-  border-bottom: 1px solid var(--ink-4);
+  font-family: var(--f-m); font-size: 10px; font-weight: 500;
+  letter-spacing: 0.16em; text-transform: uppercase; color: var(--ink-3);
+  margin-bottom: 14px; padding-bottom: 12px; border-bottom: 1px solid var(--ink-4);
 }
 .story {
-  display: grid;
-  grid-template-columns: 18px 1fr;
-  gap: 10px;
-  padding: 10px 0;
+  display: grid; grid-template-columns: 18px 1fr;
+  gap: 10px; padding: 10px 0;
   border-bottom: 1px solid var(--ink-4);
-  text-decoration: none;
-  color: var(--ink-2);
+  text-decoration: none; color: var(--ink-2);
   transition: color 0.12s;
 }
 .story:last-child  { border-bottom: none; padding-bottom: 0; }
 .story:first-child { padding-top: 0; }
-.story:hover       { color: var(--ink); }
-.s-n {
-  font-family: var(--f-m);
-  font-size: 10px; color: var(--ink-4);
-  padding-top: 3px; font-weight: 500;
-  transition: color 0.12s;
-}
+.story:hover { color: var(--ink); }
+.s-n { font-family:var(--f-m); font-size:10px; color:var(--ink-4); padding-top:3px; font-weight:500; transition: color 0.12s; }
 .story:hover .s-n { color: var(--ink-3); }
-.s-t { font-family: var(--f-b); font-size: 13px; line-height: 1.5; }
-.story.lead .s-t   { font-size: 14px; font-weight: 600; color: var(--ink); }
-.story.lead .s-n   { color: var(--accent); }
+.s-t { font-family:var(--f-b); font-size:13px; line-height:1.5; }
+.story.lead .s-t { font-size:14px; font-weight:700; color:var(--ink); }
+.story.lead .s-n { color:var(--accent); font-weight:500; }
 
-/* ── Skeleton ────────────────────────────────────────────────── */
-.skeleton { background: var(--ink-4); border-radius: 6px; animation: shimmer 1.6s ease-in-out infinite; }
-@keyframes shimmer { 0%,100% { opacity:1; } 50% { opacity:0.45; } }
+/* ── Skeleton ─────────────────────────────────────────────────── */
+.skel { background: var(--ink-4); border-radius: 4px; animation: shimmer 1.6s ease-in-out infinite; }
+@keyframes shimmer { 0%,100%{opacity:1;} 50%{opacity:0.45;} }
 
-/* ── Footer ──────────────────────────────────────────────────── */
-.footer {
-  margin-top: 52px; padding-top: 18px;
-  border-top: 1px solid var(--ink-4);
-  font-family: var(--f-m);
-  font-size: 10px; color: var(--ink-3); letter-spacing: 0.08em;
-}
+/* ── Footer ───────────────────────────────────────────────────── */
+.footer { margin-top:52px; padding-top:18px; border-top:1px solid var(--ink-4); font-family:var(--f-m); font-size:10px; color:var(--ink-3); letter-spacing:0.08em; }
 
-/* ── Responsive ──────────────────────────────────────────────── */
+/* ── Responsive ───────────────────────────────────────────────── */
 @media (max-width: 680px) {
   .wrap { padding: 28px 18px 60px; }
   .ticker-outer { margin: 28px -18px 0; }
-  .greeting { font-size: 1.8rem; }
+  .greeting { font-size: 1.9rem; }
   .header { flex-direction: column; gap: 14px; }
   .header-right { flex-direction: row; align-items: center; }
   .indices-strip { flex-wrap: wrap; }
@@ -441,9 +364,11 @@ body {
 </style>
 </head>
 <body>
+
+<div id="page-bar"></div>
+
 <div class="wrap">
 
-<!-- Header -->
 <div class="header">
   <div>
     <div class="greeting" id="greeting">Good morning, Jonno.</div>
@@ -457,36 +382,33 @@ body {
   </div>
 </div>
 
-<!-- Ticker -->
 <div class="ticker-outer">
   <div class="ticker-track" id="ticker-track">
     <span class="tick-item"><span class="t-name">Loading</span><span class="t-price">—</span></span>
   </div>
 </div>
 
-<!-- Markets -->
-<div class="section">
+<div class="section" id="s-markets">
   <div class="lbl">Markets</div>
   <div class="indices-strip" id="indices">
-    <div class="idx-cell skeleton" style="height:44px;flex:1"></div>
-    <div class="idx-cell skeleton" style="height:44px;flex:1"></div>
-    <div class="idx-cell skeleton" style="height:44px;flex:1"></div>
-    <div class="idx-cell skeleton" style="height:44px;flex:1"></div>
+    <div class="idx-cell skel" style="height:46px;flex:1"></div>
+    <div class="idx-cell skel" style="height:46px;flex:1"></div>
+    <div class="idx-cell skel" style="height:46px;flex:1"></div>
+    <div class="idx-cell skel" style="height:46px;flex:1"></div>
   </div>
   <div class="movers-grid">
     <div class="movers-col">
       <div class="movers-head">Biggest Gains</div>
-      <div id="movers-up"></div>
+      <div id="movers-up"><div class="mover-row skel" style="height:46px"></div><div class="mover-row skel" style="height:46px"></div><div class="mover-row skel" style="height:46px"></div></div>
     </div>
     <div class="movers-col">
       <div class="movers-head">Biggest Losses</div>
-      <div id="movers-dn"></div>
+      <div id="movers-dn"><div class="mover-row skel" style="height:46px"></div><div class="mover-row skel" style="height:46px"></div><div class="mover-row skel" style="height:46px"></div></div>
     </div>
   </div>
 </div>
 
-<!-- Company carousel -->
-<div class="section">
+<div class="section" id="s-carousel">
   <div class="lbl">Company to Watch</div>
   <div class="carousel">
     <div class="carousel-tabs" id="carousel-tabs"></div>
@@ -495,18 +417,14 @@ body {
   </div>
 </div>
 
-<!-- Fixtures -->
-<div class="section">
+<div class="section" id="s-fixtures">
   <div class="lbl">Upcoming Fixtures</div>
-  <div class="fixtures-grid" id="fixtures">
-    <div class="skeleton" style="height:80px;border-radius:8px"></div>
-    <div class="skeleton" style="height:80px;border-radius:8px"></div>
-    <div class="skeleton" style="height:80px;border-radius:8px"></div>
-  </div>
+  <div class="fixtures-grid" id="fixtures-main"></div>
+  <div class="fixtures-grid" id="fixtures-extra" style="display:none;margin-top:10px"></div>
+  <div id="fixtures-toggle-wrap"></div>
 </div>
 
-<!-- Portfolio -->
-<div class="section">
+<div class="section" id="s-portfolio">
   <div class="lbl">Your Portfolio</div>
   <div class="portfolio-compact">
     <div class="pc-total-row">
@@ -515,15 +433,20 @@ body {
       <span class="pc-total-chg" id="pc-chg"></span>
     </div>
     <div id="pc-holdings">
-      <div class="pc-row skeleton" style="height:58px;border-radius:0"></div>
-      <div class="pc-row skeleton" style="height:58px;border-radius:0"></div>
-      <div class="pc-row skeleton" style="height:58px;border-radius:0"></div>
+      <div class="pc-row skel" style="height:58px"></div>
+      <div class="pc-row skel" style="height:58px"></div>
+      <div class="pc-row skel" style="height:58px"></div>
     </div>
   </div>
 </div>
 
-<!-- News -->
-<div class="section">
+<div class="section" id="s-golf">
+  <div class="lbl">Golf Near Wimbledon</div>
+  <div class="golf-dates" id="golf-dates"></div>
+  <div class="golf-courses-grid" id="golf-courses"></div>
+</div>
+
+<div class="section" id="s-news">
   <div class="lbl">Today's Briefing</div>
   <div class="news-grid" id="news"></div>
 </div>
@@ -532,11 +455,13 @@ body {
 </div>
 
 <script>
-// ── Config ────────────────────────────────────────────────────────────────────
-const PORTFOLIO    = { "AIAG": "AIAG.L", "All World": "VWRP.L", "US 500": "VUSA.L" };
-const UNITS        = { "AIAG": 74, "All World": 45, "US 500": 35.99 };
-const INDEX_NAMES  = ["FTSE 100", "S&P 500", "Bitcoin", "Gold"];
-const MOVER_NAMES  = ["Nvidia","Apple","Tesla","Meta","Amazon","Microsoft","Alphabet","ARM","Palantir","Broadcom","AMD","CrowdStrike"];
+// ── Config ─────────────────────────────────────────────────────────────────────
+const PORTFOLIO   = { "AIAG": "AIAG.L", "All World": "VWRP.L", "US 500": "VUSA.L" };
+const UNITS       = { "AIAG": 74, "All World": 45, "US 500": 35.99 };
+const INDEX_NAMES = ["FTSE 100", "S&P 500", "Bitcoin", "Gold"];
+const MOVER_NAMES = ["Nvidia","Apple","Tesla","Meta","Amazon","Microsoft","Alphabet","ARM","Palantir","Broadcom","AMD","CrowdStrike"];
+
+let GBPUSD = 1.27; // live rate updated from API
 
 const COMPANIES = [
   { name: "Nebius Group", tag: "AI Infrastructure", url: "nebius.com",
@@ -661,7 +586,7 @@ const COMPANIES = [
     why: "Applying the same generative revolution that produced image and language AI to biology. The potential search space of novel medicines is effectively infinite." },
   { name: "Etched", tag: "AI Infrastructure", url: "etched.com",
     what: "Building a chip hardwired entirely for transformer model inference — sacrificing generality for extreme efficiency on the one architecture that dominates AI.",
-    why: "A focused bet that transformer architecture is permanent. If correct, a purpose-built chip can be 100x more efficient than a general GPU — which changes the economics of every AI product." },
+    why: "A focused bet that transformer architecture is permanent. If correct, a purpose-built chip can be 100x more efficient than a general GPU." },
   { name: "Hadrian", tag: "Manufacturing", url: "hadrian.io",
     what: "AI-powered precision manufacturing company producing complex metal parts for aerospace and defence — faster and cheaper than traditional machine shops.",
     why: "US defence manufacturing is a genuine bottleneck on national security. Hadrian is trying to fix it with software — automating the knowledge that currently lives in ageing machinists' heads." },
@@ -682,22 +607,55 @@ const COMPANIES = [
     why: "Without vector databases, every AI conversation starts from zero. They are the invisible infrastructure layer that makes useful AI applications possible at scale." },
 ];
 
-// ── Helpers ───────────────────────────────────────────────────────────────────
+// ── Helpers ────────────────────────────────────────────────────────────────────
 function toGBP(price, currency) {
   if (price == null) return null;
-  return currency === "GBp" ? price / 100 : price;
+  if (currency === 'GBp') return price / 100;
+  if (currency === 'USD') return price / GBPUSD;
+  return price;
+}
+
+function fmtGBP(val, decimals = 2) {
+  if (val == null) return '—';
+  return '£' + val.toLocaleString('en-GB', { minimumFractionDigits: decimals, maximumFractionDigits: decimals });
 }
 
 function fmtPrice(price, currency) {
-  if (price == null) return "—";
+  if (price == null) return '—';
   const p   = toGBP(price, currency);
-  const sym = (currency === "GBp" || currency === "GBP") ? "£" : "";
-  if (p > 10000) return sym + p.toLocaleString("en-GB", { maximumFractionDigits: 0 });
-  if (p > 10)    return sym + p.toLocaleString("en-GB", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+  const sym = (currency === 'GBp' || currency === 'GBP') ? '£' : '';
+  if (p > 10000) return sym + p.toLocaleString('en-GB', { maximumFractionDigits: 0 });
+  if (p > 10)    return sym + p.toLocaleString('en-GB', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
   return sym + p.toFixed(4);
 }
 
-// ── Data ──────────────────────────────────────────────────────────────────────
+// ── Count-up animation ─────────────────────────────────────────────────────────
+function countUp(el, target, prefix = '£', decimals = 2, ms = 750) {
+  if (target == null || isNaN(target)) { el.textContent = '—'; return; }
+  const start = performance.now();
+  const from  = target * 0.82;
+  function step(now) {
+    const p    = Math.min((now - start) / ms, 1);
+    const ease = 1 - Math.pow(1 - p, 3);
+    const val  = from + (target - from) * ease;
+    el.textContent = prefix + val.toLocaleString('en-GB', { minimumFractionDigits: decimals, maximumFractionDigits: decimals });
+    if (p < 1) requestAnimationFrame(step);
+  }
+  requestAnimationFrame(step);
+}
+
+// ── Page load bar ──────────────────────────────────────────────────────────────
+const pageBar = document.getElementById('page-bar');
+function setBar(pct) { pageBar.style.width = pct + '%'; }
+function doneBar() { pageBar.style.width = '100%'; setTimeout(() => { pageBar.style.opacity = '0'; }, 500); }
+
+// ── Section reveal (Intersection Observer) ─────────────────────────────────────
+const revealObserver = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); revealObserver.unobserve(e.target); } });
+}, { threshold: 0.05 });
+document.querySelectorAll('.section').forEach(s => revealObserver.observe(s));
+
+// ── Data ───────────────────────────────────────────────────────────────────────
 let _sd = null;
 async function getServerData() {
   if (_sd) return _sd;
@@ -706,49 +664,94 @@ async function getServerData() {
   return _sd;
 }
 
-// ── Weather ───────────────────────────────────────────────────────────────────
+// ── Weather ────────────────────────────────────────────────────────────────────
 const WMO = {
-  0:'Clear sky', 1:'Clear sky', 2:'Partly cloudy', 3:'Overcast',
-  45:'Fog', 48:'Fog',
-  51:'Light drizzle', 53:'Drizzle', 55:'Heavy drizzle',
-  61:'Light rain', 63:'Rain', 65:'Heavy rain',
-  71:'Light snow', 73:'Snow', 75:'Heavy snow',
-  80:'Showers', 81:'Heavy showers', 82:'Showers',
-  95:'Thunderstorm', 96:'Thunderstorm', 99:'Thunderstorm',
+  0:'Clear sky',1:'Clear sky',2:'Partly cloudy',3:'Overcast',
+  45:'Fog',48:'Fog',
+  51:'Light drizzle',53:'Drizzle',55:'Heavy drizzle',
+  61:'Light rain',63:'Rain',65:'Heavy rain',
+  71:'Light snow',73:'Snow',75:'Heavy snow',
+  80:'Showers',81:'Heavy showers',82:'Showers',
+  95:'Thunderstorm',96:'Thunderstorm',99:'Thunderstorm',
 };
+const UV_LABEL = (uv) => uv <= 2 ? 'Low' : uv <= 5 ? 'Moderate' : uv <= 7 ? 'High' : uv <= 10 ? 'Very high' : 'Extreme';
+
 async function fetchWeather() {
   try {
     const r = await fetch(
-      'https://api.open-meteo.com/v1/forecast?latitude=51.4214&longitude=-0.2062&current=temperature_2m,weather_code&timezone=Europe%2FLondon'
+      'https://api.open-meteo.com/v1/forecast?latitude=51.4214&longitude=-0.2062' +
+      '&current=temperature_2m,weather_code' +
+      '&daily=temperature_2m_max,uv_index_max' +
+      '&timezone=Europe%2FLondon'
     );
-    const d    = await r.json();
-    const temp = Math.round(d.current.temperature_2m);
-    const desc = WMO[d.current.weather_code] || '';
+    const d       = await r.json();
+    const temp    = Math.round(d.current.temperature_2m);
+    const peak    = Math.round(d.daily.temperature_2m_max[0]);
+    const uv      = Math.round(d.daily.uv_index_max[0]);
+    const desc    = WMO[d.current.weather_code] || '';
     document.getElementById('weather-line').textContent =
-      `Wimbledon · ${temp}°C · ${desc}`;
+      `Wimbledon · ${temp}°C now · peaks ${peak}°C · UV ${uv} (${UV_LABEL(uv)}) · ${desc}`;
   } catch (_) {}
 }
 
-// ── Sparkline (seeded per company) ────────────────────────────────────────────
+// ── Golf section ───────────────────────────────────────────────────────────────
+const GOLF_COURSES = [
+  { name: 'Wimbledon Common Golf Club', type: 'Public · SW19', slug: 'wimbledon-common-golf-club-51775' },
+  { name: 'Roehampton Golf Course',     type: 'Public · SW15', slug: 'roehampton-club-48543' },
+  { name: 'Richmond Park Golf Course',  type: 'Public · SW15', slug: 'richmond-park-golf-course-48536' },
+  { name: 'Surbiton Golf Club',         type: 'Members · KT5',  slug: null },
+  { name: 'Coombe Hill Golf Club',      type: 'Members · KT2',  slug: null },
+];
+
+function renderGolf() {
+  const today = new Date();
+  const weekends = [];
+  for (let i = 0; i < 21 && weekends.length < 4; i++) {
+    const d = new Date(today);
+    d.setDate(today.getDate() + i);
+    if (d.getDay() === 6 || d.getDay() === 0) weekends.push(d);
+  }
+
+  document.getElementById('golf-dates').innerHTML = weekends.map(d => {
+    const iso  = d.toISOString().split('T')[0];
+    const day  = d.toLocaleDateString('en-GB', { weekday: 'short' });
+    const date = d.toLocaleDateString('en-GB', { day: 'numeric', month: 'short' });
+    const url  = `https://www.golfnow.com/tee-times/search?searchTerm=Wimbledon%2C+London&date=${iso}`;
+    return `<a class="golf-date-btn" href="${url}" target="_blank" rel="noopener">
+  <span class="golf-date-day">${day}</span>
+  <span class="golf-date-date">${date}</span>
+</a>`;
+  }).join('');
+
+  document.getElementById('golf-courses').innerHTML = GOLF_COURSES.map(c => {
+    const href = c.slug
+      ? `https://www.golfnow.com/courses/${c.slug}/tee-times`
+      : '#';
+    const target = c.slug ? 'target="_blank" rel="noopener"' : '';
+    return `<a class="golf-course" href="${href}" ${target} style="${!c.slug ? 'opacity:0.55;pointer-events:none' : ''}">
+  <div class="gc-name">${c.name}</div>
+  <div class="gc-meta">${c.type}${c.slug ? ' · Book on GolfNow' : ' · Members only'}</div>
+</a>`;
+  }).join('');
+}
+
+// ── Sparkline ──────────────────────────────────────────────────────────────────
 function makeSparkline(seed) {
   const W = 148, H = 56, N = 24;
-  const pts = [];
-  let val = 30 + (seed % 25), r = seed;
+  const pts = []; let val = 30 + (seed % 25), r = seed;
   for (let i = 0; i < N; i++) {
-    r   = (r * 1664525 + 1013904223) & 0x7fffffff;
+    r = (r * 1664525 + 1013904223) & 0x7fffffff;
     val = Math.max(5, Math.min(95, val + (r / 0x7fffffff - 0.43) * 10));
     pts.push(val);
   }
   const minV = Math.min(...pts), maxV = Math.max(...pts), range = maxV - minV || 10;
-  const coords = pts.map((v, i) => {
-    const x = 2 + (i / (N - 1)) * (W - 4);
-    const y = H - 2 - ((v - minV) / range) * (H - 6);
-    return `${x.toFixed(1)} ${y.toFixed(1)}`;
-  });
-  return { d: "M " + coords.join(" L "), isUp: pts[N - 1] >= pts[0] };
+  const coords = pts.map((v, i) =>
+    `${(2 + (i / (N - 1)) * (W - 4)).toFixed(1)} ${(H - 2 - ((v - minV) / range) * (H - 6)).toFixed(1)}`
+  );
+  return { d: 'M ' + coords.join(' L '), isUp: pts[N - 1] >= pts[0] };
 }
 
-// ── Portfolio ─────────────────────────────────────────────────────────────────
+// ── Portfolio ──────────────────────────────────────────────────────────────────
 function renderPortfolio(portfolio) {
   let total = 0, daily = 0;
   const rows = [];
@@ -757,144 +760,165 @@ function renderPortfolio(portfolio) {
     const u   = UNITS[name] || 0;
     let val = null, chg = null;
     if (gbp && u) {
-      val    = gbp * u;
-      chg    = data.change || 0;
-      total += val;
-      daily += val * chg / 100;
+      val = gbp * u; chg = data.change || 0;
+      total += val; daily += val * chg / 100;
     }
     rows.push({ name, val, chg, price: gbp, units: u });
   }
 
-  document.getElementById('pc-total').textContent = total
-    ? "£" + total.toLocaleString("en-GB", { minimumFractionDigits: 2, maximumFractionDigits: 2 })
-    : "—";
+  countUp(document.getElementById('pc-total'), total);
 
   if (total) {
-    const sign = daily >= 0 ? "+" : "";
+    const sign = daily >= 0 ? '+' : '';
     const el   = document.getElementById('pc-chg');
-    el.textContent = `${sign}£${Math.abs(daily).toLocaleString("en-GB", { minimumFractionDigits: 2, maximumFractionDigits: 2 })} today`;
-    el.className   = "pc-total-chg " + (daily >= 0 ? "up" : "down");
+    el.textContent = `${sign}${fmtGBP(Math.abs(daily))} today`;
+    el.className   = 'pc-total-chg ' + (daily >= 0 ? 'up' : 'down');
   }
 
   document.getElementById('pc-holdings').innerHTML = rows.map(({ name, val, chg, price, units }) => {
-    const valStr   = val   ? "£" + val.toLocaleString("en-GB", { minimumFractionDigits: 2, maximumFractionDigits: 2 }) : "—";
-    const priceStr = price ? (price > 1 ? "£" + price.toFixed(2) : "£" + price.toFixed(4)) + " / unit" : "";
-    const chgStr   = chg != null ? (chg >= 0 ? "+" : "") + chg.toFixed(2) + "%" : "";
-    const cls      = chg != null ? (chg >= 0 ? "up" : "down") : "";
+    const priceStr = price ? (price > 1 ? fmtGBP(price) : '£' + price.toFixed(4)) + ' / unit' : '';
+    const chgStr   = chg != null ? (chg >= 0 ? '+' : '') + chg.toFixed(2) + '%' : '';
+    const cls      = chg != null ? (chg >= 0 ? 'up' : 'down') : '';
     return `<div class="pc-row">
   <div><div class="pc-name">${name}</div><div class="pc-sub">${units} units · ${priceStr}</div></div>
-  <span class="pc-val">${valStr}</span>
+  <span class="pc-val">${val ? fmtGBP(val) : '—'}</span>
   <span class="pc-chg ${cls}">${chgStr}</span>
 </div>`;
-  }).join("");
+  }).join('');
 }
 
-// ── Indices ───────────────────────────────────────────────────────────────────
+// ── Indices ────────────────────────────────────────────────────────────────────
 function renderIndices(prices) {
   document.getElementById('indices').innerHTML = INDEX_NAMES.map(n => {
     const d   = prices[n] || {};
-    const ps  = fmtPrice(d.price, d.currency);
-    const cls = (d.change || 0) >= 0 ? "up" : "down";
-    const chg = d.change != null ? (d.change >= 0 ? "+" : "") + d.change.toFixed(2) + "%" : "";
+    const chg = d.change != null ? (d.change >= 0 ? '+' : '') + d.change.toFixed(2) + '%' : '';
+    const cls = (d.change || 0) >= 0 ? 'up' : 'down';
     return `<div class="idx-cell">
   <span class="idx-name">${n}</span>
-  <span class="idx-price">${ps}</span>
+  <span class="idx-price">${fmtPrice(d.price, d.currency)}</span>
   <span class="idx-chg ${cls}">${chg}</span>
 </div>`;
-  }).join("");
+  }).join('');
 }
 
-// ── Movers ────────────────────────────────────────────────────────────────────
+// ── Movers ─────────────────────────────────────────────────────────────────────
 function renderMovers(prices) {
   const all = MOVER_NAMES
-    .map(n => ({ name: n, ...(prices[n] || { price: null, change: null, currency: "" }) }))
+    .map(n => ({ name: n, ...(prices[n] || { price: null, change: null, currency: '' }) }))
     .filter(m => m.price != null && m.change != null)
     .sort((a, b) => b.change - a.change);
 
   const gainers = all.filter(m => m.change >= 0).slice(0, 5);
   const losers  = all.filter(m => m.change < 0).slice(-5).reverse();
 
-  function row(m) {
+  function row(m, delay) {
     const p   = toGBP(m.price, m.currency);
-    const sym = (m.currency === "GBp" || m.currency === "GBP") ? "£" : "";
+    const sym = (m.currency === 'GBp' || m.currency === 'GBP') ? '£' : '';
     const ps  = sym + (p > 100
-      ? p.toLocaleString("en-GB", { maximumFractionDigits: 0 })
-      : p.toLocaleString("en-GB", { minimumFractionDigits: 2, maximumFractionDigits: 2 }));
-    const cls = m.change >= 0 ? "up" : "down";
-    const sign = m.change >= 0 ? "+" : "";
-    return `<div class="mover-row">
+      ? p.toLocaleString('en-GB', { maximumFractionDigits: 0 })
+      : p.toLocaleString('en-GB', { minimumFractionDigits: 2, maximumFractionDigits: 2 }));
+    const cls  = m.change >= 0 ? 'up' : 'down';
+    const sign = m.change >= 0 ? '+' : '';
+    return `<div class="mover-row" style="animation-delay:${delay}ms">
   <span class="m-name">${m.name}</span>
   <span class="m-price">${ps}</span>
   <span class="m-chg ${cls}">${sign}${m.change.toFixed(2)}%</span>
 </div>`;
   }
 
-  const noData = `<div class="mover-row"><span class="m-name" style="color:var(--ink-3)">No data</span></div>`;
-  document.getElementById('movers-up').innerHTML = gainers.length ? gainers.map(row).join("") : noData;
-  document.getElementById('movers-dn').innerHTML = losers.length  ? losers.map(row).join("")  : noData;
+  const empty = `<div class="mover-row"><span class="m-name" style="color:var(--ink-3)">No data</span></div>`;
+  document.getElementById('movers-up').innerHTML = gainers.length ? gainers.map((m, i) => row(m, i * 60)).join('') : empty;
+  document.getElementById('movers-dn').innerHTML = losers.length  ? losers.map((m, i) => row(m, i * 60)).join('') : empty;
 }
 
-// ── Ticker ────────────────────────────────────────────────────────────────────
+// ── Ticker ─────────────────────────────────────────────────────────────────────
 function buildTicker(prices) {
-  const all = [...INDEX_NAMES, ...MOVER_NAMES];
+  const all   = [...INDEX_NAMES, ...MOVER_NAMES];
   const items = all.map(n => {
     const d = prices[n];
     if (!d || d.price == null) return null;
     const p   = toGBP(d.price, d.currency);
-    const sym = (d.currency === "GBp" || d.currency === "GBP") ? "£" : "";
+    const sym = (d.currency === 'GBp' || d.currency === 'GBP') ? '£' : '';
     const ps  = sym + (p > 1000
-      ? p.toLocaleString("en-GB", { maximumFractionDigits: 0 })
-      : p.toLocaleString("en-GB", { minimumFractionDigits: 2, maximumFractionDigits: 2 }));
-    const cls  = (d.change || 0) >= 0 ? "up" : "down";
-    const chg  = d.change != null ? (d.change >= 0 ? "+" : "") + d.change.toFixed(2) + "%" : "";
+      ? p.toLocaleString('en-GB', { maximumFractionDigits: 0 })
+      : p.toLocaleString('en-GB', { minimumFractionDigits: 2, maximumFractionDigits: 2 }));
+    const cls = (d.change || 0) >= 0 ? 'up' : 'down';
+    const chg = d.change != null ? (d.change >= 0 ? '+' : '') + d.change.toFixed(2) + '%' : '';
     return `<span class="tick-item"><span class="t-name">${n}</span><span class="t-price">${ps}</span><span class="t-chg ${cls}">${chg}</span></span>`;
   }).filter(Boolean);
   if (!items.length) return;
-  const half = items.join("");
+  const half = items.join('');
   document.getElementById('ticker-track').innerHTML = half + half;
 }
 
-// ── Fixtures ──────────────────────────────────────────────────────────────────
-function renderFixtures(fixtures) {
-  if (!fixtures.length) {
-    document.getElementById('fixtures').innerHTML = '<p style="color:var(--ink-3);font-size:13px">Unavailable</p>';
-    return;
-  }
-  const badge = (code) => code
+// ── Fixtures ───────────────────────────────────────────────────────────────────
+let showAllFix = false;
+let allFixtures = [];
+
+function fixtureCard(f) {
+  const badge = code => code
     ? `<img class="fix-badge" src="https://resources.premierleague.com/premierleague/badges/50/t${code}.png" alt="" onerror="this.style.display='none'">`
     : '';
-  document.getElementById('fixtures').innerHTML = fixtures.map(f => `
-<div class="fixture${f.chelsea ? " chelsea" : ""}">
-  <div class="fix-meta">${f.gw ? `<span class="gw">GW${f.gw}</span>` : ""}<span class="fix-time">${f.time}</span></div>
+  const oddsHtml = f.odds
+    ? `<div class="fix-odds">
+  <div class="odds-btn"><span class="odds-lbl">Home</span><span class="odds-val">${f.odds.h?.toFixed(2) ?? '—'}</span></div>
+  <div class="odds-btn"><span class="odds-lbl">Draw</span><span class="odds-val">${f.odds.d?.toFixed(2) ?? '—'}</span></div>
+  <div class="odds-btn"><span class="odds-lbl">Away</span><span class="odds-val">${f.odds.a?.toFixed(2) ?? '—'}</span></div>
+</div>` : '';
+  return `<div class="fixture${f.chelsea ? ' chelsea' : ''}">
+  <div class="fix-meta">${f.gw ? `<span class="gw">GW${f.gw}</span>` : ''}<span class="fix-time">${f.time}</span></div>
   <div class="fix-matchup">
     <div class="fix-team">${badge(f.homeCode)}<span class="fix-name">${f.home}</span></div>
     <span class="fix-vs">vs</span>
     <div class="fix-team fix-team-r"><span class="fix-name">${f.away}</span>${badge(f.awayCode)}</div>
-  </div>
-</div>`).join("");
+  </div>${oddsHtml}
+</div>`;
 }
 
-// ── News ──────────────────────────────────────────────────────────────────────
+function renderFixtures(fixtures) {
+  if (!fixtures.length) {
+    document.getElementById('fixtures-main').innerHTML = '<p style="color:var(--ink-3);font-size:13px">Unavailable</p>';
+    return;
+  }
+  allFixtures = fixtures;
+  const main  = fixtures.slice(0, 3);
+  const extra = fixtures.slice(3);
+
+  document.getElementById('fixtures-main').innerHTML = main.map(fixtureCard).join('');
+
+  if (extra.length) {
+    document.getElementById('fixtures-extra').innerHTML = extra.map(fixtureCard).join('');
+    document.getElementById('fixtures-toggle-wrap').innerHTML =
+      `<button class="fix-toggle" id="fix-toggle-btn" onclick="toggleFixtures()">+${extra.length} more fixtures</button>`;
+  }
+}
+
+function toggleFixtures() {
+  showAllFix = !showAllFix;
+  const extraEl  = document.getElementById('fixtures-extra');
+  const btn      = document.getElementById('fix-toggle-btn');
+  extraEl.style.display = showAllFix ? 'grid' : 'none';
+  btn.textContent = showAllFix ? 'Show less' : `+${allFixtures.length - 3} more fixtures`;
+}
+
+// ── News ───────────────────────────────────────────────────────────────────────
 function renderNews(allNews) {
   document.getElementById('news').innerHTML = Object.entries(allNews).map(([name, items]) => {
     if (!items.length) return `<div class="news-col"><div class="news-col-title">${name}</div><p style="color:var(--ink-3);font-size:13px">Unavailable</p></div>`;
     const stories = items.map((item, i) => `
-<a class="story${i === 0 ? " lead" : ""}" href="${item.link}" target="_blank" rel="noopener">
-  <span class="s-n">${i + 1}</span>
-  <span class="s-t">${item.title}</span>
-</a>`).join("");
+<a class="story${i === 0 ? ' lead' : ''}" href="${item.link}" target="_blank" rel="noopener">
+  <span class="s-n">${i + 1}</span><span class="s-t">${item.title}</span>
+</a>`).join('');
     return `<div class="news-col"><div class="news-col-title">${name}</div>${stories}</div>`;
-  }).join("");
+  }).join('');
 }
 
-// ── Carousel ──────────────────────────────────────────────────────────────────
-const CAROUSEL_SIZE = 5;
-const CAROUSEL_MS   = 12000;
+// ── Carousel ───────────────────────────────────────────────────────────────────
+const CAROUSEL_SIZE = 5, CAROUSEL_MS = 12000;
 let cIdx = 0, cRafId = null, cRafTs = null, cCos = [];
 
 function initCarousel() {
-  const start  = new Date(new Date().getFullYear(), 0, 0);
-  const dayNum = Math.floor((Date.now() - start) / 86400000);
+  const dayNum = Math.floor((Date.now() - new Date(new Date().getFullYear(), 0, 0)) / 86400000);
   cCos = Array.from({ length: CAROUSEL_SIZE }, (_, i) => COMPANIES[(dayNum + i) % COMPANIES.length]);
   renderCarouselTabs(0);
   showSlide(0);
@@ -903,8 +927,8 @@ function initCarousel() {
 
 function renderCarouselTabs(active) {
   document.getElementById('carousel-tabs').innerHTML = cCos.map((c, i) =>
-    `<button class="ctab${i === active ? " active" : ""}" onclick="jumpCarousel(${i})">${c.name}</button>`
-  ).join("");
+    `<button class="ctab${i === active ? ' active' : ''}" onclick="jumpCarousel(${i})">${c.name}</button>`
+  ).join('');
 }
 
 function showSlide(idx) {
@@ -912,8 +936,7 @@ function showSlide(idx) {
   document.querySelectorAll('.ctab').forEach((b, i) => b.classList.toggle('active', i === idx));
   const c = cCos[idx];
   const { d, isUp } = makeSparkline(COMPANIES.indexOf(c));
-  const col  = isUp ? "#16a34a" : "#dc2626";
-  const lbl  = isUp ? "Momentum up" : "Volatile";
+  const col = isUp ? '#16a34a' : '#dc2626';
   document.getElementById('carousel-body').innerHTML = `<div>
   <div class="c-tag">${c.tag}</div>
   <div class="c-name">${c.name}</div>
@@ -924,7 +947,7 @@ function showSlide(idx) {
   <svg width="148" height="56" viewBox="0 0 148 56" fill="none">
     <path d="${d}" stroke="${col}" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
   </svg>
-  <span class="c-spark-lbl" style="color:${col}">${lbl}</span>
+  <span class="c-spark-lbl" style="color:${col}">${isUp ? 'Momentum up' : 'Volatile'}</span>
 </div>`;
 }
 
@@ -932,51 +955,64 @@ function startCycle() {
   cancelAnimationFrame(cRafId);
   cRafTs = null;
   const bar = document.getElementById('carousel-bar');
-  if (bar) bar.style.width = "0%";
+  if (bar) bar.style.width = '0%';
   function tick(ts) {
     if (!cRafTs) cRafTs = ts;
     const pct = Math.min((ts - cRafTs) / CAROUSEL_MS, 1);
-    if (bar) bar.style.width = (pct * 100).toFixed(1) + "%";
+    if (bar) bar.style.width = (pct * 100).toFixed(1) + '%';
     if (pct < 1) { cRafId = requestAnimationFrame(tick); }
     else { showSlide((cIdx + 1) % CAROUSEL_SIZE); startCycle(); }
   }
   cRafId = requestAnimationFrame(tick);
 }
 
-function jumpCarousel(idx) {
-  cancelAnimationFrame(cRafId);
-  showSlide(idx);
-  startCycle();
-}
+function jumpCarousel(idx) { cancelAnimationFrame(cRafId); showSlide(idx); startCycle(); }
 
-// ── Init ──────────────────────────────────────────────────────────────────────
+// ── Init ───────────────────────────────────────────────────────────────────────
 async function init() {
+  setBar(10);
+
   const now     = new Date();
   const hour    = now.getHours();
-  const greet   = hour < 12 ? "Good morning" : hour < 17 ? "Good afternoon" : "Good evening";
-  const dateStr = now.toLocaleDateString("en-GB", { weekday: "long", day: "numeric", month: "long", year: "numeric" });
-  const timeStr = now.toLocaleTimeString("en-GB", { hour: "2-digit", minute: "2-digit" });
+  const greet   = hour < 12 ? 'Good morning' : hour < 17 ? 'Good afternoon' : 'Good evening';
+  const dateStr = now.toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });
+  const timeStr = now.toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit' });
   document.getElementById('greeting').textContent = `${greet}, Jonno.`;
   document.getElementById('dateline').textContent = `${dateStr} · ${timeStr}`;
   document.getElementById('footer').textContent   = `briefing · ${dateStr} · ${timeStr}`;
 
   fetchWeather();
-  initCarousel();
+  setBar(20);
 
-  getServerData().then(data => {
-    const empty = { price: null, change: null, currency: "" };
-    renderPortfolio(Object.fromEntries(Object.keys(PORTFOLIO).map(n => [n, data.prices[n] || empty])));
-    renderIndices(data.prices || {});
-    renderMovers(data.prices || {});
-    buildTicker(data.prices || {});
-    renderNews(data.news || {});
-    renderFixtures((data.fixtures || []).map(f => {
-      const dt  = new Date(f.kickoff);
-      const day = dt.toLocaleDateString("en-GB", { weekday: "short", day: "numeric", month: "short" });
-      const tm  = dt.toLocaleTimeString("en-GB", { hour: "2-digit", minute: "2-digit" });
-      return { ...f, time: `${day} · ${tm}` };
-    }));
-  });
+  initCarousel();
+  renderGolf();
+  setBar(35);
+
+  // Make all sections visible with stagger
+  const sections = document.querySelectorAll('.section');
+  sections.forEach((s, i) => setTimeout(() => s.classList.add('visible'), i * 80));
+
+  const data  = await getServerData();
+  setBar(90);
+
+  // Update GBPUSD rate from live data
+  const fxData = data.prices?.['FX_GBPUSD'];
+  if (fxData?.price) GBPUSD = fxData.price;
+
+  const empty = { price: null, change: null, currency: '' };
+  renderPortfolio(Object.fromEntries(Object.keys(PORTFOLIO).map(n => [n, data.prices[n] || empty])));
+  renderIndices(data.prices || {});
+  renderMovers(data.prices || {});
+  buildTicker(data.prices || {});
+  renderNews(data.news || {});
+  renderFixtures((data.fixtures || []).map(f => {
+    const dt  = new Date(f.kickoff);
+    const day = dt.toLocaleDateString('en-GB', { weekday: 'short', day: 'numeric', month: 'short' });
+    const tm  = dt.toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit' });
+    return { ...f, time: `${day} · ${tm}` };
+  }));
+
+  doneBar();
 }
 
 init();

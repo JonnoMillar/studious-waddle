@@ -23,7 +23,6 @@ function parseRSS(xml, limit) {
   return items;
 }
 
-// Prestige score used to rank "must-watch" fixtures
 const TEAM_PRESTIGE = {
   'Arsenal': 10, 'Manchester City': 10, 'Liverpool': 10,
   'Chelsea': 9, 'Manchester United': 8, 'Tottenham Hotspur': 8,
@@ -34,21 +33,64 @@ const TEAM_PRESTIGE = {
   'Wolverhampton Wanderers': 3, 'Leicester City': 3,
 };
 
+// Fuzzy-match FPL team names to The Odds API team names
+function normaliseTeamName(name) {
+  return name.toLowerCase()
+    .replace('manchester city', 'man city')
+    .replace('manchester united', 'man united')
+    .replace('tottenham hotspur', 'tottenham')
+    .replace('wolverhampton wanderers', 'wolves')
+    .replace('brighton & hove albion', 'brighton')
+    .replace('nottingham forest', 'nottm forest')
+    .replace(/\s+/g, ' ').trim();
+}
+
+async function fetchOdds() {
+  const key = process.env.ODDS_API_KEY;
+  if (!key) return {};
+  try {
+    const r = await fetch(
+      `https://api.the-odds-api.com/v4/sports/soccer_epl/odds/?regions=uk&markets=h2h&oddsFormat=decimal&apiKey=${key}`,
+      { headers: { 'User-Agent': 'Mozilla/5.0' } }
+    );
+    const games = await r.json();
+    if (!Array.isArray(games)) return {};
+    const map = {};
+    for (const g of games) {
+      let hBest = null, dBest = null, aBest = null;
+      for (const bk of (g.bookmakers || [])) {
+        const mkt = (bk.markets || []).find(m => m.key === 'h2h');
+        if (!mkt) continue;
+        for (const o of (mkt.outcomes || [])) {
+          if (o.name === g.home_team && (hBest === null || o.price > hBest)) hBest = o.price;
+          if (o.name === g.away_team && (aBest === null || o.price > aBest)) aBest = o.price;
+          if (o.name === 'Draw'      && (dBest === null || o.price > dBest)) dBest = o.price;
+        }
+      }
+      const key1 = `${normaliseTeamName(g.home_team)}|${normaliseTeamName(g.away_team)}`;
+      map[key1] = { h: hBest, d: dBest, a: aBest };
+    }
+    return map;
+  } catch (_) { return {}; }
+}
+
 export default async function handler(req, res) {
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Cache-Control', 's-maxage=300, stale-while-revalidate=600');
 
   const TICKERS = {
-    // Portfolio holdings
+    // Portfolio
     'AIAG':      'AIAG.L',
     'All World': 'VWRP.L',
     'US 500':    'VUSA.L',
-    // Key indices
+    // FX
+    'FX_GBPUSD': 'GBPUSD=X',
+    // Indices
     'FTSE 100':  '^FTSE',
     'S&P 500':   '^GSPC',
     'Bitcoin':   'BTC-USD',
     'Gold':      'GC=F',
-    // Individual stock movers
+    // Movers
     'Nvidia':      'NVDA',
     'Apple':       'AAPL',
     'Tesla':       'TSLA',
@@ -63,28 +105,26 @@ export default async function handler(req, res) {
     'CrowdStrike': 'CRWD',
   };
 
-  const [priceEntries, newsEntries, fixtureResult] = await Promise.all([
+  const [priceEntries, newsEntries, fixtureResult, oddsMap] = await Promise.all([
 
-    // Prices
     Promise.all(Object.entries(TICKERS).map(async ([name, ticker]) => {
       try {
         const r = await fetch(
           `https://query1.finance.yahoo.com/v8/finance/chart/${encodeURIComponent(ticker)}?interval=1d&range=5d`,
           { headers: { 'User-Agent': 'Mozilla/5.0 (compatible; Googlebot/2.1)' } }
         );
-        const data = await r.json();
+        const data     = await r.json();
         const result   = data.chart.result[0];
         const currency = result.meta.currency || '';
         const closes   = result.indicators.quote[0].close.filter(c => c != null);
-        const last = closes[closes.length - 1];
-        const prev = closes[closes.length - 2];
+        const last     = closes[closes.length - 1];
+        const prev     = closes[closes.length - 2];
         return [name, { price: last, change: prev ? ((last - prev) / prev) * 100 : 0, currency }];
       } catch (_) {
         return [name, { price: null, change: null, currency: '' }];
       }
     })),
 
-    // News
     Promise.all(Object.entries(FEEDS).map(async ([name, [url, limit]]) => {
       try {
         const r   = await fetch(url, { headers: { 'User-Agent': 'Mozilla/5.0' } });
@@ -95,7 +135,6 @@ export default async function handler(req, res) {
       }
     })),
 
-    // Fixtures
     (async () => {
       try {
         const [bsRes, fixRes] = await Promise.all([
@@ -115,7 +154,6 @@ export default async function handler(req, res) {
 
         const chelseaFix = upcoming.find(f => chelseaId && (f.team_a === chelseaId || f.team_h === chelseaId));
 
-        // Rank all other fixtures by combined team prestige, then by date
         const otherFixes = upcoming
           .filter(f => f !== chelseaFix)
           .map(f => ({
@@ -125,7 +163,7 @@ export default async function handler(req, res) {
           .sort((a, b) => b.prestige - a.prestige || a.kickoff_time.localeCompare(b.kickoff_time))
           .slice(0, 9);
 
-        const toFix = f => ({
+        return [chelseaFix, ...otherFixes].filter(Boolean).map(f => ({
           home:      teams[f.team_h] || '?',
           away:      teams[f.team_a] || '?',
           homeCode:  teamCodes[f.team_h] || null,
@@ -133,17 +171,37 @@ export default async function handler(req, res) {
           kickoff:   f.kickoff_time,
           gw:        f.event,
           chelsea:   !!(chelseaId && (f.team_h === chelseaId || f.team_a === chelseaId)),
-        });
-
-        return [chelseaFix, ...otherFixes].filter(Boolean).map(toFix);
+          homeNorm:  normaliseTeamName(teams[f.team_h] || ''),
+          awayNorm:  normaliseTeamName(teams[f.team_a] || ''),
+        }));
       } catch (_) { return []; }
     })(),
 
+    fetchOdds(),
   ]);
 
+  const prices = Object.fromEntries(priceEntries);
+
+  // Attach odds to fixtures
+  const fixtures = fixtureResult.map(f => {
+    const key1 = `${f.homeNorm}|${f.awayNorm}`;
+    const key2 = `${f.awayNorm}|${f.homeNorm}`;
+    const odds  = oddsMap[key1] || oddsMap[key2] || null;
+    // if found via key2 (odds API has home/away swapped), flip h/a
+    const flipped = !oddsMap[key1] && !!oddsMap[key2];
+    return {
+      ...f,
+      odds: odds ? {
+        h: flipped ? odds.a : odds.h,
+        d: odds.d,
+        a: flipped ? odds.h : odds.a,
+      } : null,
+    };
+  });
+
   res.json({
-    prices:   Object.fromEntries(priceEntries),
+    prices,
     news:     Object.fromEntries(newsEntries),
-    fixtures: fixtureResult,
+    fixtures,
   });
 }
