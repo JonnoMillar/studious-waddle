@@ -32,12 +32,109 @@ INDICES = {
 }
 
 # (url, max_items)
+# BBC World for news, BBC Sport for PL (more reliable than Sky), Ars Technica for
+# in-depth tech, VentureBeat for focused AI industry coverage
 FEEDS = {
-    "World": ("http://feeds.bbci.co.uk/news/rss.xml", 5),
-    "Premier League": ("https://www.skysports.com/rss/12040", 5),
-    "Tech": ("https://techcrunch.com/feed/", 4),
-    "AI": ("https://www.theverge.com/rss/ai-artificial-intelligence/index.xml", 4),
+    "World": ("https://feeds.bbci.co.uk/news/world/rss.xml", 5),
+    "Premier League": ("https://feeds.bbci.co.uk/sport/football/premier-league/rss.xml", 5),
+    "Tech": ("https://feeds.arstechnica.com/arstechnica/index", 4),
+    "AI": ("https://venturebeat.com/category/ai/feed/", 4),
 }
+
+# ── Company to Watch ───────────────────────────────────────────────────────────
+# Rotates daily. Add/remove freely.
+
+COMPANIES = [
+    {"name": "Nvidia", "tag": "AI Infrastructure", "url": "nvidia.com",
+     "what": "Designs the GPUs that power virtually all AI training and inference worldwide.",
+     "why": "Controls the pick-and-shovel infrastructure of the AI boom — nearly every major AI model is trained on their chips."},
+    {"name": "Anthropic", "tag": "AI Safety", "url": "anthropic.com",
+     "what": "AI safety company building Claude, a family of large language models.",
+     "why": "One of the few labs treating AI safety as a core research priority, not an afterthought."},
+    {"name": "OpenAI", "tag": "AI", "url": "openai.com",
+     "what": "Builds GPT models and ChatGPT, the most widely used AI products in the world.",
+     "why": "Triggered the current AI wave — their moves set the pace for the entire industry."},
+    {"name": "Palantir", "tag": "Data & AI", "url": "palantir.com",
+     "what": "Builds data analytics and AI platforms for governments and large enterprises.",
+     "why": "Quietly powers decision-making at the CIA, NHS, US Army and dozens of major corporations."},
+    {"name": "Physical Intelligence", "tag": "Robotics", "url": "physicalintelligence.company",
+     "what": "Building foundation models for robots — essentially GPT but for physical tasks.",
+     "why": "If they succeed, a single AI model could control any robot body, transforming manufacturing and logistics."},
+    {"name": "Figure AI", "tag": "Robotics", "url": "figure.ai",
+     "what": "Developing humanoid robots designed to work alongside humans in warehouses and factories.",
+     "why": "Humanoid robots that can do physical labour could address ageing workforce problems across the developed world."},
+    {"name": "Waymo", "tag": "Autonomous Vehicles", "url": "waymo.com",
+     "what": "Google's self-driving car division, operating fully driverless robotaxis in US cities.",
+     "why": "The only company with a genuinely commercial robotaxi service — years ahead of competitors."},
+    {"name": "Commonwealth Fusion Systems", "tag": "Energy", "url": "cfs.energy",
+     "what": "Pursuing nuclear fusion using high-temperature superconducting magnets.",
+     "why": "Could unlock near-limitless clean energy — their magnet breakthrough in 2021 was a genuine milestone."},
+    {"name": "Helion Energy", "tag": "Energy", "url": "helionenergy.com",
+     "what": "Private fusion company backed by Sam Altman, targeting commercial electricity by the late 2020s.",
+     "why": "Has a contract to sell fusion power to Microsoft — the first fusion power purchase agreement ever signed."},
+    {"name": "Anduril Industries", "tag": "Defence Tech", "url": "anduril.com",
+     "what": "Silicon Valley defence company building autonomous systems, drones, and AI-powered surveillance.",
+     "why": "Reshaping how Western militaries buy technology — moving from slow contractors to fast software-first companies."},
+    {"name": "Mistral AI", "tag": "AI", "url": "mistral.ai",
+     "what": "French AI lab building powerful open-weight language models competitive with GPT-4.",
+     "why": "The leading European challenger in AI — important for anyone who thinks the US shouldn't have a monopoly on frontier AI."},
+    {"name": "Groq", "tag": "AI Infrastructure", "url": "groq.com",
+     "what": "Builds LPU inference chips that run AI models dramatically faster than GPUs.",
+     "why": "Speed matters enormously for AI products — Groq can run Llama models 10x faster than standard GPU setups."},
+    {"name": "Perplexity AI", "tag": "AI Search", "url": "perplexity.ai",
+     "what": "AI-powered search engine that answers questions with cited sources rather than links.",
+     "why": "The most credible threat to Google Search in two decades — growing extremely fast."},
+    {"name": "Recursion Pharmaceuticals", "tag": "Biotech", "url": "recursion.com",
+     "what": "Uses AI and robotics to run millions of biology experiments to discover new drugs.",
+     "why": "Drug discovery takes 12+ years and costs billions — Recursion is trying to compress that to years and millions."},
+    {"name": "Isomorphic Labs", "tag": "Biotech", "url": "isomorphiclabs.com",
+     "what": "DeepMind spinout applying AlphaFold-style AI to drug design and discovery.",
+     "why": "AlphaFold already solved protein folding — this is the next step: using that to actually build new medicines."},
+    {"name": "Neuralink", "tag": "Biotech", "url": "neuralink.com",
+     "what": "Developing implantable brain-computer interfaces that let paralysed patients control devices with thought.",
+     "why": "First human patient is already using it — the long-term implications for human cognition are hard to overstate."},
+    {"name": "xAI", "tag": "AI", "url": "x.ai",
+     "what": "Elon Musk's AI company building Grok, a large language model integrated with X (Twitter).",
+     "why": "Has access to real-time social data no other lab has — and Musk's resources mean they're scaling fast."},
+    {"name": "Scale AI", "tag": "AI Infrastructure", "url": "scale.com",
+     "what": "Provides the human-labelled training data that powers most major AI models.",
+     "why": "Behind the scenes of almost every major AI product — the quality of AI depends heavily on the quality of its data."},
+    {"name": "Cerebras Systems", "tag": "AI Infrastructure", "url": "cerebras.net",
+     "what": "Makes wafer-scale processors — single chips the size of a dinner plate — for AI training.",
+     "why": "Their chips can train models in hours that would take days on GPUs, targeting Nvidia's dominance."},
+    {"name": "Hugging Face", "tag": "AI", "url": "huggingface.co",
+     "what": "Open-source platform hosting tens of thousands of AI models, datasets, and tools.",
+     "why": "The Github of AI — if open-source AI wins over closed models, Hugging Face sits at the centre of it."},
+    {"name": "Stripe", "tag": "Fintech", "url": "stripe.com",
+     "what": "Payments infrastructure powering online transactions for millions of businesses worldwide.",
+     "why": "Processes hundreds of billions in payments annually — the hidden plumbing beneath most of the internet economy."},
+    {"name": "Joby Aviation", "tag": "Transport", "url": "jobyaviation.com",
+     "what": "Building electric air taxis for short urban and suburban flights.",
+     "why": "Has FAA certification progress ahead of any competitor — electric air travel in cities could be closer than it sounds."},
+    {"name": "Databricks", "tag": "AI Infrastructure", "url": "databricks.com",
+     "what": "Data and AI platform used by enterprises to build, train, and deploy AI on their own data.",
+     "why": "Every large company wants AI on their proprietary data — Databricks is the leading way to do that."},
+    {"name": "Weaviate", "tag": "AI Infrastructure", "url": "weaviate.io",
+     "what": "Open-source vector database that helps AI applications store and retrieve information by meaning.",
+     "why": "Vector databases are the memory layer of AI — without them, LLMs forget everything between conversations."},
+    {"name": "ElevenLabs", "tag": "AI", "url": "elevenlabs.io",
+     "what": "AI voice synthesis platform capable of cloning voices and generating ultra-realistic speech.",
+     "why": "Voice is the next major AI interface — and ElevenLabs is setting the quality bar for the entire industry."},
+    {"name": "Cohere", "tag": "AI", "url": "cohere.com",
+     "what": "Enterprise-focused AI company building LLMs for businesses that need data privacy and control.",
+     "why": "Many companies can't send data to OpenAI or Google — Cohere fills that gap for regulated industries."},
+    {"name": "Zipline", "tag": "Logistics", "url": "flyzipline.com",
+     "what": "Autonomous drone delivery company operating at national scale in Rwanda, Ghana, and the US.",
+     "why": "Already delivering blood and medicine by drone across entire countries — the logistics model actually works."},
+    {"name": "Apptronik", "tag": "Robotics", "url": "apptronik.com",
+     "what": "Building Apollo, a humanoid robot designed for logistics and manufacturing tasks.",
+     "why": "Backed by Google and partnered with NASA — one of the more credible humanoid robotics players."},
+]
+
+
+def get_company_of_day():
+    day = datetime.now().timetuple().tm_yday
+    return COMPANIES[day % len(COMPANIES)]
 
 # ── Data fetching ──────────────────────────────────────────────────────────────
 
@@ -153,6 +250,16 @@ def price_card(name, data, ticker="", units=None):
 </div>"""
 
 
+def company_card(company):
+    return f"""<div class="company-card">
+  <div class="company-tag">{company["tag"]}</div>
+  <div class="company-name">{company["name"]}</div>
+  <div class="company-what">{company["what"]}</div>
+  <div class="company-why">{company["why"]}</div>
+  <a class="company-link" href="https://{company["url"]}" target="_blank" rel="noopener">{company["url"]} →</a>
+</div>"""
+
+
 def news_col(title, items):
     if not items:
         return f"""<div class="news-col">
@@ -172,7 +279,7 @@ def news_col(title, items):
 </div>"""
 
 
-def build_html(portfolio, indices, news):
+def build_html(portfolio, indices, news, company):
     now = datetime.now()
     hour = now.hour
     greeting = "Good morning" if hour < 12 else ("Good afternoon" if hour < 17 else "Good evening")
@@ -291,6 +398,32 @@ body {{
 
 .empty {{ color: #334155; font-size: 13px; }}
 
+/* ── Company card ── */
+.company-card {{
+  background: #141b2d;
+  border: 1px solid #1e2d45;
+  border-left: 3px solid #3b82f6;
+  border-radius: 14px;
+  padding: 24px 28px;
+}}
+.company-tag {{
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #3b82f6;
+  background: rgba(59,130,246,0.1);
+  padding: 3px 10px;
+  border-radius: 20px;
+  margin-bottom: 12px;
+}}
+.company-name {{ font-size: 24px; font-weight: 700; color: #f8fafc; margin-bottom: 10px; }}
+.company-what {{ font-size: 14px; color: #cbd5e1; line-height: 1.6; margin-bottom: 8px; }}
+.company-why {{ font-size: 13.5px; color: #64748b; line-height: 1.6; margin-bottom: 16px; font-style: italic; }}
+.company-link {{ font-size: 13px; color: #3b82f6; text-decoration: none; }}
+.company-link:hover {{ color: #93c5fd; }}
+
 /* ── Footer ── */
 .footer {{
   margin-top: 48px;
@@ -319,6 +452,11 @@ body {{
 </div>
 
 <div class="section">
+  <div class="section-label">Company to Watch</div>
+  {company_card(company)}
+</div>
+
+<div class="section">
   <div class="section-label">Today's Briefing</div>
   <div class="news-grid">{news_cols}</div>
 </div>
@@ -340,7 +478,8 @@ def main():
     news = get_all_news(FEEDS)
 
     print("Building briefing...")
-    html = build_html(portfolio, indices, news)
+    company = get_company_of_day()
+    html = build_html(portfolio, indices, news, company)
 
     out = os.path.join(tempfile.gettempdir(), "daily_briefing.html")
     with open(out, "w", encoding="utf-8") as f:
