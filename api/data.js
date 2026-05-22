@@ -23,18 +23,44 @@ function parseRSS(xml, limit) {
   return items;
 }
 
+// Prestige score used to rank "must-watch" fixtures
+const TEAM_PRESTIGE = {
+  'Arsenal': 10, 'Manchester City': 10, 'Liverpool': 10,
+  'Chelsea': 9, 'Manchester United': 8, 'Tottenham Hotspur': 8,
+  'Newcastle United': 7, 'Aston Villa': 7,
+  'Brighton & Hove Albion': 5, 'West Ham United': 5,
+  'Fulham': 4, 'Brentford': 4, 'Nottingham Forest': 4,
+  'Everton': 3, 'Crystal Palace': 3,
+  'Wolverhampton Wanderers': 3, 'Leicester City': 3,
+};
+
 export default async function handler(req, res) {
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Cache-Control', 's-maxage=300, stale-while-revalidate=600');
 
   const TICKERS = {
+    // Portfolio holdings
     'AIAG':      'AIAG.L',
     'All World': 'VWRP.L',
     'US 500':    'VUSA.L',
+    // Key indices
     'FTSE 100':  '^FTSE',
     'S&P 500':   '^GSPC',
     'Bitcoin':   'BTC-USD',
     'Gold':      'GC=F',
+    // Individual stock movers
+    'Nvidia':      'NVDA',
+    'Apple':       'AAPL',
+    'Tesla':       'TSLA',
+    'Meta':        'META',
+    'Amazon':      'AMZN',
+    'Microsoft':   'MSFT',
+    'Alphabet':    'GOOGL',
+    'ARM':         'ARM',
+    'Palantir':    'PLTR',
+    'Broadcom':    'AVGO',
+    'AMD':         'AMD',
+    'CrowdStrike': 'CRWD',
   };
 
   const [priceEntries, newsEntries, fixtureResult] = await Promise.all([
@@ -80,27 +106,36 @@ export default async function handler(req, res) {
         const allFix    = await fixRes.json();
 
         const teams     = Object.fromEntries(bootstrap.teams.map(t => [t.id, t.name]));
+        const teamCodes = Object.fromEntries(bootstrap.teams.map(t => [t.id, t.code]));
         const chelseaId = bootstrap.teams.find(t => t.name.includes('Chelsea'))?.id;
-        const topNames  = new Set(['Arsenal','Manchester City','Liverpool','Manchester United',
-                                   'Chelsea','Tottenham Hotspur','Newcastle United','Aston Villa']);
-        const topIds    = new Set(bootstrap.teams.filter(t => topNames.has(t.name)).map(t => t.id));
 
         const upcoming = allFix
           .filter(f => !f.finished && f.kickoff_time)
           .sort((a, b) => a.kickoff_time.localeCompare(b.kickoff_time));
 
         const chelseaFix = upcoming.find(f => chelseaId && (f.team_a === chelseaId || f.team_h === chelseaId));
-        const topFixes   = upcoming
-          .filter(f => f !== chelseaFix && topIds.has(f.team_a) && topIds.has(f.team_h))
-          .slice(0, 3);
 
-        return [chelseaFix, ...topFixes].filter(Boolean).map(f => ({
-          home:    teams[f.team_h] || '?',
-          away:    teams[f.team_a] || '?',
-          kickoff: f.kickoff_time,
-          gw:      f.event,
-          chelsea: !!(chelseaId && (f.team_h === chelseaId || f.team_a === chelseaId)),
-        }));
+        // Rank all other fixtures by combined team prestige, then by date
+        const otherFixes = upcoming
+          .filter(f => f !== chelseaFix)
+          .map(f => ({
+            ...f,
+            prestige: (TEAM_PRESTIGE[teams[f.team_h]] || 2) + (TEAM_PRESTIGE[teams[f.team_a]] || 2),
+          }))
+          .sort((a, b) => b.prestige - a.prestige || a.kickoff_time.localeCompare(b.kickoff_time))
+          .slice(0, 9);
+
+        const toFix = f => ({
+          home:      teams[f.team_h] || '?',
+          away:      teams[f.team_a] || '?',
+          homeCode:  teamCodes[f.team_h] || null,
+          awayCode:  teamCodes[f.team_a] || null,
+          kickoff:   f.kickoff_time,
+          gw:        f.event,
+          chelsea:   !!(chelseaId && (f.team_h === chelseaId || f.team_a === chelseaId)),
+        });
+
+        return [chelseaFix, ...otherFixes].filter(Boolean).map(toFix);
       } catch (_) { return []; }
     })(),
 
