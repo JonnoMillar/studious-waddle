@@ -6,260 +6,477 @@
 <title>Daily Briefing</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --bg:        #07090f;
-  --card:      rgba(255,255,255,0.03);
-  --border:    rgba(255,255,255,0.07);
-  --border-h:  rgba(59,130,246,0.35);
-  --blue:      #3b82f6;
-  --blue-dim:  rgba(59,130,246,0.12);
-  --green:     #4ade80;
-  --red:       #f87171;
-  --text:      #f1f5f9;
-  --muted:     #475569;
-  --dimmer:    #1e293b;
+  --bg:      #ffffff;
+  --ink:     #0f0f0f;
+  --ink-2:   #374151;
+  --ink-3:   #6b7280;
+  --ink-4:   #e5e7eb;
+  --ink-5:   #f9fafb;
+  --accent:  #E8451A;
+  --green:   #16a34a;
+  --red:     #dc2626;
+  --f-disp:  'Playfair Display', Georgia, serif;
+  --f-mono:  'JetBrains Mono', 'Courier New', monospace;
+  --f-body:  'Plus Jakarta Sans', -apple-system, sans-serif;
 }
 
 html { scroll-behavior: smooth; }
-
 body {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: var(--f-body);
   background: var(--bg);
-  color: var(--text);
+  color: var(--ink);
   min-height: 100vh;
-  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
 }
 
-/* ── Animated background ─────────────────────────────────────────────────── */
-.bg {
-  position: fixed; inset: 0; z-index: 0; pointer-events: none; overflow: hidden;
-}
-.blob {
-  position: absolute; border-radius: 50%; filter: blur(90px); opacity: 0.5;
-}
-.blob-1 {
-  width: 700px; height: 700px;
-  background: radial-gradient(circle, rgba(59,130,246,0.07) 0%, transparent 70%);
-  top: -200px; left: -200px;
-  animation: drift1 28s ease-in-out infinite;
-}
-.blob-2 {
-  width: 600px; height: 600px;
-  background: radial-gradient(circle, rgba(139,92,246,0.05) 0%, transparent 70%);
-  bottom: -150px; right: -100px;
-  animation: drift2 35s ease-in-out infinite;
-}
-.blob-3 {
-  width: 400px; height: 400px;
-  background: radial-gradient(circle, rgba(16,185,129,0.04) 0%, transparent 70%);
-  top: 50%; left: 50%; transform: translate(-50%,-50%);
-  animation: drift3 22s ease-in-out infinite;
-}
-@keyframes drift1 {
-  0%,100% { transform: translate(0,0) scale(1); }
-  33%      { transform: translate(60px,-40px) scale(1.05); }
-  66%      { transform: translate(-30px,50px) scale(0.95); }
-}
-@keyframes drift2 {
-  0%,100% { transform: translate(0,0) scale(1); }
-  40%      { transform: translate(-50px,30px) scale(1.08); }
-  70%      { transform: translate(40px,-60px) scale(0.94); }
-}
-@keyframes drift3 {
-  0%,100% { transform: translate(-50%,-50%) scale(1); }
-  50%      { transform: translate(-50%,-50%) scale(1.2); }
-}
-
-/* ── Layout ──────────────────────────────────────────────────────────────── */
+/* ── Layout ──────────────────────────────────────────────────────── */
 .wrap {
-  position: relative; z-index: 1;
-  max-width: 1200px; margin: 0 auto;
-  padding: 48px 32px 80px;
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 52px 40px 80px;
 }
 
-/* ── Header ──────────────────────────────────────────────────────────────── */
+/* ── Header ──────────────────────────────────────────────────────── */
 .header {
-  display: flex; align-items: flex-start; justify-content: space-between;
-  margin-bottom: 56px;
-  opacity: 0; animation: fadeUp 0.7s ease 0.05s forwards;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-bottom: 36px;
+  border-bottom: 1px solid var(--ink-4);
+  margin-bottom: 48px;
 }
 .greeting {
-  font-size: 36px; font-weight: 800; letter-spacing: -1px;
-  background: linear-gradient(120deg, #f8fafc 30%, #94a3b8 100%);
-  -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+  font-family: var(--f-disp);
+  font-size: clamp(2rem, 4.5vw, 3rem);
+  font-weight: 900;
+  color: var(--ink);
+  letter-spacing: -0.02em;
+  line-height: 1.1;
 }
-.dateline { font-size: 13px; color: var(--muted); margin-top: 6px; letter-spacing: 0.01em; }
-
+.dateline {
+  font-family: var(--f-mono);
+  font-size: 11px;
+  color: var(--ink-3);
+  margin-top: 8px;
+  letter-spacing: 0.02em;
+}
 .live-badge {
-  display: flex; align-items: center; gap: 7px;
-  background: rgba(74,222,128,0.07); border: 1px solid rgba(74,222,128,0.2);
-  border-radius: 20px; padding: 5px 12px; font-size: 11px;
-  color: var(--green); font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase;
-  flex-shrink: 0; margin-top: 6px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-family: var(--f-mono);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+  flex-shrink: 0;
+  margin-top: 4px;
 }
 .live-dot {
-  width: 6px; height: 6px; border-radius: 50%; background: var(--green);
+  width: 7px; height: 7px;
+  border-radius: 50%;
+  background: var(--accent);
+  flex-shrink: 0;
   animation: livePulse 2s ease-in-out infinite;
 }
 @keyframes livePulse {
-  0%,100% { opacity: 1; box-shadow: 0 0 0 0 rgba(74,222,128,0.5); }
-  50%      { opacity: 0.7; box-shadow: 0 0 0 5px rgba(74,222,128,0); }
-}
-
-/* ── Sections ────────────────────────────────────────────────────────────── */
-.section { margin-top: 44px; opacity: 0; animation: fadeUp 0.7s ease forwards; }
-.section:nth-child(2) { animation-delay: 0.1s; }
-.section:nth-child(3) { animation-delay: 0.18s; }
-.section:nth-child(4) { animation-delay: 0.26s; }
-.section:nth-child(5) { animation-delay: 0.34s; }
-.section:nth-child(6) { animation-delay: 0.42s; }
-
-@keyframes fadeUp {
-  from { opacity: 0; transform: translateY(18px); }
-  to   { opacity: 1; transform: translateY(0); }
-}
-
-.section-label {
-  display: flex; align-items: center; gap: 10px;
-  font-size: 10px; font-weight: 700; letter-spacing: 0.14em;
-  text-transform: uppercase; color: var(--blue); margin-bottom: 16px;
-}
-.section-label::before {
-  content: ''; display: block; width: 18px; height: 2px;
-  background: var(--blue); border-radius: 1px; flex-shrink: 0;
-}
-
-/* ── Price cards ─────────────────────────────────────────────────────────── */
-.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(155px, 1fr)); gap: 12px; }
-
-.card {
-  background: var(--card);
-  border: 1px solid var(--border);
-  border-radius: 16px; padding: 20px 22px;
-  backdrop-filter: blur(12px);
-  transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
-  cursor: default;
-}
-.card:hover {
-  border-color: var(--border-h);
-  box-shadow: 0 0 28px rgba(59,130,246,0.08), 0 4px 20px rgba(0,0,0,0.3);
-  transform: translateY(-2px);
-}
-.label { font-size: 11px; color: var(--muted); font-weight: 500; margin-bottom: 10px; letter-spacing: 0.02em; }
-.value { font-size: 24px; font-weight: 700; color: var(--text); font-variant-numeric: tabular-nums; line-height: 1; }
-.holding { font-size: 12px; color: #334155; margin-top: 6px; font-variant-numeric: tabular-nums; }
-.change { font-size: 12px; font-weight: 600; margin-top: 7px; }
-.up { color: var(--green); } .down { color: var(--red); }
-
-.total { font-size: 13px; color: var(--muted); margin-top: 16px; }
-.total-val { color: var(--text); font-weight: 700; font-size: 20px; margin-left: 8px; }
-.total-daily { font-size: 14px; font-weight: 600; margin-left: 10px; }
-
-/* ── Fixtures ────────────────────────────────────────────────────────────── */
-.fixtures-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(215px, 1fr)); gap: 10px; margin-top: 16px; }
-.fixture {
-  background: var(--card); border: 1px solid var(--border);
-  border-radius: 14px; padding: 16px 20px; backdrop-filter: blur(12px);
-  transition: border-color 0.2s, transform 0.2s;
-}
-.fixture:hover { border-color: var(--border-h); transform: translateY(-1px); }
-.fixture.chelsea {
-  border-color: rgba(29,78,216,0.5);
-  background: rgba(29,78,216,0.06);
-  box-shadow: 0 0 20px rgba(29,78,216,0.08);
-}
-.fix-meta { display: flex; gap: 8px; align-items: center; margin-bottom: 8px; }
-.gw {
-  font-size: 9px; font-weight: 700; color: var(--blue); letter-spacing: 0.08em;
-  background: var(--blue-dim); padding: 2px 8px; border-radius: 20px; text-transform: uppercase;
-}
-.fix-time { font-size: 11px; color: var(--muted); }
-.fix-teams { font-size: 13.5px; color: #cbd5e1; font-weight: 600; }
-.fix-teams em { font-style: normal; color: var(--muted); margin: 0 6px; font-size: 11px; font-weight: 400; }
-
-/* ── Company card ────────────────────────────────────────────────────────── */
-.company-card {
-  background: var(--card);
-  border: 1px solid var(--border);
-  border-left: 3px solid var(--blue);
-  border-radius: 16px; padding: 28px 32px;
-  backdrop-filter: blur(12px);
-  position: relative; overflow: hidden;
-}
-.company-card::before {
-  content: '';
-  position: absolute; top: 0; left: 0; right: 0; height: 1px;
-  background: linear-gradient(90deg, var(--blue) 0%, transparent 60%);
-  opacity: 0.6;
-}
-.company-tag {
-  display: inline-block; font-size: 9px; font-weight: 700; letter-spacing: 0.12em;
-  text-transform: uppercase; color: var(--blue); background: var(--blue-dim);
-  padding: 4px 11px; border-radius: 20px; margin-bottom: 14px;
-}
-.company-name { font-size: 26px; font-weight: 800; color: #f8fafc; margin-bottom: 12px; letter-spacing: -0.5px; }
-.company-what { font-size: 14px; color: #cbd5e1; line-height: 1.65; margin-bottom: 10px; }
-.company-why { font-size: 13px; color: var(--muted); line-height: 1.65; margin-bottom: 20px; font-style: italic; border-left: 2px solid var(--dimmer); padding-left: 12px; }
-.company-footer { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
-.company-link { font-size: 13px; color: var(--blue); text-decoration: none; transition: color 0.15s; }
-.company-link:hover { color: #93c5fd; }
-.company-next {
-  background: none; border: 1px solid var(--border); color: var(--muted);
-  font-family: inherit; font-size: 11px; font-weight: 500;
-  padding: 6px 14px; border-radius: 20px; cursor: pointer;
-  transition: border-color 0.15s, color 0.15s;
-}
-.company-next:hover { border-color: var(--border-h); color: #94a3b8; }
-
-/* ── News ────────────────────────────────────────────────────────────────── */
-.news-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(245px, 1fr)); gap: 14px; margin-top: 16px; }
-.news-col {
-  background: var(--card); border: 1px solid var(--border);
-  border-radius: 16px; padding: 24px; backdrop-filter: blur(12px);
-}
-.col-title {
-  font-size: 10px; font-weight: 700; letter-spacing: 0.12em;
-  text-transform: uppercase; color: var(--blue); margin-bottom: 18px;
-}
-.story {
-  display: block; padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,0.04);
-  text-decoration: none; color: #64748b; font-size: 13px;
-  line-height: 1.5; transition: color 0.15s;
-}
-.story:last-child { border-bottom: none; padding-bottom: 0; }
-.story:first-child { padding-top: 0; }
-.story:hover { color: #cbd5e1; }
-.empty { color: #1e293b; font-size: 13px; }
-
-/* ── Skeleton ────────────────────────────────────────────────────────────── */
-.skeleton { background: rgba(255,255,255,0.04); border-radius: 6px; animation: shimmer 1.8s ease-in-out infinite; }
-.skel-card { height: 95px; border-radius: 16px; }
-@keyframes shimmer {
   0%,100% { opacity: 1; }
   50%      { opacity: 0.35; }
 }
 
-/* ── Footer ──────────────────────────────────────────────────────────────── */
-.footer { margin-top: 60px; font-size: 11px; color: #1e293b; text-align: center; letter-spacing: 0.05em; }
+/* ── Section labels ──────────────────────────────────────────────── */
+.section-label {
+  font-family: var(--f-mono);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+  margin-bottom: 20px;
+}
 
-@media (max-width: 600px) {
-  .wrap { padding: 28px 18px 50px; }
-  .greeting { font-size: 26px; }
-  .header { flex-direction: column; gap: 16px; }
+/* ── Portfolio hero ──────────────────────────────────────────────── */
+.portfolio-hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 56px;
+  align-items: start;
+  padding-bottom: 48px;
+  border-bottom: 1px solid var(--ink-4);
+}
+.hero-label {
+  font-family: var(--f-mono);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+  margin-bottom: 14px;
+}
+.hero-number {
+  font-family: var(--f-disp);
+  font-weight: 900;
+  font-size: clamp(3.2rem, 7vw, 5.5rem);
+  color: var(--ink);
+  line-height: 1;
+  letter-spacing: -0.03em;
+}
+.hero-change {
+  font-family: var(--f-mono);
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 14px;
+}
+.hero-change.up   { color: var(--green); }
+.hero-change.down { color: var(--red); }
+
+.holdings-label {
+  font-family: var(--f-mono);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+  margin-bottom: 6px;
+}
+.holding-row {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  gap: 20px;
+  align-items: center;
+  padding: 15px 0;
+  border-bottom: 1px solid var(--ink-4);
+}
+.holding-row:last-child { border-bottom: none; }
+.holding-name {
+  font-family: var(--f-body);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--ink);
+}
+.holding-value {
+  font-family: var(--f-mono);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--ink);
+  text-align: right;
+}
+.holding-chg {
+  font-family: var(--f-mono);
+  font-size: 12px;
+  min-width: 68px;
+  text-align: right;
+}
+.holding-chg.up   { color: var(--green); }
+.holding-chg.down { color: var(--red); }
+
+/* ── Ticker bar ──────────────────────────────────────────────────── */
+.ticker-outer {
+  background: var(--ink);
+  margin: 48px -40px;
+  padding: 11px 0;
+  overflow: hidden;
+  position: relative;
+}
+.ticker-outer::before,
+.ticker-outer::after {
+  content: '';
+  position: absolute;
+  top: 0; bottom: 0;
+  width: 64px;
+  z-index: 2;
+  pointer-events: none;
+}
+.ticker-outer::before { left:  0; background: linear-gradient(to right, var(--ink), transparent); }
+.ticker-outer::after  { right: 0; background: linear-gradient(to left,  var(--ink), transparent); }
+.ticker-track {
+  display: flex;
+  white-space: nowrap;
+  animation: tickerMove 35s linear infinite;
+}
+.ticker-track:hover { animation-play-state: paused; }
+@keyframes tickerMove {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+.tick-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 0 28px;
+  border-right: 1px solid rgba(255,255,255,0.07);
+}
+.tick-name  { font-family: var(--f-mono); font-size: 10px; color: rgba(255,255,255,0.35); letter-spacing: 0.1em; text-transform: uppercase; }
+.tick-price { font-family: var(--f-mono); font-size: 13px; font-weight: 500; color: #fff; }
+.tick-chg   { font-family: var(--f-mono); font-size: 11px; }
+.tick-chg.up   { color: #4ade80; }
+.tick-chg.down { color: #f87171; }
+
+/* ── Markets grid ────────────────────────────────────────────────── */
+.markets-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(155px, 1fr));
+  gap: 1px;
+  background: var(--ink-4);
+  border: 1px solid var(--ink-4);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.market-cell {
+  background: var(--bg);
+  padding: 20px 22px;
+}
+.market-name {
+  font-family: var(--f-mono);
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+  margin-bottom: 9px;
+}
+.market-price {
+  font-family: var(--f-mono);
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--ink);
+  line-height: 1;
+}
+.market-chg {
+  font-family: var(--f-mono);
+  font-size: 11px;
+  margin-top: 6px;
+}
+.market-chg.up   { color: var(--green); }
+.market-chg.down { color: var(--red); }
+
+/* ── Sections ────────────────────────────────────────────────────── */
+.section { margin-top: 48px; }
+
+/* ── Company carousel ────────────────────────────────────────────── */
+.carousel {
+  border: 1px solid var(--ink-4);
+  border-left: 3px solid var(--accent);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.carousel-tabs {
+  display: flex;
+  border-bottom: 1px solid var(--ink-4);
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.carousel-tabs::-webkit-scrollbar { display: none; }
+.ctab {
+  flex: 1;
+  min-width: 0;
+  padding: 11px 16px;
+  background: var(--ink-5);
+  border: none;
+  border-right: 1px solid var(--ink-4);
+  cursor: pointer;
+  font-family: var(--f-mono);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  color: var(--ink-3);
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: background 0.15s, color 0.15s;
+}
+.ctab:last-child { border-right: none; }
+.ctab:hover  { background: var(--bg); color: var(--ink-2); }
+.ctab.active { background: var(--bg); color: var(--ink); font-weight: 500; }
+.carousel-body {
+  padding: 28px 32px;
+  display: grid;
+  grid-template-columns: 1fr 148px;
+  gap: 32px;
+  align-items: start;
+  min-height: 148px;
+}
+.c-tag {
+  display: inline-block;
+  font-family: var(--f-mono);
+  font-size: 9px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+  background: rgba(232,69,26,0.07);
+  padding: 3px 10px;
+  border-radius: 3px;
+  margin-bottom: 10px;
+}
+.c-name {
+  font-family: var(--f-disp);
+  font-size: 26px;
+  font-weight: 900;
+  color: var(--ink);
+  line-height: 1.15;
+  margin-bottom: 10px;
+  letter-spacing: -0.02em;
+}
+.c-desc {
+  font-family: var(--f-body);
+  font-size: 14px;
+  color: var(--ink-2);
+  line-height: 1.6;
+  margin-bottom: 14px;
+}
+.c-link {
+  font-family: var(--f-mono);
+  font-size: 12px;
+  color: var(--ink-3);
+  text-decoration: none;
+  transition: color 0.12s;
+}
+.c-link:hover { color: var(--ink); }
+.c-sparkline-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+  padding-top: 4px;
+}
+.c-sparkline { width: 148px; height: 56px; display: block; }
+.c-spark-label {
+  font-family: var(--f-mono);
+  font-size: 10px;
+  letter-spacing: 0.06em;
+}
+.carousel-progress { height: 3px; background: var(--ink-4); }
+.carousel-bar      { height: 3px; width: 0; background: var(--accent); }
+
+/* ── Fixtures ────────────────────────────────────────────────────── */
+.fixtures-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 12px;
+}
+.fixture {
+  border: 1px solid var(--ink-4);
+  border-radius: 8px;
+  padding: 18px 20px;
+  transition: border-color 0.15s;
+}
+.fixture:hover { border-color: #9ca3af; }
+.fixture.chelsea { border-left: 3px solid var(--accent); }
+.fix-meta {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.gw {
+  font-family: var(--f-mono);
+  font-size: 9px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+  background: var(--ink-5);
+  padding: 2px 7px;
+  border-radius: 3px;
+}
+.fix-time {
+  font-family: var(--f-mono);
+  font-size: 11px;
+  color: var(--ink-3);
+}
+.fix-teams {
+  font-family: var(--f-body);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--ink);
+}
+.fix-teams em {
+  font-style: normal;
+  color: var(--ink-3);
+  font-weight: 400;
+  margin: 0 5px;
+  font-size: 11px;
+}
+
+/* ── News ────────────────────────────────────────────────────────── */
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 0;
+  background: var(--ink-4);
+  border: 1px solid var(--ink-4);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.news-col {
+  background: var(--bg);
+  padding: 24px 26px;
+  border-right: 1px solid var(--ink-4);
+}
+.news-col:last-child { border-right: none; }
+.news-col-title {
+  font-family: var(--f-mono);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+  margin-bottom: 14px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--ink-4);
+}
+.story {
+  display: block;
+  padding: 9px 0;
+  border-bottom: 1px solid var(--ink-4);
+  text-decoration: none;
+  color: var(--ink-2);
+  font-family: var(--f-body);
+  font-size: 13px;
+  line-height: 1.5;
+  transition: color 0.12s;
+}
+.story:last-child  { border-bottom: none; padding-bottom: 0; }
+.story:first-child { padding-top: 0; }
+.story:hover { color: var(--ink); }
+
+/* ── Skeleton ────────────────────────────────────────────────────── */
+.skeleton { background: var(--ink-4); border-radius: 6px; animation: shimmer 1.6s ease-in-out infinite; }
+.skel-row { height: 54px; border-radius: 0; margin-bottom: 1px; }
+@keyframes shimmer { 0%,100% { opacity: 1; } 50% { opacity: 0.45; } }
+
+/* ── Footer ──────────────────────────────────────────────────────── */
+.footer {
+  margin-top: 56px;
+  padding-top: 20px;
+  border-top: 1px solid var(--ink-4);
+  font-family: var(--f-mono);
+  font-size: 10px;
+  color: var(--ink-3);
+  letter-spacing: 0.08em;
+}
+
+/* ── Responsive ──────────────────────────────────────────────────── */
+@media (max-width: 680px) {
+  .wrap { padding: 32px 20px 60px; }
+  .ticker-outer { margin: 40px -20px; }
+  .greeting { font-size: 2rem; }
+  .portfolio-hero { grid-template-columns: 1fr; gap: 32px; }
+  .hero-number { font-size: 3.2rem; }
+  .carousel-body { grid-template-columns: 1fr; }
+  .c-sparkline-wrap { display: none; }
+  .header { flex-direction: column; gap: 12px; }
 }
 </style>
 </head>
 <body>
-
-<div class="bg">
-  <div class="blob blob-1"></div>
-  <div class="blob blob-2"></div>
-  <div class="blob blob-3"></div>
-</div>
 
 <div class="wrap">
 
@@ -271,25 +488,54 @@ body {
   <div class="live-badge"><span class="live-dot"></span>Live</div>
 </div>
 
-<div class="section">
-  <div class="section-label">Your Portfolio</div>
-  <div class="cards" id="portfolio"><div class="skeleton skel-card"></div><div class="skeleton skel-card"></div><div class="skeleton skel-card"></div></div>
-  <div id="portfolio-total"></div>
+<div class="portfolio-hero">
+  <div>
+    <div class="hero-label">Portfolio Value</div>
+    <div class="hero-number" id="hero-number">—</div>
+    <div class="hero-change" id="hero-change"></div>
+  </div>
+  <div>
+    <div class="holdings-label">Holdings</div>
+    <div id="holdings-grid">
+      <div class="skeleton skel-row"></div>
+      <div class="skeleton skel-row"></div>
+      <div class="skeleton skel-row"></div>
+    </div>
+  </div>
+</div>
+
+<div class="ticker-outer">
+  <div class="ticker-track" id="ticker-track">
+    <span class="tick-item"><span class="tick-name">Loading</span><span class="tick-price">—</span></span>
+  </div>
 </div>
 
 <div class="section">
   <div class="section-label">Markets</div>
-  <div class="cards" id="markets"><div class="skeleton skel-card"></div><div class="skeleton skel-card"></div><div class="skeleton skel-card"></div><div class="skeleton skel-card"></div></div>
-</div>
-
-<div class="section">
-  <div class="section-label">Upcoming Fixtures</div>
-  <div class="fixtures-grid" id="fixtures"><div class="skeleton skel-card"></div><div class="skeleton skel-card"></div><div class="skeleton skel-card"></div></div>
+  <div class="markets-grid" id="markets">
+    <div class="market-cell skeleton" style="height:80px"></div>
+    <div class="market-cell skeleton" style="height:80px"></div>
+    <div class="market-cell skeleton" style="height:80px"></div>
+    <div class="market-cell skeleton" style="height:80px"></div>
+  </div>
 </div>
 
 <div class="section">
   <div class="section-label">Company to Watch</div>
-  <div id="company"></div>
+  <div class="carousel">
+    <div class="carousel-tabs" id="carousel-tabs"></div>
+    <div class="carousel-body" id="carousel-body"></div>
+    <div class="carousel-progress"><div class="carousel-bar" id="carousel-bar"></div></div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-label">Upcoming Fixtures</div>
+  <div class="fixtures-grid" id="fixtures">
+    <div class="fixture skeleton" style="height:76px"></div>
+    <div class="fixture skeleton" style="height:76px"></div>
+    <div class="fixture skeleton" style="height:76px"></div>
+  </div>
 </div>
 
 <div class="section">
@@ -299,11 +545,10 @@ body {
 
 <div class="footer" id="footer"></div>
 
-</div><!-- /.wrap -->
+</div>
 
 <script>
 // ── Config ────────────────────────────────────────────────────────────────────
-
 const PORTFOLIO = { "AIAG": "AIAG.L", "All World": "VWRP.L", "US 500": "VUSA.L" };
 const UNITS     = { "AIAG": 74, "All World": 45, "US 500": 35.99 };
 const INDICES   = { "FTSE 100": "^FTSE", "S&P 500": "^GSPC", "Bitcoin": "BTC-USD", "Gold": "GC=F" };
@@ -452,10 +697,7 @@ const COMPANIES = [
     why: "Without vector databases, every AI conversation starts from zero. They are the invisible infrastructure layer that makes useful AI applications possible at scale." },
 ];
 
-let companyOffset = 0;
-
 // ── Helpers ───────────────────────────────────────────────────────────────────
-
 function toGBP(price, currency) {
   if (price == null) return null;
   return currency === "GBp" ? price / 100 : price;
@@ -463,82 +705,205 @@ function toGBP(price, currency) {
 
 function fmtPrice(price, currency) {
   if (price == null) return "—";
-  const p = toGBP(price, currency);
-  if (p > 10000) return p.toLocaleString("en-GB", { maximumFractionDigits: 0 });
-  if (p > 10)    return "£" + p.toLocaleString("en-GB", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
-  return "£" + p.toFixed(4);
-}
-
-function fmtChange(change) {
-  if (change == null) return "";
-  const cls   = change >= 0 ? "up" : "down";
-  const arrow = change >= 0 ? "▲" : "▼";
-  const sign  = change >= 0 ? "+" : "";
-  return `<div class="change ${cls}">${arrow} ${sign}${change.toFixed(2)}%</div>`;
-}
-
-function getCompany() {
-  const start  = new Date(new Date().getFullYear(), 0, 0);
-  const dayNum = Math.floor((Date.now() - start) / 86400000);
-  return COMPANIES[(dayNum + companyOffset) % COMPANIES.length];
+  const p   = toGBP(price, currency);
+  const sym = (currency === "GBp" || currency === "GBP") ? "£" : "";
+  if (p > 10000) return sym + p.toLocaleString("en-GB", { maximumFractionDigits: 0 });
+  if (p > 10)    return sym + p.toLocaleString("en-GB", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+  return sym + p.toFixed(4);
 }
 
 // ── Data fetching ─────────────────────────────────────────────────────────────
-
-// Prices + fixtures come from the Vercel serverless function (no CORS issues)
 let _serverData = null;
 async function getServerData() {
   if (_serverData) return _serverData;
   try {
-    const res = await fetch('/api/data');
+    const res  = await fetch('/api/data');
     _serverData = await res.json();
   } catch (_) {
-    _serverData = { prices: {}, fixtures: [] };
+    _serverData = { prices: {}, news: {}, fixtures: [] };
   }
   return _serverData;
 }
 
-
-// ── Rendering ─────────────────────────────────────────────────────────────────
-
-function priceCard(name, data, units) {
-  const { price, change, currency } = data;
-  const gbp = toGBP(price, currency);
-  const holdingHtml = (units && gbp) ? `<div class="holding">£${(units * gbp).toLocaleString("en-GB", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</div>` : "";
-  return `<div class="card">
-  <div class="label">${name}</div>
-  <div class="value">${fmtPrice(price, currency)}</div>
-  ${holdingHtml}
-  ${fmtChange(change)}
-</div>`;
+// ── Sparkline generator (seeded by company index) ─────────────────────────────
+function makeSparkline(seed) {
+  const W = 148, H = 56, N = 24;
+  const pts = [];
+  let val = 30 + (seed % 25);
+  let r   = seed;
+  for (let i = 0; i < N; i++) {
+    r   = (r * 1664525 + 1013904223) & 0x7fffffff;
+    val = Math.max(5, Math.min(95, val + (r / 0x7fffffff - 0.43) * 10));
+    pts.push(val);
+  }
+  const minV = Math.min(...pts), maxV = Math.max(...pts);
+  const range = maxV - minV || 10;
+  const coords = pts.map((v, i) => {
+    const x = 2 + (i / (N - 1)) * (W - 4);
+    const y = H - 2 - ((v - minV) / range) * (H - 6);
+    return `${x.toFixed(1)} ${y.toFixed(1)}`;
+  });
+  const isUp = pts[N - 1] >= pts[0];
+  const d    = "M " + coords.join(" L ");
+  return { d, isUp };
 }
 
+// ── Portfolio rendering ───────────────────────────────────────────────────────
 function renderPortfolio(portfolio) {
-  document.getElementById("portfolio").innerHTML =
-    Object.entries(portfolio).map(([n, d]) => priceCard(n, d, UNITS[n])).join("");
-
   let total = 0, daily = 0;
+  const rows = [];
+
   for (const [name, data] of Object.entries(portfolio)) {
     const gbp = toGBP(data.price, data.currency);
     const u   = UNITS[name] || 0;
-    if (gbp && u) { const val = gbp * u; total += val; daily += val * (data.change || 0) / 100; }
+    let val   = null, chg = null;
+    if (gbp && u) {
+      val    = gbp * u;
+      chg    = data.change || 0;
+      total += val;
+      daily += val * chg / 100;
+    }
+    rows.push({ name, val, chg });
   }
+
+  const heroEl = document.getElementById("hero-number");
+  const chgEl  = document.getElementById("hero-change");
+
+  heroEl.textContent = total
+    ? "£" + total.toLocaleString("en-GB", { minimumFractionDigits: 2, maximumFractionDigits: 2 })
+    : "—";
+
   if (total) {
-    const color = daily >= 0 ? "#22c55e" : "#ef4444";
-    const sign  = daily >= 0 ? "+" : "";
-    document.getElementById("portfolio-total").innerHTML =
-      `<div class="total">Total <span class="total-val">£${total.toLocaleString("en-GB", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</span>` +
-      `<span class="total-daily" style="color:${color}">${sign}£${Math.abs(daily).toLocaleString("en-GB", { minimumFractionDigits: 2, maximumFractionDigits: 2 })} today</span></div>`;
+    const sign = daily >= 0 ? "+" : "";
+    chgEl.textContent  = `${sign}£${Math.abs(daily).toLocaleString("en-GB", { minimumFractionDigits: 2, maximumFractionDigits: 2 })} today`;
+    chgEl.className    = "hero-change " + (daily >= 0 ? "up" : "down");
   }
+
+  document.getElementById("holdings-grid").innerHTML = rows.map(({ name, val, chg }) => {
+    const valStr = val ? "£" + val.toLocaleString("en-GB", { minimumFractionDigits: 2, maximumFractionDigits: 2 }) : "—";
+    const chgStr = chg != null ? (chg >= 0 ? "+" : "") + chg.toFixed(2) + "%" : "";
+    const cls    = chg != null ? (chg >= 0 ? "up" : "down") : "";
+    return `<div class="holding-row">
+  <span class="holding-name">${name}</span>
+  <span class="holding-value">${valStr}</span>
+  <span class="holding-chg ${cls}">${chgStr}</span>
+</div>`;
+  }).join("");
 }
 
+// ── Markets rendering ─────────────────────────────────────────────────────────
 function renderMarkets(indices) {
-  document.getElementById("markets").innerHTML =
-    Object.entries(indices).map(([n, d]) => priceCard(n, d, null)).join("");
+  document.getElementById("markets").innerHTML = Object.entries(indices).map(([name, data]) => {
+    const priceStr = fmtPrice(data.price, data.currency);
+    const chg      = data.change;
+    const cls      = (chg || 0) >= 0 ? "up" : "down";
+    const chgStr   = chg != null ? (chg >= 0 ? "+" : "") + chg.toFixed(2) + "%" : "";
+    return `<div class="market-cell">
+  <div class="market-name">${name}</div>
+  <div class="market-price">${priceStr}</div>
+  <div class="market-chg ${cls}">${chgStr}</div>
+</div>`;
+  }).join("");
 }
 
+// ── Ticker ────────────────────────────────────────────────────────────────────
+function buildTicker(prices) {
+  const items = Object.entries(prices).map(([name, data]) => {
+    const { price, change, currency } = data;
+    if (price == null) return null;
+    const p   = toGBP(price, currency);
+    const sym = (currency === "GBp" || currency === "GBP") ? "£" : "";
+    const ps  = p > 1000
+      ? sym + p.toLocaleString("en-GB", { maximumFractionDigits: 0 })
+      : sym + p.toLocaleString("en-GB", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+    const cls     = (change || 0) >= 0 ? "up" : "down";
+    const chgStr  = change != null ? (change >= 0 ? "+" : "") + change.toFixed(2) + "%" : "";
+    return `<span class="tick-item"><span class="tick-name">${name}</span><span class="tick-price">${ps}</span><span class="tick-chg ${cls}">${chgStr}</span></span>`;
+  }).filter(Boolean);
+  if (!items.length) return;
+  const half = items.join("");
+  document.getElementById("ticker-track").innerHTML = half + half;
+}
+
+// ── Carousel ──────────────────────────────────────────────────────────────────
+const CAROUSEL_SIZE = 5;
+let carouselIdx     = 0;
+let carouselRafId   = null;
+let carouselRafTs   = null;
+let CAROUSEL_COS    = [];
+const DURATION      = 6000;
+
+function initCarousel() {
+  const start  = new Date(new Date().getFullYear(), 0, 0);
+  const dayNum = Math.floor((Date.now() - start) / 86400000);
+  CAROUSEL_COS = Array.from({ length: CAROUSEL_SIZE }, (_, i) =>
+    COMPANIES[(dayNum + i) % COMPANIES.length]
+  );
+  renderCarouselTabs(0);
+  showSlide(0);
+  startCarouselCycle();
+}
+
+function renderCarouselTabs(activeIdx) {
+  document.getElementById("carousel-tabs").innerHTML = CAROUSEL_COS.map((c, i) =>
+    `<button class="ctab${i === activeIdx ? " active" : ""}" onclick="jumpCarousel(${i})">${c.name}</button>`
+  ).join("");
+}
+
+function showSlide(idx) {
+  carouselIdx = idx;
+  document.querySelectorAll(".ctab").forEach((b, i) => b.classList.toggle("active", i === idx));
+  const c     = CAROUSEL_COS[idx];
+  const cIdx  = COMPANIES.indexOf(c);
+  const { d, isUp } = makeSparkline(cIdx);
+  const color = isUp ? "#16a34a" : "#dc2626";
+  const label = isUp ? "▲ Momentum up" : "▼ Volatile";
+  document.getElementById("carousel-body").innerHTML = `<div>
+  <div class="c-tag">${c.tag}</div>
+  <div class="c-name">${c.name}</div>
+  <div class="c-desc">${c.what}</div>
+  <a class="c-link" href="https://${c.url}" target="_blank" rel="noopener">${c.url} →</a>
+</div>
+<div class="c-sparkline-wrap">
+  <svg class="c-sparkline" viewBox="0 0 148 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="${d}" stroke="${color}" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+  <span class="c-spark-label" style="color:${color}">${label}</span>
+</div>`;
+}
+
+function startCarouselCycle() {
+  cancelAnimationFrame(carouselRafId);
+  carouselRafTs = null;
+  const bar = document.getElementById("carousel-bar");
+  if (bar) { bar.style.width = "0%"; }
+
+  function tick(ts) {
+    if (!carouselRafTs) carouselRafTs = ts;
+    const pct = Math.min((ts - carouselRafTs) / DURATION, 1);
+    if (bar) bar.style.width = (pct * 100).toFixed(1) + "%";
+    if (pct < 1) {
+      carouselRafId = requestAnimationFrame(tick);
+    } else {
+      showSlide((carouselIdx + 1) % CAROUSEL_SIZE);
+      startCarouselCycle();
+    }
+  }
+  carouselRafId = requestAnimationFrame(tick);
+}
+
+function jumpCarousel(idx) {
+  cancelAnimationFrame(carouselRafId);
+  showSlide(idx);
+  startCarouselCycle();
+}
+
+// ── Fixtures ──────────────────────────────────────────────────────────────────
 function renderFixtures(fixtures) {
-  if (!fixtures.length) { document.getElementById("fixtures").innerHTML = '<p class="empty">Fixtures unavailable</p>'; return; }
+  if (!fixtures.length) {
+    document.getElementById("fixtures").innerHTML = '<p style="color:#6b7280;font-size:13px;font-family:var(--f-mono)">Unavailable</p>';
+    return;
+  }
   document.getElementById("fixtures").innerHTML = fixtures.map(f => `
 <div class="fixture${f.chelsea ? " chelsea" : ""}">
   <div class="fix-meta">${f.gw ? `<span class="gw">GW${f.gw}</span>` : ""}<span class="fix-time">${f.time}</span></div>
@@ -546,50 +911,33 @@ function renderFixtures(fixtures) {
 </div>`).join("");
 }
 
-function renderCompany() {
-  const c = getCompany();
-  document.getElementById("company").innerHTML = `
-<div class="company-card">
-  <div class="company-tag">${c.tag}</div>
-  <div class="company-name">${c.name}</div>
-  <div class="company-what">${c.what}</div>
-  <div class="company-why">${c.why}</div>
-  <div class="company-footer">
-    <a class="company-link" href="https://${c.url}" target="_blank" rel="noopener">${c.url} →</a>
-    <button class="company-next" onclick="companyOffset++;renderCompany()">Next company →</button>
-  </div>
-</div>`;
-}
-
+// ── News ──────────────────────────────────────────────────────────────────────
 function renderNews(allNews) {
   document.getElementById("news").innerHTML = Object.entries(allNews).map(([name, items]) => {
-    if (!items.length) return `<div class="news-col"><div class="col-title">${name}</div><p class="empty">Unavailable</p></div>`;
+    if (!items.length) return `<div class="news-col"><div class="news-col-title">${name}</div><p style="color:#9ca3af;font-size:13px">Unavailable</p></div>`;
     const stories = items.map(i => `<a class="story" href="${i.link}" target="_blank" rel="noopener">${i.title}</a>`).join("");
-    return `<div class="news-col"><div class="col-title">${name}</div>${stories}</div>`;
+    return `<div class="news-col"><div class="news-col-title">${name}</div>${stories}</div>`;
   }).join("");
 }
 
 // ── Init ──────────────────────────────────────────────────────────────────────
-
 async function init() {
-  // Header
-  const now    = new Date();
-  const hour   = now.getHours();
-  const greet  = hour < 12 ? "Good morning" : hour < 17 ? "Good afternoon" : "Good evening";
+  const now     = new Date();
+  const hour    = now.getHours();
+  const greet   = hour < 12 ? "Good morning" : hour < 17 ? "Good afternoon" : "Good evening";
   const dateStr = now.toLocaleDateString("en-GB", { weekday: "long", day: "numeric", month: "long", year: "numeric" });
   const timeStr = now.toLocaleTimeString("en-GB", { hour: "2-digit", minute: "2-digit" });
-  document.getElementById("greeting").textContent  = `${greet}, Jonno.`;
-  document.getElementById("dateline").textContent  = `${dateStr} · Updated at ${timeStr}`;
-  document.getElementById("footer").textContent    = `briefing · ${dateStr} · ${timeStr}`;
+  document.getElementById("greeting").textContent = `${greet}, Jonno.`;
+  document.getElementById("dateline").textContent = `${dateStr} · ${timeStr}`;
+  document.getElementById("footer").textContent   = `briefing · ${dateStr} · ${timeStr}`;
 
-  // Company (no network needed)
-  renderCompany();
+  initCarousel();
 
-  // Everything comes from the server — prices, news, and fixtures in one call
   getServerData().then(data => {
     const empty = { price: null, change: null, currency: "" };
     renderPortfolio(Object.fromEntries(Object.keys(PORTFOLIO).map(n => [n, data.prices[n] || empty])));
     renderMarkets(Object.fromEntries(Object.keys(INDICES).map(n => [n, data.prices[n] || empty])));
+    buildTicker(data.prices || {});
     renderNews(data.news || {});
     renderFixtures((data.fixtures || []).map(f => {
       const dt  = new Date(f.kickoff);
