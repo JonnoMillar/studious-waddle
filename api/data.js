@@ -108,7 +108,9 @@ export default async function handler(req, res) {
     'CrowdStrike': 'CRWD',
   };
 
-  const [priceEntries, newsEntries, fixtureResult, oddsMap] = await Promise.all([
+  const FPL_TEAM_ID = 3079376;
+
+  const [priceEntries, newsEntries, fixtureResult, oddsMap, fplTeam] = await Promise.all([
 
     Promise.all(Object.entries(TICKERS).map(async ([name, ticker]) => {
       try {
@@ -181,6 +183,48 @@ export default async function handler(req, res) {
     })(),
 
     fetchOdds(),
+
+    (async () => {
+      try {
+        const [bsRes, entryRes] = await Promise.all([
+          fetch('https://fantasy.premierleague.com/api/bootstrap-static/'),
+          fetch(`https://fantasy.premierleague.com/api/entry/${FPL_TEAM_ID}/`),
+        ]);
+        const bootstrap = await bsRes.json();
+        const entry     = await entryRes.json();
+        const gw        = entry.current_event;
+        const picks     = await (await fetch(`https://fantasy.premierleague.com/api/entry/${FPL_TEAM_ID}/event/${gw}/picks/`)).json();
+        const playersMap   = Object.fromEntries(bootstrap.elements.map(p => [p.id, p]));
+        const teamsMap     = Object.fromEntries(bootstrap.teams.map(t => [t.id, t.short_name]));
+        const teamCodesMap = Object.fromEntries(bootstrap.teams.map(t => [t.id, t.code]));
+        return {
+          teamName:      entry.name,
+          overallRank:   entry.summary_overall_rank,
+          overallPoints: entry.summary_overall_points,
+          gwPoints:      picks.entry_history.points,
+          gwRank:        picks.entry_history.rank,
+          bank:          (entry.last_deadline_bank  / 10).toFixed(1),
+          value:         (entry.last_deadline_value / 10).toFixed(1),
+          gw,
+          picks: picks.picks.map(p => {
+            const pl = playersMap[p.element] || {};
+            return {
+              name:     pl.web_name || '?',
+              team:     teamsMap[pl.team] || '?',
+              teamCode: teamCodesMap[pl.team] || null,
+              pos:      pl.element_type || 0,
+              slot:     p.position,
+              isCap:    p.is_captain,
+              isVC:     p.is_vice_captain,
+              points:   pl.total_points || 0,
+              form:     pl.form || '0.0',
+              price:    ((pl.now_cost || 0) / 10).toFixed(1),
+              chance:   pl.chance_of_playing_next_round,
+            };
+          }),
+        };
+      } catch (_) { return null; }
+    })(),
   ]);
 
   const prices = Object.fromEntries(priceEntries);
@@ -206,5 +250,6 @@ export default async function handler(req, res) {
     prices,
     news:     Object.fromEntries(newsEntries),
     fixtures,
+    fplTeam,
   });
 }

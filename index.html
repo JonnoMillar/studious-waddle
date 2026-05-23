@@ -348,6 +348,52 @@ body {
 /* ── Footer ───────────────────────────────────────────────────── */
 .footer { margin-top:56px; padding-top:18px; border-top:1px solid rgba(0,0,0,0.07); font-family:var(--f-m); font-size:10px; color:var(--ink-3); letter-spacing:0.08em; }
 
+/* ── FPL Team ─────────────────────────────────────────────────── */
+.fpl-header {
+  background: var(--panel); border-radius: var(--r);
+  padding: 20px 26px; margin-bottom: 10px;
+  display: flex; justify-content: space-between; align-items: flex-start; gap: 16px;
+}
+.fpl-team-name { font-family: var(--f-d); font-size: 1.4rem; font-weight: 900; color: var(--ink); line-height: 1.1; }
+.fpl-stat-lbl { font-family: var(--f-m); font-size: 10px; color: var(--ink-3); letter-spacing: 0.06em; text-transform: uppercase; margin-top: 8px; }
+.fpl-stat-val { font-family: var(--f-m); font-size: 15px; font-weight: 500; color: var(--ink); }
+.fpl-pitch { background: var(--panel); border-radius: var(--r); padding: 20px 12px; }
+.fpl-pos-section { margin-bottom: 16px; }
+.fpl-pos-label {
+  font-family: var(--f-m); font-size: 9px; letter-spacing: 0.12em;
+  text-transform: uppercase; color: var(--ink-3);
+  text-align: center; margin-bottom: 8px;
+}
+.fpl-row { display: flex; justify-content: center; gap: 6px; flex-wrap: wrap; }
+.fpl-player {
+  display: flex; flex-direction: column; align-items: center;
+  gap: 3px; width: 72px; position: relative;
+}
+.fpl-player.bench { opacity: 0.65; }
+.fpl-kit { width: 38px; height: 38px; object-fit: contain; }
+.fpl-badges { display: flex; gap: 3px; justify-content: center; min-height: 16px; }
+.fpl-cap {
+  background: var(--ink); color: #fff; border-radius: 50%;
+  width: 16px; height: 16px; font-family: var(--f-m);
+  font-size: 9px; font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+}
+.fpl-cap.vc { background: var(--ink-3); }
+.fpl-pname {
+  font-family: var(--f-b); font-size: 11px; font-weight: 600; color: var(--ink);
+  text-align: center; line-height: 1.2; max-width: 70px;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.fpl-ptag { font-family: var(--f-m); font-size: 9px; color: var(--ink-3); letter-spacing: 0.03em; }
+.fpl-doubt { font-family: var(--f-m); font-size: 9px; color: #f59e0b; }
+.fpl-bench-strip {
+  margin-top: 12px; padding-top: 12px; border-top: 1px solid rgba(0,0,0,0.06);
+}
+.fpl-bench-label {
+  font-family: var(--f-m); font-size: 9px; letter-spacing: 0.12em;
+  text-transform: uppercase; color: var(--ink-3); text-align: center; margin-bottom: 8px;
+}
+
 /* ── Weather Widget ──────────────────────────────────────────── */
 .weather-card {
   background: var(--panel); border-radius: var(--r);
@@ -506,6 +552,11 @@ body {
   <div class="lbl">Golf Near Wimbledon</div>
   <div class="golf-dates" id="golf-dates"></div>
   <div class="golf-courses-grid" id="golf-courses"></div>
+</div>
+
+<div class="section" id="s-fpl">
+  <div class="lbl">Your FPL Team</div>
+  <div id="fpl-content"><div class="skel" style="height:340px;border-radius:var(--r)"></div></div>
 </div>
 
 <div class="section" id="s-news">
@@ -1106,6 +1157,64 @@ function startCycle() {
 
 function jumpCarousel(idx) { cancelAnimationFrame(cRafId); showSlide(idx); startCycle(); }
 
+// ── FPL Team ───────────────────────────────────────────────────────────────────
+function renderFPLTeam(fpl) {
+  const el = document.getElementById('fpl-content');
+  if (!fpl) { el.innerHTML = ''; return; }
+
+  const POS = { 1: 'Goalkeeper', 2: 'Defenders', 3: 'Midfielders', 4: 'Forwards' };
+  const starting = fpl.picks.filter(p => p.slot <= 11);
+  const bench    = fpl.picks.filter(p => p.slot > 11).sort((a, b) => a.slot - b.slot);
+
+  function kitUrl(p) {
+    if (!p.teamCode) return '';
+    const suffix = p.pos === 1 ? '_1' : '';
+    return `https://fantasy.premierleague.com/dist/img/shirts/standard/shirt_${p.teamCode}${suffix}-66.png`;
+  }
+
+  function playerCard(p, isBench) {
+    const cap  = p.isCap ? '<div class="fpl-cap">C</div>' : p.isVC ? '<div class="fpl-cap vc">V</div>' : '';
+    const doubt = (p.chance !== null && p.chance < 100) ? `<span class="fpl-doubt">⚠ ${p.chance}%</span>` : '';
+    return `<div class="fpl-player${isBench ? ' bench' : ''}">
+      <div class="fpl-badges">${cap}</div>
+      <img class="fpl-kit" src="${kitUrl(p)}" alt="" onerror="this.style.opacity=0.15">
+      <span class="fpl-pname">${p.name}</span>
+      <span class="fpl-ptag">${p.team}</span>
+      ${doubt}
+    </div>`;
+  }
+
+  const byPos = [1, 2, 3, 4].map(pos => starting.filter(p => p.pos === pos));
+  const formation = byPos.slice(1).map(g => g.length).join('-');
+  const rankStr = fpl.overallRank ? fpl.overallRank.toLocaleString('en-GB') : '—';
+
+  el.innerHTML = `
+    <div class="fpl-header">
+      <div>
+        <div class="fpl-team-name">${fpl.teamName}</div>
+        <div class="fpl-stat-lbl">Overall rank</div>
+        <div class="fpl-stat-val">${rankStr}</div>
+      </div>
+      <div style="text-align:right">
+        <div class="fpl-stat-lbl">GW${fpl.gw} points</div>
+        <div class="fpl-stat-val" style="font-size:1.4rem;font-family:var(--f-d);font-weight:900">${fpl.gwPoints}</div>
+        <div class="fpl-stat-lbl" style="margin-top:6px">Formation · Bank</div>
+        <div class="fpl-stat-val">${formation} · £${fpl.bank}m</div>
+      </div>
+    </div>
+    <div class="fpl-pitch">
+      ${byPos.map((group, i) => group.length ? `
+        <div class="fpl-pos-section">
+          <div class="fpl-pos-label">${POS[i + 1]}</div>
+          <div class="fpl-row">${group.map(p => playerCard(p, false)).join('')}</div>
+        </div>` : '').join('')}
+      <div class="fpl-bench-strip">
+        <div class="fpl-bench-label">Bench</div>
+        <div class="fpl-row">${bench.map(p => playerCard(p, true)).join('')}</div>
+      </div>
+    </div>`;
+}
+
 // ── Init ───────────────────────────────────────────────────────────────────────
 async function init() {
   setBar(10);
@@ -1147,6 +1256,7 @@ async function init() {
   renderIndices(data.prices || {});
   renderMovers(data.prices || {});
   buildTicker(data.prices || {});
+  renderFPLTeam(data.fplTeam || null);
   renderNews(data.news || {});
   renderFixtures((data.fixtures || []).map(f => {
     const dt  = new Date(f.kickoff);
