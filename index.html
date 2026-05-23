@@ -92,9 +92,10 @@ body {
 }
 .section.visible { opacity: 1; transform: translateY(0); }
 .lbl {
-  font-family: var(--f-m); font-size: 11px; font-weight: 500;
+  font-family: var(--f-m); font-size: 11px; font-weight: 600;
   letter-spacing: 0.14em; text-transform: uppercase;
   color: var(--ink-3); margin-bottom: 18px;
+  border-left: 2px solid var(--accent); padding-left: 10px;
 }
 
 /* ── Ticker ──────────────────────────────────────────────────── */
@@ -160,8 +161,10 @@ body {
 @keyframes fadeIn { to{ opacity:1; } }
 .mover-row:last-child { border-bottom: none; }
 .m-name  { font-family:var(--f-b); font-size:13px; font-weight:600; color:var(--ink); }
-.m-price { font-family:var(--f-m); font-size:12px; color:var(--ink-3); }
+.m-price { font-family:var(--f-m); font-size:12px; color:var(--ink-3); font-weight:400; }
 .m-chg   { font-family:var(--f-m); font-size:13px; font-weight:500; min-width:58px; text-align:right; }
+/* Identical rule for both columns — explicit no-override */
+#movers-up .m-name, #movers-dn .m-name { font-weight: 600; }
 .m-chg.up{color:var(--green);} .m-chg.down{color:var(--red);}
 
 /* ── Carousel ────────────────────────────────────────────────── */
@@ -210,7 +213,7 @@ body {
 .c-spark-wrap { display: flex; flex-direction: column; align-items: flex-end; gap: 8px; padding-top: 4px; }
 .c-spark-lbl  { font-family: var(--f-m); font-size: 10px; letter-spacing: 0.06em; }
 .carousel-progress { height: 3px; background: rgba(0,0,0,0.08); }
-.carousel-bar      { height: 3px; width: 0; background: var(--accent); }
+.carousel-bar      { height: 3px; width: 0; background: #6366f1; }
 
 /* ── Fixtures ────────────────────────────────────────────────── */
 .fixtures-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 10px; }
@@ -335,6 +338,7 @@ body {
 .story:last-child  { border-bottom: none; padding-bottom: 0; }
 .story:first-child { padding-top: 0; }
 .story:hover { color: var(--ink); }
+.story:hover .s-t { text-decoration: underline; text-underline-offset: 3px; text-decoration-color: rgba(0,0,0,0.2); }
 .s-n { font-family:var(--f-m); font-size:10px; color:rgba(0,0,0,0.15); padding-top:3px; font-weight:500; transition: color 0.12s; }
 .story:hover .s-n { color: var(--ink-3); }
 .s-t { font-family:var(--f-b); font-size:13px; line-height:1.5; }
@@ -347,6 +351,14 @@ body {
 
 /* ── Footer ───────────────────────────────────────────────────── */
 .footer { margin-top:56px; padding-top:18px; border-top:1px solid rgba(0,0,0,0.07); font-family:var(--f-m); font-size:10px; color:var(--ink-3); letter-spacing:0.08em; }
+
+/* ── Accent strip (scroll connector) ────────────────────────── */
+.accent-strip {
+  position: fixed; top: 0; left: 0; right: 0;
+  height: 3px; background: var(--accent); z-index: 500;
+  opacity: 0; transition: opacity 0.4s; pointer-events: none;
+}
+.accent-strip.visible { opacity: 1; }
 
 /* ── FPL Team ─────────────────────────────────────────────────── */
 .fpl-header {
@@ -464,6 +476,7 @@ body {
 <body>
 
 <div id="page-bar"></div>
+<div class="accent-strip" id="accent-strip"></div>
 
 <div class="wrap">
 
@@ -889,6 +902,15 @@ const GOLF_COURSES = [
   { name: 'Coombe Hill Golf Club',      type: 'Members · KT2',  slug: null },
 ];
 
+function toggleMembersClubs() {
+  const el  = document.getElementById('golf-members');
+  const btn = document.getElementById('golf-members-btn');
+  if (!el || !btn) return;
+  const opening = el.style.display === 'none';
+  el.style.display  = opening ? 'grid' : 'none';
+  btn.textContent   = opening ? 'Hide members clubs' : `Show members-only clubs`;
+}
+
 function renderGolf() {
   const today = new Date();
   const weekends = [];
@@ -909,19 +931,27 @@ function renderGolf() {
 </a>`;
   }).join('');
 
-  document.getElementById('golf-courses').innerHTML = GOLF_COURSES.map(c => {
-    if (!c.slug) {
-      return `<div class="golf-course" style="opacity:0.45;cursor:default">
-  <div class="gc-name">${c.name}</div>
-  <div class="gc-meta">${c.type} · Members only — no public booking</div>
-</div>`;
-    }
-    return `<a class="golf-course" href="https://www.golfnow.com/courses/${c.slug}/tee-times" target="_blank" rel="noopener">
+  const publicC  = GOLF_COURSES.filter(c =>  c.slug);
+  const membersC = GOLF_COURSES.filter(c => !c.slug);
+
+  document.getElementById('golf-courses').innerHTML = publicC.map(c =>
+    `<a class="golf-course" href="https://www.golfnow.com/courses/${c.slug}/tee-times" target="_blank" rel="noopener">
   <div class="gc-name">${c.name}</div>
   <div class="gc-meta">${c.type}</div>
   <div class="gc-cta">See live tee times &amp; prices on GolfNow →</div>
-</a>`;
-  }).join('');
+</a>`
+  ).join('');
+
+  if (membersC.length) {
+    document.getElementById('golf-courses').insertAdjacentHTML('afterend', `
+      <button class="fix-toggle" id="golf-members-btn" onclick="toggleMembersClubs()" style="margin-top:10px">Show members-only clubs</button>
+      <div id="golf-members" class="golf-courses-grid" style="display:none;margin-top:10px">
+        ${membersC.map(c => `<div class="golf-course" style="opacity:0.55;cursor:default">
+          <div class="gc-name">${c.name}</div>
+          <div class="gc-meta">${c.type} · Members only</div>
+        </div>`).join('')}
+      </div>`);
+  }
 }
 
 // ── Sparkline ──────────────────────────────────────────────────────────────────
@@ -1227,6 +1257,12 @@ async function init() {
   document.getElementById('greeting').textContent = `${greet}, Jonno.`;
   document.getElementById('dateline').textContent = `${dateStr} · ${timeStr}`;
   document.getElementById('footer').textContent   = `briefing · ${dateStr} · ${timeStr}`;
+
+  // Accent strip: fades in once scrolled past the dark hero header
+  const accentEl = document.getElementById('accent-strip');
+  window.addEventListener('scroll', () => {
+    accentEl.classList.toggle('visible', window.scrollY > 110);
+  }, { passive: true });
 
   fetchWeather();
   setBar(20);
