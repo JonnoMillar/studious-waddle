@@ -50,6 +50,7 @@ async def capture_response(page: Page, url_fragment: str, timeout: float = 15.0)
     async def handler(response):
         if url_fragment in response.url and response.status == 200 and not future.done():
             try:
+                log.info(f"Captured [{url_fragment}]: {response.url[:100]}")
                 future.set_result(await response.json())
             except Exception:
                 pass
@@ -63,7 +64,7 @@ async def capture_response(page: Page, url_fragment: str, timeout: float = 15.0)
 
 @asynccontextmanager
 async def capture_response_any(page: Page, url_fragments: list[str], timeout: float = 20.0):
-    """Like capture_response but matches any of the given URL fragments."""
+    """Like capture_response but matches any of the given URL fragments, min 2KB body."""
     loop = asyncio.get_event_loop()
     future: asyncio.Future = loop.create_future()
 
@@ -71,7 +72,20 @@ async def capture_response_any(page: Page, url_fragments: list[str], timeout: fl
         if response.status == 200 and not future.done():
             if any(f in response.url for f in url_fragments):
                 try:
+                    body = await response.body()
+                    if len(body) < 2048:
+                        log.debug(f"Skipping small response ({len(body)}B): {response.url[:80]}")
+                        return
+                    log.info(f"Captured ({len(body)}B): {response.url[:100]}")
                     future.set_result(await response.json())
+                except Exception:
+                    pass
+
+    page.on("response", handler)
+    try:
+        yield future
+    finally:
+        page.remove_listener("response", handler)
                 except Exception:
                     pass
 
