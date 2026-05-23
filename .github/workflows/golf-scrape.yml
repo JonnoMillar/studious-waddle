@@ -46,7 +46,8 @@ jobs:
       - name: Run scraper
         env:
           BROWSER_AUTH: ${{ secrets.BROWSER_AUTH }}
-        run: python3 golfnow-mcp/run_scraper.py > api/golf-cache.json
+          PYTHONUNBUFFERED: "1"
+        run: python3 -u golfnow-mcp/run_scraper.py > api/golf-cache.json
 
       - name: Commit and push
         run: |
