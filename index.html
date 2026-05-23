@@ -289,31 +289,36 @@ body {
 .pc-chg  { font-family:var(--f-m); font-size:12px; min-width:64px; text-align:right; }
 .pc-chg.up{color:var(--green);} .pc-chg.down{color:var(--red);}
 
-/* ── Golf ─────────────────────────────────────────────────────── */
-.golf-dates {
-  display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 18px;
+/* ── Golf Tee Times ───────────────────────────────────────────── */
+.tt-date-group { margin-bottom: 28px; }
+.tt-date-label {
+  font-family: var(--f-m); font-size: 10px; font-weight: 600;
+  letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-3);
+  margin-bottom: 10px;
 }
-.golf-date-btn {
-  display: flex; flex-direction: column; align-items: center;
-  padding: 12px 20px; background: var(--panel); border: none;
-  border-radius: 12px; text-decoration: none;
-  transition: background 0.15s, transform 0.15s;
+.tt-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 10px;
 }
-.golf-date-btn:hover { background: #dde2f0; transform: translateY(-2px); }
-.golf-date-day  { font-family: var(--f-b); font-size: 13px; font-weight: 700; color: var(--ink); }
-.golf-date-date { font-family: var(--f-m); font-size: 10px; color: var(--ink-3); margin-top: 2px; }
-.golf-courses-grid {
-  display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 10px;
+.tt-card {
+  background: var(--panel); border-radius: var(--r);
+  padding: 16px 20px; text-decoration: none; display: block;
+  position: relative; transition: background 0.15s, transform 0.15s;
 }
-.golf-course {
-  background: var(--panel); border: none; border-radius: var(--r);
-  padding: 16px 20px; text-decoration: none;
-  transition: background 0.15s, transform 0.15s; display: block;
+.tt-card:hover { background: #dde2f0; transform: translateY(-2px); }
+.tt-hot {
+  display: inline-block; background: #fff3ee; color: var(--accent);
+  font-family: var(--f-m); font-size: 9px; font-weight: 700;
+  letter-spacing: 0.1em; text-transform: uppercase;
+  padding: 3px 8px; border-radius: 20px; margin-bottom: 8px;
 }
-.golf-course:hover { background: #dde2f0; transform: translateY(-2px); }
-.gc-name { font-family: var(--f-b); font-size: 13px; font-weight: 600; color: var(--ink); margin-bottom: 4px; }
-.gc-meta { font-family: var(--f-m); font-size: 10px; color: var(--ink-3); letter-spacing: 0.04em; }
-.gc-cta  { font-family: var(--f-m); font-size: 10px; color: var(--accent); margin-top: 8px; letter-spacing: 0.02em; }
+.tt-price {
+  position: absolute; top: 16px; right: 20px;
+  font-family: var(--f-m); font-size: 17px; font-weight: 700; color: var(--green);
+}
+.tt-time   { font-family: var(--f-m); font-size: 17px; font-weight: 700; color: var(--ink); margin-bottom: 4px; }
+.tt-course { font-family: var(--f-b); font-size: 13px; font-weight: 600; color: var(--ink); margin-bottom: 8px; line-height: 1.3; padding-right: 48px; }
+.tt-meta   { font-family: var(--f-m); font-size: 10px; color: var(--ink-3); display: flex; gap: 12px; flex-wrap: wrap; }
+.tt-stale  { font-family: var(--f-m); font-size: 10px; color: var(--ink-3); margin-top: 12px; }
 
 /* ── News ─────────────────────────────────────────────────────── */
 .news-grid {
@@ -562,9 +567,8 @@ body {
 </div>
 
 <div class="section" id="s-golf">
-  <div class="lbl">Golf Near Wimbledon</div>
-  <div class="golf-dates" id="golf-dates"></div>
-  <div class="golf-courses-grid" id="golf-courses"></div>
+  <div class="lbl">Weekend Tee Times Near Wimbledon</div>
+  <div id="golf-content"><div class="skel" style="height:180px;border-radius:var(--r)"></div></div>
 </div>
 
 <div class="section" id="s-fpl">
@@ -893,65 +897,47 @@ async function fetchWeather() {
   } catch (_) {}
 }
 
-// ── Golf section ───────────────────────────────────────────────────────────────
-const GOLF_COURSES = [
-  { name: 'Wimbledon Common Golf Club', type: 'Public · SW19', slug: 'wimbledon-common-golf-club-51775' },
-  { name: 'Roehampton Golf Course',     type: 'Public · SW15', slug: 'roehampton-club-48543' },
-  { name: 'Richmond Park Golf Course',  type: 'Public · SW15', slug: 'richmond-park-golf-course-48536' },
-  { name: 'Surbiton Golf Club',         type: 'Members · KT5',  slug: null },
-  { name: 'Coombe Hill Golf Club',      type: 'Members · KT2',  slug: null },
-];
-
-function toggleMembersClubs() {
-  const el  = document.getElementById('golf-members');
-  const btn = document.getElementById('golf-members-btn');
-  if (!el || !btn) return;
-  const opening = el.style.display === 'none';
-  el.style.display  = opening ? 'grid' : 'none';
-  btn.textContent   = opening ? 'Hide members clubs' : `Show members-only clubs`;
-}
-
-function renderGolf() {
-  const today = new Date();
-  const weekends = [];
-  for (let i = 0; i < 21 && weekends.length < 4; i++) {
-    const d = new Date(today);
-    d.setDate(today.getDate() + i);
-    if (d.getDay() === 6 || d.getDay() === 0) weekends.push(d);
+// ── Golf tee times ─────────────────────────────────────────────────────────────
+function renderGolfTimes(golf) {
+  const el = document.getElementById('golf-content');
+  if (!golf || !golf.tee_times || golf.tee_times.length === 0) {
+    const msg = golf?.error || 'No tee times available.';
+    el.innerHTML = `<p style="font-family:var(--f-m);font-size:12px;color:var(--ink-3);margin:0">${msg}</p>`;
+    return;
   }
 
-  document.getElementById('golf-dates').innerHTML = weekends.map(d => {
-    const iso  = d.toISOString().split('T')[0];
-    const day  = d.toLocaleDateString('en-GB', { weekday: 'short' });
-    const date = d.toLocaleDateString('en-GB', { day: 'numeric', month: 'short' });
-    const url  = `https://www.golfnow.com/tee-times/search?searchTerm=Wimbledon%2C+London&date=${iso}`;
-    return `<a class="golf-date-btn" href="${url}" target="_blank" rel="noopener">
-  <span class="golf-date-day">${day}</span>
-  <span class="golf-date-date">${date}</span>
-</a>`;
+  const byDate = {};
+  for (const tt of golf.tee_times) {
+    (byDate[tt.date] = byDate[tt.date] || []).push(tt);
+  }
+
+  const groups = Object.entries(byDate).map(([date, slots]) => {
+    const dt       = new Date(date + 'T12:00:00');
+    const dayLabel = dt.toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long' });
+    const cards    = slots.slice(0, 6).map(tt => {
+      const dist    = tt.distance_miles ? `${parseFloat(tt.distance_miles).toFixed(1)} mi` : '';
+      const rating  = tt.course_rating  ? `⭐ ${parseFloat(tt.course_rating).toFixed(1)}` : '';
+      const players = tt.max_players    ? `${tt.max_players} players` : '';
+      const hot     = tt.is_hot_deal    ? `<span class="tt-hot">🔥 Hot Deal</span><br>` : '';
+      const meta    = [dist, rating, players].filter(Boolean).join(' · ');
+      return `<a class="tt-card" href="${tt.booking_url}" target="_blank" rel="noopener">
+        ${hot}<div class="tt-price">£${parseFloat(tt.price_gbp).toFixed(0)}</div>
+        <div class="tt-time">${tt.tee_time}</div>
+        <div class="tt-course">${tt.course_name}</div>
+        <div class="tt-meta">${meta}</div>
+      </a>`;
+    }).join('');
+    return `<div class="tt-date-group">
+      <div class="tt-date-label">${dayLabel}</div>
+      <div class="tt-grid">${cards}</div>
+    </div>`;
   }).join('');
 
-  const publicC  = GOLF_COURSES.filter(c =>  c.slug);
-  const membersC = GOLF_COURSES.filter(c => !c.slug);
+  const stale = golf.scraped_at
+    ? `<div class="tt-stale">Updated ${new Date(golf.scraped_at).toLocaleDateString('en-GB', { day: 'numeric', month: 'short' })} · refreshes Thu &amp; Sat mornings</div>`
+    : '';
 
-  document.getElementById('golf-courses').innerHTML = publicC.map(c =>
-    `<a class="golf-course" href="https://www.golfnow.com/courses/${c.slug}/tee-times" target="_blank" rel="noopener">
-  <div class="gc-name">${c.name}</div>
-  <div class="gc-meta">${c.type}</div>
-  <div class="gc-cta">See live tee times &amp; prices on GolfNow →</div>
-</a>`
-  ).join('');
-
-  if (membersC.length) {
-    document.getElementById('golf-courses').insertAdjacentHTML('afterend', `
-      <button class="fix-toggle" id="golf-members-btn" onclick="toggleMembersClubs()" style="margin-top:10px">Show members-only clubs</button>
-      <div id="golf-members" class="golf-courses-grid" style="display:none;margin-top:10px">
-        ${membersC.map(c => `<div class="golf-course" style="opacity:0.55;cursor:default">
-          <div class="gc-name">${c.name}</div>
-          <div class="gc-meta">${c.type} · Members only</div>
-        </div>`).join('')}
-      </div>`);
-  }
+  el.innerHTML = groups + stale;
 }
 
 // ── Sparkline ──────────────────────────────────────────────────────────────────
@@ -1268,7 +1254,6 @@ async function init() {
   setBar(20);
 
   initCarousel();
-  renderGolf();
   setBar(35);
 
   // Make all sections visible with stagger
@@ -1293,6 +1278,7 @@ async function init() {
   renderMovers(data.prices || {});
   buildTicker(data.prices || {});
   renderFPLTeam(data.fplTeam || null);
+  renderGolfTimes(data.golf || null);
   renderNews(data.news || {});
   renderFixtures((data.fixtures || []).map(f => {
     const dt  = new Date(f.kickoff);

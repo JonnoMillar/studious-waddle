@@ -1,3 +1,6 @@
+import { readFileSync } from 'fs';
+import { join }         from 'path';
+
 const FEEDS = {
   "World":          ["https://feeds.bbci.co.uk/news/world/rss.xml", 5],
   "Premier League": ["https://feeds.bbci.co.uk/sport/football/premier-league/rss.xml", 4],
@@ -246,10 +249,16 @@ export default async function handler(req, res) {
     };
   });
 
+  let golf = { tee_times: [], scraped_at: null, error: null };
+  try {
+    golf = JSON.parse(readFileSync(join(process.cwd(), 'api/golf-cache.json'), 'utf8'));
+  } catch (_) {}
+
   res.json({
     prices,
     news:     Object.fromEntries(newsEntries),
     fixtures,
     fplTeam,
+    golf,
   });
 }
