@@ -86,8 +86,6 @@ async def capture_response_any(page: Page, url_fragments: list[str], timeout: fl
         yield future
     finally:
         page.remove_listener("response", handler)
-                except Exception:
-                    pass
 
     page.on("response", handler)
     try:
