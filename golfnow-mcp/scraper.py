@@ -61,6 +61,27 @@ async def capture_response(page: Page, url_fragment: str, timeout: float = 15.0)
         page.remove_listener("response", handler)
 
 
+@asynccontextmanager
+async def capture_response_any(page: Page, url_fragments: list[str], timeout: float = 20.0):
+    """Like capture_response but matches any of the given URL fragments."""
+    loop = asyncio.get_event_loop()
+    future: asyncio.Future = loop.create_future()
+
+    async def handler(response):
+        if response.status == 200 and not future.done():
+            if any(f in response.url for f in url_fragments):
+                try:
+                    future.set_result(await response.json())
+                except Exception:
+                    pass
+
+    page.on("response", handler)
+    try:
+        yield future
+    finally:
+        page.remove_listener("response", handler)
+
+
 def parse_courses(raw: dict | list, min_rating: float = DEFAULT_MIN_RATING) -> list[dict]:
     """Extract course info from courses-near-me response."""
     if not raw:
@@ -269,6 +290,13 @@ async def scrape_date(
                 lambda route: route.abort(),
             )
 
+            # Log all JSON API responses so we can see what URLs GolfNow uses
+            async def log_api_response(response):
+                ct = response.headers.get("content-type", "")
+                if "json" in ct and "golfnow" in response.url:
+                    log.info(f"API response: {response.url[:120]}")
+            page.on("response", log_api_response)
+
             # Phase 1: get course list
             search_url = (
                 f"{BASE_URL}/tee-times/search"
@@ -278,10 +306,14 @@ async def scrape_date(
                 f"&lat={lat}&lng={lng}&radius={radius}"
             )
 
-            async with capture_response(page, "courses-near-me", timeout=20) as courses_fut:
+            # Try multiple known URL fragments for the courses API
+            course_fragments = ["courses-near-me", "facilities/search", "courses/search", "facilities?"]
+            async with capture_response_any(page, course_fragments, timeout=40) as courses_fut:
                 await page.goto(search_url, wait_until="domcontentloaded")
+                # Extra wait to let React hydrate and make API calls
+                await asyncio.sleep(3)
                 try:
-                    raw_courses = await asyncio.wait_for(asyncio.shield(courses_fut), timeout=20)
+                    raw_courses = await asyncio.wait_for(asyncio.shield(courses_fut), timeout=30)
                 except asyncio.TimeoutError:
                     log.warning(f"Timed out waiting for courses on {date_str}")
                     return []
@@ -302,8 +334,9 @@ async def scrape_date(
                     f"&players={players}&date={date_str}"
                 )
 
+                tt_fragments = ["teetimes-by-facility-group", "tee-times/search", "teetime"]
                 async with (
-                    capture_response(page, "teetimes-by-facility-group", timeout=15) as tt_fut,
+                    capture_response_any(page, tt_fragments, timeout=20) as tt_fut,
                     capture_response(page, "hot-deals-zone", timeout=12) as hd_fut,
                 ):
                     await page.goto(facility_url, wait_until="domcontentloaded")
