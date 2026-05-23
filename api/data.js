@@ -18,7 +18,10 @@ function parseRSS(xml, limit) {
     };
     const title = getVal('title');
     const link  = getVal('link') || getVal('guid');
-    if (title && link) items.push({ title, link });
+    const noise = ['find out more', 'click here', 'read more', 'more stories', 'subscribe'];
+    if (title && link && title.length > 18 && !noise.some(p => title.toLowerCase().startsWith(p))) {
+      items.push({ title, link });
+    }
   }
   return items;
 }

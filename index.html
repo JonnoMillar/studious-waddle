@@ -310,6 +310,7 @@ body {
 .golf-course:hover { background: #dde2f0; transform: translateY(-2px); }
 .gc-name { font-family: var(--f-b); font-size: 13px; font-weight: 600; color: var(--ink); margin-bottom: 4px; }
 .gc-meta { font-family: var(--f-m); font-size: 10px; color: var(--ink-3); letter-spacing: 0.04em; }
+.gc-cta  { font-family: var(--f-m); font-size: 10px; color: var(--accent); margin-top: 8px; letter-spacing: 0.02em; }
 
 /* ── News ─────────────────────────────────────────────────────── */
 .news-grid {
@@ -347,6 +348,55 @@ body {
 /* ── Footer ───────────────────────────────────────────────────── */
 .footer { margin-top:56px; padding-top:18px; border-top:1px solid rgba(0,0,0,0.07); font-family:var(--f-m); font-size:10px; color:var(--ink-3); letter-spacing:0.08em; }
 
+/* ── Weather Widget ──────────────────────────────────────────── */
+.weather-card {
+  background: var(--panel); border-radius: var(--r);
+  padding: 24px 32px; display: flex;
+  align-items: center; justify-content: space-between;
+  gap: 24px; cursor: default;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.weather-card:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.07); }
+.wx-left { display: flex; flex-direction: column; }
+.wx-temp {
+  font-family: var(--f-d); font-size: 2.8rem; font-weight: 900;
+  color: var(--ink); letter-spacing: -0.04em; line-height: 1;
+}
+.wx-unit { font-family: var(--f-m); font-size: 1.1rem; color: var(--ink-3); font-weight: 400; }
+.wx-desc { font-family: var(--f-b); font-size: 15px; font-weight: 600; color: var(--ink-2); margin-top: 7px; }
+.wx-meta { font-family: var(--f-m); font-size: 11px; color: var(--ink-3); margin-top: 5px; letter-spacing: 0.01em; }
+.wx-icon { flex-shrink: 0; }
+
+/* Sun: rays spin */
+.weather-card:hover .wx-svg-sun { animation: wxSpin 9s linear infinite; transform-origin: center; }
+@keyframes wxSpin { to { transform: rotate(360deg); } }
+
+/* Cloud: drift */
+.weather-card:hover .wx-cloud-body { animation: wxDrift 2.5s ease-in-out infinite alternate; }
+@keyframes wxDrift { from { transform: translateX(-4px); } to { transform: translateX(4px); } }
+
+/* Rain/snow drops/flakes: fall */
+.weather-card:hover .wx-d1 { animation: wxFall 0.9s linear infinite; }
+.weather-card:hover .wx-d2 { animation: wxFall 0.9s linear infinite 0.3s; }
+.weather-card:hover .wx-d3 { animation: wxFall 0.9s linear infinite 0.6s; }
+@keyframes wxFall { 0%{transform:translateY(-2px);opacity:0} 20%{opacity:1} 100%{transform:translateY(16px);opacity:0} }
+
+/* Snow flakes */
+.weather-card:hover .wx-f1 { animation: wxFlake 1.4s ease-in infinite; }
+.weather-card:hover .wx-f2 { animation: wxFlake 1.4s ease-in infinite 0.47s; }
+.weather-card:hover .wx-f3 { animation: wxFlake 1.4s ease-in infinite 0.93s; }
+@keyframes wxFlake { 0%{transform:translateY(-2px) rotate(0deg);opacity:0} 20%{opacity:1} 100%{transform:translateY(18px) rotate(120deg);opacity:0} }
+
+/* Storm bolt */
+.weather-card:hover .wx-bolt { animation: wxBolt 1.8s ease-in-out infinite; }
+@keyframes wxBolt { 0%,45%,55%,100%{opacity:1} 50%{opacity:0.05} }
+
+/* Fog drift */
+.weather-card:hover .wx-fl1 { animation: wxFog 2s ease-in-out infinite alternate; }
+.weather-card:hover .wx-fl2 { animation: wxFog 2s ease-in-out infinite 0.3s alternate-reverse; }
+.weather-card:hover .wx-fl3 { animation: wxFog 2s ease-in-out infinite 0.6s alternate; }
+@keyframes wxFog { from{transform:translateX(-5px);opacity:0.5} to{transform:translateX(5px);opacity:0.9} }
+
 /* ── Responsive ───────────────────────────────────────────────── */
 @media (max-width: 680px) {
   .wrap { padding: 20px 16px 60px; }
@@ -376,7 +426,6 @@ body {
     <div class="greeting" id="greeting">Good morning, Jonno.</div>
     <div class="header-meta">
       <div class="dateline" id="dateline"></div>
-      <div class="weather-line" id="weather-line"></div>
     </div>
   </div>
   <div class="header-right">
@@ -387,6 +436,17 @@ body {
 <div class="ticker-outer">
   <div class="ticker-track" id="ticker-track">
     <span class="tick-item"><span class="t-name">Loading</span><span class="t-price">—</span></span>
+  </div>
+</div>
+
+<div class="section" id="s-weather">
+  <div class="weather-card">
+    <div class="wx-left">
+      <div class="wx-temp" id="wx-temp">—<span class="wx-unit">°C</span></div>
+      <div class="wx-desc" id="wx-desc">Loading weather…</div>
+      <div class="wx-meta" id="wx-meta"></div>
+    </div>
+    <div class="wx-icon" id="wx-icon"></div>
   </div>
 </div>
 
@@ -669,14 +729,79 @@ async function getServerData() {
 // ── Weather ────────────────────────────────────────────────────────────────────
 const WMO = {
   0:'Clear sky',1:'Clear sky',2:'Partly cloudy',3:'Overcast',
-  45:'Fog',48:'Fog',
+  45:'Fog',48:'Freezing fog',
   51:'Light drizzle',53:'Drizzle',55:'Heavy drizzle',
   61:'Light rain',63:'Rain',65:'Heavy rain',
   71:'Light snow',73:'Snow',75:'Heavy snow',
   80:'Showers',81:'Heavy showers',82:'Showers',
   95:'Thunderstorm',96:'Thunderstorm',99:'Thunderstorm',
 };
-const UV_LABEL = (uv) => uv <= 2 ? 'Low' : uv <= 5 ? 'Moderate' : uv <= 7 ? 'High' : uv <= 10 ? 'Very high' : 'Extreme';
+const UV_LABEL = uv => uv <= 2 ? 'Low' : uv <= 5 ? 'Moderate' : uv <= 7 ? 'High' : uv <= 10 ? 'Very high' : 'Extreme';
+
+function wxType(code) {
+  if (code <= 1)  return 'sun';
+  if (code <= 3)  return 'cloud';
+  if (code <= 48) return 'fog';
+  if (code <= 67) return 'rain';
+  if (code <= 77) return 'snow';
+  if (code <= 82) return 'rain';
+  return 'storm';
+}
+
+function wxSVG(type) {
+  const cloud = `<ellipse cx="50" cy="46" rx="28" ry="17" fill="#64748B"/>
+    <ellipse cx="36" cy="51" rx="18" ry="14" fill="#64748B"/>
+    <ellipse cx="64" cy="50" rx="20" ry="14" fill="#64748B"/>
+    <ellipse cx="50" cy="44" rx="15" ry="13" fill="#64748B"/>`;
+  const softCloud = `<ellipse cx="50" cy="56" rx="30" ry="18" fill="#94A3B8"/>
+    <ellipse cx="36" cy="50" rx="20" ry="16" fill="#94A3B8"/>
+    <ellipse cx="64" cy="52" rx="22" ry="16" fill="#94A3B8"/>
+    <ellipse cx="50" cy="46" rx="17" ry="14" fill="#94A3B8"/>`;
+  const svgs = {
+    sun: `<svg class="wx-svg-sun" viewBox="0 0 100 100" width="88" height="88">
+      <circle cx="50" cy="50" r="17" fill="#FBBF24"/>
+      <line x1="50" y1="8"  x2="50" y2="24" stroke="#FBBF24" stroke-width="3" stroke-linecap="round"/>
+      <line x1="50" y1="76" x2="50" y2="92" stroke="#FBBF24" stroke-width="3" stroke-linecap="round"/>
+      <line x1="8"  y1="50" x2="24" y2="50" stroke="#FBBF24" stroke-width="3" stroke-linecap="round"/>
+      <line x1="76" y1="50" x2="92" y2="50" stroke="#FBBF24" stroke-width="3" stroke-linecap="round"/>
+      <line x1="19" y1="19" x2="31" y2="31" stroke="#FBBF24" stroke-width="3" stroke-linecap="round"/>
+      <line x1="69" y1="69" x2="81" y2="81" stroke="#FBBF24" stroke-width="3" stroke-linecap="round"/>
+      <line x1="81" y1="19" x2="69" y2="31" stroke="#FBBF24" stroke-width="3" stroke-linecap="round"/>
+      <line x1="19" y1="81" x2="31" y2="69" stroke="#FBBF24" stroke-width="3" stroke-linecap="round"/>
+    </svg>`,
+    cloud: `<svg viewBox="0 0 100 100" width="88" height="88">
+      <g class="wx-cloud-body">${softCloud}</g>
+    </svg>`,
+    rain: `<svg viewBox="0 0 100 100" width="88" height="88">
+      ${cloud}
+      <line x1="34" y1="66" x2="28" y2="82" stroke="#93C5FD" stroke-width="2.5" stroke-linecap="round" class="wx-d1"/>
+      <line x1="50" y1="66" x2="44" y2="82" stroke="#93C5FD" stroke-width="2.5" stroke-linecap="round" class="wx-d2"/>
+      <line x1="66" y1="66" x2="60" y2="82" stroke="#93C5FD" stroke-width="2.5" stroke-linecap="round" class="wx-d3"/>
+    </svg>`,
+    snow: `<svg viewBox="0 0 100 100" width="88" height="88">
+      <ellipse cx="50" cy="44" rx="28" ry="17" fill="#94A3B8"/>
+      <ellipse cx="36" cy="49" rx="18" ry="14" fill="#94A3B8"/>
+      <ellipse cx="64" cy="48" rx="20" ry="14" fill="#94A3B8"/>
+      <circle cx="34" cy="70" r="4.5" fill="#BFDBFE" class="wx-f1"/>
+      <circle cx="50" cy="75" r="4.5" fill="#BFDBFE" class="wx-f2"/>
+      <circle cx="66" cy="70" r="4.5" fill="#BFDBFE" class="wx-f3"/>
+    </svg>`,
+    storm: `<svg viewBox="0 0 100 100" width="88" height="88">
+      <ellipse cx="50" cy="36" rx="30" ry="18" fill="#475569"/>
+      <ellipse cx="36" cy="42" rx="20" ry="15" fill="#475569"/>
+      <ellipse cx="64" cy="40" rx="22" ry="15" fill="#475569"/>
+      <polygon points="55,56 47,70 53,70 43,90 63,66 55,66 64,56" fill="#FDE047" class="wx-bolt"/>
+      <line x1="29" y1="62" x2="24" y2="74" stroke="#93C5FD" stroke-width="2" stroke-linecap="round" class="wx-d1"/>
+      <line x1="72" y1="62" x2="67" y2="74" stroke="#93C5FD" stroke-width="2" stroke-linecap="round" class="wx-d3"/>
+    </svg>`,
+    fog: `<svg viewBox="0 0 100 100" width="88" height="88">
+      <rect x="12" y="32" width="76" height="8" rx="4" fill="#94A3B8" class="wx-fl1"/>
+      <rect x="18" y="50" width="64" height="8" rx="4" fill="#94A3B8" opacity="0.7" class="wx-fl2"/>
+      <rect x="8"  y="68" width="84" height="8" rx="4" fill="#94A3B8" opacity="0.5" class="wx-fl3"/>
+    </svg>`,
+  };
+  return svgs[type] || svgs.cloud;
+}
 
 async function fetchWeather() {
   try {
@@ -686,13 +811,21 @@ async function fetchWeather() {
       '&daily=temperature_2m_max,uv_index_max' +
       '&timezone=Europe%2FLondon'
     );
-    const d       = await r.json();
-    const temp    = Math.round(d.current.temperature_2m);
-    const peak    = Math.round(d.daily.temperature_2m_max[0]);
-    const uv      = Math.round(d.daily.uv_index_max[0]);
-    const desc    = WMO[d.current.weather_code] || '';
-    document.getElementById('weather-line').textContent =
-      `Wimbledon · ${temp}°C now · peaks ${peak}°C · UV ${uv} (${UV_LABEL(uv)}) · ${desc}`;
+    const d    = await r.json();
+    const temp = Math.round(d.current.temperature_2m);
+    const peak = Math.round(d.daily.temperature_2m_max[0]);
+    const uv   = Math.round(d.daily.uv_index_max[0]);
+    const code = d.current.weather_code;
+    const desc = WMO[code] || '';
+    const type = wxType(code);
+    const iconEl = document.getElementById('wx-icon');
+    const tempEl = document.getElementById('wx-temp');
+    const descEl = document.getElementById('wx-desc');
+    const metaEl = document.getElementById('wx-meta');
+    if (iconEl) iconEl.innerHTML = wxSVG(type);
+    if (tempEl) tempEl.innerHTML = `${temp}<span class="wx-unit">°C</span>`;
+    if (descEl) descEl.textContent = desc;
+    if (metaEl) metaEl.textContent = `Wimbledon · Peaks ${peak}°C · UV ${uv} (${UV_LABEL(uv)})`;
   } catch (_) {}
 }
 
@@ -726,13 +859,16 @@ function renderGolf() {
   }).join('');
 
   document.getElementById('golf-courses').innerHTML = GOLF_COURSES.map(c => {
-    const href = c.slug
-      ? `https://www.golfnow.com/courses/${c.slug}/tee-times`
-      : '#';
-    const target = c.slug ? 'target="_blank" rel="noopener"' : '';
-    return `<a class="golf-course" href="${href}" ${target} style="${!c.slug ? 'opacity:0.55;pointer-events:none' : ''}">
+    if (!c.slug) {
+      return `<div class="golf-course" style="opacity:0.45;cursor:default">
   <div class="gc-name">${c.name}</div>
-  <div class="gc-meta">${c.type}${c.slug ? ' · Book on GolfNow' : ' · Members only'}</div>
+  <div class="gc-meta">${c.type} · Members only — no public booking</div>
+</div>`;
+    }
+    return `<a class="golf-course" href="https://www.golfnow.com/courses/${c.slug}/tee-times" target="_blank" rel="noopener">
+  <div class="gc-name">${c.name}</div>
+  <div class="gc-meta">${c.type}</div>
+  <div class="gc-cta">See live tee times &amp; prices on GolfNow →</div>
 </a>`;
   }).join('');
 }
@@ -1002,7 +1138,12 @@ async function init() {
   if (fxData?.price) GBPUSD = fxData.price;
 
   const empty = { price: null, change: null, currency: '' };
-  renderPortfolio(Object.fromEntries(Object.keys(PORTFOLIO).map(n => [n, data.prices[n] || empty])));
+  renderPortfolio(Object.fromEntries(Object.keys(PORTFOLIO).map(n => {
+    const d = data.prices[n] || empty;
+    // VUSA.L is USD-denominated; force currency so toGBP() converts correctly
+    if (n === 'US 500') return [n, { ...d, currency: 'USD' }];
+    return [n, d];
+  })));
   renderIndices(data.prices || {});
   renderMovers(data.prices || {});
   buildTicker(data.prices || {});
