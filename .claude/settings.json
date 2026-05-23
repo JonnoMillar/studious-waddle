@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "golfnow": {
+      "command": "python3",
+      "args": ["/home/user/studious-waddle/golfnow-mcp/server.py"],
+      "env": {
+        "BROWSER_AUTH": "YOUR_BRIGHT_DATA_CREDENTIALS_HERE"
+      }
+    }
+  }
+}
