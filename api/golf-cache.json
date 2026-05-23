@@ -1,5 +1,5 @@
 {
   "tee_times": [],
-  "scraped_at": "2026-05-23T12:43:08.253764+00:00",
-  "error": null
+  "scraped_at": "2026-05-23T12:57:19.820075+00:00",
+  "error": "2026-05-23: generator didn't stop; 2026-05-24: generator didn't stop; 2026-05-30: generator didn't stop; 2026-05-31: generator didn't stop; 2026-06-06: generator didn't stop; 2026-06-07: generator didn't stop; 2026-06-13: generator didn't stop; 2026-06-14: generator didn't stop"
 }
