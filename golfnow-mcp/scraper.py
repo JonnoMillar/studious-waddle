@@ -77,6 +77,9 @@ def parse_courses(raw: dict | list, min_rating: float = DEFAULT_MIN_RATING) -> l
         return []
 
     log.info(f"parse_courses: {len(courses_list)} items, first keys={list(courses_list[0].keys()) if courses_list else '?'}")
+    if courses_list:
+        import json as _json
+        log.info(f"first item sample: {_json.dumps(courses_list[0], default=str)[:600]}")
 
     parsed = []
     for c in courses_list:
