@@ -1218,8 +1218,7 @@ body {
   #portfolio-strip, #markets-card, #fixtures-card, #golf-card { grid-column: 1 / -1; }
   .headlines-field { grid-template-columns: 1fr 1fr; }
   .hero-inner { flex-direction: column; }
-  .hero-right { text-align: left; min-width: 0; }
-  .hero-weather-row { justify-content: flex-start; }
+  .hero-weather-panel { text-align: left; min-width: 0; border-left: none; border-top: 1px solid var(--line); width: 100%; align-items: flex-start; padding: 16px 28px; }
   .fpl-stats-row { gap: 12px; }
   .fpl-stat-value { font-size: 28px; }
   .markets-grid { grid-template-columns: 1fr 1fr; }
@@ -1979,11 +1978,10 @@ function renderGolf(golf) {
 
   const displayTees = allTees;
 
-  // Sort by date + time, pick first as "next tee"
+  // Sort by date + price
   const sorted = [...displayTees].sort((a, b) => {
-    const da = a.date + 'T' + (a.tee_time || '00:00');
-    const db = b.date + 'T' + (b.tee_time || '00:00');
-    return da.localeCompare(db);
+    if (a.date !== b.date) return a.date.localeCompare(b.date);
+    return (a.price_gbp || 0) - (b.price_gbp || 0);
   });
 
   const next     = sorted[0];
@@ -1991,6 +1989,15 @@ function renderGolf(golf) {
 
   const nextDt  = new Date(next.date + 'T12:00:00');
   const nextDay = nextDt.toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long' });
+
+  // GolfNow courses-near-me returns the course's minimum time (often pre-dawn),
+  // not a specific slot — show the window label instead
+  function _timeLabel(t) {
+    if (!t) return '11am–5pm';
+    const h = parseInt((t || '0').split(':')[0], 10);
+    if (h >= 11 && h < 17) return t;
+    return '11am–5pm';
+  }
 
   const hotBadge = next.is_hot_deal ? `<span class="golf-hot-badge">🔥 Hot Deal</span><br>` : '';
 
@@ -2007,7 +2014,7 @@ function renderGolf(golf) {
       <div class="golf-datetime-row">
         <span class="golf-date">${nextDay}</span>
         <span style="color:var(--ink3)">·</span>
-        <span class="golf-time">${next.tee_time}</span>
+        <span class="golf-time">${_timeLabel(next.tee_time)}</span>
         ${next.holes ? `<span class="golf-holes">${next.holes} holes</span>` : ''}
       </div>
       <a class="golf-book-btn" href="${next.booking_url}" target="_blank" rel="noopener">
@@ -2026,7 +2033,7 @@ function renderGolf(golf) {
           style="border-bottom:${i < upcoming.length - 1 ? '1px solid var(--line)' : 'none'}">
           <div>
             <div class="golf-upcoming-course">${t.course_name}${hot}</div>
-            <div class="golf-upcoming-meta">${day} · ${t.tee_time}${t.holes ? ' · ' + t.holes + ' holes' : ''}</div>
+            <div class="golf-upcoming-meta">${day}${t.distance_miles ? ' · ' + t.distance_miles + ' mi' : ''}${t.holes ? ' · ' + t.holes + ' holes' : ''}</div>
           </div>
           <span class="golf-upcoming-price">£${parseFloat(t.price_gbp).toFixed(0)}</span>
         </a>`;
@@ -2297,7 +2304,7 @@ async function init() {
   // Weather shine — sweeps the whole page when hovering the temperature area
   (function initShine() {
     if (__PRM) return;
-    const heroRight = document.querySelector('.hero-right');
+    const heroRight = document.querySelector('.hero-weather-panel');
     const overlay   = document.getElementById('page-shine');
     if (!heroRight || !overlay) return;
     let active = false;
