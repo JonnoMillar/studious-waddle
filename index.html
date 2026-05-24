@@ -1801,7 +1801,7 @@ function renderFixtures(fixtures) {
             <div class="fixture-expand-row">
               <span>Away</span><span style="font-family:var(--f-m);font-size:12px">${f.away}</span>
             </div>
-            ${odds ? `<div class="fixture-expand-row" style="margin-top:6px">
+            ${odds && !f.score ? `<div class="fixture-expand-row" style="margin-top:6px">
               <span>Odds (H · D · A)</span>
               <span style="font-family:var(--f-m);font-size:12px">${odds.h?.toFixed(2) ?? '—'} · ${odds.d?.toFixed(2) ?? '—'} · ${odds.a?.toFixed(2) ?? '—'}</span>
             </div>` : ''}
@@ -1843,7 +1843,7 @@ function renderFPL(fpl) {
 
   // Header
   document.getElementById('fpl-team-name').textContent = fpl.teamName;
-  document.getElementById('fpl-gw-note').textContent = `GW${fpl.gw} · Live`;
+  document.getElementById('fpl-gw-note').textContent = `GW${fpl.gw} · ${fpl.gwRank ? 'Final' : 'Live'}`;
 
   // Stats
   const statsEl = document.getElementById('fpl-stats-row');
