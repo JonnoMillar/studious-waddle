@@ -6,738 +6,1128 @@
 <title>Daily Briefing</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,900;1,900&family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=Geist+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
+/* ── Reset ────────────────────────────────────────────────────────── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
+/* ── Tokens ───────────────────────────────────────────────────────── */
 :root {
-  --bg:     #ffffff;
-  --panel:  #edf0f8;
-  --ink:    #111111;
-  --ink-2:  #2d2d2d;
-  --ink-3:  #6b7280;
-  --ink-4:  #dde1ee;
-  --ink-5:  #edf0f8;
-  --accent: #E8451A;
-  --green:  #16a34a;
-  --red:    #dc2626;
-  --r:      14px;
-  --f-d: 'Playfair Display', Georgia, serif;
-  --f-m: 'JetBrains Mono', monospace;
-  --f-b: 'Plus Jakarta Sans', -apple-system, sans-serif;
+  --bg:    #f5f3ee;
+  --bg2:   #ffffff;
+  --ink:   #1a1816;
+  --ink2:  #6b6660;
+  --ink3:  #a39e95;
+  --line:  rgba(26,24,22,0.08);
+  --green: #1f8a5b;
+  --red:   #c0392b;
+  --sun:   #e89a2f;
+  --cup-accent: #2a6fdb;
+  --f-s: 'Geist', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+  --f-m: 'Geist Mono', ui-monospace, monospace;
 }
 
+/* ── Base ─────────────────────────────────────────────────────────── */
 html { scroll-behavior: smooth; }
 body {
-  font-family: var(--f-b);
+  font-family: var(--f-s);
   background: var(--bg);
   color: var(--ink);
   min-height: 100vh;
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-/* ── Page loader ─────────────────────────────────────────────── */
-#page-bar {
-  position: fixed; top: 0; left: 0; right: 0;
-  height: 3px; background: var(--accent);
-  width: 0; z-index: 9999;
-  transition: width 0.4s ease, opacity 0.4s ease;
+/* ── Layout ───────────────────────────────────────────────────────── */
+.wrap {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 40px 40px 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
 }
 
-/* ── Layout ──────────────────────────────────────────────────── */
-.wrap { max-width: 1160px; margin: 0 auto; padding: 32px 40px 80px; }
-
-/* ── Header ──────────────────────────────────────────────────── */
-.header {
-  display: flex; align-items: flex-start;
-  justify-content: space-between;
-  background: #111111;
-  border-radius: 20px;
-  padding: 44px 52px;
-  margin-bottom: 0;
+/* ── Card ─────────────────────────────────────────────────────────── */
+.card {
+  background: var(--bg2);
+  border-radius: 22px;
+  box-shadow: 0 1px 2px rgba(26,24,22,0.04), 0 4px 14px rgba(26,24,22,0.04);
+  transition: transform .26s cubic-bezier(.2,.7,.3,1), box-shadow .26s;
+  position: relative;
 }
-.greeting {
-  font-family: var(--f-d);
-  font-size: clamp(2.2rem, 4.5vw, 3.4rem);
-  font-weight: 900; color: #ffffff;
-  letter-spacing: -0.03em; line-height: 1.05;
+.card.hover-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 40px rgba(26,24,22,0.12), 0 4px 10px rgba(26,24,22,0.05);
 }
-.header-meta { margin-top: 10px; display: flex; flex-direction: column; gap: 4px; }
-.dateline, .weather-line {
-  font-family: var(--f-m); font-size: 11px;
-  color: rgba(255,255,255,0.4); letter-spacing: 0.02em;
-}
-.header-right {
-  display: flex; flex-direction: column;
-  align-items: flex-end; gap: 8px;
-  flex-shrink: 0; padding-top: 4px;
-}
-.live-badge {
-  display: flex; align-items: center; gap: 6px;
-  font-family: var(--f-m); font-size: 11px; font-weight: 500;
-  letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.45);
-}
-.live-dot {
-  width: 7px; height: 7px; border-radius: 50%;
-  background: var(--accent); flex-shrink: 0;
-  animation: pulse 2s ease-in-out infinite;
-}
-@keyframes pulse { 0%,100%{opacity:1;} 50%{opacity:0.3;} }
-
-/* ── Section ─────────────────────────────────────────────────── */
-.section {
-  margin-top: 56px;
-  opacity: 0; transform: translateY(14px);
-  transition: opacity 0.5s ease, transform 0.5s ease;
-}
-.section.visible { opacity: 1; transform: translateY(0); }
-.lbl {
-  font-family: var(--f-m); font-size: 11px; font-weight: 600;
-  letter-spacing: 0.14em; text-transform: uppercase;
-  color: var(--ink-3); margin-bottom: 18px;
-  border-left: 2px solid var(--accent); padding-left: 10px;
+.card.hover-lift:active {
+  transform: translateY(-1px) scale(0.997);
 }
 
-/* ── Ticker ──────────────────────────────────────────────────── */
-.ticker-outer {
-  background: var(--ink); margin: 24px -40px 0;
-  padding: 11px 0; overflow: hidden; position: relative;
+/* ── Eyebrow ──────────────────────────────────────────────────────── */
+.eyebrow {
+  font-family: var(--f-s);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  color: var(--ink3);
+  margin-bottom: 14px;
 }
-.ticker-outer::before, .ticker-outer::after {
-  content: ''; position: absolute; top:0; bottom:0;
-  width: 72px; z-index: 2; pointer-events: none;
-}
-.ticker-outer::before { left:0; background: linear-gradient(to right, var(--ink), transparent); }
-.ticker-outer::after  { right:0; background: linear-gradient(to left, var(--ink), transparent); }
-.ticker-track {
-  display: flex; white-space: nowrap;
-  animation: tickerMove 50s linear infinite;
-}
-.ticker-track:hover { animation-play-state: paused; }
-@keyframes tickerMove { from{transform:translateX(0);} to{transform:translateX(-50%);} }
-.tick-item {
-  display: inline-flex; align-items: center; gap: 9px;
-  padding: 0 26px; border-right: 1px solid rgba(255,255,255,0.08);
-}
-.t-name  { font-family:var(--f-m); font-size:10px; color:rgba(255,255,255,0.3); letter-spacing:0.1em; text-transform:uppercase; }
-.t-price { font-family:var(--f-m); font-size:13px; font-weight:500; color:#fff; }
-.t-chg   { font-family:var(--f-m); font-size:11px; }
-.t-chg.up{color:#4ade80;} .t-chg.down{color:#f87171;}
 
-/* ── Markets ─────────────────────────────────────────────────── */
-.indices-strip {
-  display: flex; background: var(--panel);
-  border-radius: var(--r); overflow: hidden; margin-bottom: 12px;
+/* ── Animations ───────────────────────────────────────────────────── */
+@keyframes cup-fade-up {
+  from { opacity: 0; transform: translate3d(0, 16px, 0); }
+  to   { opacity: 1; transform: translate3d(0, 0, 0); }
 }
-.idx-cell {
-  flex: 1; display: flex; align-items: center;
-  gap: 10px; padding: 16px 20px;
-  border-right: 1px solid rgba(0,0,0,0.06);
+@keyframes cup-pulse {
+  0%, 100% { transform: scale(1); }
+  50%       { transform: scale(1.04); }
 }
-.idx-cell:last-child { border-right: none; }
-.idx-name  { font-family:var(--f-m); font-size:10px; color:var(--ink-3); letter-spacing:0.08em; text-transform:uppercase; white-space:nowrap; }
-.idx-price { font-family:var(--f-m); font-size:15px; font-weight:500; color:var(--ink); }
-.idx-chg   { font-family:var(--f-m); font-size:11px; margin-left:auto; white-space:nowrap; }
-.idx-chg.up{color:var(--green);} .idx-chg.down{color:var(--red);}
+@keyframes cup-spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+@keyframes cup-shimmer {
+  0%   { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
 
-.movers-grid {
-  display: grid; grid-template-columns: 1fr 1fr;
-  background: var(--panel); border-radius: var(--r); overflow: hidden;
-}
-.movers-col:first-child { border-right: 1px solid rgba(0,0,0,0.06); }
-.movers-head {
-  font-family:var(--f-m); font-size:10px; font-weight:500;
-  letter-spacing:0.12em; text-transform:uppercase; color:var(--ink-3);
-  padding: 13px 20px; border-bottom: 1px solid rgba(0,0,0,0.06);
-  background: rgba(0,0,0,0.04);
-}
-.mover-row {
-  display: grid; grid-template-columns: 1fr auto auto;
-  gap: 14px; align-items: center;
-  padding: 12px 20px; border-bottom: 1px solid rgba(0,0,0,0.06);
+.cup-reveal {
   opacity: 0;
-  animation: fadeIn 0.3s ease forwards;
+  will-change: opacity, transform;
 }
-@keyframes fadeIn { to{ opacity:1; } }
-.mover-row:last-child { border-bottom: none; }
-.m-name  { font-family:var(--f-b); font-size:13px; font-weight:600; color:var(--ink); }
-.m-price { font-family:var(--f-m); font-size:12px; color:var(--ink-3); font-weight:400; }
-.m-chg   { font-family:var(--f-m); font-size:13px; font-weight:500; min-width:58px; text-align:right; }
-/* Identical rule for both columns — explicit no-override */
-#movers-up .m-name, #movers-dn .m-name { font-weight: 600; }
-.m-chg.up{color:var(--green);} .m-chg.down{color:var(--red);}
+.cup-reveal.is-in {
+  animation: cup-fade-up 620ms cubic-bezier(.2,.7,.25,1) forwards;
+}
 
-/* ── Carousel ────────────────────────────────────────────────── */
-.carousel {
-  background: var(--panel);
-  border-radius: var(--r); overflow: hidden;
-}
-.carousel-tabs {
-  display: flex; border-bottom: 1px solid rgba(0,0,0,0.06);
-  overflow-x: auto; scrollbar-width: none;
-}
-.carousel-tabs::-webkit-scrollbar { display: none; }
-.ctab {
-  flex: 1; min-width: 0; padding: 12px 14px;
-  background: transparent; border: none;
-  border-right: 1px solid rgba(0,0,0,0.06); cursor: pointer;
-  font-family: var(--f-m); font-size: 10px; font-weight: 500;
-  letter-spacing: 0.04em; color: var(--ink-3);
-  text-align: left; white-space: nowrap; overflow: hidden;
-  text-overflow: ellipsis;
-  transition: background 0.15s, color 0.15s;
-}
-.ctab:last-child { border-right: none; }
-.ctab:hover  { background: rgba(255,255,255,0.5); color: var(--ink-2); }
-.ctab.active { background: rgba(255,255,255,0.8); color: var(--ink); }
-.carousel-body {
-  display: grid; grid-template-columns: 1fr 148px;
-  gap: 32px; padding: 28px 32px;
-  min-height: 140px; align-items: start;
-}
-.c-tag {
-  display: inline-block; font-family: var(--f-m);
-  font-size: 9px; font-weight: 500; letter-spacing: 0.12em;
-  text-transform: uppercase; color: var(--accent);
-  background: rgba(232,69,26,0.08);
-  padding: 3px 10px; border-radius: 99px; margin-bottom: 10px;
-}
-.c-name {
-  font-family: var(--f-d); font-size: 26px; font-weight: 900;
-  color: var(--ink); line-height: 1.1; letter-spacing: -0.02em;
-  margin-bottom: 9px;
-}
-.c-desc { font-family: var(--f-b); font-size: 14px; color: var(--ink-2); line-height: 1.6; margin-bottom: 14px; }
-.c-link { font-family: var(--f-m); font-size: 12px; color: var(--ink-3); text-decoration: none; transition: color 0.12s; }
-.c-link:hover { color: var(--accent); }
-.c-spark-wrap { display: flex; flex-direction: column; align-items: flex-end; gap: 8px; padding-top: 4px; }
-.c-spark-lbl  { font-family: var(--f-m); font-size: 10px; letter-spacing: 0.06em; }
-.carousel-progress { height: 3px; background: rgba(0,0,0,0.08); }
-.carousel-bar      { height: 3px; width: 0; background: #6366f1; }
-
-/* ── Fixtures ────────────────────────────────────────────────── */
-.fixtures-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 10px; }
-.fixture {
-  background: var(--panel); border-radius: var(--r);
-  padding: 18px 22px;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  cursor: default;
-}
-.fixture:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(0,0,0,0.08); }
-.fixture.chelsea { border-left: 3px solid var(--accent); }
-.fix-meta { display: flex; gap: 8px; align-items: center; margin-bottom: 10px; }
-.gw {
-  font-family: var(--f-m); font-size: 9px; font-weight: 500;
-  letter-spacing: 0.1em; text-transform: uppercase;
-  color: var(--ink-3); background: rgba(0,0,0,0.07);
-  padding: 2px 8px; border-radius: 99px;
-}
-.fix-time { font-family: var(--f-m); font-size: 11px; color: var(--ink-3); }
-.fix-matchup { display: flex; align-items: center; gap: 8px; }
-.fix-team   { display: flex; align-items: center; gap: 7px; flex: 1; min-width: 0; }
-.fix-team-r { justify-content: flex-end; }
-.fix-badge  { width: 22px; height: 22px; object-fit: contain; flex-shrink: 0; }
-.fix-name   { font-family: var(--f-b); font-size: 13px; font-weight: 600; color: var(--ink); line-height: 1.2; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-.fix-vs     { font-family: var(--f-m); font-size: 10px; color: var(--ink-3); flex-shrink: 0; }
-.fix-odds {
-  display: flex; gap: 6px; margin-top: 12px;
-  padding-top: 12px; border-top: 1px solid rgba(0,0,0,0.06);
-}
-.odds-btn {
-  flex: 1; display: flex; flex-direction: column;
-  align-items: center; gap: 2px; padding: 7px 4px;
-  background: rgba(255,255,255,0.75); border: none;
+/* ── Row hover ────────────────────────────────────────────────────── */
+.cup-row {
+  transition: background .18s ease, transform .18s cubic-bezier(.2,.7,.3,1);
   border-radius: 8px;
-  transition: background 0.15s, transform 0.15s;
-  cursor: default;
 }
-.odds-btn:hover { background: #fff; transform: translateY(-1px); }
-.odds-lbl { font-family: var(--f-m); font-size: 9px; color: var(--ink-3); letter-spacing: 0.06em; }
-.odds-val { font-family: var(--f-m); font-size: 13px; font-weight: 500; color: var(--ink); }
-.fix-toggle {
-  display: flex; align-items: center; justify-content: center;
-  margin-top: 12px; width: 100%; padding: 12px 16px;
-  background: var(--panel); border: none;
-  border-radius: 999px; cursor: pointer;
-  font-family: var(--f-m); font-size: 11px; font-weight: 500;
-  letter-spacing: 0.08em; color: var(--ink-3);
-  transition: background 0.15s, color 0.15s, transform 0.15s;
+.cup-row:hover {
+  background: rgba(26,24,22,0.035);
+  transform: translateX(3px);
 }
-.fix-toggle:hover { background: #dde2f0; color: var(--ink-2); transform: translateY(-1px); }
 
-/* ── Portfolio ────────────────────────────────────────────────── */
-.portfolio-compact { background: var(--panel); border-radius: var(--r); overflow: hidden; }
-.pc-total-row {
-  display: grid; grid-template-columns: 1fr auto auto;
-  gap: 20px; align-items: center;
-  padding: 20px 24px; background: rgba(0,0,0,0.04);
-  border-bottom: 1px solid rgba(0,0,0,0.06);
+/* ── Press effect ─────────────────────────────────────────────────── */
+.cup-press {
+  transition: transform .14s cubic-bezier(.2,.7,.3,1);
+  cursor: pointer;
 }
-.pc-total-label { font-family:var(--f-m); font-size:10px; font-weight:500; letter-spacing:0.12em; text-transform:uppercase; color:var(--ink-3); }
-.pc-total-val   { font-family:var(--f-d); font-size:1.9rem; font-weight:900; color:var(--ink); letter-spacing:-0.02em; line-height:1; }
-.pc-total-chg   { font-family:var(--f-m); font-size:13px; font-weight:500; }
-.pc-total-chg.up{color:var(--green);} .pc-total-chg.down{color:var(--red);}
-.pc-row {
-  display: grid; grid-template-columns: 1fr auto auto;
-  gap: 20px; align-items: center;
-  padding: 15px 24px; border-bottom: 1px solid rgba(0,0,0,0.06);
-}
-.pc-row:last-child { border-bottom: none; }
-.pc-name { font-family:var(--f-b); font-size:14px; font-weight:600; color:var(--ink); }
-.pc-sub  { font-family:var(--f-m); font-size:10px; color:var(--ink-3); margin-top:3px; }
-.pc-val  { font-family:var(--f-m); font-size:14px; font-weight:500; color:var(--ink); text-align:right; }
-.pc-chg  { font-family:var(--f-m); font-size:12px; min-width:64px; text-align:right; }
-.pc-chg.up{color:var(--green);} .pc-chg.down{color:var(--red);}
+.cup-press:active { transform: scale(0.97); }
 
-/* ── Golf Tee Times ───────────────────────────────────────────── */
-.tt-date-group { margin-bottom: 28px; }
-.tt-date-label {
-  font-family: var(--f-m); font-size: 10px; font-weight: 600;
-  letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-3);
-  margin-bottom: 10px;
+/* ── Skeleton ─────────────────────────────────────────────────────── */
+.skel {
+  background: linear-gradient(90deg, rgba(26,24,22,0.06) 25%, rgba(26,24,22,0.10) 50%, rgba(26,24,22,0.06) 75%);
+  background-size: 200% 100%;
+  animation: cup-shimmer 1.6s ease-in-out infinite;
+  border-radius: 10px;
 }
-.tt-grid {
-  display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 10px;
-}
-.tt-card {
-  background: var(--panel); border-radius: var(--r);
-  padding: 16px 20px; text-decoration: none; display: block;
-  position: relative; transition: background 0.15s, transform 0.15s;
-}
-.tt-card:hover { background: #dde2f0; transform: translateY(-2px); }
-.tt-hot {
-  display: inline-block; background: #fff3ee; color: var(--accent);
-  font-family: var(--f-m); font-size: 9px; font-weight: 700;
-  letter-spacing: 0.1em; text-transform: uppercase;
-  padding: 3px 8px; border-radius: 20px; margin-bottom: 8px;
-}
-.tt-price {
-  position: absolute; top: 16px; right: 20px;
-  font-family: var(--f-m); font-size: 17px; font-weight: 700; color: var(--green);
-}
-.tt-time   { font-family: var(--f-m); font-size: 17px; font-weight: 700; color: var(--ink); margin-bottom: 4px; }
-.tt-course { font-family: var(--f-b); font-size: 13px; font-weight: 600; color: var(--ink); margin-bottom: 8px; line-height: 1.3; padding-right: 48px; }
-.tt-meta   { font-family: var(--f-m); font-size: 10px; color: var(--ink-3); display: flex; gap: 12px; flex-wrap: wrap; }
-.tt-stale  { font-family: var(--f-m); font-size: 10px; color: var(--ink-3); margin-top: 12px; }
 
-/* ── News ─────────────────────────────────────────────────────── */
-.news-grid {
-  display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 1px; background: rgba(0,0,0,0.07);
-  border-radius: var(--r); overflow: hidden;
+/* ── Chip ─────────────────────────────────────────────────────────── */
+.pct-chip {
+  font-family: var(--f-m);
+  font-size: 12px;
+  font-weight: 500;
+  padding: 2px 8px;
+  border-radius: 99px;
+  font-variant-numeric: tabular-nums;
 }
-.news-col { background: var(--panel); padding: 24px 26px; }
-.news-col-title {
-  font-family: var(--f-m); font-size: 10px; font-weight: 500;
-  letter-spacing: 0.16em; text-transform: uppercase; color: var(--ink-3);
-  margin-bottom: 14px; padding-bottom: 12px;
-  border-bottom: 1px solid rgba(0,0,0,0.06);
+.pct-chip.up   { color: var(--green); background: rgba(31,138,91,0.10); }
+.pct-chip.down { color: var(--red);   background: rgba(192,57,43,0.10); }
+
+/* ════════════════════════════════════════════════════════════════════
+   HERO
+   ════════════════════════════════════════════════════════════════════ */
+#hero-card {
+  padding: 36px;
+  overflow: hidden;
 }
-.story {
-  display: grid; grid-template-columns: 18px 1fr;
-  gap: 10px; padding: 10px 0;
-  border-bottom: 1px solid rgba(0,0,0,0.06);
-  text-decoration: none; color: var(--ink-2);
-  transition: color 0.12s;
+.hero-blob1, .hero-blob2 {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  will-change: transform;
 }
-.story:last-child  { border-bottom: none; padding-bottom: 0; }
-.story:first-child { padding-top: 0; }
-.story:hover { color: var(--ink); }
-.story:hover .s-t { text-decoration: underline; text-underline-offset: 3px; text-decoration-color: rgba(0,0,0,0.2); }
-.s-n { font-family:var(--f-m); font-size:10px; color:rgba(0,0,0,0.15); padding-top:3px; font-weight:500; transition: color 0.12s; }
-.story:hover .s-n { color: var(--ink-3); }
-.s-t { font-family:var(--f-b); font-size:13px; line-height:1.5; }
-.story.lead .s-t { font-size:14px; font-weight:700; color:var(--ink); }
-.story.lead .s-n { color:var(--accent); font-weight:500; }
-
-/* ── Skeleton ─────────────────────────────────────────────────── */
-.skel { background: rgba(0,0,0,0.07); border-radius: 8px; animation: shimmer 1.6s ease-in-out infinite; }
-@keyframes shimmer { 0%,100%{opacity:1;} 50%{opacity:0.45;} }
-
-/* ── Footer ───────────────────────────────────────────────────── */
-.footer { margin-top:56px; padding-top:18px; border-top:1px solid rgba(0,0,0,0.07); font-family:var(--f-m); font-size:10px; color:var(--ink-3); letter-spacing:0.08em; }
-
-/* ── Accent strip (scroll connector) ────────────────────────── */
-.accent-strip {
-  position: fixed; top: 0; left: 0; right: 0;
-  height: 3px; background: var(--accent); z-index: 500;
-  opacity: 0; transition: opacity 0.4s; pointer-events: none;
+.hero-blob1 {
+  width: 380px; height: 380px;
+  top: -120px; right: -120px;
+  background: radial-gradient(circle, rgba(232,154,47,0.22), transparent 70%);
 }
-.accent-strip.visible { opacity: 1; }
+.hero-blob2 {
+  width: 260px; height: 260px;
+  bottom: -80px; left: -40px;
+  background: radial-gradient(circle, rgba(42,111,219,0.10), transparent 70%);
+}
+.hero-inner {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 24px;
+}
+.hero-left { flex: 1; }
+.hero-date {
+  font-family: var(--f-s);
+  font-size: 13px;
+  color: var(--ink2);
+  letter-spacing: 0.2px;
+}
+.hero-h1 {
+  margin: 12px 0 0;
+  font-family: var(--f-s);
+  font-size: clamp(40px, 5vw, 64px);
+  font-weight: 600;
+  color: var(--ink);
+  letter-spacing: -2px;
+  line-height: 1;
+  max-width: 680px;
+}
+.hero-h1 em {
+  color: var(--cup-accent);
+  font-style: italic;
+  font-weight: 500;
+}
+.hero-summary {
+  font-family: var(--f-s);
+  font-size: 17px;
+  color: var(--ink2);
+  line-height: 1.5;
+  margin-top: 20px;
+  max-width: 560px;
+}
+.hero-right {
+  text-align: right;
+  min-width: 200px;
+  flex-shrink: 0;
+}
+.hero-weather-row {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 14px;
+  margin-bottom: 6px;
+}
+.hero-sun-svg {
+  width: 46px; height: 46px;
+  animation: cup-pulse 4s ease-in-out infinite;
+  flex-shrink: 0;
+}
+.hero-temp {
+  font-family: var(--f-s);
+  font-size: 72px;
+  font-weight: 300;
+  color: var(--ink);
+  line-height: 1;
+  letter-spacing: -3px;
+  font-variant-numeric: tabular-nums;
+}
+.hero-condition {
+  font-family: var(--f-s);
+  font-size: 15px;
+  color: var(--ink2);
+  font-weight: 500;
+}
+.hero-hl {
+  font-family: var(--f-m);
+  font-size: 12px;
+  color: var(--ink3);
+  margin-top: 4px;
+  letter-spacing: 0.4px;
+}
 
-/* ── FPL Team ─────────────────────────────────────────────────── */
+/* ════════════════════════════════════════════════════════════════════
+   PORTFOLIO STRIP
+   ════════════════════════════════════════════════════════════════════ */
+#portfolio-strip {
+  padding: 18px 28px;
+}
+.port-strip-inner {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.port-strip-left {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  flex-shrink: 0;
+}
+.port-strip-label {
+  font-family: var(--f-s);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  color: var(--ink3);
+}
+.port-strip-value {
+  font-family: var(--f-s);
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--ink);
+  letter-spacing: -0.4px;
+  font-variant-numeric: tabular-nums;
+}
+.port-strip-delta {
+  font-family: var(--f-m);
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--green);
+  font-variant-numeric: tabular-nums;
+}
+.port-strip-spark {
+  flex: 1;
+  min-width: 120px;
+  display: flex;
+  justify-content: center;
+}
+.port-strip-tickers {
+  display: flex;
+  gap: 14px;
+  font-family: var(--f-m);
+  font-size: 11px;
+  flex-shrink: 0;
+}
+.port-ticker-item {
+  display: flex;
+  gap: 5px;
+  align-items: baseline;
+}
+.port-ticker-sym {
+  color: var(--ink);
+  font-weight: 600;
+}
+.port-ticker-pct { font-variant-numeric: tabular-nums; }
+.port-ticker-pct.up   { color: var(--green); }
+.port-ticker-pct.down { color: var(--red); }
+
+/* ════════════════════════════════════════════════════════════════════
+   MARKETS
+   ════════════════════════════════════════════════════════════════════ */
+#markets-card {
+  padding: 28px;
+}
+.markets-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px 24px;
+}
+.market-cell {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.market-name {
+  font-family: var(--f-s);
+  font-size: 12px;
+  color: var(--ink3);
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+}
+.market-value-row {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+.market-value {
+  font-family: var(--f-s);
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--ink);
+  letter-spacing: -0.5px;
+  font-variant-numeric: tabular-nums;
+}
+
+/* ════════════════════════════════════════════════════════════════════
+   FIXTURES
+   ════════════════════════════════════════════════════════════════════ */
+#fixtures-card {
+  padding: 28px;
+}
+.fixtures-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+}
+.fixtures-subtitle {
+  font-family: var(--f-s);
+  font-size: 12px;
+  color: var(--ink3);
+}
+.fixtures-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+.fixture-chip {
+  padding: 14px 16px;
+  border-radius: 14px;
+  background: rgba(26,24,22,0.025);
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: background .22s, border-color .22s, transform .14s cubic-bezier(.2,.7,.3,1);
+  user-select: none;
+}
+.fixture-chip:hover {
+  background: rgba(26,24,22,0.05);
+}
+.fixture-chip.is-open {
+  background: rgba(42,111,219,0.06);
+  border-color: rgba(42,111,219,0.25);
+}
+.fixture-chip-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+.fixture-teams {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.fixture-team-name {
+  font-family: var(--f-s);
+  font-size: 14px;
+  color: var(--ink);
+}
+.fixture-team-name.fav { font-weight: 600; }
+.fixture-meta {
+  text-align: right;
+  flex-shrink: 0;
+}
+.fixture-time {
+  font-family: var(--f-m);
+  font-size: 11px;
+  color: var(--ink3);
+  margin-bottom: 3px;
+}
+.fixture-odds-row {
+  font-family: var(--f-m);
+  font-size: 11px;
+  color: var(--ink3);
+  display: flex;
+  gap: 5px;
+  justify-content: flex-end;
+}
+.fixture-odds-row .fav-odd { color: var(--cup-accent); }
+.fixture-expand {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows .32s cubic-bezier(.2,.7,.25,1);
+}
+.fixture-expand.open { grid-template-rows: 1fr; }
+.fixture-expand-inner {
+  overflow: hidden;
+}
+.fixture-expand-body {
+  padding-top: 10px;
+  margin-top: 10px;
+  border-top: 1px solid rgba(26,24,22,0.06);
+  font-family: var(--f-s);
+  font-size: 12px;
+  color: var(--ink2);
+  line-height: 1.6;
+}
+.fixture-expand-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2px;
+}
+
+/* ════════════════════════════════════════════════════════════════════
+   FPL
+   ════════════════════════════════════════════════════════════════════ */
+#fpl-card {
+  padding: 28px;
+}
 .fpl-header {
-  background: var(--panel); border-radius: var(--r);
-  padding: 20px 26px; margin-bottom: 10px;
-  display: flex; justify-content: space-between; align-items: flex-start; gap: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 18px;
+  flex-wrap: wrap;
+  gap: 16px;
 }
-.fpl-team-name { font-family: var(--f-d); font-size: 1.4rem; font-weight: 900; color: var(--ink); line-height: 1.1; }
-.fpl-stat-lbl { font-family: var(--f-m); font-size: 10px; color: var(--ink-3); letter-spacing: 0.06em; text-transform: uppercase; margin-top: 8px; }
-.fpl-stat-val { font-family: var(--f-m); font-size: 15px; font-weight: 500; color: var(--ink); }
-.fpl-pitch { background: var(--panel); border-radius: var(--r); padding: 20px 12px; }
-.fpl-pos-section { margin-bottom: 16px; }
-.fpl-pos-label {
-  font-family: var(--f-m); font-size: 9px; letter-spacing: 0.12em;
-  text-transform: uppercase; color: var(--ink-3);
-  text-align: center; margin-bottom: 8px;
+.fpl-title-block {}
+.fpl-team-name {
+  font-family: var(--f-s);
+  font-size: 36px;
+  font-weight: 600;
+  color: var(--ink);
+  letter-spacing: -1px;
+  line-height: 1;
 }
-.fpl-row { display: flex; justify-content: center; gap: 6px; flex-wrap: wrap; }
-.fpl-player {
-  display: flex; flex-direction: column; align-items: center;
-  gap: 3px; width: 72px; position: relative;
+.fpl-gw-note {
+  font-family: var(--f-s);
+  font-size: 13px;
+  color: var(--ink3);
+  margin-top: 4px;
 }
-.fpl-player.bench { opacity: 0.65; }
-.fpl-kit { width: 38px; height: 38px; object-fit: contain; }
-.fpl-badges { display: flex; gap: 3px; justify-content: center; min-height: 16px; }
-.fpl-cap {
-  background: var(--ink); color: #fff; border-radius: 50%;
-  width: 16px; height: 16px; font-family: var(--f-m);
-  font-size: 9px; font-weight: 700;
-  display: flex; align-items: center; justify-content: center;
+.fpl-stats-row {
+  display: flex;
+  gap: 22px;
+  align-items: flex-end;
 }
-.fpl-cap.vc { background: var(--ink-3); }
-.fpl-pname {
-  font-family: var(--f-b); font-size: 11px; font-weight: 600; color: var(--ink);
-  text-align: center; line-height: 1.2; max-width: 70px;
-  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+.fpl-stat {
+  text-align: right;
 }
-.fpl-ptag { font-family: var(--f-m); font-size: 9px; color: var(--ink-3); letter-spacing: 0.03em; }
-.fpl-doubt { font-family: var(--f-m); font-size: 9px; color: #f59e0b; }
-.fpl-bench-strip {
-  margin-top: 12px; padding-top: 12px; border-top: 1px solid rgba(0,0,0,0.06);
+.fpl-stat-label {
+  font-family: var(--f-s);
+  font-size: 11px;
+  color: var(--ink3);
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+}
+.fpl-stat-value {
+  font-family: var(--f-s);
+  font-size: 36px;
+  font-weight: 600;
+  color: var(--ink);
+  letter-spacing: -1px;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+}
+.fpl-stat-value.gw-pts { color: var(--green); }
+.fpl-stat-value.sm {
+  font-size: 24px;
+  letter-spacing: -0.5px;
+}
+
+/* PITCH */
+.fpl-pitch {
+  background: linear-gradient(180deg, rgba(31,138,91,0.04), rgba(31,138,91,0.08));
+  border-radius: 18px;
+  padding: 24px 16px 18px;
+  margin-bottom: 14px;
+  overflow: hidden;
+  position: relative;
+}
+.pitch-lines-svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+.pitch-relative {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.pitch-row {
+  display: flex;
+  justify-content: space-around;
+}
+.pitch-row.mid-row   { padding: 0 30px; }
+.pitch-row.fwd-row   { padding: 0 20px; }
+
+/* Player chip */
+.player-chip {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  width: 70px;
+  position: relative;
+  cursor: pointer;
+  transition: transform .2s cubic-bezier(.2,.7,.3,1);
+}
+.player-chip.bench {
+  width: 60px;
+  opacity: 0.75;
+}
+.player-chip:hover { transform: translateY(-3px); }
+.player-kit {
+  border-radius: 10px;
+  width: 42px; height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.player-chip.bench .player-kit {
+  width: 36px; height: 36px;
+}
+.player-kit-initial {
+  font-family: var(--f-s);
+  font-size: 15px;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+  letter-spacing: 0.3px;
+}
+.player-chip.bench .player-kit-initial { font-size: 13px; }
+.player-cap-badge {
+  position: absolute;
+  top: -5px; right: -5px;
+  width: 18px; height: 18px;
+  border-radius: 50%;
+  font-family: var(--f-s);
+  font-size: 10px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+  color: #fff;
+}
+.player-cap-badge.cap { background: var(--cup-accent); }
+.player-cap-badge.vc  { background: var(--ink2); }
+.player-name {
+  font-family: var(--f-s);
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--ink);
+  line-height: 1;
+  margin-top: 2px;
+  max-width: 70px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: center;
+}
+.player-chip.bench .player-name { font-size: 11px; }
+.player-pts-row {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 1px;
+}
+.player-pts {
+  font-family: var(--f-m);
+  font-size: 11px;
+  font-weight: 600;
+  color: #fff;
+  border-radius: 5px;
+  padding: 1px 6px;
+  font-variant-numeric: tabular-nums;
+}
+.player-fdr {
+  width: 8px; height: 8px;
+  border-radius: 2px;
+  opacity: 0.7;
+}
+
+/* Bench + meta */
+.fpl-bench-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 24px;
+  flex-wrap: wrap;
 }
 .fpl-bench-label {
-  font-family: var(--f-m); font-size: 9px; letter-spacing: 0.12em;
-  text-transform: uppercase; color: var(--ink-3); text-align: center; margin-bottom: 8px;
+  font-family: var(--f-s);
+  font-size: 11px;
+  color: var(--ink3);
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.fpl-bench-row { display: flex; gap: 14px; }
+.fpl-meta-row {
+  display: flex;
+  gap: 18px;
+  align-items: flex-end;
+}
+.fpl-meta-stat {
+  text-align: center;
+}
+.fpl-meta-stat-label {
+  font-family: var(--f-s);
+  font-size: 11px;
+  color: var(--ink3);
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+}
+.fpl-meta-stat-value {
+  font-family: var(--f-s);
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--ink);
+  letter-spacing: -0.3px;
+}
+.fpl-mini-league {
+  text-align: center;
+  padding: 4px 14px;
+  background: rgba(42,111,219,0.08);
+  border-radius: 10px;
+}
+.fpl-ml-name {
+  font-family: var(--f-s);
+  font-size: 10px;
+  color: var(--cup-accent);
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.fpl-ml-rank {
+  font-family: var(--f-s);
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--ink);
+  letter-spacing: -0.3px;
 }
 
-/* ── Weather Widget ──────────────────────────────────────────── */
-.weather-card {
-  background: var(--panel); border-radius: var(--r);
-  padding: 24px 32px; display: flex;
-  align-items: center; justify-content: space-between;
-  gap: 24px; cursor: default;
-  transition: transform 0.2s, box-shadow 0.2s;
+/* ════════════════════════════════════════════════════════════════════
+   GOLF
+   ════════════════════════════════════════════════════════════════════ */
+#golf-card {
+  padding: 28px;
 }
-.weather-card:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.07); }
-.wx-left { display: flex; flex-direction: column; }
-.wx-temp {
-  font-family: var(--f-d); font-size: 2.8rem; font-weight: 900;
-  color: var(--ink); letter-spacing: -0.04em; line-height: 1;
+.golf-two-col {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;
+  gap: 24px;
 }
-.wx-unit { font-family: var(--f-m); font-size: 1.1rem; color: var(--ink-3); font-weight: 400; }
-.wx-desc { font-family: var(--f-b); font-size: 15px; font-weight: 600; color: var(--ink-2); margin-top: 7px; }
-.wx-meta { font-family: var(--f-m); font-size: 11px; color: var(--ink-3); margin-top: 5px; letter-spacing: 0.01em; }
-.wx-icon { flex-shrink: 0; }
+/* Next tee panel */
+.golf-next-panel {
+  background: linear-gradient(135deg, rgba(31,138,91,0.06), rgba(31,138,91,0.02));
+  border: 1px solid rgba(31,138,91,0.18);
+  border-radius: 16px;
+  padding: 18px 22px;
+  position: relative;
+  overflow: hidden;
+}
+.golf-pin-svg {
+  position: absolute;
+  top: 14px; right: 14px;
+  width: 38px;
+  opacity: 0.16;
+  pointer-events: none;
+}
+.golf-next-eyebrow {
+  font-family: var(--f-s);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  color: var(--green);
+  margin-bottom: 8px;
+}
+.golf-course-name {
+  font-family: var(--f-s);
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--ink);
+  letter-spacing: -0.6px;
+  line-height: 1.05;
+  margin-bottom: 6px;
+  padding-right: 40px;
+}
+.golf-datetime-row {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  margin-bottom: 14px;
+  flex-wrap: wrap;
+}
+.golf-date {
+  font-family: var(--f-s);
+  font-size: 15px;
+  color: var(--ink2);
+}
+.golf-time {
+  font-family: var(--f-s);
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--green);
+  letter-spacing: -0.4px;
+}
+.golf-holes {
+  font-family: var(--f-m);
+  font-size: 12px;
+  color: var(--ink3);
+  margin-left: auto;
+}
+.golf-book-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  background: var(--green);
+  color: #fff;
+  border-radius: 99px;
+  font-family: var(--f-s);
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: opacity .2s;
+}
+.golf-book-btn:hover { opacity: 0.88; }
+/* Hot deal badge */
+.golf-hot-badge {
+  display: inline-block;
+  background: rgba(192,57,43,0.10);
+  color: var(--red);
+  font-family: var(--f-m);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  padding: 3px 10px;
+  border-radius: 99px;
+  margin-bottom: 8px;
+}
+/* Right: upcoming */
+.golf-upcoming-eyebrow {
+  font-family: var(--f-s);
+  font-size: 11px;
+  color: var(--ink3);
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.golf-upcoming-row {
+  padding: 8px 10px;
+  margin: 0 -10px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+}
+.golf-upcoming-course {
+  font-family: var(--f-s);
+  font-size: 13px;
+  color: var(--ink);
+  font-weight: 500;
+}
+.golf-upcoming-meta {
+  font-family: var(--f-m);
+  font-size: 11px;
+  color: var(--ink3);
+  margin-top: 1px;
+}
+.golf-upcoming-time {
+  font-family: var(--f-s);
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--ink2);
+  letter-spacing: -0.2px;
+}
+.golf-upcoming-price {
+  font-family: var(--f-m);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--green);
+}
+.golf-stale {
+  font-family: var(--f-m);
+  font-size: 11px;
+  color: var(--ink3);
+  margin-top: 12px;
+}
+.golf-empty {
+  font-family: var(--f-s);
+  font-size: 14px;
+  color: var(--ink3);
+  padding: 16px 0;
+}
 
-/* Sun: rays spin */
-.weather-card:hover .wx-svg-sun { animation: wxSpin 9s linear infinite; transform-origin: center; }
-@keyframes wxSpin { to { transform: rotate(360deg); } }
+/* ════════════════════════════════════════════════════════════════════
+   HEADLINES
+   ════════════════════════════════════════════════════════════════════ */
+#headlines-card {
+  padding: 28px;
+}
+.headlines-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.tab-pill-group {
+  display: flex;
+  gap: 4px;
+  padding: 3px;
+  background: rgba(26,24,22,0.04);
+  border-radius: 99px;
+}
+.tab-pill {
+  padding: 6px 14px;
+  border-radius: 99px;
+  border: 0;
+  font-family: var(--f-s);
+  font-size: 12px;
+  font-weight: 500;
+  background: transparent;
+  color: var(--ink2);
+  cursor: pointer;
+  transition: background .25s cubic-bezier(.2,.7,.3,1), color .2s, box-shadow .25s, transform .14s cubic-bezier(.2,.7,.3,1);
+}
+.tab-pill:hover { color: var(--ink); }
+.tab-pill.active {
+  background: var(--bg2);
+  color: var(--ink);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.10), 0 1px 1px rgba(0,0,0,0.04);
+}
+.tab-pill:active { transform: scale(0.97); }
+.headlines-body {
+  margin-top: 8px;
+}
+.headlines-tab-content {
+  animation: cup-fade-up 380ms cubic-bezier(.2,.7,.25,1);
+}
+.headline-row {
+  padding: 16px 14px;
+  margin: 0 -14px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background .18s, transform .18s cubic-bezier(.2,.7,.3,1);
+}
+.headline-row:not(:last-child) {
+  border-bottom: 1px solid var(--line);
+}
+.headline-row:hover {
+  background: rgba(26,24,22,0.035);
+  transform: translateX(3px);
+}
+.headline-row:hover .headline-title { color: var(--cup-accent); }
+.headline-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+  font-family: var(--f-s);
+  font-size: 11px;
+  color: var(--ink3);
+  font-weight: 500;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+}
+.headline-src { color: var(--cup-accent); }
+.headline-title {
+  margin: 0;
+  font-family: var(--f-s);
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--ink);
+  letter-spacing: -0.4px;
+  line-height: 1.3;
+  transition: color .2s;
+}
+.headline-summary {
+  margin: 6px 0 0;
+  font-family: var(--f-s);
+  font-size: 14px;
+  color: var(--ink2);
+  line-height: 1.5;
+}
 
-/* Cloud: drift */
-.weather-card:hover .wx-cloud-body { animation: wxDrift 2.5s ease-in-out infinite alternate; }
-@keyframes wxDrift { from { transform: translateX(-4px); } to { transform: translateX(4px); } }
+/* ════════════════════════════════════════════════════════════════════
+   FOOTER
+   ════════════════════════════════════════════════════════════════════ */
+.brief-footer {
+  font-family: var(--f-s);
+  font-size: 12px;
+  color: var(--ink3);
+  text-align: center;
+  padding: 18px 0;
+  letter-spacing: 0.3px;
+}
 
-/* Rain/snow drops/flakes: fall */
-.weather-card:hover .wx-d1 { animation: wxFall 0.9s linear infinite; }
-.weather-card:hover .wx-d2 { animation: wxFall 0.9s linear infinite 0.3s; }
-.weather-card:hover .wx-d3 { animation: wxFall 0.9s linear infinite 0.6s; }
-@keyframes wxFall { 0%{transform:translateY(-2px);opacity:0} 20%{opacity:1} 100%{transform:translateY(16px);opacity:0} }
+/* ════════════════════════════════════════════════════════════════════
+   RESPONSIVE
+   ════════════════════════════════════════════════════════════════════ */
+@media (max-width: 900px) {
+  .wrap { padding: 24px 24px 60px; }
+  .hero-h1 { font-size: clamp(32px, 7vw, 56px); }
+  .golf-two-col { grid-template-columns: 1fr; }
+  .fixtures-grid { grid-template-columns: 1fr; }
+  .markets-grid { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 640px) {
+  .wrap { padding: 16px 16px 48px; gap: 14px; }
+  .hero-inner { flex-direction: column; }
+  .hero-right { text-align: left; min-width: 0; }
+  .hero-weather-row { justify-content: flex-start; }
+  .fpl-stats-row { gap: 12px; }
+  .fpl-stat-value { font-size: 28px; }
+  .port-strip-inner { gap: 12px; }
+  .port-strip-spark { display: none; }
+  .markets-grid { grid-template-columns: 1fr; }
+}
 
-/* Snow flakes */
-.weather-card:hover .wx-f1 { animation: wxFlake 1.4s ease-in infinite; }
-.weather-card:hover .wx-f2 { animation: wxFlake 1.4s ease-in infinite 0.47s; }
-.weather-card:hover .wx-f3 { animation: wxFlake 1.4s ease-in infinite 0.93s; }
-@keyframes wxFlake { 0%{transform:translateY(-2px) rotate(0deg);opacity:0} 20%{opacity:1} 100%{transform:translateY(18px) rotate(120deg);opacity:0} }
-
-/* Storm bolt */
-.weather-card:hover .wx-bolt { animation: wxBolt 1.8s ease-in-out infinite; }
-@keyframes wxBolt { 0%,45%,55%,100%{opacity:1} 50%{opacity:0.05} }
-
-/* Fog drift */
-.weather-card:hover .wx-fl1 { animation: wxFog 2s ease-in-out infinite alternate; }
-.weather-card:hover .wx-fl2 { animation: wxFog 2s ease-in-out infinite 0.3s alternate-reverse; }
-.weather-card:hover .wx-fl3 { animation: wxFog 2s ease-in-out infinite 0.6s alternate; }
-@keyframes wxFog { from{transform:translateX(-5px);opacity:0.5} to{transform:translateX(5px);opacity:0.9} }
-
-/* ── Responsive ───────────────────────────────────────────────── */
-@media (max-width: 680px) {
-  .wrap { padding: 20px 16px 60px; }
-  .ticker-outer { margin: 16px -16px 0; }
-  .header { flex-direction: column; gap: 14px; padding: 28px 28px; border-radius: 16px; }
-  .greeting { font-size: 1.9rem; }
-  .header-right { flex-direction: row; align-items: center; }
-  .indices-strip { flex-wrap: wrap; }
-  .idx-cell { min-width: 50%; }
-  .movers-grid { grid-template-columns: 1fr; }
-  .movers-col:first-child { border-right: none; border-bottom: 1px solid rgba(0,0,0,0.06); }
-  .carousel-body { grid-template-columns: 1fr; }
-  .c-spark-wrap { display: none; }
-  .pc-total-row { grid-template-columns: 1fr auto; }
-  .pc-total-val { font-size: 1.5rem; }
+@media (prefers-reduced-motion: reduce) {
+  .cup-reveal, .cup-reveal.is-in, .headlines-tab-content {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+  .cup-press:active { transform: none; }
+  .cup-row:hover { transform: none; }
+  .card.hover-lift:hover { transform: none; }
 }
 </style>
 </head>
 <body>
 
-<div id="page-bar"></div>
-<div class="accent-strip" id="accent-strip"></div>
-
 <div class="wrap">
 
-<div class="header">
-  <div>
-    <div class="greeting" id="greeting">Good morning, Jonno.</div>
-    <div class="header-meta">
-      <div class="dateline" id="dateline"></div>
+  <!-- HERO -->
+  <div class="card cup-reveal" id="hero-card">
+    <div class="hero-blob1" id="hero-blob1"></div>
+    <div class="hero-blob2" id="hero-blob2"></div>
+    <div class="hero-inner">
+      <div class="hero-left">
+        <div class="hero-date" id="hero-date"></div>
+        <h1 class="hero-h1" id="hero-h1">Good morning, <em>Jonno</em>.</h1>
+        <p class="hero-summary" id="hero-summary">Loading weather…</p>
+      </div>
+      <div class="hero-right">
+        <div class="hero-weather-row">
+          <svg class="hero-sun-svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" id="sun-svg">
+            <g style="transform-origin:12px 12px; animation: cup-spin 60s linear infinite">
+              <line x1="12" y1="2"    x2="12" y2="5.5"  stroke="#e89a2f" stroke-width="1.8" stroke-linecap="round" opacity="0.75"/>
+              <line x1="12" y1="18.5" x2="12" y2="22"   stroke="#e89a2f" stroke-width="1.8" stroke-linecap="round" opacity="0.75"/>
+              <line x1="2"  y1="12"   x2="5.5" y2="12"  stroke="#e89a2f" stroke-width="1.8" stroke-linecap="round" opacity="0.75"/>
+              <line x1="18.5" y1="12" x2="22" y2="12"   stroke="#e89a2f" stroke-width="1.8" stroke-linecap="round" opacity="0.75"/>
+              <line x1="4.22" y1="4.22" x2="6.34" y2="6.34" stroke="#e89a2f" stroke-width="1.8" stroke-linecap="round" opacity="0.75"/>
+              <line x1="17.66" y1="17.66" x2="19.78" y2="19.78" stroke="#e89a2f" stroke-width="1.8" stroke-linecap="round" opacity="0.75"/>
+              <line x1="19.78" y1="4.22" x2="17.66" y2="6.34" stroke="#e89a2f" stroke-width="1.8" stroke-linecap="round" opacity="0.75"/>
+              <line x1="6.34" y1="17.66" x2="4.22" y2="19.78" stroke="#e89a2f" stroke-width="1.8" stroke-linecap="round" opacity="0.75"/>
+            </g>
+            <circle cx="12" cy="12" r="4.5" fill="#e89a2f"/>
+          </svg>
+          <div class="hero-temp" id="hero-temp">—°</div>
+        </div>
+        <div class="hero-condition" id="hero-condition">—</div>
+        <div class="hero-hl" id="hero-hl"></div>
+      </div>
     </div>
   </div>
-  <div class="header-right">
-    <div class="live-badge"><span class="live-dot"></span>Live</div>
-  </div>
-</div>
 
-<div class="ticker-outer">
-  <div class="ticker-track" id="ticker-track">
-    <span class="tick-item"><span class="t-name">Loading</span><span class="t-price">—</span></span>
-  </div>
-</div>
-
-<div class="section" id="s-weather">
-  <div class="weather-card">
-    <div class="wx-left">
-      <div class="wx-temp" id="wx-temp">—<span class="wx-unit">°C</span></div>
-      <div class="wx-desc" id="wx-desc">Loading weather…</div>
-      <div class="wx-meta" id="wx-meta"></div>
-    </div>
-    <div class="wx-icon" id="wx-icon"></div>
-  </div>
-</div>
-
-<div class="section" id="s-markets">
-  <div class="lbl">Markets</div>
-  <div class="indices-strip" id="indices">
-    <div class="idx-cell skel" style="height:46px;flex:1"></div>
-    <div class="idx-cell skel" style="height:46px;flex:1"></div>
-    <div class="idx-cell skel" style="height:46px;flex:1"></div>
-    <div class="idx-cell skel" style="height:46px;flex:1"></div>
-  </div>
-  <div class="movers-grid">
-    <div class="movers-col">
-      <div class="movers-head">Biggest Gains</div>
-      <div id="movers-up"><div class="mover-row skel" style="height:46px"></div><div class="mover-row skel" style="height:46px"></div><div class="mover-row skel" style="height:46px"></div></div>
-    </div>
-    <div class="movers-col">
-      <div class="movers-head">Biggest Losses</div>
-      <div id="movers-dn"><div class="mover-row skel" style="height:46px"></div><div class="mover-row skel" style="height:46px"></div><div class="mover-row skel" style="height:46px"></div></div>
+  <!-- PORTFOLIO STRIP -->
+  <div class="card hover-lift cup-reveal" id="portfolio-strip">
+    <div class="port-strip-inner">
+      <div class="port-strip-left">
+        <span class="port-strip-label">Portfolio</span>
+        <span class="port-strip-value" id="port-value">£—</span>
+        <span class="port-strip-delta" id="port-delta"></span>
+        <span class="pct-chip" id="port-pct"></span>
+      </div>
+      <div class="port-strip-spark">
+        <svg id="port-sparkline" width="140" height="28" viewBox="0 0 140 28" fill="none"></svg>
+      </div>
+      <div class="port-strip-tickers" id="port-tickers"></div>
     </div>
   </div>
-</div>
 
-<div class="section" id="s-carousel">
-  <div class="lbl">Company to Watch</div>
-  <div class="carousel">
-    <div class="carousel-tabs" id="carousel-tabs"></div>
-    <div class="carousel-body" id="carousel-body"></div>
-    <div class="carousel-progress"><div class="carousel-bar" id="carousel-bar"></div></div>
-  </div>
-</div>
-
-<div class="section" id="s-fixtures">
-  <div class="lbl">Upcoming Fixtures</div>
-  <div class="fixtures-grid" id="fixtures-main"></div>
-  <div class="fixtures-grid" id="fixtures-extra" style="display:none;margin-top:10px"></div>
-  <div id="fixtures-toggle-wrap"></div>
-</div>
-
-<div class="section" id="s-portfolio">
-  <div class="lbl">Your Portfolio</div>
-  <div class="portfolio-compact">
-    <div class="pc-total-row">
-      <span class="pc-total-label">Total Value</span>
-      <span class="pc-total-val" id="pc-total">—</span>
-      <span class="pc-total-chg" id="pc-chg"></span>
-    </div>
-    <div id="pc-holdings">
-      <div class="pc-row skel" style="height:58px"></div>
-      <div class="pc-row skel" style="height:58px"></div>
-      <div class="pc-row skel" style="height:58px"></div>
+  <!-- MARKETS -->
+  <div class="card hover-lift cup-reveal" id="markets-card">
+    <div class="eyebrow">Markets</div>
+    <div class="markets-grid" id="markets-grid">
+      <div class="skel" style="height:56px;border-radius:10px"></div>
+      <div class="skel" style="height:56px;border-radius:10px"></div>
+      <div class="skel" style="height:56px;border-radius:10px"></div>
+      <div class="skel" style="height:56px;border-radius:10px"></div>
+      <div class="skel" style="height:56px;border-radius:10px"></div>
+      <div class="skel" style="height:56px;border-radius:10px"></div>
     </div>
   </div>
-</div>
 
-<div class="section" id="s-golf">
-  <div class="lbl">Weekend Tee Times Near Wimbledon</div>
-  <div id="golf-content"><div class="skel" style="height:180px;border-radius:var(--r)"></div></div>
-</div>
+  <!-- FIXTURES -->
+  <div class="card hover-lift cup-reveal" id="fixtures-card">
+    <div class="fixtures-header">
+      <div class="eyebrow" style="margin-bottom:0">Today's Fixtures · Premier League</div>
+      <span class="fixtures-subtitle" id="fixtures-subtitle"></span>
+    </div>
+    <div class="fixtures-grid" id="fixtures-grid">
+      <div class="skel" style="height:72px"></div>
+      <div class="skel" style="height:72px"></div>
+      <div class="skel" style="height:72px"></div>
+      <div class="skel" style="height:72px"></div>
+    </div>
+  </div>
 
-<div class="section" id="s-fpl">
-  <div class="lbl">Your FPL Team</div>
-  <div id="fpl-content"><div class="skel" style="height:340px;border-radius:var(--r)"></div></div>
-</div>
+  <!-- FPL -->
+  <div class="card hover-lift cup-reveal" id="fpl-card">
+    <div class="fpl-header">
+      <div class="fpl-title-block">
+        <div class="eyebrow" style="margin-bottom:6px">Fantasy Premier League</div>
+        <div class="fpl-team-name" id="fpl-team-name">—</div>
+        <div class="fpl-gw-note" id="fpl-gw-note"></div>
+      </div>
+      <div class="fpl-stats-row" id="fpl-stats-row">
+        <div class="skel" style="width:180px;height:60px;border-radius:10px"></div>
+      </div>
+    </div>
+    <div id="fpl-pitch-wrap">
+      <div class="skel" style="height:320px;border-radius:18px;margin-bottom:14px"></div>
+    </div>
+    <div id="fpl-bench-wrap"></div>
+  </div>
 
-<div class="section" id="s-news">
-  <div class="lbl">Today's Briefing</div>
-  <div class="news-grid" id="news"></div>
-</div>
+  <!-- GOLF -->
+  <div class="card hover-lift cup-reveal" id="golf-card">
+    <div class="eyebrow">Golf · Tee Times</div>
+    <div id="golf-body">
+      <div class="skel" style="height:200px;border-radius:16px"></div>
+    </div>
+  </div>
 
-<div class="footer" id="footer"></div>
-</div>
+  <!-- HEADLINES -->
+  <div class="card cup-reveal" id="headlines-card">
+    <div class="headlines-header">
+      <div class="eyebrow" style="margin-bottom:0">Headlines</div>
+      <div class="tab-pill-group" id="headlines-tabs">
+        <button class="tab-pill active cup-press" data-tab="AI" onclick="switchTab('AI')">AI</button>
+        <button class="tab-pill cup-press" data-tab="Tech" onclick="switchTab('Tech')">Tech</button>
+        <button class="tab-pill cup-press" data-tab="World" onclick="switchTab('World')">World</button>
+        <button class="tab-pill cup-press" data-tab="Premier League" onclick="switchTab('Premier League')">Football</button>
+      </div>
+    </div>
+    <div class="headlines-body" id="headlines-body">
+      <div class="skel" style="height:100px;border-radius:10px;margin-top:12px"></div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="brief-footer">Refreshes at 08:30 · Made for Jonno</div>
+
+</div><!-- /wrap -->
 
 <script>
-// ── Config ─────────────────────────────────────────────────────────────────────
-const PORTFOLIO   = { "AIAG": "AIAG.L", "All World": "VWRP.L", "US 500": "VUSA.L" };
-const UNITS       = { "AIAG": 74, "All World": 45, "US 500": 35.99 };
-const INDEX_NAMES = ["FTSE 100", "S&P 500", "Bitcoin", "Gold"];
-const MOVER_NAMES = ["Nvidia","Apple","Tesla","Meta","Amazon","Microsoft","Alphabet","ARM","Palantir","Broadcom","AMD","CrowdStrike"];
+// ════════════════════════════════════════════════════════════════════
+// CONFIG
+// ════════════════════════════════════════════════════════════════════
+const PORTFOLIO   = { 'AIAG': 'AIAG.L', 'All World': 'VWRP.L', 'US 500': 'VUSA.L' };
+const PORT_UNITS  = { 'AIAG': 74, 'All World': 45, 'US 500': 35.99 };
+const INDEX_NAMES = ['FTSE 100', 'S&P 500', 'NASDAQ', 'Nikkei', 'Gold', 'Bitcoin'];
 
-let GBPUSD = 1.27; // live rate updated from API
+// Placeholder index values for skeletons — will be overwritten with real data
+const INDEX_PLACEHOLDERS = {
+  'FTSE 100': { value: 8600,    decimals: 0 },
+  'S&P 500':  { value: 5500,    decimals: 2 },
+  'NASDAQ':   { value: 19500,   decimals: 2 },
+  'Nikkei':   { value: 38000,   decimals: 0 },
+  'Gold':     { value: 3350,    decimals: 2 },
+  'Bitcoin':  { value: 57000,   decimals: 0 },
+};
 
-const COMPANIES = [
-  { name: "Nebius Group", tag: "AI Infrastructure", url: "nebius.com",
-    what: "Amsterdam-listed AI cloud company rebuilt from Yandex's international assets, now providing GPU infrastructure for AI across Europe.",
-    why: "One of the few serious non-US AI infrastructure plays — building GPU clusters at a moment when compute is the central bottleneck in the AI race." },
-  { name: "Wayve", tag: "Autonomous Vehicles", url: "wayve.ai",
-    what: "London startup teaching cars to drive using cameras and AI alone — no LiDAR, no HD maps — with the goal of generalising across any country.",
-    why: "Raised $1B from SoftBank, Microsoft, and Nvidia in 2024. Unlike US rivals locked to specific geofenced areas, Wayve's approach aims to work on any road in the world." },
-  { name: "Runway", tag: "AI Video", url: "runwayml.com",
-    what: "AI video generation and editing platform used by filmmakers, studios, and creators to generate video from text or images.",
-    why: "Video generation is where image AI was two years ago — moving extremely fast, and Runway is the quality benchmark the rest of the industry is chasing." },
-  { name: "Liquid AI", tag: "AI Research", url: "liquid.ai",
-    what: "MIT spinout building Liquid Neural Networks — a fundamentally different AI architecture to transformers, using continuous-time dynamics instead of attention layers.",
-    why: "The transformer architecture has dominated AI since 2017. Any credible alternative matters — Liquid's models achieve strong results with far fewer parameters." },
-  { name: "World Labs", tag: "AI Research", url: "worldlabs.ai",
-    what: "Spatial intelligence company founded by Fei-Fei Li — the researcher behind ImageNet — building AI that understands 3D space the way humans do.",
-    why: "Current AI is largely 2D text and images. AI that truly understands 3D space unlocks robotics, simulation, and augmented reality at a completely different level." },
-  { name: "Imbue", tag: "AI Research", url: "imbue.com",
-    what: "AI research company focused on building agents that can reason and code reliably — completing long, complex tasks without losing the thread.",
-    why: "Reliable multi-step reasoning is the key gap in current AI. Whoever genuinely cracks it first will have an enormous lead in the agentic AI wave." },
-  { name: "Sakana AI", tag: "AI Research", url: "sakana.ai",
-    what: "Tokyo-based AI lab founded by Llion Jones — one of the original authors of the transformer paper — exploring nature-inspired AI using evolutionary algorithms and model merging.",
-    why: "A direct intellectual challenge to the 'bigger is better' orthodoxy in AI, from someone who understands transformers as well as anyone alive." },
-  { name: "EvolutionaryScale", tag: "Biotech", url: "evolutionaryscale.ai",
-    what: "Spun out of Meta, building protein language models — AI that reads and writes the sequence language of proteins to design new biological molecules.",
-    why: "Their ESM3 model can generate proteins that have never existed in nature, which could unlock entirely new classes of drugs, enzymes, and materials." },
-  { name: "Chai Discovery", tag: "Biotech", url: "chaidiscovery.com",
-    what: "Cambridge-based startup that released a protein structure prediction model competitive with AlphaFold but fully open-source and freely available.",
-    why: "Making world-class biological AI free and open accelerates drug discovery everywhere — not just at well-funded labs with expensive software licences." },
-  { name: "Aurora Innovation", tag: "Autonomous Vehicles", url: "aurora.tech",
-    what: "Running commercial driverless freight trucks on US highways, with Uber Freight and FedEx as partners.",
-    why: "Self-driving passenger cars get all the attention, but autonomous freight makes more immediate economic sense — routes are predictable, the savings are quantifiable." },
-  { name: "Cognition AI", tag: "AI", url: "cognition.ai",
-    what: "Built Devin, an AI software engineer that can read a codebase, write code, run tests, and fix bugs autonomously.",
-    why: "If AI can genuinely replace junior engineering work end-to-end, the implications for the software industry — and every industry that runs on software — are enormous." },
-  { name: "Synthesia", tag: "AI Video", url: "synthesia.io",
-    what: "London-based platform that creates photorealistic avatar videos from a text script — used by Reuters, Heineken, and Zoom for training and communications.",
-    why: "Professional video production is expensive and slow. AI avatars remove that barrier entirely at scale — and the quality has crossed the threshold of professional acceptability." },
-  { name: "DeepL", tag: "AI", url: "deepl.com",
-    what: "German AI translation company whose models consistently outperform Google Translate on nuanced, professional, and legal text.",
-    why: "Often dismissed because translation feels like a solved problem — but for anyone who needs precise meaning in complex documents, DeepL is genuinely in a different class." },
-  { name: "Helsing", tag: "Defence Tech", url: "helsing.ai",
-    what: "Munich-based AI company processing radar, signals, and sensor data for European defence and intelligence agencies.",
-    why: "European nations are rapidly increasing defence budgets and need sovereign AI capability — Helsing is positioning as the continent's answer to Anduril." },
-  { name: "Varda Space", tag: "Space", url: "varda.com",
-    what: "Los Angeles startup manufacturing pharmaceuticals inside SpaceX capsules in orbit, where microgravity produces superior crystal structures impossible to make on Earth.",
-    why: "Has already completed commercial manufacturing runs in space. Microgravity unlocks materials and drug formulations that simply cannot be produced at ground level." },
-  { name: "Stoke Space", tag: "Space", url: "stokespace.com",
-    what: "Washington state startup building a fully reusable rocket from scratch — both stages return and land — targeting rapid, frequent launches.",
-    why: "SpaceX proved full reusability works. Whoever builds the second reliable fully-reusable rocket captures a large share of a launch market growing faster than supply." },
-  { name: "TAE Technologies", tag: "Energy", url: "taetechnologies.com",
-    what: "California fusion company using a hydrogen-boron fuel cycle that, if it works, produces almost no neutron radiation — making the reactor far simpler than conventional fusion.",
-    why: "Most fusion approaches create significant radiation and need expensive shielding. TAE's approach could be fundamentally cleaner and cheaper — if the physics cooperates." },
-  { name: "Abridge", tag: "Healthtech", url: "abridge.com",
-    what: "AI that records doctor-patient conversations and generates clinical notes automatically, with deep integration into Epic — the world's most widely used hospital software.",
-    why: "Doctors spend over 2 hours on admin per hour of patient care. Abridge cuts that dramatically, and Epic integration means it can reach most hospitals in the developed world." },
-  { name: "Owkin", tag: "Biotech", url: "owkin.com",
-    what: "French AI company using federated learning — AI that trains across hospitals without patient data ever leaving — to discover drugs and biomarkers.",
-    why: "Healthcare AI has enormous potential but privacy laws make pooling patient data nearly impossible. Owkin's federated approach sidesteps the problem entirely." },
-  { name: "Exscientia", tag: "Biotech", url: "exscientia.ai",
-    what: "Oxford-founded AI drug design company that compresses the path from molecule concept to clinical trial using AI-driven chemistry.",
-    why: "Has multiple AI-designed drugs in clinical trials and a serious scientific team — one of the most credible companies at the intersection of chemistry, biology, and machine learning." },
-  { name: "Absci", tag: "Biotech", url: "absci.com",
-    what: "Oregon biotech using generative AI to design antibody drugs from scratch — inputting a disease target and generating novel therapeutic molecules as output.",
-    why: "Antibodies are the fastest-growing class of approved drugs. Designing them computationally rather than by trial and error is a step-change in what's developable." },
-  { name: "NewLimit", tag: "Longevity", url: "newlimit.com",
-    what: "Biotech company founded by Brian Armstrong using epigenetic reprogramming to attempt to reverse ageing at the cellular level.",
-    why: "Epigenetic clocks can measure biological age with surprising accuracy — and some experiments suggest rewinding them is possible. NewLimit is one of the most focused bets on actually doing it." },
-  { name: "Retro Biosciences", tag: "Longevity", url: "retro.bio",
-    what: "Longevity company funded with $180M by Sam Altman, targeting the addition of 10 healthy years to the human lifespan by attacking fundamental ageing mechanisms.",
-    why: "Serious people with serious money are treating human longevity as an engineering problem rather than an inevitability. Retro is one of the most credible attempts to test that bet." },
-  { name: "Machina Labs", tag: "Manufacturing", url: "machinalabs.ai",
-    what: "Los Angeles startup using AI-controlled robotic arms to shape metal sheets into complex parts — replacing expensive dies and presses that take months to manufacture.",
-    why: "Custom metal parts for aerospace and defence have lead times measured in years. Machina Labs can produce the same parts in days using software and off-the-shelf robots." },
-  { name: "Applied Intuition", tag: "Autonomous Systems", url: "appliedintuition.com",
-    what: "Builds the simulation software and developer toolchain that autonomous vehicle and defence companies use to safely test and validate AI in the physical world.",
-    why: "Building autonomous systems is hard; testing them safely without catastrophic real-world failures is equally hard. Applied Intuition is the picks-and-shovels play for physical AI." },
-  { name: "Physical Intelligence", tag: "Robotics", url: "physicalintelligence.company",
-    what: "Building foundation models for robots — the equivalent of GPT but for physical manipulation tasks in the real world.",
-    why: "If a single AI model could control any robot body, the cost of deploying robotics drops dramatically. That's what PI is attempting — and the team is elite." },
-  { name: "Commonwealth Fusion Systems", tag: "Energy", url: "cfs.energy",
-    what: "Pursuing commercial nuclear fusion using high-temperature superconducting magnets developed with MIT.",
-    why: "Their 2021 magnet demonstration was a genuine scientific milestone — they achieved field strengths that make a compact, affordable fusion reactor plausible for the first time." },
-  { name: "Helion Energy", tag: "Energy", url: "helionenergy.com",
-    what: "Private fusion company targeting commercial electricity generation, with a signed power purchase agreement with Microsoft.",
-    why: "The first fusion power purchase agreement ever signed. Sam Altman is the largest individual investor. The timeline is aggressive but the intent is clearly serious." },
-  { name: "Anduril Industries", tag: "Defence Tech", url: "anduril.com",
-    what: "Silicon Valley defence company building autonomous systems, AI-powered surveillance, and software-defined weapons platforms for Western militaries.",
-    why: "Reshaping how democracies buy military technology — from decade-long procurement to fast software iteration. The contracts are large and the geopolitical tailwind is real." },
-  { name: "Mistral AI", tag: "AI", url: "mistral.ai",
-    what: "Paris-based AI lab releasing powerful open-weight models that compete with the best closed models from OpenAI and Google.",
-    why: "Europe's strongest answer to US AI dominance — and open-weight models that anyone can run locally matter enormously for sovereignty, privacy, and cost." },
-  { name: "Groq", tag: "AI Infrastructure", url: "groq.com",
-    what: "Makes LPU chips — a purpose-built architecture for AI inference — that run large language models dramatically faster than Nvidia GPUs.",
-    why: "Latency is a real product differentiator in AI. Groq's chips run Llama at speeds that make real-time voice and complex agents feel instant rather than sluggish." },
-  { name: "Recursion Pharmaceuticals", tag: "Biotech", url: "recursion.com",
-    what: "Runs millions of automated biology experiments using AI and robotics to map disease biology and discover new drugs at unprecedented scale.",
-    why: "Drug discovery is slow because biology is complex. Recursion is essentially running a search algorithm over biological space — and the search is getting faster." },
-  { name: "Isomorphic Labs", tag: "Biotech", url: "isomorphiclabs.com",
-    what: "Google DeepMind spinout applying the AI that solved protein structure prediction to the harder problem of designing effective drug molecules.",
-    why: "AlphaFold was a landmark — this is the commercial application of that capability. If it works, AI will design better drugs faster than any human research team." },
-  { name: "Cerebras Systems", tag: "AI Infrastructure", url: "cerebras.net",
-    what: "Makes wafer-scale AI chips — single processors the size of a dinner plate — that can train large models in a fraction of the time of conventional GPU clusters.",
-    why: "Training speed compounds directly into competitive advantage. Cerebras is the most technically distinct challenge to Nvidia's dominance of AI compute." },
-  { name: "Tenstorrent", tag: "AI Infrastructure", url: "tenstorrent.com",
-    what: "Building open-source AI chips under the direction of Jim Keller, the chip architect behind AMD Ryzen, Apple Silicon, and Tesla's Autopilot hardware.",
-    why: "Open-source silicon could do for AI hardware what Linux did for software. Keller has a track record of doing what people said was impossible, twice." },
-  { name: "Shield AI", tag: "Defence Tech", url: "shield.ai",
-    what: "Builds Hivemind, an AI pilot that can fly military jets and drone swarms without GPS, communications, or human input.",
-    why: "The ability to operate autonomously in GPS-denied, communications-jammed environments is a fundamental shift in military capability — and Hivemind is the leading software for it." },
-  { name: "Altos Labs", tag: "Longevity", url: "altoslabs.com",
-    what: "Biotech company researching cellular reprogramming — resetting cells to a younger biological state — as a potential mechanism to reverse ageing.",
-    why: "Backed by Jeff Bezos and a scientific team that includes Nobel laureates. The biology of reprogramming is real; the question is whether it can be made safe and controllable." },
-  { name: "Einride", tag: "Transport", url: "einride.tech",
-    what: "Swedish company operating electric autonomous freight trucks commercially across Sweden, Germany, and the US with major retail and logistics customers.",
-    why: "Unlike most autonomous vehicle companies still in testing, Einride is moving real freight for real customers right now — the commercial model is already demonstrated." },
-  { name: "Insilico Medicine", tag: "Biotech", url: "insilico.com",
-    what: "AI drug discovery company with the first fully AI-designed and AI-developed drug to reach Phase 2 clinical trials in human patients.",
-    why: "The pipeline from AI to approved medicine is still mostly theoretical — Insilico is the furthest along in proving it's possible in practice." },
-  { name: "Generate:Biomedicines", tag: "Biotech", url: "generatebiomedicines.com",
-    what: "Using large generative AI models to design entirely new proteins and therapeutic molecules that have no equivalent in nature.",
-    why: "Applying the same generative revolution that produced image and language AI to biology. The potential search space of novel medicines is effectively infinite." },
-  { name: "Etched", tag: "AI Infrastructure", url: "etched.com",
-    what: "Building a chip hardwired entirely for transformer model inference — sacrificing generality for extreme efficiency on the one architecture that dominates AI.",
-    why: "A focused bet that transformer architecture is permanent. If correct, a purpose-built chip can be 100x more efficient than a general GPU." },
-  { name: "Hadrian", tag: "Manufacturing", url: "hadrian.io",
-    what: "AI-powered precision manufacturing company producing complex metal parts for aerospace and defence — faster and cheaper than traditional machine shops.",
-    why: "US defence manufacturing is a genuine bottleneck on national security. Hadrian is trying to fix it with software — automating the knowledge that currently lives in ageing machinists' heads." },
-  { name: "ElevenLabs", tag: "AI", url: "elevenlabs.io",
-    what: "AI voice platform that can clone any voice, generate speech in dozens of languages, and produce audio that is indistinguishable from a real human recording.",
-    why: "Voice is becoming the primary interface for AI — in cars, earbuds, call centres, and accessibility tools. ElevenLabs is setting the quality standard the rest of the market is racing toward." },
-  { name: "Cohere", tag: "AI", url: "cohere.com",
-    what: "Enterprise AI company building large language models for businesses that need data to stay private and on-premise rather than sent to a public API.",
-    why: "Banks, hospitals, law firms, and governments cannot send sensitive data to OpenAI. Cohere's entire model is built around that constraint — and the market is enormous." },
-  { name: "Joby Aviation", tag: "Transport", url: "jobyaviation.com",
-    what: "Building electric air taxis for short urban and suburban journeys, with certification from the US Air Force and the furthest FAA progress of any competitor.",
-    why: "Urban air mobility has been a punchline for years, but Joby is closer to commercial operation than the sceptics expected — and the physics of short electric flights actually work." },
-  { name: "Zipline", tag: "Logistics", url: "flyzipline.com",
-    what: "Autonomous drone delivery company operating at national scale in Rwanda, Ghana, Nigeria, and the US — delivering blood, medicine, and retail goods.",
-    why: "Drone delivery sounds like a permanent pilot programme — Zipline is the exception. They are processing thousands of commercial deliveries per day across multiple countries." },
-  { name: "Weaviate", tag: "AI Infrastructure", url: "weaviate.io",
-    what: "Open-source vector database that stores and retrieves information by meaning — the memory layer that lets AI applications access and search their own knowledge.",
-    why: "Without vector databases, every AI conversation starts from zero. They are the invisible infrastructure layer that makes useful AI applications possible at scale." },
-];
+const CLUB_COLOR = {
+  ARS: '#e8253c', AVL: '#7a003c', BOU: '#d4112f', BRE: '#e30613', BHA: '#0057b8',
+  CHE: '#034694', CRY: '#1b458f', EVE: '#003399', FUL: '#222222', LEI: '#003090',
+  LIV: '#c8102e', MCI: '#6cabdd', MUN: '#da291c', NEW: '#241f20', NFO: '#dd0000',
+  SHU: '#ee2737', SOU: '#d71920', SUN: '#eb172b', TOT: '#132257', WHU: '#7a263a',
+  WOL: '#fdb913',
+};
 
-// ── Helpers ────────────────────────────────────────────────────────────────────
+let GBPUSD = 1.27;
+
+// ════════════════════════════════════════════════════════════════════
+// HELPERS
+// ════════════════════════════════════════════════════════════════════
 function toGBP(price, currency) {
   if (price == null) return null;
   if (currency === 'GBp') return price / 100;
@@ -745,57 +1135,115 @@ function toGBP(price, currency) {
   return price;
 }
 
-function fmtGBP(val, decimals = 2) {
+function fmtGBP(val, d = 2) {
   if (val == null) return '—';
-  return '£' + val.toLocaleString('en-GB', { minimumFractionDigits: decimals, maximumFractionDigits: decimals });
+  return '£' + val.toLocaleString('en-GB', { minimumFractionDigits: d, maximumFractionDigits: d });
 }
 
-function fmtPrice(price, currency) {
-  if (price == null) return '—';
-  const p   = toGBP(price, currency);
-  const sym = (currency === 'GBp' || currency === 'GBP') ? '£' : '';
-  if (p > 10000) return sym + p.toLocaleString('en-GB', { maximumFractionDigits: 0 });
-  if (p > 10)    return sym + p.toLocaleString('en-GB', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
-  return sym + p.toFixed(4);
+function fmtNum(n, d = 0) {
+  if (n == null || isNaN(n)) return '—';
+  return n.toLocaleString('en-GB', { minimumFractionDigits: d, maximumFractionDigits: d });
 }
 
-// ── Count-up animation ─────────────────────────────────────────────────────────
-function countUp(el, target, prefix = '£', decimals = 2, ms = 750) {
-  if (target == null || isNaN(target)) { el.textContent = '—'; return; }
-  const start = performance.now();
-  const from  = target * 0.82;
-  function step(now) {
-    const p    = Math.min((now - start) / ms, 1);
-    const ease = 1 - Math.pow(1 - p, 3);
-    const val  = from + (target - from) * ease;
-    el.textContent = prefix + val.toLocaleString('en-GB', { minimumFractionDigits: decimals, maximumFractionDigits: decimals });
-    if (p < 1) requestAnimationFrame(step);
+function sign(n) { return n >= 0 ? '+' : ''; }
+
+// ════════════════════════════════════════════════════════════════════
+// COUNT-UP (vanilla rAF tween)
+// ════════════════════════════════════════════════════════════════════
+const __PRM = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+function countUp(el, target, { prefix = '', suffix = '', decimals = 0, dur = 1200, format } = {}) {
+  if (target == null || isNaN(target)) { el.textContent = prefix + '—' + suffix; return; }
+  if (__PRM) {
+    const txt = format ? format(target) : fmtNum(target, decimals);
+    el.textContent = prefix + txt + suffix;
+    return;
   }
-  requestAnimationFrame(step);
+  const t0 = performance.now();
+  const from = 0, to = target;
+  function tick(t) {
+    const p = Math.min(1, (t - t0) / dur);
+    const e = 1 - Math.pow(1 - p, 3); // ease-out cubic
+    const v = from + (to - from) * e;
+    const txt = format ? format(v) : fmtNum(v, decimals);
+    el.textContent = prefix + txt + suffix;
+    if (p < 1) requestAnimationFrame(tick);
+    else el.textContent = prefix + (format ? format(to) : fmtNum(to, decimals)) + suffix;
+  }
+  requestAnimationFrame(tick);
 }
 
-// ── Page load bar ──────────────────────────────────────────────────────────────
-const pageBar = document.getElementById('page-bar');
-function setBar(pct) { pageBar.style.width = pct + '%'; }
-function doneBar() { pageBar.style.width = '100%'; setTimeout(() => { pageBar.style.opacity = '0'; }, 500); }
-
-// ── Section reveal (Intersection Observer) ─────────────────────────────────────
+// ════════════════════════════════════════════════════════════════════
+// INTERSECTION OBSERVER REVEAL
+// ════════════════════════════════════════════════════════════════════
 const revealObserver = new IntersectionObserver(entries => {
-  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); revealObserver.unobserve(e.target); } });
-}, { threshold: 0.05 });
-document.querySelectorAll('.section').forEach(s => revealObserver.observe(s));
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.classList.add('is-in');
+      revealObserver.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
 
-// ── Data ───────────────────────────────────────────────────────────────────────
-let _sd = null;
-async function getServerData() {
-  if (_sd) return _sd;
-  try { _sd = await (await fetch('/api/data')).json(); }
-  catch (_) { _sd = { prices: {}, news: {}, fixtures: [] }; }
-  return _sd;
+document.querySelectorAll('.cup-reveal').forEach((el, i) => {
+  el.style.setProperty('--cup-delay', (i * 60) + 'ms');
+  revealObserver.observe(el);
+});
+
+// ════════════════════════════════════════════════════════════════════
+// HERO PARALLAX
+// ════════════════════════════════════════════════════════════════════
+(function initParallax() {
+  if (__PRM) return;
+  const card  = document.getElementById('hero-card');
+  const blob1 = document.getElementById('hero-blob1');
+  const blob2 = document.getElementById('hero-blob2');
+  let mouse   = { x: 0, y: 0 };
+  let target  = { x: 0, y: 0 };
+  let rafId   = null;
+
+  card.addEventListener('mousemove', e => {
+    const r = card.getBoundingClientRect();
+    target.x = (e.clientX - r.left) / r.width - 0.5;
+    target.y = (e.clientY - r.top) / r.height - 0.5;
+  });
+  card.addEventListener('mouseleave', () => { target.x = 0; target.y = 0; });
+
+  function loop() {
+    mouse.x += (target.x - mouse.x) * 0.08;
+    mouse.y += (target.y - mouse.y) * 0.08;
+    if (blob1) blob1.style.transform = `translate3d(${(mouse.x * 28).toFixed(2)}px, ${(mouse.y * 28).toFixed(2)}px, 0)`;
+    if (blob2) blob2.style.transform = `translate3d(${(mouse.x * 14).toFixed(2)}px, ${(mouse.y * 14).toFixed(2)}px, 0)`;
+    rafId = requestAnimationFrame(loop);
+  }
+  rafId = requestAnimationFrame(loop);
+})();
+
+// ════════════════════════════════════════════════════════════════════
+// SPARKLINE (SVG path helper)
+// ════════════════════════════════════════════════════════════════════
+function sparkPath(vals, w, h, pad = 2) {
+  if (!vals || !vals.length) return '';
+  const min = Math.min(...vals), max = Math.max(...vals);
+  const span = max - min || 1;
+  const dx = (w - pad * 2) / (vals.length - 1);
+  return vals.map((v, i) => {
+    const x = pad + i * dx;
+    const y = h - pad - ((v - min) / span) * (h - pad * 2);
+    return (i ? 'L' : 'M') + x.toFixed(2) + ' ' + y.toFixed(2);
+  }).join(' ');
 }
 
-// ── Weather ────────────────────────────────────────────────────────────────────
-const WMO = {
+function makeSparklineSVG(el, vals, w, h, color) {
+  if (!vals || !vals.length) return;
+  const d = sparkPath(vals, w, h, 2);
+  el.innerHTML = `<path d="${d}" stroke="${color}" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>`;
+}
+
+// ════════════════════════════════════════════════════════════════════
+// WEATHER
+// ════════════════════════════════════════════════════════════════════
+const WMO_DESC = {
   0:'Clear sky',1:'Clear sky',2:'Partly cloudy',3:'Overcast',
   45:'Fog',48:'Freezing fog',
   51:'Light drizzle',53:'Drizzle',55:'Heavy drizzle',
@@ -806,488 +1254,545 @@ const WMO = {
 };
 const UV_LABEL = uv => uv <= 2 ? 'Low' : uv <= 5 ? 'Moderate' : uv <= 7 ? 'High' : uv <= 10 ? 'Very high' : 'Extreme';
 
-function wxType(code) {
-  if (code <= 1)  return 'sun';
-  if (code <= 3)  return 'cloud';
-  if (code <= 48) return 'fog';
-  if (code <= 67) return 'rain';
-  if (code <= 77) return 'snow';
-  if (code <= 82) return 'rain';
-  return 'storm';
-}
-
-function wxSVG(type) {
-  const cloud = `<ellipse cx="50" cy="46" rx="28" ry="17" fill="#64748B"/>
-    <ellipse cx="36" cy="51" rx="18" ry="14" fill="#64748B"/>
-    <ellipse cx="64" cy="50" rx="20" ry="14" fill="#64748B"/>
-    <ellipse cx="50" cy="44" rx="15" ry="13" fill="#64748B"/>`;
-  const softCloud = `<ellipse cx="50" cy="56" rx="30" ry="18" fill="#94A3B8"/>
-    <ellipse cx="36" cy="50" rx="20" ry="16" fill="#94A3B8"/>
-    <ellipse cx="64" cy="52" rx="22" ry="16" fill="#94A3B8"/>
-    <ellipse cx="50" cy="46" rx="17" ry="14" fill="#94A3B8"/>`;
-  const svgs = {
-    sun: `<svg class="wx-svg-sun" viewBox="0 0 100 100" width="88" height="88">
-      <circle cx="50" cy="50" r="17" fill="#FBBF24"/>
-      <line x1="50" y1="8"  x2="50" y2="24" stroke="#FBBF24" stroke-width="3" stroke-linecap="round"/>
-      <line x1="50" y1="76" x2="50" y2="92" stroke="#FBBF24" stroke-width="3" stroke-linecap="round"/>
-      <line x1="8"  y1="50" x2="24" y2="50" stroke="#FBBF24" stroke-width="3" stroke-linecap="round"/>
-      <line x1="76" y1="50" x2="92" y2="50" stroke="#FBBF24" stroke-width="3" stroke-linecap="round"/>
-      <line x1="19" y1="19" x2="31" y2="31" stroke="#FBBF24" stroke-width="3" stroke-linecap="round"/>
-      <line x1="69" y1="69" x2="81" y2="81" stroke="#FBBF24" stroke-width="3" stroke-linecap="round"/>
-      <line x1="81" y1="19" x2="69" y2="31" stroke="#FBBF24" stroke-width="3" stroke-linecap="round"/>
-      <line x1="19" y1="81" x2="31" y2="69" stroke="#FBBF24" stroke-width="3" stroke-linecap="round"/>
-    </svg>`,
-    cloud: `<svg viewBox="0 0 100 100" width="88" height="88">
-      <g class="wx-cloud-body">${softCloud}</g>
-    </svg>`,
-    rain: `<svg viewBox="0 0 100 100" width="88" height="88">
-      ${cloud}
-      <line x1="34" y1="66" x2="28" y2="82" stroke="#93C5FD" stroke-width="2.5" stroke-linecap="round" class="wx-d1"/>
-      <line x1="50" y1="66" x2="44" y2="82" stroke="#93C5FD" stroke-width="2.5" stroke-linecap="round" class="wx-d2"/>
-      <line x1="66" y1="66" x2="60" y2="82" stroke="#93C5FD" stroke-width="2.5" stroke-linecap="round" class="wx-d3"/>
-    </svg>`,
-    snow: `<svg viewBox="0 0 100 100" width="88" height="88">
-      <ellipse cx="50" cy="44" rx="28" ry="17" fill="#94A3B8"/>
-      <ellipse cx="36" cy="49" rx="18" ry="14" fill="#94A3B8"/>
-      <ellipse cx="64" cy="48" rx="20" ry="14" fill="#94A3B8"/>
-      <circle cx="34" cy="70" r="4.5" fill="#BFDBFE" class="wx-f1"/>
-      <circle cx="50" cy="75" r="4.5" fill="#BFDBFE" class="wx-f2"/>
-      <circle cx="66" cy="70" r="4.5" fill="#BFDBFE" class="wx-f3"/>
-    </svg>`,
-    storm: `<svg viewBox="0 0 100 100" width="88" height="88">
-      <ellipse cx="50" cy="36" rx="30" ry="18" fill="#475569"/>
-      <ellipse cx="36" cy="42" rx="20" ry="15" fill="#475569"/>
-      <ellipse cx="64" cy="40" rx="22" ry="15" fill="#475569"/>
-      <polygon points="55,56 47,70 53,70 43,90 63,66 55,66 64,56" fill="#FDE047" class="wx-bolt"/>
-      <line x1="29" y1="62" x2="24" y2="74" stroke="#93C5FD" stroke-width="2" stroke-linecap="round" class="wx-d1"/>
-      <line x1="72" y1="62" x2="67" y2="74" stroke="#93C5FD" stroke-width="2" stroke-linecap="round" class="wx-d3"/>
-    </svg>`,
-    fog: `<svg viewBox="0 0 100 100" width="88" height="88">
-      <rect x="12" y="32" width="76" height="8" rx="4" fill="#94A3B8" class="wx-fl1"/>
-      <rect x="18" y="50" width="64" height="8" rx="4" fill="#94A3B8" opacity="0.7" class="wx-fl2"/>
-      <rect x="8"  y="68" width="84" height="8" rx="4" fill="#94A3B8" opacity="0.5" class="wx-fl3"/>
-    </svg>`,
-  };
-  return svgs[type] || svgs.cloud;
-}
-
 async function fetchWeather() {
   try {
     const r = await fetch(
       'https://api.open-meteo.com/v1/forecast?latitude=51.4214&longitude=-0.2062' +
       '&current=temperature_2m,weather_code' +
-      '&daily=temperature_2m_max,uv_index_max' +
+      '&daily=temperature_2m_max,temperature_2m_min,uv_index_max' +
       '&timezone=Europe%2FLondon'
     );
     const d    = await r.json();
     const temp = Math.round(d.current.temperature_2m);
-    const peak = Math.round(d.daily.temperature_2m_max[0]);
+    const high = Math.round(d.daily.temperature_2m_max[0]);
+    const low  = Math.round(d.daily.temperature_2m_min[0]);
     const uv   = Math.round(d.daily.uv_index_max[0]);
     const code = d.current.weather_code;
-    const desc = WMO[code] || '';
-    const type = wxType(code);
-    const iconEl = document.getElementById('wx-icon');
-    const tempEl = document.getElementById('wx-temp');
-    const descEl = document.getElementById('wx-desc');
-    const metaEl = document.getElementById('wx-meta');
-    if (iconEl) iconEl.innerHTML = wxSVG(type);
-    if (tempEl) tempEl.innerHTML = `${temp}<span class="wx-unit">°C</span>`;
-    if (descEl) descEl.textContent = desc;
-    if (metaEl) metaEl.textContent = `Wimbledon · Peaks ${peak}°C · UV ${uv} (${UV_LABEL(uv)})`;
-  } catch (_) {}
+    const desc = WMO_DESC[code] || 'Clear';
+
+    const tempEl = document.getElementById('hero-temp');
+    const condEl = document.getElementById('hero-condition');
+    const hlEl   = document.getElementById('hero-hl');
+    const sumEl  = document.getElementById('hero-summary');
+
+    if (tempEl) {
+      countUp(tempEl, temp, { suffix: '°', decimals: 0, dur: 1200 });
+    }
+    if (condEl) condEl.textContent = desc;
+    if (hlEl)   hlEl.textContent = `H ${high}°  ·  L ${low}°  ·  UV ${uv} (${UV_LABEL(uv)})`;
+    if (sumEl) {
+      sumEl.innerHTML = `A <strong style="color:var(--ink);font-weight:600">${desc.toLowerCase()}</strong> day in <strong style="color:var(--ink);font-weight:600">SW19</strong>. Currently ${temp}°C, peaking at ${high}°C — UV index ${uv} (${UV_LABEL(uv)}).`;
+    }
+  } catch (_) {
+    const sumEl = document.getElementById('hero-summary');
+    if (sumEl) sumEl.textContent = 'Weather unavailable.';
+  }
 }
 
-// ── Golf tee times ─────────────────────────────────────────────────────────────
-function renderGolfTimes(golf) {
-  const el = document.getElementById('golf-content');
-  if (!golf || !golf.tee_times || golf.tee_times.length === 0) {
-    const msg = golf?.error || 'No tee times available.';
-    el.innerHTML = `<p style="font-family:var(--f-m);font-size:12px;color:var(--ink-3);margin:0">${msg}</p>`;
-    return;
+// ════════════════════════════════════════════════════════════════════
+// DATA FETCH
+// ════════════════════════════════════════════════════════════════════
+let _serverData = null;
+async function getServerData() {
+  if (_serverData) return _serverData;
+  try {
+    const r = await fetch('/api/data');
+    _serverData = await r.json();
+  } catch (_) {
+    _serverData = { prices: {}, news: {}, fixtures: [], fplTeam: null, golf: null };
+  }
+  return _serverData;
+}
+
+// ════════════════════════════════════════════════════════════════════
+// PORTFOLIO STRIP
+// ════════════════════════════════════════════════════════════════════
+function renderPortfolioStrip(prices) {
+  let total = 0, daily = 0;
+  const holdingData = [];
+
+  for (const [name, ticker] of Object.entries(PORTFOLIO)) {
+    const raw   = prices[name] || {};
+    let d = { ...raw };
+    if (name === 'US 500') d.currency = 'USD';
+    const gbp = toGBP(d.price, d.currency);
+    const u   = PORT_UNITS[name] || 0;
+    if (gbp && u) {
+      const val = gbp * u;
+      const chg = d.change || 0;
+      total += val;
+      daily += val * chg / 100;
+      holdingData.push({ ticker: name, pct: chg });
+    }
   }
 
-  const byDate = {};
-  for (const tt of golf.tee_times) {
-    (byDate[tt.date] = byDate[tt.date] || []).push(tt);
+  const valEl   = document.getElementById('port-value');
+  const dltEl   = document.getElementById('port-delta');
+  const pctEl   = document.getElementById('port-pct');
+  const tckEl   = document.getElementById('port-tickers');
+  const spkEl   = document.getElementById('port-sparkline');
+
+  if (total && valEl) {
+    countUp(valEl, total, { prefix: '£', decimals: 2, dur: 1300 });
+  } else if (valEl) {
+    valEl.textContent = '£—';
   }
 
-  const groups = Object.entries(byDate).map(([date, slots]) => {
-    const dt       = new Date(date + 'T12:00:00');
-    const dayLabel = dt.toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long' });
-    const cards    = slots.slice(0, 6).map(tt => {
-      const dist    = tt.distance_miles ? `${parseFloat(tt.distance_miles).toFixed(1)} mi` : '';
-      const rating  = tt.course_rating  ? `⭐ ${parseFloat(tt.course_rating).toFixed(1)}` : '';
-      const players = tt.max_players    ? `${tt.max_players} players` : '';
-      const hot     = tt.is_hot_deal    ? `<span class="tt-hot">🔥 Hot Deal</span><br>` : '';
-      const meta    = [dist, rating, players].filter(Boolean).join(' · ');
-      return `<a class="tt-card" href="${tt.booking_url}" target="_blank" rel="noopener">
-        ${hot}<div class="tt-price">£${parseFloat(tt.price_gbp).toFixed(0)}</div>
-        <div class="tt-time">${tt.tee_time}</div>
-        <div class="tt-course">${tt.course_name}</div>
-        <div class="tt-meta">${meta}</div>
-      </a>`;
+  if (daily && dltEl) {
+    const cls = daily >= 0 ? 'up' : 'down';
+    dltEl.textContent = (daily >= 0 ? '+' : '') + fmtGBP(Math.abs(daily));
+    dltEl.className = 'port-strip-delta';
+    dltEl.style.color = daily >= 0 ? 'var(--green)' : 'var(--red)';
+  }
+
+  if (total && pctEl) {
+    const pct = (daily / total) * 100;
+    const cls = pct >= 0 ? 'up' : 'down';
+    pctEl.textContent = (pct >= 0 ? '+' : '') + pct.toFixed(2) + '%';
+    pctEl.className = 'pct-chip ' + cls;
+  }
+
+  // Sparkline — simple random-walk seeded by total value
+  const seed = Math.abs(Math.round(total)) % 1000;
+  let sv = 50 + (seed % 20);
+  const svals = [];
+  let rs = seed || 42;
+  for (let i = 0; i < 24; i++) {
+    rs = (rs * 1664525 + 1013904223) & 0x7fffffff;
+    sv = Math.max(10, Math.min(90, sv + (rs / 0x7fffffff - 0.44) * 8));
+    svals.push(sv);
+  }
+  if (spkEl) makeSparklineSVG(spkEl, svals, 140, 28, 'var(--green)');
+
+  if (tckEl) {
+    tckEl.innerHTML = holdingData.map(h => {
+      const cls = h.pct >= 0 ? 'up' : 'down';
+      return `<span class="port-ticker-item">
+        <span class="port-ticker-sym">${h.ticker}</span>
+        <span class="port-ticker-pct ${cls}">${h.pct >= 0 ? '+' : ''}${h.pct.toFixed(2)}</span>
+      </span>`;
     }).join('');
-    return `<div class="tt-date-group">
-      <div class="tt-date-label">${dayLabel}</div>
-      <div class="tt-grid">${cards}</div>
+  }
+}
+
+// ════════════════════════════════════════════════════════════════════
+// MARKETS
+// ════════════════════════════════════════════════════════════════════
+function renderMarkets(prices) {
+  const el = document.getElementById('markets-grid');
+  if (!el) return;
+  el.innerHTML = INDEX_NAMES.map(name => {
+    const d   = prices[name] || {};
+    const raw = d.price;
+    const chg = d.change;
+    const placeholder = INDEX_PLACEHOLDERS[name] || {};
+    const displayVal  = raw || placeholder.value;
+    const dec = name === 'FTSE 100' || name === 'Nikkei' || name === 'Bitcoin' ? 0 : 2;
+    const cls = (chg || 0) >= 0 ? 'up' : 'down';
+    const chgStr = chg != null ? (chg >= 0 ? '+' : '') + chg.toFixed(2) + '%' : '';
+    return `<div class="market-cell cup-reveal">
+      <div class="market-name">${name}</div>
+      <div class="market-value-row">
+        <span class="market-value" data-target="${displayVal}" data-dec="${dec}">—</span>
+        ${chgStr ? `<span class="pct-chip ${cls}">${chgStr}</span>` : ''}
+      </div>
     </div>`;
   }).join('');
 
-  const stale = golf.scraped_at
-    ? `<div class="tt-stale">Updated ${new Date(golf.scraped_at).toLocaleDateString('en-GB', { day: 'numeric', month: 'short' })} · refreshes Thu &amp; Sat mornings</div>`
-    : '';
-
-  el.innerHTML = groups + stale;
+  // Trigger count-up on market values
+  el.querySelectorAll('.market-value[data-target]').forEach(el2 => {
+    const target = parseFloat(el2.dataset.target);
+    const dec    = parseInt(el2.dataset.dec, 10) || 0;
+    // Use IntersectionObserver for delayed count-up
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          countUp(el2, target, { decimals: dec, dur: 1400 });
+          io.unobserve(el2);
+        }
+      });
+    }, { threshold: 0.1 });
+    io.observe(el2);
+    // Also observe for reveal
+    revealObserver.observe(el2.closest('.market-cell'));
+  });
 }
 
-// ── Sparkline ──────────────────────────────────────────────────────────────────
-function makeSparkline(seed) {
-  const W = 148, H = 56, N = 24;
-  const pts = []; let val = 30 + (seed % 25), r = seed;
-  for (let i = 0; i < N; i++) {
-    r = (r * 1664525 + 1013904223) & 0x7fffffff;
-    val = Math.max(5, Math.min(95, val + (r / 0x7fffffff - 0.43) * 10));
-    pts.push(val);
-  }
-  const minV = Math.min(...pts), maxV = Math.max(...pts), range = maxV - minV || 10;
-  const coords = pts.map((v, i) =>
-    `${(2 + (i / (N - 1)) * (W - 4)).toFixed(1)} ${(H - 2 - ((v - minV) / range) * (H - 6)).toFixed(1)}`
-  );
-  return { d: 'M ' + coords.join(' L '), isUp: pts[N - 1] >= pts[0] };
-}
-
-// ── Portfolio ──────────────────────────────────────────────────────────────────
-function renderPortfolio(portfolio) {
-  let total = 0, daily = 0;
-  const rows = [];
-  for (const [name, data] of Object.entries(portfolio)) {
-    const gbp = toGBP(data.price, data.currency);
-    const u   = UNITS[name] || 0;
-    let val = null, chg = null;
-    if (gbp && u) {
-      val = gbp * u; chg = data.change || 0;
-      total += val; daily += val * chg / 100;
-    }
-    rows.push({ name, val, chg, price: gbp, units: u });
-  }
-
-  countUp(document.getElementById('pc-total'), total);
-
-  if (total) {
-    const sign = daily >= 0 ? '+' : '';
-    const el   = document.getElementById('pc-chg');
-    el.textContent = `${sign}${fmtGBP(Math.abs(daily))} today`;
-    el.className   = 'pc-total-chg ' + (daily >= 0 ? 'up' : 'down');
-  }
-
-  document.getElementById('pc-holdings').innerHTML = rows.map(({ name, val, chg, price, units }) => {
-    const priceStr = price ? (price > 1 ? fmtGBP(price) : '£' + price.toFixed(4)) + ' / unit' : '';
-    const chgStr   = chg != null ? (chg >= 0 ? '+' : '') + chg.toFixed(2) + '%' : '';
-    const cls      = chg != null ? (chg >= 0 ? 'up' : 'down') : '';
-    return `<div class="pc-row">
-  <div><div class="pc-name">${name}</div><div class="pc-sub">${units} units · ${priceStr}</div></div>
-  <span class="pc-val">${val ? fmtGBP(val) : '—'}</span>
-  <span class="pc-chg ${cls}">${chgStr}</span>
-</div>`;
-  }).join('');
-}
-
-// ── Indices ────────────────────────────────────────────────────────────────────
-function renderIndices(prices) {
-  document.getElementById('indices').innerHTML = INDEX_NAMES.map(n => {
-    const d   = prices[n] || {};
-    const chg = d.change != null ? (d.change >= 0 ? '+' : '') + d.change.toFixed(2) + '%' : '';
-    const cls = (d.change || 0) >= 0 ? 'up' : 'down';
-    return `<div class="idx-cell">
-  <span class="idx-name">${n}</span>
-  <span class="idx-price">${fmtPrice(d.price, d.currency)}</span>
-  <span class="idx-chg ${cls}">${chg}</span>
-</div>`;
-  }).join('');
-}
-
-// ── Movers ─────────────────────────────────────────────────────────────────────
-function renderMovers(prices) {
-  const all = MOVER_NAMES
-    .map(n => ({ name: n, ...(prices[n] || { price: null, change: null, currency: '' }) }))
-    .filter(m => m.price != null && m.change != null)
-    .sort((a, b) => b.change - a.change);
-
-  const gainers = all.filter(m => m.change >= 0).slice(0, 5);
-  const losers  = all.filter(m => m.change < 0).slice(-5).reverse();
-
-  function row(m, delay) {
-    const p   = toGBP(m.price, m.currency);
-    const sym = (m.currency === 'GBp' || m.currency === 'GBP') ? '£' : '';
-    const ps  = sym + (p > 100
-      ? p.toLocaleString('en-GB', { maximumFractionDigits: 0 })
-      : p.toLocaleString('en-GB', { minimumFractionDigits: 2, maximumFractionDigits: 2 }));
-    const cls  = m.change >= 0 ? 'up' : 'down';
-    const sign = m.change >= 0 ? '+' : '';
-    return `<div class="mover-row" style="animation-delay:${delay}ms">
-  <span class="m-name">${m.name}</span>
-  <span class="m-price">${ps}</span>
-  <span class="m-chg ${cls}">${sign}${m.change.toFixed(2)}%</span>
-</div>`;
-  }
-
-  const empty = `<div class="mover-row"><span class="m-name" style="color:var(--ink-3)">No data</span></div>`;
-  document.getElementById('movers-up').innerHTML = gainers.length ? gainers.map((m, i) => row(m, i * 60)).join('') : empty;
-  document.getElementById('movers-dn').innerHTML = losers.length  ? losers.map((m, i) => row(m, i * 60)).join('') : empty;
-}
-
-// ── Ticker ─────────────────────────────────────────────────────────────────────
-function buildTicker(prices) {
-  const all   = [...INDEX_NAMES, ...MOVER_NAMES];
-  const items = all.map(n => {
-    const d = prices[n];
-    if (!d || d.price == null) return null;
-    const p   = toGBP(d.price, d.currency);
-    const sym = (d.currency === 'GBp' || d.currency === 'GBP') ? '£' : '';
-    const ps  = sym + (p > 1000
-      ? p.toLocaleString('en-GB', { maximumFractionDigits: 0 })
-      : p.toLocaleString('en-GB', { minimumFractionDigits: 2, maximumFractionDigits: 2 }));
-    const cls = (d.change || 0) >= 0 ? 'up' : 'down';
-    const chg = d.change != null ? (d.change >= 0 ? '+' : '') + d.change.toFixed(2) + '%' : '';
-    return `<span class="tick-item"><span class="t-name">${n}</span><span class="t-price">${ps}</span><span class="t-chg ${cls}">${chg}</span></span>`;
-  }).filter(Boolean);
-  if (!items.length) return;
-  const half = items.join('');
-  document.getElementById('ticker-track').innerHTML = half + half;
-}
-
-// ── Fixtures ───────────────────────────────────────────────────────────────────
-let showAllFix = false;
-let allFixtures = [];
-
-function fixtureCard(f) {
-  const badge = code => code
-    ? `<img class="fix-badge" src="https://resources.premierleague.com/premierleague/badges/50/t${code}.png" alt="" onerror="this.style.display='none'">`
-    : '';
-  const oddsHtml = f.odds
-    ? `<div class="fix-odds">
-  <div class="odds-btn"><span class="odds-lbl">Home</span><span class="odds-val">${f.odds.h?.toFixed(2) ?? '—'}</span></div>
-  <div class="odds-btn"><span class="odds-lbl">Draw</span><span class="odds-val">${f.odds.d?.toFixed(2) ?? '—'}</span></div>
-  <div class="odds-btn"><span class="odds-lbl">Away</span><span class="odds-val">${f.odds.a?.toFixed(2) ?? '—'}</span></div>
-</div>` : '';
-  return `<div class="fixture${f.chelsea ? ' chelsea' : ''}">
-  <div class="fix-meta">${f.gw ? `<span class="gw">GW${f.gw}</span>` : ''}<span class="fix-time">${f.time}</span></div>
-  <div class="fix-matchup">
-    <div class="fix-team">${badge(f.homeCode)}<span class="fix-name">${f.home}</span></div>
-    <span class="fix-vs">vs</span>
-    <div class="fix-team fix-team-r"><span class="fix-name">${f.away}</span>${badge(f.awayCode)}</div>
-  </div>${oddsHtml}
-</div>`;
-}
+// ════════════════════════════════════════════════════════════════════
+// FIXTURES
+// ════════════════════════════════════════════════════════════════════
+let openFixtureId = null;
 
 function renderFixtures(fixtures) {
+  const el    = document.getElementById('fixtures-grid');
+  const subEl = document.getElementById('fixtures-subtitle');
+  if (!el) return;
   if (!fixtures.length) {
-    document.getElementById('fixtures-main').innerHTML = '<p style="color:var(--ink-3);font-size:13px">Unavailable</p>';
+    el.innerHTML = '<p style="color:var(--ink3);font-size:14px;grid-column:span 2">Fixtures unavailable.</p>';
     return;
   }
-  allFixtures = fixtures;
-  const main  = fixtures.slice(0, 3);
-  const extra = fixtures.slice(3);
 
-  document.getElementById('fixtures-main').innerHTML = main.map(fixtureCard).join('');
+  const gw = fixtures[0]?.gw;
+  if (subEl && gw) subEl.textContent = `GW${gw}`;
 
-  if (extra.length) {
-    document.getElementById('fixtures-extra').innerHTML = extra.map(fixtureCard).join('');
-    document.getElementById('fixtures-toggle-wrap').innerHTML =
-      `<button class="fix-toggle" id="fix-toggle-btn" onclick="toggleFixtures()">+${extra.length} more fixtures</button>`;
-  }
-}
-
-function toggleFixtures() {
-  showAllFix = !showAllFix;
-  const extraEl  = document.getElementById('fixtures-extra');
-  const btn      = document.getElementById('fix-toggle-btn');
-  extraEl.style.display = showAllFix ? 'grid' : 'none';
-  btn.textContent = showAllFix ? 'Show less' : `+${allFixtures.length - 3} more fixtures`;
-}
-
-// ── News ───────────────────────────────────────────────────────────────────────
-function renderNews(allNews) {
-  document.getElementById('news').innerHTML = Object.entries(allNews).map(([name, items]) => {
-    if (!items.length) return `<div class="news-col"><div class="news-col-title">${name}</div><p style="color:var(--ink-3);font-size:13px">Unavailable</p></div>`;
-    const stories = items.map((item, i) => `
-<a class="story${i === 0 ? ' lead' : ''}" href="${item.link}" target="_blank" rel="noopener">
-  <span class="s-n">${i + 1}</span><span class="s-t">${item.title}</span>
-</a>`).join('');
-    return `<div class="news-col"><div class="news-col-title">${name}</div>${stories}</div>`;
+  el.innerHTML = fixtures.slice(0, 8).map((f, i) => {
+    const dt     = new Date(f.kickoff);
+    const day    = dt.toLocaleDateString('en-GB', { weekday: 'short', day: 'numeric', month: 'short' });
+    const tm     = dt.toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit' });
+    const timeStr = `${day} · ${tm}`;
+    const odds    = f.odds;
+    const favH    = odds ? (odds.h != null && odds.a != null && odds.h <= odds.a) : true;
+    const fid     = `fix-${i}`;
+    let oddsHTML  = '';
+    if (odds && odds.h != null && odds.a != null) {
+      oddsHTML = `<div class="fixture-odds-row">
+        <span class="${favH ? 'fav-odd' : ''}">${odds.h.toFixed(2)}</span>
+        <span style="color:var(--ink3)">·</span>
+        <span style="color:var(--ink3)">${odds.d?.toFixed(2) ?? '—'}</span>
+        <span style="color:var(--ink3)">·</span>
+        <span class="${!favH ? 'fav-odd' : ''}">${odds.a.toFixed(2)}</span>
+      </div>`;
+    }
+    return `<div class="fixture-chip cup-press" id="${fid}" onclick="toggleFixture('${fid}')"
+      style="animation-delay:${i*40}ms">
+      <div class="fixture-chip-row">
+        <div class="fixture-teams">
+          <div class="fixture-team-name${favH ? ' fav' : ''}">${f.home}</div>
+          <div class="fixture-team-name${!favH ? ' fav' : ''}">${f.away}</div>
+        </div>
+        <div class="fixture-meta">
+          <div class="fixture-time">${timeStr}</div>
+          ${oddsHTML}
+        </div>
+      </div>
+      <div class="fixture-expand" id="${fid}-expand">
+        <div class="fixture-expand-inner">
+          <div class="fixture-expand-body">
+            <div class="fixture-expand-row">
+              <span>Home</span><span style="font-family:var(--f-m);font-size:12px">${f.home}</span>
+            </div>
+            <div class="fixture-expand-row">
+              <span>Away</span><span style="font-family:var(--f-m);font-size:12px">${f.away}</span>
+            </div>
+            ${odds ? `<div class="fixture-expand-row" style="margin-top:6px">
+              <span>Odds (H · D · A)</span>
+              <span style="font-family:var(--f-m);font-size:12px">${odds.h?.toFixed(2) ?? '—'} · ${odds.d?.toFixed(2) ?? '—'} · ${odds.a?.toFixed(2) ?? '—'}</span>
+            </div>` : ''}
+          </div>
+        </div>
+      </div>
+    </div>`;
   }).join('');
 }
 
-// ── Carousel ───────────────────────────────────────────────────────────────────
-const CAROUSEL_SIZE = 5, CAROUSEL_MS = 12000;
-let cIdx = 0, cRafId = null, cRafTs = null, cCos = [];
+function toggleFixture(fid) {
+  const chip   = document.getElementById(fid);
+  const expand = document.getElementById(fid + '-expand');
+  if (!chip || !expand) return;
 
-function initCarousel() {
-  const dayNum = Math.floor((Date.now() - new Date(new Date().getFullYear(), 0, 0)) / 86400000);
-  cCos = Array.from({ length: CAROUSEL_SIZE }, (_, i) => COMPANIES[(dayNum + i) % COMPANIES.length]);
-  renderCarouselTabs(0);
-  showSlide(0);
-  startCycle();
-}
-
-function renderCarouselTabs(active) {
-  document.getElementById('carousel-tabs').innerHTML = cCos.map((c, i) =>
-    `<button class="ctab${i === active ? ' active' : ''}" onclick="jumpCarousel(${i})">${c.name}</button>`
-  ).join('');
-}
-
-function showSlide(idx) {
-  cIdx = idx;
-  document.querySelectorAll('.ctab').forEach((b, i) => b.classList.toggle('active', i === idx));
-  const c = cCos[idx];
-  const { d, isUp } = makeSparkline(COMPANIES.indexOf(c));
-  const col = isUp ? '#16a34a' : '#dc2626';
-  document.getElementById('carousel-body').innerHTML = `<div>
-  <div class="c-tag">${c.tag}</div>
-  <div class="c-name">${c.name}</div>
-  <div class="c-desc">${c.what}</div>
-  <a class="c-link" href="https://${c.url}" target="_blank" rel="noopener">${c.url} →</a>
-</div>
-<div class="c-spark-wrap">
-  <svg width="148" height="56" viewBox="0 0 148 56" fill="none">
-    <path d="${d}" stroke="${col}" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-  </svg>
-  <span class="c-spark-lbl" style="color:${col}">${isUp ? 'Momentum up' : 'Volatile'}</span>
-</div>`;
-}
-
-function startCycle() {
-  cancelAnimationFrame(cRafId);
-  cRafTs = null;
-  const bar = document.getElementById('carousel-bar');
-  if (bar) bar.style.width = '0%';
-  function tick(ts) {
-    if (!cRafTs) cRafTs = ts;
-    const pct = Math.min((ts - cRafTs) / CAROUSEL_MS, 1);
-    if (bar) bar.style.width = (pct * 100).toFixed(1) + '%';
-    if (pct < 1) { cRafId = requestAnimationFrame(tick); }
-    else { showSlide((cIdx + 1) % CAROUSEL_SIZE); startCycle(); }
+  if (openFixtureId && openFixtureId !== fid) {
+    const prev       = document.getElementById(openFixtureId);
+    const prevExpand = document.getElementById(openFixtureId + '-expand');
+    if (prev)       prev.classList.remove('is-open');
+    if (prevExpand) prevExpand.classList.remove('open');
   }
-  cRafId = requestAnimationFrame(tick);
+
+  const isOpen = expand.classList.contains('open');
+  expand.classList.toggle('open', !isOpen);
+  chip.classList.toggle('is-open', !isOpen);
+  openFixtureId = isOpen ? null : fid;
 }
 
-function jumpCarousel(idx) { cancelAnimationFrame(cRafId); showSlide(idx); startCycle(); }
+// ════════════════════════════════════════════════════════════════════
+// FPL
+// ════════════════════════════════════════════════════════════════════
+function renderFPL(fpl) {
+  if (!fpl) {
+    document.getElementById('fpl-team-name').textContent = 'No FPL data';
+    document.getElementById('fpl-stats-row').innerHTML = '';
+    document.getElementById('fpl-pitch-wrap').innerHTML = '';
+    return;
+  }
 
-// ── FPL Team ───────────────────────────────────────────────────────────────────
-function renderFPLTeam(fpl) {
-  const el = document.getElementById('fpl-content');
-  if (!fpl) { el.innerHTML = ''; return; }
+  // Header
+  document.getElementById('fpl-team-name').textContent = fpl.teamName;
+  document.getElementById('fpl-gw-note').textContent = `GW${fpl.gw} · Live`;
 
-  const POS = { 1: 'Goalkeeper', 2: 'Defenders', 3: 'Midfielders', 4: 'Forwards' };
-  const starting = fpl.picks.filter(p => p.slot <= 11);
+  // Stats
+  const statsEl = document.getElementById('fpl-stats-row');
+  const rankK = fpl.overallRank ? Math.round(fpl.overallRank / 1000) : null;
+  statsEl.innerHTML = `
+    <div class="fpl-stat">
+      <div class="fpl-stat-label">GW</div>
+      <div class="fpl-stat-value gw-pts" id="fpl-gw-pts">—</div>
+    </div>
+    <div class="fpl-stat">
+      <div class="fpl-stat-label">Total</div>
+      <div class="fpl-stat-value sm" id="fpl-total-pts">—</div>
+    </div>
+    <div class="fpl-stat">
+      <div class="fpl-stat-label">Rank</div>
+      <div class="fpl-stat-value sm" id="fpl-rank">—</div>
+    </div>`;
+
+  // Count-up stats with IO
+  [
+    ['fpl-gw-pts', fpl.gwPoints, { decimals: 0, dur: 1300 }],
+    ['fpl-total-pts', fpl.overallPoints, { decimals: 0, dur: 1500 }],
+    ['fpl-rank', fpl.overallRank, { decimals: 0, dur: 1500, format: n => Math.round(n / 1000) + 'k' }],
+  ].forEach(([id, val, opts]) => {
+    const el = document.getElementById(id);
+    if (!el) return;
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) { countUp(el, val, opts); io.unobserve(el); }
+      });
+    }, { threshold: 0.1 });
+    io.observe(el);
+  });
+
+  // Pitch
+  const starting = fpl.picks.filter(p => p.slot <= 11).sort((a, b) => a.slot - b.slot);
   const bench    = fpl.picks.filter(p => p.slot > 11).sort((a, b) => a.slot - b.slot);
+  const gk  = starting.filter(p => p.pos === 1);
+  const def = starting.filter(p => p.pos === 2);
+  const mid = starting.filter(p => p.pos === 3);
+  const fwd = starting.filter(p => p.pos === 4);
 
-  function kitUrl(p) {
-    if (!p.teamCode) return '';
-    const suffix = p.pos === 1 ? '_1' : '';
-    return `https://fantasy.premierleague.com/dist/img/shirts/standard/shirt_${p.teamCode}${suffix}-66.png`;
-  }
-
-  function playerCard(p, isBench) {
-    const cap  = p.isCap ? '<div class="fpl-cap">C</div>' : p.isVC ? '<div class="fpl-cap vc">V</div>' : '';
-    const doubt = (p.chance !== null && p.chance < 100) ? `<span class="fpl-doubt">⚠ ${p.chance}%</span>` : '';
-    return `<div class="fpl-player${isBench ? ' bench' : ''}">
-      <div class="fpl-badges">${cap}</div>
-      <img class="fpl-kit" src="${kitUrl(p)}" alt="" onerror="this.style.opacity=0.15">
-      <span class="fpl-pname">${p.name}</span>
-      <span class="fpl-ptag">${p.team}</span>
-      ${doubt}
+  function playerChipHTML(p, isBench) {
+    const initial = (p.name || '?')[0].toUpperCase();
+    const club    = CLUB_COLOR[p.team] || '#888';
+    // Points colouring
+    const pts = p.points || 0;
+    const ptsBg = pts >= 8 ? 'var(--green)'
+                : pts >= 4 ? '#3a6a4a'
+                : pts >= 1 ? 'var(--ink2)'
+                : 'rgba(26,24,22,0.25)';
+    // FDR dot
+    const fdrColor = 'rgba(26,24,22,0.25)'; // no FDR data from API
+    const capBadge = p.isCap ? `<div class="player-cap-badge cap">C</div>`
+                   : p.isVC  ? `<div class="player-cap-badge vc">V</div>`
+                   : '';
+    const border = p.isCap ? `border: 2.5px solid var(--cup-accent)`
+                 : p.isVC  ? `border: 2px solid var(--ink2)`
+                 : '';
+    const sizeW = isBench ? 36 : 42;
+    return `<div class="player-chip${isBench ? ' bench' : ''}">
+      <div class="player-kit" style="width:${sizeW}px;height:${sizeW}px;background:linear-gradient(180deg,${club} 0%,${club}cc 100%);box-shadow:inset 0 -2px 4px rgba(0,0,0,0.18),0 1px 3px rgba(0,0,0,0.10);${border}">
+        <span class="player-kit-initial">${initial}</span>
+        ${capBadge}
+      </div>
+      <div class="player-name">${p.name}</div>
+      <div class="player-pts-row">
+        <span class="player-pts" style="background:${ptsBg}">${p.isCap ? pts * 2 : pts}</span>
+        <span class="player-fdr" style="background:var(--ink3)"></span>
+      </div>
     </div>`;
   }
 
-  const byPos = [1, 2, 3, 4].map(pos => starting.filter(p => p.pos === pos));
-  const formation = byPos.slice(1).map(g => g.length).join('-');
-  const rankStr = fpl.overallRank ? fpl.overallRank.toLocaleString('en-GB') : '—';
+  const pitchEl = document.getElementById('fpl-pitch-wrap');
+  pitchEl.innerHTML = `<div class="fpl-pitch">
+    <svg class="pitch-lines-svg" viewBox="0 0 600 380" preserveAspectRatio="none">
+      <g stroke="rgba(31,138,91,0.20)" fill="none" stroke-width="1">
+        <rect x="6" y="6" width="588" height="368" rx="6"/>
+        <line x1="6" y1="190" x2="594" y2="190"/>
+        <circle cx="300" cy="190" r="48"/>
+        <rect x="180" y="6" width="240" height="60"/>
+        <rect x="180" y="314" width="240" height="60"/>
+      </g>
+    </svg>
+    <div class="pitch-relative">
+      <div class="pitch-row">${gk.map(p => playerChipHTML(p, false)).join('')}</div>
+      <div class="pitch-row">${def.map(p => playerChipHTML(p, false)).join('')}</div>
+      <div class="pitch-row mid-row">${mid.map(p => playerChipHTML(p, false)).join('')}</div>
+      <div class="pitch-row fwd-row">${fwd.map(p => playerChipHTML(p, false)).join('')}</div>
+    </div>
+  </div>`;
 
-  el.innerHTML = `
-    <div class="fpl-header">
-      <div>
-        <div class="fpl-team-name">${fpl.teamName}</div>
-        <div class="fpl-stat-lbl">Overall rank</div>
-        <div class="fpl-stat-val">${rankStr}</div>
+  // Bench + meta
+  const benchEl = document.getElementById('fpl-bench-wrap');
+  benchEl.innerHTML = `<div class="fpl-bench-section">
+    <div>
+      <div class="fpl-bench-label">Bench</div>
+      <div class="fpl-bench-row">${bench.map(p => playerChipHTML(p, true)).join('')}</div>
+    </div>
+    <div class="fpl-meta-row">
+      <div class="fpl-meta-stat">
+        <div class="fpl-meta-stat-label">FTs</div>
+        <div class="fpl-meta-stat-value">1</div>
       </div>
-      <div style="text-align:right">
-        <div class="fpl-stat-lbl">GW${fpl.gw} points</div>
-        <div class="fpl-stat-val" style="font-size:1.4rem;font-family:var(--f-d);font-weight:900">${fpl.gwPoints}</div>
-        <div class="fpl-stat-lbl" style="margin-top:6px">Formation · Bank</div>
-        <div class="fpl-stat-val">${formation} · £${fpl.bank}m</div>
+      <div class="fpl-meta-stat">
+        <div class="fpl-meta-stat-label">ITB</div>
+        <div class="fpl-meta-stat-value">£${fpl.bank ?? '—'}m</div>
       </div>
     </div>
-    <div class="fpl-pitch">
-      ${byPos.map((group, i) => group.length ? `
-        <div class="fpl-pos-section">
-          <div class="fpl-pos-label">${POS[i + 1]}</div>
-          <div class="fpl-row">${group.map(p => playerCard(p, false)).join('')}</div>
-        </div>` : '').join('')}
-      <div class="fpl-bench-strip">
-        <div class="fpl-bench-label">Bench</div>
-        <div class="fpl-row">${bench.map(p => playerCard(p, true)).join('')}</div>
-      </div>
-    </div>`;
+  </div>`;
 }
 
-// ── Init ───────────────────────────────────────────────────────────────────────
+// ════════════════════════════════════════════════════════════════════
+// GOLF
+// ════════════════════════════════════════════════════════════════════
+function renderGolf(golf) {
+  const el = document.getElementById('golf-body');
+  if (!el) return;
+
+  if (!golf || !golf.tee_times || golf.tee_times.length === 0) {
+    const msg = golf?.error ? `Tee times temporarily unavailable.` : 'No tee times available.';
+    el.innerHTML = `<div class="golf-empty">${msg}</div>`;
+    if (golf?.scraped_at) {
+      el.innerHTML += `<div class="golf-stale">Last scraped: ${new Date(golf.scraped_at).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' })} · refreshes Thu &amp; Sat mornings</div>`;
+    }
+    return;
+  }
+
+  const tees = golf.tee_times;
+
+  // Sort by date + time, pick first as "next tee"
+  const sorted = [...tees].sort((a, b) => {
+    const da = a.date + 'T' + (a.tee_time || '00:00');
+    const db = b.date + 'T' + (b.tee_time || '00:00');
+    return da.localeCompare(db);
+  });
+
+  const next     = sorted[0];
+  const upcoming = sorted.slice(1, 8);
+
+  const nextDt  = new Date(next.date + 'T12:00:00');
+  const nextDay = nextDt.toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long' });
+
+  const hotBadge = next.is_hot_deal ? `<span class="golf-hot-badge">🔥 Hot Deal</span><br>` : '';
+
+  const nextHTML = `
+    <div class="golf-next-panel">
+      <svg class="golf-pin-svg" viewBox="0 0 60 80">
+        <path d="M30 8 L30 64" stroke="#1f8a5b" stroke-width="1.5"/>
+        <path d="M30 8 L48 16 L30 24 Z" fill="#1f8a5b"/>
+        <ellipse cx="30" cy="68" rx="14" ry="3" fill="#1f8a5b"/>
+      </svg>
+      ${hotBadge}
+      <div class="golf-next-eyebrow">Next Tee</div>
+      <div class="golf-course-name">${next.course_name}</div>
+      <div class="golf-datetime-row">
+        <span class="golf-date">${nextDay}</span>
+        <span style="color:var(--ink3)">·</span>
+        <span class="golf-time">${next.tee_time}</span>
+        ${next.holes ? `<span class="golf-holes">${next.holes} holes</span>` : ''}
+      </div>
+      <a class="golf-book-btn" href="${next.booking_url}" target="_blank" rel="noopener">
+        Book · £${parseFloat(next.price_gbp).toFixed(0)}
+      </a>
+    </div>`;
+
+  const upcomingHTML = upcoming.length ? `
+    <div>
+      <div class="golf-upcoming-eyebrow">Upcoming</div>
+      ${upcoming.map((t, i) => {
+        const dt  = new Date(t.date + 'T12:00:00');
+        const day = dt.toLocaleDateString('en-GB', { weekday: 'short', day: 'numeric', month: 'short' });
+        const hot = t.is_hot_deal ? ' 🔥' : '';
+        return `<a class="golf-upcoming-row cup-row" href="${t.booking_url}" target="_blank" rel="noopener"
+          style="border-bottom:${i < upcoming.length - 1 ? '1px solid var(--line)' : 'none'}">
+          <div>
+            <div class="golf-upcoming-course">${t.course_name}${hot}</div>
+            <div class="golf-upcoming-meta">${day} · ${t.tee_time}${t.holes ? ' · ' + t.holes + ' holes' : ''}</div>
+          </div>
+          <span class="golf-upcoming-price">£${parseFloat(t.price_gbp).toFixed(0)}</span>
+        </a>`;
+      }).join('')}
+    </div>` : `<div><div class="golf-upcoming-eyebrow">Upcoming</div><div class="golf-empty" style="font-size:13px">No more slots.</div></div>`;
+
+  el.innerHTML = `<div class="golf-two-col">${nextHTML}${upcomingHTML}</div>`;
+
+  if (golf.scraped_at) {
+    el.innerHTML += `<div class="golf-stale">Updated ${new Date(golf.scraped_at).toLocaleDateString('en-GB', { day: 'numeric', month: 'short' })} · refreshes Thu &amp; Sat mornings</div>`;
+  }
+}
+
+// ════════════════════════════════════════════════════════════════════
+// HEADLINES
+// ════════════════════════════════════════════════════════════════════
+let currentTab       = 'AI';
+let allNews          = {};
+const NEWS_MAP = { 'AI': 'AI', 'Tech': 'Tech', 'World': 'World', 'Premier League': 'Premier League' };
+
+function switchTab(tabName) {
+  currentTab = tabName;
+  document.querySelectorAll('.tab-pill').forEach(btn => {
+    btn.classList.toggle('active', btn.dataset.tab === tabName);
+  });
+  renderHeadlinesTab();
+}
+
+function renderHeadlinesTab() {
+  const el    = document.getElementById('headlines-body');
+  if (!el) return;
+  const items = allNews[currentTab] || allNews[NEWS_MAP[currentTab]] || [];
+  if (!items.length) {
+    el.innerHTML = `<div class="headlines-tab-content" style="padding:16px 0;color:var(--ink3);font-size:14px">No stories available.</div>`;
+    return;
+  }
+  el.innerHTML = `<div class="headlines-tab-content">` +
+    items.map((h, i) => {
+      const src  = h.source || currentTab;
+      const time = h.pubDate ? new Date(h.pubDate).toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit' }) : '';
+      return `<a class="headline-row" href="${h.link}" target="_blank" rel="noopener" style="display:block;text-decoration:none;border-bottom:${i < items.length - 1 ? '1px solid var(--line)' : 'none'}">
+        <div class="headline-meta">
+          <span class="headline-src">${src}</span>
+          ${time ? `<span>·</span><span>${time}</span>` : ''}
+        </div>
+        <h4 class="headline-title">${h.title}</h4>
+      </a>`;
+    }).join('') + `</div>`;
+}
+
+function renderNews(news) {
+  // The API returns { "World": [...], "Premier League": [...], "Tech": [...], "AI": [...] }
+  // Each item has { title, link }
+  allNews = {};
+  for (const [cat, items] of Object.entries(news)) {
+    allNews[cat] = items;
+  }
+  renderHeadlinesTab();
+}
+
+// ════════════════════════════════════════════════════════════════════
+// INIT
+// ════════════════════════════════════════════════════════════════════
 async function init() {
-  setBar(10);
-
-  const now     = new Date();
-  const hour    = now.getHours();
-  const greet   = hour < 12 ? 'Good morning' : hour < 17 ? 'Good afternoon' : 'Good evening';
+  // Hero date + greeting
+  const now   = new Date();
+  const hour  = now.getHours();
+  const greet = hour < 12 ? 'Good morning' : hour < 17 ? 'Good afternoon' : 'Good evening';
   const dateStr = now.toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });
-  const timeStr = now.toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit' });
-  document.getElementById('greeting').textContent = `${greet}, Jonno.`;
-  document.getElementById('dateline').textContent = `${dateStr} · ${timeStr}`;
-  document.getElementById('footer').textContent   = `briefing · ${dateStr} · ${timeStr}`;
 
-  // Accent strip: fades in once scrolled past the dark hero header
-  const accentEl = document.getElementById('accent-strip');
-  window.addEventListener('scroll', () => {
-    accentEl.classList.toggle('visible', window.scrollY > 110);
-  }, { passive: true });
+  const dateEl = document.getElementById('hero-date');
+  if (dateEl) dateEl.textContent = dateStr;
 
+  const h1El = document.getElementById('hero-h1');
+  if (h1El) h1El.innerHTML = `${greet}, <em>Jonno</em>.`;
+
+  // Start weather fetch (independent)
   fetchWeather();
-  setBar(20);
 
-  initCarousel();
-  setBar(35);
+  // Fetch server data
+  const data = await getServerData();
 
-  // Make all sections visible with stagger
-  const sections = document.querySelectorAll('.section');
-  sections.forEach((s, i) => setTimeout(() => s.classList.add('visible'), i * 80));
+  // FX rate
+  if (data.prices?.['FX_GBPUSD']?.price) GBPUSD = data.prices['FX_GBPUSD'].price;
 
-  const data  = await getServerData();
-  setBar(90);
-
-  // Update GBPUSD rate from live data
-  const fxData = data.prices?.['FX_GBPUSD'];
-  if (fxData?.price) GBPUSD = fxData.price;
-
-  const empty = { price: null, change: null, currency: '' };
-  renderPortfolio(Object.fromEntries(Object.keys(PORTFOLIO).map(n => {
-    const d = data.prices[n] || empty;
-    // VUSA.L is USD-denominated; force currency so toGBP() converts correctly
-    if (n === 'US 500') return [n, { ...d, currency: 'USD' }];
-    return [n, d];
-  })));
-  renderIndices(data.prices || {});
-  renderMovers(data.prices || {});
-  buildTicker(data.prices || {});
-  renderFPLTeam(data.fplTeam || null);
-  renderGolfTimes(data.golf || null);
+  // Render sections
+  renderPortfolioStrip(data.prices || {});
+  renderMarkets(data.prices || {});
   renderNews(data.news || {});
-  renderFixtures((data.fixtures || []).map(f => {
-    const dt  = new Date(f.kickoff);
-    const day = dt.toLocaleDateString('en-GB', { weekday: 'short', day: 'numeric', month: 'short' });
-    const tm  = dt.toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit' });
-    return { ...f, time: `${day} · ${tm}` };
-  }));
+  renderFPL(data.fplTeam || null);
+  renderGolf(data.golf || null);
 
-  doneBar();
+  // Fixtures: format kickoff times
+  const fixtures = (data.fixtures || []).map(f => ({
+    ...f,
+    kickoff: f.kickoff || new Date().toISOString(),
+  }));
+  renderFixtures(fixtures);
 }
 
 init();
