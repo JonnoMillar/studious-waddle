@@ -1,5 +1,5 @@
 {
   "tee_times": [],
-  "scraped_at": "2026-05-24T11:34:53.308268+00:00",
-  "error": null
+  "scraped_at": "2026-05-24T11:40:25.564984+00:00",
+  "error": "2026-06-06: BrowserType.connect_over_cdp: WebSocket error: wss://brd-customer-hl_dcf99b4d-zone-scraping_browser1:ksy6sq6292wk@brd.superproxy.io:9222/ 500 Internal Server Error (ETIMEDOUT)\nconnect ETIMEDOUT 143.110.146.60:8080\nCall log:\n  - <ws connecting> wss://brd-customer-hl_dcf99b4d-zone-scraping_browser1:ksy6sq6292wk@brd.superproxy.io:9222/\n  - <ws unexpected response> wss://brd-customer-hl_dcf99b4d-zone-scraping_browser1:ksy6sq6292wk@brd.superproxy.io:9222/ 500 Internal Server Error (ETIMEDOUT)\nconnect ETIMEDOUT 143.110.146.60:8080\n  - <ws error> wss://brd-customer-hl_dcf99b4d-zone-scraping_browser1:ksy6sq6292wk@brd.superproxy.io:9222/ error WebSocket was closed before the connection was established\n  - <ws connect error> wss://brd-customer-hl_dcf99b4d-zone-scraping_browser1:ksy6sq6292wk@brd.superproxy.io:9222/ WebSocket was closed before the connection was established\n  - <ws disconnected> wss://brd-customer-hl_dcf99b4d-zone-scraping_browser1:ksy6sq6292wk@brd.superproxy.io:9222/ code=1006 reason=\n"
 }
