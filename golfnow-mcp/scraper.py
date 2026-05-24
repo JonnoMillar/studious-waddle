@@ -4,13 +4,10 @@ Imported by server.py — not intended to be run directly.
 """
 
 import asyncio
-import json
 import logging
-from contextlib import asynccontextmanager
 from datetime import date, timedelta
-from typing import Any
 
-from playwright.async_api import Page, async_playwright
+from playwright.async_api import async_playwright
 
 log = logging.getLogger(__name__)
 
@@ -19,9 +16,9 @@ BASE_URL = "https://www.golfnow.co.uk"
 # Wimbledon coordinates
 DEFAULT_LAT = 51.4161
 DEFAULT_LNG = -0.2062
-DEFAULT_RADIUS = 13   # miles
-DEFAULT_TIME_MIN = 5  # 05:00
-DEFAULT_TIME_MAX = 17  # 17:00
+DEFAULT_RADIUS = 13
+DEFAULT_TIME_MIN = 5
+DEFAULT_TIME_MAX = 17
 DEFAULT_HOLES = "eighteen"
 DEFAULT_MIN_RATING = 3.0
 
@@ -38,60 +35,27 @@ def get_upcoming_weekends(num_weekends: int = 4) -> list[str]:
     return results
 
 
-@asynccontextmanager
-async def capture_response(page: Page, url_fragment: str, timeout: float = 15.0):
-    """
-    Context manager that captures the next JSON response whose URL contains url_fragment.
-    Must wrap the page.goto() call so the listener is active before navigation starts.
-    """
-    loop = asyncio.get_event_loop()
-    future: asyncio.Future = loop.create_future()
-
-    async def handler(response):
-        if url_fragment in response.url and response.status == 200 and not future.done():
-            try:
-                log.info(f"Captured [{url_fragment}]: {response.url[:100]}")
-                future.set_result(await response.json())
-            except Exception:
-                pass
-
-    page.on("response", handler)
-    try:
-        yield future
-    finally:
-        page.remove_listener("response", handler)
-
-
-@asynccontextmanager
-async def capture_response_any(page: Page, url_fragments: list[str], timeout: float = 20.0):
-    """Like capture_response but matches any of the given URL fragments, min 2KB body."""
-    loop = asyncio.get_event_loop()
-    future: asyncio.Future = loop.create_future()
-
-    async def handler(response):
-        if response.status == 200 and not future.done():
-            if any(f in response.url for f in url_fragments):
-                try:
-                    body = await response.body()
-                    if len(body) < 2048:
-                        log.debug(f"Skipping small response ({len(body)}B): {response.url[:80]}")
-                        return
-                    log.info(f"Captured ({len(body)}B): {response.url[:100]}")
-                    future.set_result(await response.json())
-                except Exception:
-                    pass
-
-    page.on("response", handler)
-    try:
-        yield future
-    finally:
-        page.remove_listener("response", handler)
-
-    page.on("response", handler)
-    try:
-        yield future
-    finally:
-        page.remove_listener("response", handler)
+def _extract_list(raw: dict | list, *keys) -> list:
+    """Try to extract a list from a dict using multiple candidate keys, or nested structures."""
+    if isinstance(raw, list):
+        return raw
+    if not isinstance(raw, dict):
+        return []
+    # Try top-level keys
+    for k in keys:
+        v = raw.get(k)
+        if isinstance(v, list) and v:
+            return v
+    # Try one level of nesting
+    for v in raw.values():
+        if isinstance(v, dict):
+            for k in keys:
+                inner = v.get(k)
+                if isinstance(inner, list) and inner:
+                    return inner
+        if isinstance(v, list) and v and isinstance(v[0], dict):
+            return v
+    return []
 
 
 def parse_courses(raw: dict | list, min_rating: float = DEFAULT_MIN_RATING) -> list[dict]:
@@ -99,12 +63,20 @@ def parse_courses(raw: dict | list, min_rating: float = DEFAULT_MIN_RATING) -> l
     if not raw:
         return []
 
-    courses_list = (
-        raw.get("courses")
-        or raw.get("facilities")
-        or raw.get("results")
-        or (raw if isinstance(raw, list) else [])
+    if isinstance(raw, dict):
+        log.info(f"Courses response top-level keys: {list(raw.keys())}")
+
+    courses_list = _extract_list(
+        raw,
+        "courses", "facilities", "results", "data",
+        "teeTimeFacilities", "searchResults", "items", "records",
     )
+
+    if not courses_list:
+        log.warning(f"parse_courses: could not find course list in response (keys={list(raw.keys()) if isinstance(raw, dict) else type(raw).__name__})")
+        return []
+
+    log.info(f"parse_courses: {len(courses_list)} items, first keys={list(courses_list[0].keys()) if courses_list else '?'}")
 
     parsed = []
     for c in courses_list:
@@ -179,7 +151,6 @@ def parse_tee_times(
         or (raw if isinstance(raw, list) else [])
     )
 
-    # Detect flat list (some API versions skip the group wrapper)
     if groups and isinstance(groups[0], dict) and (
         "time" in groups[0] or "teeTime" in groups[0]
     ):
@@ -275,6 +246,35 @@ def filter_and_sort(
     return filtered
 
 
+async def _wait_for_json(page, url_fragment: str, timeout_secs: int = 30) -> dict | list | None:
+    """
+    Register a response listener, wait for a response whose URL contains url_fragment,
+    read its JSON immediately when it fires, then remove the listener.
+    Reading inside the callback avoids 'No resource with given identifier found'.
+    """
+    result = {"data": None}
+    event = asyncio.Event()
+
+    async def handler(response):
+        if url_fragment in response.url and response.status == 200 and not event.is_set():
+            try:
+                result["data"] = await response.json()
+                log.info(f"Captured [{url_fragment}]: {response.url[:100]}")
+                event.set()
+            except Exception as e:
+                log.debug(f"JSON read failed for {response.url[:80]}: {e}")
+
+    page.on("response", handler)
+    try:
+        await asyncio.wait_for(event.wait(), timeout=timeout_secs)
+    except asyncio.TimeoutError:
+        log.warning(f"Timed out waiting for [{url_fragment}] after {timeout_secs}s")
+    finally:
+        page.remove_listener("response", handler)
+
+    return result["data"]
+
+
 async def scrape_date(
     browser_auth: str,
     date_str: str,
@@ -290,18 +290,6 @@ async def scrape_date(
     """Scrape all tee times near a location for a given date."""
     all_results: list[dict] = []
 
-    def is_courses_resp(r):
-        u = r.url.lower()
-        return r.status == 200 and any(f in u for f in [
-            "courses-near-me", "facilities/search", "courses/search", "facilities?"
-        ])
-
-    def is_teetimes_resp(r):
-        u = r.url.lower()
-        return r.status == 200 and any(f in u for f in [
-            "teetimes-by-facility-group", "tee-times", "teetime"
-        ])
-
     async with async_playwright() as p:
         browser = await p.chromium.connect_over_cdp(
             f"wss://{browser_auth}@brd.superproxy.io:9222"
@@ -314,12 +302,6 @@ async def scrape_date(
                 lambda route: route.abort(),
             )
 
-            async def log_api(response):
-                ct = response.headers.get("content-type", "")
-                if "json" in ct and "golfnow" in response.url:
-                    log.info(f"API: {response.url[:120]}")
-            page.on("response", log_api)
-
             # Phase 1: get course list
             search_url = (
                 f"{BASE_URL}/tee-times/search"
@@ -329,12 +311,14 @@ async def scrape_date(
                 f"&lat={lat}&lng={lng}&radius={radius}"
             )
 
-            try:
-                async with page.expect_response(is_courses_resp, timeout=35_000) as resp_info:
-                    await page.goto(search_url, wait_until="domcontentloaded")
-                raw_courses = await (await resp_info.value).json()
-            except Exception as e:
-                log.warning(f"{date_str}: courses API failed — {e}")
+            # Start listener before navigation so we don't miss the response
+            courses_task = asyncio.create_task(
+                _wait_for_json(page, "courses-near-me", timeout_secs=35)
+            )
+            await page.goto(search_url, wait_until="domcontentloaded")
+            raw_courses = await courses_task
+
+            if raw_courses is None:
                 return []
 
             courses = parse_courses(raw_courses, min_rating=min_rating)
@@ -353,26 +337,17 @@ async def scrape_date(
                     f"&players={players}&date={date_str}"
                 )
 
-                try:
-                    async with page.expect_response(is_teetimes_resp, timeout=20_000) as tt_info:
-                        await page.goto(facility_url, wait_until="domcontentloaded")
-                    raw_tt = await (await tt_info.value).json()
-                except Exception as e:
-                    log.warning(f"  {course['name'][:40]}: tee times failed — {e}")
+                tt_task = asyncio.create_task(
+                    _wait_for_json(page, "teetimes-by-facility-group", timeout_secs=20)
+                )
+                await page.goto(facility_url, wait_until="domcontentloaded")
+                raw_tt = await tt_task
+
+                if raw_tt is None:
+                    log.warning(f"  {course['name'][:40]}: no tee times response")
                     continue
 
-                # Hot deals optional — best-effort only
-                raw_hd = None
-                try:
-                    async with page.expect_response(
-                        lambda r: "hot-deals" in r.url and r.status == 200, timeout=6_000
-                    ) as hd_info:
-                        pass  # already on the page, hot-deals fires alongside tee times
-                    raw_hd = await (await hd_info.value).json()
-                except Exception:
-                    pass
-
-                slots = parse_tee_times(raw_tt, raw_hd, course, date_str)
+                slots = parse_tee_times(raw_tt, None, course, date_str)
                 all_results.extend(slots)
                 log.info(f"  {course['name'][:45]}: {len(slots)} slots")
                 await asyncio.sleep(0.3)
