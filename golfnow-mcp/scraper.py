@@ -85,7 +85,7 @@ def parse_courses(raw: dict | list, min_rating: float = DEFAULT_MIN_RATING) -> l
     for c in courses_list:
         try:
             rating_raw = (
-                c.get("starRating") or c.get("rating")
+                c.get("averageRating") or c.get("starRating") or c.get("rating")
                 or c.get("overallRating") or c.get("golfAdvisorRating") or 0
             )
             rating = float(rating_raw) if rating_raw else 0.0
@@ -93,12 +93,22 @@ def parse_courses(raw: dict | list, min_rating: float = DEFAULT_MIN_RATING) -> l
             if 0 < rating < min_rating:
                 continue
 
-            address_parts = filter(None, [
-                c.get("address1") or c.get("address"),
-                c.get("city") or c.get("town"),
-                c.get("stateProvince") or c.get("county"),
-                c.get("postalCode") or c.get("postCode"),
-            ])
+            # address may be a nested dict or a plain string
+            addr = c.get("address") or {}
+            if isinstance(addr, dict):
+                address_str = ", ".join(filter(None, [
+                    addr.get("line1") or addr.get("address1"),
+                    addr.get("city") or addr.get("town"),
+                    addr.get("stateProvince") or addr.get("county"),
+                    addr.get("postalCode") or addr.get("postCode"),
+                ]))
+            else:
+                address_str = str(addr)
+
+            dist = c.get("distanceMiles") or c.get("distanceInMiles")
+            if dist is None:
+                d = c.get("distance")
+                dist = d if isinstance(d, (int, float)) else None
 
             parsed.append({
                 "facility_id": (
@@ -109,20 +119,17 @@ def parse_courses(raw: dict | list, min_rating: float = DEFAULT_MIN_RATING) -> l
                     c.get("name") or c.get("facilityName")
                     or c.get("courseName") or "Unknown course"
                 ),
-                "address": ", ".join(address_parts),
-                "distance_miles": (
-                    c.get("distanceMiles") or c.get("distance")
-                    or c.get("distanceInMiles")
-                ),
+                "address": address_str,
+                "distance_miles": dist,
                 "rating": rating,
                 "review_count": (
-                    c.get("numberOfRatings") or c.get("reviewCount")
-                    or c.get("ratingCount") or 0
+                    c.get("numberOfReviews") or c.get("numberOfRatings")
+                    or c.get("reviewCount") or c.get("ratingCount") or 0
                 ),
                 "holes": c.get("numberOfHoles") or 18,
             })
         except Exception as e:
-            log.debug(f"Skipping malformed course: {e}")
+            log.warning(f"Skipping malformed course: {e}")
 
     return parsed
 
