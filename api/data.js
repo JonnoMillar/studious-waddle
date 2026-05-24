@@ -216,13 +216,16 @@ export default async function handler(req, res) {
           .filter(p => p.position <= 11)
           .reduce((sum, p) => sum + (liveMap[p.element] ?? 0) * (p.is_captain ? 2 : 1), 0);
         return {
-          teamName:      entry.name,
-          overallRank:   entry.summary_overall_rank,
-          overallPoints: entry.summary_overall_points,
-          gwPoints:      liveGwPoints,
-          gwRank:        picks.entry_history.rank,
-          bank:          (entry.last_deadline_bank  / 10).toFixed(1),
-          value:         (entry.last_deadline_value / 10).toFixed(1),
+          teamName:        entry.name,
+          overallRank:     entry.summary_overall_rank,
+          overallPoints:   entry.summary_overall_points,
+          gwPoints:        liveGwPoints,
+          gwRank:          picks.entry_history.rank,
+          bank:            (entry.last_deadline_bank  / 10).toFixed(1),
+          value:           (entry.last_deadline_value / 10).toFixed(1),
+          pointsOnBench:   picks.entry_history.points_on_bench ?? null,
+          eventTransfers:  picks.entry_history.event_transfers ?? 0,
+          transferCost:    picks.entry_history.event_transfers_cost ?? 0,
           gw,
           picks: picks.picks.map(p => {
             const pl = playersMap[p.element] || {};

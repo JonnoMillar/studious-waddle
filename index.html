@@ -1953,8 +1953,12 @@ function renderFPL(fpl) {
     </div>
     <div class="fpl-meta-row">
       <div class="fpl-meta-stat">
-        <div class="fpl-meta-stat-label">FTs</div>
-        <div class="fpl-meta-stat-value">1</div>
+        <div class="fpl-meta-stat-label">Bench pts</div>
+        <div class="fpl-meta-stat-value">${fpl.pointsOnBench ?? '—'}</div>
+      </div>
+      <div class="fpl-meta-stat">
+        <div class="fpl-meta-stat-label">Transfers</div>
+        <div class="fpl-meta-stat-value">${fpl.eventTransfers ?? 0}${fpl.transferCost ? ` <span style="color:var(--red);font-size:12px">(${fpl.transferCost})</span>` : ''}</div>
       </div>
       <div class="fpl-meta-stat">
         <div class="fpl-meta-stat-label">ITB</div>
