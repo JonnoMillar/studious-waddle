@@ -1208,10 +1208,10 @@ body {
    ════════════════════════════════════════════════════════════════════ */
 @media (max-width: 900px) {
   .wrap { padding: 20px 20px 48px; grid-template-columns: 1fr 1fr; gap: 12px; }
-  #markets-card { grid-column: span 1; }
+  #markets-card { grid-column: 1 / -1; }
   #fixtures-card { grid-column: span 1; }
   .hero-h1 { font-size: clamp(28px, 6vw, 48px); }
-  .markets-grid { grid-template-columns: 1fr 1fr; }
+  .markets-grid { grid-template-columns: repeat(3, 1fr); }
 }
 @media (max-width: 640px) {
   .wrap { grid-template-columns: 1fr; padding: 14px 14px 40px; gap: 10px; }
@@ -1906,7 +1906,7 @@ function renderFPL(fpl) {
       ? `https://fantasy.premierleague.com/dist/img/shirts/standard/shirt_${p.teamCode}-35.png`
       : '';
     const kitInner = shirtUrl
-      ? `<img src="${shirtUrl}" width="${sizeW}" height="${sizeW}" style="object-fit:contain;display:block" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">`
+      ? `<img src="${shirtUrl}" width="${sizeW}" height="${sizeW}" style="object-fit:contain;display:block" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">`
         + `<span class="player-kit-initial" style="display:none">${(p.name||'?')[0].toUpperCase()}</span>`
       : `<span class="player-kit-initial">${(p.name||'?')[0].toUpperCase()}</span>`;
     return `<div class="player-chip${isBench ? ' bench' : ''}">
