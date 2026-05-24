@@ -652,11 +652,6 @@ body {
   padding: 1px 6px;
   font-variant-numeric: tabular-nums;
 }
-.player-fdr {
-  width: 8px; height: 8px;
-  border-radius: 2px;
-  opacity: 0.7;
-}
 
 /* Bench + meta */
 .fpl-bench-section {
@@ -1486,26 +1481,6 @@ document.querySelectorAll('.cup-reveal').forEach((el, i) => {
   rafId = requestAnimationFrame(loop);
 })();
 
-// ════════════════════════════════════════════════════════════════════
-// SPARKLINE (SVG path helper)
-// ════════════════════════════════════════════════════════════════════
-function sparkPath(vals, w, h, pad = 2) {
-  if (!vals || !vals.length) return '';
-  const min = Math.min(...vals), max = Math.max(...vals);
-  const span = max - min || 1;
-  const dx = (w - pad * 2) / (vals.length - 1);
-  return vals.map((v, i) => {
-    const x = pad + i * dx;
-    const y = h - pad - ((v - min) / span) * (h - pad * 2);
-    return (i ? 'L' : 'M') + x.toFixed(2) + ' ' + y.toFixed(2);
-  }).join(' ');
-}
-
-function makeSparklineSVG(el, vals, w, h, color) {
-  if (!vals || !vals.length) return;
-  const d = sparkPath(vals, w, h, 2);
-  el.innerHTML = `<path d="${d}" stroke="${color}" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>`;
-}
 
 // ════════════════════════════════════════════════════════════════════
 // WEATHER
