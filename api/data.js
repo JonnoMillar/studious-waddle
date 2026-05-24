@@ -147,7 +147,7 @@ export default async function handler(req, res) {
       try {
         const [bsRes, fixRes] = await Promise.all([
           fetch('https://fantasy.premierleague.com/api/bootstrap-static/'),
-          fetch('https://fantasy.premierleague.com/api/fixtures/?future=1'),
+          fetch('https://fantasy.premierleague.com/api/fixtures/'),
         ]);
         const bootstrap = await bsRes.json();
         const allFix    = await fixRes.json();
@@ -156,13 +156,14 @@ export default async function handler(req, res) {
         const teamCodes = Object.fromEntries(bootstrap.teams.map(t => [t.id, t.code]));
         const chelseaId = bootstrap.teams.find(t => t.name.includes('Chelsea'))?.id;
 
-        const upcoming = allFix
-          .filter(f => !f.finished && f.kickoff_time)
+        const currentEvent = bootstrap.current_event || bootstrap.events?.find(e => e.is_current)?.id;
+        const gwFixes = allFix
+          .filter(f => f.event === currentEvent && f.kickoff_time)
           .sort((a, b) => a.kickoff_time.localeCompare(b.kickoff_time));
 
-        const chelseaFix = upcoming.find(f => chelseaId && (f.team_a === chelseaId || f.team_h === chelseaId));
+        const chelseaFix = gwFixes.find(f => chelseaId && (f.team_a === chelseaId || f.team_h === chelseaId));
 
-        const otherFixes = upcoming
+        const otherFixes = gwFixes
           .filter(f => f !== chelseaFix)
           .map(f => ({
             ...f,
@@ -178,6 +179,8 @@ export default async function handler(req, res) {
           awayCode:  teamCodes[f.team_a] || null,
           kickoff:   f.kickoff_time,
           gw:        f.event,
+          finished:  f.finished,
+          score:     f.finished ? `${f.team_h_score}–${f.team_a_score}` : null,
           chelsea:   !!(chelseaId && (f.team_h === chelseaId || f.team_a === chelseaId)),
           homeNorm:  normaliseTeamName(teams[f.team_h] || ''),
           awayNorm:  normaliseTeamName(teams[f.team_a] || ''),

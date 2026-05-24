@@ -42,10 +42,10 @@ body {
 .wrap {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 40px 40px 80px;
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
+  padding: 32px 40px 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
 }
 
 /* ── Card ─────────────────────────────────────────────────────────── */
@@ -142,8 +142,9 @@ body {
    HERO
    ════════════════════════════════════════════════════════════════════ */
 #hero-card {
-  padding: 36px;
+  padding: 28px 32px;
   overflow: hidden;
+  grid-column: 1 / -1;
 }
 .hero-blob1, .hero-blob2 {
   position: absolute;
@@ -178,7 +179,7 @@ body {
 .hero-h1 {
   margin: 12px 0 0;
   font-family: var(--f-s);
-  font-size: clamp(40px, 5vw, 64px);
+  font-size: clamp(32px, 4vw, 48px);
   font-weight: 600;
   color: var(--ink);
   letter-spacing: -2px;
@@ -241,69 +242,56 @@ body {
 /* ════════════════════════════════════════════════════════════════════
    PORTFOLIO STRIP
    ════════════════════════════════════════════════════════════════════ */
-#portfolio-strip {
-  padding: 18px 28px;
+#portfolio-strip { padding: 20px 24px; cursor: default; }
+.port-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; }
+.port-total-hint { font-size: 11px; color: var(--ink3); font-family: var(--f-s); }
+.port-fund-chips { display: flex; gap: 10px; }
+.port-fund-chip {
+  flex: 1; padding: 10px 14px; border-radius: 12px;
+  background: rgba(26,24,22,0.035);
+  display: flex; flex-direction: column; gap: 3px;
+  transition: background 0.2s;
 }
-.port-strip-inner {
-  display: flex;
+#portfolio-strip:hover .port-fund-chip { background: rgba(26,24,22,0.055); }
+.port-fund-name { font-size: 12px; font-weight: 600; color: var(--ink2); }
+.port-fund-pct {
+  font-family: var(--f-m); font-size: 15px; font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+.port-fund-pct.up { color: var(--green); }
+.port-fund-pct.down { color: var(--red); }
+
+.port-detail-expand {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s cubic-bezier(.2,.7,.25,1);
+}
+#portfolio-strip:hover .port-detail-expand { max-height: 200px; }
+.port-detail-inner {
+  border-top: 1px solid var(--line);
+  margin-top: 14px;
+  padding-top: 14px;
+}
+.port-detail-row {
+  display: grid;
+  grid-template-columns: 1fr 60px 80px 90px;
   align-items: center;
-  gap: 20px;
-  flex-wrap: wrap;
+  padding: 5px 0;
+  font-size: 13px;
+  color: var(--ink2);
+  gap: 8px;
 }
-.port-strip-left {
-  display: flex;
-  align-items: baseline;
-  gap: 10px;
-  flex-shrink: 0;
+.port-detail-row:last-child { border-bottom: 1px solid var(--line); padding-bottom: 10px; margin-bottom: 6px; }
+.port-detail-fund { font-weight: 600; color: var(--ink); }
+.port-detail-units { font-family: var(--f-m); font-size: 11px; color: var(--ink3); text-align: right; }
+.port-detail-price { font-family: var(--f-m); font-size: 12px; text-align: right; }
+.port-detail-val { font-family: var(--f-m); font-size: 13px; font-weight: 600; text-align: right; color: var(--ink); }
+.port-total-row {
+  display: flex; justify-content: space-between; align-items: center;
+  font-size: 13px;
 }
-.port-strip-label {
-  font-family: var(--f-s);
-  font-size: 11px;
-  font-weight: 600;
-  letter-spacing: 1.6px;
-  text-transform: uppercase;
-  color: var(--ink3);
-}
-.port-strip-value {
-  font-family: var(--f-s);
-  font-size: 22px;
-  font-weight: 600;
-  color: var(--ink);
-  letter-spacing: -0.4px;
-  font-variant-numeric: tabular-nums;
-}
-.port-strip-delta {
-  font-family: var(--f-m);
-  font-size: 12px;
-  font-weight: 500;
-  color: var(--green);
-  font-variant-numeric: tabular-nums;
-}
-.port-strip-spark {
-  flex: 1;
-  min-width: 120px;
-  display: flex;
-  justify-content: center;
-}
-.port-strip-tickers {
-  display: flex;
-  gap: 14px;
-  font-family: var(--f-m);
-  font-size: 11px;
-  flex-shrink: 0;
-}
-.port-ticker-item {
-  display: flex;
-  gap: 5px;
-  align-items: baseline;
-}
-.port-ticker-sym {
-  color: var(--ink);
-  font-weight: 600;
-}
-.port-ticker-pct { font-variant-numeric: tabular-nums; }
-.port-ticker-pct.up   { color: var(--green); }
-.port-ticker-pct.down { color: var(--red); }
+.port-total-label { color: var(--ink3); font-size: 11px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; }
+.port-total-value { font-family: var(--f-m); font-size: 16px; font-weight: 600; color: var(--ink); }
 
 /* ════════════════════════════════════════════════════════════════════
    MARKETS
@@ -416,6 +404,7 @@ body {
   justify-content: flex-end;
 }
 .fixture-odds-row .fav-odd { color: var(--cup-accent); }
+.fixture-score { font-family: var(--f-m); font-size: 14px; font-weight: 600; color: var(--ink); }
 .fixture-expand {
   display: grid;
   grid-template-rows: 0fr;
@@ -445,6 +434,7 @@ body {
    ════════════════════════════════════════════════════════════════════ */
 #fpl-card {
   padding: 28px;
+  grid-column: 1 / -1;
 }
 .fpl-header {
   display: flex;
@@ -838,90 +828,59 @@ body {
    HEADLINES
    ════════════════════════════════════════════════════════════════════ */
 #headlines-card {
-  padding: 28px;
+  padding: 24px 28px;
+  grid-column: 1 / -1;
 }
-.headlines-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 8px;
+.headlines-field {
+  position: relative;
+  height: 300px;
+  border-radius: 14px;
+  background: rgba(26,24,22,0.02);
+  overflow: hidden;
+  margin-top: 4px;
 }
-.tab-pill-group {
-  display: flex;
-  gap: 4px;
-  padding: 3px;
-  background: rgba(26,24,22,0.04);
-  border-radius: 99px;
-}
-.tab-pill {
-  padding: 6px 14px;
-  border-radius: 99px;
-  border: 0;
-  font-family: var(--f-s);
-  font-size: 12px;
-  font-weight: 500;
-  background: transparent;
-  color: var(--ink2);
-  cursor: pointer;
-  transition: background .25s cubic-bezier(.2,.7,.3,1), color .2s, box-shadow .25s, transform .14s cubic-bezier(.2,.7,.3,1);
-}
-.tab-pill:hover { color: var(--ink); }
-.tab-pill.active {
+.hl-pill {
+  position: absolute;
   background: var(--bg2);
-  color: var(--ink);
-  box-shadow: 0 1px 3px rgba(0,0,0,0.10), 0 1px 1px rgba(0,0,0,0.04);
-}
-.tab-pill:active { transform: scale(0.97); }
-.headlines-body {
-  margin-top: 8px;
-}
-.headlines-tab-content {
-  animation: cup-fade-up 380ms cubic-bezier(.2,.7,.25,1);
-}
-.headline-row {
-  padding: 16px 14px;
-  margin: 0 -14px;
-  border-radius: 10px;
+  border-radius: 12px;
+  padding: 9px 14px;
+  max-width: 260px;
   cursor: pointer;
-  transition: background .18s, transform .18s cubic-bezier(.2,.7,.3,1);
+  box-shadow: 0 2px 8px rgba(26,24,22,0.08);
+  animation: hl-drift var(--dur, 30s) ease-in-out infinite;
+  transition: box-shadow 0.25s, transform 0.25s;
+  z-index: 1;
+  will-change: transform;
+  user-select: none;
+  text-decoration: none;
+  display: block;
 }
-.headline-row:not(:last-child) {
-  border-bottom: 1px solid var(--line);
+.hl-pill:hover {
+  animation-play-state: paused;
+  z-index: 20;
+  box-shadow: 0 8px 28px rgba(26,24,22,0.16);
+  transform: scale(1.03) !important;
 }
-.headline-row:hover {
-  background: rgba(26,24,22,0.035);
-  transform: translateX(3px);
+.hl-pill-cat {
+  font-size: 10px; font-weight: 600; letter-spacing: 1.4px;
+  text-transform: uppercase; color: var(--cup-accent); margin-bottom: 4px;
 }
-.headline-row:hover .headline-title { color: var(--cup-accent); }
-.headline-meta {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  margin-bottom: 6px;
-  font-family: var(--f-s);
-  font-size: 11px;
-  color: var(--ink3);
-  font-weight: 500;
-  letter-spacing: 0.4px;
-  text-transform: uppercase;
+.hl-pill-title {
+  font-size: 13px; font-weight: 600; color: var(--ink); line-height: 1.35;
 }
-.headline-src { color: var(--cup-accent); }
-.headline-title {
-  margin: 0;
-  font-family: var(--f-s);
-  font-size: 18px;
-  font-weight: 600;
-  color: var(--ink);
-  letter-spacing: -0.4px;
-  line-height: 1.3;
-  transition: color .2s;
+.hl-pill-more {
+  font-size: 11px; color: var(--ink3); margin-top: 4px; line-height: 1.4;
+  max-height: 0; overflow: hidden;
+  transition: max-height 0.3s ease;
 }
-.headline-summary {
-  margin: 6px 0 0;
-  font-family: var(--f-s);
-  font-size: 14px;
-  color: var(--ink2);
-  line-height: 1.5;
+.hl-pill:hover .hl-pill-more { max-height: 60px; }
+
+@keyframes hl-drift {
+  0%   { transform: translate(0px, 0px); }
+  25%  { transform: translate(var(--dx1), var(--dy1)); }
+  50%  { transform: translate(var(--dx2), var(--dy2)); }
+  75%  { transform: translate(var(--dx1, 0px), calc(var(--dy2) * -0.5)); }
+  100% { transform: translate(0px, 0px); }
 }
 
 /* ════════════════════════════════════════════════════════════════════
@@ -934,6 +893,7 @@ body {
   text-align: center;
   padding: 18px 0;
   letter-spacing: 0.3px;
+  grid-column: 1 / -1;
 }
 
 /* ════════════════════════════════════════════════════════════════════
@@ -946,6 +906,10 @@ body {
   .fixtures-grid { grid-template-columns: 1fr; }
   .markets-grid { grid-template-columns: 1fr 1fr; }
 }
+@media (max-width: 768px) {
+  .wrap { grid-template-columns: 1fr; }
+  #portfolio-strip, #markets-card, #fixtures-card, #golf-card { grid-column: 1 / -1; }
+}
 @media (max-width: 640px) {
   .wrap { padding: 16px 16px 48px; gap: 14px; }
   .hero-inner { flex-direction: column; }
@@ -953,8 +917,6 @@ body {
   .hero-weather-row { justify-content: flex-start; }
   .fpl-stats-row { gap: 12px; }
   .fpl-stat-value { font-size: 28px; }
-  .port-strip-inner { gap: 12px; }
-  .port-strip-spark { display: none; }
   .markets-grid { grid-template-columns: 1fr; }
 }
 
@@ -1009,17 +971,17 @@ body {
 
   <!-- PORTFOLIO STRIP -->
   <div class="card hover-lift cup-reveal" id="portfolio-strip">
-    <div class="port-strip-inner">
-      <div class="port-strip-left">
-        <span class="port-strip-label">Portfolio</span>
-        <span class="port-strip-value" id="port-value">£—</span>
-        <span class="port-strip-delta" id="port-delta"></span>
-        <span class="pct-chip" id="port-pct"></span>
-      </div>
-      <div class="port-strip-spark">
-        <svg id="port-sparkline" width="140" height="28" viewBox="0 0 140 28" fill="none"></svg>
-      </div>
-      <div class="port-strip-tickers" id="port-tickers"></div>
+    <div class="port-header">
+      <span class="eyebrow" style="margin-bottom:0">Portfolio</span>
+      <span class="port-total-hint">hover to expand</span>
+    </div>
+    <div class="port-fund-chips" id="port-fund-chips">
+      <div class="skel" style="height:40px;border-radius:10px;flex:1"></div>
+      <div class="skel" style="height:40px;border-radius:10px;flex:1"></div>
+      <div class="skel" style="height:40px;border-radius:10px;flex:1"></div>
+    </div>
+    <div class="port-detail-expand" id="port-detail-expand">
+      <div class="port-detail-inner" id="port-detail-inner"></div>
     </div>
   </div>
 
@@ -1077,19 +1039,9 @@ body {
   </div>
 
   <!-- HEADLINES -->
-  <div class="card cup-reveal" id="headlines-card">
-    <div class="headlines-header">
-      <div class="eyebrow" style="margin-bottom:0">Headlines</div>
-      <div class="tab-pill-group" id="headlines-tabs">
-        <button class="tab-pill active cup-press" data-tab="AI" onclick="switchTab('AI')">AI</button>
-        <button class="tab-pill cup-press" data-tab="Tech" onclick="switchTab('Tech')">Tech</button>
-        <button class="tab-pill cup-press" data-tab="World" onclick="switchTab('World')">World</button>
-        <button class="tab-pill cup-press" data-tab="Premier League" onclick="switchTab('Premier League')">Football</button>
-      </div>
-    </div>
-    <div class="headlines-body" id="headlines-body">
-      <div class="skel" style="height:100px;border-radius:10px;margin-top:12px"></div>
-    </div>
+  <div class="card cup-reveal" id="headlines-card" style="padding:24px 28px">
+    <div class="eyebrow">Headlines</div>
+    <div class="headlines-field" id="headlines-field"></div>
   </div>
 
   <!-- FOOTER -->
@@ -1308,70 +1260,51 @@ async function getServerData() {
 // PORTFOLIO STRIP
 // ════════════════════════════════════════════════════════════════════
 function renderPortfolioStrip(prices) {
-  let total = 0, daily = 0;
+  let total = 0;
   const holdingData = [];
 
-  for (const [name, ticker] of Object.entries(PORTFOLIO)) {
-    const raw   = prices[name] || {};
-    let d = { ...raw };
-    if (name === 'US 500') d.currency = 'USD';
-    const gbp = toGBP(d.price, d.currency);
-    const u   = PORT_UNITS[name] || 0;
+  for (const [name] of Object.entries(PORTFOLIO)) {
+    const raw  = prices[name] || {};
+    // Do NOT override currency — use what Yahoo Finance returns
+    const gbp  = toGBP(raw.price, raw.currency);
+    const u    = PORT_UNITS[name] || 0;
     if (gbp && u) {
       const val = gbp * u;
-      const chg = d.change || 0;
       total += val;
-      daily += val * chg / 100;
-      holdingData.push({ ticker: name, pct: chg });
+      holdingData.push({ name, pct: raw.change || 0, price: gbp, units: u, val });
+    } else {
+      holdingData.push({ name, pct: raw.change || null, price: gbp, units: u, val: 0 });
     }
   }
 
-  const valEl   = document.getElementById('port-value');
-  const dltEl   = document.getElementById('port-delta');
-  const pctEl   = document.getElementById('port-pct');
-  const tckEl   = document.getElementById('port-tickers');
-  const spkEl   = document.getElementById('port-sparkline');
+  const chipsEl  = document.getElementById('port-fund-chips');
+  const detailEl = document.getElementById('port-detail-inner');
 
-  if (total && valEl) {
-    countUp(valEl, total, { prefix: '£', decimals: 2, dur: 1300 });
-  } else if (valEl) {
-    valEl.textContent = '£—';
-  }
-
-  if (daily && dltEl) {
-    const cls = daily >= 0 ? 'up' : 'down';
-    dltEl.textContent = (daily >= 0 ? '+' : '') + fmtGBP(Math.abs(daily));
-    dltEl.className = 'port-strip-delta';
-    dltEl.style.color = daily >= 0 ? 'var(--green)' : 'var(--red)';
-  }
-
-  if (total && pctEl) {
-    const pct = (daily / total) * 100;
-    const cls = pct >= 0 ? 'up' : 'down';
-    pctEl.textContent = (pct >= 0 ? '+' : '') + pct.toFixed(2) + '%';
-    pctEl.className = 'pct-chip ' + cls;
-  }
-
-  // Sparkline — simple random-walk seeded by total value
-  const seed = Math.abs(Math.round(total)) % 1000;
-  let sv = 50 + (seed % 20);
-  const svals = [];
-  let rs = seed || 42;
-  for (let i = 0; i < 24; i++) {
-    rs = (rs * 1664525 + 1013904223) & 0x7fffffff;
-    sv = Math.max(10, Math.min(90, sv + (rs / 0x7fffffff - 0.44) * 8));
-    svals.push(sv);
-  }
-  if (spkEl) makeSparklineSVG(spkEl, svals, 140, 28, 'var(--green)');
-
-  if (tckEl) {
-    tckEl.innerHTML = holdingData.map(h => {
-      const cls = h.pct >= 0 ? 'up' : 'down';
-      return `<span class="port-ticker-item">
-        <span class="port-ticker-sym">${h.ticker}</span>
-        <span class="port-ticker-pct ${cls}">${h.pct >= 0 ? '+' : ''}${h.pct.toFixed(2)}</span>
-      </span>`;
+  if (chipsEl) {
+    chipsEl.innerHTML = holdingData.map(h => {
+      const pctStr = h.pct != null
+        ? (h.pct >= 0 ? '+' : '') + h.pct.toFixed(2) + '%'
+        : '—';
+      const cls = h.pct != null ? (h.pct >= 0 ? 'up' : 'down') : '';
+      return `<div class="port-fund-chip">
+        <div class="port-fund-name">${h.name}</div>
+        <div class="port-fund-pct ${cls}">${pctStr}</div>
+      </div>`;
     }).join('');
+  }
+
+  if (detailEl) {
+    const rows = holdingData.map(h => `
+      <div class="port-detail-row">
+        <div class="port-detail-fund">${h.name}</div>
+        <div class="port-detail-units">${h.units} units</div>
+        <div class="port-detail-price">${h.price != null ? '£' + h.price.toFixed(2) : '—'}</div>
+        <div class="port-detail-val">${h.val ? '£' + h.val.toFixed(2) : '—'}</div>
+      </div>`).join('');
+    detailEl.innerHTML = rows + `<div class="port-total-row">
+      <span class="port-total-label">Total</span>
+      <span class="port-total-value">${total ? '£' + total.toLocaleString('en-GB', {minimumFractionDigits:2,maximumFractionDigits:2}) : '—'}</span>
+    </div>`;
   }
 }
 
@@ -1444,7 +1377,9 @@ function renderFixtures(fixtures) {
     const favH    = odds ? (odds.h != null && odds.a != null && odds.h <= odds.a) : true;
     const fid     = `fix-${i}`;
     let oddsHTML  = '';
-    if (odds && odds.h != null && odds.a != null) {
+    if (f.score) {
+      oddsHTML = `<div class="fixture-score">${f.score}</div>`;
+    } else if (odds && odds.h != null && odds.a != null) {
       oddsHTML = `<div class="fixture-odds-row">
         <span class="${favH ? 'fav-odd' : ''}">${odds.h.toFixed(2)}</span>
         <span style="color:var(--ink3)">·</span>
@@ -1647,8 +1582,12 @@ function renderGolf(golf) {
 
   const tees = golf.tee_times;
 
+  // Only show tee times from 11:00 onwards
+  const filteredTees = tees.filter(t => !t.tee_time || t.tee_time >= '11:00');
+  const displayTees = filteredTees.length > 0 ? filteredTees : tees; // fallback if all filtered
+
   // Sort by date + time, pick first as "next tee"
-  const sorted = [...tees].sort((a, b) => {
+  const sorted = [...displayTees].sort((a, b) => {
     const da = a.date + 'T' + (a.tee_time || '00:00');
     const db = b.date + 'T' + (b.tee_time || '00:00');
     return da.localeCompare(db);
@@ -1711,48 +1650,58 @@ function renderGolf(golf) {
 // ════════════════════════════════════════════════════════════════════
 // HEADLINES
 // ════════════════════════════════════════════════════════════════════
-let currentTab       = 'AI';
-let allNews          = {};
-const NEWS_MAP = { 'AI': 'AI', 'Tech': 'Tech', 'World': 'World', 'Premier League': 'Premier League' };
+function renderNews(news) {
+  const field = document.getElementById('headlines-field');
+  if (!field) return;
 
-function switchTab(tabName) {
-  currentTab = tabName;
-  document.querySelectorAll('.tab-pill').forEach(btn => {
-    btn.classList.toggle('active', btn.dataset.tab === tabName);
+  const CAT_COLOR = { 'AI': '#2a6fdb', 'Tech': '#5e8a64', 'World': '#d97757', 'Premier League': '#1f8a5b' };
+  const all = [];
+  ['AI', 'Tech', 'World', 'Premier League'].forEach(cat => {
+    (news[cat] || []).forEach(item => all.push({ ...item, cat }));
   });
-  renderHeadlinesTab();
-}
 
-function renderHeadlinesTab() {
-  const el    = document.getElementById('headlines-body');
-  if (!el) return;
-  const items = allNews[currentTab] || allNews[NEWS_MAP[currentTab]] || [];
-  if (!items.length) {
-    el.innerHTML = `<div class="headlines-tab-content" style="padding:16px 0;color:var(--ink3);font-size:14px">No stories available.</div>`;
+  if (!all.length) {
+    field.innerHTML = '<div style="display:flex;align-items:center;justify-content:center;height:100%;color:var(--ink3);font-size:14px">Headlines loading…</div>';
     return;
   }
-  el.innerHTML = `<div class="headlines-tab-content">` +
-    items.map((h, i) => {
-      const src  = h.source || currentTab;
-      const time = h.pubDate ? new Date(h.pubDate).toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit' }) : '';
-      return `<a class="headline-row" href="${h.link}" target="_blank" rel="noopener" style="display:block;text-decoration:none;border-bottom:${i < items.length - 1 ? '1px solid var(--line)' : 'none'}">
-        <div class="headline-meta">
-          <span class="headline-src">${src}</span>
-          ${time ? `<span>·</span><span>${time}</span>` : ''}
-        </div>
-        <h4 class="headline-title">${h.title}</h4>
-      </a>`;
-    }).join('') + `</div>`;
-}
 
-function renderNews(news) {
-  // The API returns { "World": [...], "Premier League": [...], "Tech": [...], "AI": [...] }
-  // Each item has { title, link }
-  allNews = {};
-  for (const [cat, items] of Object.entries(news)) {
-    allNews[cat] = items;
-  }
-  renderHeadlinesTab();
+  // Use seeded positions to avoid layout shift on re-render
+  const positions = [
+    { x:4,  y:6  }, { x:38, y:5  }, { x:65, y:4  },
+    { x:6,  y:52 }, { x:34, y:48 }, { x:62, y:50 },
+    { x:10, y:72 }, { x:40, y:70 }, { x:66, y:68 },
+    { x:20, y:28 }, { x:50, y:28 }, { x:75, y:30 },
+  ];
+  const drifts = [
+    { dx1:'8px',  dy1:'5px',  dx2:'-5px', dy2:'10px' },
+    { dx1:'-10px',dy1:'8px',  dx2:'6px',  dy2:'-5px' },
+    { dx1:'6px',  dy1:'-8px', dx2:'-8px', dy2:'6px'  },
+    { dx1:'-7px', dy1:'6px',  dx2:'10px', dy2:'-4px' },
+    { dx1:'10px', dy1:'-6px', dx2:'-6px', dy2:'8px'  },
+    { dx1:'-8px', dy1:'-5px', dx2:'7px',  dy2:'7px'  },
+    { dx1:'5px',  dy1:'10px', dx2:'-9px', dy2:'-6px' },
+    { dx1:'-6px', dy1:'7px',  dx2:'8px',  dy2:'-8px' },
+    { dx1:'9px',  dy1:'-7px', dx2:'-7px', dy2:'5px'  },
+    { dx1:'-5px', dy1:'-9px', dx2:'6px',  dy2:'8px'  },
+    { dx1:'7px',  dy1:'6px',  dx2:'-10px',dy2:'-5px' },
+    { dx1:'-9px', dy1:'5px',  dx2:'5px',  dy2:'-9px' },
+  ];
+  const durs = [28,34,31,37,29,33,36,27,32,38,30,35];
+
+  field.innerHTML = all.slice(0, 12).map((h, i) => {
+    const pos   = positions[i % positions.length];
+    const drift = drifts[i % drifts.length];
+    const dur   = durs[i % durs.length];
+    const col   = CAT_COLOR[h.cat] || 'var(--cup-accent)';
+    const short = h.title.length > 55 ? h.title.slice(0,55) + '…' : h.title;
+    const rest  = h.title.length > 55 ? h.title.slice(55) : '';
+    return `<a class="hl-pill" href="${h.link || '#'}" target="_blank" rel="noopener"
+      style="left:${pos.x}%;top:${pos.y}%;--dur:${dur}s;--dx1:${drift.dx1};--dy1:${drift.dy1};--dx2:${drift.dx2};--dy2:${drift.dy2}">
+      <div class="hl-pill-cat" style="color:${col}">${h.cat}</div>
+      <div class="hl-pill-title">${short}</div>
+      <div class="hl-pill-more">${rest || 'Click to read full story →'}</div>
+    </a>`;
+  }).join('');
 }
 
 // ════════════════════════════════════════════════════════════════════
