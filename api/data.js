@@ -180,7 +180,8 @@ export default async function handler(req, res) {
           kickoff:   f.kickoff_time,
           gw:        f.event,
           finished:  f.finished,
-          score:     f.finished ? `${f.team_h_score}–${f.team_a_score}` : null,
+          started:   f.started,
+          score:     f.team_h_score != null ? `${f.team_h_score}–${f.team_a_score}` : null,
           chelsea:   !!(chelseaId && (f.team_h === chelseaId || f.team_a === chelseaId)),
           homeNorm:  normaliseTeamName(teams[f.team_h] || ''),
           awayNorm:  normaliseTeamName(teams[f.team_a] || ''),
@@ -199,15 +200,24 @@ export default async function handler(req, res) {
         const bootstrap = await bsRes.json();
         const entry     = await entryRes.json();
         const gw        = entry.current_event;
-        const picks     = await (await fetch(`https://fantasy.premierleague.com/api/entry/${FPL_TEAM_ID}/event/${gw}/picks/`)).json();
+        const [picks, liveRes] = await Promise.all([
+          fetch(`https://fantasy.premierleague.com/api/entry/${FPL_TEAM_ID}/event/${gw}/picks/`).then(r => r.json()),
+          fetch(`https://fantasy.premierleague.com/api/event/${gw}/live/`).then(r => r.json()),
+        ]);
         const playersMap   = Object.fromEntries(bootstrap.elements.map(p => [p.id, p]));
         const teamsMap     = Object.fromEntries(bootstrap.teams.map(t => [t.id, t.short_name]));
         const teamCodesMap = Object.fromEntries(bootstrap.teams.map(t => [t.id, t.code]));
+        // Live GW points per player element id
+        const liveMap = Object.fromEntries((liveRes.elements || []).map(el => [el.id, el.stats.total_points]));
+        // Live GW team total: sum starting 11 with captain doubling
+        const liveGwPoints = picks.picks
+          .filter(p => p.position <= 11)
+          .reduce((sum, p) => sum + (liveMap[p.element] ?? 0) * (p.is_captain ? 2 : 1), 0);
         return {
           teamName:      entry.name,
           overallRank:   entry.summary_overall_rank,
           overallPoints: entry.summary_overall_points,
-          gwPoints:      picks.entry_history.points,
+          gwPoints:      liveGwPoints,
           gwRank:        picks.entry_history.rank,
           bank:          (entry.last_deadline_bank  / 10).toFixed(1),
           value:         (entry.last_deadline_value / 10).toFixed(1),
@@ -222,7 +232,7 @@ export default async function handler(req, res) {
               slot:     p.position,
               isCap:    p.is_captain,
               isVC:     p.is_vice_captain,
-              points:   pl.total_points || 0,
+              points:   liveMap[p.element] ?? 0,
               form:     pl.form || '0.0',
               price:    ((pl.now_cost || 0) / 10).toFixed(1),
               chance:   pl.chance_of_playing_next_round,
