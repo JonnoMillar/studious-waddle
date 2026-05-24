@@ -68,7 +68,7 @@ def parse_courses(raw: dict | list, min_rating: float = DEFAULT_MIN_RATING) -> l
 
     courses_list = _extract_list(
         raw,
-        "courses", "facilities", "results", "data",
+        "ttResults", "courses", "facilities", "results", "data",
         "teeTimeFacilities", "searchResults", "items", "records",
     )
 
