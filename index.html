@@ -153,14 +153,14 @@ body {
   will-change: transform;
 }
 .hero-blob1 {
-  width: 380px; height: 380px;
-  top: -120px; right: -120px;
-  background: radial-gradient(circle, rgba(232,154,47,0.22), transparent 70%);
+  width: 420px; height: 420px;
+  top: -140px; right: -100px;
+  background: radial-gradient(circle, rgba(232,154,47,0.38), transparent 65%);
 }
 .hero-blob2 {
-  width: 260px; height: 260px;
-  bottom: -80px; left: -40px;
-  background: radial-gradient(circle, rgba(42,111,219,0.10), transparent 70%);
+  width: 300px; height: 300px;
+  bottom: -100px; left: -60px;
+  background: radial-gradient(circle, rgba(42,111,219,0.22), transparent 65%);
 }
 .hero-inner {
   position: relative;
@@ -840,15 +840,16 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 16px;
+  margin-bottom: 18px;
   gap: 12px;
 }
 .hl-masthead-title {
   font-family: var(--f-s);
-  font-size: 22px;
-  font-weight: 700;
-  color: var(--ink);
-  letter-spacing: -0.5px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  color: var(--ink3);
   flex-shrink: 0;
 }
 .hl-tabs {
@@ -858,7 +859,7 @@ body {
   justify-content: flex-end;
 }
 .hl-tab {
-  padding: 5px 13px;
+  padding: 4px 12px;
   border-radius: 99px;
   font-size: 12px;
   font-weight: 600;
@@ -878,7 +879,7 @@ body {
 }
 #hl-carousel {
   position: relative;
-  min-height: 280px;
+  min-height: 300px;
 }
 .hl-slide {
   position: absolute;
@@ -899,33 +900,36 @@ body {
 .hl-item {
   display: flex;
   flex-direction: column;
-  gap: 3px;
-  padding: 11px 0;
+  gap: 4px;
+  padding: 13px 0;
   border-bottom: 1px solid var(--line);
   text-decoration: none;
   color: inherit;
   transition: padding-left 0.18s;
 }
 .hl-item:last-child { border-bottom: none; }
-.hl-item:hover { padding-left: 6px; }
-.hl-item:hover .hl-item-title { color: var(--cup-accent); }
+.hl-item:hover { padding-left: 8px; }
 .hl-item-meta {
   font-family: var(--f-m);
-  font-size: 10px;
+  font-size: 11px;
   letter-spacing: 0.8px;
   text-transform: uppercase;
-  color: var(--ink3);
   line-height: 1;
 }
 .hl-item-title {
-  font-size: 15px;
+  font-size: 17px;
   font-weight: 600;
   color: var(--ink);
   line-height: 1.35;
   transition: color 0.15s;
 }
+.hl-item.featured .hl-item-title {
+  font-size: 19px;
+  font-weight: 700;
+}
+.hl-item:hover .hl-item-title { opacity: 0.78; }
 .hl-item-desc {
-  font-size: 13px;
+  font-size: 14px;
   color: var(--ink2);
   line-height: 1.5;
   display: -webkit-box;
@@ -933,83 +937,158 @@ body {
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+.hl-more-wrap {
+  display: flex;
+  flex-direction: column;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.42s cubic-bezier(.2,.7,.25,1);
+}
+.hl-more-wrap.open { max-height: 800px; }
+.hl-view-more {
+  margin-top: 10px;
+  font-family: var(--f-s);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--ink3);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px 0;
+  text-align: left;
+  transition: color 0.15s;
+}
+.hl-view-more:hover { color: var(--ink); }
 
 /* ════════════════════════════════════════════════════════════════════
-   COMPANIES TO WATCH
+   COMPANIES FEATURED CAROUSEL
    ════════════════════════════════════════════════════════════════════ */
 #companies-card {
-  padding: 20px 24px 18px;
+  padding: 22px 28px 20px;
   grid-column: 1 / -1;
 }
-.companies-strip {
+.co-masthead {
   display: flex;
-  gap: 10px;
-  overflow-x: auto;
-  padding-bottom: 6px;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-}
-.companies-strip::-webkit-scrollbar { display: none; }
-.co-card {
-  flex-shrink: 0;
-  width: 196px;
-  padding: 16px 18px 14px;
-  border-radius: 16px;
-  background: rgba(26,24,22,0.03);
-  border: 1px solid rgba(26,24,22,0.07);
-  transition: background 0.18s, transform 0.18s cubic-bezier(.2,.7,.3,1), box-shadow 0.18s, border-color 0.18s;
-  cursor: default;
-}
-.co-card:hover {
-  background: var(--bg2);
-  transform: translateY(-3px);
-  box-shadow: 0 8px 24px rgba(26,24,22,0.08);
-  border-color: rgba(26,24,22,0.12);
-}
-.co-card-name {
-  font-size: 19px;
-  font-weight: 700;
-  color: var(--ink);
-  letter-spacing: -0.3px;
-  line-height: 1;
+  align-items: center;
+  justify-content: space-between;
   margin-bottom: 4px;
 }
-.co-card-tag {
-  font-size: 10px;
+.co-counter {
+  font-family: var(--f-m);
+  font-size: 12px;
+  color: var(--ink3);
+}
+.co-featured {
+  padding: 20px 0 16px;
+  border-bottom: 1px solid var(--line);
+  transition: opacity 0.35s ease, transform 0.35s ease;
+}
+.co-featured.fading {
+  opacity: 0;
+  transform: translateY(10px);
+}
+.co-featured-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 10px;
+}
+.co-featured-name {
+  font-size: 44px;
+  font-weight: 700;
+  letter-spacing: -2px;
+  line-height: 1;
+  color: var(--ink);
+}
+.co-featured-tag {
+  font-size: 11px;
   font-weight: 600;
-  letter-spacing: 0.6px;
+  letter-spacing: 0.8px;
   text-transform: uppercase;
   color: var(--ink3);
-  margin-bottom: 7px;
+  margin-top: 8px;
 }
-.co-card-desc {
-  font-size: 12px;
-  color: var(--ink2);
-  line-height: 1.45;
-  margin-bottom: 12px;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  min-height: 35px;
+.co-featured-right {
+  text-align: right;
+  flex-shrink: 0;
 }
-.co-card-footer {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-}
-.co-card-pct {
+.co-featured-pct {
   font-family: var(--f-m);
-  font-size: 17px;
+  font-size: 38px;
   font-weight: 600;
+  letter-spacing: -1px;
+  line-height: 1;
   font-variant-numeric: tabular-nums;
 }
-.co-card-pct.up   { color: var(--green); }
-.co-card-pct.down { color: var(--red); }
-.co-card-price {
+.co-featured-pct.up   { color: var(--green); }
+.co-featured-pct.down { color: var(--red); }
+.co-featured-price {
   font-family: var(--f-m);
-  font-size: 12px;
+  font-size: 13px;
   color: var(--ink3);
+  margin-top: 6px;
+}
+.co-featured-desc {
+  font-size: 17px;
+  color: var(--ink2);
+  line-height: 1.5;
+  max-width: 660px;
+}
+.co-nav {
+  display: flex;
+  gap: 7px;
+  align-items: center;
+  padding-top: 14px;
+}
+.co-dot {
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background: rgba(26,24,22,0.15);
+  cursor: pointer;
+  border: 0; padding: 0;
+  transition: background 0.2s, transform 0.2s, width 0.2s;
+  flex-shrink: 0;
+}
+.co-dot.active {
+  background: var(--cup-accent);
+  transform: scale(1.3);
+}
+
+/* ════════════════════════════════════════════════════════════════════
+   PAGE SHINE OVERLAY
+   ════════════════════════════════════════════════════════════════════ */
+#page-shine {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9999;
+  overflow: hidden;
+}
+@keyframes shine-sweep {
+  0%   { transform: translateX(-100%) skewX(-12deg); }
+  100% { transform: translateX(400%) skewX(-12deg); }
+}
+#page-shine::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 30%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255,255,255,0.00) 30%,
+    rgba(255,255,255,0.08) 46%,
+    rgba(255,255,255,0.18) 50%,
+    rgba(255,255,255,0.08) 54%,
+    rgba(255,255,255,0.00) 70%,
+    transparent 100%
+  );
+  transform: translateX(-100%) skewX(-12deg);
+}
+#page-shine.sweeping::after {
+  animation: shine-sweep 1.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
 }
 
 /* ════════════════════════════════════════════════════════════════════
@@ -1161,15 +1240,14 @@ body {
 
   <!-- COMPANIES TO WATCH -->
   <div class="card cup-reveal" id="companies-card">
-    <div class="eyebrow" style="margin-bottom:10px">Companies to Watch</div>
-    <div class="companies-strip" id="companies-strip">
-      <div class="skel" style="height:58px;width:86px;border-radius:12px;flex-shrink:0"></div>
-      <div class="skel" style="height:58px;width:86px;border-radius:12px;flex-shrink:0"></div>
-      <div class="skel" style="height:58px;width:86px;border-radius:12px;flex-shrink:0"></div>
-      <div class="skel" style="height:58px;width:86px;border-radius:12px;flex-shrink:0"></div>
-      <div class="skel" style="height:58px;width:86px;border-radius:12px;flex-shrink:0"></div>
-      <div class="skel" style="height:58px;width:86px;border-radius:12px;flex-shrink:0"></div>
+    <div class="co-masthead">
+      <span class="eyebrow" style="margin-bottom:0">Companies to Watch</span>
+      <span class="co-counter" id="co-counter"></span>
     </div>
+    <div id="co-stage">
+      <div class="skel" style="height:130px;border-radius:12px;margin-top:20px"></div>
+    </div>
+    <div class="co-nav" id="co-nav"></div>
   </div>
 
   <!-- FPL -->
@@ -1194,6 +1272,8 @@ body {
   <div class="brief-footer">Refreshes at 08:30 · Made for Jonno</div>
 
 </div><!-- /wrap -->
+
+<div id="page-shine"></div>
 
 <script>
 // ════════════════════════════════════════════════════════════════════
@@ -1432,8 +1512,11 @@ function renderPortfolioStrip(prices) {
       const pctStr = h.pct != null
         ? (h.pct >= 0 ? '+' : '') + h.pct.toFixed(2) + '%'
         : '—';
-      const cls = h.pct != null ? (h.pct >= 0 ? 'up' : 'down') : '';
-      return `<div class="port-fund-chip">
+      const cls  = h.pct != null ? (h.pct >= 0 ? 'up' : 'down') : '';
+      const bg   = h.pct == null ? '' : h.pct >= 0
+        ? 'background:rgba(31,138,91,0.08)'
+        : 'background:rgba(192,57,43,0.07)';
+      return `<div class="port-fund-chip" style="${bg}">
         <div class="port-fund-name">${h.name}</div>
         <div class="port-fund-pct ${cls}">${pctStr}</div>
       </div>`;
@@ -1720,15 +1803,12 @@ function renderGolf(golf) {
   const el = document.getElementById('golf-body');
   if (!el) return;
 
-  // Only show tee times from 11:00 (may be empty if cache is stale pre-rescrape)
+  // Trust the scraper's API-level time filter (timemin=11, timemax=17)
+  // Frontend string comparison was incorrectly filtering valid tee times
   const allTees = golf.tee_times || [];
-  const in11to5 = allTees.filter(t => t.tee_time && t.tee_time >= '11:00');
 
-  if (!golf || !in11to5.length) {
-    const hasTimes = allTees.length > 0;
-    const msg = hasTimes
-      ? `No tee times found between 11am–5pm. ${allTees.length} early slots hidden — run scraper to refresh.`
-      : golf?.error ? `Tee times temporarily unavailable.` : 'No tee times available.';
+  if (!golf || !allTees.length) {
+    const msg = golf?.error ? `Tee times temporarily unavailable.` : 'No tee times available.';
     el.innerHTML = `<div class="golf-empty">${msg}</div>`;
     if (golf?.scraped_at) {
       el.innerHTML += `<div class="golf-stale">Last scraped: ${new Date(golf.scraped_at).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' })} · refreshes Thu &amp; Sat mornings</div>`;
@@ -1736,7 +1816,7 @@ function renderGolf(golf) {
     return;
   }
 
-  const displayTees = in11to5;
+  const displayTees = allTees;
 
   // Sort by date + time, pick first as "next tee"
   const sorted = [...displayTees].sort((a, b) => {
@@ -1803,6 +1883,7 @@ function renderGolf(golf) {
 // HEADLINES EDITORIAL
 // ════════════════════════════════════════════════════════════════════
 const CAT_SOURCES = { 'AI': 'VentureBeat', 'Tech': 'Ars Technica', 'World': 'BBC News', 'Premier League': 'BBC Sport' };
+const CAT_COLORS  = { 'AI': '#d97757', 'Tech': '#5e8a64', 'World': '#2a6fdb', 'Premier League': '#1f8a5b' };
 let _hlSlides = [], _hlIdx = 0, _hlTimer = null;
 
 function formatPubDate(str) {
@@ -1811,10 +1892,17 @@ function formatPubDate(str) {
     const d = new Date(str);
     if (isNaN(d)) return '';
     const diff = (Date.now() - d) / 60000;
-    if (diff < 60)       return Math.round(diff) + 'm ago';
-    if (diff < 60 * 24)  return Math.round(diff / 60) + 'h ago';
+    if (diff < 60)      return Math.round(diff) + 'm ago';
+    if (diff < 1440)    return Math.round(diff / 60) + 'h ago';
     return d.toLocaleDateString('en-GB', { day: 'numeric', month: 'short' });
   } catch (_) { return ''; }
+}
+
+function toggleHlMore(btn) {
+  const wrap = btn.previousElementSibling;
+  if (!wrap) return;
+  const open = wrap.classList.toggle('open');
+  btn.textContent = open ? '← Show less' : `View more →`;
 }
 
 function renderNews(news) {
@@ -1823,7 +1911,7 @@ function renderNews(news) {
   if (!carousel) return;
 
   const cats = ['AI', 'Tech', 'World', 'Premier League'];
-  _hlSlides = cats.map(cat => ({ cat, items: (news[cat] || []).slice(0, 5) }))
+  _hlSlides = cats.map(cat => ({ cat, items: (news[cat] || []).slice(0, 6) }))
     .filter(s => s.items.length > 0);
 
   if (!_hlSlides.length) {
@@ -1831,28 +1919,37 @@ function renderNews(news) {
     return;
   }
 
-  // Tabs
   if (tabsEl) {
     tabsEl.innerHTML = _hlSlides.map((s, i) =>
       `<button class="hl-tab${i === 0 ? ' active' : ''}" onclick="goHlSlide(${i})">${s.cat}</button>`
     ).join('');
   }
 
-  // Slides
+  const itemHTML = (h, featured, col, source) => {
+    const time = formatPubDate(h.pubDate);
+    const meta = [source, time].filter(Boolean).join(' · ');
+    const showDesc = h.description && h.description.length > 30 && h.description !== h.title;
+    const titleStyle = featured ? `style="color:${col}"` : '';
+    return `<a class="hl-item${featured ? ' featured' : ''}" href="${h.link || '#'}" target="_blank" rel="noopener">
+      <div class="hl-item-meta" style="color:${col}">${meta}</div>
+      <div class="hl-item-title" ${titleStyle}>${h.title}</div>
+      ${showDesc ? `<div class="hl-item-desc">${h.description}</div>` : ''}
+    </a>`;
+  };
+
   carousel.innerHTML = _hlSlides.map((s, i) => {
-    const source = CAT_SOURCES[s.cat] || s.cat;
+    const source  = CAT_SOURCES[s.cat] || s.cat;
+    const col     = CAT_COLORS[s.cat] || 'var(--cup-accent)';
+    const first3  = s.items.slice(0, 3);
+    const rest    = s.items.slice(3);
     return `<div class="hl-slide${i === 0 ? ' active' : ''}" data-idx="${i}">
       <div class="hl-items">
-        ${s.items.map(h => {
-          const time = formatPubDate(h.pubDate);
-          const meta = [source, time].filter(Boolean).join(' · ');
-          const showDesc = h.description && h.description.length > 30 && h.description !== h.title;
-          return `<a class="hl-item" href="${h.link || '#'}" target="_blank" rel="noopener">
-            <div class="hl-item-meta">${meta}</div>
-            <div class="hl-item-title">${h.title}</div>
-            ${showDesc ? `<div class="hl-item-desc">${h.description}</div>` : ''}
-          </a>`;
-        }).join('')}
+        ${first3.map((h, j) => itemHTML(h, j === 0, col, source)).join('')}
+        ${rest.length ? `
+          <div class="hl-more-wrap">
+            ${rest.map(h => itemHTML(h, false, col, source)).join('')}
+          </div>
+          <button class="hl-view-more" onclick="toggleHlMore(this)">View more →</button>` : ''}
       </div>
     </div>`;
   }).join('');
@@ -1872,11 +1969,11 @@ function goHlSlide(idx) {
 function startHlCycle() {
   clearTimeout(_hlTimer);
   if (_hlSlides.length < 2) return;
-  _hlTimer = setTimeout(() => goHlSlide((_hlIdx + 1) % _hlSlides.length), 5000);
+  _hlTimer = setTimeout(() => goHlSlide((_hlIdx + 1) % _hlSlides.length), 6000);
 }
 
 // ════════════════════════════════════════════════════════════════════
-// COMPANIES TO WATCH
+// COMPANIES FEATURED CAROUSEL
 // ════════════════════════════════════════════════════════════════════
 const CO_NAMES = ['Nvidia','Apple','Tesla','Meta','Amazon','Microsoft','Alphabet','ARM','Palantir','Broadcom','AMD','CrowdStrike'];
 
@@ -1895,31 +1992,79 @@ const CO_INFO = {
   'CrowdStrike': { tag: 'Cybersecurity',      desc: 'AI-native endpoint security protecting enterprises from breaches' },
 };
 
-function renderCompanies(prices) {
-  const el = document.getElementById('companies-strip');
-  if (!el) return;
+let _coCards = [], _coIdx = 0, _coTimer = null;
 
-  const cards = CO_NAMES
+function renderCompanies(prices) {
+  _coCards = CO_NAMES
     .map(name => ({ name, info: CO_INFO[name] || {}, ...(prices[name] || {}) }))
     .filter(c => c.change != null)
     .sort((a, b) => Math.abs(b.change) - Math.abs(a.change));
 
-  if (!cards.length) { el.innerHTML = '<span style="color:var(--ink3);font-size:13px">Market data loading…</span>'; return; }
+  if (!_coCards.length) return;
 
-  el.innerHTML = cards.map(c => {
-    const cls      = c.change >= 0 ? 'up' : 'down';
-    const signChar = c.change >= 0 ? '+' : '';
-    const priceStr = c.price != null ? '$' + c.price.toFixed(2) : '—';
-    return `<div class="co-card">
-      <div class="co-card-name">${c.name}</div>
-      <div class="co-card-tag">${c.info.tag || ''}</div>
-      <div class="co-card-desc">${c.info.desc || ''}</div>
-      <div class="co-card-footer">
-        <span class="co-card-pct ${cls}">${signChar}${c.change.toFixed(2)}%</span>
-        <span class="co-card-price">${priceStr}</span>
+  const navEl = document.getElementById('co-nav');
+  if (navEl) {
+    navEl.innerHTML = _coCards.map((_, i) =>
+      `<button class="co-dot${i === 0 ? ' active' : ''}" onclick="goCoSlide(${i})"></button>`
+    ).join('');
+  }
+
+  _coIdx = 0;
+  _drawCoCard(_coIdx);
+  _startCoCycle();
+}
+
+function _drawCoCard(idx) {
+  const stage     = document.getElementById('co-stage');
+  const counterEl = document.getElementById('co-counter');
+  if (!stage || !_coCards.length) return;
+
+  const c = _coCards[idx];
+  const cls      = (c.change || 0) >= 0 ? 'up' : 'down';
+  const signChar = (c.change || 0) >= 0 ? '+' : '';
+  const priceStr = c.price != null ? '$' + c.price.toFixed(2) : '';
+
+  if (counterEl) counterEl.textContent = `${idx + 1} / ${_coCards.length}`;
+
+  stage.innerHTML = `<div class="co-featured">
+    <div class="co-featured-top">
+      <div>
+        <div class="co-featured-name">${c.name}</div>
+        <div class="co-featured-tag">${c.info.tag || ''}</div>
       </div>
-    </div>`;
-  }).join('');
+      <div class="co-featured-right">
+        <div class="co-featured-pct ${cls}">${signChar}${(c.change || 0).toFixed(2)}%</div>
+        ${priceStr ? `<div class="co-featured-price">${priceStr}</div>` : ''}
+      </div>
+    </div>
+    <div class="co-featured-desc">${c.info.desc || ''}</div>
+  </div>`;
+}
+
+function goCoSlide(idx) {
+  clearTimeout(_coTimer);
+  const stage = document.getElementById('co-stage');
+  const feat  = stage?.querySelector('.co-featured');
+  if (feat) {
+    feat.classList.add('fading');
+    setTimeout(() => {
+      _coIdx = idx;
+      document.querySelectorAll('.co-dot').forEach((el, i) => el.classList.toggle('active', i === idx));
+      _drawCoCard(idx);
+      _startCoCycle();
+    }, 320);
+  } else {
+    _coIdx = idx;
+    document.querySelectorAll('.co-dot').forEach((el, i) => el.classList.toggle('active', i === idx));
+    _drawCoCard(idx);
+    _startCoCycle();
+  }
+}
+
+function _startCoCycle() {
+  clearTimeout(_coTimer);
+  if (_coCards.length < 2) return;
+  _coTimer = setTimeout(() => goCoSlide((_coIdx + 1) % _coCards.length), 5000);
 }
 
 // ════════════════════════════════════════════════════════════════════
@@ -1961,6 +2106,24 @@ async function init() {
     kickoff: f.kickoff || new Date().toISOString(),
   }));
   renderFixtures(fixtures);
+
+  // Weather shine — sweeps the whole page when hovering the temperature area
+  (function initShine() {
+    if (__PRM) return;
+    const heroRight = document.querySelector('.hero-right');
+    const overlay   = document.getElementById('page-shine');
+    if (!heroRight || !overlay) return;
+    let active = false;
+    heroRight.addEventListener('mouseenter', () => {
+      if (active) return;
+      active = true;
+      overlay.classList.remove('sweeping');
+      requestAnimationFrame(() => requestAnimationFrame(() => {
+        overlay.classList.add('sweeping');
+        setTimeout(() => { overlay.classList.remove('sweeping'); active = false; }, 1500);
+      }));
+    });
+  })();
 }
 
 init();
