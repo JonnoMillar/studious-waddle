@@ -262,6 +262,10 @@ def parse_tee_times_from_ttresults(ttresults: list, date_str: str) -> list[dict]
     Each course contributes one record showing its earliest/cheapest slot.
     Much faster than scraping individual facility pages.
     """
+    if isinstance(ttresults, dict):
+        log.info(f"ttresults is dict with {len(ttresults)} keys, converting to list of values")
+        ttresults = list(ttresults.values())
+
     if ttresults:
         import json as _json
         log.info(f"ttresults[0] sample: {_json.dumps(ttresults[0], default=str)[:500]}")
