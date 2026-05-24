@@ -262,14 +262,22 @@ def parse_tee_times_from_ttresults(ttresults: list, date_str: str) -> list[dict]
     Each course contributes one record showing its earliest/cheapest slot.
     Much faster than scraping individual facility pages.
     """
+    if ttresults:
+        import json as _json
+        log.info(f"ttresults[0] sample: {_json.dumps(ttresults[0], default=str)[:500]}")
+
     slots = []
     for c in ttresults:
         try:
-            if c.get("isPriceRangeZero") or c.get("isTimeRangeZero"):
+            price_zero = c.get("isPriceRangeZero")
+            time_zero = c.get("isTimeRangeZero")
+            if price_zero or time_zero:
+                log.info(f"  Skip {c.get('name')}: isPriceRangeZero={price_zero} isTimeRangeZero={time_zero}")
                 continue
 
             min_price = c.get("minPrice") or 0
             if not min_price or min_price <= 0:
+                log.info(f"  Skip {c.get('name')}: minPrice={min_price!r}")
                 continue
 
             min_date = c.get("minDate") or {}
