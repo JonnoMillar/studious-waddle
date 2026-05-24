@@ -256,36 +256,34 @@ def filter_and_sort(
     return filtered
 
 
-def parse_tee_times_from_ttresults(ttresults: list, date_str: str) -> list[dict]:
+def parse_tee_times_from_ttresults(ttresults: list | dict, date_str: str) -> list[dict]:
     """
-    Build tee time records from the courses-near-me ttResults list.
-    Each course contributes one record showing its earliest/cheapest slot.
-    Much faster than scraping individual facility pages.
+    Build tee time records from the courses-near-me ttResults value.
+    ttResults is a dict with a 'facilities' key containing the course list.
+    Each course contributes one record showing its earliest available slot.
     """
+    # ttResults is {"startIndex": 0, "facilities": [...], ...}
     if isinstance(ttresults, dict):
-        log.info(f"ttresults is dict with {len(ttresults)} keys, converting to list of values")
-        ttresults = list(ttresults.values())
-
-    if ttresults:
-        import json as _json
-        log.info(f"ttresults[0] sample: {_json.dumps(ttresults[0], default=str)[:500]}")
+        ttresults = ttresults.get("facilities") or []
 
     slots = []
     for c in ttresults:
         try:
-            price_zero = c.get("isPriceRangeZero")
-            time_zero = c.get("isTimeRangeZero")
-            if price_zero or time_zero:
-                log.info(f"  Skip {c.get('name')}: isPriceRangeZero={price_zero} isTimeRangeZero={time_zero}")
+            # Skip only if there genuinely is no tee time available
+            if c.get("isTimeRangeZero"):
                 continue
 
-            min_price = c.get("minPrice") or 0
+            # minPrice is a nested object: {"value": 50.0, "currencyCode": "GBP", ...}
+            price_obj = c.get("minPrice")
+            if isinstance(price_obj, dict):
+                min_price = price_obj.get("value") or 0
+            else:
+                min_price = price_obj or 0
             if not min_price or min_price <= 0:
-                log.info(f"  Skip {c.get('name')}: minPrice={min_price!r}")
                 continue
 
             min_date = c.get("minDate") or {}
-            tee_time = min_date.get("formatted", "")
+            tee_time = min_date.get("formatted", "") if isinstance(min_date, dict) else ""
 
             rating = float(c.get("averageRating") or 0)
             dist_raw = c.get("distance")
@@ -419,11 +417,7 @@ async def scrape_date(
         log.warning(f"{date_str}: no courses-near-me response")
         return []
 
-    log.info(f"{date_str}: raw keys={list(raw.keys()) if isinstance(raw, dict) else type(raw).__name__}")
     ttresults = raw.get("ttResults") if isinstance(raw, dict) else []
-    if isinstance(ttresults, dict):
-        ttresults = list(ttresults.values())
-    ttresults = ttresults or []
     slots = parse_tee_times_from_ttresults(ttresults, date_str)
-    log.info(f"{date_str}: {len(slots)} slots from {len(ttresults)} courses")
+    log.info(f"{date_str}: {len(slots)} slots")
     return slots

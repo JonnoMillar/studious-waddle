@@ -21,26 +21,18 @@ if not raw_path.exists():
     sys.exit(1)
 
 raw = json.loads(raw_path.read_text())
-print(f"Top-level type: {type(raw).__name__}")
-if isinstance(raw, dict):
-    print(f"Keys: {list(raw.keys())}")
+print(f"Top-level keys: {list(raw.keys()) if isinstance(raw, dict) else type(raw).__name__}")
 
 ttresults = raw.get("ttResults") if isinstance(raw, dict) else raw
-if isinstance(ttresults, dict):
-    print(f"ttResults: dict with {len(ttresults)} entries, converting to list")
-    ttresults = list(ttresults.values())
-elif isinstance(ttresults, list):
-    print(f"ttResults: list with {len(ttresults)} items")
-else:
-    print(f"ttResults: unexpected type {type(ttresults)}")
-    sys.exit(1)
+print(f"ttResults type: {type(ttresults).__name__}, keys: {list(ttresults.keys()) if isinstance(ttresults, dict) else len(ttresults)}")
 
-if ttresults:
-    print(f"\nFirst item keys: {list(ttresults[0].keys()) if isinstance(ttresults[0], dict) else type(ttresults[0])}")
-    sample_keys = ["id", "name", "minPrice", "minDate", "hasHotDeal", "distance", "averageRating",
-                   "isPriceRangeZero", "isTimeRangeZero", "numberOfReviews"]
-    first = ttresults[0]
-    for k in sample_keys:
+facilities = ttresults.get("facilities") if isinstance(ttresults, dict) else ttresults
+print(f"facilities: {len(facilities)} items")
+
+if facilities and isinstance(facilities[0], dict):
+    first = facilities[0]
+    print(f"\nFirst facility: {first.get('name')}")
+    for k in ["minPrice", "minDate", "hasHotDeal", "distance", "averageRating", "isTimeRangeZero"]:
         if k in first:
             print(f"  {k}: {first[k]}")
 
