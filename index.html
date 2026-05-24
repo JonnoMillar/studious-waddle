@@ -142,34 +142,43 @@ body {
    HERO
    ════════════════════════════════════════════════════════════════════ */
 #hero-card {
-  padding: 24px 30px;
+  padding: 0;
   overflow: hidden;
   grid-column: 1 / -1;
+  transition: background 1.2s ease;
 }
 .hero-blob1, .hero-blob2 {
   position: absolute;
   border-radius: 50%;
   pointer-events: none;
   will-change: transform;
+  transition: background 1.2s ease;
 }
 .hero-blob1 {
-  width: 420px; height: 420px;
-  top: -140px; right: -100px;
-  background: radial-gradient(circle, rgba(232,154,47,0.38), transparent 65%);
+  width: 500px; height: 500px;
+  top: -160px; right: -120px;
+  background: radial-gradient(circle, rgba(232,154,47,0.45), transparent 65%);
 }
 .hero-blob2 {
-  width: 300px; height: 300px;
-  bottom: -100px; left: -60px;
-  background: radial-gradient(circle, rgba(42,111,219,0.22), transparent 65%);
+  width: 340px; height: 340px;
+  bottom: -120px; left: -80px;
+  background: radial-gradient(circle, rgba(42,111,219,0.28), transparent 65%);
 }
 .hero-inner {
   position: relative;
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
-  gap: 24px;
+  align-items: stretch;
+  gap: 0;
+  min-height: 160px;
 }
-.hero-left { flex: 1; }
+.hero-left {
+  flex: 1;
+  padding: 28px 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .hero-date {
   font-family: var(--f-s);
   font-size: 13px;
@@ -177,12 +186,12 @@ body {
   letter-spacing: 0.2px;
 }
 .hero-h1 {
-  margin: 12px 0 0;
+  margin: 10px 0 0;
   font-family: var(--f-s);
-  font-size: clamp(32px, 4vw, 48px);
+  font-size: clamp(30px, 3.5vw, 44px);
   font-weight: 600;
   color: var(--ink);
-  letter-spacing: -2px;
+  letter-spacing: -1.5px;
   line-height: 1;
   max-width: 680px;
 }
@@ -193,50 +202,88 @@ body {
 }
 .hero-summary {
   font-family: var(--f-s);
-  font-size: 17px;
+  font-size: 16px;
   color: var(--ink2);
   line-height: 1.5;
-  margin-top: 20px;
-  max-width: 560px;
+  margin-top: 14px;
+  max-width: 520px;
 }
-.hero-right {
-  text-align: right;
-  min-width: 200px;
+
+/* Weather panel — right side, separated with a subtle divider */
+.hero-weather-panel {
   flex-shrink: 0;
-}
-.hero-weather-row {
+  width: 260px;
   display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 14px;
-  margin-bottom: 6px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 24px 28px 24px 20px;
+  border-left: 1px solid var(--line);
+  position: relative;
+  gap: 2px;
 }
-.hero-sun-svg {
-  width: 46px; height: 46px;
-  animation: cup-pulse 4s ease-in-out infinite;
+.hero-weather-icon-wrap {
+  position: relative;
+  width: 64px; height: 64px;
+  margin-bottom: 8px;
   flex-shrink: 0;
+}
+.hero-weather-icon-wrap svg {
+  width: 64px; height: 64px;
+}
+.hero-temp-row {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
 }
 .hero-temp {
   font-family: var(--f-s);
-  font-size: 72px;
-  font-weight: 300;
+  font-size: 80px;
+  font-weight: 200;
   color: var(--ink);
   line-height: 1;
-  letter-spacing: -3px;
+  letter-spacing: -4px;
   font-variant-numeric: tabular-nums;
+}
+.hero-deg {
+  font-size: 28px;
+  font-weight: 300;
+  color: var(--ink2);
+  letter-spacing: -1px;
+  margin-bottom: 6px;
 }
 .hero-condition {
   font-family: var(--f-s);
-  font-size: 15px;
+  font-size: 14px;
   color: var(--ink2);
   font-weight: 500;
+  text-align: right;
 }
 .hero-hl {
   font-family: var(--f-m);
-  font-size: 12px;
+  font-size: 11px;
   color: var(--ink3);
-  margin-top: 4px;
+  margin-top: 3px;
+  letter-spacing: 0.3px;
+  text-align: right;
+}
+/* Weather pill strips */
+.hero-weather-pills {
+  display: flex;
+  gap: 6px;
+  margin-top: 8px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+.hero-wpill {
+  font-family: var(--f-m);
+  font-size: 10px;
+  font-weight: 600;
   letter-spacing: 0.4px;
+  padding: 3px 8px;
+  border-radius: 99px;
+  background: rgba(26,24,22,0.06);
+  color: var(--ink2);
 }
 
 /* ════════════════════════════════════════════════════════════════════
@@ -991,9 +1038,10 @@ body {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  gap: 16px;
+  gap: 24px;
   margin-bottom: 10px;
 }
+.co-featured-left { flex: 1; }
 .co-featured-name {
   font-size: 44px;
   font-weight: 700;
@@ -1012,10 +1060,36 @@ body {
 .co-featured-right {
   text-align: right;
   flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 6px;
+}
+/* Logo container */
+.co-logo-box {
+  width: 72px; height: 72px;
+  border-radius: 16px;
+  background: rgba(26,24,22,0.04);
+  border: 1px solid var(--line);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.co-logo-box img {
+  width: 56px; height: 56px;
+  object-fit: contain;
+}
+.co-logo-box .co-logo-fb {
+  font-family: var(--f-s);
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--ink2);
 }
 .co-featured-pct {
   font-family: var(--f-m);
-  font-size: 38px;
+  font-size: 32px;
   font-weight: 600;
   letter-spacing: -1px;
   line-height: 1;
@@ -1025,10 +1099,35 @@ body {
 .co-featured-pct.down { color: var(--red); }
 .co-featured-price {
   font-family: var(--f-m);
-  font-size: 13px;
+  font-size: 12px;
   color: var(--ink3);
-  margin-top: 6px;
 }
+/* Website link */
+.co-visit-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-family: var(--f-s);
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--cup-accent);
+  text-decoration: none;
+  padding: 5px 12px;
+  border-radius: 99px;
+  border: 1.5px solid rgba(42,111,219,0.3);
+  background: rgba(42,111,219,0.05);
+  transition: background 0.18s, border-color 0.18s, transform 0.14s;
+  margin-top: 4px;
+}
+.co-visit-link:hover {
+  background: rgba(42,111,219,0.12);
+  border-color: rgba(42,111,219,0.5);
+  transform: translateY(-1px);
+}
+.co-visit-link svg {
+  transition: transform 0.18s;
+}
+.co-visit-link:hover svg { transform: translate(1px, -1px); }
 .co-featured-desc {
   font-size: 17px;
   color: var(--ink2);
@@ -1047,7 +1146,7 @@ body {
   background: rgba(26,24,22,0.15);
   cursor: pointer;
   border: 0; padding: 0;
-  transition: background 0.2s, transform 0.2s, width 0.2s;
+  transition: background 0.2s, transform 0.2s;
   flex-shrink: 0;
 }
 .co-dot.active {
@@ -1153,25 +1252,15 @@ body {
         <h1 class="hero-h1" id="hero-h1">Good morning, <em>Jonno</em>.</h1>
         <p class="hero-summary" id="hero-summary">Loading weather…</p>
       </div>
-      <div class="hero-right">
-        <div class="hero-weather-row">
-          <svg class="hero-sun-svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" id="sun-svg">
-            <g style="transform-origin:12px 12px; animation: cup-spin 60s linear infinite">
-              <line x1="12" y1="2"    x2="12" y2="5.5"  stroke="#e89a2f" stroke-width="1.8" stroke-linecap="round" opacity="0.75"/>
-              <line x1="12" y1="18.5" x2="12" y2="22"   stroke="#e89a2f" stroke-width="1.8" stroke-linecap="round" opacity="0.75"/>
-              <line x1="2"  y1="12"   x2="5.5" y2="12"  stroke="#e89a2f" stroke-width="1.8" stroke-linecap="round" opacity="0.75"/>
-              <line x1="18.5" y1="12" x2="22" y2="12"   stroke="#e89a2f" stroke-width="1.8" stroke-linecap="round" opacity="0.75"/>
-              <line x1="4.22" y1="4.22" x2="6.34" y2="6.34" stroke="#e89a2f" stroke-width="1.8" stroke-linecap="round" opacity="0.75"/>
-              <line x1="17.66" y1="17.66" x2="19.78" y2="19.78" stroke="#e89a2f" stroke-width="1.8" stroke-linecap="round" opacity="0.75"/>
-              <line x1="19.78" y1="4.22" x2="17.66" y2="6.34" stroke="#e89a2f" stroke-width="1.8" stroke-linecap="round" opacity="0.75"/>
-              <line x1="6.34" y1="17.66" x2="4.22" y2="19.78" stroke="#e89a2f" stroke-width="1.8" stroke-linecap="round" opacity="0.75"/>
-            </g>
-            <circle cx="12" cy="12" r="4.5" fill="#e89a2f"/>
-          </svg>
-          <div class="hero-temp" id="hero-temp">—°</div>
+      <div class="hero-weather-panel">
+        <div class="hero-weather-icon-wrap" id="hero-weather-icon"></div>
+        <div class="hero-temp-row">
+          <div class="hero-temp" id="hero-temp">—</div>
+          <div class="hero-deg">°C</div>
         </div>
         <div class="hero-condition" id="hero-condition">—</div>
         <div class="hero-hl" id="hero-hl"></div>
+        <div class="hero-weather-pills" id="hero-weather-pills"></div>
       </div>
     </div>
   </div>
@@ -1432,12 +1521,48 @@ const WMO_DESC = {
 };
 const UV_LABEL = uv => uv <= 2 ? 'Low' : uv <= 5 ? 'Moderate' : uv <= 7 ? 'High' : uv <= 10 ? 'Very high' : 'Extreme';
 
+// SVG weather icons keyed by condition category
+function _weatherIcon(code) {
+  const sun = `<circle cx="32" cy="32" r="11" fill="#e89a2f"/>
+    <g stroke="#e89a2f" stroke-width="2.5" stroke-linecap="round" opacity="0.7">
+      <line x1="32" y1="8" x2="32" y2="14"/><line x1="32" y1="50" x2="32" y2="56"/>
+      <line x1="8" y1="32" x2="14" y2="32"/><line x1="50" y1="32" x2="56" y2="32"/>
+      <line x1="15.5" y1="15.5" x2="19.7" y2="19.7"/><line x1="44.3" y1="44.3" x2="48.5" y2="48.5"/>
+      <line x1="48.5" y1="15.5" x2="44.3" y2="19.7"/><line x1="19.7" y1="44.3" x2="15.5" y2="48.5"/>
+    </g>`;
+  const cloud = `<path d="M44 38H20a10 10 0 010-20 10 10 0 0119.3-3A9 9 0 1144 38z" fill="#94a3b8" opacity="0.85"/>`;
+  const partCloud = sun + `<path d="M46 44H26a8 8 0 010-16 8 8 0 0115.5-2A7 7 0 1146 44z" fill="#cbd5e1" opacity="0.9"/>`;
+  const rain = cloud + `<g stroke="#60a5fa" stroke-width="2.2" stroke-linecap="round" opacity="0.85">
+    <line x1="24" y1="44" x2="22" y2="52"/><line x1="32" y1="44" x2="30" y2="52"/>
+    <line x1="40" y1="44" x2="38" y2="52"/>
+  </g>`;
+  const snow = cloud + `<g fill="#bfdbfe" opacity="0.9">
+    <circle cx="24" cy="49" r="2.5"/><circle cx="32" cy="52" r="2.5"/><circle cx="40" cy="49" r="2.5"/>
+  </g>`;
+  const fog = `<g stroke="#94a3b8" stroke-width="2.5" stroke-linecap="round" opacity="0.7">
+    <line x1="14" y1="26" x2="50" y2="26"/><line x1="18" y1="33" x2="46" y2="33"/>
+    <line x1="14" y1="40" x2="50" y2="40"/>
+  </g>`;
+  const storm = rain + `<path d="M35 26l-5 10h4l-4 10" stroke="#fbbf24" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>`;
+
+  const c = code;
+  if (c <= 1)                       return { svg: sun, anim: 'weather-spin' };
+  if (c === 2)                      return { svg: partCloud, anim: '' };
+  if (c === 3)                      return { svg: cloud, anim: '' };
+  if (c >= 45 && c <= 48)           return { svg: fog, anim: '' };
+  if (c >= 51 && c <= 67)           return { svg: rain, anim: 'weather-drip' };
+  if (c >= 71 && c <= 77)           return { svg: snow, anim: '' };
+  if (c >= 80 && c <= 82)           return { svg: rain, anim: 'weather-drip' };
+  if (c >= 95)                      return { svg: storm, anim: '' };
+  return { svg: sun, anim: '' };
+}
+
 async function fetchWeather() {
   try {
     const r = await fetch(
       'https://api.open-meteo.com/v1/forecast?latitude=51.4214&longitude=-0.2062' +
       '&current=temperature_2m,weather_code' +
-      '&daily=temperature_2m_max,temperature_2m_min,uv_index_max' +
+      '&daily=temperature_2m_max,temperature_2m_min,uv_index_max,precipitation_sum' +
       '&timezone=Europe%2FLondon'
     );
     const d    = await r.json();
@@ -1445,21 +1570,57 @@ async function fetchWeather() {
     const high = Math.round(d.daily.temperature_2m_max[0]);
     const low  = Math.round(d.daily.temperature_2m_min[0]);
     const uv   = Math.round(d.daily.uv_index_max[0]);
+    const rain = d.daily.precipitation_sum?.[0] ?? 0;
     const code = d.current.weather_code;
     const desc = WMO_DESC[code] || 'Clear';
 
-    const tempEl = document.getElementById('hero-temp');
-    const condEl = document.getElementById('hero-condition');
-    const hlEl   = document.getElementById('hero-hl');
-    const sumEl  = document.getElementById('hero-summary');
+    const tempEl    = document.getElementById('hero-temp');
+    const condEl    = document.getElementById('hero-condition');
+    const hlEl      = document.getElementById('hero-hl');
+    const sumEl     = document.getElementById('hero-summary');
+    const iconEl    = document.getElementById('hero-weather-icon');
+    const pillsEl   = document.getElementById('hero-weather-pills');
+    const blob1     = document.getElementById('hero-blob1');
+    const blob2     = document.getElementById('hero-blob2');
 
-    if (tempEl) {
-      countUp(tempEl, temp, { suffix: '°', decimals: 0, dur: 1200 });
+    // Update icon
+    if (iconEl) {
+      const { svg, anim } = _weatherIcon(code);
+      const animStyle = anim === 'weather-spin'
+        ? 'style="transform-origin:50% 50%; animation: cup-spin 60s linear infinite"'
+        : '';
+      iconEl.innerHTML = `<svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g ${animStyle}>${svg}</g></svg>`;
     }
+
+    // Adapt blob colours to weather condition
+    if (blob1 && blob2) {
+      if (code <= 1) { // sunny
+        blob1.style.background = 'radial-gradient(circle, rgba(232,154,47,0.52), transparent 65%)';
+        blob2.style.background = 'radial-gradient(circle, rgba(251,191,36,0.22), transparent 65%)';
+      } else if (code <= 3) { // cloudy
+        blob1.style.background = 'radial-gradient(circle, rgba(148,163,184,0.40), transparent 65%)';
+        blob2.style.background = 'radial-gradient(circle, rgba(100,116,139,0.20), transparent 65%)';
+      } else if (code >= 51 && code <= 82) { // rain
+        blob1.style.background = 'radial-gradient(circle, rgba(96,165,250,0.38), transparent 65%)';
+        blob2.style.background = 'radial-gradient(circle, rgba(59,130,246,0.22), transparent 65%)';
+      } else if (code >= 71 && code <= 77) { // snow
+        blob1.style.background = 'radial-gradient(circle, rgba(186,230,253,0.50), transparent 65%)';
+        blob2.style.background = 'radial-gradient(circle, rgba(147,197,253,0.28), transparent 65%)';
+      }
+    }
+
+    if (tempEl) countUp(tempEl, temp, { decimals: 0, dur: 1200 });
     if (condEl) condEl.textContent = desc;
-    if (hlEl)   hlEl.textContent = `H ${high}°  ·  L ${low}°  ·  UV ${uv} (${UV_LABEL(uv)})`;
+    if (hlEl)   hlEl.textContent = `${high}° high · ${low}° low`;
+    if (pillsEl) {
+      pillsEl.innerHTML = [
+        `<span class="hero-wpill">UV ${uv} — ${UV_LABEL(uv)}</span>`,
+        rain > 0 ? `<span class="hero-wpill">${rain.toFixed(1)}mm rain</span>` : '',
+      ].join('');
+    }
     if (sumEl) {
-      sumEl.innerHTML = `A <strong style="color:var(--ink);font-weight:600">${desc.toLowerCase()}</strong> day in <strong style="color:var(--ink);font-weight:600">SW19</strong>. Currently ${temp}°C, peaking at ${high}°C — UV index ${uv} (${UV_LABEL(uv)}).`;
+      sumEl.innerHTML = `A <strong style="color:var(--ink);font-weight:600">${desc.toLowerCase()}</strong> day in <strong style="color:var(--ink);font-weight:600">SW19</strong>. ${temp}°C now, peaking at ${high}°C.`;
     }
   } catch (_) {
     const sumEl = document.getElementById('hero-summary');
@@ -1977,20 +2138,19 @@ function startHlCycle() {
 // ════════════════════════════════════════════════════════════════════
 const CO_NAMES = ['Figure AI','Physical Intelligence','Commonwealth Fusion','Waymo','Mistral AI','Groq','Scale AI','Neuralink','Cursor','Anduril'];
 
-// logo: use Google favicon service — reliable for any domain, avoids Clearbit's 200 placeholder problem
 const _gfav = d => `https://www.google.com/s2/favicons?domain=${d}&sz=128`;
 
 const CO_INFO = {
-  'Figure AI':             { tag: 'Robotics',       desc: 'Humanoid robots for industrial and commercial applications', logo: _gfav('figure.ai'),                     initials: 'FA' },
-  'Physical Intelligence': { tag: 'Embodied AI',    desc: 'Physical AI systems learning real-world manipulation',      logo: _gfav('physicalintelligence.company'),  initials: 'PI' },
-  'Commonwealth Fusion':   { tag: 'Energy',         desc: 'Next-generation nuclear fusion for clean energy',           logo: _gfav('cfs.energy'),                    initials: 'CFS' },
-  'Waymo':                 { tag: 'Autonomy',       desc: 'Self-driving robotaxi service — the most miles of any AV',  logo: _gfav('waymo.com'),                     initials: 'W' },
-  'Mistral AI':            { tag: 'LLMs',           desc: 'European open-source AI foundation models',                 logo: _gfav('mistral.ai'),                    initials: 'M' },
-  'Groq':                  { tag: 'AI Chips',       desc: 'Specialized inference processors for ultra-fast LLMs',      logo: _gfav('groq.com'),                      initials: 'G' },
-  'Scale AI':              { tag: 'AI Data',        desc: 'Data infrastructure and labelling for AI model training',   logo: _gfav('scale.com'),                     initials: 'S' },
-  'Neuralink':             { tag: 'Brain-Computer', desc: 'Neural interfaces bridging human brains and computers',     logo: _gfav('neuralink.com'),                 initials: 'NL' },
-  'Cursor':                { tag: 'Code Editor',    desc: 'AI-first code editor transforming how developers work',     logo: _gfav('cursor.com'),                    initials: 'C' },
-  'Anduril':               { tag: 'Defense AI',     desc: 'AI-powered defense systems for next-generation warfare',   logo: _gfav('anduril.com'),                   initials: 'A' },
+  'Figure AI':             { tag: 'Robotics',       desc: 'Humanoid robots designed for industrial and commercial work', logo: _gfav('figure.ai'),                    initials: 'FA',  url: 'https://figure.ai' },
+  'Physical Intelligence': { tag: 'Embodied AI',    desc: 'Training AI systems to manipulate physical objects',          logo: _gfav('physicalintelligence.company'), initials: 'PI',  url: 'https://physicalintelligence.company' },
+  'Commonwealth Fusion':   { tag: 'Energy',         desc: 'Next-generation tokamak fusion for clean energy at scale',    logo: _gfav('cfs.energy'),                   initials: 'CFS', url: 'https://cfs.energy' },
+  'Waymo':                 { tag: 'Autonomy',       desc: 'The most miles driven autonomously of any robotaxi service',  logo: _gfav('waymo.com'),                    initials: 'W',   url: 'https://waymo.com' },
+  'Mistral AI':            { tag: 'LLMs',           desc: "Europe's leading open-weight AI foundation models",           logo: _gfav('mistral.ai'),                   initials: 'M',   url: 'https://mistral.ai' },
+  'Groq':                  { tag: 'AI Chips',       desc: 'LPU inference chips delivering industry-leading token speed', logo: _gfav('groq.com'),                     initials: 'G',   url: 'https://groq.com' },
+  'Scale AI':              { tag: 'AI Data',        desc: 'Data labelling and RLHF infrastructure powering frontier AI', logo: _gfav('scale.com'),                    initials: 'S',   url: 'https://scale.com' },
+  'Neuralink':             { tag: 'Brain-Computer', desc: 'Implantable neural interfaces for restoring and augmenting human capability', logo: _gfav('neuralink.com'), initials: 'NL', url: 'https://neuralink.com' },
+  'Cursor':                { tag: 'Code Editor',    desc: 'AI-native code editor that pairs with Claude and GPT-4',     logo: _gfav('cursor.com'),                   initials: 'C',   url: 'https://cursor.com' },
+  'Anduril':               { tag: 'Defense AI',     desc: 'Autonomous defense systems and AI-enabled military hardware', logo: _gfav('anduril.com'),                  initials: 'A',   url: 'https://anduril.com' },
 };
 
 let _coCards = [], _coIdx = 0, _coTimer = null;
@@ -2035,25 +2195,33 @@ function _drawCoCard(idx) {
   if (counterEl) counterEl.textContent = `${idx + 1} / ${_coCards.length}`;
 
   const fb = c.info.initials || c.name[0];
-  const logoBlock = c.info.logo ? `
-    <div style="min-height:52px;margin-bottom:6px;display:flex;align-items:center;justify-content:flex-end;">
-      <img src="${c.info.logo}"
-           alt="${c.name}"
-           style="width:40px;height:40px;object-fit:contain;image-rendering:auto;border-radius:8px;"
-           onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
-      <div style="display:none;width:40px;height:40px;background:rgba(26,24,22,0.07);border-radius:8px;align-items:center;justify-content:center;color:var(--ink2);font-weight:700;font-size:14px;font-family:var(--f-s);">${fb}</div>
-    </div>` : '';
+  const logoBox = `<div class="co-logo-box">
+    ${c.info.logo
+      ? `<img src="${c.info.logo}" alt="${c.name}" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+         <span class="co-logo-fb" style="display:none">${fb}</span>`
+      : `<span class="co-logo-fb">${fb}</span>`
+    }
+  </div>`;
+
+  const visitLink = c.info.url ? `
+    <a class="co-visit-link" href="${c.info.url}" target="_blank" rel="noopener noreferrer">
+      Visit
+      <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
+        <path d="M2 8L8 2M8 2H4M8 2V6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </a>` : '';
 
   stage.innerHTML = `<div class="co-featured">
     <div class="co-featured-top">
-      <div>
+      <div class="co-featured-left">
         <div class="co-featured-name">${c.name}</div>
         <div class="co-featured-tag">${c.info.tag || ''}</div>
       </div>
       <div class="co-featured-right">
-        ${logoBlock}
+        ${logoBox}
         ${hasPrice ? `<div class="co-featured-pct ${cls}">${signChar}${(c.change || 0).toFixed(2)}%</div>` : ''}
         ${priceStr ? `<div class="co-featured-price">${priceStr}</div>` : ''}
+        ${visitLink}
       </div>
     </div>
     <div class="co-featured-desc">${c.info.desc || ''}</div>
