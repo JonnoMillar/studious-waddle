@@ -830,21 +830,61 @@ body {
 }
 
 /* ════════════════════════════════════════════════════════════════════
-   HEADLINES CAROUSEL
+   HEADLINES EDITORIAL
    ════════════════════════════════════════════════════════════════════ */
 #headlines-card {
-  padding: 20px 24px 18px;
+  padding: 22px 28px 20px;
   grid-column: 1 / -1;
 }
-.hl-carousel {
+.hl-masthead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  gap: 12px;
+}
+.hl-masthead-title {
+  font-family: var(--f-s);
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--ink);
+  letter-spacing: -0.5px;
+  flex-shrink: 0;
+}
+.hl-tabs {
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+.hl-tab {
+  padding: 5px 13px;
+  border-radius: 99px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  color: var(--ink3);
+  background: transparent;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: color 0.18s, background 0.18s, border-color 0.18s;
+  font-family: var(--f-s);
+}
+.hl-tab:hover { color: var(--ink); background: rgba(26,24,22,0.04); }
+.hl-tab.active {
+  color: var(--ink);
+  background: rgba(26,24,22,0.07);
+  border-color: rgba(26,24,22,0.12);
+}
+#hl-carousel {
   position: relative;
-  min-height: 140px;
+  min-height: 280px;
 }
 .hl-slide {
   position: absolute;
   inset: 0;
   opacity: 0;
-  transition: opacity 0.5s ease;
+  transition: opacity 0.45s ease;
   pointer-events: none;
 }
 .hl-slide.active {
@@ -852,121 +892,125 @@ body {
   pointer-events: auto;
   position: relative;
 }
-.hl-slide-header {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-bottom: 8px;
-}
-.hl-slide-cat {
-  font-size: 10px;
-  font-weight: 700;
-  letter-spacing: 1.4px;
-  text-transform: uppercase;
-  flex-shrink: 0;
-}
-.hl-slide-rule {
-  flex: 1;
-  height: 1px;
-  background: var(--line);
-}
 .hl-items {
   display: flex;
   flex-direction: column;
 }
 .hl-item {
   display: flex;
-  align-items: baseline;
-  gap: 10px;
-  padding: 8px 10px;
-  border-radius: 10px;
+  flex-direction: column;
+  gap: 3px;
+  padding: 11px 0;
+  border-bottom: 1px solid var(--line);
   text-decoration: none;
   color: inherit;
-  transition: background 0.15s;
+  transition: padding-left 0.18s;
 }
-.hl-item:hover { background: rgba(26,24,22,0.04); }
+.hl-item:last-child { border-bottom: none; }
+.hl-item:hover { padding-left: 6px; }
 .hl-item:hover .hl-item-title { color: var(--cup-accent); }
-.hl-item-num {
+.hl-item-meta {
   font-family: var(--f-m);
-  font-size: 11px;
+  font-size: 10px;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
   color: var(--ink3);
-  min-width: 14px;
-  flex-shrink: 0;
+  line-height: 1;
 }
 .hl-item-title {
-  font-size: 14px;
-  font-weight: 500;
+  font-size: 15px;
+  font-weight: 600;
   color: var(--ink);
-  line-height: 1.4;
+  line-height: 1.35;
   transition: color 0.15s;
 }
-.hl-dots {
-  display: flex;
-  gap: 6px;
-  margin-top: 12px;
-}
-.hl-dot {
-  width: 6px; height: 6px;
-  border-radius: 50%;
-  background: rgba(26,24,22,0.15);
-  cursor: pointer;
-  transition: background 0.2s, transform 0.2s;
-  border: 0; padding: 0;
-}
-.hl-dot.active {
-  background: var(--cup-accent);
-  transform: scale(1.3);
+.hl-item-desc {
+  font-size: 13px;
+  color: var(--ink2);
+  line-height: 1.5;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 /* ════════════════════════════════════════════════════════════════════
    COMPANIES TO WATCH
    ════════════════════════════════════════════════════════════════════ */
 #companies-card {
-  padding: 20px 24px;
+  padding: 20px 24px 18px;
   grid-column: 1 / -1;
 }
 .companies-strip {
   display: flex;
-  gap: 8px;
+  gap: 10px;
   overflow-x: auto;
-  padding-bottom: 4px;
+  padding-bottom: 6px;
   scrollbar-width: none;
   -ms-overflow-style: none;
 }
 .companies-strip::-webkit-scrollbar { display: none; }
-.co-chip {
+.co-card {
   flex-shrink: 0;
-  padding: 10px 14px;
-  border-radius: 12px;
+  width: 196px;
+  padding: 16px 18px 14px;
+  border-radius: 16px;
   background: rgba(26,24,22,0.03);
-  border: 1px solid rgba(26,24,22,0.06);
-  display: flex;
-  flex-direction: column;
-  gap: 3px;
-  min-width: 86px;
-  transition: background 0.18s, border-color 0.18s, transform 0.18s cubic-bezier(.2,.7,.3,1);
+  border: 1px solid rgba(26,24,22,0.07);
+  transition: background 0.18s, transform 0.18s cubic-bezier(.2,.7,.3,1), box-shadow 0.18s, border-color 0.18s;
   cursor: default;
 }
-.co-chip:hover {
+.co-card:hover {
   background: var(--bg2);
-  border-color: rgba(26,24,22,0.10);
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(26,24,22,0.08);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(26,24,22,0.08);
+  border-color: rgba(26,24,22,0.12);
 }
-.co-name {
-  font-size: 11px;
+.co-card-name {
+  font-size: 19px;
+  font-weight: 700;
+  color: var(--ink);
+  letter-spacing: -0.3px;
+  line-height: 1;
+  margin-bottom: 4px;
+}
+.co-card-tag {
+  font-size: 10px;
   font-weight: 600;
-  color: var(--ink2);
-  letter-spacing: 0.2px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  color: var(--ink3);
+  margin-bottom: 7px;
 }
-.co-pct {
+.co-card-desc {
+  font-size: 12px;
+  color: var(--ink2);
+  line-height: 1.45;
+  margin-bottom: 12px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  min-height: 35px;
+}
+.co-card-footer {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+.co-card-pct {
   font-family: var(--f-m);
-  font-size: 14px;
+  font-size: 17px;
   font-weight: 600;
   font-variant-numeric: tabular-nums;
 }
-.co-pct.up   { color: var(--green); }
-.co-pct.down { color: var(--red); }
+.co-card-pct.up   { color: var(--green); }
+.co-card-pct.down { color: var(--red); }
+.co-card-price {
+  font-family: var(--f-m);
+  font-size: 12px;
+  color: var(--ink3);
+}
 
 /* ════════════════════════════════════════════════════════════════════
    FOOTER
@@ -1055,9 +1099,12 @@ body {
 
   <!-- HEADLINES (near top) -->
   <div class="card cup-reveal" id="headlines-card">
-    <div class="eyebrow" style="margin-bottom:0">Headlines</div>
-    <div class="hl-carousel" id="hl-carousel">
-      <div class="skel" style="height:120px;border-radius:10px;margin-top:12px"></div>
+    <div class="hl-masthead">
+      <div class="hl-masthead-title">Headlines</div>
+      <div class="hl-tabs" id="hl-tabs"></div>
+    </div>
+    <div id="hl-carousel">
+      <div class="skel" style="height:240px;border-radius:10px"></div>
     </div>
   </div>
 
@@ -1488,8 +1535,8 @@ function renderFixtures(fixtures) {
         <span class="${!favH ? 'fav-odd' : ''}">${odds.a.toFixed(2)}</span>
       </div>`;
     }
-    const badgeH = f.homeCode ? `<img class="fixture-badge" src="https://resources.premierleague.com/premierleague/badges/rb/t${f.homeCode}.png" loading="lazy" onerror="this.style.display='none'" alt="">` : '';
-    const badgeA = f.awayCode ? `<img class="fixture-badge" src="https://resources.premierleague.com/premierleague/badges/rb/t${f.awayCode}.png" loading="lazy" onerror="this.style.display='none'" alt="">` : '';
+    const badgeH = f.homeCode ? `<img class="fixture-badge" src="https://resources.premierleague.com/premierleague/badges/t${f.homeCode}.png" loading="lazy" onerror="this.style.display='none'" alt="">` : '';
+    const badgeA = f.awayCode ? `<img class="fixture-badge" src="https://resources.premierleague.com/premierleague/badges/t${f.awayCode}.png" loading="lazy" onerror="this.style.display='none'" alt="">` : '';
     return `<div class="fixture-chip cup-press" id="${fid}" onclick="toggleFixture('${fid}')"
       style="animation-delay:${i*40}ms">
       <div class="fixture-chip-row">
@@ -1753,13 +1800,26 @@ function renderGolf(golf) {
 }
 
 // ════════════════════════════════════════════════════════════════════
-// HEADLINES CAROUSEL
+// HEADLINES EDITORIAL
 // ════════════════════════════════════════════════════════════════════
-const CAT_COLOR = { 'AI': '#2a6fdb', 'Tech': '#5e8a64', 'World': '#d97757', 'Premier League': '#1f8a5b' };
+const CAT_SOURCES = { 'AI': 'VentureBeat', 'Tech': 'Ars Technica', 'World': 'BBC News', 'Premier League': 'BBC Sport' };
 let _hlSlides = [], _hlIdx = 0, _hlTimer = null;
+
+function formatPubDate(str) {
+  if (!str) return '';
+  try {
+    const d = new Date(str);
+    if (isNaN(d)) return '';
+    const diff = (Date.now() - d) / 60000;
+    if (diff < 60)       return Math.round(diff) + 'm ago';
+    if (diff < 60 * 24)  return Math.round(diff / 60) + 'h ago';
+    return d.toLocaleDateString('en-GB', { day: 'numeric', month: 'short' });
+  } catch (_) { return ''; }
+}
 
 function renderNews(news) {
   const carousel = document.getElementById('hl-carousel');
+  const tabsEl   = document.getElementById('hl-tabs');
   if (!carousel) return;
 
   const cats = ['AI', 'Tech', 'World', 'Premier League'];
@@ -1771,23 +1831,31 @@ function renderNews(news) {
     return;
   }
 
+  // Tabs
+  if (tabsEl) {
+    tabsEl.innerHTML = _hlSlides.map((s, i) =>
+      `<button class="hl-tab${i === 0 ? ' active' : ''}" onclick="goHlSlide(${i})">${s.cat}</button>`
+    ).join('');
+  }
+
+  // Slides
   carousel.innerHTML = _hlSlides.map((s, i) => {
-    const col = CAT_COLOR[s.cat] || 'var(--cup-accent)';
+    const source = CAT_SOURCES[s.cat] || s.cat;
     return `<div class="hl-slide${i === 0 ? ' active' : ''}" data-idx="${i}">
-      <div class="hl-slide-header">
-        <span class="hl-slide-cat" style="color:${col}">${s.cat}</span>
-        <div class="hl-slide-rule"></div>
-      </div>
       <div class="hl-items">
-        ${s.items.map((h, j) => `<a class="hl-item" href="${h.link || '#'}" target="_blank" rel="noopener">
-          <span class="hl-item-num">${j + 1}</span>
-          <span class="hl-item-title">${h.title}</span>
-        </a>`).join('')}
+        ${s.items.map(h => {
+          const time = formatPubDate(h.pubDate);
+          const meta = [source, time].filter(Boolean).join(' · ');
+          const showDesc = h.description && h.description.length > 30 && h.description !== h.title;
+          return `<a class="hl-item" href="${h.link || '#'}" target="_blank" rel="noopener">
+            <div class="hl-item-meta">${meta}</div>
+            <div class="hl-item-title">${h.title}</div>
+            ${showDesc ? `<div class="hl-item-desc">${h.description}</div>` : ''}
+          </a>`;
+        }).join('')}
       </div>
     </div>`;
-  }).join('') + `<div class="hl-dots" id="hl-dots">
-    ${_hlSlides.map((_, i) => `<button class="hl-dot${i === 0 ? ' active' : ''}" onclick="goHlSlide(${i})"></button>`).join('')}
-  </div>`;
+  }).join('');
 
   _hlIdx = 0;
   startHlCycle();
@@ -1797,7 +1865,7 @@ function goHlSlide(idx) {
   clearTimeout(_hlTimer);
   _hlIdx = idx;
   document.querySelectorAll('.hl-slide').forEach((el, i) => el.classList.toggle('active', i === idx));
-  document.querySelectorAll('.hl-dot').forEach((el, i) => el.classList.toggle('active', i === idx));
+  document.querySelectorAll('.hl-tab').forEach((el, i) => el.classList.toggle('active', i === idx));
   startHlCycle();
 }
 
@@ -1812,23 +1880,44 @@ function startHlCycle() {
 // ════════════════════════════════════════════════════════════════════
 const CO_NAMES = ['Nvidia','Apple','Tesla','Meta','Amazon','Microsoft','Alphabet','ARM','Palantir','Broadcom','AMD','CrowdStrike'];
 
+const CO_INFO = {
+  'Nvidia':      { tag: 'AI Infrastructure', desc: 'Designs GPUs powering AI training and inference at every scale' },
+  'Apple':       { tag: 'Consumer Tech',      desc: 'iPhone, Mac and services — consistently the most valuable company' },
+  'Tesla':       { tag: 'EV & Energy',        desc: 'Electric vehicles, energy storage and autonomous driving software' },
+  'Meta':        { tag: 'Social · AI',        desc: 'Facebook, Instagram, WhatsApp and open-source Llama AI models' },
+  'Amazon':      { tag: 'Cloud · Commerce',   desc: 'AWS cloud dominance plus the world\'s largest e-commerce platform' },
+  'Microsoft':   { tag: 'Cloud · AI',         desc: 'Azure, Office 365 and deep partnership with OpenAI on Copilot' },
+  'Alphabet':    { tag: 'Search · AI',        desc: 'Google Search, YouTube and Gemini AI models for consumers and enterprise' },
+  'ARM':         { tag: 'Chip Architecture',  desc: 'CPU designs inside virtually every smartphone and edge AI device' },
+  'Palantir':    { tag: 'Data & AI',          desc: 'AI analytics platform for government intelligence and enterprise ops' },
+  'Broadcom':    { tag: 'Semiconductors',     desc: 'Custom AI chips (XPUs) and networking silicon for hyperscalers' },
+  'AMD':         { tag: 'GPUs · CPUs',        desc: 'Challenger GPU and CPU designs competing head-to-head with Nvidia' },
+  'CrowdStrike': { tag: 'Cybersecurity',      desc: 'AI-native endpoint security protecting enterprises from breaches' },
+};
+
 function renderCompanies(prices) {
   const el = document.getElementById('companies-strip');
   if (!el) return;
 
-  const chips = CO_NAMES
-    .map(name => ({ name, ...prices[name] }))
+  const cards = CO_NAMES
+    .map(name => ({ name, info: CO_INFO[name] || {}, ...(prices[name] || {}) }))
     .filter(c => c.change != null)
     .sort((a, b) => Math.abs(b.change) - Math.abs(a.change));
 
-  if (!chips.length) { el.innerHTML = '<span style="color:var(--ink3);font-size:13px">Market data loading…</span>'; return; }
+  if (!cards.length) { el.innerHTML = '<span style="color:var(--ink3);font-size:13px">Market data loading…</span>'; return; }
 
-  el.innerHTML = chips.map(c => {
-    const cls = c.change >= 0 ? 'up' : 'down';
-    const sign = c.change >= 0 ? '+' : '';
-    return `<div class="co-chip">
-      <div class="co-name">${c.name}</div>
-      <div class="co-pct ${cls}">${sign}${c.change.toFixed(2)}%</div>
+  el.innerHTML = cards.map(c => {
+    const cls      = c.change >= 0 ? 'up' : 'down';
+    const signChar = c.change >= 0 ? '+' : '';
+    const priceStr = c.price != null ? '$' + c.price.toFixed(2) : '—';
+    return `<div class="co-card">
+      <div class="co-card-name">${c.name}</div>
+      <div class="co-card-tag">${c.info.tag || ''}</div>
+      <div class="co-card-desc">${c.info.desc || ''}</div>
+      <div class="co-card-footer">
+        <span class="co-card-pct ${cls}">${signChar}${c.change.toFixed(2)}%</span>
+        <span class="co-card-price">${priceStr}</span>
+      </div>
     </div>`;
   }).join('');
 }

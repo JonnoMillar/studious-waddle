@@ -4,8 +4,8 @@ import { join }         from 'path';
 const FEEDS = {
   "World":          ["https://feeds.bbci.co.uk/news/world/rss.xml", 5],
   "Premier League": ["https://feeds.bbci.co.uk/sport/football/premier-league/rss.xml", 4],
-  "Tech":           ["https://feeds.arstechnica.com/arstechnica/index", 4],
-  "AI":             ["https://venturebeat.com/category/ai/feed/", 4],
+  "Tech":           ["https://feeds.arstechnica.com/arstechnica/index", 5],
+  "AI":             ["https://venturebeat.com/category/ai/feed/", 5],
 };
 
 function parseRSS(xml, limit) {
@@ -19,11 +19,17 @@ function parseRSS(xml, limit) {
       const hit = block.match(rx);
       return hit ? hit[1].trim() : '';
     };
-    const title = getVal('title');
-    const link  = getVal('link') || getVal('guid');
+    const title   = getVal('title');
+    const link    = getVal('link') || getVal('guid');
+    const pubDate = getVal('pubDate');
+    const rawDesc = getVal('description');
+    const description = rawDesc
+      .replace(/<[^>]+>/g, ' ')
+      .replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"').replace(/&#[0-9]+;/g, '')
+      .replace(/\s+/g, ' ').trim().substring(0, 200);
     const noise = ['find out more', 'click here', 'read more', 'more stories', 'subscribe'];
     if (title && link && title.length > 18 && !noise.some(p => title.toLowerCase().startsWith(p))) {
-      items.push({ title, link });
+      items.push({ title, link, pubDate, description });
     }
   }
   return items;
@@ -94,6 +100,8 @@ export default async function handler(req, res) {
     // Indices
     'FTSE 100':  '^FTSE',
     'S&P 500':   '^GSPC',
+    'NASDAQ':    '^IXIC',
+    'Nikkei':    '^N225',
     'Bitcoin':   'BTC-USD',
     'Gold':      'GC=F',
     // Movers
@@ -244,6 +252,13 @@ export default async function handler(req, res) {
   ]);
 
   const prices = Object.fromEntries(priceEntries);
+
+  // User holds Vanguard U.S. 500 Stock Index Fund USD Acc — NOT the VUSA.L ETF.
+  // Derive NAV from S&P 500 using calibrated ratio (5300 / $91.06 ≈ 58.2, May 2026).
+  const _US500_RATIO = 58.2;
+  if (prices['S&P 500']?.price) {
+    prices['US 500'] = { price: prices['S&P 500'].price / _US500_RATIO, change: prices['S&P 500'].change, currency: 'USD' };
+  }
 
   // Attach odds to fixtures
   const fixtures = fixtureResult.map(f => {
