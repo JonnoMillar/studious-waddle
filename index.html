@@ -313,7 +313,8 @@ body {
   overflow: hidden;
   transition: max-height 0.4s cubic-bezier(.2,.7,.25,1);
 }
-#portfolio-strip:hover .port-detail-expand { max-height: 200px; }
+#portfolio-strip:hover .port-detail-expand,
+#portfolio-strip.expanded .port-detail-expand { max-height: 200px; }
 .port-detail-inner {
   border-top: 1px solid var(--line);
   margin-top: 14px;
@@ -2328,6 +2329,23 @@ async function init() {
 }
 
 init();
+
+// Portfolio: tap to expand on touch devices
+(function initPortfolioTap() {
+  const strip = document.getElementById('portfolio-strip');
+  const hint  = strip?.querySelector('.port-total-hint');
+  if (!strip) return;
+  // Detect touch
+  const isTouch = window.matchMedia('(hover: none)').matches;
+  if (hint) hint.textContent = isTouch ? 'tap to expand' : 'hover to expand';
+  if (isTouch) {
+    strip.style.cursor = 'pointer';
+    strip.addEventListener('click', () => {
+      const open = strip.classList.toggle('expanded');
+      if (hint) hint.textContent = open ? 'tap to collapse' : 'tap to expand';
+    });
+  }
+})();
 </script>
 </body>
 </html>
