@@ -40,12 +40,12 @@ body {
 
 /* ── Layout ───────────────────────────────────────────────────────── */
 .wrap {
-  max-width: 1280px;
+  max-width: 1320px;
   margin: 0 auto;
-  padding: 32px 40px 60px;
+  padding: 28px 36px 56px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 16px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
 }
 
 /* ── Card ─────────────────────────────────────────────────────────── */
@@ -142,7 +142,7 @@ body {
    HERO
    ════════════════════════════════════════════════════════════════════ */
 #hero-card {
-  padding: 28px 32px;
+  padding: 24px 30px;
   overflow: hidden;
   grid-column: 1 / -1;
 }
@@ -242,7 +242,7 @@ body {
 /* ════════════════════════════════════════════════════════════════════
    PORTFOLIO STRIP
    ════════════════════════════════════════════════════════════════════ */
-#portfolio-strip { padding: 20px 24px; cursor: default; }
+#portfolio-strip { padding: 22px 24px; cursor: default; }
 .port-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; }
 .port-total-hint { font-size: 11px; color: var(--ink3); font-family: var(--f-s); }
 .port-fund-chips { display: flex; gap: 10px; }
@@ -297,12 +297,13 @@ body {
    MARKETS
    ════════════════════════════════════════════════════════════════════ */
 #markets-card {
-  padding: 28px;
+  padding: 24px 28px;
+  grid-column: span 2;
 }
 .markets-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 18px 24px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px 20px;
 }
 .market-cell {
   display: flex;
@@ -334,7 +335,8 @@ body {
    FIXTURES
    ════════════════════════════════════════════════════════════════════ */
 #fixtures-card {
-  padding: 28px;
+  padding: 24px 28px;
+  grid-column: span 2;
 }
 .fixtures-header {
   display: flex;
@@ -433,7 +435,7 @@ body {
    FPL
    ════════════════════════════════════════════════════════════════════ */
 #fpl-card {
-  padding: 28px;
+  padding: 24px 28px;
   grid-column: 1 / -1;
 }
 .fpl-header {
@@ -670,12 +672,12 @@ body {
    GOLF
    ════════════════════════════════════════════════════════════════════ */
 #golf-card {
-  padding: 28px;
+  padding: 22px 24px;
 }
 .golf-two-col {
   display: grid;
-  grid-template-columns: 1.6fr 1fr;
-  gap: 24px;
+  grid-template-columns: 1fr;
+  gap: 14px;
 }
 /* Next tee panel */
 .golf-next-panel {
@@ -704,13 +706,13 @@ body {
 }
 .golf-course-name {
   font-family: var(--f-s);
-  font-size: 28px;
+  font-size: 22px;
   font-weight: 600;
   color: var(--ink);
-  letter-spacing: -0.6px;
-  line-height: 1.05;
+  letter-spacing: -0.4px;
+  line-height: 1.1;
   margin-bottom: 6px;
-  padding-right: 40px;
+  padding-right: 36px;
 }
 .golf-datetime-row {
   display: flex;
@@ -828,59 +830,88 @@ body {
    HEADLINES
    ════════════════════════════════════════════════════════════════════ */
 #headlines-card {
-  padding: 24px 28px;
+  padding: 22px 24px 24px;
   grid-column: 1 / -1;
 }
 .headlines-field {
-  position: relative;
-  height: 300px;
-  border-radius: 14px;
-  background: rgba(26,24,22,0.02);
-  overflow: hidden;
-  margin-top: 4px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-top: 12px;
 }
 .hl-pill {
-  position: absolute;
-  background: var(--bg2);
-  border-radius: 12px;
-  padding: 9px 14px;
-  max-width: 260px;
+  background: rgba(26,24,22,0.025);
+  border: 1px solid rgba(26,24,22,0.06);
+  border-radius: 16px;
+  padding: 14px 16px;
   cursor: pointer;
-  box-shadow: 0 2px 8px rgba(26,24,22,0.08);
-  animation: hl-drift var(--dur, 30s) ease-in-out infinite;
-  transition: box-shadow 0.25s, transform 0.25s;
-  z-index: 1;
-  will-change: transform;
-  user-select: none;
   text-decoration: none;
-  display: block;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  animation: hl-float var(--dur, 10s) ease-in-out infinite;
+  transition: background 0.22s, border-color 0.22s,
+              box-shadow 0.3s cubic-bezier(.2,.7,.3,1),
+              transform 0.3s cubic-bezier(.2,.7,.3,1);
+  will-change: transform;
+  position: relative;
+  z-index: 1;
 }
 .hl-pill:hover {
   animation-play-state: paused;
-  z-index: 20;
-  box-shadow: 0 8px 28px rgba(26,24,22,0.16);
-  transform: scale(1.03) !important;
+  background: var(--bg2);
+  border-color: rgba(26,24,22,0.10);
+  box-shadow: 0 14px 40px rgba(26,24,22,0.13);
+  transform: translateY(-5px) scale(1.015) !important;
+  z-index: 10;
 }
 .hl-pill-cat {
-  font-size: 10px; font-weight: 600; letter-spacing: 1.4px;
-  text-transform: uppercase; color: var(--cup-accent); margin-bottom: 4px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.3px;
+  text-transform: uppercase;
+  margin-bottom: 7px;
 }
 .hl-pill-title {
-  font-size: 13px; font-weight: 600; color: var(--ink); line-height: 1.35;
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--ink);
+  line-height: 1.45;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  transition: -webkit-line-clamp 0s;
 }
-.hl-pill-more {
-  font-size: 11px; color: var(--ink3); margin-top: 4px; line-height: 1.4;
-  max-height: 0; overflow: hidden;
-  transition: max-height 0.3s ease;
+.hl-pill:hover .hl-pill-title {
+  -webkit-line-clamp: unset;
+  overflow: visible;
 }
-.hl-pill:hover .hl-pill-more { max-height: 60px; }
+.hl-pill-source {
+  font-size: 11px;
+  color: var(--ink3);
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  opacity: 0;
+  transform: translateY(5px);
+  transition: opacity 0.22s ease 0.05s, transform 0.22s ease 0.05s;
+  font-family: var(--f-m);
+}
+.hl-pill:hover .hl-pill-source {
+  opacity: 1;
+  transform: translateY(0);
+}
+.hl-pill-source-arrow {
+  margin-left: auto;
+  color: var(--cup-accent);
+  font-weight: 600;
+}
 
-@keyframes hl-drift {
-  0%   { transform: translate(0px, 0px); }
-  25%  { transform: translate(var(--dx1), var(--dy1)); }
-  50%  { transform: translate(var(--dx2), var(--dy2)); }
-  75%  { transform: translate(var(--dx1, 0px), calc(var(--dy2) * -0.5)); }
-  100% { transform: translate(0px, 0px); }
+@keyframes hl-float {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(var(--fy, -5px)); }
 }
 
 /* ════════════════════════════════════════════════════════════════════
@@ -899,25 +930,28 @@ body {
 /* ════════════════════════════════════════════════════════════════════
    RESPONSIVE
    ════════════════════════════════════════════════════════════════════ */
+@media (max-width: 1100px) {
+  .headlines-field { grid-template-columns: repeat(3, 1fr); }
+}
 @media (max-width: 900px) {
-  .wrap { padding: 24px 24px 60px; }
-  .hero-h1 { font-size: clamp(32px, 7vw, 56px); }
-  .golf-two-col { grid-template-columns: 1fr; }
-  .fixtures-grid { grid-template-columns: 1fr; }
+  .wrap { padding: 20px 20px 48px; grid-template-columns: 1fr 1fr; gap: 12px; }
+  #markets-card { grid-column: span 1; }
+  #fixtures-card { grid-column: span 1; }
+  .headlines-field { grid-template-columns: repeat(2, 1fr); }
+  .hero-h1 { font-size: clamp(28px, 6vw, 48px); }
   .markets-grid { grid-template-columns: 1fr 1fr; }
 }
-@media (max-width: 768px) {
-  .wrap { grid-template-columns: 1fr; }
-  #portfolio-strip, #markets-card, #fixtures-card, #golf-card { grid-column: 1 / -1; }
-}
 @media (max-width: 640px) {
-  .wrap { padding: 16px 16px 48px; gap: 14px; }
+  .wrap { grid-template-columns: 1fr; padding: 14px 14px 40px; gap: 10px; }
+  #portfolio-strip, #markets-card, #fixtures-card, #golf-card { grid-column: 1 / -1; }
+  .headlines-field { grid-template-columns: 1fr 1fr; }
   .hero-inner { flex-direction: column; }
   .hero-right { text-align: left; min-width: 0; }
   .hero-weather-row { justify-content: flex-start; }
   .fpl-stats-row { gap: 12px; }
   .fpl-stat-value { font-size: 28px; }
-  .markets-grid { grid-template-columns: 1fr; }
+  .markets-grid { grid-template-columns: 1fr 1fr; }
+  .fixtures-grid { grid-template-columns: 1fr; }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -1012,6 +1046,14 @@ body {
     </div>
   </div>
 
+  <!-- GOLF -->
+  <div class="card hover-lift cup-reveal" id="golf-card">
+    <div class="eyebrow">Golf · Tee Times</div>
+    <div id="golf-body">
+      <div class="skel" style="height:200px;border-radius:16px"></div>
+    </div>
+  </div>
+
   <!-- FPL -->
   <div class="card hover-lift cup-reveal" id="fpl-card">
     <div class="fpl-header">
@@ -1030,16 +1072,8 @@ body {
     <div id="fpl-bench-wrap"></div>
   </div>
 
-  <!-- GOLF -->
-  <div class="card hover-lift cup-reveal" id="golf-card">
-    <div class="eyebrow">Golf · Tee Times</div>
-    <div id="golf-body">
-      <div class="skel" style="height:200px;border-radius:16px"></div>
-    </div>
-  </div>
-
   <!-- HEADLINES -->
-  <div class="card cup-reveal" id="headlines-card" style="padding:24px 28px">
+  <div class="card cup-reveal" id="headlines-card">
     <div class="eyebrow">Headlines</div>
     <div class="headlines-field" id="headlines-field"></div>
   </div>
@@ -1661,45 +1695,27 @@ function renderNews(news) {
   });
 
   if (!all.length) {
-    field.innerHTML = '<div style="display:flex;align-items:center;justify-content:center;height:100%;color:var(--ink3);font-size:14px">Headlines loading…</div>';
+    field.innerHTML = '<div style="grid-column:1/-1;display:flex;align-items:center;justify-content:center;padding:40px;color:var(--ink3);font-size:14px">Headlines loading…</div>';
     return;
   }
 
-  // Use seeded positions to avoid layout shift on re-render
-  const positions = [
-    { x:4,  y:6  }, { x:38, y:5  }, { x:65, y:4  },
-    { x:6,  y:52 }, { x:34, y:48 }, { x:62, y:50 },
-    { x:10, y:72 }, { x:40, y:70 }, { x:66, y:68 },
-    { x:20, y:28 }, { x:50, y:28 }, { x:75, y:30 },
-  ];
-  const drifts = [
-    { dx1:'8px',  dy1:'5px',  dx2:'-5px', dy2:'10px' },
-    { dx1:'-10px',dy1:'8px',  dx2:'6px',  dy2:'-5px' },
-    { dx1:'6px',  dy1:'-8px', dx2:'-8px', dy2:'6px'  },
-    { dx1:'-7px', dy1:'6px',  dx2:'10px', dy2:'-4px' },
-    { dx1:'10px', dy1:'-6px', dx2:'-6px', dy2:'8px'  },
-    { dx1:'-8px', dy1:'-5px', dx2:'7px',  dy2:'7px'  },
-    { dx1:'5px',  dy1:'10px', dx2:'-9px', dy2:'-6px' },
-    { dx1:'-6px', dy1:'7px',  dx2:'8px',  dy2:'-8px' },
-    { dx1:'9px',  dy1:'-7px', dx2:'-7px', dy2:'5px'  },
-    { dx1:'-5px', dy1:'-9px', dx2:'6px',  dy2:'8px'  },
-    { dx1:'7px',  dy1:'6px',  dx2:'-10px',dy2:'-5px' },
-    { dx1:'-9px', dy1:'5px',  dx2:'5px',  dy2:'-9px' },
-  ];
-  const durs = [28,34,31,37,29,33,36,27,32,38,30,35];
+  const durs = [9, 12, 8, 11, 10, 13, 9.5, 11.5, 8.5, 12.5, 10.5, 9];
+  const flys = [-4, -6, -3, -7, -5, -4, -6, -3, -7, -5, -4, -6];
 
   field.innerHTML = all.slice(0, 12).map((h, i) => {
-    const pos   = positions[i % positions.length];
-    const drift = drifts[i % drifts.length];
-    const dur   = durs[i % durs.length];
-    const col   = CAT_COLOR[h.cat] || 'var(--cup-accent)';
-    const short = h.title.length > 55 ? h.title.slice(0,55) + '…' : h.title;
-    const rest  = h.title.length > 55 ? h.title.slice(55) : '';
+    const col = CAT_COLOR[h.cat] || 'var(--cup-accent)';
+    const dur = durs[i % durs.length];
+    const fy  = flys[i % flys.length];
+    let src = '';
+    try { src = new URL(h.link).hostname.replace(/^www\./, ''); } catch {}
     return `<a class="hl-pill" href="${h.link || '#'}" target="_blank" rel="noopener"
-      style="left:${pos.x}%;top:${pos.y}%;--dur:${dur}s;--dx1:${drift.dx1};--dy1:${drift.dy1};--dx2:${drift.dx2};--dy2:${drift.dy2}">
+      style="--dur:${dur}s;--fy:${fy}px">
       <div class="hl-pill-cat" style="color:${col}">${h.cat}</div>
-      <div class="hl-pill-title">${short}</div>
-      <div class="hl-pill-more">${rest || 'Click to read full story →'}</div>
+      <div class="hl-pill-title">${h.title}</div>
+      <div class="hl-pill-source">
+        <span>${src}</span>
+        <span class="hl-pill-source-arrow">Read →</span>
+      </div>
     </a>`;
   }).join('');
 }
