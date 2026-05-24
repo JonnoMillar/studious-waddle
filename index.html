@@ -1997,8 +1997,14 @@ let _coCards = [], _coIdx = 0, _coTimer = null;
 function renderCompanies(prices) {
   _coCards = CO_NAMES
     .map(name => ({ name, info: CO_INFO[name] || {}, ...(prices[name] || {}) }))
-    .filter(c => c.change != null)
-    .sort((a, b) => Math.abs(b.change) - Math.abs(a.change));
+    .sort((a, b) => {
+      const aHasPrice = a.change != null;
+      const bHasPrice = b.change != null;
+      if (aHasPrice && !bHasPrice) return -1;
+      if (!aHasPrice && bHasPrice) return 1;
+      if (aHasPrice && bHasPrice) return Math.abs(b.change) - Math.abs(a.change);
+      return 0;
+    });
 
   if (!_coCards.length) return;
 
@@ -2020,6 +2026,7 @@ function _drawCoCard(idx) {
   if (!stage || !_coCards.length) return;
 
   const c = _coCards[idx];
+  const hasPrice = c.change != null;
   const cls      = (c.change || 0) >= 0 ? 'up' : 'down';
   const signChar = (c.change || 0) >= 0 ? '+' : '';
   const priceStr = c.price != null ? '$' + c.price.toFixed(2) : '';
@@ -2034,7 +2041,7 @@ function _drawCoCard(idx) {
       </div>
       <div class="co-featured-right">
         ${c.info.logo ? `<img src="${c.info.logo}" alt="${c.name}" style="height:48px;object-fit:contain;margin-bottom:8px;display:block;">` : ''}
-        <div class="co-featured-pct ${cls}">${signChar}${(c.change || 0).toFixed(2)}%</div>
+        ${hasPrice ? `<div class="co-featured-pct ${cls}">${signChar}${(c.change || 0).toFixed(2)}%</div>` : ''}
         ${priceStr ? `<div class="co-featured-price">${priceStr}</div>` : ''}
       </div>
     </div>

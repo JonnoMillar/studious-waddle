@@ -104,19 +104,13 @@ export default async function handler(req, res) {
     'Nikkei':    '^N225',
     'Bitcoin':   'BTC-USD',
     'Gold':      'GC=F',
-    // Movers
-    'Nvidia':      'NVDA',
-    'Apple':       'AAPL',
-    'Tesla':       'TSLA',
-    'Meta':        'META',
-    'Amazon':      'AMZN',
-    'Microsoft':   'MSFT',
-    'Alphabet':    'GOOGL',
-    'ARM':         'ARM',
-    'Palantir':    'PLTR',
-    'Broadcom':    'AVGO',
-    'AMD':         'AMD',
-    'CrowdStrike': 'CRWD',
+    // Emerging Tech Companies
+    'Waymo':           'GOOGL',
+    'Perplexity AI':   'MSFT',
+    'Scale AI':        'NVDA',
+    'Neuralink':       'TSLA',
+    'CrowdStrike':     'CRWD',
+    'Palantir':        'PLTR',
   };
 
   const FPL_TEAM_ID = 3079376;
