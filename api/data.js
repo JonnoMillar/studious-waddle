@@ -273,7 +273,23 @@ export default async function handler(req, res) {
 
   let golf = { tee_times: [], scraped_at: null, error: null };
   try {
-    golf = JSON.parse(readFileSync(join(process.cwd(), 'api/golf-cache.json'), 'utf8'));
+    const cached = JSON.parse(readFileSync(join(process.cwd(), 'api/golf-cache.json'), 'utf8'));
+    // Filter to 11 AM - 5 PM (hour >= 11 && hour < 17) and sort by price then distance
+    golf = {
+      ...cached,
+      tee_times: (cached.tee_times || [])
+        .filter(t => {
+          const [h] = (t.tee_time || '').split(':');
+          const hour = parseInt(h, 10);
+          return hour >= 11 && hour < 17;
+        })
+        .sort((a, b) => {
+          const priceDiff = (a.price_gbp || 0) - (b.price_gbp || 0);
+          if (priceDiff !== 0) return priceDiff;
+          return (a.distance_miles || 0) - (b.distance_miles || 0);
+        })
+        .slice(0, 10)
+    };
   } catch (_) {}
 
   res.json({

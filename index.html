@@ -242,7 +242,7 @@ body {
 /* ════════════════════════════════════════════════════════════════════
    PORTFOLIO STRIP
    ════════════════════════════════════════════════════════════════════ */
-#portfolio-strip { padding: 22px 24px; cursor: default; }
+#portfolio-strip { padding: 22px 24px; cursor: default; grid-column: span 3; }
 .port-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; }
 .port-total-hint { font-size: 11px; color: var(--ink3); font-family: var(--f-s); }
 .port-fund-chips { display: flex; gap: 10px; }
@@ -298,7 +298,7 @@ body {
    ════════════════════════════════════════════════════════════════════ */
 #markets-card {
   padding: 24px 28px;
-  grid-column: span 2;
+  grid-column: span 3;
 }
 .markets-grid {
   display: grid;
@@ -1975,21 +1975,19 @@ function startHlCycle() {
 // ════════════════════════════════════════════════════════════════════
 // COMPANIES FEATURED CAROUSEL
 // ════════════════════════════════════════════════════════════════════
-const CO_NAMES = ['Anthropic','Figure AI','Physical Intelligence','Commonwealth Fusion','Perplexity AI','Waymo','Mistral AI','Groq','Scale AI','Neuralink','Cursor','Anduril'];
+const CO_NAMES = ['Figure AI','Physical Intelligence','Commonwealth Fusion','Waymo','Mistral AI','Groq','Scale AI','Neuralink','Cursor','Anduril'];
 
 const CO_INFO = {
-  'Anthropic':           { tag: 'AI Research', desc: 'Constitutional AI and safety research, makers of Claude', logo: 'https://logo.clearbit.com/anthropic.com' },
-  'Figure AI':           { tag: 'Robotics', desc: 'Humanoid robots for industrial and commercial applications', logo: 'https://logo.clearbit.com/figure.ai' },
-  'Physical Intelligence': { tag: 'Embodied AI', desc: 'Physical AI systems learning real-world manipulation', logo: 'https://logo.clearbit.com/physicalintelligence.company' },
-  'Commonwealth Fusion':  { tag: 'Energy', desc: 'Next-generation nuclear fusion for clean energy', logo: 'https://logo.clearbit.com/cfs.energy' },
-  'Perplexity AI':        { tag: 'Search', desc: 'AI-powered search engine with real-time reasoning', logo: 'https://logo.clearbit.com/perplexity.ai' },
-  'Waymo':                { tag: 'Autonomy', desc: 'Self-driving technology at the forefront of robotaxi services', logo: 'https://logo.clearbit.com/waymo.com' },
-  'Mistral AI':           { tag: 'LLMs', desc: 'European AI foundation models and open-source alternatives', logo: 'https://logo.clearbit.com/mistral.ai' },
-  'Groq':                 { tag: 'AI Chips', desc: 'Specialized inference processors for fast LLM execution', logo: 'https://logo.clearbit.com/groq.com' },
-  'Scale AI':             { tag: 'AI Data', desc: 'Data infrastructure and labeling for AI model training', logo: 'https://logo.clearbit.com/scale.com' },
-  'Neuralink':            { tag: 'Brain-Computer', desc: 'Neural interfaces bridging human brains and computers', logo: 'https://logo.clearbit.com/neuralink.com' },
-  'Cursor':               { tag: 'Code Editor', desc: 'AI-first code editor for intelligent development', logo: 'https://logo.clearbit.com/cursor.com' },
-  'Anduril':              { tag: 'Defense AI', desc: 'AI systems for next-generation defense applications', logo: 'https://logo.clearbit.com/anduril.com' },
+  'Figure AI':           { tag: 'Robotics', desc: 'Humanoid robots for industrial and commercial applications', initials: 'FA' },
+  'Physical Intelligence': { tag: 'Embodied AI', desc: 'Physical AI systems learning real-world manipulation', initials: 'PI' },
+  'Commonwealth Fusion':  { tag: 'Energy', desc: 'Next-generation nuclear fusion for clean energy', initials: 'CFS' },
+  'Waymo':                { tag: 'Autonomy', desc: 'Self-driving technology at the forefront of robotaxi services', initials: 'W' },
+  'Mistral AI':           { tag: 'LLMs', desc: 'European AI foundation models and open-source alternatives', initials: 'M' },
+  'Groq':                 { tag: 'AI Chips', desc: 'Specialized inference processors for fast LLM execution', initials: 'G' },
+  'Scale AI':             { tag: 'AI Data', desc: 'Data infrastructure and labeling for AI model training', initials: 'S' },
+  'Neuralink':            { tag: 'Brain-Computer', desc: 'Neural interfaces bridging human brains and computers', initials: 'NL' },
+  'Cursor':               { tag: 'Code Editor', desc: 'AI-first code editor for intelligent development', initials: 'C' },
+  'Anduril':              { tag: 'Defense AI', desc: 'AI systems for next-generation defense applications', initials: 'A' },
 };
 
 let _coCards = [], _coIdx = 0, _coTimer = null;
@@ -2040,7 +2038,7 @@ function _drawCoCard(idx) {
         <div class="co-featured-tag">${c.info.tag || ''}</div>
       </div>
       <div class="co-featured-right">
-        ${c.info.logo ? `<img src="${c.info.logo}" alt="${c.name}" style="height:48px;object-fit:contain;margin-bottom:8px;display:block;">` : ''}
+        ${c.info.initials ? `<div style="width:48px;height:48px;background:var(--cup-accent);border-radius:10px;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:18px;margin-bottom:8px;margin-left:auto;font-family:var(--f-s);">${c.info.initials}</div>` : ''}
         ${hasPrice ? `<div class="co-featured-pct ${cls}">${signChar}${(c.change || 0).toFixed(2)}%</div>` : ''}
         ${priceStr ? `<div class="co-featured-price">${priceStr}</div>` : ''}
       </div>
