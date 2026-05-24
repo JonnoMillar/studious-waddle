@@ -4,7 +4,12 @@ on:
   schedule:
     - cron: '0 17 * * 4'   # Thursday 5pm UTC (6pm BST) — ready for weekend planning
     - cron: '0 6  * * 6'   # Saturday 6am UTC (7am BST) — catch same-day deals
-  workflow_dispatch:        # Manual trigger from GitHub Actions tab
+  workflow_dispatch:
+    inputs:
+      dump_raw:
+        description: 'Dump raw API response to debug_raw.json (for offline debugging)'
+        type: boolean
+        default: false
 
 jobs:
   scrape:
@@ -47,13 +52,19 @@ jobs:
         env:
           BROWSER_AUTH: ${{ secrets.BROWSER_AUTH }}
           PYTHONUNBUFFERED: "1"
-        run: python3 -u golfnow-mcp/run_scraper.py > api/golf-cache.json
+        run: |
+          if [ "${{ inputs.dump_raw }}" = "true" ]; then
+            python3 -u golfnow-mcp/run_scraper.py --dump
+          else
+            python3 -u golfnow-mcp/run_scraper.py > api/golf-cache.json
+          fi
 
       - name: Commit and push
         run: |
           git config user.email "golf-bot@briefing.local"
           git config user.name "Golf Bot"
           git add api/golf-cache.json
+          [ -f golfnow-mcp/debug_raw.json ] && git add golfnow-mcp/debug_raw.json
           git diff --staged --quiet && echo "No changes to commit" && exit 0
           git commit -m "chore: refresh GolfNow tee time cache"
           git pull --rebase origin ${{ github.ref_name }}

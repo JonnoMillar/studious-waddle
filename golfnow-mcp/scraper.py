@@ -349,6 +349,54 @@ async def _wait_for_json(page, url_fragment: str, timeout_secs: int = 30) -> dic
     return result["data"]
 
 
+async def _browse_courses_near_me(
+    browser_auth: str,
+    date_str: str,
+    players: int = 2,
+    lat: float = DEFAULT_LAT,
+    lng: float = DEFAULT_LNG,
+    radius: int = DEFAULT_RADIUS,
+    time_min: int = DEFAULT_TIME_MIN,
+    time_max: int = DEFAULT_TIME_MAX,
+    holes: str = DEFAULT_HOLES,
+) -> dict | list | None:
+    """Open the GolfNow search page and return the raw courses-near-me API response."""
+    async with async_playwright() as p:
+        browser = await p.chromium.connect_over_cdp(
+            f"wss://{browser_auth}@brd.superproxy.io:9222"
+        )
+        try:
+            page = await browser.new_page()
+            page.set_default_navigation_timeout(120_000)
+            await page.route(
+                "**/*.{png,jpg,jpeg,gif,svg,webp,woff,woff2,ttf,eot,css}",
+                lambda route: route.abort(),
+            )
+            search_url = (
+                f"{BASE_URL}/tee-times/search"
+                f"#sortby=featured&view=course&holes={holes}"
+                f"&timemax={time_max}&timemin={time_min}"
+                f"&date={date_str}&players={players}"
+                f"&lat={lat}&lng={lng}&radius={radius}"
+            )
+            task = asyncio.create_task(
+                _wait_for_json(page, "courses-near-me", timeout_secs=35)
+            )
+            await page.goto(search_url, wait_until="domcontentloaded")
+            return await task
+        finally:
+            await browser.close()
+
+
+async def scrape_raw(
+    browser_auth: str,
+    date_str: str,
+    **kwargs,
+) -> dict | list | None:
+    """Return the raw courses-near-me response for offline debugging."""
+    return await _browse_courses_near_me(browser_auth, date_str, **kwargs)
+
+
 async def scrape_date(
     browser_auth: str,
     date_str: str,
@@ -361,43 +409,21 @@ async def scrape_date(
     holes: str = DEFAULT_HOLES,
     min_rating: float = DEFAULT_MIN_RATING,
 ) -> list[dict]:
-    """Scrape tee time summaries near a location for a given date using courses-near-me only."""
-    async with async_playwright() as p:
-        browser = await p.chromium.connect_over_cdp(
-            f"wss://{browser_auth}@brd.superproxy.io:9222"
-        )
-        try:
-            page = await browser.new_page()
-            page.set_default_navigation_timeout(120_000)
-            await page.route(
-                "**/*.{png,jpg,jpeg,gif,svg,webp,woff,woff2,ttf,eot,css}",
-                lambda route: route.abort(),
-            )
+    """Scrape tee time summaries near a location for a given date."""
+    raw = await _browse_courses_near_me(
+        browser_auth, date_str, players=players, lat=lat, lng=lng,
+        radius=radius, time_min=time_min, time_max=time_max, holes=holes,
+    )
 
-            search_url = (
-                f"{BASE_URL}/tee-times/search"
-                f"#sortby=featured&view=course&holes={holes}"
-                f"&timemax={time_max}&timemin={time_min}"
-                f"&date={date_str}&players={players}"
-                f"&lat={lat}&lng={lng}&radius={radius}"
-            )
+    if not raw:
+        log.warning(f"{date_str}: no courses-near-me response")
+        return []
 
-            courses_task = asyncio.create_task(
-                _wait_for_json(page, "courses-near-me", timeout_secs=35)
-            )
-            await page.goto(search_url, wait_until="domcontentloaded")
-            raw = await courses_task
-            log.info(f"{date_str}: raw type={type(raw).__name__}, keys={list(raw.keys()) if isinstance(raw, dict) else repr(raw)[:80]}")
-
-            if not raw:
-                log.warning(f"{date_str}: no courses-near-me response")
-                return []
-
-            ttresults = raw.get("ttResults") if isinstance(raw, dict) else []
-            ttresults = ttresults or []
-            slots = parse_tee_times_from_ttresults(ttresults, date_str)
-            log.info(f"{date_str}: {len(slots)} slots from {len(ttresults)} courses")
-            return slots
-
-        finally:
-            await browser.close()
+    log.info(f"{date_str}: raw keys={list(raw.keys()) if isinstance(raw, dict) else type(raw).__name__}")
+    ttresults = raw.get("ttResults") if isinstance(raw, dict) else []
+    if isinstance(ttresults, dict):
+        ttresults = list(ttresults.values())
+    ttresults = ttresults or []
+    slots = parse_tee_times_from_ttresults(ttresults, date_str)
+    log.info(f"{date_str}: {len(slots)} slots from {len(ttresults)} courses")
+    return slots
