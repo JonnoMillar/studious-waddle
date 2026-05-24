@@ -383,12 +383,14 @@ async def scrape_date(
             )
             await page.goto(search_url, wait_until="domcontentloaded")
             raw = await courses_task
+            log.info(f"{date_str}: raw type={type(raw).__name__}, keys={list(raw.keys()) if isinstance(raw, dict) else repr(raw)[:80]}")
 
             if not raw:
                 log.warning(f"{date_str}: no courses-near-me response")
                 return []
 
-            ttresults = raw.get("ttResults") or []
+            ttresults = raw.get("ttResults") if isinstance(raw, dict) else []
+            ttresults = ttresults or []
             slots = parse_tee_times_from_ttresults(ttresults, date_str)
             log.info(f"{date_str}: {len(slots)} slots from {len(ttresults)} courses")
             return slots

@@ -8,6 +8,7 @@ import json
 import logging
 import os
 import sys
+import traceback
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -47,8 +48,9 @@ async def main():
             eprint(f"  Got {len(raw)} raw slots")
             all_results.extend(raw)
         except Exception as e:
-            eprint(f"  ERROR: {e}")
-            errors.append(f"{date_str}: {e}")
+            eprint(f"  ERROR ({type(e).__name__}): {e}")
+            eprint(traceback.format_exc())
+            errors.append(f"{date_str}: {type(e).__name__}: {e}")
 
     eprint(f"Total raw slots: {len(all_results)}")
     results = filter_and_sort(all_results, max_price=None, min_players=2)[:30]
