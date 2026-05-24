@@ -1357,7 +1357,7 @@ body {
   </div>
 
   <!-- FOOTER -->
-  <div class="brief-footer">Refreshes at 08:30 · Made for Jonno</div>
+  <div class="brief-footer">Live data · Golf cache refreshes Thu &amp; Sat · Made for Jonno</div>
 
 </div><!-- /wrap -->
 
@@ -1887,7 +1887,6 @@ function renderFPL(fpl) {
   const fwd = starting.filter(p => p.pos === 4);
 
   function playerChipHTML(p, isBench) {
-    const initial = (p.name || '?')[0].toUpperCase();
     const club    = CLUB_COLOR[p.team] || '#888';
     // Points colouring
     const pts = p.points || 0;
@@ -1895,24 +1894,29 @@ function renderFPL(fpl) {
                 : pts >= 4 ? '#3a6a4a'
                 : pts >= 1 ? 'var(--ink2)'
                 : 'rgba(26,24,22,0.25)';
-    // FDR dot
-    const fdrColor = 'rgba(26,24,22,0.25)'; // no FDR data from API
     const capBadge = p.isCap ? `<div class="player-cap-badge cap">C</div>`
                    : p.isVC  ? `<div class="player-cap-badge vc">V</div>`
                    : '';
-    const border = p.isCap ? `border: 2.5px solid var(--cup-accent)`
-                 : p.isVC  ? `border: 2px solid var(--ink2)`
-                 : '';
+    const borderStyle = p.isCap ? `border: 2.5px solid var(--cup-accent)`
+                      : p.isVC  ? `border: 2px solid var(--ink2)`
+                      : '';
     const sizeW = isBench ? 36 : 42;
+    // Use FPL shirt image; fall back to club-colour square on error
+    const shirtUrl = p.teamCode
+      ? `https://fantasy.premierleague.com/dist/img/shirts/standard/shirt_${p.teamCode}-35.png`
+      : '';
+    const kitInner = shirtUrl
+      ? `<img src="${shirtUrl}" width="${sizeW}" height="${sizeW}" style="object-fit:contain;display:block" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">`
+        + `<span class="player-kit-initial" style="display:none">${(p.name||'?')[0].toUpperCase()}</span>`
+      : `<span class="player-kit-initial">${(p.name||'?')[0].toUpperCase()}</span>`;
     return `<div class="player-chip${isBench ? ' bench' : ''}">
-      <div class="player-kit" style="width:${sizeW}px;height:${sizeW}px;background:linear-gradient(180deg,${club} 0%,${club}cc 100%);box-shadow:inset 0 -2px 4px rgba(0,0,0,0.18),0 1px 3px rgba(0,0,0,0.10);${border}">
-        <span class="player-kit-initial">${initial}</span>
+      <div class="player-kit" style="width:${sizeW}px;height:${sizeW}px;background:linear-gradient(180deg,${club} 0%,${club}cc 100%);box-shadow:inset 0 -2px 4px rgba(0,0,0,0.18),0 1px 3px rgba(0,0,0,0.10);${borderStyle}">
+        ${kitInner}
         ${capBadge}
       </div>
       <div class="player-name">${p.name}</div>
       <div class="player-pts-row">
         <span class="player-pts" style="background:${ptsBg}">${p.isCap ? pts * 2 : pts}</span>
-        <span class="player-fdr" style="background:var(--ink3)"></span>
       </div>
     </div>`;
   }
