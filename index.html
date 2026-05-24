@@ -1756,7 +1756,10 @@ function renderFixtures(fixtures) {
   }
 
   const gw = fixtures[0]?.gw;
-  if (subEl && gw) subEl.textContent = `GW${gw}`;
+  const allFinished = fixtures.every(f => f.finished);
+  const anyLive = fixtures.some(f => f.started && !f.finished);
+  const gwLabel = allFinished ? `GW${gw} · FT` : anyLive ? `GW${gw} · Live` : `GW${gw}`;
+  if (subEl && gw) subEl.textContent = gwLabel;
 
   el.innerHTML = fixtures.slice(0, 8).map((f, i) => {
     const dt     = new Date(f.kickoff);
@@ -1796,12 +1799,12 @@ function renderFixtures(fixtures) {
         <div class="fixture-expand-inner">
           <div class="fixture-expand-body">
             <div class="fixture-expand-row">
-              <span>Home</span><span style="font-family:var(--f-m);font-size:12px">${f.home}</span>
+              <span>Kickoff</span><span style="font-family:var(--f-m);font-size:12px">${timeStr}</span>
             </div>
-            <div class="fixture-expand-row">
-              <span>Away</span><span style="font-family:var(--f-m);font-size:12px">${f.away}</span>
-            </div>
-            ${odds && !f.score ? `<div class="fixture-expand-row" style="margin-top:6px">
+            ${f.score ? `<div class="fixture-expand-row">
+              <span>Result</span><span style="font-family:var(--f-m);font-size:12px;font-weight:700">${f.home} ${f.score} ${f.away}</span>
+            </div>` : ''}
+            ${odds && !f.score ? `<div class="fixture-expand-row" style="margin-top:4px">
               <span>Odds (H · D · A)</span>
               <span style="font-family:var(--f-m);font-size:12px">${odds.h?.toFixed(2) ?? '—'} · ${odds.d?.toFixed(2) ?? '—'} · ${odds.a?.toFixed(2) ?? '—'}</span>
             </div>` : ''}
