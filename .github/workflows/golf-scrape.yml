@@ -55,6 +55,8 @@ jobs:
         run: |
           if [ "${{ inputs.dump_raw }}" = "true" ]; then
             python3 -u golfnow-mcp/run_scraper.py --dump
+            echo "=== Parse test ==="
+            python3 -u golfnow-mcp/test_parse.py
           else
             python3 -u golfnow-mcp/run_scraper.py > api/golf-cache.json
           fi
