@@ -274,19 +274,9 @@ export default async function handler(req, res) {
   let golf = { tee_times: [], scraped_at: null, error: null };
   try {
     const cached = JSON.parse(readFileSync(join(process.cwd(), 'api/golf-cache.json'), 'utf8'));
-    // Prioritize 11 AM - 5 PM times, then show others; sort by price then distance
     const times = cached.tee_times || [];
-    const preferred = times.filter(t => {
-      const [h] = (t.tee_time || '').split(':');
-      const hour = parseInt(h, 10);
-      return hour >= 11 && hour < 17;
-    });
-    const other = times.filter(t => {
-      const [h] = (t.tee_time || '').split(':');
-      const hour = parseInt(h, 10);
-      return !(hour >= 11 && hour < 17);
-    });
-    const sorted = [...preferred, ...other]
+    // Sort by price then distance — show all available slots
+    const sorted = [...times]
       .sort((a, b) => {
         const priceDiff = (a.price_gbp || 0) - (b.price_gbp || 0);
         if (priceDiff !== 0) return priceDiff;

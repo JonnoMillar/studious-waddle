@@ -1978,16 +1978,16 @@ function startHlCycle() {
 const CO_NAMES = ['Figure AI','Physical Intelligence','Commonwealth Fusion','Waymo','Mistral AI','Groq','Scale AI','Neuralink','Cursor','Anduril'];
 
 const CO_INFO = {
-  'Figure AI':           { tag: 'Robotics', desc: 'Humanoid robots for industrial and commercial applications', logo: 'https://logo.duckduckgo.com/?domain=figure.ai&size=large', initials: 'FA' },
-  'Physical Intelligence': { tag: 'Embodied AI', desc: 'Physical AI systems learning real-world manipulation', logo: 'https://logo.duckduckgo.com/?domain=physicalintelligence.company&size=large', initials: 'PI' },
-  'Commonwealth Fusion':  { tag: 'Energy', desc: 'Next-generation nuclear fusion for clean energy', logo: 'https://logo.duckduckgo.com/?domain=cfs.energy&size=large', initials: 'CFS' },
-  'Waymo':                { tag: 'Autonomy', desc: 'Self-driving technology at the forefront of robotaxi services', logo: 'https://logo.duckduckgo.com/?domain=waymo.com&size=large', initials: 'W' },
-  'Mistral AI':           { tag: 'LLMs', desc: 'European AI foundation models and open-source alternatives', logo: 'https://logo.duckduckgo.com/?domain=mistral.ai&size=large', initials: 'M' },
-  'Groq':                 { tag: 'AI Chips', desc: 'Specialized inference processors for fast LLM execution', logo: 'https://logo.duckduckgo.com/?domain=groq.com&size=large', initials: 'G' },
-  'Scale AI':             { tag: 'AI Data', desc: 'Data infrastructure and labeling for AI model training', logo: 'https://logo.duckduckgo.com/?domain=scale.com&size=large', initials: 'S' },
-  'Neuralink':            { tag: 'Brain-Computer', desc: 'Neural interfaces bridging human brains and computers', logo: 'https://logo.duckduckgo.com/?domain=neuralink.com&size=large', initials: 'NL' },
-  'Cursor':               { tag: 'Code Editor', desc: 'AI-first code editor for intelligent development', logo: 'https://logo.duckduckgo.com/?domain=cursor.com&size=large', initials: 'C' },
-  'Anduril':              { tag: 'Defense AI', desc: 'AI systems for next-generation defense applications', logo: 'https://logo.duckduckgo.com/?domain=anduril.com&size=large', initials: 'A' },
+  'Figure AI':             { tag: 'Robotics',       desc: 'Humanoid robots for industrial and commercial applications', domain: 'figure.ai',                     initials: 'FA' },
+  'Physical Intelligence': { tag: 'Embodied AI',    desc: 'Physical AI systems learning real-world manipulation',      domain: 'physicalintelligence.company',  initials: 'PI' },
+  'Commonwealth Fusion':   { tag: 'Energy',         desc: 'Next-generation nuclear fusion for clean energy',           domain: 'cfs.energy',                    initials: 'CFS' },
+  'Waymo':                 { tag: 'Autonomy',       desc: 'Self-driving robotaxi service — the most miles of any AV',  domain: 'waymo.com',                     initials: 'W' },
+  'Mistral AI':            { tag: 'LLMs',           desc: 'European open-source AI foundation models',                 domain: 'mistral.ai',                    initials: 'M' },
+  'Groq':                  { tag: 'AI Chips',       desc: 'Specialized inference processors for ultra-fast LLMs',      domain: 'groq.com',                      initials: 'G' },
+  'Scale AI':              { tag: 'AI Data',        desc: 'Data infrastructure and labelling for AI model training',   domain: 'scale.com',                     initials: 'S' },
+  'Neuralink':             { tag: 'Brain-Computer', desc: 'Neural interfaces bridging human brains and computers',     domain: 'neuralink.com',                 initials: 'NL' },
+  'Cursor':                { tag: 'Code Editor',    desc: 'AI-first code editor transforming how developers work',     domain: 'cursor.com',                    initials: 'C' },
+  'Anduril':               { tag: 'Defense AI',     desc: 'AI-powered defense systems for next-generation warfare',   domain: 'anduril.com',                   initials: 'A' },
 };
 
 let _coCards = [], _coIdx = 0, _coTimer = null;
@@ -2031,8 +2031,15 @@ function _drawCoCard(idx) {
 
   if (counterEl) counterEl.textContent = `${idx + 1} / ${_coCards.length}`;
 
-  const logoFallback = c.info.initials ? `<div style="width:48px;height:48px;background:var(--cup-accent);border-radius:10px;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:16px;margin-left:auto;font-family:var(--f-s);">${c.info.initials}</div>` : '';
-  const logoImg = c.info.logo ? `<img src="${c.info.logo}" alt="${c.name}" style="height:48px;max-width:48px;object-fit:contain;margin-bottom:8px;margin-left:auto;" onerror="this.style.display='none';">` : '';
+  const fb = c.info.initials || c.name[0];
+  const logoBlock = c.info.domain ? `
+    <div style="min-height:52px;margin-bottom:6px;display:flex;align-items:center;justify-content:flex-end;">
+      <img src="https://logo.clearbit.com/${c.info.domain}"
+           alt="${c.name}"
+           style="height:48px;max-width:80px;object-fit:contain;display:block;"
+           onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+      <div style="display:none;width:48px;height:48px;background:var(--line);border:1px solid rgba(26,24,22,0.12);border-radius:10px;align-items:center;justify-content:center;color:var(--ink2);font-weight:700;font-size:15px;font-family:var(--f-s);">${fb}</div>
+    </div>` : '';
 
   stage.innerHTML = `<div class="co-featured">
     <div class="co-featured-top">
@@ -2041,8 +2048,7 @@ function _drawCoCard(idx) {
         <div class="co-featured-tag">${c.info.tag || ''}</div>
       </div>
       <div class="co-featured-right">
-        ${logoImg}
-        <div style="display:${logoImg && !c.info.logo ? 'none' : 'block'}">${logoFallback}</div>
+        ${logoBlock}
         ${hasPrice ? `<div class="co-featured-pct ${cls}">${signChar}${(c.change || 0).toFixed(2)}%</div>` : ''}
         ${priceStr ? `<div class="co-featured-price">${priceStr}</div>` : ''}
       </div>
