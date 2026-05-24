@@ -1977,17 +1977,20 @@ function startHlCycle() {
 // ════════════════════════════════════════════════════════════════════
 const CO_NAMES = ['Figure AI','Physical Intelligence','Commonwealth Fusion','Waymo','Mistral AI','Groq','Scale AI','Neuralink','Cursor','Anduril'];
 
+// logo: use Google favicon service — reliable for any domain, avoids Clearbit's 200 placeholder problem
+const _gfav = d => `https://www.google.com/s2/favicons?domain=${d}&sz=128`;
+
 const CO_INFO = {
-  'Figure AI':             { tag: 'Robotics',       desc: 'Humanoid robots for industrial and commercial applications', domain: 'figure.ai',                     initials: 'FA' },
-  'Physical Intelligence': { tag: 'Embodied AI',    desc: 'Physical AI systems learning real-world manipulation',      domain: 'physicalintelligence.company',  initials: 'PI' },
-  'Commonwealth Fusion':   { tag: 'Energy',         desc: 'Next-generation nuclear fusion for clean energy',           domain: 'cfs.energy',                    initials: 'CFS' },
-  'Waymo':                 { tag: 'Autonomy',       desc: 'Self-driving robotaxi service — the most miles of any AV',  domain: 'waymo.com',                     initials: 'W' },
-  'Mistral AI':            { tag: 'LLMs',           desc: 'European open-source AI foundation models',                 domain: 'mistral.ai',                    initials: 'M' },
-  'Groq':                  { tag: 'AI Chips',       desc: 'Specialized inference processors for ultra-fast LLMs',      domain: 'groq.com',                      initials: 'G' },
-  'Scale AI':              { tag: 'AI Data',        desc: 'Data infrastructure and labelling for AI model training',   domain: 'scale.com',                     initials: 'S' },
-  'Neuralink':             { tag: 'Brain-Computer', desc: 'Neural interfaces bridging human brains and computers',     domain: 'neuralink.com',                 initials: 'NL' },
-  'Cursor':                { tag: 'Code Editor',    desc: 'AI-first code editor transforming how developers work',     domain: 'cursor.com',                    initials: 'C' },
-  'Anduril':               { tag: 'Defense AI',     desc: 'AI-powered defense systems for next-generation warfare',   domain: 'anduril.com',                   initials: 'A' },
+  'Figure AI':             { tag: 'Robotics',       desc: 'Humanoid robots for industrial and commercial applications', logo: _gfav('figure.ai'),                     initials: 'FA' },
+  'Physical Intelligence': { tag: 'Embodied AI',    desc: 'Physical AI systems learning real-world manipulation',      logo: _gfav('physicalintelligence.company'),  initials: 'PI' },
+  'Commonwealth Fusion':   { tag: 'Energy',         desc: 'Next-generation nuclear fusion for clean energy',           logo: _gfav('cfs.energy'),                    initials: 'CFS' },
+  'Waymo':                 { tag: 'Autonomy',       desc: 'Self-driving robotaxi service — the most miles of any AV',  logo: _gfav('waymo.com'),                     initials: 'W' },
+  'Mistral AI':            { tag: 'LLMs',           desc: 'European open-source AI foundation models',                 logo: _gfav('mistral.ai'),                    initials: 'M' },
+  'Groq':                  { tag: 'AI Chips',       desc: 'Specialized inference processors for ultra-fast LLMs',      logo: _gfav('groq.com'),                      initials: 'G' },
+  'Scale AI':              { tag: 'AI Data',        desc: 'Data infrastructure and labelling for AI model training',   logo: _gfav('scale.com'),                     initials: 'S' },
+  'Neuralink':             { tag: 'Brain-Computer', desc: 'Neural interfaces bridging human brains and computers',     logo: _gfav('neuralink.com'),                 initials: 'NL' },
+  'Cursor':                { tag: 'Code Editor',    desc: 'AI-first code editor transforming how developers work',     logo: _gfav('cursor.com'),                    initials: 'C' },
+  'Anduril':               { tag: 'Defense AI',     desc: 'AI-powered defense systems for next-generation warfare',   logo: _gfav('anduril.com'),                   initials: 'A' },
 };
 
 let _coCards = [], _coIdx = 0, _coTimer = null;
@@ -2032,13 +2035,13 @@ function _drawCoCard(idx) {
   if (counterEl) counterEl.textContent = `${idx + 1} / ${_coCards.length}`;
 
   const fb = c.info.initials || c.name[0];
-  const logoBlock = c.info.domain ? `
+  const logoBlock = c.info.logo ? `
     <div style="min-height:52px;margin-bottom:6px;display:flex;align-items:center;justify-content:flex-end;">
-      <img src="https://logo.clearbit.com/${c.info.domain}"
+      <img src="${c.info.logo}"
            alt="${c.name}"
-           style="height:48px;max-width:80px;object-fit:contain;display:block;"
+           style="width:40px;height:40px;object-fit:contain;image-rendering:auto;border-radius:8px;"
            onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
-      <div style="display:none;width:48px;height:48px;background:var(--line);border:1px solid rgba(26,24,22,0.12);border-radius:10px;align-items:center;justify-content:center;color:var(--ink2);font-weight:700;font-size:15px;font-family:var(--f-s);">${fb}</div>
+      <div style="display:none;width:40px;height:40px;background:rgba(26,24,22,0.07);border-radius:8px;align-items:center;justify-content:center;color:var(--ink2);font-weight:700;font-size:14px;font-family:var(--f-s);">${fb}</div>
     </div>` : '';
 
   stage.innerHTML = `<div class="co-featured">
