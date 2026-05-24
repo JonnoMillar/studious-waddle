@@ -290,6 +290,18 @@ async def scrape_date(
     """Scrape all tee times near a location for a given date."""
     all_results: list[dict] = []
 
+    def is_courses_resp(r):
+        u = r.url.lower()
+        return r.status == 200 and any(f in u for f in [
+            "courses-near-me", "facilities/search", "courses/search", "facilities?"
+        ])
+
+    def is_teetimes_resp(r):
+        u = r.url.lower()
+        return r.status == 200 and any(f in u for f in [
+            "teetimes-by-facility-group", "tee-times", "teetime"
+        ])
+
     async with async_playwright() as p:
         browser = await p.chromium.connect_over_cdp(
             f"wss://{browser_auth}@brd.superproxy.io:9222"
@@ -302,12 +314,11 @@ async def scrape_date(
                 lambda route: route.abort(),
             )
 
-            # Log all JSON API responses so we can see what URLs GolfNow uses
-            async def log_api_response(response):
+            async def log_api(response):
                 ct = response.headers.get("content-type", "")
                 if "json" in ct and "golfnow" in response.url:
-                    log.info(f"API response: {response.url[:120]}")
-            page.on("response", log_api_response)
+                    log.info(f"API: {response.url[:120]}")
+            page.on("response", log_api)
 
             # Phase 1: get course list
             search_url = (
@@ -318,20 +329,16 @@ async def scrape_date(
                 f"&lat={lat}&lng={lng}&radius={radius}"
             )
 
-            # Try multiple known URL fragments for the courses API
-            course_fragments = ["courses-near-me", "facilities/search", "courses/search", "facilities?"]
-            async with capture_response_any(page, course_fragments, timeout=40) as courses_fut:
-                await page.goto(search_url, wait_until="domcontentloaded")
-                # Extra wait to let React hydrate and make API calls
-                await asyncio.sleep(3)
-                try:
-                    raw_courses = await asyncio.wait_for(asyncio.shield(courses_fut), timeout=30)
-                except asyncio.TimeoutError:
-                    log.warning(f"Timed out waiting for courses on {date_str}")
-                    return []
+            try:
+                async with page.expect_response(is_courses_resp, timeout=35_000) as resp_info:
+                    await page.goto(search_url, wait_until="domcontentloaded")
+                raw_courses = await (await resp_info.value).json()
+            except Exception as e:
+                log.warning(f"{date_str}: courses API failed — {e}")
+                return []
 
             courses = parse_courses(raw_courses, min_rating=min_rating)
-            log.info(f"{date_str}: found {len(courses)} courses")
+            log.info(f"{date_str}: {len(courses)} courses")
 
             # Phase 2: tee times per course
             for course in courses:
@@ -346,21 +353,24 @@ async def scrape_date(
                     f"&players={players}&date={date_str}"
                 )
 
-                tt_fragments = ["teetimes-by-facility-group", "tee-times/search", "teetime"]
-                async with (
-                    capture_response_any(page, tt_fragments, timeout=20) as tt_fut,
-                    capture_response(page, "hot-deals-zone", timeout=12) as hd_fut,
-                ):
-                    await page.goto(facility_url, wait_until="domcontentloaded")
-                    try:
-                        raw_tt = await asyncio.wait_for(asyncio.shield(tt_fut), timeout=15)
-                    except asyncio.TimeoutError:
-                        log.warning(f"  {course['name']}: timed out")
-                        continue
-                    try:
-                        raw_hd = await asyncio.wait_for(asyncio.shield(hd_fut), timeout=8)
-                    except asyncio.TimeoutError:
-                        raw_hd = None
+                try:
+                    async with page.expect_response(is_teetimes_resp, timeout=20_000) as tt_info:
+                        await page.goto(facility_url, wait_until="domcontentloaded")
+                    raw_tt = await (await tt_info.value).json()
+                except Exception as e:
+                    log.warning(f"  {course['name'][:40]}: tee times failed — {e}")
+                    continue
+
+                # Hot deals optional — best-effort only
+                raw_hd = None
+                try:
+                    async with page.expect_response(
+                        lambda r: "hot-deals" in r.url and r.status == 200, timeout=6_000
+                    ) as hd_info:
+                        pass  # already on the page, hot-deals fires alongside tee times
+                    raw_hd = await (await hd_info.value).json()
+                except Exception:
+                    pass
 
                 slots = parse_tee_times(raw_tt, raw_hd, course, date_str)
                 all_results.extend(slots)
