@@ -256,6 +256,58 @@ def filter_and_sort(
     return filtered
 
 
+def parse_tee_times_from_ttresults(ttresults: list, date_str: str) -> list[dict]:
+    """
+    Build tee time records from the courses-near-me ttResults list.
+    Each course contributes one record showing its earliest/cheapest slot.
+    Much faster than scraping individual facility pages.
+    """
+    slots = []
+    for c in ttresults:
+        try:
+            if c.get("isPriceRangeZero") or c.get("isTimeRangeZero"):
+                continue
+
+            min_price = c.get("minPrice") or 0
+            if not min_price or min_price <= 0:
+                continue
+
+            min_date = c.get("minDate") or {}
+            tee_time = min_date.get("formatted", "")
+
+            rating = float(c.get("averageRating") or 0)
+            dist_raw = c.get("distance")
+            dist = float(dist_raw) if isinstance(dist_raw, (int, float)) else None
+
+            addr = c.get("address") or {}
+            address_str = ", ".join(filter(None, [
+                addr.get("city") if isinstance(addr, dict) else None,
+                addr.get("stateProvince") if isinstance(addr, dict) else None,
+            ]))
+
+            fid = c.get("id")
+            slots.append({
+                "date": date_str,
+                "tee_time": tee_time,
+                "course_name": c.get("name") or "Unknown course",
+                "facility_id": fid,
+                "course_rating": rating,
+                "course_review_count": c.get("numberOfReviews") or 0,
+                "course_address": address_str,
+                "distance_miles": dist,
+                "holes": 18,
+                "max_players": 4,
+                "price_gbp": float(min_price),
+                "is_hot_deal": bool(c.get("hasHotDeal")),
+                "rate_type": "Best Available",
+                "booking_url": f"{BASE_URL}/tee-times/facility/{fid}/search",
+                "scraped_date": date.today().isoformat(),
+            })
+        except Exception as e:
+            log.debug(f"Skipping course: {e}")
+    return slots
+
+
 async def _wait_for_json(page, url_fragment: str, timeout_secs: int = 30) -> dict | list | None:
     """
     Register a response listener, wait for a response whose URL contains url_fragment,
@@ -297,9 +349,7 @@ async def scrape_date(
     holes: str = DEFAULT_HOLES,
     min_rating: float = DEFAULT_MIN_RATING,
 ) -> list[dict]:
-    """Scrape all tee times near a location for a given date."""
-    all_results: list[dict] = []
-
+    """Scrape tee time summaries near a location for a given date using courses-near-me only."""
     async with async_playwright() as p:
         browser = await p.chromium.connect_over_cdp(
             f"wss://{browser_auth}@brd.superproxy.io:9222"
@@ -312,7 +362,6 @@ async def scrape_date(
                 lambda route: route.abort(),
             )
 
-            # Phase 1: get course list
             search_url = (
                 f"{BASE_URL}/tee-times/search"
                 f"#sortby=featured&view=course&holes={holes}"
@@ -321,48 +370,20 @@ async def scrape_date(
                 f"&lat={lat}&lng={lng}&radius={radius}"
             )
 
-            # Start listener before navigation so we don't miss the response
             courses_task = asyncio.create_task(
                 _wait_for_json(page, "courses-near-me", timeout_secs=35)
             )
             await page.goto(search_url, wait_until="domcontentloaded")
-            raw_courses = await courses_task
+            raw = await courses_task
 
-            if raw_courses is None:
+            if not raw:
+                log.warning(f"{date_str}: no courses-near-me response")
                 return []
 
-            courses = parse_courses(raw_courses, min_rating=min_rating)
-            log.info(f"{date_str}: {len(courses)} courses")
-
-            # Phase 2: tee times per course
-            for course in courses:
-                fid = course["facility_id"]
-                if not fid:
-                    continue
-
-                facility_url = (
-                    f"{BASE_URL}/tee-times/facility/{fid}/search"
-                    f"#facilitytype=GolfCourse&holes={holes}"
-                    f"&timemax={time_max}&timemin={time_min}"
-                    f"&players={players}&date={date_str}"
-                )
-
-                tt_task = asyncio.create_task(
-                    _wait_for_json(page, "teetimes-by-facility-group", timeout_secs=20)
-                )
-                await page.goto(facility_url, wait_until="domcontentloaded")
-                raw_tt = await tt_task
-
-                if raw_tt is None:
-                    log.warning(f"  {course['name'][:40]}: no tee times response")
-                    continue
-
-                slots = parse_tee_times(raw_tt, None, course, date_str)
-                all_results.extend(slots)
-                log.info(f"  {course['name'][:45]}: {len(slots)} slots")
-                await asyncio.sleep(0.3)
+            ttresults = raw.get("ttResults") or []
+            slots = parse_tee_times_from_ttresults(ttresults, date_str)
+            log.info(f"{date_str}: {len(slots)} slots from {len(ttresults)} courses")
+            return slots
 
         finally:
             await browser.close()
-
-    return all_results

@@ -34,7 +34,7 @@ async def main():
         json.dump({"tee_times": [], "scraped_at": None, "error": "BROWSER_AUTH not set"}, sys.stdout)
         sys.exit(1)
 
-    dates = get_upcoming_weekends(4)
+    dates = get_upcoming_weekends(1)  # just the next weekend (Sat + Sun)
     eprint(f"Dates to scrape: {dates}")
 
     all_results = []
