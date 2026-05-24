@@ -1759,7 +1759,25 @@ function renderFixtures(fixtures) {
     }
     const badgeH = f.homeCode ? `<img class="fixture-badge" src="https://resources.premierleague.com/premierleague/badges/t${f.homeCode}.png" loading="lazy" onerror="this.style.display='none'" alt="">` : '';
     const badgeA = f.awayCode ? `<img class="fixture-badge" src="https://resources.premierleague.com/premierleague/badges/t${f.awayCode}.png" loading="lazy" onerror="this.style.display='none'" alt="">` : '';
-    return `<div class="fixture-chip cup-press" id="${fid}" onclick="toggleFixture('${fid}')"
+    // Only expand upcoming fixtures that have odds — finished fixtures have nothing new to show
+    const hasExpandContent = !f.finished && odds && odds.h != null && odds.a != null;
+    let expandHTML = '';
+    if (hasExpandContent) {
+      const pH = Math.round(100 / odds.h);
+      const pD = odds.d ? Math.round(100 / odds.d) : 0;
+      const pA = Math.round(100 / odds.a);
+      expandHTML = `<div class="fixture-expand" id="${fid}-expand">
+        <div class="fixture-expand-inner">
+          <div class="fixture-expand-body">
+            <div class="fixture-expand-row">
+              <span>Win probability</span>
+              <span style="font-family:var(--f-m);font-size:12px">${pH}% · ${pD}% · ${pA}%</span>
+            </div>
+          </div>
+        </div>
+      </div>`;
+    }
+    return `<div class="fixture-chip${hasExpandContent ? ' cup-press' : ''}" id="${fid}"${hasExpandContent ? ` onclick="toggleFixture('${fid}')"` : ''}
       style="animation-delay:${i*40}ms">
       <div class="fixture-chip-row">
         <div class="fixture-teams">
@@ -1771,22 +1789,7 @@ function renderFixtures(fixtures) {
           ${oddsHTML}
         </div>
       </div>
-      <div class="fixture-expand" id="${fid}-expand">
-        <div class="fixture-expand-inner">
-          <div class="fixture-expand-body">
-            <div class="fixture-expand-row">
-              <span>Kickoff</span><span style="font-family:var(--f-m);font-size:12px">${timeStr}</span>
-            </div>
-            ${f.score ? `<div class="fixture-expand-row">
-              <span>Result</span><span style="font-family:var(--f-m);font-size:12px;font-weight:700">${f.home} ${f.score} ${f.away}</span>
-            </div>` : ''}
-            ${odds && !f.score ? `<div class="fixture-expand-row" style="margin-top:4px">
-              <span>Odds (H · D · A)</span>
-              <span style="font-family:var(--f-m);font-size:12px">${odds.h?.toFixed(2) ?? '—'} · ${odds.d?.toFixed(2) ?? '—'} · ${odds.a?.toFixed(2) ?? '—'}</span>
-            </div>` : ''}
-          </div>
-        </div>
-      </div>
+      ${expandHTML}
     </div>`;
   }).join('');
 }
@@ -1882,7 +1885,7 @@ function renderFPL(fpl) {
     const sizeW = isBench ? 36 : 42;
     // Use FPL shirt image; fall back to club-colour square on error
     const shirtUrl = p.teamCode
-      ? `https://fantasy.premierleague.com/dist/img/shirts/standard/shirt_${p.teamCode}-35.png`
+      ? `https://fantasy.premierleague.com/dist/img/shirts/standard/shirt_${p.teamCode}-66.png`
       : '';
     const kitInner = shirtUrl
       ? `<img src="${shirtUrl}" width="${sizeW}" height="${sizeW}" style="object-fit:contain;display:block" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">`
