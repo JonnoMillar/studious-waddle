@@ -1215,10 +1215,45 @@ body {
   .headlines-field { grid-template-columns: 1fr 1fr; }
   .hero-inner { flex-direction: column; }
   .hero-weather-panel { text-align: left; min-width: 0; border-left: none; border-top: 1px solid var(--line); width: 100%; align-items: flex-start; padding: 16px 28px; }
+  .hero-right { text-align: left; min-width: 0; width: 100%; }
+  .hero-weather-row { justify-content: flex-start; }
   .fpl-stats-row { gap: 12px; }
   .fpl-stat-value { font-size: 28px; }
   .markets-grid { grid-template-columns: 1fr 1fr; }
   .fixtures-grid { grid-template-columns: 1fr; }
+  .fpl-pitch { padding: 16px 8px 14px; overflow-x: auto; }
+  .pitch-relative { min-width: 320px; }
+}
+
+@media (max-width: 480px) {
+  /* Hero */
+  .hero-temp { font-size: 52px; letter-spacing: -2px; }
+  .hero-h1   { font-size: 26px; letter-spacing: -1px; }
+  /* Companies carousel */
+  .co-featured-name { font-size: 30px; letter-spacing: -1px; }
+  .co-featured-pct  { font-size: 26px; letter-spacing: -0.5px; }
+  .co-featured-desc { font-size: 15px; }
+  /* FPL header */
+  .fpl-team-name     { font-size: 24px; }
+  .fpl-stat-value    { font-size: 22px; }
+  .fpl-stat-value.sm { font-size: 18px; }
+  /* FPL pitch — shrink chips so 5 defenders fit ~375px */
+  .player-chip        { width: 52px; }
+  .player-chip.bench  { width: 44px; }
+  .player-kit         { width: 34px !important; height: 34px !important; }
+  .player-kit-initial { font-size: 12px; }
+  .player-name        { font-size: 10px; max-width: 52px; }
+  .player-pts         { font-size: 9px; padding: 1px 4px; }
+  /* Portfolio detail — just show name + value */
+  .port-detail-row   { grid-template-columns: 1fr auto; }
+  .port-detail-units,
+  .port-detail-price { display: none; }
+  /* Headlines */
+  #hl-carousel { min-height: 200px; }
+  .hl-item-title { font-size: 15px; }
+  .hl-item.featured .hl-item-title { font-size: 16px; }
+  /* Markets */
+  .market-value { font-size: 18px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
