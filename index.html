@@ -483,238 +483,6 @@ body {
 }
 
 /* ════════════════════════════════════════════════════════════════════
-   FPL
-   ════════════════════════════════════════════════════════════════════ */
-#fpl-card {
-  padding: 24px 28px;
-  grid-column: 1 / -1;
-}
-.fpl-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin-bottom: 18px;
-  flex-wrap: wrap;
-  gap: 16px;
-}
-.fpl-title-block {}
-.fpl-team-name {
-  font-family: var(--f-s);
-  font-size: 36px;
-  font-weight: 600;
-  color: var(--ink);
-  letter-spacing: -1px;
-  line-height: 1;
-}
-.fpl-gw-note {
-  font-family: var(--f-s);
-  font-size: 13px;
-  color: var(--ink3);
-  margin-top: 4px;
-}
-.fpl-stats-row {
-  display: flex;
-  gap: 22px;
-  align-items: flex-end;
-}
-.fpl-stat {
-  text-align: right;
-}
-.fpl-stat-label {
-  font-family: var(--f-s);
-  font-size: 11px;
-  color: var(--ink3);
-  letter-spacing: 0.4px;
-  text-transform: uppercase;
-}
-.fpl-stat-value {
-  font-family: var(--f-s);
-  font-size: 36px;
-  font-weight: 600;
-  color: var(--ink);
-  letter-spacing: -1px;
-  line-height: 1;
-  font-variant-numeric: tabular-nums;
-}
-.fpl-stat-value.gw-pts { color: var(--green); }
-.fpl-stat-value.sm {
-  font-size: 24px;
-  letter-spacing: -0.5px;
-}
-
-/* PITCH */
-.fpl-pitch {
-  background: linear-gradient(180deg, rgba(31,138,91,0.04), rgba(31,138,91,0.08));
-  border-radius: 18px;
-  padding: 24px 16px 18px;
-  margin-bottom: 14px;
-  overflow: hidden;
-  position: relative;
-}
-.pitch-lines-svg {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-}
-.pitch-relative {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-}
-.pitch-row {
-  display: flex;
-  justify-content: space-around;
-}
-.pitch-row.mid-row   { padding: 0 30px; }
-.pitch-row.fwd-row   { padding: 0 20px; }
-
-/* Player chip */
-.player-chip {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 4px;
-  width: 70px;
-  position: relative;
-  cursor: pointer;
-  transition: transform .2s cubic-bezier(.2,.7,.3,1);
-}
-.player-chip.bench {
-  width: 60px;
-  opacity: 0.75;
-}
-.player-chip:hover { transform: translateY(-3px); }
-.player-kit {
-  border-radius: 10px;
-  width: 42px; height: 42px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-}
-.player-chip.bench .player-kit {
-  width: 36px; height: 36px;
-}
-.player-kit-initial {
-  font-family: var(--f-s);
-  font-size: 15px;
-  font-weight: 700;
-  color: #fff;
-  text-shadow: 0 1px 2px rgba(0,0,0,0.3);
-  letter-spacing: 0.3px;
-}
-.player-chip.bench .player-kit-initial { font-size: 13px; }
-.player-cap-badge {
-  position: absolute;
-  top: -5px; right: -5px;
-  width: 18px; height: 18px;
-  border-radius: 50%;
-  font-family: var(--f-s);
-  font-size: 10px;
-  font-weight: 700;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
-  color: #fff;
-}
-.player-cap-badge.cap { background: var(--cup-accent); }
-.player-cap-badge.vc  { background: var(--ink2); }
-.player-name {
-  font-family: var(--f-s);
-  font-size: 12px;
-  font-weight: 600;
-  color: var(--ink);
-  line-height: 1;
-  margin-top: 2px;
-  max-width: 70px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  text-align: center;
-}
-.player-chip.bench .player-name { font-size: 11px; }
-.player-pts-row {
-  display: flex;
-  align-items: center;
-  gap: 4px;
-  margin-top: 1px;
-}
-.player-pts {
-  font-family: var(--f-m);
-  font-size: 11px;
-  font-weight: 600;
-  color: #fff;
-  border-radius: 5px;
-  padding: 1px 6px;
-  font-variant-numeric: tabular-nums;
-}
-
-/* Bench + meta */
-.fpl-bench-section {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 24px;
-  flex-wrap: wrap;
-}
-.fpl-bench-label {
-  font-family: var(--f-s);
-  font-size: 11px;
-  color: var(--ink3);
-  letter-spacing: 0.4px;
-  text-transform: uppercase;
-  margin-bottom: 10px;
-}
-.fpl-bench-row { display: flex; gap: 14px; }
-.fpl-meta-row {
-  display: flex;
-  gap: 18px;
-  align-items: flex-end;
-}
-.fpl-meta-stat {
-  text-align: center;
-}
-.fpl-meta-stat-label {
-  font-family: var(--f-s);
-  font-size: 11px;
-  color: var(--ink3);
-  letter-spacing: 0.4px;
-  text-transform: uppercase;
-}
-.fpl-meta-stat-value {
-  font-family: var(--f-s);
-  font-size: 20px;
-  font-weight: 600;
-  color: var(--ink);
-  letter-spacing: -0.3px;
-}
-.fpl-mini-league {
-  text-align: center;
-  padding: 4px 14px;
-  background: rgba(42,111,219,0.08);
-  border-radius: 10px;
-}
-.fpl-ml-name {
-  font-family: var(--f-s);
-  font-size: 10px;
-  color: var(--cup-accent);
-  letter-spacing: 0.4px;
-  text-transform: uppercase;
-  font-weight: 600;
-}
-.fpl-ml-rank {
-  font-family: var(--f-s);
-  font-size: 18px;
-  font-weight: 600;
-  color: var(--ink);
-  letter-spacing: -0.3px;
-}
-
-/* ════════════════════════════════════════════════════════════════════
    GOLF
    ════════════════════════════════════════════════════════════════════ */
 #golf-card {
@@ -1334,24 +1102,6 @@ body {
     <div class="co-nav" id="co-nav"></div>
   </div>
 
-  <!-- FPL -->
-  <div class="card hover-lift cup-reveal" id="fpl-card">
-    <div class="fpl-header">
-      <div class="fpl-title-block">
-        <div class="eyebrow" style="margin-bottom:6px">Fantasy Premier League</div>
-        <div class="fpl-team-name" id="fpl-team-name">—</div>
-        <div class="fpl-gw-note" id="fpl-gw-note"></div>
-      </div>
-      <div class="fpl-stats-row" id="fpl-stats-row">
-        <div class="skel" style="width:180px;height:60px;border-radius:10px"></div>
-      </div>
-    </div>
-    <div id="fpl-pitch-wrap">
-      <div class="skel" style="height:320px;border-radius:18px;margin-bottom:14px"></div>
-    </div>
-    <div id="fpl-bench-wrap"></div>
-  </div>
-
   <!-- FOOTER -->
   <div class="brief-footer">Live data · Golf cache refreshes Thu &amp; Sat · Made for Jonno</div>
 
@@ -1377,13 +1127,7 @@ const INDEX_PLACEHOLDERS = {
   'Bitcoin':  { value: 57000,   decimals: 0 },
 };
 
-const CLUB_COLOR = {
-  ARS: '#e8253c', AVL: '#7a003c', BOU: '#d4112f', BRE: '#e30613', BHA: '#0057b8',
-  CHE: '#034694', CRY: '#1b458f', EVE: '#003399', FUL: '#222222', LEI: '#003090',
-  LIV: '#c8102e', MCI: '#6cabdd', MUN: '#da291c', NEW: '#241f20', NFO: '#dd0000',
-  SHU: '#ee2737', SOU: '#d71920', SUN: '#eb172b', TOT: '#132257', WHU: '#7a263a',
-  WOL: '#fdb913',
-};
+const CLUB_COLOR = {};
 
 let GBPUSD = 1.27;
 
@@ -1613,7 +1357,7 @@ async function getServerData() {
     const r = await fetch('/api/data');
     _serverData = await r.json();
   } catch (_) {
-    _serverData = { prices: {}, news: {}, fixtures: [], fplTeam: null, golf: null };
+    _serverData = { prices: {}, news: {}, fixtures: [], golf: null };
   }
   return _serverData;
 }
@@ -1810,140 +1554,6 @@ function toggleFixture(fid) {
   expand.classList.toggle('open', !isOpen);
   chip.classList.toggle('is-open', !isOpen);
   openFixtureId = isOpen ? null : fid;
-}
-
-// ════════════════════════════════════════════════════════════════════
-// FPL
-// ════════════════════════════════════════════════════════════════════
-function renderFPL(fpl) {
-  if (!fpl) {
-    document.getElementById('fpl-team-name').textContent = 'No FPL data';
-    document.getElementById('fpl-stats-row').innerHTML = '';
-    document.getElementById('fpl-pitch-wrap').innerHTML = '';
-    return;
-  }
-
-  // Header
-  document.getElementById('fpl-team-name').textContent = fpl.teamName;
-  document.getElementById('fpl-gw-note').textContent = `GW${fpl.gw} · ${fpl.gwRank ? 'Final' : 'Live'}`;
-
-  // Stats
-  const statsEl = document.getElementById('fpl-stats-row');
-  const rankK = fpl.overallRank ? Math.round(fpl.overallRank / 1000) : null;
-  statsEl.innerHTML = `
-    <div class="fpl-stat">
-      <div class="fpl-stat-label">GW</div>
-      <div class="fpl-stat-value gw-pts" id="fpl-gw-pts">—</div>
-    </div>
-    <div class="fpl-stat">
-      <div class="fpl-stat-label">Total</div>
-      <div class="fpl-stat-value sm" id="fpl-total-pts">—</div>
-    </div>
-    <div class="fpl-stat">
-      <div class="fpl-stat-label">Rank</div>
-      <div class="fpl-stat-value sm" id="fpl-rank">—</div>
-    </div>`;
-
-  // Count-up stats with IO
-  [
-    ['fpl-gw-pts', fpl.gwPoints, { decimals: 0, dur: 1300 }],
-    ['fpl-total-pts', fpl.overallPoints, { decimals: 0, dur: 1500 }],
-    ['fpl-rank', fpl.overallRank, { decimals: 0, dur: 1500, format: n => Math.round(n / 1000) + 'k' }],
-  ].forEach(([id, val, opts]) => {
-    const el = document.getElementById(id);
-    if (!el) return;
-    const io = new IntersectionObserver(entries => {
-      entries.forEach(e => {
-        if (e.isIntersecting) { countUp(el, val, opts); io.unobserve(el); }
-      });
-    }, { threshold: 0.1 });
-    io.observe(el);
-  });
-
-  // Pitch
-  const starting = fpl.picks.filter(p => p.slot <= 11).sort((a, b) => a.slot - b.slot);
-  const bench    = fpl.picks.filter(p => p.slot > 11).sort((a, b) => a.slot - b.slot);
-  const gk  = starting.filter(p => p.pos === 1);
-  const def = starting.filter(p => p.pos === 2);
-  const mid = starting.filter(p => p.pos === 3);
-  const fwd = starting.filter(p => p.pos === 4);
-
-  function playerChipHTML(p, isBench) {
-    const club    = CLUB_COLOR[p.team] || '#888';
-    // Points colouring
-    const pts = p.points || 0;
-    const ptsBg = pts >= 8 ? 'var(--green)'
-                : pts >= 4 ? '#3a6a4a'
-                : pts >= 1 ? 'var(--ink2)'
-                : 'rgba(26,24,22,0.25)';
-    const capBadge = p.isCap ? `<div class="player-cap-badge cap">C</div>`
-                   : p.isVC  ? `<div class="player-cap-badge vc">V</div>`
-                   : '';
-    const borderStyle = p.isCap ? `border: 2.5px solid var(--cup-accent)`
-                      : p.isVC  ? `border: 2px solid var(--ink2)`
-                      : '';
-    const sizeW = isBench ? 36 : 42;
-    // Use FPL shirt image; fall back to club-colour square on error
-    const shirtUrl = p.teamCode
-      ? `https://fantasy.premierleague.com/dist/img/shirts/standard/shirt_${p.teamCode}-66.png`
-      : '';
-    const kitInner = shirtUrl
-      ? `<img src="${shirtUrl}" width="${sizeW}" height="${sizeW}" style="object-fit:contain;display:block" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">`
-        + `<span class="player-kit-initial" style="display:none">${(p.name||'?')[0].toUpperCase()}</span>`
-      : `<span class="player-kit-initial">${(p.name||'?')[0].toUpperCase()}</span>`;
-    return `<div class="player-chip${isBench ? ' bench' : ''}">
-      <div class="player-kit" style="width:${sizeW}px;height:${sizeW}px;background:linear-gradient(180deg,${club} 0%,${club}cc 100%);box-shadow:inset 0 -2px 4px rgba(0,0,0,0.18),0 1px 3px rgba(0,0,0,0.10);${borderStyle}">
-        ${kitInner}
-        ${capBadge}
-      </div>
-      <div class="player-name">${p.name}</div>
-      <div class="player-pts-row">
-        <span class="player-pts" style="background:${ptsBg}">${p.isCap ? pts * 2 : pts}</span>
-      </div>
-    </div>`;
-  }
-
-  const pitchEl = document.getElementById('fpl-pitch-wrap');
-  pitchEl.innerHTML = `<div class="fpl-pitch">
-    <svg class="pitch-lines-svg" viewBox="0 0 600 380" preserveAspectRatio="none">
-      <g stroke="rgba(31,138,91,0.20)" fill="none" stroke-width="1">
-        <rect x="6" y="6" width="588" height="368" rx="6"/>
-        <line x1="6" y1="190" x2="594" y2="190"/>
-        <circle cx="300" cy="190" r="48"/>
-        <rect x="180" y="6" width="240" height="60"/>
-        <rect x="180" y="314" width="240" height="60"/>
-      </g>
-    </svg>
-    <div class="pitch-relative">
-      <div class="pitch-row">${gk.map(p => playerChipHTML(p, false)).join('')}</div>
-      <div class="pitch-row">${def.map(p => playerChipHTML(p, false)).join('')}</div>
-      <div class="pitch-row mid-row">${mid.map(p => playerChipHTML(p, false)).join('')}</div>
-      <div class="pitch-row fwd-row">${fwd.map(p => playerChipHTML(p, false)).join('')}</div>
-    </div>
-  </div>`;
-
-  // Bench + meta
-  const benchEl = document.getElementById('fpl-bench-wrap');
-  benchEl.innerHTML = `<div class="fpl-bench-section">
-    <div>
-      <div class="fpl-bench-label">Bench</div>
-      <div class="fpl-bench-row">${bench.map(p => playerChipHTML(p, true)).join('')}</div>
-    </div>
-    <div class="fpl-meta-row">
-      <div class="fpl-meta-stat">
-        <div class="fpl-meta-stat-label">Bench pts</div>
-        <div class="fpl-meta-stat-value">${fpl.pointsOnBench ?? '—'}</div>
-      </div>
-      <div class="fpl-meta-stat">
-        <div class="fpl-meta-stat-label">Transfers</div>
-        <div class="fpl-meta-stat-value">${fpl.eventTransfers ?? 0}${fpl.transferCost ? ` <span style="color:var(--red);font-size:12px">(${fpl.transferCost})</span>` : ''}</div>
-      </div>
-      <div class="fpl-meta-stat">
-        <div class="fpl-meta-stat-label">ITB</div>
-        <div class="fpl-meta-stat-value">£${fpl.bank ?? '—'}m</div>
-      </div>
-    </div>
-  </div>`;
 }
 
 // ════════════════════════════════════════════════════════════════════
@@ -2281,7 +1891,6 @@ async function init() {
   renderMarkets(data.prices || {});
   renderCompanies(data.prices || {});
   renderNews(data.news || {});
-  renderFPL(data.fplTeam || null);
   renderGolf(data.golf || null);
 
   // Fixtures: format kickoff times

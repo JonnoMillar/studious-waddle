@@ -105,17 +105,13 @@ export default async function handler(req, res) {
     'Bitcoin':   'BTC-USD',
     'Gold':      'GC=F',
     // Emerging Tech Companies
-    'Waymo':           'GOOGL',
-    'Perplexity AI':   'MSFT',
-    'Scale AI':        'NVDA',
-    'Neuralink':       'TSLA',
-    'CrowdStrike':     'CRWD',
-    'Palantir':        'PLTR',
+    // All featured companies are private — no exchange-traded tickers.
+    // Price chips are omitted in the UI for these; see renderCompanies() in index.html.
+    'CrowdStrike': 'CRWD',
+    'Palantir':    'PLTR',
   };
 
-  const FPL_TEAM_ID = 3079376;
-
-  const [priceEntries, newsEntries, fixtureResult, oddsMap, fplTeam] = await Promise.all([
+  const [priceEntries, newsEntries, fixtureResult, oddsMap] = await Promise.all([
 
     Promise.all(Object.entries(TICKERS).map(async ([name, ticker]) => {
       try {
@@ -192,70 +188,11 @@ export default async function handler(req, res) {
     })(),
 
     fetchOdds(),
-
-    (async () => {
-      try {
-        const [bsRes, entryRes] = await Promise.all([
-          fetch('https://fantasy.premierleague.com/api/bootstrap-static/'),
-          fetch(`https://fantasy.premierleague.com/api/entry/${FPL_TEAM_ID}/`),
-        ]);
-        const bootstrap = await bsRes.json();
-        const entry     = await entryRes.json();
-        const gw        = entry.current_event;
-        const [picks, liveRes] = await Promise.all([
-          fetch(`https://fantasy.premierleague.com/api/entry/${FPL_TEAM_ID}/event/${gw}/picks/`).then(r => r.json()),
-          fetch(`https://fantasy.premierleague.com/api/event/${gw}/live/`).then(r => r.json()),
-        ]);
-        const playersMap   = Object.fromEntries(bootstrap.elements.map(p => [p.id, p]));
-        const teamsMap     = Object.fromEntries(bootstrap.teams.map(t => [t.id, t.short_name]));
-        const teamCodesMap = Object.fromEntries(bootstrap.teams.map(t => [t.id, t.code]));
-        // Live GW points per player element id
-        const liveMap = Object.fromEntries((liveRes.elements || []).map(el => [el.id, el.stats.total_points]));
-        // Live GW team total: sum starting 11 with captain doubling
-        const liveGwPoints = picks.picks
-          .filter(p => p.position <= 11)
-          .reduce((sum, p) => sum + (liveMap[p.element] ?? 0) * (p.is_captain ? 2 : 1), 0);
-        return {
-          teamName:        entry.name,
-          overallRank:     entry.summary_overall_rank,
-          overallPoints:   entry.summary_overall_points,
-          gwPoints:        liveGwPoints,
-          gwRank:          picks.entry_history.rank,
-          bank:            (entry.last_deadline_bank  / 10).toFixed(1),
-          value:           (entry.last_deadline_value / 10).toFixed(1),
-          pointsOnBench:   picks.entry_history.points_on_bench ?? null,
-          eventTransfers:  picks.entry_history.event_transfers ?? 0,
-          transferCost:    picks.entry_history.event_transfers_cost ?? 0,
-          gw,
-          picks: picks.picks.map(p => {
-            const pl = playersMap[p.element] || {};
-            return {
-              name:     pl.web_name || '?',
-              team:     teamsMap[pl.team] || '?',
-              teamCode: teamCodesMap[pl.team] || null,
-              pos:      pl.element_type || 0,
-              slot:     p.position,
-              isCap:    p.is_captain,
-              isVC:     p.is_vice_captain,
-              points:   liveMap[p.element] ?? 0,
-              form:     pl.form || '0.0',
-              price:    ((pl.now_cost || 0) / 10).toFixed(1),
-              chance:   pl.chance_of_playing_next_round,
-            };
-          }),
-        };
-      } catch (_) { return null; }
-    })(),
   ]);
 
   const prices = Object.fromEntries(priceEntries);
 
-  // User holds Vanguard U.S. 500 Stock Index Fund USD Acc — NOT the VUSA.L ETF.
-  // Derive NAV from S&P 500 using calibrated ratio (5300 / $91.06 ≈ 58.2, May 2026).
-  const _US500_RATIO = 58.2;
-  if (prices['S&P 500']?.price) {
-    prices['US 500'] = { price: prices['S&P 500'].price / _US500_RATIO, change: prices['S&P 500'].change, currency: 'USD' };
-  }
+  // US 500: VUSA.L is the ETF proxy. % change is accurate; unit price differs from actual fund NAV.
 
   // Attach odds to fixtures
   const fixtures = fixtureResult.map(f => {
@@ -293,7 +230,6 @@ export default async function handler(req, res) {
     prices,
     news:     Object.fromEntries(newsEntries),
     fixtures,
-    fplTeam,
     golf,
   });
 }
