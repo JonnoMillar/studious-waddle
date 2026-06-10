@@ -607,6 +607,43 @@ body {
 }
 
 /* ════════════════════════════════════════════════════════════════════
+   WC FANTASY INSIGHTS
+   ════════════════════════════════════════════════════════════════════ */
+#wc-fantasy-card { padding: 22px 24px; }
+.wc-fantasy-section-label {
+  font-family: var(--f-s);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: var(--ink3);
+  margin: 14px 0 8px;
+}
+.wc-fantasy-section-label:first-child { margin-top: 0; }
+.wc-fantasy-row {
+  display: flex;
+  align-items: center;
+  padding: 5px 6px;
+  border-bottom: 1px solid var(--line);
+  border-radius: 6px;
+}
+.wc-fantasy-row:last-child { border-bottom: none; }
+.wc-fantasy-rank { font-family: var(--f-m); font-size: 11px; color: var(--ink3); width: 16px; flex-shrink: 0; }
+.wc-fantasy-name {
+  font-family: var(--f-s); font-size: 13px; color: var(--ink); font-weight: 500;
+  flex: 1; padding: 0 8px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.wc-fantasy-squad {
+  font-family: var(--f-m); font-size: 10px; color: var(--ink3);
+  background: rgba(26,24,22,0.05); padding: 2px 6px; border-radius: 99px; flex-shrink: 0;
+}
+.wc-fantasy-val {
+  font-family: var(--f-m); font-size: 12px; font-weight: 600; color: var(--ink);
+  margin-left: 8px; flex-shrink: 0; font-variant-numeric: tabular-nums;
+}
+.wc-fantasy-val.green { color: var(--green); }
+
+/* ════════════════════════════════════════════════════════════════════
    GOLF
    ════════════════════════════════════════════════════════════════════ */
 #golf-card {
@@ -1207,7 +1244,16 @@ body {
     </div>
   </div>
 
-  <!-- WC FANTASY INSIGHTS (span 4) — added Task 5 -->
+  <!-- WC FANTASY INSIGHTS (span 4) -->
+  <div class="card cup-reveal" id="wc-fantasy-card">
+    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:4px">
+      <span class="eyebrow" style="margin-bottom:0">WC Fantasy</span>
+      <span id="wc-fantasy-round" style="font-family:var(--f-m);font-size:11px;color:var(--ink3)"></span>
+    </div>
+    <div id="wc-fantasy-body">
+      <div class="skel" style="height:180px;border-radius:10px;margin-top:12px"></div>
+    </div>
+  </div>
 
   <!-- COMPANIES TO WATCH (span 12) -->
   <div class="card cup-reveal" id="companies-card">
@@ -1757,6 +1803,46 @@ function renderWorldCup(wc) {
 }
 
 // ════════════════════════════════════════════════════════════════════
+// WC FANTASY INSIGHTS
+// ════════════════════════════════════════════════════════════════════
+function renderWcFantasy(data) {
+  const body    = document.getElementById('wc-fantasy-body');
+  const roundEl = document.getElementById('wc-fantasy-round');
+  if (!body) return;
+
+  if (!data || data.error || (!data.topScorers?.length && !data.bestValue?.length)) {
+    body.innerHTML = '<p style="color:var(--ink3);font-size:13px;padding:12px 0">Fantasy data unavailable.</p>';
+    return;
+  }
+
+  if (roundEl) roundEl.textContent = data.roundName || '';
+
+  const scorerLabel = data.preTournament ? 'Most Expensive' : 'Top Scorers';
+
+  let html = `<div class="wc-fantasy-section-label">${scorerLabel}</div>`;
+  html += (data.topScorers || []).map((p, i) => `
+    <div class="wc-fantasy-row cup-row">
+      <span class="wc-fantasy-rank">${i + 1}</span>
+      <span class="wc-fantasy-name">${p.name}</span>
+      <span class="wc-fantasy-squad">${p.squad}</span>
+      <span class="wc-fantasy-val">${p.label}</span>
+    </div>`).join('');
+
+  if (!data.preTournament && data.bestValue?.length) {
+    html += `<div class="wc-fantasy-section-label">Best Value · pts / $1m</div>`;
+    html += data.bestValue.map((p, i) => `
+      <div class="wc-fantasy-row cup-row">
+        <span class="wc-fantasy-rank">${i + 1}</span>
+        <span class="wc-fantasy-name">${p.name}</span>
+        <span class="wc-fantasy-squad">${p.squad}</span>
+        <span class="wc-fantasy-val green">${p.ratio}</span>
+      </div>`).join('');
+  }
+
+  body.innerHTML = html;
+}
+
+// ════════════════════════════════════════════════════════════════════
 // GOLF
 // ════════════════════════════════════════════════════════════════════
 function renderGolf(golf) {
@@ -2080,8 +2166,11 @@ async function init() {
   // Start weather fetch (independent)
   fetchWeather();
 
-  // Fetch server data
-  const data = await getServerData();
+  // Fetch main data and WC fantasy in parallel
+  const [data, wcFantasyData] = await Promise.all([
+    getServerData(),
+    fetch('/api/wc-fantasy').then(r => r.json()).catch(() => null),
+  ]);
 
   // FX rate
   if (data.prices?.['FX_GBPUSD']?.price) GBPUSD = data.prices['FX_GBPUSD'].price;
@@ -2093,6 +2182,7 @@ async function init() {
   renderNews(data.news || {});
   renderGolf(data.golf || null);
   renderWorldCup(data.worldCup || {});
+  renderWcFantasy(wcFantasyData);
 
   // Weather shine — sweeps the whole page when hovering the temperature area
   (function initShine() {
