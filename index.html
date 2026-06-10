@@ -44,7 +44,7 @@ body {
   margin: 0 auto;
   padding: 28px 36px 56px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(12, 1fr);
   gap: 14px;
 }
 
@@ -289,7 +289,7 @@ body {
 /* ════════════════════════════════════════════════════════════════════
    PORTFOLIO STRIP
    ════════════════════════════════════════════════════════════════════ */
-#portfolio-strip { padding: 22px 24px; cursor: default; grid-column: span 3; }
+#portfolio-strip { padding: 22px 24px; cursor: default; grid-column: span 7; }
 .port-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; }
 .port-total-hint { font-size: 11px; color: var(--ink3); font-family: var(--f-s); }
 .port-fund-chips { display: flex; gap: 10px; }
@@ -346,7 +346,7 @@ body {
    ════════════════════════════════════════════════════════════════════ */
 #markets-card {
   padding: 24px 28px;
-  grid-column: span 3;
+  grid-column: span 7;
 }
 .markets-grid {
   display: grid;
@@ -384,7 +384,7 @@ body {
    ════════════════════════════════════════════════════════════════════ */
 #fixtures-card {
   padding: 24px 28px;
-  grid-column: span 2;
+  grid-column: span 8;
   align-self: start;
 }
 #golf-card { align-self: start; }
@@ -487,7 +487,15 @@ body {
    ════════════════════════════════════════════════════════════════════ */
 #golf-card {
   padding: 22px 24px;
+  grid-column: span 5;
+  align-self: start;
 }
+
+/* Placeholder rules for new sections — filled in by Tasks 4–7 */
+#wc-fixtures-card  { grid-column: span 8; align-self: start; }
+#wc-fantasy-card   { grid-column: span 4; align-self: start; }
+#calendar-card     { grid-column: span 5; align-self: start; }
+#spotify-card      { grid-column: span 4; align-self: stretch; }
 .golf-two-col {
   display: grid;
   grid-template-columns: 1fr;
@@ -645,7 +653,7 @@ body {
    ════════════════════════════════════════════════════════════════════ */
 #headlines-card {
   padding: 22px 28px 20px;
-  grid-column: 1 / -1;
+  grid-column: span 8;
 }
 .hl-masthead {
   display: flex;
@@ -972,19 +980,18 @@ body {
    ════════════════════════════════════════════════════════════════════ */
 @media (max-width: 900px) {
   .wrap { padding: 20px 20px 48px; grid-template-columns: 1fr 1fr; gap: 12px; }
-  #markets-card { grid-column: 1 / -1; }
-  #fixtures-card { grid-column: span 1; }
+  #hero-card, #headlines-card, #markets-card, #companies-card,
+  #portfolio-strip, #wc-fixtures-card, #fixtures-card,
+  #spotify-card, #calendar-card, #wc-fantasy-card,
+  #golf-card { grid-column: 1 / -1; }
   .hero-h1 { font-size: clamp(28px, 6vw, 48px); }
   .markets-grid { grid-template-columns: repeat(3, 1fr); }
 }
 @media (max-width: 640px) {
   .wrap { grid-template-columns: 1fr; padding: 14px 14px 40px; gap: 10px; }
-  #portfolio-strip, #markets-card, #fixtures-card, #golf-card { grid-column: 1 / -1; }
-  .headlines-field { grid-template-columns: 1fr 1fr; }
+  .wrap > .card { grid-column: 1 / -1 !important; }
   .hero-inner { flex-direction: column; }
   .hero-weather-panel { text-align: left; min-width: 0; border-left: none; border-top: 1px solid var(--line); width: 100%; align-items: flex-start; padding: 16px 28px; }
-  .fpl-stats-row { gap: 12px; }
-  .fpl-stat-value { font-size: 28px; }
   .markets-grid { grid-template-columns: 1fr 1fr; }
   .fixtures-grid { grid-template-columns: 1fr; }
 }
@@ -1005,7 +1012,7 @@ body {
 
 <div class="wrap">
 
-  <!-- HERO -->
+  <!-- HERO (span 12) -->
   <div class="card cup-reveal" id="hero-card">
     <div class="hero-blob1" id="hero-blob1"></div>
     <div class="hero-blob2" id="hero-blob2"></div>
@@ -1028,7 +1035,7 @@ body {
     </div>
   </div>
 
-  <!-- HEADLINES (near top) -->
+  <!-- HEADLINES (span 8) -->
   <div class="card cup-reveal" id="headlines-card">
     <div class="hl-masthead">
       <div class="hl-masthead-title">Headlines</div>
@@ -1039,29 +1046,11 @@ body {
     </div>
   </div>
 
-  <!-- FIXTURES -->
-  <div class="card hover-lift cup-reveal" id="fixtures-card">
-    <div class="fixtures-header">
-      <div class="eyebrow" style="margin-bottom:0">Fixtures · Premier League</div>
-      <span class="fixtures-subtitle" id="fixtures-subtitle"></span>
-    </div>
-    <div class="fixtures-grid" id="fixtures-grid">
-      <div class="skel" style="height:72px"></div>
-      <div class="skel" style="height:72px"></div>
-      <div class="skel" style="height:72px"></div>
-      <div class="skel" style="height:72px"></div>
-    </div>
-  </div>
+  <!-- SPOTIFY (span 4) — added Task 7 -->
 
-  <!-- GOLF -->
-  <div class="card hover-lift cup-reveal" id="golf-card">
-    <div class="eyebrow">Golf · Tee Times</div>
-    <div id="golf-body">
-      <div class="skel" style="height:200px;border-radius:16px"></div>
-    </div>
-  </div>
+  <!-- CALENDAR (span 5) — added Task 6 -->
 
-  <!-- PORTFOLIO STRIP -->
+  <!-- PORTFOLIO STRIP (span 7) -->
   <div class="card hover-lift cup-reveal" id="portfolio-strip">
     <div class="port-header">
       <span class="eyebrow" style="margin-bottom:0">Portfolio</span>
@@ -1077,7 +1066,35 @@ body {
     </div>
   </div>
 
-  <!-- MARKETS -->
+  <!-- WC FIXTURES (span 8) — becomes #wc-fixtures-card in Task 4; keeping id for now -->
+  <div class="card hover-lift cup-reveal" id="fixtures-card">
+    <div class="fixtures-header">
+      <div class="eyebrow" style="margin-bottom:0">Fixtures · Premier League</div>
+      <span class="fixtures-subtitle" id="fixtures-subtitle"></span>
+    </div>
+    <div class="fixtures-grid" id="fixtures-grid">
+      <div class="skel" style="height:72px"></div>
+      <div class="skel" style="height:72px"></div>
+      <div class="skel" style="height:72px"></div>
+      <div class="skel" style="height:72px"></div>
+    </div>
+  </div>
+
+  <!-- WC FANTASY INSIGHTS (span 4) — added Task 5 -->
+
+  <!-- COMPANIES TO WATCH (span 12) -->
+  <div class="card cup-reveal" id="companies-card">
+    <div class="co-masthead">
+      <span class="eyebrow" style="margin-bottom:0">Companies to Watch</span>
+      <span class="co-counter" id="co-counter"></span>
+    </div>
+    <div id="co-stage">
+      <div class="skel" style="height:130px;border-radius:12px;margin-top:20px"></div>
+    </div>
+    <div class="co-nav" id="co-nav"></div>
+  </div>
+
+  <!-- MARKETS (span 7) -->
   <div class="card hover-lift cup-reveal" id="markets-card">
     <div class="eyebrow">Markets</div>
     <div class="markets-grid" id="markets-grid">
@@ -1090,16 +1107,12 @@ body {
     </div>
   </div>
 
-  <!-- COMPANIES TO WATCH -->
-  <div class="card cup-reveal" id="companies-card">
-    <div class="co-masthead">
-      <span class="eyebrow" style="margin-bottom:0">Companies to Watch</span>
-      <span class="co-counter" id="co-counter"></span>
+  <!-- GOLF (span 5) -->
+  <div class="card hover-lift cup-reveal" id="golf-card">
+    <div class="eyebrow">Golf · Tee Times</div>
+    <div id="golf-body">
+      <div class="skel" style="height:200px;border-radius:16px"></div>
     </div>
-    <div id="co-stage">
-      <div class="skel" style="height:130px;border-radius:12px;margin-top:20px"></div>
-    </div>
-    <div class="co-nav" id="co-nav"></div>
   </div>
 
   <!-- FOOTER -->
