@@ -1663,8 +1663,8 @@ function renderGolf(golf) {
 // ════════════════════════════════════════════════════════════════════
 // HEADLINES EDITORIAL
 // ════════════════════════════════════════════════════════════════════
-const CAT_SOURCES = { 'AI': 'VentureBeat', 'Tech': 'Ars Technica', 'World': 'BBC News', 'Premier League': 'BBC Sport' };
-const CAT_COLORS  = { 'AI': '#d97757', 'Tech': '#5e8a64', 'World': '#2a6fdb', 'Premier League': '#1f8a5b' };
+const CAT_SOURCES = { 'AI': 'TechCrunch · The Verge', 'Tech': 'Ars Technica', 'World': 'BBC News', 'Football': 'BBC Sport · FIFA' };
+const CAT_COLORS  = { 'AI': '#d97757', 'Tech': '#5e8a64', 'World': '#2a6fdb', 'Football': '#1f8a5b' };
 let _hlSlides = [], _hlIdx = 0, _hlTimer = null;
 
 function formatPubDate(str) {
@@ -1691,7 +1691,7 @@ function renderNews(news) {
   const tabsEl   = document.getElementById('hl-tabs');
   if (!carousel) return;
 
-  const cats = ['AI', 'Tech', 'World', 'Premier League'];
+  const cats = ['AI', 'Tech', 'World', 'Football'];
   _hlSlides = cats.map(cat => ({ cat, items: (news[cat] || []).slice(0, 6) }))
     .filter(s => s.items.length > 0);
 

@@ -2,10 +2,10 @@ import { readFileSync } from 'fs';
 import { join }         from 'path';
 
 const FEEDS = {
-  "World":          ["https://feeds.bbci.co.uk/news/world/rss.xml", 5],
-  "Premier League": ["https://feeds.bbci.co.uk/sport/football/premier-league/rss.xml", 4],
-  "Tech":           ["https://feeds.arstechnica.com/arstechnica/index", 5],
-  "AI":             ["https://venturebeat.com/category/ai/feed/", 5],
+  "World":    [["https://feeds.bbci.co.uk/news/world/rss.xml"], 5],
+  "Football": [["https://feeds.bbci.co.uk/sport/football/world-cup/rss.xml", "https://www.fifa.com/rss/news"], 5],
+  "Tech":     [["https://feeds.arstechnica.com/arstechnica/index"], 5],
+  "AI":       [["https://techcrunch.com/category/artificial-intelligence/feed/", "https://www.theverge.com/ai-artificial-intelligence/rss/index.xml"], 5],
 };
 
 function parseRSS(xml, limit) {
@@ -131,11 +131,35 @@ export default async function handler(req, res) {
       }
     })),
 
-    Promise.all(Object.entries(FEEDS).map(async ([name, [url, limit]]) => {
+    Promise.all(Object.entries(FEEDS).map(async ([name, [urls, limit]]) => {
       try {
-        const r   = await fetch(url, { headers: { 'User-Agent': 'Mozilla/5.0' } });
-        const xml = await r.text();
-        return [name, parseRSS(xml, limit)];
+        const allItems = (await Promise.all(
+          urls.map(async url => {
+            try {
+              const r = await fetch(url, { headers: { 'User-Agent': 'Mozilla/5.0' } });
+              if (!r.ok) return [];
+              return parseRSS(await r.text(), limit * 2);
+            } catch (_) { return []; }
+          })
+        )).flat();
+
+        // Dedupe by first 60 chars of lowercased title
+        const seen = new Set();
+        const deduped = allItems.filter(item => {
+          const key = item.title.toLowerCase().slice(0, 60);
+          if (seen.has(key)) return false;
+          seen.add(key);
+          return true;
+        });
+
+        // Sort newest first
+        deduped.sort((a, b) => {
+          const da = a.pubDate ? new Date(a.pubDate).getTime() : 0;
+          const db = b.pubDate ? new Date(b.pubDate).getTime() : 0;
+          return db - da;
+        });
+
+        return [name, deduped.slice(0, limit)];
       } catch (_) {
         return [name, []];
       }
