@@ -483,6 +483,130 @@ body {
 }
 
 /* ════════════════════════════════════════════════════════════════════
+   WORLD CUP FIXTURES
+   ════════════════════════════════════════════════════════════════════ */
+#wc-fixtures-card { padding: 24px 28px; }
+
+.wc-england-hero {
+  background: linear-gradient(135deg, rgba(42,111,219,0.07), rgba(42,111,219,0.02));
+  border: 1px solid rgba(42,111,219,0.20);
+  border-radius: 16px;
+  padding: 16px 20px;
+  margin-bottom: 16px;
+}
+.wc-england-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--f-m);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  padding: 3px 10px;
+  border-radius: 99px;
+  margin-bottom: 10px;
+}
+.wc-england-badge.live     { background: rgba(192,57,43,0.12); color: var(--red); }
+.wc-england-badge.today    { background: rgba(42,111,219,0.12); color: var(--cup-accent); }
+.wc-england-badge.upcoming { background: rgba(26,24,22,0.06); color: var(--ink3); }
+.wc-england-badge.ft       { background: rgba(31,138,91,0.10); color: var(--green); }
+.wc-hero-teams {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
+  flex-wrap: wrap;
+}
+.wc-hero-flag {
+  width: 36px; height: 36px;
+  border-radius: 6px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+.wc-hero-flag-fb {
+  width: 36px; height: 36px;
+  border-radius: 6px;
+  background: rgba(26,24,22,0.08);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 22px; flex-shrink: 0;
+}
+.wc-hero-vs { font-family: var(--f-m); font-size: 11px; color: var(--ink3); }
+.wc-hero-score {
+  font-family: var(--f-s);
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--ink);
+  letter-spacing: -1px;
+  font-variant-numeric: tabular-nums;
+  margin-left: auto;
+}
+.wc-hero-team-name { font-family: var(--f-s); font-size: 15px; font-weight: 600; color: var(--ink); }
+.wc-hero-meta { font-family: var(--f-m); font-size: 11px; color: var(--ink3); margin-top: 4px; }
+.wc-hero-time { font-family: var(--f-m); font-size: 12px; color: var(--ink2); margin-top: 2px; }
+.wc-hero-prob { font-family: var(--f-m); font-size: 11px; color: var(--ink3); margin-top: 6px; }
+.wc-hero-prob .prob-hi { color: var(--cup-accent); font-weight: 600; }
+
+.wc-round-label {
+  font-family: var(--f-s);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: var(--ink3);
+  margin-bottom: 10px;
+}
+.wc-scroll-wrap {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  padding-bottom: 6px;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+.wc-scroll-wrap::-webkit-scrollbar { display: none; }
+.wc-chip {
+  flex-shrink: 0;
+  width: 156px;
+  padding: 12px 14px;
+  border-radius: 14px;
+  background: rgba(26,24,22,0.025);
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: background .2s, border-color .2s;
+  user-select: none;
+}
+.wc-chip:hover { background: rgba(26,24,22,0.05); }
+.wc-chip.is-open { background: rgba(42,111,219,0.06); border-color: rgba(42,111,219,0.22); }
+.wc-chip-flags { display: flex; align-items: center; gap: 6px; margin-bottom: 6px; }
+.wc-chip-flag { width: 22px; height: 22px; border-radius: 4px; object-fit: cover; }
+.wc-chip-flag-fb {
+  width: 22px; height: 22px; border-radius: 4px;
+  background: rgba(26,24,22,0.08);
+  display: flex; align-items: center; justify-content: center; font-size: 14px;
+}
+.wc-chip-vs { font-family: var(--f-m); font-size: 10px; color: var(--ink3); }
+.wc-chip-teams {
+  font-family: var(--f-s); font-size: 12px; font-weight: 600; color: var(--ink);
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.wc-chip-time { font-family: var(--f-m); font-size: 10px; color: var(--ink3); margin-top: 3px; }
+.wc-chip-score {
+  font-family: var(--f-m); font-size: 13px; font-weight: 700;
+  color: var(--ink); margin-top: 2px; letter-spacing: -0.3px;
+}
+.wc-chip-odds { display: flex; gap: 4px; margin-top: 3px; font-family: var(--f-m); font-size: 10px; color: var(--ink3); }
+.wc-chip-odds .fav-odd { color: var(--cup-accent); font-weight: 600; }
+.wc-chip-expand { display: grid; grid-template-rows: 0fr; transition: grid-template-rows .28s cubic-bezier(.2,.7,.25,1); }
+.wc-chip-expand.open { grid-template-rows: 1fr; }
+.wc-chip-expand-inner { overflow: hidden; }
+.wc-chip-expand-body {
+  padding-top: 8px; margin-top: 8px;
+  border-top: 1px solid rgba(26,24,22,0.06);
+  font-family: var(--f-s); font-size: 11px; color: var(--ink2); line-height: 1.6;
+}
+
+/* ════════════════════════════════════════════════════════════════════
    GOLF
    ════════════════════════════════════════════════════════════════════ */
 #golf-card {
@@ -1066,17 +1190,20 @@ body {
     </div>
   </div>
 
-  <!-- WC FIXTURES (span 8) — becomes #wc-fixtures-card in Task 4; keeping id for now -->
-  <div class="card hover-lift cup-reveal" id="fixtures-card">
-    <div class="fixtures-header">
-      <div class="eyebrow" style="margin-bottom:0">Fixtures · Premier League</div>
-      <span class="fixtures-subtitle" id="fixtures-subtitle"></span>
+  <!-- WORLD CUP FIXTURES (span 8) -->
+  <div class="card hover-lift cup-reveal" id="wc-fixtures-card">
+    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px">
+      <span class="eyebrow" style="margin-bottom:0">World Cup 2026</span>
+      <span id="wc-stage-label" style="font-family:var(--f-m);font-size:11px;color:var(--ink3)"></span>
     </div>
-    <div class="fixtures-grid" id="fixtures-grid">
-      <div class="skel" style="height:72px"></div>
-      <div class="skel" style="height:72px"></div>
-      <div class="skel" style="height:72px"></div>
-      <div class="skel" style="height:72px"></div>
+    <div id="wc-england-hero">
+      <div class="skel" style="height:110px;border-radius:16px"></div>
+    </div>
+    <div class="wc-round-label" id="wc-round-label"></div>
+    <div class="wc-scroll-wrap" id="wc-scroll-wrap">
+      <div class="skel" style="width:156px;height:90px;border-radius:14px;flex-shrink:0"></div>
+      <div class="skel" style="width:156px;height:90px;border-radius:14px;flex-shrink:0"></div>
+      <div class="skel" style="width:156px;height:90px;border-radius:14px;flex-shrink:0"></div>
     </div>
   </div>
 
@@ -1475,98 +1602,158 @@ function renderMarkets(prices) {
 }
 
 // ════════════════════════════════════════════════════════════════════
-// FIXTURES
+// WORLD CUP FIXTURES
 // ════════════════════════════════════════════════════════════════════
-let openFixtureId = null;
+function wcFlagEmoji(abbr) {
+  const EMOJI = {
+    ENG:'🏴󠁧󠁢󠁥󠁮󠁧󠁿',SCO:'🏴󠁧󠁢󠁳󠁣󠁴󠁿',WAL:'🏴󠁧󠁢󠁷󠁬󠁳󠁿',
+    USA:'🇺🇸',MEX:'🇲🇽',CAN:'🇨🇦',BRA:'🇧🇷',ARG:'🇦🇷',FRA:'🇫🇷',
+    GER:'🇩🇪',ESP:'🇪🇸',POR:'🇵🇹',NED:'🇳🇱',BEL:'🇧🇪',ITA:'🇮🇹',
+    JPN:'🇯🇵',KOR:'🇰🇷',AUS:'🇦🇺',MAR:'🇲🇦',SEN:'🇸🇳',NGA:'🇳🇬',
+    URU:'🇺🇾',COL:'🇨🇴',ECU:'🇪🇨',CRC:'🇨🇷',PAN:'🇵🇦',JAM:'🇯🇲',
+    SAU:'🇸🇦',IRN:'🇮🇷',QAT:'🇶🇦',AUT:'🇦🇹',SUI:'🇨🇭',HUN:'🇭🇺',
+    SRB:'🇷🇸',CRO:'🇭🇷',SLO:'🇸🇮',SVK:'🇸🇰',CZE:'🇨🇿',POL:'🇵🇱',
+    DEN:'🇩🇰',SWE:'🇸🇪',NOR:'🇳🇴',RSA:'🇿🇦',CMR:'🇨🇲',CIV:'🇨🇮',
+    GHA:'🇬🇭',TUN:'🇹🇳',EGY:'🇪🇬',ALG:'🇩🇿',NZL:'🇳🇿',CHN:'🇨🇳',
+    IND:'🇮🇳',THA:'🇹🇭',IRQ:'🇮🇶',SYR:'🇸🇾',VEN:'🇻🇪',BOL:'🇧🇴',
+    PRY:'🇵🇾',PER:'🇵🇪',CHI:'🇨🇱',HON:'🇭🇳',GTM:'🇬🇹',SLV:'🇸🇻',
+    TRI:'🇹🇹',CUW:'🇨🇼',MTQ:'🇲🇶',GLP:'🇬🇵',
+  };
+  return EMOJI[abbr] || '🏴';
+}
 
-function renderFixtures(fixtures) {
-  const el    = document.getElementById('fixtures-grid');
-  const subEl = document.getElementById('fixtures-subtitle');
-  if (!el) return;
-  if (!fixtures.length) {
-    el.innerHTML = '<p style="color:var(--ink3);font-size:14px;grid-column:span 2">Fixtures unavailable.</p>';
+function wcFlagHTML(url, abbr, size) {
+  const s = size || 22;
+  const fb = `<span class="wc-chip-flag-fb" style="width:${s}px;height:${s}px;font-size:${Math.round(s*0.65)}px">${wcFlagEmoji(abbr)}</span>`;
+  if (!url) return fb;
+  return `<img class="wc-chip-flag" src="${url}" width="${s}" height="${s}" alt="${abbr}" onerror="this.style.display='none';this.nextSibling.style.display='flex'">${fb.replace('display:flex', 'display:none').replace('display:none', 'display:none').replace(/<span /, '<span style="display:none" ')}`;
+}
+
+let _openWcChip = null;
+function toggleWcChip(id) {
+  const chip = document.getElementById(id);
+  const exp  = document.getElementById(id + '-exp');
+  if (!chip || !exp) return;
+  if (_openWcChip && _openWcChip !== id) {
+    const p = document.getElementById(_openWcChip);
+    const pe = document.getElementById(_openWcChip + '-exp');
+    if (p) p.classList.remove('is-open');
+    if (pe) pe.classList.remove('open');
+  }
+  const isOpen = exp.classList.contains('open');
+  exp.classList.toggle('open', !isOpen);
+  chip.classList.toggle('is-open', !isOpen);
+  _openWcChip = isOpen ? null : id;
+}
+
+function renderWorldCup(wc) {
+  const heroEl   = document.getElementById('wc-england-hero');
+  const scrollEl = document.getElementById('wc-scroll-wrap');
+  const stageEl  = document.getElementById('wc-stage-label');
+  const roundEl  = document.getElementById('wc-round-label');
+  if (!heroEl || !scrollEl) return;
+
+  const { matches = [], england, stageName = '' } = wc || {};
+
+  if (stageEl) stageEl.textContent = stageName;
+  if (roundEl) roundEl.textContent = matches.length ? `This round · ${stageName}` : '';
+
+  // ── England hero ──────────────────────────────────────────────────
+  if (!england) {
+    heroEl.innerHTML = `<div class="wc-england-hero" style="text-align:center;color:var(--ink3);font-size:14px;padding:20px 0">No England fixture in this round</div>`;
+  } else {
+    const kickoff  = new Date(england.kickoff);
+    const hoursAway = (kickoff - Date.now()) / 3_600_000;
+    const hasScore  = england.homeScore !== null && england.awayScore !== null;
+
+    let badgeClass, badgeText;
+    if (england.live)           { badgeClass = 'live';     badgeText = `🔴 LIVE${england.matchTime ? ' · ' + england.matchTime + '\'' : ''}`; }
+    else if (england.finished)  { badgeClass = 'ft';       badgeText = 'Full Time'; }
+    else if (hoursAway < 6)     { badgeClass = 'today';    badgeText = 'Tonight'; }
+    else if (hoursAway < 30)    { badgeClass = 'today';    badgeText = 'Tomorrow'; }
+    else                        { badgeClass = 'upcoming'; badgeText = kickoff.toLocaleDateString('en-GB', { weekday:'short', day:'numeric', month:'short' }); }
+
+    const scoreOrTime = hasScore
+      ? `<div class="wc-hero-score">${england.homeScore}–${england.awayScore}${england.homePens !== null ? ` (${england.homePens}–${england.awayPens}p)` : ''}</div>`
+      : `<div class="wc-hero-time">${kickoff.toLocaleTimeString('en-GB',{hour:'2-digit',minute:'2-digit'})} · ${kickoff.toLocaleDateString('en-GB',{day:'numeric',month:'short'})}</div>`;
+
+    let probHTML = '';
+    if (!england.finished && england.odds?.h != null) {
+      const pH = Math.round(100 / england.odds.h);
+      const pD = england.odds.d ? Math.round(100 / england.odds.d) : 0;
+      const pA = Math.round(100 / england.odds.a);
+      const engIsHome = england.homeAbbr === 'ENG';
+      const engP = engIsHome ? pH : pA;
+      probHTML = `<div class="wc-hero-prob">Win probability: <span class="prob-hi">${engP}% England</span> · ${pD}% Draw · ${engIsHome ? pA : pH}% ${engIsHome ? england.away : england.home}</div>`;
+    }
+
+    const flagH = wcFlagHTML(england.homeFlag, england.homeAbbr, 32);
+    const flagA = wcFlagHTML(england.awayFlag, england.awayAbbr, 32);
+
+    heroEl.innerHTML = `<div class="wc-england-hero">
+      <div class="wc-england-badge ${badgeClass}">${badgeText}</div>
+      <div class="wc-hero-teams">
+        ${flagH}
+        <div><div class="wc-hero-team-name">${england.home}</div></div>
+        <div class="wc-hero-vs">vs</div>
+        ${flagA}
+        <div><div class="wc-hero-team-name">${england.away}</div></div>
+        ${scoreOrTime}
+      </div>
+      <div class="wc-hero-meta">${england.groupName}${england.stadium ? ' · ' + england.stadium : ''}${england.city ? ', ' + england.city : ''}</div>
+      ${probHTML}
+    </div>`;
+  }
+
+  // ── Round chips ───────────────────────────────────────────────────
+  if (!matches.length) {
+    scrollEl.innerHTML = '<p style="color:var(--ink3);font-size:14px">Fixtures unavailable.</p>';
     return;
   }
 
-  const gw = fixtures[0]?.gw;
-  const allFinished = fixtures.every(f => f.finished);
-  const anyLive = fixtures.some(f => f.started && !f.finished);
-  const gwLabel = allFinished ? `GW${gw} · FT` : anyLive ? `GW${gw} · Live` : `GW${gw}`;
-  if (subEl && gw) subEl.textContent = gwLabel;
+  scrollEl.innerHTML = matches.map((m, i) => {
+    const cid     = `wc-c-${i}`;
+    const kickoff = new Date(m.kickoff);
+    const timeStr = kickoff.toLocaleString('en-GB', { weekday:'short', day:'numeric', month:'short', hour:'2-digit', minute:'2-digit' });
+    const hasScore = m.homeScore !== null && m.awayScore !== null;
 
-  el.innerHTML = fixtures.slice(0, 8).map((f, i) => {
-    const dt     = new Date(f.kickoff);
-    const day    = dt.toLocaleDateString('en-GB', { weekday: 'short', day: 'numeric', month: 'short' });
-    const tm     = dt.toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit' });
-    const timeStr = `${day} · ${tm}`;
-    const odds    = f.odds;
-    const favH    = odds ? (odds.h != null && odds.a != null && odds.h <= odds.a) : true;
-    const fid     = `fix-${i}`;
-    let oddsHTML  = '';
-    if (f.score) {
-      oddsHTML = `<div class="fixture-score">${f.score}</div>`;
-    } else if (odds && odds.h != null && odds.a != null) {
-      oddsHTML = `<div class="fixture-odds-row">
-        <span class="${favH ? 'fav-odd' : ''}">${odds.h.toFixed(2)}</span>
-        <span style="color:var(--ink3)">·</span>
-        <span style="color:var(--ink3)">${odds.d?.toFixed(2) ?? '—'}</span>
-        <span style="color:var(--ink3)">·</span>
-        <span class="${!favH ? 'fav-odd' : ''}">${odds.a.toFixed(2)}</span>
+    let bottomHTML;
+    if (hasScore) {
+      bottomHTML = `<div class="wc-chip-score">${m.homeScore}–${m.awayScore}${m.homePens !== null ? ` (${m.homePens}–${m.awayPens}p)` : ''}</div>`;
+    } else if (m.odds?.h != null) {
+      const favH = m.odds.h <= m.odds.a;
+      bottomHTML = `<div class="wc-chip-odds">
+        <span class="${favH ? 'fav-odd' : ''}">${m.odds.h.toFixed(2)}</span>
+        <span>·</span><span>${m.odds.d?.toFixed(2) ?? '—'}</span>
+        <span>·</span><span class="${!favH ? 'fav-odd' : ''}">${m.odds.a.toFixed(2)}</span>
       </div>`;
+    } else {
+      bottomHTML = `<div class="wc-chip-time">${kickoff.toLocaleTimeString('en-GB',{hour:'2-digit',minute:'2-digit'})}</div>`;
     }
-    const badgeH = f.homeCode ? `<img class="fixture-badge" src="https://resources.premierleague.com/premierleague/badges/t${f.homeCode}.png" loading="lazy" onerror="this.style.display='none'" alt="">` : '';
-    const badgeA = f.awayCode ? `<img class="fixture-badge" src="https://resources.premierleague.com/premierleague/badges/t${f.awayCode}.png" loading="lazy" onerror="this.style.display='none'" alt="">` : '';
-    // Only expand upcoming fixtures that have odds — finished fixtures have nothing new to show
-    const hasExpandContent = !f.finished && odds && odds.h != null && odds.a != null;
-    let expandHTML = '';
-    if (hasExpandContent) {
-      const pH = Math.round(100 / odds.h);
-      const pD = odds.d ? Math.round(100 / odds.d) : 0;
-      const pA = Math.round(100 / odds.a);
-      expandHTML = `<div class="fixture-expand" id="${fid}-expand">
-        <div class="fixture-expand-inner">
-          <div class="fixture-expand-body">
-            <div class="fixture-expand-row">
-              <span>Win probability</span>
-              <span style="font-family:var(--f-m);font-size:12px">${pH}% · ${pD}% · ${pA}%</span>
-            </div>
-          </div>
-        </div>
-      </div>`;
+
+    let expandBody = `<div class="wc-chip-expand-body"><div>${m.groupName}</div>`;
+    if (m.stadium) expandBody += `<div>${m.stadium}${m.city ? ', ' + m.city : ''}</div>`;
+    expandBody += `<div>${timeStr}</div>`;
+    if (!hasScore && m.odds?.h != null) {
+      const pH = Math.round(100 / m.odds.h);
+      const pD = m.odds.d ? Math.round(100 / m.odds.d) : 0;
+      const pA = Math.round(100 / m.odds.a);
+      expandBody += `<div style="margin-top:4px">Win prob: ${pH}% · ${pD}% · ${pA}%</div>`;
     }
-    return `<div class="fixture-chip${hasExpandContent ? ' cup-press' : ''}" id="${fid}"${hasExpandContent ? ` onclick="toggleFixture('${fid}')"` : ''}
-      style="animation-delay:${i*40}ms">
-      <div class="fixture-chip-row">
-        <div class="fixture-teams">
-          <div class="fixture-team-name${favH ? ' fav' : ''}" style="display:flex;align-items:center;gap:6px">${badgeH}${f.home}</div>
-          <div class="fixture-team-name${!favH ? ' fav' : ''}" style="display:flex;align-items:center;gap:6px">${badgeA}${f.away}</div>
-        </div>
-        <div class="fixture-meta">
-          <div class="fixture-time">${timeStr}</div>
-          ${oddsHTML}
-        </div>
+    expandBody += `</div>`;
+
+    const fH = wcFlagHTML(m.homeFlag, m.homeAbbr, 22);
+    const fA = wcFlagHTML(m.awayFlag, m.awayAbbr, 22);
+
+    return `<div class="wc-chip cup-press" id="${cid}" onclick="toggleWcChip('${cid}')">
+      <div class="wc-chip-flags">${fH}<span class="wc-chip-vs">vs</span>${fA}</div>
+      <div class="wc-chip-teams">${m.home} – ${m.away}</div>
+      ${bottomHTML}
+      <div class="wc-chip-expand" id="${cid}-exp">
+        <div class="wc-chip-expand-inner">${expandBody}</div>
       </div>
-      ${expandHTML}
     </div>`;
   }).join('');
-}
-
-function toggleFixture(fid) {
-  const chip   = document.getElementById(fid);
-  const expand = document.getElementById(fid + '-expand');
-  if (!chip || !expand) return;
-
-  if (openFixtureId && openFixtureId !== fid) {
-    const prev       = document.getElementById(openFixtureId);
-    const prevExpand = document.getElementById(openFixtureId + '-expand');
-    if (prev)       prev.classList.remove('is-open');
-    if (prevExpand) prevExpand.classList.remove('open');
-  }
-
-  const isOpen = expand.classList.contains('open');
-  expand.classList.toggle('open', !isOpen);
-  chip.classList.toggle('is-open', !isOpen);
-  openFixtureId = isOpen ? null : fid;
 }
 
 // ════════════════════════════════════════════════════════════════════
@@ -1905,13 +2092,7 @@ async function init() {
   renderCompanies(data.prices || {});
   renderNews(data.news || {});
   renderGolf(data.golf || null);
-
-  // Fixtures: format kickoff times
-  const fixtures = (data.fixtures || []).map(f => ({
-    ...f,
-    kickoff: f.kickoff || new Date().toISOString(),
-  }));
-  renderFixtures(fixtures);
+  renderWorldCup(data.worldCup || {});
 
   // Weather shine — sweeps the whole page when hovering the temperature area
   (function initShine() {

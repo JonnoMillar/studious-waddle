@@ -1,11 +1,10 @@
 # Projects
 
 ## In Progress
-- **7 - Daily Briefing Bot** — Single command giving a 2-min read: top world news, markets summary, Premier League results, one AI story. Uses Claude to summarise.
+- **World Cup 2026** — Live fixtures section: England next match hero panel + current round chip scroll. Uses api.fifa.com (no auth), openfootball fallback. WC Fantasy Insights section (public player data, no personal team). Spotify and Calendar sections pending OAuth credentials.
 
 ## Up Next
-- **1 - FPL Weekly Advisor** — Pulls from the FPL API for captain picks, transfer suggestions, and comparison vs top 1k managers.
-- **5 - News-to-Market Correlator** — Pulls financial news headlines and overlays them on price charts for ISA holdings.
+- **1 - FPL Weekly Advisor** — Pulls from the FPL API for captain picks, transfer suggestions, and comparison vs top 1k managers. Resume when 2026/27 PL season starts.
 
 ## Daily Briefing — Golf Tee Times
 When producing the daily briefing, call `golfnow_get_weekend_briefing` with:

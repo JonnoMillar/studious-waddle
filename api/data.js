@@ -35,34 +35,19 @@ function parseRSS(xml, limit) {
   return items;
 }
 
-const TEAM_PRESTIGE = {
-  'Arsenal': 10, 'Manchester City': 10, 'Liverpool': 10,
-  'Chelsea': 9, 'Manchester United': 8, 'Tottenham Hotspur': 8,
-  'Newcastle United': 7, 'Aston Villa': 7,
-  'Brighton & Hove Albion': 5, 'West Ham United': 5,
-  'Fulham': 4, 'Brentford': 4, 'Nottingham Forest': 4,
-  'Everton': 3, 'Crystal Palace': 3,
-  'Wolverhampton Wanderers': 3, 'Leicester City': 3,
-};
+const TEAM_PRESTIGE = {};
 
-// Fuzzy-match FPL team names to The Odds API team names
+// Fuzzy-match team names to The Odds API team names
 function normaliseTeamName(name) {
-  return name.toLowerCase()
-    .replace('manchester city', 'man city')
-    .replace('manchester united', 'man united')
-    .replace('tottenham hotspur', 'tottenham')
-    .replace('wolverhampton wanderers', 'wolves')
-    .replace('brighton & hove albion', 'brighton')
-    .replace('nottingham forest', 'nottm forest')
-    .replace(/\s+/g, ' ').trim();
+  return name.toLowerCase().replace(/\s+/g, ' ').trim();
 }
 
-async function fetchOdds() {
+async function fetchWcOdds() {
   const key = process.env.ODDS_API_KEY;
   if (!key) return {};
   try {
     const r = await fetch(
-      `https://api.the-odds-api.com/v4/sports/soccer_epl/odds/?regions=uk&markets=h2h&oddsFormat=decimal&apiKey=${key}`,
+      `https://api.the-odds-api.com/v4/sports/soccer_fifa_world_cup/odds/?regions=uk&markets=h2h&oddsFormat=decimal&apiKey=${key}`,
       { headers: { 'User-Agent': 'Mozilla/5.0' } }
     );
     const games = await r.json();
@@ -79,8 +64,8 @@ async function fetchOdds() {
           if (o.name === 'Draw'      && (dBest === null || o.price > dBest)) dBest = o.price;
         }
       }
-      const key1 = `${normaliseTeamName(g.home_team)}|${normaliseTeamName(g.away_team)}`;
-      map[key1] = { h: hBest, d: dBest, a: aBest };
+      const k = `${normaliseTeamName(g.home_team)}|${normaliseTeamName(g.away_team)}`;
+      map[k] = { h: hBest, d: dBest, a: aBest };
     }
     return map;
   } catch (_) { return {}; }
@@ -111,7 +96,7 @@ export default async function handler(req, res) {
     'Palantir':    'PLTR',
   };
 
-  const [priceEntries, newsEntries, fixtureResult, oddsMap] = await Promise.all([
+  const [priceEntries, newsEntries, wcResult, oddsMap] = await Promise.all([
 
     Promise.all(Object.entries(TICKERS).map(async ([name, ticker]) => {
       try {
@@ -167,64 +152,91 @@ export default async function handler(req, res) {
 
     (async () => {
       try {
-        const [bsRes, fixRes] = await Promise.all([
-          fetch('https://fantasy.premierleague.com/api/bootstrap-static/'),
-          fetch('https://fantasy.premierleague.com/api/fixtures/'),
-        ]);
-        const bootstrap = await bsRes.json();
-        const allFix    = await fixRes.json();
+        const r = await fetch(
+          'https://api.fifa.com/api/v3/calendar/matches?idCompetition=17&idSeason=285023&count=200&language=en',
+          { headers: { 'User-Agent': 'Mozilla/5.0' } }
+        );
+        const data = await r.json();
+        const matches = data.Results || [];
 
-        const teams     = Object.fromEntries(bootstrap.teams.map(t => [t.id, t.name]));
-        const teamCodes = Object.fromEntries(bootstrap.teams.map(t => [t.id, t.code]));
-        const chelseaId = bootstrap.teams.find(t => t.name.includes('Chelsea'))?.id;
-
-        const currentEvent = bootstrap.current_event || bootstrap.events?.find(e => e.is_current)?.id;
-        const gwFixes = allFix
-          .filter(f => f.event === currentEvent && f.kickoff_time)
-          .sort((a, b) => a.kickoff_time.localeCompare(b.kickoff_time));
-
-        const chelseaFix = gwFixes.find(f => chelseaId && (f.team_a === chelseaId || f.team_h === chelseaId));
-
-        const otherFixes = gwFixes
-          .filter(f => f !== chelseaFix)
-          .map(f => ({
-            ...f,
-            prestige: (TEAM_PRESTIGE[teams[f.team_h]] || 2) + (TEAM_PRESTIGE[teams[f.team_a]] || 2),
-          }))
-          .sort((a, b) => b.prestige - a.prestige || a.kickoff_time.localeCompare(b.kickoff_time))
-          .slice(0, 9);
-
-        return [chelseaFix, ...otherFixes].filter(Boolean).map(f => ({
-          home:      teams[f.team_h] || '?',
-          away:      teams[f.team_a] || '?',
-          homeCode:  teamCodes[f.team_h] || null,
-          awayCode:  teamCodes[f.team_a] || null,
-          kickoff:   f.kickoff_time,
-          gw:        f.event,
-          finished:  f.finished,
-          started:   f.started,
-          score:     f.team_h_score != null ? `${f.team_h_score}–${f.team_a_score}` : null,
-          chelsea:   !!(chelseaId && (f.team_h === chelseaId || f.team_a === chelseaId)),
-          homeNorm:  normaliseTeamName(teams[f.team_h] || ''),
-          awayNorm:  normaliseTeamName(teams[f.team_a] || ''),
+        const norm = matches.map(m => ({
+          id:        m.IdMatch,
+          stageId:   m.IdStage,
+          groupName: m.GroupName?.[0]?.Description || m.StageName?.[0]?.Description || '',
+          stageName: m.StageName?.[0]?.Description || '',
+          home:      m.Home?.TeamName?.[0]?.Description || m.PlaceHolderA || '?',
+          away:      m.Away?.TeamName?.[0]?.Description || m.PlaceHolderB || '?',
+          homeAbbr:  m.Home?.Abbreviation || '',
+          awayAbbr:  m.Away?.Abbreviation || '',
+          homeFlag:  m.Home?.Abbreviation ? `https://api.fifa.com/api/v3/picture/flags-sq-4/${m.Home.Abbreviation}` : '',
+          awayFlag:  m.Away?.Abbreviation ? `https://api.fifa.com/api/v3/picture/flags-sq-4/${m.Away.Abbreviation}` : '',
+          kickoff:   m.Date,
+          homeScore: m.HomeTeamScore ?? null,
+          awayScore: m.AwayTeamScore ?? null,
+          homePens:  m.HomeTeamPenaltyScore ?? null,
+          awayPens:  m.AwayTeamPenaltyScore ?? null,
+          matchTime: m.MatchTime || null,
+          stadium:   m.Stadium?.Name?.[0]?.Description || '',
+          city:      m.Stadium?.CityName?.[0]?.Description || '',
+          finished:  m.MatchStatus === 0 && m.HomeTeamScore !== null,
+          live:      m.MatchStatus === 3,
+          isEngland: !!(m.Home?.Abbreviation === 'ENG' || m.Away?.Abbreviation === 'ENG'),
         }));
-      } catch (_) { return []; }
+
+        const upcoming = norm.filter(m => !m.finished && m.kickoff);
+        const nextMatch = upcoming.sort((a, b) => new Date(a.kickoff) - new Date(b.kickoff))[0];
+        const currentStageId = nextMatch?.stageId || norm[0]?.stageId;
+        const roundMatches = norm.filter(m => m.stageId === currentStageId);
+        const england = roundMatches.find(m => m.isEngland) || null;
+
+        return { matches: roundMatches, england, stageName: nextMatch?.stageName || '' };
+      } catch (_) {
+        // Fallback: openfootball static JSON
+        try {
+          const r2 = await fetch('https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json',
+            { headers: { 'User-Agent': 'Mozilla/5.0' } });
+          const raw = await r2.json();
+          const allMatches = (raw.rounds || []).flatMap(round =>
+            (round.matches || []).map(m => ({
+              id: `${m.team1}-${m.team2}-${m.date}`,
+              stageId: round.name,
+              groupName: m.group || round.name,
+              stageName: round.name,
+              home: m.team1, away: m.team2,
+              homeAbbr: '', awayAbbr: '',
+              homeFlag: '', awayFlag: '',
+              kickoff: m.date && m.time ? `${m.date}T${m.time}:00Z` : m.date,
+              homeScore: m.score?.ft?.[0] ?? null,
+              awayScore: m.score?.ft?.[1] ?? null,
+              homePens: m.score?.p?.[0] ?? null,
+              awayPens: m.score?.p?.[1] ?? null,
+              matchTime: null, stadium: m.ground || '', city: '',
+              finished: !!(m.score?.ft), live: false,
+              isEngland: m.team1 === 'England' || m.team2 === 'England',
+            }))
+          );
+          const upcoming2 = allMatches.filter(m => !m.finished);
+          const next2 = upcoming2.sort((a, b) => new Date(a.kickoff) - new Date(b.kickoff))[0];
+          const stage2 = next2?.stageId || allMatches[0]?.stageId;
+          const round2 = allMatches.filter(m => m.stageId === stage2);
+          return { matches: round2, england: round2.find(m => m.isEngland) || null, stageName: next2?.stageName || '' };
+        } catch (__) { return { matches: [], england: null, stageName: '' }; }
+      }
     })(),
 
-    fetchOdds(),
+    fetchWcOdds(),
   ]);
 
   const prices = Object.fromEntries(priceEntries);
 
   // US 500: VUSA.L is the ETF proxy. % change is accurate; unit price differs from actual fund NAV.
 
-  // Attach odds to fixtures
-  const fixtures = fixtureResult.map(f => {
-    const key1 = `${f.homeNorm}|${f.awayNorm}`;
-    const key2 = `${f.awayNorm}|${f.homeNorm}`;
-    const odds  = oddsMap[key1] || oddsMap[key2] || null;
-    // if found via key2 (odds API has home/away swapped), flip h/a
-    const flipped = !oddsMap[key1] && !!oddsMap[key2];
+  // Attach WC odds to matches
+  const wcFixtures = wcResult.matches.map(f => {
+    const k1 = `${normaliseTeamName(f.home)}|${normaliseTeamName(f.away)}`;
+    const k2 = `${normaliseTeamName(f.away)}|${normaliseTeamName(f.home)}`;
+    const odds = oddsMap[k1] || oddsMap[k2] || null;
+    const flipped = !oddsMap[k1] && !!oddsMap[k2];
     return {
       ...f,
       odds: odds ? {
@@ -234,6 +246,9 @@ export default async function handler(req, res) {
       } : null,
     };
   });
+  const englandWithOdds = wcResult.england
+    ? wcFixtures.find(m => m.id === wcResult.england.id) || wcResult.england
+    : null;
 
   let golf = { tee_times: [], scraped_at: null, error: null };
   try {
@@ -253,7 +268,11 @@ export default async function handler(req, res) {
   res.json({
     prices,
     news:     Object.fromEntries(newsEntries),
-    fixtures,
+    worldCup: {
+      matches:   wcFixtures,
+      england:   englandWithOdds,
+      stageName: wcResult.stageName,
+    },
     golf,
   });
 }
