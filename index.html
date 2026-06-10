@@ -644,6 +644,75 @@ body {
 .wc-fantasy-val.green { color: var(--green); }
 
 /* ════════════════════════════════════════════════════════════════════
+   SPOTIFY
+   ════════════════════════════════════════════════════════════════════ */
+#spotify-card { padding: 22px 24px; }
+.sp-section-label {
+  font-family: var(--f-m);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: var(--ink3);
+  margin-bottom: 10px;
+}
+.sp-live-dot {
+  display: inline-block;
+  width: 7px; height: 7px;
+  border-radius: 50%;
+  background: var(--green);
+  margin-right: 5px;
+  vertical-align: middle;
+  animation: cup-pulse 1.8s ease-in-out infinite;
+}
+.sp-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: inherit;
+  transition: opacity .18s;
+  padding: 2px 0;
+}
+.sp-row:hover { opacity: 0.75; }
+.sp-art {
+  width: 48px; height: 48px;
+  border-radius: 8px;
+  object-fit: cover;
+  flex-shrink: 0;
+  background: rgba(26,24,22,0.06);
+}
+.sp-art-sm {
+  width: 36px; height: 36px;
+  border-radius: 6px;
+  object-fit: cover;
+  flex-shrink: 0;
+  background: rgba(26,24,22,0.06);
+}
+.sp-info { flex: 1; min-width: 0; }
+.sp-title {
+  font-family: var(--f-s);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--ink);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.sp-title.sm { font-size: 13px; }
+.sp-sub {
+  font-family: var(--f-s);
+  font-size: 12px;
+  color: var(--ink2);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: 2px;
+}
+.sp-divider { border: none; border-top: 1px solid var(--line); margin: 12px 0; }
+.sp-unavailable { font-family: var(--f-s); font-size: 13px; color: var(--ink3); padding: 8px 0; }
+
+/* ════════════════════════════════════════════════════════════════════
    GOLF
    ════════════════════════════════════════════════════════════════════ */
 #golf-card {
@@ -1207,7 +1276,13 @@ body {
     </div>
   </div>
 
-  <!-- SPOTIFY (span 4) — added Task 7 -->
+  <!-- SPOTIFY (span 4) -->
+  <div class="card cup-reveal" id="spotify-card">
+    <div class="eyebrow">Listening</div>
+    <div id="spotify-body">
+      <div class="skel" style="height:64px;border-radius:10px"></div>
+    </div>
+  </div>
 
   <!-- CALENDAR (span 5) — added Task 6 -->
 
@@ -1843,6 +1918,64 @@ function renderWcFantasy(data) {
 }
 
 // ════════════════════════════════════════════════════════════════════
+// SPOTIFY
+// ════════════════════════════════════════════════════════════════════
+function renderSpotify(data) {
+  const el = document.getElementById('spotify-body');
+  if (!el) return;
+
+  if (!data || data.error) {
+    el.innerHTML = '<p class="sp-unavailable">Spotify unavailable.</p>';
+    return;
+  }
+
+  const { nowPlaying, recentTrack, topTrack, topArtist } = data;
+  let html = '';
+
+  const current = nowPlaying || recentTrack;
+  if (current) {
+    const isLive = !!nowPlaying?.isPlaying;
+    const labelHTML = isLive
+      ? `<div class="sp-section-label"><span class="sp-live-dot"></span>Now Playing</div>`
+      : `<div class="sp-section-label">Recently Played${recentTrack?.minsAgo != null ? ' · ' + recentTrack.minsAgo + 'm ago' : ''}</div>`;
+    html += labelHTML;
+    html += `<a class="sp-row" href="${current.url || '#'}" target="_blank" rel="noopener">
+      <img class="sp-art" src="${current.art}" alt="" onerror="this.style.opacity=0">
+      <div class="sp-info">
+        <div class="sp-title">${current.name}</div>
+        <div class="sp-sub">${current.artist}${current.album ? ' · ' + current.album : ''}</div>
+      </div>
+    </a>`;
+  }
+
+  if (topTrack) {
+    html += `<hr class="sp-divider">
+    <div class="sp-section-label">Top Track · 4 Weeks</div>
+    <a class="sp-row" href="${topTrack.url || '#'}" target="_blank" rel="noopener">
+      <img class="sp-art-sm" src="${topTrack.art}" alt="" onerror="this.style.opacity=0">
+      <div class="sp-info">
+        <div class="sp-title sm">${topTrack.name}</div>
+        <div class="sp-sub">${topTrack.artist}</div>
+      </div>
+    </a>`;
+  }
+
+  if (topArtist) {
+    html += `<hr class="sp-divider">
+    <div class="sp-section-label">Top Artist · 4 Weeks</div>
+    <a class="sp-row" href="${topArtist.url || '#'}" target="_blank" rel="noopener">
+      <img class="sp-art-sm" src="${topArtist.art}" alt="" onerror="this.style.opacity=0">
+      <div class="sp-info">
+        <div class="sp-title sm">${topArtist.name}</div>
+        <div class="sp-sub">${topArtist.genre}</div>
+      </div>
+    </a>`;
+  }
+
+  el.innerHTML = html || '<p class="sp-unavailable">No Spotify data yet.</p>';
+}
+
+// ════════════════════════════════════════════════════════════════════
 // GOLF
 // ════════════════════════════════════════════════════════════════════
 function renderGolf(golf) {
@@ -2183,6 +2316,16 @@ async function init() {
   renderGolf(data.golf || null);
   renderWorldCup(data.worldCup || {});
   renderWcFantasy(wcFantasyData);
+
+  // Spotify: initial fetch + poll every 30s for live now-playing
+  async function fetchAndRenderSpotify() {
+    try {
+      const sp = await fetch('/api/spotify').then(r => r.json());
+      renderSpotify(sp);
+    } catch (_) { renderSpotify(null); }
+  }
+  fetchAndRenderSpotify();
+  setInterval(fetchAndRenderSpotify, 30_000);
 
   // Weather shine — sweeps the whole page when hovering the temperature area
   (function initShine() {
