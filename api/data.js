@@ -71,6 +71,80 @@ async function fetchWcOdds() {
   } catch (_) { return {}; }
 }
 
+function friendlySentence(title, startIso, multiDay) {
+  const start   = new Date(startIso);
+  const now     = new Date();
+  const daysAway = Math.round((start - now) / 86400000);
+
+  let when;
+  if (daysAway <= 0)       when = 'today';
+  else if (daysAway === 1) when = 'tomorrow';
+  else if (daysAway < 14)  when = `in ${daysAway} days`;
+  else                     when = start.toLocaleDateString('en-GB', { day: 'numeric', month: 'short', ...(daysAway > 300 ? { year: 'numeric' } : {}) });
+
+  const t = title.toLowerCase();
+  if (/\bfl(y|ight|ights)\b|departure|\barriv/.test(t)) {
+    const loc = title.match(/to\s+([A-Z][a-zA-ZÀ-ÿ\s]+)/)?.[1]?.trim();
+    return { emoji: '✈️', text: loc ? `You fly off to ${loc} ${when}!` : `Flight ${when}!` };
+  }
+  const PLACES = ['majorca','mallorca','ibiza','tenerife','lanzarote','marbella','barcelona',
+    'madrid','paris','rome','amsterdam','lisbon','dubai','new york','los angeles','thailand',
+    'bali','japan','australia','florida','miami','vegas','las vegas','mexico','cancun'];
+  if (PLACES.some(p => t.includes(p))) {
+    const place = title.replace(/holiday|trip|vacation/gi, '').trim();
+    return { emoji: '☀️', text: `You head off to ${place} ${when}!` };
+  }
+  if (multiDay || /holiday|vacation|annual leave|day off|off work/.test(t)) {
+    return { emoji: '🏖️', text: `Holiday: ${title} starts ${when}.` };
+  }
+  const bdayMatch = title.match(/(.+?)(?:'s)?\s*birthday/i);
+  if (bdayMatch) return { emoji: '🎂', text: `${bdayMatch[1].trim()}'s birthday ${when}.` };
+  if (/driving test/.test(t))            return { emoji: '🚗', text: `Driving test ${when}.` };
+  if (/\bmot\b/.test(t))                 return { emoji: '🔧', text: `MOT ${when}.` };
+  if (/dentist|dental/.test(t))          return { emoji: '🦷', text: `Dentist ${when}.` };
+  if (/doctor|gp\b|appointment/.test(t)) return { emoji: '🏥', text: `${title} ${when}.` };
+  return { emoji: '📅', text: `${title} · ${when}` };
+}
+
+async function fetchCalendar() {
+  const clientId     = process.env.GOOGLE_CLIENT_ID;
+  const clientSecret = process.env.GOOGLE_CLIENT_SECRET;
+  const refreshToken = process.env.GOOGLE_REFRESH_TOKEN;
+  if (!clientId || !clientSecret || !refreshToken) return [];
+  try {
+    const tokenRes = await fetch('https://oauth2.googleapis.com/token', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: new URLSearchParams({
+        client_id:     clientId,
+        client_secret: clientSecret,
+        refresh_token: refreshToken,
+        grant_type:    'refresh_token',
+      }),
+    });
+    const { access_token } = await tokenRes.json();
+    if (!access_token) return [];
+
+    const now    = new Date().toISOString();
+    const cutoff = new Date(Date.now() + 90 * 24 * 3600 * 1000).toISOString();
+    const calRes = await fetch(
+      `https://www.googleapis.com/calendar/v3/calendars/primary/events?timeMin=${now}&timeMax=${cutoff}&singleEvents=true&orderBy=startTime&maxResults=20`,
+      { headers: { Authorization: `Bearer ${access_token}` } }
+    );
+    const calData = await calRes.json();
+    return (calData.items || [])
+      .filter(ev => ev.summary)
+      .map(ev => {
+        const startIso = ev.start?.dateTime || ev.start?.date || null;
+        const multiDay = ev.start?.date && ev.end?.date &&
+                         ev.end.date !== ev.start.date &&
+                         new Date(ev.end.date) - new Date(ev.start.date) > 86400000;
+        const { emoji, text } = friendlySentence(ev.summary, startIso, multiDay);
+        return { title: ev.summary, startIso, emoji, text };
+      });
+  } catch (_) { return []; }
+}
+
 export default async function handler(req, res) {
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Cache-Control', 's-maxage=300, stale-while-revalidate=600');
@@ -96,7 +170,7 @@ export default async function handler(req, res) {
     'Palantir':    'PLTR',
   };
 
-  const [priceEntries, newsEntries, wcResult, oddsMap] = await Promise.all([
+  const [priceEntries, newsEntries, wcResult, oddsMap, calendarEvents] = await Promise.all([
 
     Promise.all(Object.entries(TICKERS).map(async ([name, ticker]) => {
       try {
@@ -225,6 +299,7 @@ export default async function handler(req, res) {
     })(),
 
     fetchWcOdds(),
+    fetchCalendar(),
   ]);
 
   const prices = Object.fromEntries(priceEntries);
@@ -273,6 +348,7 @@ export default async function handler(req, res) {
       england:   englandWithOdds,
       stageName: wcResult.stageName,
     },
+    calendar: calendarEvents,
     golf,
   });
 }

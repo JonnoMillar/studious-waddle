@@ -713,6 +713,24 @@ body {
 .sp-unavailable { font-family: var(--f-s); font-size: 13px; color: var(--ink3); padding: 8px 0; }
 
 /* ════════════════════════════════════════════════════════════════════
+   CALENDAR
+   ════════════════════════════════════════════════════════════════════ */
+#calendar-card { padding: 22px 24px; }
+.cal-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 9px 0;
+  border-bottom: 1px solid var(--line);
+  transition: padding-left .18s;
+}
+.cal-item:last-child { border-bottom: none; }
+.cal-item:hover { padding-left: 6px; }
+.cal-emoji { font-size: 18px; line-height: 1.4; flex-shrink: 0; }
+.cal-text { font-family: var(--f-s); font-size: 14px; color: var(--ink); line-height: 1.5; }
+.cal-empty { font-family: var(--f-s); font-size: 14px; color: var(--ink3); padding: 12px 0; }
+
+/* ════════════════════════════════════════════════════════════════════
    GOLF
    ════════════════════════════════════════════════════════════════════ */
 #golf-card {
@@ -1317,7 +1335,15 @@ body {
     </div>
   </div>
 
-  <!-- CALENDAR (span 5) — added Task 6 -->
+  <!-- CALENDAR (span 5) -->
+  <div class="card cup-reveal" id="calendar-card">
+    <div class="eyebrow">Upcoming</div>
+    <div id="calendar-body">
+      <div class="skel" style="height:22px;border-radius:6px;margin-bottom:10px"></div>
+      <div class="skel" style="height:22px;border-radius:6px;margin-bottom:10px"></div>
+      <div class="skel" style="height:22px;border-radius:6px"></div>
+    </div>
+  </div>
 
   <!-- PORTFOLIO STRIP (span 7) -->
   <div class="card hover-lift cup-reveal" id="portfolio-strip">
@@ -2009,6 +2035,24 @@ function renderSpotify(data) {
 }
 
 // ════════════════════════════════════════════════════════════════════
+// CALENDAR
+// ════════════════════════════════════════════════════════════════════
+function renderCalendar(events) {
+  const el = document.getElementById('calendar-body');
+  if (!el) return;
+  if (!events || !events.length) {
+    el.innerHTML = '<p class="cal-empty">Nothing on your calendar for the next 3 months.</p>';
+    return;
+  }
+  el.innerHTML = events.slice(0, 4).map(ev =>
+    `<div class="cal-item cup-row">
+      <span class="cal-emoji">${ev.emoji}</span>
+      <span class="cal-text">${ev.text}</span>
+    </div>`
+  ).join('');
+}
+
+// ════════════════════════════════════════════════════════════════════
 // GOLF
 // ════════════════════════════════════════════════════════════════════
 function renderGolf(golf) {
@@ -2349,6 +2393,7 @@ async function init() {
   renderGolf(data.golf || null);
   renderWorldCup(data.worldCup || {});
   renderWcFantasy(wcFantasyData);
+  renderCalendar(data.calendar || []);
 
   // Spotify: initial fetch + poll every 30s for live now-playing
   async function fetchAndRenderSpotify() {
