@@ -127,13 +127,35 @@ async function fetchCalendar() {
 
     const now    = new Date().toISOString();
     const cutoff = new Date(Date.now() + 90 * 24 * 3600 * 1000).toISOString();
-    const calRes = await fetch(
-      `https://www.googleapis.com/calendar/v3/calendars/primary/events?timeMin=${now}&timeMax=${cutoff}&singleEvents=true&orderBy=startTime&maxResults=20`,
+
+    // Fetch all calendars, then query each for events
+    const calListRes = await fetch(
+      'https://www.googleapis.com/calendar/v3/users/me/calendarList?maxResults=50',
       { headers: { Authorization: `Bearer ${access_token}` } }
     );
-    const calData = await calRes.json();
-    return (calData.items || [])
+    const calList = await calListRes.json();
+    const calIds  = (calList.items || []).map(c => c.id);
+
+    const allItems = (await Promise.all(
+      calIds.map(async calId => {
+        try {
+          const r = await fetch(
+            `https://www.googleapis.com/calendar/v3/calendars/${encodeURIComponent(calId)}/events?timeMin=${now}&timeMax=${cutoff}&singleEvents=true&orderBy=startTime&maxResults=20`,
+            { headers: { Authorization: `Bearer ${access_token}` } }
+          );
+          const d = await r.json();
+          return d.items || [];
+        } catch (_) { return []; }
+      })
+    )).flat();
+
+    return allItems
       .filter(ev => ev.summary)
+      .sort((a, b) => {
+        const da = new Date(a.start?.dateTime || a.start?.date || 0);
+        const db = new Date(b.start?.dateTime || b.start?.date || 0);
+        return da - db;
+      })
       .map(ev => {
         const startIso = ev.start?.dateTime || ev.start?.date || null;
         const multiDay = ev.start?.date && ev.end?.date &&
