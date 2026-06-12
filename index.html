@@ -718,16 +718,51 @@ body {
 #calendar-card { padding: 22px 24px; }
 .cal-item {
   display: flex;
-  align-items: flex-start;
-  gap: 10px;
-  padding: 9px 0;
+  align-items: center;
+  gap: 14px;
+  padding: 8px 0;
   border-bottom: 1px solid var(--line);
   transition: padding-left .18s;
 }
 .cal-item:last-child { border-bottom: none; }
-.cal-item:hover { padding-left: 6px; }
-.cal-emoji { font-size: 18px; line-height: 1.4; flex-shrink: 0; }
-.cal-text { font-family: var(--f-s); font-size: 14px; color: var(--ink); line-height: 1.5; }
+.cal-item:hover { padding-left: 4px; }
+.cal-tile {
+  flex-shrink: 0;
+  width: 44px;
+  border-radius: 10px;
+  background: var(--cup-accent);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 4px 4px;
+  gap: 0;
+}
+.cal-tile-day {
+  font-family: var(--f-s);
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.5px;
+}
+.cal-tile-month {
+  font-family: var(--f-m);
+  font-size: 9px;
+  font-weight: 600;
+  color: rgba(255,255,255,0.75);
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  line-height: 1.2;
+}
+.cal-body { flex: 1; min-width: 0; }
+.cal-text {
+  font-family: var(--f-s);
+  font-size: 13.5px;
+  color: var(--ink);
+  line-height: 1.4;
+}
 .cal-empty { font-family: var(--f-s); font-size: 14px; color: var(--ink3); padding: 12px 0; }
 
 /* ════════════════════════════════════════════════════════════════════
@@ -2037,6 +2072,10 @@ function renderSpotify(data) {
 // ════════════════════════════════════════════════════════════════════
 // CALENDAR
 // ════════════════════════════════════════════════════════════════════
+
+// Tile colours cycle through a small palette so adjacent events look distinct
+const CAL_TILE_COLORS = ['#2a6fdb','#1f8a5b','#c0392b','#e89a2f','#7c3aed'];
+
 function renderCalendar(events) {
   const el = document.getElementById('calendar-body');
   if (!el) return;
@@ -2044,12 +2083,21 @@ function renderCalendar(events) {
     el.innerHTML = '<p class="cal-empty">Nothing on your calendar for the next 3 months.</p>';
     return;
   }
-  el.innerHTML = events.slice(0, 4).map(ev =>
-    `<div class="cal-item cup-row">
-      <span class="cal-emoji">${ev.emoji}</span>
-      <span class="cal-text">${ev.text}</span>
-    </div>`
-  ).join('');
+  el.innerHTML = events.slice(0, 4).map((ev, i) => {
+    const d     = new Date(ev.startIso);
+    const day   = d.getDate();
+    const month = d.toLocaleDateString('en-GB', { month: 'short' });
+    const color = CAL_TILE_COLORS[i % CAL_TILE_COLORS.length];
+    return `<div class="cal-item cup-row">
+      <div class="cal-tile" style="background:${color}">
+        <div class="cal-tile-day">${day}</div>
+        <div class="cal-tile-month">${month}</div>
+      </div>
+      <div class="cal-body">
+        <div class="cal-text">${ev.text}</div>
+      </div>
+    </div>`;
+  }).join('');
 }
 
 // ════════════════════════════════════════════════════════════════════

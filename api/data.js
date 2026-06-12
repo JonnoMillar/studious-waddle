@@ -128,13 +128,18 @@ async function fetchCalendar() {
     const now    = new Date().toISOString();
     const cutoff = new Date(Date.now() + 90 * 24 * 3600 * 1000).toISOString();
 
-    // Fetch all calendars, then query each for events
+    // Skip auto-generated calendars (UK public holidays, contacts birthday auto-calendar)
+    const SKIP_CAL_IDS = new Set([
+      'en.uk#holiday@group.v.calendar.google.com',
+      '#contacts@group.v.calendar.google.com',
+    ]);
+
     const calListRes = await fetch(
       'https://www.googleapis.com/calendar/v3/users/me/calendarList?maxResults=50',
       { headers: { Authorization: `Bearer ${access_token}` } }
     );
     const calList = await calListRes.json();
-    const calIds  = (calList.items || []).map(c => c.id);
+    const calIds  = (calList.items || []).map(c => c.id).filter(id => !SKIP_CAL_IDS.has(id));
 
     const allItems = (await Promise.all(
       calIds.map(async calId => {
@@ -151,6 +156,11 @@ async function fetchCalendar() {
 
     return allItems
       .filter(ev => ev.summary)
+      .filter(ev => {
+        const t = ev.summary.toLowerCase();
+        // Skip booking confirmation events (accommodation details, flight refs)
+        return !(t.includes('stay at ') || t.includes('apartment ') || (t.includes('flight') && t.includes('#')));
+      })
       .sort((a, b) => {
         const da = new Date(a.start?.dateTime || a.start?.date || 0);
         const db = new Date(b.start?.dateTime || b.start?.date || 0);
