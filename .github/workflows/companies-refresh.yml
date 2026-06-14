@@ -1,0 +1,35 @@
+name: Refresh Companies to Watch
+
+on:
+  schedule:
+    - cron: '0 6 * * *'   # Daily 6am UTC
+  workflow_dispatch:
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Run refresh script
+        run: node scripts/refresh-companies.js > api/companies-cache.json
+
+      - name: Commit and push
+        run: |
+          git config user.email "companies-bot@briefing.local"
+          git config user.name "Companies Bot"
+          git add api/companies-cache.json
+          git diff --staged --quiet && echo "No changes to commit" && exit 0
+          git commit -m "chore: refresh companies to watch cache"
+          git pull --rebase origin ${{ github.ref_name }}
+          git push origin ${{ github.ref_name }}

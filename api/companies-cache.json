@@ -1,0 +1,148 @@
+{
+  "refreshed_at": "2026-06-14T21:49:32.224Z",
+  "companies": [
+    {
+      "name": "CrowdStrike",
+      "tag": "Cybersecurity",
+      "desc": "Cloud-native endpoint protection and threat intelligence",
+      "url": "https://crowdstrike.com",
+      "initials": "CS",
+      "logo": "https://www.google.com/s2/favicons?domain=crowdstrike.com&sz=128",
+      "ticker": "CRWD",
+      "headline": {
+        "title": "CrowdStrike (CRWD): ARR Growth Shows Why Falcon Still Has Room to Expand Across Cybersecurity Budgets - Yahoo Finance",
+        "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOT0J0TlBqc093dXk4WThZMjNsQVBwXzJlaS1FallCVlI0SmtuSk1zcm9TeVF2SURZNDdsb0dXTWZiY3NFVUdRa2JjZzdaME9PYkYxdXFVTU56MkkwWTJHMEZYWGJONDRlVUVUQ1FIemIyaTJVM1dneTZ2b3NPM2RZc2tCQkhWclltdXB4cXFDZVFjbzNVTVJ4bFdIcVd6NkU?oc=5",
+        "pubDate": "Sun, 14 Jun 2026 19:45:12 GMT"
+      },
+      "sparkline": [
+        562.5700073242188,
+        579.9500122070312,
+        594.0800170898438,
+        618.8300170898438,
+        616.8800048828125,
+        650.1099853515625,
+        648.22998046875,
+        663.4600219726562,
+        671.5499877929688,
+        645.3599853515625,
+        671,
+        731,
+        782.1699829101562,
+        768.9500122070312,
+        747.6099853515625,
+        719.0900268554688,
+        671.02001953125,
+        658.7899780273438,
+        644.9299926757812,
+        647.739990234375,
+        691.530029296875,
+        682.7999877929688
+      ]
+    },
+    {
+      "name": "Scale AI",
+      "tag": "AI Data",
+      "desc": "Data labelling and RLHF infrastructure powering frontier AI",
+      "url": "https://scale.com",
+      "initials": "S",
+      "logo": "https://www.google.com/s2/favicons?domain=scale.com&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "A year after Meta tapped Alexandr Wang to build a new AI model, Zuckerberg has to sell it - CNBC",
+        "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPM1N2TjhCLXhKUEVfUl9RUEYtWHRDUjk1VmY5U05GUXpKenczbThfSlUtNExrYkVTMkw2YlNhdlFpTFdKV01yUElsejZzc3RieWhOV0o3ZmRGdTRKYUhXSUgzTGxjeTBYSmM2WmV3MU9qVUVsb3dBVVgtajgtckpkSTdvQVlSQVg3YU1CbVhndW1tNFhjMHZnOEUzTXdqN1EzV2pXaUNGVdIBrAFBVV95cUxPUlZCb19ObnlKTTJubG9qMnhFR24ydk1ralZlNWt4VmNpYTlyLUozeUl0eUxaVi1SZzdOWVJ3WGw5TWg5WDFuV3NIM0RxV1VXdDhJbzYxSTl2cnhQS0hmdU1yYW9rbEw5ajE3NGJrb3hYYjFCUzFPa0t2c3pOY3NFWGlYYlJ5N3VZMHp5R0dBbWlEaUtNM205d2Y0elVxUzBSR1UwZ19Jc0s5a3Ux?oc=5",
+        "pubDate": "Sun, 14 Jun 2026 12:00:02 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "Anduril",
+      "tag": "Defense AI",
+      "desc": "Autonomous defense systems and AI-enabled military hardware",
+      "url": "https://anduril.com",
+      "initials": "A",
+      "logo": "https://www.google.com/s2/favicons?domain=anduril.com&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "Defence tech start-up Anduril calls for reset of US arms export controls - Financial Times",
+        "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPSU5DQzNrQ3RjemhTWVRzUURKcm5GR1lxYm52RHRtTS01Znh1VHNXWWw4aDAzZTVOYnd0ZFBHUFJPOFBueHRnOFpKNi1mWjVxNTFFRXR4RDRYQTUzNHljUUNpYXdPUjczNnVPSm5RdkVTSnJkSlFWY3VVT2RURHA5RHBuM3M?oc=5",
+        "pubDate": "Sun, 14 Jun 2026 04:00:59 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "Physical Intelligence",
+      "tag": "Embodied AI",
+      "desc": "Training AI systems to manipulate physical objects",
+      "url": "https://physicalintelligence.company",
+      "initials": "PI",
+      "logo": "https://www.google.com/s2/favicons?domain=physicalintelligence.company&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "TM Technology pushes into physical intelligence with its first humanoid robot - digitimes",
+        "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQZ1JWZmx5czVmc3kzX01QRVhoeUphLXEzY01KcU1idE1LZjVZMjZHWHJWZGlwVnBwU2dOZEYwemRudTJHZ2FVU1BXdDhkQzVrdVFsb0dIWW9LZFBKbVRDOUZzTnB1X0Y3VVE2Q3FoU2FTcmxyM010QjJnTzhxTGZ0ek5qQ3c1UlhfSHpXZm5OMzg3MkFuVGZqSFhITHVpVVBTMGJ0YTJlY3FQaEpxT3JB?oc=5",
+        "pubDate": "Sun, 14 Jun 2026 01:44:14 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "Waymo",
+      "tag": "Autonomy",
+      "desc": "The most miles driven autonomously of any robotaxi service",
+      "url": "https://waymo.com",
+      "initials": "W",
+      "logo": "https://www.google.com/s2/favicons?domain=waymo.com&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "Waymo has bought the Apple Car self-driving test site for $220M - AppleInsider",
+        "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNNDdtcy13SUxlMEs0dENpSG5hZnR2ZU93NlNVU0czdXN1bDhNUENwb1JSOEtDaTBZbHh4LVdMYUx5Vnlac1pHVVZpMXpQZV84RndTdk1tMFNuYnl3TWdjWGZnQWV4TUZ3MkVqZm53Z01ucG9lalFHWVhYYThBRXdIVTFWMXFKa2t2X0xUVFc3aFBnNlB0U1VEOUp3TkVzRTc5TndGdkw2VHo?oc=5",
+        "pubDate": "Sat, 13 Jun 2026 20:13:00 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "Anthropic",
+      "tag": "LLMs",
+      "desc": "AI safety company behind the Claude family of models",
+      "url": "https://anthropic.com",
+      "initials": "AN",
+      "logo": "https://www.google.com/s2/favicons?domain=anthropic.com&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "Anthropic to disable its most advanced AI models after US order limiting foreign access - The Guardian",
+        "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOaV8xTnpVa2Z0dG9CaExsSUNCMVQ2Ty1HNlgzaTg0aDQ0bEpGMnU5Q255QnBGNzlOdndyc0JBUXpVV0hpRmdYejNJS0ZMWE53SlNhUDFTOGJzQzFjeXN6bEcydHRwaWFYdHVxRDIxd1JJZnNqbmljbDNGQnN2a256dk1zMHhRZkR2VmZzY0wxbUREY3IxZUNLcGVkSUZLNlh3RkRPbEJLNW1icmc?oc=5",
+        "pubDate": "Sat, 13 Jun 2026 12:37:00 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "Perplexity",
+      "tag": "AI Search",
+      "desc": "Answer engine combining web search with AI-generated summaries",
+      "url": "https://perplexity.ai",
+      "initials": "P",
+      "logo": "https://www.google.com/s2/favicons?domain=perplexity.ai&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "Perplexity CEO's secret to success is ‘sleeping with that fear’ your competitor will steal your idea - Fortune",
+        "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxONl9XeXdOZzQwYTdIMnRWQUgxWURZelhaWkZjcW5RNW9fNHBLY2ZZMTVMT0l0Nk1YUlZBaUEzWXljNTFEbGtQcWhmRTJXaDFMUjVqMGs1OGNnWjM0bTlIWVZVemI3QlVvOVJCNlZDNU5UQm9QWUhuNl9sbzNMeVFZMHZfc1FiakJ0X2NGX3NEY3Etd0loV0VTMzBHWXFJb1pqWU5qUlJucVZzYWxZZEhqM2dkME9sUkI1b1FYVzVhOFplY29iQ0tGNTBXcw?oc=5",
+        "pubDate": "Sat, 13 Jun 2026 10:00:44 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "OpenAI",
+      "tag": "LLMs",
+      "desc": "Creator of ChatGPT and the GPT family of foundation models",
+      "url": "https://openai.com",
+      "initials": "OAI",
+      "logo": "https://www.google.com/s2/favicons?domain=openai.com&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "Mother sues OpenAI in US after daughter’s death linked to ChatGPT use - Al Jazeera",
+        "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQTzRkQlE5SzQ5RUEtVlh0RTRMR0pwVXlmZmQwZ19qcWgyZGtpVG1rOEFzM1NYOGowSDJ1UV9BSXhwTW9jdXcyMTNlU2d4NURaT3dLZzhuNkMzUmpxMDFzTFhlRTJBdlFNTTVEV1htTkdtZFZZbW5SaDFBcFZ2MUVXdlNBNmpveWdMaHNfeFJGRHZPNGlrVDI5QXQzYjUtODlFMG0wdVZSeTRhZzh5eG04TWR30gG3AUFVX3lxTE51NTJpdEw2cXlFandjNERoYjFnOE1PTVJoTGpUM3R2azEyLUs4VTA3NUF2Wm9xby1Ud203YnhNTERVTDFSWGNETzRGUU0wUUhBU2xOWGNLcVVZOFlMak1fUzM5ZjdESVQyaDNyMm9lcm00MDZqX1BvZmlnR1VlZ0pkbThRSmxXOVp4OEVFMlpCWXlGZXZXMURmektNNHhCbVZ4NVR6YlBfOFBpSDRxMUpyX3MxNkRiaw?oc=5",
+        "pubDate": "Fri, 12 Jun 2026 21:39:19 GMT"
+      },
+      "sparkline": null
+    }
+  ]
+}

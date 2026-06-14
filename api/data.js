@@ -429,6 +429,12 @@ export default async function handler(req, res) {
     golf = { ...cached, tee_times: sorted };
   } catch (_) {}
 
+  let companies = [];
+  try {
+    const cached = JSON.parse(readFileSync(join(process.cwd(), 'api/companies-cache.json'), 'utf8'));
+    companies = cached.companies || [];
+  } catch (_) {}
+
   res.json({
     prices,
     news:     Object.fromEntries(newsEntries),
@@ -440,5 +446,6 @@ export default async function handler(req, res) {
     calendar: calendarEvents,
     golf,
     inbox,
+    companies,
   });
 }

@@ -1238,6 +1238,31 @@ body {
   line-height: 1.5;
   max-width: 660px;
 }
+.co-featured-extra {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 12px;
+}
+.co-sparkline {
+  width: 90px;
+  height: 28px;
+  flex-shrink: 0;
+}
+.co-headline {
+  font-family: var(--f-s);
+  font-size: 12px;
+  color: var(--ink3);
+  text-decoration: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  transition: color 0.15s;
+}
+.co-headline:hover {
+  color: var(--cup-accent);
+  text-decoration: underline;
+}
 .co-nav {
   display: flex;
   gap: 7px;
@@ -2455,17 +2480,29 @@ const CO_INFO = {
 
 let _coCards = [], _coIdx = 0, _coTimer = null;
 
-function renderCompanies(prices) {
-  _coCards = CO_NAMES
-    .map(name => ({ name, info: CO_INFO[name] || {}, ...(prices[name] || {}) }))
-    .sort((a, b) => {
-      const aHasPrice = a.change != null;
-      const bHasPrice = b.change != null;
-      if (aHasPrice && !bHasPrice) return -1;
-      if (!aHasPrice && bHasPrice) return 1;
-      if (aHasPrice && bHasPrice) return Math.abs(b.change) - Math.abs(a.change);
-      return 0;
-    });
+function renderCompanies(prices, companies) {
+  if (companies && companies.length) {
+    // Auto-refreshed, recency-ranked companies (api/companies-cache.json)
+    _coCards = companies.map(c => ({
+      name: c.name,
+      info: { tag: c.tag, desc: c.desc, logo: c.logo, initials: c.initials, url: c.url },
+      headline: c.headline || null,
+      sparkline: c.sparkline || null,
+      ...(prices[c.name] || {}),
+    }));
+  } else {
+    // Fallback to the static curated list if the cache is empty/unavailable
+    _coCards = CO_NAMES
+      .map(name => ({ name, info: CO_INFO[name] || {}, ...(prices[name] || {}) }))
+      .sort((a, b) => {
+        const aHasPrice = a.change != null;
+        const bHasPrice = b.change != null;
+        if (aHasPrice && !bHasPrice) return -1;
+        if (!aHasPrice && bHasPrice) return 1;
+        if (aHasPrice && bHasPrice) return Math.abs(b.change) - Math.abs(a.change);
+        return 0;
+      });
+  }
 
   if (!_coCards.length) return;
 
@@ -2511,6 +2548,16 @@ function _drawCoCard(idx) {
       </svg>
     </a>` : '';
 
+  const headlineHtml = c.headline ? `
+    <a class="co-headline" href="${c.headline.link}" target="_blank" rel="noopener noreferrer">
+      Latest: ${c.headline.title}
+    </a>` : '';
+  const sparklineHtml = _sparklineSvg(c.sparkline);
+  const extraHtml = (sparklineHtml || headlineHtml) ? `<div class="co-featured-extra">
+    ${sparklineHtml}
+    ${headlineHtml}
+  </div>` : '';
+
   stage.innerHTML = `<div class="co-featured">
     <div class="co-featured-top">
       <div class="co-featured-left">
@@ -2525,7 +2572,26 @@ function _drawCoCard(idx) {
       </div>
     </div>
     <div class="co-featured-desc">${c.info.desc || ''}</div>
+    ${extraHtml}
   </div>`;
+}
+
+// Tiny inline polyline sparkline for a 30-day price series
+function _sparklineSvg(values) {
+  if (!values || values.length < 2) return '';
+  const w = 120, h = 32, pad = 2;
+  const min = Math.min(...values), max = Math.max(...values);
+  const range = (max - min) || 1;
+  const step = (w - pad * 2) / (values.length - 1);
+  const pts = values.map((v, i) => {
+    const x = pad + i * step;
+    const y = pad + (1 - (v - min) / range) * (h - pad * 2);
+    return `${x.toFixed(1)},${y.toFixed(1)}`;
+  }).join(' ');
+  const color = values[values.length - 1] >= values[0] ? 'var(--green)' : 'var(--red)';
+  return `<svg class="co-sparkline" viewBox="0 0 ${w} ${h}" preserveAspectRatio="none">
+    <polyline points="${pts}" fill="none" stroke="${color}" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/>
+  </svg>`;
 }
 
 function goCoSlide(idx) {
@@ -2585,7 +2651,7 @@ async function init() {
   // Render sections
   renderPortfolioStrip(data.prices || {});
   renderMarkets(data.prices || {});
-  renderCompanies(data.prices || {});
+  renderCompanies(data.prices || {}, data.companies || []);
   renderNews(data.news || {});
   renderGolf(data.golf || null);
   renderWorldCup(data.worldCup || {});
