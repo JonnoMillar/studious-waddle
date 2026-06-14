@@ -784,6 +784,37 @@ body {
 }
 
 /* ════════════════════════════════════════════════════════════════════
+   INBOX TRIAGE
+   ════════════════════════════════════════════════════════════════════ */
+#inbox-card { grid-column: span 4; align-self: start; }
+.inbox-item {
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(26,24,22,0.06);
+}
+.inbox-item:last-child { border-bottom: none; }
+.inbox-from {
+  font-family: var(--f-s);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--ink);
+}
+.inbox-subject {
+  font-family: var(--f-s);
+  font-size: 12px;
+  color: var(--ink3);
+  margin-top: 2px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.inbox-more {
+  font-family: var(--f-m);
+  font-size: 11px;
+  color: var(--ink3);
+  margin-top: 6px;
+}
+
+/* ════════════════════════════════════════════════════════════════════
    GOLF
    ════════════════════════════════════════════════════════════════════ */
 #golf-card {
@@ -1284,7 +1315,7 @@ body {
   #hero-card, #headlines-card, #markets-card, #companies-card,
   #portfolio-strip, #wc-fixtures-card, #fixtures-card,
   #spotify-card, #calendar-card, #wc-fantasy-card,
-  #golf-card { grid-column: 1 / -1; }
+  #inbox-card, #golf-card { grid-column: 1 / -1; }
   .hero-h1 { font-size: clamp(28px, 6vw, 48px); }
   .markets-grid { grid-template-columns: repeat(3, 1fr); }
 }
@@ -1385,6 +1416,15 @@ body {
     <div class="eyebrow">Listening</div>
     <div id="spotify-body">
       <div class="skel" style="height:64px;border-radius:10px"></div>
+    </div>
+  </div>
+
+  <!-- INBOX TRIAGE (span 4) -->
+  <div class="card cup-reveal" id="inbox-card">
+    <div class="eyebrow">Inbox</div>
+    <div id="inbox-body">
+      <div class="skel" style="height:22px;border-radius:6px;margin-bottom:10px"></div>
+      <div class="skel" style="height:22px;border-radius:6px"></div>
     </div>
   </div>
 
@@ -2187,6 +2227,29 @@ function renderCalendar(events) {
 }
 
 // ════════════════════════════════════════════════════════════════════
+// INBOX TRIAGE
+// ════════════════════════════════════════════════════════════════════
+function renderInbox(inbox) {
+  const el = document.getElementById('inbox-body');
+  if (!el) return;
+  if (!inbox) {
+    el.innerHTML = '<p class="cal-empty">Inbox not connected.</p>';
+    return;
+  }
+  if (!inbox.count) {
+    el.innerHTML = '<p class="cal-empty">No important emails.</p>';
+    return;
+  }
+  const shown = inbox.items.slice(0, 3);
+  const extra = inbox.count - shown.length;
+  el.innerHTML = shown.map(m => `<div class="inbox-item">
+      <div class="inbox-from">${m.from}</div>
+      <div class="inbox-subject">${m.subject}</div>
+    </div>`).join('')
+    + (extra > 0 ? `<div class="inbox-more">+${extra} more</div>` : '');
+}
+
+// ════════════════════════════════════════════════════════════════════
 // GOLF
 // ════════════════════════════════════════════════════════════════════
 function renderGolf(golf) {
@@ -2528,6 +2591,7 @@ async function init() {
   renderWorldCup(data.worldCup || {});
   renderWcFantasy(wcFantasyData);
   renderCalendar(data.calendar || []);
+  renderInbox(data.inbox);
 
   // Spotify: initial fetch + poll every 30s for live now-playing
   async function fetchAndRenderSpotify() {

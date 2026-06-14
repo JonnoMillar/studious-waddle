@@ -177,6 +177,62 @@ async function fetchCalendar() {
   } catch (_) { return []; }
 }
 
+// Inbox triage: unread mail that actually needs a reply (starred, important,
+// or addressed directly to the user) — not a general unread count.
+async function fetchInboxTriage() {
+  const clientId     = process.env.GOOGLE_CLIENT_ID;
+  const clientSecret = process.env.GOOGLE_CLIENT_SECRET;
+  const refreshToken = process.env.GOOGLE_REFRESH_TOKEN;
+  if (!clientId || !clientSecret || !refreshToken) return null;
+  try {
+    const tokenRes = await fetch('https://oauth2.googleapis.com/token', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: new URLSearchParams({
+        client_id:     clientId,
+        client_secret: clientSecret,
+        refresh_token: refreshToken,
+        grant_type:    'refresh_token',
+      }),
+    });
+    const { access_token } = await tokenRes.json();
+    if (!access_token) return null;
+
+    const listRes = await fetch(
+      'https://gmail.googleapis.com/gmail/v1/users/me/messages?' + new URLSearchParams({
+        q: 'is:unread in:inbox -category:promotions -category:social',
+        maxResults: '10',
+      }),
+      { headers: { Authorization: `Bearer ${access_token}` } }
+    );
+    const list = await listRes.json();
+    const ids  = (list.messages || []).map(m => m.id);
+
+    const messages = await Promise.all(ids.map(async id => {
+      try {
+        const r = await fetch(
+          `https://gmail.googleapis.com/gmail/v1/users/me/messages/${id}` +
+          '?format=metadata&metadataHeaders=From&metadataHeaders=Subject',
+          { headers: { Authorization: `Bearer ${access_token}` } }
+        );
+        return r.json();
+      } catch (_) { return null; }
+    }));
+
+    const items = messages
+      .filter(m => m && (m.labelIds || []).includes('IMPORTANT'))
+      .map(m => {
+        const headers = m.payload?.headers || [];
+        const get     = name => headers.find(h => h.name === name)?.value || '';
+        const from    = get('From').replace(/<.*>/, '').replace(/"/g, '').trim();
+        const subject = get('Subject') || '(no subject)';
+        return { from, subject };
+      });
+
+    return { count: items.length, items: items.slice(0, 3) };
+  } catch (_) { return null; }
+}
+
 export default async function handler(req, res) {
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Cache-Control', 's-maxage=300, stale-while-revalidate=600');
@@ -202,7 +258,7 @@ export default async function handler(req, res) {
     'Palantir':    'PLTR',
   };
 
-  const [priceEntries, newsEntries, wcResult, oddsMap, calendarEvents] = await Promise.all([
+  const [priceEntries, newsEntries, wcResult, oddsMap, calendarEvents, inbox] = await Promise.all([
 
     Promise.all(Object.entries(TICKERS).map(async ([name, ticker]) => {
       try {
@@ -332,6 +388,7 @@ export default async function handler(req, res) {
 
     fetchWcOdds(),
     fetchCalendar(),
+    fetchInboxTriage(),
   ]);
 
   const prices = Object.fromEntries(priceEntries);
@@ -382,5 +439,6 @@ export default async function handler(req, res) {
     },
     calendar: calendarEvents,
     golf,
+    inbox,
   });
 }
