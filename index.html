@@ -764,6 +764,24 @@ body {
   line-height: 1.4;
 }
 .cal-empty { font-family: var(--f-s); font-size: 14px; color: var(--ink3); padding: 12px 0; }
+.cal-tip {
+  margin-top: 6px;
+  font-family: var(--f-s);
+  font-size: 12px;
+}
+.cal-tip summary {
+  cursor: pointer;
+  list-style: none;
+  color: var(--ink2);
+  font-weight: 500;
+}
+.cal-tip summary::-webkit-details-marker { display: none; }
+.cal-tip[open] summary { color: var(--ink); }
+.cal-tip-answer {
+  margin-top: 4px;
+  color: var(--ink3);
+  line-height: 1.4;
+}
 
 /* ════════════════════════════════════════════════════════════════════
    GOLF
@@ -1636,17 +1654,36 @@ async function fetchWeather() {
     const r = await fetch(
       'https://api.open-meteo.com/v1/forecast?latitude=51.4214&longitude=-0.2062' +
       '&current=temperature_2m,weather_code' +
-      '&daily=temperature_2m_max,temperature_2m_min,uv_index_max,precipitation_sum' +
+      '&daily=temperature_2m_max,temperature_2m_min,uv_index_max,precipitation_sum,sunrise,sunset' +
+      '&hourly=uv_index' +
       '&timezone=Europe%2FLondon'
     );
-    const d    = await r.json();
-    const temp = Math.round(d.current.temperature_2m);
-    const high = Math.round(d.daily.temperature_2m_max[0]);
-    const low  = Math.round(d.daily.temperature_2m_min[0]);
-    const uv   = Math.round(d.daily.uv_index_max[0]);
-    const rain = d.daily.precipitation_sum?.[0] ?? 0;
-    const code = d.current.weather_code;
-    const desc = WMO_DESC[code] || 'Clear';
+    const d      = await r.json();
+    const temp   = Math.round(d.current.temperature_2m);
+    const high   = Math.round(d.daily.temperature_2m_max[0]);
+    const low    = Math.round(d.daily.temperature_2m_min[0]);
+    const uv     = Math.round(d.daily.uv_index_max[0]);
+    const rain   = d.daily.precipitation_sum?.[0] ?? 0;
+    const code   = d.current.weather_code;
+    const desc   = WMO_DESC[code] || 'Clear';
+    const sunrise = d.daily.sunrise?.[0]?.slice(11, 16);
+    const sunset  = d.daily.sunset?.[0]?.slice(11, 16);
+
+    // Find the time today's UV first drops back below 3 after its peak
+    let sunscreenUntil = null;
+    const hUv = d.hourly?.uv_index, hTime = d.hourly?.time;
+    if (hUv && hTime) {
+      const today = d.daily.time[0];
+      const todayIdx = [];
+      hTime.forEach((t, i) => { if (t.startsWith(today)) todayIdx.push(i); });
+      let peakIdx = todayIdx[0];
+      for (const i of todayIdx) if (hUv[i] > hUv[peakIdx]) peakIdx = i;
+      if (hUv[peakIdx] >= 3) {
+        for (const i of todayIdx) {
+          if (i >= peakIdx && hUv[i] < 3) { sunscreenUntil = hTime[i].slice(11, 16); break; }
+        }
+      }
+    }
 
     const tempEl    = document.getElementById('hero-temp');
     const condEl    = document.getElementById('hero-condition');
@@ -1686,10 +1723,16 @@ async function fetchWeather() {
 
     if (tempEl) countUp(tempEl, temp, { decimals: 0, dur: 1200 });
     if (condEl) condEl.textContent = desc;
-    if (hlEl)   hlEl.textContent = `${high}° high · ${low}° low`;
+    if (hlEl) {
+      hlEl.textContent = `${high}° high · ${low}° low`;
+      if (sunrise && sunset) hlEl.textContent += ` · ☀️ ${sunrise} – ${sunset}`;
+    }
     if (pillsEl) {
+      const uvLabel = sunscreenUntil
+        ? `UV ${uv} — ${UV_LABEL(uv)} · no sunscreen needed after ${sunscreenUntil}`
+        : (uv < 3 ? `UV ${uv} — ${UV_LABEL(uv)} · no sunscreen needed today` : `UV ${uv} — ${UV_LABEL(uv)}`);
       pillsEl.innerHTML = [
-        `<span class="hero-wpill">UV ${uv} — ${UV_LABEL(uv)}</span>`,
+        `<span class="hero-wpill">${uvLabel}</span>`,
         rain > 0 ? `<span class="hero-wpill">${rain.toFixed(1)}mm rain</span>` : '',
       ].join('');
     }
@@ -2076,6 +2119,37 @@ function renderSpotify(data) {
 // Tile colours cycle through a small palette so adjacent events look distinct
 const CAL_TILE_COLORS = ['#2a6fdb','#1f8a5b','#c0392b','#e89a2f','#7c3aed'];
 
+// Official DVSA "show me, tell me" vehicle safety questions (gov.uk, public domain).
+// TEMPORARY: remove this block + its use in renderCalendar() after the practical
+// test on 21 Jul 2026.
+const DVSA_QUESTIONS = [
+  { q: 'Open the bonnet and tell me how you would check that the engine has enough oil.', a: 'Identify the dipstick, describe pulling it out, wiping it, reinserting and checking the level is between the min and max marks.' },
+  { q: 'Tell me how you would check the brakes are working before starting a journey.', a: "Press the brake pedal before moving off — it shouldn't feel spongy or sink to the floor, and the car shouldn't pull to one side." },
+  { q: 'Tell me how you would check the parking brake for excessive wear.', a: "Apply the handbrake — it should hold the car still with only a few clicks, not require pulling to the end of its travel." },
+  { q: 'Tell me how you would check the power-assisted steering is working before starting a journey.', a: "Before moving, turn the steering wheel slightly — it should feel light. If it feels heavy, the system may not be working." },
+  { q: 'Tell me how you would check the headlights and tail lights are working.', a: "Turn on the lights (ignition may need to be on) then walk round the car checking each one, or ask someone to confirm while you operate the switch." },
+  { q: 'Tell me how you would check the brake lights are working on this car.', a: "Use the brake pedal with the reverse gear engaged, ask someone to check, or look for a reflection in a window/garage door." },
+  { q: 'Tell me how you would check the direction indicators are working.', a: "Operate the indicator stalk and walk around the car to check all indicators are flashing, or use the hazard switch to check all four at once." },
+  { q: 'Tell me how you would check that the horn is working.', a: "Press the horn button (handbrake on, in neutral) and confirm it sounds." },
+  { q: 'Show me how you would clean the windscreen using the windscreen wiper and washer.', a: "Operate the washer and wiper stalk/switch to clean the windscreen." },
+  { q: 'Open the bonnet and tell me where you would check the engine coolant level and how you would check the engine has the correct level.', a: "Locate the coolant reservoir and check the level is between the min and max markings (only when the engine is cool)." },
+  { q: 'Tell me where you would find the recommended tyre pressures for this car and how tyre pressures should be checked.', a: "Check the handbook, fuel filler flap or driver's door pillar for the recommended pressure, and check pressures with a gauge when tyres are cold." },
+  { q: 'Show me how you would switch on the rear fog lights and explain when you would use them.', a: "Switch them on using the fog light control, and use them only when visibility drops below 100 metres." },
+  { q: 'Show me how you would set the demister controls to clear all the windows effectively.', a: "Set the heater controls to demist — fan on, temperature up, air directed to the windscreen and side windows, with the heated rear window/AC on if fitted." },
+  { q: 'Show me how you would clean the rear windscreen using the rear windscreen wiper and washer, if fitted.', a: "Operate the rear wiper/washer control." },
+  { q: 'Show me how you would open and close the side window.', a: "Operate the window switch or winder to open and close it." },
+  { q: 'Show me how you would switch on the interior light.', a: "Locate and operate the interior light switch." },
+  { q: 'Show me how you would set the rear demister.', a: "Switch on the heated rear window (and rear demist setting if fitted) and check it's clearing the glass." },
+  { q: 'Tell me how you would know if there was a problem with your anti-lock braking system.', a: "A warning light on the dashboard would stay on or come on while driving to indicate a fault." },
+  { q: 'Tell me how you would check that the brake lights are working, including when the rear fog light may be lit.', a: "Use the brake pedal with reverse engaged or ask someone to check, and note the rear fog light should not be confused with the brake light." },
+];
+
+function _dvsaQuestion() {
+  const start = new Date(new Date().getFullYear(), 0, 0);
+  const dayOfYear = Math.floor((Date.now() - start) / 86400000);
+  return DVSA_QUESTIONS[dayOfYear % DVSA_QUESTIONS.length];
+}
+
 function renderCalendar(events) {
   const el = document.getElementById('calendar-body');
   if (!el) return;
@@ -2083,11 +2157,22 @@ function renderCalendar(events) {
     el.innerHTML = '<p class="cal-empty">Nothing on your calendar for the next 3 months.</p>';
     return;
   }
+  // TEMPORARY: drop this date gate + the DVSA tip below once the practical test (21 Jul 2026) has passed
+  const showDrivingTip = new Date() <= new Date('2026-07-21T23:59:59');
   el.innerHTML = events.slice(0, 4).map((ev, i) => {
     const d     = new Date(ev.startIso);
     const day   = d.getDate();
     const month = d.toLocaleDateString('en-GB', { month: 'short' });
     const color = CAL_TILE_COLORS[i % CAL_TILE_COLORS.length];
+    const isDrivingTest = /driving test/i.test(ev.text);
+    let tip = '';
+    if (isDrivingTest && showDrivingTip) {
+      const { q, a } = _dvsaQuestion();
+      tip = `<details class="cal-tip">
+        <summary>💡 Today's practice question: "${q}"</summary>
+        <div class="cal-tip-answer">${a}</div>
+      </details>`;
+    }
     return `<div class="cal-item cup-row">
       <div class="cal-tile" style="background:${color}">
         <div class="cal-tile-day">${day}</div>
@@ -2095,6 +2180,7 @@ function renderCalendar(events) {
       </div>
       <div class="cal-body">
         <div class="cal-text">${ev.text}</div>
+        ${tip}
       </div>
     </div>`;
   }).join('');
