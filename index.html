@@ -766,10 +766,10 @@ body {
 .cal-empty { font-family: var(--f-s); font-size: 14px; color: var(--ink3); padding: 12px 0; }
 
 /* ── Flip card (DVSA practice question) ──────────────────────────── */
-.flip-card { perspective: 1200px; cursor: pointer; margin-top: 14px; }
+.flip-card { perspective: 1200px; cursor: pointer; margin-top: 0; }
 .flip-inner {
   position: relative;
-  min-height: 110px;
+  min-height: 180px;
   transition: transform .6s cubic-bezier(.2,.7,.3,1);
   transform-style: preserve-3d;
 }
@@ -829,8 +829,9 @@ body {
 /* Placeholder rules for new sections — filled in by Tasks 4–7 */
 #wc-fixtures-card  { grid-column: span 8; align-self: start; }
 #wc-fantasy-card   { grid-column: span 4; align-self: start; }
-#calendar-card     { grid-column: span 8; }
+#calendar-card     { grid-column: span 4; }
 #spotify-card      { grid-column: span 4; align-self: stretch; }
+#dvsa-card         { grid-column: span 4; padding: 22px 24px; align-self: stretch; }
 .golf-two-col {
   display: grid;
   grid-template-columns: 1fr;
@@ -1362,7 +1363,7 @@ body {
   #hero-card, #headlines-card, #markets-card, #companies-card,
   #portfolio-strip, #wc-fixtures-card, #fixtures-card,
   #spotify-card, #calendar-card, #wc-fantasy-card,
-  #inbox-card, #golf-card { grid-column: 1 / -1; }
+  #inbox-card, #golf-card, #dvsa-card { grid-column: 1 / -1; }
   .hero-h1 { font-size: clamp(28px, 6vw, 48px); }
   .markets-grid { grid-template-columns: repeat(3, 1fr); }
 }
@@ -1474,10 +1475,12 @@ body {
       <div class="skel" style="height:22px;border-radius:6px;margin-bottom:10px"></div>
       <div class="skel" style="height:22px;border-radius:6px"></div>
     </div>
-    <div id="dvsa-flip"></div>
   </div>
 
-  <!-- CALENDAR (span 5) -->
+  <!-- DVSA PRACTICE QUESTION (span 4) -->
+  <div class="card cup-reveal" id="dvsa-card"></div>
+
+  <!-- CALENDAR (span 4) -->
   <div class="card cup-reveal" id="calendar-card">
     <div class="eyebrow">Upcoming</div>
     <div id="calendar-body">
@@ -2331,12 +2334,13 @@ function renderCalendar(events) {
 // ════════════════════════════════════════════════════════════════════
 // TEMPORARY: remove this function + its call in init() after the practical test on 21 Jul 2026
 function renderDvsaFlip() {
-  const el = document.getElementById('dvsa-flip');
+  const el = document.getElementById('dvsa-card');
   if (!el) return;
-  if (new Date() > new Date('2026-07-21T23:59:59')) { el.innerHTML = ''; return; }
+  if (new Date() > new Date('2026-07-21T23:59:59')) { el.style.display = 'none'; return; }
   const { q, a } = _dvsaQuestion();
-  el.innerHTML = `<div class="flip-card" onclick="this.classList.toggle('flipped')">
-    <div class="flip-inner">
+  el.classList.add('flip-card');
+  el.onclick = () => el.classList.toggle('flipped');
+  el.innerHTML = `<div class="flip-inner">
       <div class="flip-face flip-front">
         <div class="eyebrow">🚗 Today's practice question</div>
         <div class="flip-text">${q}</div>
@@ -2346,8 +2350,7 @@ function renderDvsaFlip() {
         <div class="flip-text">${a}</div>
       </div>
     </div>
-    <div class="flip-hint">tap to flip</div>
-  </div>`;
+    <div class="flip-hint">tap to flip</div>`;
 }
 
 // ════════════════════════════════════════════════════════════════════
