@@ -990,6 +990,25 @@ body {
   padding: 22px 28px 20px;
   grid-column: span 8;
 }
+.hl-next-arrow {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(26,24,22,0.06);
+  color: var(--ink2);
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background .2s;
+}
+.hl-next-arrow:hover { background: rgba(26,24,22,0.12); }
 .hl-masthead {
   display: flex;
   align-items: center;
@@ -1437,6 +1456,7 @@ body {
     <div id="hl-carousel">
       <div class="skel" style="height:240px;border-radius:10px"></div>
     </div>
+    <button class="hl-next-arrow" onclick="goHlSlide((_hlIdx+1) % _hlSlides.length)" aria-label="Next headline">›</button>
   </div>
 
   <!-- SPOTIFY (span 4) -->
@@ -2521,6 +2541,13 @@ function renderNews(news) {
 
   _hlIdx = 0;
   startHlCycle();
+
+  const card = document.getElementById('headlines-card');
+  if (card && !card.dataset.hoverBound) {
+    card.dataset.hoverBound = '1';
+    card.addEventListener('mouseenter', () => clearTimeout(_hlTimer));
+    card.addEventListener('mouseleave', () => startHlCycle());
+  }
 }
 
 function goHlSlide(idx) {
