@@ -86,11 +86,10 @@ export default async function handler(req, res) {
       .map(p => {
         const squadId = p.squadId ?? p.teamId ?? p.squad?.id;
         const squad   = squadMap[squadId] || { name: '', abbr: '', eliminated: false };
-        const pts     = Number(p.totalPoints ?? p.points ?? p.score ?? 0);
+        const pts     = Number(p.stats?.totalPoints ?? p.totalPoints ?? p.points ?? p.score ?? 0);
         const price   = Number(p.value ?? p.price ?? p.cost ?? 0);
-        const mins    = Number(p.minutesPlayed ?? p.minutes ?? 0);
         const name    = p.name || p.webName || p.displayName || p.lastName || `Player ${p.id}`;
-        return { name, squad, pts, price, mins };
+        return { name, squad, pts, price };
       })
       .filter(p => !p.squad.eliminated);
 
@@ -107,7 +106,7 @@ export default async function handler(req, res) {
           .map(p => ({ name: p.name, squad: p.squad.abbr || p.squad.name, label: `${p.pts} pts` }));
 
     const bestValue = preTournament ? [] : [...withPoints]
-      .filter(p => p.mins > 0 && p.price > 0)
+      .filter(p => p.price > 0)
       .map(p => ({ ...p, ratio: p.pts / p.price }))
       .sort((a, b) => b.ratio - a.ratio)
       .slice(0, 5)
