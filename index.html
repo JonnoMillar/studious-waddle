@@ -347,11 +347,15 @@ body {
 #markets-card {
   padding: 24px 28px;
   grid-column: span 8;
+  display: flex;
+  flex-direction: column;
 }
 .markets-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 16px 20px;
+  flex: 1;
+  align-content: space-evenly;
 }
 .market-cell {
   display: flex;
@@ -609,7 +613,7 @@ body {
 /* ════════════════════════════════════════════════════════════════════
    WC FANTASY INSIGHTS
    ════════════════════════════════════════════════════════════════════ */
-#wc-fantasy-card { padding: 22px 24px; }
+#wc-fantasy-card { padding: 22px 24px 48px; }
 .wc-fantasy-section-label {
   font-family: var(--f-s);
   font-size: 10px;
@@ -765,10 +769,11 @@ body {
 }
 .cal-empty { font-family: var(--f-s); font-size: 14px; color: var(--ink3); padding: 12px 0; }
 
-/* ── Flip card (DVSA practice question) ──────────────────────────── */
-.flip-card { perspective: 1200px; cursor: pointer; margin-top: 0; }
+/* ── Flip card (DVSA practice question) — whole-tile flip ───────── */
+.flip-card { perspective: 1200px; cursor: pointer; }
 .flip-inner {
   position: relative;
+  height: 100%;
   min-height: 180px;
   transition: transform .6s cubic-bezier(.2,.7,.3,1);
   transform-style: preserve-3d;
@@ -777,6 +782,11 @@ body {
 .flip-face {
   position: absolute;
   inset: 0;
+  background: var(--bg2);
+  border-radius: 22px;
+  box-shadow: 0 1px 2px rgba(26,24,22,0.04), 0 4px 14px rgba(26,24,22,0.04);
+  padding: 22px 24px;
+  box-sizing: border-box;
   backface-visibility: hidden;
   display: flex;
   flex-direction: column;
@@ -784,7 +794,7 @@ body {
 }
 .flip-back { transform: rotateY(180deg); }
 .flip-text { font-family: var(--f-s); font-size: 13px; color: var(--ink); line-height: 1.4; }
-.flip-hint { margin-top: 6px; font-size: 11px; color: var(--ink3); text-align: right; }
+.flip-hint { margin-top: auto; font-size: 11px; color: var(--ink3); text-align: right; }
 
 /* ════════════════════════════════════════════════════════════════════
    INBOX TRIAGE
@@ -831,7 +841,7 @@ body {
 #wc-fantasy-card   { grid-column: span 4; align-self: start; }
 #calendar-card     { grid-column: span 4; }
 #spotify-card      { grid-column: span 4; align-self: stretch; }
-#dvsa-card         { grid-column: span 4; padding: 22px 24px; align-self: stretch; }
+#dvsa-card         { grid-column: span 4; align-self: stretch; background: transparent; box-shadow: none; padding: 0; }
 .golf-two-col {
   display: grid;
   grid-template-columns: 1fr;
@@ -1138,7 +1148,7 @@ body {
    COMPANIES FEATURED CAROUSEL
    ════════════════════════════════════════════════════════════════════ */
 #companies-card {
-  padding: 22px 28px 20px;
+  padding: 22px 28px 48px;
   grid-column: 1 / -1;
 }
 .co-masthead {
@@ -1526,12 +1536,13 @@ body {
   <!-- WC FANTASY INSIGHTS (span 4) -->
   <div class="card cup-reveal" id="wc-fantasy-card">
     <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:4px">
-      <span class="eyebrow" style="margin-bottom:0">WC Fantasy</span>
+      <span class="eyebrow" style="margin-bottom:0">World Cup Stats</span>
       <span id="wc-fantasy-round" style="font-family:var(--f-m);font-size:11px;color:var(--ink3)"></span>
     </div>
     <div id="wc-fantasy-body">
       <div class="skel" style="height:180px;border-radius:10px;margin-top:12px"></div>
     </div>
+    <button class="hl-next-arrow" onclick="goWcFantasyNext()" aria-label="Next stat">›</button>
   </div>
 
   <!-- COMPANIES TO WATCH (span 12) -->
@@ -1544,6 +1555,7 @@ body {
       <div class="skel" style="height:130px;border-radius:12px;margin-top:20px"></div>
     </div>
     <div class="co-nav" id="co-nav"></div>
+    <button class="hl-next-arrow" onclick="goCoNext()" aria-label="Next company">›</button>
   </div>
 
   <!-- MARKETS (span 8) -->
@@ -2171,16 +2183,16 @@ function renderWcFantasy(data) {
   if (!data.preTournament) {
     if (data.topGoals?.length)   _wcFantasyPanels.push({ label: 'Goal Leaders', rows: data.topGoals, cls: '' });
     if (data.topAssists?.length) _wcFantasyPanels.push({ label: 'Assist Leaders', rows: data.topAssists, cls: '' });
-    if (data.bestValue?.length) {
-      _wcFantasyPanels.push({
-        label: 'Best Value · pts / $1m',
-        rows: data.bestValue.map(p => ({ name: p.name, squad: p.squad, label: String(p.ratio) })),
-        cls: 'green',
-      });
-    }
   }
 
   _wcFantasyIdx = 0;
+  _drawWcFantasyPanel();
+  _startWcFantasyCycle();
+}
+
+function goWcFantasyNext() {
+  if (_wcFantasyPanels.length < 2) return;
+  _wcFantasyIdx = (_wcFantasyIdx + 1) % _wcFantasyPanels.length;
   _drawWcFantasyPanel();
   _startWcFantasyCycle();
 }
@@ -2212,16 +2224,31 @@ function _startWcFantasyCycle() {
 // ════════════════════════════════════════════════════════════════════
 // SPOTIFY
 // ════════════════════════════════════════════════════════════════════
+const SPOTIFY_CACHE_KEY = 'spotify-cache-v1';
+// Shown only when nothing live and nothing was ever cached (no Spotify history yet)
+const SPOTIFY_FALLBACK = {
+  recentTrack: {
+    name: 'Spotify not connected yet',
+    artist: 'Connect your account to see what you’ve been playing',
+    album: '', art: '', url: '#', minsAgo: null,
+  },
+};
+
 function renderSpotify(data) {
   const el = document.getElementById('spotify-body');
   if (!el) return;
 
-  if (!data || data.error) {
-    el.innerHTML = '<p class="sp-unavailable">Spotify unavailable.</p>';
-    return;
+  let { nowPlaying, recentTrack, topTrack, topArtist } = (data && !data.error) ? data : {};
+  const hasAny = nowPlaying || recentTrack || topTrack || topArtist;
+
+  if (hasAny) {
+    try { localStorage.setItem(SPOTIFY_CACHE_KEY, JSON.stringify({ nowPlaying, recentTrack, topTrack, topArtist })); } catch (_) {}
+  } else {
+    let cached = null;
+    try { cached = JSON.parse(localStorage.getItem(SPOTIFY_CACHE_KEY) || 'null'); } catch (_) {}
+    ({ nowPlaying, recentTrack, topTrack, topArtist } = cached || SPOTIFY_FALLBACK);
   }
 
-  const { nowPlaying, recentTrack, topTrack, topArtist } = data;
   let html = '';
 
   const current = nowPlaying || recentTrack;
@@ -2344,27 +2371,40 @@ function renderDvsaFlip() {
       <div class="flip-face flip-front">
         <div class="eyebrow">🚗 Today's practice question</div>
         <div class="flip-text">${q}</div>
+        <div class="flip-hint">tap to flip</div>
       </div>
       <div class="flip-face flip-back">
         <div class="eyebrow">Answer</div>
         <div class="flip-text">${a}</div>
+        <div class="flip-hint">tap to flip back</div>
       </div>
-    </div>
-    <div class="flip-hint">tap to flip</div>`;
+    </div>`;
 }
 
 // ════════════════════════════════════════════════════════════════════
 // INBOX TRIAGE
 // ════════════════════════════════════════════════════════════════════
+const INBOX_CACHE_KEY = 'inbox-cache-v1';
+
 function renderInbox(inbox) {
   const el = document.getElementById('inbox-body');
   if (!el) return;
+
+  if (inbox && inbox.count) {
+    try { localStorage.setItem(INBOX_CACHE_KEY, JSON.stringify(inbox)); } catch (_) {}
+  } else {
+    try {
+      const cached = JSON.parse(localStorage.getItem(INBOX_CACHE_KEY) || 'null');
+      if (cached?.count) inbox = cached;
+    } catch (_) {}
+  }
+
   if (!inbox) {
     el.innerHTML = '<p class="cal-empty">Inbox not connected.</p>';
     return;
   }
   if (!inbox.count) {
-    el.innerHTML = '<p class="cal-empty">No important emails.</p>';
+    el.innerHTML = '<p class="cal-empty">No emails to show.</p>';
     return;
   }
   const shown = inbox.items.slice(0, 3);
@@ -2727,6 +2767,11 @@ function _startCoCycle() {
   clearTimeout(_coTimer);
   if (_coCards.length < 2) return;
   _coTimer = setTimeout(() => goCoSlide((_coIdx + 1) % _coCards.length), 5000);
+}
+
+function goCoNext() {
+  if (_coCards.length < 2) return;
+  goCoSlide((_coIdx + 1) % _coCards.length);
 }
 
 // ════════════════════════════════════════════════════════════════════
