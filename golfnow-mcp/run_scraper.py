@@ -69,19 +69,7 @@ async def main():
 
     eprint(f"Total raw slots: {len(all_results)}")
 
-    # Post-filter to 11 AM–5 PM: GolfNow's courses-near-me returns the minimum
-    # time per course which may be earlier than the requested window. Drop those.
-    def _in_window(t):
-        try:
-            h = int((t.get("tee_time") or "0:0").split(":")[0])
-            return 11 <= h < 17
-        except Exception:
-            return True
-
-    windowed = [t for t in all_results if _in_window(t)]
-    eprint(f"In 11–17 window: {len(windowed)} (kept from {len(all_results)})")
-
-    results = filter_and_sort(windowed or all_results, max_price=None, min_players=2)[:30]
+    results = filter_and_sort(all_results, max_price=None, min_players=2)[:30]
     eprint(f"After filter/sort: {len(results)}")
 
     output = {
