@@ -241,7 +241,7 @@ export default async function handler(req, res) {
     // Portfolio
     'AIAG':      'AIAG.L',
     'All World': 'VWRP.L',
-    'US 500':    'VUSA.L',
+    'US 500':    '0P00000RNC',
     // FX
     'FX_GBPUSD': 'GBPUSD=X',
     // Indices
@@ -392,8 +392,6 @@ export default async function handler(req, res) {
   ]);
 
   const prices = Object.fromEntries(priceEntries);
-
-  // US 500: VUSA.L is the ETF proxy. % change is accurate; unit price differs from actual fund NAV.
 
   // Attach WC odds to matches
   const wcFixtures = wcResult.matches.map(f => {

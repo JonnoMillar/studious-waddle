@@ -1841,9 +1841,9 @@ function renderPortfolioStrip(prices) {
     if (gbp && u) {
       const val = gbp * u;
       total += val;
-      holdingData.push({ name, pct: raw.change || 0, price: gbp, units: u, val });
+      holdingData.push({ name, pct: raw.change || 0, price: raw.price, currency: raw.currency, units: u, val });
     } else {
-      holdingData.push({ name, pct: raw.change || null, price: gbp, units: u, val: 0 });
+      holdingData.push({ name, pct: raw.change || null, price: raw.price, currency: raw.currency, units: u, val: 0 });
     }
   }
 
@@ -1867,13 +1867,16 @@ function renderPortfolioStrip(prices) {
   }
 
   if (detailEl) {
-    const rows = holdingData.map(h => `
+    const rows = holdingData.map(h => {
+      const sym = h.currency === 'USD' ? '$' : '£';
+      return `
       <div class="port-detail-row">
         <div class="port-detail-fund">${h.name}</div>
         <div class="port-detail-units">${h.units} units</div>
-        <div class="port-detail-price">${h.price != null ? '£' + h.price.toFixed(2) : '—'}</div>
+        <div class="port-detail-price">${h.price != null ? sym + h.price.toFixed(2) : '—'}</div>
         <div class="port-detail-val">${h.val ? '£' + h.val.toFixed(2) : '—'}</div>
-      </div>`).join('');
+      </div>`;
+    }).join('');
     detailEl.innerHTML = rows + `<div class="port-total-row">
       <span class="port-total-label">Total</span>
       <span class="port-total-value">${total ? '£' + total.toLocaleString('en-GB', {minimumFractionDigits:2,maximumFractionDigits:2}) : '—'}</span>
