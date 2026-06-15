@@ -346,11 +346,11 @@ body {
    ════════════════════════════════════════════════════════════════════ */
 #markets-card {
   padding: 24px 28px;
-  grid-column: span 7;
+  grid-column: span 12;
 }
 .markets-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   gap: 16px 20px;
 }
 .market-cell {
@@ -819,7 +819,7 @@ body {
    ════════════════════════════════════════════════════════════════════ */
 #golf-card {
   padding: 22px 24px;
-  grid-column: span 5;
+  grid-column: span 12;
   align-self: start;
 }
 
@@ -1519,7 +1519,7 @@ body {
     <div class="co-nav" id="co-nav"></div>
   </div>
 
-  <!-- MARKETS (span 7) -->
+  <!-- MARKETS (span 12) -->
   <div class="card hover-lift cup-reveal" id="markets-card">
     <div class="eyebrow">Markets</div>
     <div class="markets-grid" id="markets-grid">
@@ -1530,9 +1530,20 @@ body {
       <div class="skel" style="height:56px;border-radius:10px"></div>
       <div class="skel" style="height:56px;border-radius:10px"></div>
     </div>
+    <div class="eyebrow" style="margin-top:18px">Top Stocks</div>
+    <div class="markets-grid" id="markets-grid-stocks">
+      <div class="skel" style="height:56px;border-radius:10px"></div>
+      <div class="skel" style="height:56px;border-radius:10px"></div>
+      <div class="skel" style="height:56px;border-radius:10px"></div>
+      <div class="skel" style="height:56px;border-radius:10px"></div>
+      <div class="skel" style="height:56px;border-radius:10px"></div>
+      <div class="skel" style="height:56px;border-radius:10px"></div>
+      <div class="skel" style="height:56px;border-radius:10px"></div>
+      <div class="skel" style="height:56px;border-radius:10px"></div>
+    </div>
   </div>
 
-  <!-- GOLF (span 5) -->
+  <!-- GOLF (span 12) -->
   <div class="card hover-lift cup-reveal" id="golf-card">
     <div class="eyebrow">Golf · Tee Times</div>
     <div id="golf-body">
@@ -1563,6 +1574,20 @@ const INDEX_PLACEHOLDERS = {
   'Nikkei':   { value: 38000,   decimals: 0 },
   'Gold':     { value: 3350,    decimals: 2 },
   'Bitcoin':  { value: 57000,   decimals: 0 },
+};
+
+const STOCK_NAMES = ['Apple', 'Microsoft', 'Nvidia', 'Amazon', 'Alphabet', 'Meta', 'Tesla', 'Broadcom'];
+
+// Placeholder stock values for skeletons — will be overwritten with real data
+const STOCK_PLACEHOLDERS = {
+  'Apple':     { value: 210,  decimals: 2 },
+  'Microsoft': { value: 460,  decimals: 2 },
+  'Nvidia':    { value: 140,  decimals: 2 },
+  'Amazon':    { value: 210,  decimals: 2 },
+  'Alphabet':  { value: 175,  decimals: 2 },
+  'Meta':      { value: 600,  decimals: 2 },
+  'Tesla':     { value: 320,  decimals: 2 },
+  'Broadcom':  { value: 220,  decimals: 2 },
 };
 
 const CLUB_COLOR = {};
@@ -1887,28 +1912,26 @@ function renderPortfolioStrip(prices) {
 // ════════════════════════════════════════════════════════════════════
 // MARKETS
 // ════════════════════════════════════════════════════════════════════
-function renderMarkets(prices) {
-  const el = document.getElementById('markets-grid');
-  if (!el) return;
-  el.innerHTML = INDEX_NAMES.map(name => {
-    const d   = prices[name] || {};
-    const raw = d.price;
-    const chg = d.change;
-    const placeholder = INDEX_PLACEHOLDERS[name] || {};
-    const displayVal  = raw || placeholder.value;
-    const dec = name === 'FTSE 100' || name === 'Nikkei' || name === 'Bitcoin' ? 0 : 2;
-    const cls = (chg || 0) >= 0 ? 'up' : 'down';
-    const chgStr = chg != null ? (chg >= 0 ? '+' : '') + chg.toFixed(2) + '%' : '';
-    return `<div class="market-cell cup-reveal">
-      <div class="market-name">${name}</div>
-      <div class="market-value-row">
-        <span class="market-value" data-target="${displayVal}" data-dec="${dec}">—</span>
-        ${chgStr ? `<span class="pct-chip ${cls}">${chgStr}</span>` : ''}
-      </div>
-    </div>`;
-  }).join('');
+function _marketCell(name, prices, placeholders) {
+  const d   = prices[name] || {};
+  const raw = d.price;
+  const chg = d.change;
+  const placeholder = placeholders[name] || {};
+  const displayVal  = raw || placeholder.value;
+  const dec = placeholder.decimals != null ? placeholder.decimals
+    : (name === 'FTSE 100' || name === 'Nikkei' || name === 'Bitcoin' ? 0 : 2);
+  const cls = (chg || 0) >= 0 ? 'up' : 'down';
+  const chgStr = chg != null ? (chg >= 0 ? '+' : '') + chg.toFixed(2) + '%' : '';
+  return `<div class="market-cell cup-reveal">
+    <div class="market-name">${name}</div>
+    <div class="market-value-row">
+      <span class="market-value" data-target="${displayVal}" data-dec="${dec}">—</span>
+      ${chgStr ? `<span class="pct-chip ${cls}">${chgStr}</span>` : ''}
+    </div>
+  </div>`;
+}
 
-  // Trigger count-up on market values
+function _wireMarketCounters(el) {
   el.querySelectorAll('.market-value[data-target]').forEach(el2 => {
     const target = parseFloat(el2.dataset.target);
     const dec    = parseInt(el2.dataset.dec, 10) || 0;
@@ -1925,6 +1948,20 @@ function renderMarkets(prices) {
     // Also observe for reveal
     revealObserver.observe(el2.closest('.market-cell'));
   });
+}
+
+function renderMarkets(prices) {
+  const el = document.getElementById('markets-grid');
+  if (el) {
+    el.innerHTML = INDEX_NAMES.map(name => _marketCell(name, prices, INDEX_PLACEHOLDERS)).join('');
+    _wireMarketCounters(el);
+  }
+
+  const stocksEl = document.getElementById('markets-grid-stocks');
+  if (stocksEl) {
+    stocksEl.innerHTML = STOCK_NAMES.map(name => _marketCell(name, prices, STOCK_PLACEHOLDERS)).join('');
+    _wireMarketCounters(stocksEl);
+  }
 }
 
 // ════════════════════════════════════════════════════════════════════

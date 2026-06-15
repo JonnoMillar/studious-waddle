@@ -256,6 +256,15 @@ export default async function handler(req, res) {
     // Price chips are omitted in the UI for these; see renderCompanies() in index.html.
     'CrowdStrike': 'CRWD',
     'Palantir':    'PLTR',
+    // Top Stocks — most widely-held mega-caps
+    'Apple':     'AAPL',
+    'Microsoft': 'MSFT',
+    'Nvidia':    'NVDA',
+    'Amazon':    'AMZN',
+    'Alphabet':  'GOOGL',
+    'Meta':      'META',
+    'Tesla':     'TSLA',
+    'Broadcom':  'AVGO',
   };
 
   const [priceEntries, newsEntries, wcResult, oddsMap, calendarEvents, inbox] = await Promise.all([
