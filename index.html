@@ -2380,9 +2380,9 @@ function renderGolf(golf) {
   const el = document.getElementById('golf-body');
   if (!el) return;
 
-  // Trust the scraper's API-level time filter (timemin=11, timemax=17)
-  // Frontend string comparison was incorrectly filtering valid tee times
-  const allTees = (golf.tee_times || []).filter(t => (t.price_gbp || 0) < 30);
+  // Prefer Hot Deals; fall back to the full (already cheapest-first) list
+  const hotDeals = (golf.tee_times || []).filter(t => t.is_hot_deal);
+  const allTees  = hotDeals.length ? hotDeals : (golf.tee_times || []);
 
   if (!golf || !allTees.length) {
     const msg = golf?.error ? `Tee times temporarily unavailable.` : 'No tee times available.';

@@ -19,8 +19,11 @@ DEFAULT_LNG = -0.2062
 DEFAULT_RADIUS = 13
 DEFAULT_TIME_MIN = 11
 DEFAULT_TIME_MAX = 17
-DEFAULT_HOLES = ""
+DEFAULT_HOLES = "eighteen"
 DEFAULT_MIN_RATING = 3.0
+
+# Permanently excluded courses (substring match against course_name, lowercased)
+EXCLUDED_COURSES = {"high beech", "woodford"}
 
 
 def get_upcoming_weekends(num_weekends: int = 4) -> list[str]:
@@ -245,6 +248,7 @@ def filter_and_sort(
         if r["price_gbp"] > 0
         and (max_price is None or r["price_gbp"] <= max_price)
         and r["max_players"] >= min_players
+        and not any(excluded in r["course_name"].lower() for excluded in EXCLUDED_COURSES)
     ]
     filtered.sort(key=lambda r: (
         not r["is_hot_deal"],
