@@ -2085,10 +2085,14 @@ function renderWorldCup(wc) {
 // ════════════════════════════════════════════════════════════════════
 // WC FANTASY INSIGHTS
 // ════════════════════════════════════════════════════════════════════
+let _wcFantasyPanels = [], _wcFantasyIdx = 0, _wcFantasyTimer = null;
+
 function renderWcFantasy(data) {
   const body    = document.getElementById('wc-fantasy-body');
   const roundEl = document.getElementById('wc-fantasy-round');
   if (!body) return;
+
+  clearTimeout(_wcFantasyTimer);
 
   if (!data || data.error || (!data.topScorers?.length && !data.bestValue?.length)) {
     body.innerHTML = '<p style="color:var(--ink3);font-size:13px;padding:12px 0">Fantasy data unavailable.</p>';
@@ -2097,29 +2101,48 @@ function renderWcFantasy(data) {
 
   if (roundEl) roundEl.textContent = data.roundName || '';
 
-  const scorerLabel = data.preTournament ? 'Most Expensive' : 'Top Scorers';
+  const scorerLabel = data.preTournament ? 'Most Expensive' : 'Points Leaders';
+  _wcFantasyPanels = [{ label: scorerLabel, rows: data.topScorers || [], cls: '' }];
 
-  let html = `<div class="wc-fantasy-section-label">${scorerLabel}</div>`;
-  html += (data.topScorers || []).map((p, i) => `
-    <div class="wc-fantasy-row cup-row">
-      <span class="wc-fantasy-rank">${i + 1}</span>
-      <span class="wc-fantasy-name">${p.name}</span>
-      <span class="wc-fantasy-squad">${p.squad}</span>
-      <span class="wc-fantasy-val">${p.label}</span>
-    </div>`).join('');
+  if (!data.preTournament) {
+    if (data.topGoals?.length)   _wcFantasyPanels.push({ label: 'Goal Leaders', rows: data.topGoals, cls: '' });
+    if (data.topAssists?.length) _wcFantasyPanels.push({ label: 'Assist Leaders', rows: data.topAssists, cls: '' });
+    if (data.bestValue?.length) {
+      _wcFantasyPanels.push({
+        label: 'Best Value · pts / $1m',
+        rows: data.bestValue.map(p => ({ name: p.name, squad: p.squad, label: String(p.ratio) })),
+        cls: 'green',
+      });
+    }
+  }
 
-  if (!data.preTournament && data.bestValue?.length) {
-    html += `<div class="wc-fantasy-section-label">Best Value · pts / $1m</div>`;
-    html += data.bestValue.map((p, i) => `
+  _wcFantasyIdx = 0;
+  _drawWcFantasyPanel();
+  _startWcFantasyCycle();
+}
+
+function _drawWcFantasyPanel() {
+  const body = document.getElementById('wc-fantasy-body');
+  if (!body || !_wcFantasyPanels.length) return;
+  const panel = _wcFantasyPanels[_wcFantasyIdx];
+  body.innerHTML = `<div class="wc-fantasy-section-label">${panel.label}</div>`
+    + panel.rows.map((p, i) => `
       <div class="wc-fantasy-row cup-row">
         <span class="wc-fantasy-rank">${i + 1}</span>
         <span class="wc-fantasy-name">${p.name}</span>
         <span class="wc-fantasy-squad">${p.squad}</span>
-        <span class="wc-fantasy-val green">${p.ratio}</span>
+        <span class="wc-fantasy-val ${panel.cls}">${p.label}</span>
       </div>`).join('');
-  }
+}
 
-  body.innerHTML = html;
+function _startWcFantasyCycle() {
+  clearTimeout(_wcFantasyTimer);
+  if (_wcFantasyPanels.length < 2) return;
+  _wcFantasyTimer = setTimeout(() => {
+    _wcFantasyIdx = (_wcFantasyIdx + 1) % _wcFantasyPanels.length;
+    _drawWcFantasyPanel();
+    _startWcFantasyCycle();
+  }, 6000);
 }
 
 // ════════════════════════════════════════════════════════════════════
