@@ -14,7 +14,6 @@ Setup: see README.md
 import asyncio
 import json
 import logging
-import os
 from typing import Optional
 
 from mcp.server.fastmcp import FastMCP
@@ -27,8 +26,6 @@ from scraper import (
 )
 
 logging.basicConfig(level=logging.INFO)
-
-BROWSER_AUTH = os.environ.get("BROWSER_AUTH", "")
 
 mcp = FastMCP("golfnow_mcp")
 
@@ -183,16 +180,8 @@ async def golfnow_get_tee_times(params: GetTeeTimesInput) -> str:
         - "Find me cheap golf on Sunday for 4 people" → players=4, sorted cheapest first
         - "Any hot deals near Wimbledon?" → hot_deals_only available in get_weekend_briefing
     """
-    if not BROWSER_AUTH:
-        return (
-            "Error: BROWSER_AUTH environment variable is not set.\n"
-            "Add it to your Claude Code MCP config:\n"
-            '  "env": { "BROWSER_AUTH": "brd-customer-XXXXX-zone-YYYYY:ZZZZZZ" }'
-        )
-
     try:
         raw = await scrape_date(
-            browser_auth=BROWSER_AUTH,
             date_str=params.date,
             players=params.players,
             radius=params.radius_miles,
@@ -255,20 +244,12 @@ async def golfnow_get_weekend_briefing(params: GetWeekendBriefingInput) -> str:
         - Budget golf: max_price=20.0, hot_deals_only=True
         - Planning ahead: num_weekends=8 to see 8 weekends out
     """
-    if not BROWSER_AUTH:
-        return (
-            "Error: BROWSER_AUTH environment variable is not set.\n"
-            "Add it to your Claude Code MCP config:\n"
-            '  "env": { "BROWSER_AUTH": "brd-customer-XXXXX-zone-YYYYY:ZZZZZZ" }'
-        )
-
     dates = get_upcoming_weekends(params.num_weekends)
     all_results: list[dict] = []
 
     for date_str in dates:
         try:
             raw = await scrape_date(
-                browser_auth=BROWSER_AUTH,
                 date_str=date_str,
                 players=params.players,
             )

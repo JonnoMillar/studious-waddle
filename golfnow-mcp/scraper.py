@@ -348,7 +348,6 @@ async def _wait_for_json(page, url_fragment: str, timeout_secs: int = 30) -> dic
 
 
 async def _browse_courses_near_me(
-    browser_auth: str,
     date_str: str,
     players: int = 2,
     lat: float = DEFAULT_LAT,
@@ -360,9 +359,7 @@ async def _browse_courses_near_me(
 ) -> dict | list | None:
     """Open the GolfNow search page and return the raw courses-near-me API response."""
     async with async_playwright() as p:
-        browser = await p.chromium.connect_over_cdp(
-            f"wss://{browser_auth}@brd.superproxy.io:9222"
-        )
+        browser = await p.chromium.launch(headless=True)
         try:
             page = await browser.new_page()
             page.set_default_navigation_timeout(120_000)
@@ -387,16 +384,14 @@ async def _browse_courses_near_me(
 
 
 async def scrape_raw(
-    browser_auth: str,
     date_str: str,
     **kwargs,
 ) -> dict | list | None:
     """Return the raw courses-near-me response for offline debugging."""
-    return await _browse_courses_near_me(browser_auth, date_str, **kwargs)
+    return await _browse_courses_near_me(date_str, **kwargs)
 
 
 async def scrape_date(
-    browser_auth: str,
     date_str: str,
     players: int = 2,
     lat: float = DEFAULT_LAT,
@@ -409,7 +404,7 @@ async def scrape_date(
 ) -> list[dict]:
     """Scrape tee time summaries near a location for a given date."""
     raw = await _browse_courses_near_me(
-        browser_auth, date_str, players=players, lat=lat, lng=lng,
+        date_str, players=players, lat=lat, lng=lng,
         radius=radius, time_min=time_min, time_max=time_max, holes=holes,
     )
 

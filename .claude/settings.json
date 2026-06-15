@@ -2,10 +2,7 @@
   "mcpServers": {
     "golfnow": {
       "command": "python3",
-      "args": ["/home/user/studious-waddle/golfnow-mcp/server.py"],
-      "env": {
-        "BROWSER_AUTH": "brd-customer-hl_dcf99b4d-zone-scraping_browser1:ksy6sq6292wk@brd.superproxy.io:9222"
-      }
+      "args": ["/home/user/studious-waddle/golfnow-mcp/server.py"]
     }
   }
 }

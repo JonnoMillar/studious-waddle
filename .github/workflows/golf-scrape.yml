@@ -38,19 +38,8 @@ jobs:
           pip install -r golfnow-mcp/requirements.txt -q
           playwright install chromium --with-deps
 
-      - name: Check BROWSER_AUTH is set
-        run: |
-          if [ -z "$BROWSER_AUTH" ]; then
-            echo "ERROR: BROWSER_AUTH secret is not set. Go to repo Settings → Secrets and variables → Actions and add BROWSER_AUTH."
-            exit 1
-          fi
-          echo "BROWSER_AUTH is set (${#BROWSER_AUTH} chars)"
-        env:
-          BROWSER_AUTH: ${{ secrets.BROWSER_AUTH }}
-
       - name: Run scraper
         env:
-          BROWSER_AUTH: ${{ secrets.BROWSER_AUTH }}
           PYTHONUNBUFFERED: "1"
         run: |
           if [ "${{ inputs.dump_raw }}" = "true" ]; then
