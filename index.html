@@ -2362,7 +2362,7 @@ function renderGolf(golf) {
 
   // Trust the scraper's API-level time filter (timemin=11, timemax=17)
   // Frontend string comparison was incorrectly filtering valid tee times
-  const allTees = golf.tee_times || [];
+  const allTees = (golf.tee_times || []).filter(t => (t.price_gbp || 0) < 30);
 
   if (!golf || !allTees.length) {
     const msg = golf?.error ? `Tee times temporarily unavailable.` : 'No tee times available.';
