@@ -219,15 +219,38 @@ async function fetchInboxTriage() {
       } catch (_) { return null; }
     }));
 
-    const items = messages
-      .filter(m => m && (m.labelIds || []).includes('IMPORTANT'))
-      .map(m => {
-        const headers = m.payload?.headers || [];
-        const get     = name => headers.find(h => h.name === name)?.value || '';
-        const from    = get('From').replace(/<.*>/, '').replace(/"/g, '').trim();
-        const subject = get('Subject') || '(no subject)';
-        return { from, subject };
-      });
+    const toItem = m => {
+      const headers = m.payload?.headers || [];
+      const get     = name => headers.find(h => h.name === name)?.value || '';
+      const from    = get('From').replace(/<.*>/, '').replace(/"/g, '').trim();
+      const subject = get('Subject') || '(no subject)';
+      return { from, subject };
+    };
+
+    // Prefer mail Gmail flags as important; otherwise fall back to whatever's unread
+    const important = messages.filter(m => m && (m.labelIds || []).includes('IMPORTANT'));
+    let items = (important.length ? important : messages.filter(Boolean)).map(toItem);
+
+    // Nothing unread at all — surface the single most recent inbox message
+    if (!items.length) {
+      const recentRes = await fetch(
+        'https://gmail.googleapis.com/gmail/v1/users/me/messages?' + new URLSearchParams({
+          q: 'in:inbox', maxResults: '1',
+        }),
+        { headers: { Authorization: `Bearer ${access_token}` } }
+      );
+      const recent = await recentRes.json();
+      const id = recent.messages?.[0]?.id;
+      if (id) {
+        const r = await fetch(
+          `https://gmail.googleapis.com/gmail/v1/users/me/messages/${id}` +
+          '?format=metadata&metadataHeaders=From&metadataHeaders=Subject',
+          { headers: { Authorization: `Bearer ${access_token}` } }
+        );
+        const m = await r.json();
+        if (m && !m.error) items = [toItem(m)];
+      }
+    }
 
     return { count: items.length, items: items.slice(0, 3) };
   } catch (_) { return null; }
