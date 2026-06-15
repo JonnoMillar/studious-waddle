@@ -764,24 +764,27 @@ body {
   line-height: 1.4;
 }
 .cal-empty { font-family: var(--f-s); font-size: 14px; color: var(--ink3); padding: 12px 0; }
-.cal-tip {
-  margin-top: 6px;
-  font-family: var(--f-s);
-  font-size: 12px;
+
+/* ── Flip card (DVSA practice question) ──────────────────────────── */
+.flip-card { perspective: 1200px; cursor: pointer; margin-top: 14px; }
+.flip-inner {
+  position: relative;
+  min-height: 110px;
+  transition: transform .6s cubic-bezier(.2,.7,.3,1);
+  transform-style: preserve-3d;
 }
-.cal-tip summary {
-  cursor: pointer;
-  list-style: none;
-  color: var(--ink2);
-  font-weight: 500;
+.flip-card.flipped .flip-inner { transform: rotateY(180deg); }
+.flip-face {
+  position: absolute;
+  inset: 0;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
 }
-.cal-tip summary::-webkit-details-marker { display: none; }
-.cal-tip[open] summary { color: var(--ink); }
-.cal-tip-answer {
-  margin-top: 4px;
-  color: var(--ink3);
-  line-height: 1.4;
-}
+.flip-back { transform: rotateY(180deg); }
+.flip-text { font-family: var(--f-s); font-size: 13px; color: var(--ink); line-height: 1.4; }
+.flip-hint { margin-top: 6px; font-size: 11px; color: var(--ink3); text-align: right; }
 
 /* ════════════════════════════════════════════════════════════════════
    INBOX TRIAGE
@@ -1451,6 +1454,7 @@ body {
       <div class="skel" style="height:22px;border-radius:6px;margin-bottom:10px"></div>
       <div class="skel" style="height:22px;border-radius:6px"></div>
     </div>
+    <div id="dvsa-flip"></div>
   </div>
 
   <!-- CALENDAR (span 5) -->
@@ -2285,22 +2289,11 @@ function renderCalendar(events) {
     el.innerHTML = '<p class="cal-empty">Nothing on your calendar for the next 3 months.</p>';
     return;
   }
-  // TEMPORARY: drop this date gate + the DVSA tip below once the practical test (21 Jul 2026) has passed
-  const showDrivingTip = new Date() <= new Date('2026-07-21T23:59:59');
   el.innerHTML = events.slice(0, 4).map((ev, i) => {
     const d     = new Date(ev.startIso);
     const day   = d.getDate();
     const month = d.toLocaleDateString('en-GB', { month: 'short' });
     const color = CAL_TILE_COLORS[i % CAL_TILE_COLORS.length];
-    const isDrivingTest = /driving test/i.test(ev.text);
-    let tip = '';
-    if (isDrivingTest && showDrivingTip) {
-      const { q, a } = _dvsaQuestion();
-      tip = `<details class="cal-tip">
-        <summary>💡 Today's practice question: "${q}"</summary>
-        <div class="cal-tip-answer">${a}</div>
-      </details>`;
-    }
     return `<div class="cal-item cup-row">
       <div class="cal-tile" style="background:${color}">
         <div class="cal-tile-day">${day}</div>
@@ -2308,10 +2301,33 @@ function renderCalendar(events) {
       </div>
       <div class="cal-body">
         <div class="cal-text">${ev.text}</div>
-        ${tip}
       </div>
     </div>`;
   }).join('');
+}
+
+// ════════════════════════════════════════════════════════════════════
+// DVSA PRACTICE QUESTION (flip card)
+// ════════════════════════════════════════════════════════════════════
+// TEMPORARY: remove this function + its call in init() after the practical test on 21 Jul 2026
+function renderDvsaFlip() {
+  const el = document.getElementById('dvsa-flip');
+  if (!el) return;
+  if (new Date() > new Date('2026-07-21T23:59:59')) { el.innerHTML = ''; return; }
+  const { q, a } = _dvsaQuestion();
+  el.innerHTML = `<div class="flip-card" onclick="this.classList.toggle('flipped')">
+    <div class="flip-inner">
+      <div class="flip-face flip-front">
+        <div class="eyebrow">🚗 Today's practice question</div>
+        <div class="flip-text">${q}</div>
+      </div>
+      <div class="flip-face flip-back">
+        <div class="eyebrow">Answer</div>
+        <div class="flip-text">${a}</div>
+      </div>
+    </div>
+    <div class="flip-hint">tap to flip</div>
+  </div>`;
 }
 
 // ════════════════════════════════════════════════════════════════════
@@ -2721,6 +2737,7 @@ async function init() {
   renderWcFantasy(wcFantasyData);
   renderCalendar(data.calendar || []);
   renderInbox(data.inbox);
+  renderDvsaFlip();
 
   // Spotify: initial fetch + poll every 30s for live now-playing
   async function fetchAndRenderSpotify() {
