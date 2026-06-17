@@ -1,6 +1,21 @@
 {
-  "refreshed_at": "2026-06-16T19:52:39.210Z",
+  "refreshed_at": "2026-06-17T17:34:24.532Z",
   "companies": [
+    {
+      "name": "Waymo",
+      "tag": "Autonomy",
+      "desc": "The most miles driven autonomously of any robotaxi service",
+      "url": "https://waymo.com",
+      "initials": "W",
+      "logo": "https://www.google.com/s2/favicons?domain=waymo.com&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "Robotaxi rankings show Waymo lead, China's rise - Axios",
+        "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5pRnI4Y05PMGRURDQzYnZaclduSWlMRHFnM1BnN3lqQ1Y5bjdfa0xpVl9pcGZ6cVM1Qnl1eThJYkppdWpCT3NDV3pPWDJ4RmFCQUg1ODhFbGtjU3phSHMzd3F2WDFwaDlVcXRmYUQtUQ?oc=5",
+        "pubDate": "Wed, 17 Jun 2026 17:31:43 GMT"
+      },
+      "sparkline": null
+    },
     {
       "name": "CrowdStrike",
       "tag": "Cybersecurity",
@@ -10,9 +25,9 @@
       "logo": "https://www.google.com/s2/favicons?domain=crowdstrike.com&sz=128",
       "ticker": "CRWD",
       "headline": {
-        "title": "CrowdStrike Holdings (CRWD) Up More Than 17.5% in 30 Days, Is it a Stock to Buy and Hold for Long Term? - Yahoo Finance",
-        "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQV1lXYjhXVll2bkhzMVVIUUpiZW40UVd0WlAtSFhOc3pYSnROVnBLZ2lYWkd6RnNMYnVlOWN2S2JIN2tMb1hpTlNOWGIxLW1xMi1FZGVBaEttTnBGRlRxMzRDX0ZsOVMtT09FNDJJd3BFUW1hUXB0LVdJbzV6Qld4Q1B4czRWOTlvTjkxTXppN0dCTzM0MjREa0JtZjI1Tjg?oc=5",
-        "pubDate": "Tue, 16 Jun 2026 18:50:36 GMT"
+        "title": "CrowdStrike Advances AI and Cloud Security Operations on AWS - Yahoo Finance UK",
+        "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNczJDZ2VHdmZIVzFKcEY1em9OVDBaUzdKWC0ya044enZZRXNXT2dWZWRHLU9tN2ZmQ3V4NHlqWlA2aGFMay1Id1Q1c0N3N1lFdjBNazVZQklNclZLVi1jaVNmMzhXZDNPZHB1RGVCOHJ0T3FGbERjSGJ3X0luMW5VTkhleVpJMW9rZk1TLXpISUI?oc=5",
+        "pubDate": "Wed, 17 Jun 2026 16:20:00 GMT"
       },
       "sparkline": [
         618.8300170898438,
@@ -35,21 +50,52 @@
         691.530029296875,
         682.7999877929688,
         692.9099731445312,
-        682.114990234375
+        679.489990234375,
+        688.8250122070312
       ]
     },
     {
-      "name": "Physical Intelligence",
-      "tag": "Embodied AI",
-      "desc": "Training AI systems to manipulate physical objects",
-      "url": "https://physicalintelligence.company",
-      "initials": "PI",
-      "logo": "https://www.google.com/s2/favicons?domain=physicalintelligence.company&sz=128",
+      "name": "Anduril",
+      "tag": "Defense AI",
+      "desc": "Autonomous defense systems and AI-enabled military hardware",
+      "url": "https://anduril.com",
+      "initials": "A",
+      "logo": "https://www.google.com/s2/favicons?domain=anduril.com&sz=128",
       "ticker": null,
       "headline": {
-        "title": "Physical AI Steps in as Global Workforce Shrinks - PYMNTS.com",
-        "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxONzhycWd1eEpLakx5SEhBNnpRYnltQVBsc0RGOUd3QkZMaWxwLXpkSzM0V1V0VEE4Qm1hcU1Za1dyS29UX1BnZU1IM1d3RlZQSlk0YzNWbEpDNllwa1V4Rm1QakNyR2pueWJ3UXBZX2dBRDljQzFaaF81eHFhSVViMWExd1p4SGtwalNVNmZNVkNkVFpfcF9kcno5TXpySm14U0dJbWdXYndVdw?oc=5",
-        "pubDate": "Tue, 16 Jun 2026 18:26:15 GMT"
+        "title": "4 Kela Technologies: An integrated defense platform - גלובס",
+        "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5BOVlYV2NoZm1uSHRON3pQbURVeGNEbTkzQkgtY3JzZW11T05iQTd3c0ZRdTUyUzZTSVNPd2FmZUpZc1JOS2hXdnNPWEdUNTlXVFJUeG9JanJBUQ?oc=5",
+        "pubDate": "Wed, 17 Jun 2026 13:47:40 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "Neuralink",
+      "tag": "Brain-Computer",
+      "desc": "Implantable neural interfaces for restoring and augmenting human capability",
+      "url": "https://neuralink.com",
+      "initials": "NL",
+      "logo": "https://www.google.com/s2/favicons?domain=neuralink.com&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "Neuralink competitor Paradromics just implanted its first brain-chip device. The next step is restoring speech. - Business Insider",
+        "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNMFJHcDlxNVVrZ3NRSTZ1Q2J4Xzcxa09EX1VrUHZ0b29OYjJhUkRXUWVCMnV5ejdYSUVaSWdRUTdfVUZndGpvMnRrUEdQc0pJeEZBay1JRFVhZVFBaTRFWmFZbndmNTFOeDlOZ0pmeEl5Vkp5YlotcFRHOE9BeE1xN1ZnUjNfTTlGaktCVVp6U3hQdW02d2NmS2xzZnRSMUgtUWJGLWJYdk9NZm15bTNCaEZn?oc=5",
+        "pubDate": "Wed, 17 Jun 2026 13:00:22 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "OpenAI",
+      "tag": "LLMs",
+      "desc": "Creator of ChatGPT and the GPT family of foundation models",
+      "url": "https://openai.com",
+      "initials": "OAI",
+      "logo": "https://www.google.com/s2/favicons?domain=openai.com&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "'A signal of where power sits': Trump and world leaders joined by OpenAI, Anthropic, Google at G7 - CNBC",
+        "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOZE9yRkF4ZWRCUXlTM3JoR0RKVDE4Q1VfS2xNdHBZODdUTjNrcF9OVVFlMXpvZHg5REFaYy1IdGxvSkhGTGlkcWU2WjNZWEY4N0VZZWdyNWtDMG5BN3RaamlfcXlEYzl0M1Npc1ZZN0dkYXphQzVrU1RGMFk3ZE92eGZsSkJVMDd3bUJMRUhB0gGTAUFVX3lxTE9QVktTTi1feHFDS21EU2ozTTV1UTdoNS1JdEVJMURhQWxjdVVudnVMZUplWGQ5N21Yd0ZfcFZsTE9JOWxNVWNnT3JlLXRkWTU5T2R2cFdaREgwUlg2MTd3TDJjTXctRVdJRVhsX1h3NHhTYldvUzFRZUh2RUR2THpKcmJndXl1c0hWNHZRblRFVG14UQ?oc=5",
+        "pubDate": "Wed, 17 Jun 2026 07:09:54 GMT"
       },
       "sparkline": null
     },
@@ -62,106 +108,39 @@
       "logo": "https://www.google.com/s2/favicons?domain=anthropic.com&sz=128",
       "ticker": null,
       "headline": {
-        "title": "The Anthropic ‘Fable’ saga proves: we have opened the AI Pandora’s box. What now? - The Guardian",
-        "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBQQmJocWM5ZUhzalRyX0FxUUVocU4xN0VWdkw4Nml6RUZTVzBMX01EVnY2a2t1SEFYcmtlczJhVWNPTlJCTXVuTkt3R2sxeUtMSkVMWFdydDRyeDZhMmN2ZzVfZHlYVGhwRWcxWjBYamNGcGxrWmVheDB6OE8?oc=5",
-        "pubDate": "Tue, 16 Jun 2026 17:46:00 GMT"
+        "title": "'A signal of where power sits': Trump and world leaders joined by OpenAI, Anthropic, Google at G7 - CNBC",
+        "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOZE9yRkF4ZWRCUXlTM3JoR0RKVDE4Q1VfS2xNdHBZODdUTjNrcF9OVVFlMXpvZHg5REFaYy1IdGxvSkhGTGlkcWU2WjNZWEY4N0VZZWdyNWtDMG5BN3RaamlfcXlEYzl0M1Npc1ZZN0dkYXphQzVrU1RGMFk3ZE92eGZsSkJVMDd3bUJMRUhB0gGTAUFVX3lxTE9QVktTTi1feHFDS21EU2ozTTV1UTdoNS1JdEVJMURhQWxjdVVudnVMZUplWGQ5N21Yd0ZfcFZsTE9JOWxNVWNnT3JlLXRkWTU5T2R2cFdaREgwUlg2MTd3TDJjTXctRVdJRVhsX1h3NHhTYldvUzFRZUh2RUR2THpKcmJndXl1c0hWNHZRblRFVG14UQ?oc=5",
+        "pubDate": "Wed, 17 Jun 2026 07:09:54 GMT"
       },
       "sparkline": null
     },
     {
-      "name": "Waymo",
-      "tag": "Autonomy",
-      "desc": "The most miles driven autonomously of any robotaxi service",
-      "url": "https://waymo.com",
-      "initials": "W",
-      "logo": "https://www.google.com/s2/favicons?domain=waymo.com&sz=128",
+      "name": "Groq",
+      "tag": "AI Chips",
+      "desc": "LPU inference chips delivering industry-leading token speed",
+      "url": "https://groq.com",
+      "initials": "G",
+      "logo": "https://www.google.com/s2/favicons?domain=groq.com&sz=128",
       "ticker": null,
       "headline": {
-        "title": "Mobileye to start robotaxi service in 2027, challenging Waymo, Zoox and Tesla - Automotive News",
-        "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQYzBNRDBjbmFzckVMQkk5bXlnUG41SjJPemM3MGdDaGN3c2ZscjJIaVhzekx1Wk4ySENDTjgzbV9GcFRPLWpUQmFiTFpHQVhIWldZdEE5UWRYOTJfLW90T0NhYXp1SkNPOTlnVDctRUx1ekRoU2JkMTRENlRHQmRfWkEtOGY?oc=5",
-        "pubDate": "Tue, 16 Jun 2026 17:22:00 GMT"
+        "title": "NVDA Down After Adding INTC Shares &amp; Buying Groq Debt Collection (RVcKnYOlNK) - Fathom Journal",
+        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBMY25vbFhMNHRtOHAtS2lvRDlUNkQxOHFodmpXakQ4SS1VMUhYajIyNGEyaFBYVUZQZFFrNW1Hdnhmdzc5NUpoNC1NQVktQ3BubDk1dG8zMXAxQ1NuQ0o0ZVlDOVZJcmwxWkE?oc=5",
+        "pubDate": "Wed, 17 Jun 2026 04:01:50 GMT"
       },
       "sparkline": null
     },
     {
-      "name": "Rocket Lab",
-      "tag": "Space",
-      "desc": "Small-satellite launch provider and space systems manufacturer",
-      "url": "https://rocketlabusa.com",
-      "initials": "RL",
-      "logo": "https://www.google.com/s2/favicons?domain=rocketlabusa.com&sz=128",
-      "ticker": "RKLB",
-      "headline": {
-        "title": "Did Rocket Lab Accidentally Launch a Rocket to Orbit? - Gizmodo",
-        "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQVFVHYjRYRGlWdnNyeFZ2SDVsbV8yUmVYaXh3YVNyTHMwOTNBVWlHQ1FTQlhfR1E3c0E4LUN4N2NLc0RnLWxYMDlnX21OQm9uUjlYZWhfV2IxazY0ZG56Z2VQR1FtNWJDdC1kX2l6Yzd3NzFMZ1FUVEx3Q19fci10Zm1ZWHdidVJxUk5v?oc=5",
-        "pubDate": "Tue, 16 Jun 2026 16:10:52 GMT"
-      },
-      "sparkline": [
-        131.16000366210938,
-        127.30999755859375,
-        134.27999877929688,
-        125.44999694824219,
-        135.75999450683594,
-        143.1999969482422,
-        150.22999572753906,
-        148.02999877929688,
-        143.47999572753906,
-        122.38999938964844,
-        123.31999969482422,
-        114.69999694824219,
-        119.94999694824219,
-        110.08000183105469,
-        113.6500015258789,
-        108.2300033569336,
-        105.05000305175781,
-        114.77999877929688,
-        102.38999938964844,
-        109.25,
-        105.05999755859375
-      ]
-    },
-    {
-      "name": "Cursor",
-      "tag": "Code Editor",
-      "desc": "AI-native code editor that pairs with Claude and GPT-4",
-      "url": "https://cursor.com",
-      "initials": "C",
-      "logo": "https://www.google.com/s2/favicons?domain=cursor.com&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "Elon Musk’s SpaceX to buy AI coding agent Cursor in $60bn deal - The Times",
-        "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPbllfWHNlUEFzaFFob0t0Y1hZS21xYjhxc09lbHF4UGtZdVJCOGhoUU90VTJWVzdlZmVkVmEza1JjQ0U5VVhzQXBQaGE0NE55WDYxdlRyZ0xyajRrVG5uZjVsa05JRzJSZktJclJrenFCOTRrSUJ0cjZSVHJ0d1h6OXczQlFMSEFxSVhvYjFscHo3WVc2RGE4TzEtZ3pVRE0yZVlZbVNDVzRmVnh6UXhTUFFHUUU0algx?oc=5",
-        "pubDate": "Tue, 16 Jun 2026 16:09:00 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "Perplexity",
-      "tag": "AI Search",
-      "desc": "Answer engine combining web search with AI-generated summaries",
-      "url": "https://perplexity.ai",
-      "initials": "P",
-      "logo": "https://www.google.com/s2/favicons?domain=perplexity.ai&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "Perplexity's CEO shares 2 founder lessons he learned from Jensen Huang and Elon Musk - Business Insider",
-        "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPeFNqR3loZEI1a1hOaE0zTjNZc1dLZjhiZkpXQWx4bFpRUkdTdl8xVTE0Vml5UW5JZ0QwMk1KUjA1YzBrejVsWE96ZVVVTTFCclpWeEhJeDdRLWNIdTA3UHI5ek5GUmZvWkpkUmhlX3BTakVjVFg2UWE4eDRrMk9OMk0ydzRVS1oxUC1NelpiYU82Rk5CeHFyT0lpX3h1Qk4xWnc?oc=5",
-        "pubDate": "Tue, 16 Jun 2026 04:32:00 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "Mistral AI",
+      "name": "xAI",
       "tag": "LLMs",
-      "desc": "Europe's leading open-weight AI foundation models",
-      "url": "https://mistral.ai",
-      "initials": "M",
-      "logo": "https://www.google.com/s2/favicons?domain=mistral.ai&sz=128",
+      "desc": "Elon Musk's AI company, developer of the Grok models",
+      "url": "https://x.ai",
+      "initials": "X",
+      "logo": "https://www.google.com/s2/favicons?domain=x.ai&sz=128",
       "ticker": null,
       "headline": {
-        "title": "Europe’s AI champion Mistral vulnerable to Russian disinformation, study finds - Financial Times",
-        "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNWlBsRWNxeGhtSEFleElNVThtWTgxVkpDT0hMVEwtT00wVG44LTRzQ1VBV2VVS01yMnZ1Ry1jd2dDTjMxS2VsSUU4WTVHU3RJRkVLVHRZVklIQVkyZ1Q2dEs4OFBUSWVsWFk1RDNhZ1Q2UkRja3EwbGNqMlhrWUtGYlFqWEM?oc=5",
-        "pubDate": "Tue, 16 Jun 2026 04:00:25 GMT"
+        "title": "Trump’s DoJ intervenes to back Elon Musk in datacenter pollution lawsuit - The Guardian",
+        "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNWnZjcHlnZmlVdFRaOVNyU2dIM3dXdUdqRWQ2RXVZeGZ6dVlLams3MDhfOVRLOGIxV1o4SF9WbENITGVVVXlhZTVZcE8yYkRmaWJub2JFXzI1M2lZUS1Ec0hwekh5WW5qOTFKaGZVQjYzbFVjbi1kNlhVSHZzTnFoVnFYQkJ1U2s4eXFpd3l5Y3FpSGF5QTBndkIwS1FMZw?oc=5",
+        "pubDate": "Tue, 16 Jun 2026 23:02:00 GMT"
       },
       "sparkline": null
     }
