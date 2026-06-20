@@ -1,23 +1,6 @@
 {
   "tee_times": [
     {
-      "date": "2026-06-21",
-      "tee_time": "06:52",
-      "course_name": "Chingford Golf Course",
-      "facility_id": 14042,
-      "course_rating": 4.0926,
-      "course_review_count": 352,
-      "course_address": "London, Middlesex",
-      "distance_miles": 11.0,
-      "holes": 18,
-      "max_players": 4,
-      "price_gbp": 30.5,
-      "is_hot_deal": false,
-      "rate_type": "Best Available",
-      "booking_url": "https://www.golfnow.co.uk/tee-times/facility/14042/search",
-      "scraped_date": "2026-06-18"
-    },
-    {
       "date": "2026-06-27",
       "tee_time": "06:52",
       "course_name": "Chingford Golf Course",
@@ -32,11 +15,28 @@
       "is_hot_deal": false,
       "rate_type": "Best Available",
       "booking_url": "https://www.golfnow.co.uk/tee-times/facility/14042/search",
-      "scraped_date": "2026-06-18"
+      "scraped_date": "2026-06-20"
     },
     {
-      "date": "2026-06-20",
-      "tee_time": "07:12",
+      "date": "2026-06-28",
+      "tee_time": "06:45",
+      "course_name": "Chingford Golf Course",
+      "facility_id": 14042,
+      "course_rating": 4.0926,
+      "course_review_count": 352,
+      "course_address": "London, Middlesex",
+      "distance_miles": 11.0,
+      "holes": 18,
+      "max_players": 4,
+      "price_gbp": 30.5,
+      "is_hot_deal": false,
+      "rate_type": "Best Available",
+      "booking_url": "https://www.golfnow.co.uk/tee-times/facility/14042/search",
+      "scraped_date": "2026-06-20"
+    },
+    {
+      "date": "2026-06-27",
+      "tee_time": "07:02",
       "course_name": "Brent Valley Golf Club",
       "facility_id": 13883,
       "course_rating": 3.465,
@@ -49,41 +49,7 @@
       "is_hot_deal": false,
       "rate_type": "Best Available",
       "booking_url": "https://www.golfnow.co.uk/tee-times/facility/13883/search",
-      "scraped_date": "2026-06-18"
-    },
-    {
-      "date": "2026-06-21",
-      "tee_time": "07:12",
-      "course_name": "Brent Valley Golf Club",
-      "facility_id": 13883,
-      "course_rating": 3.465,
-      "course_review_count": 31,
-      "course_address": "London, Middlesex",
-      "distance_miles": 9.0,
-      "holes": 18,
-      "max_players": 4,
-      "price_gbp": 31.5,
-      "is_hot_deal": false,
-      "rate_type": "Best Available",
-      "booking_url": "https://www.golfnow.co.uk/tee-times/facility/13883/search",
-      "scraped_date": "2026-06-18"
-    },
-    {
-      "date": "2026-06-20",
-      "tee_time": "07:12",
-      "course_name": "London Airlinks Golf Course",
-      "facility_id": 15559,
-      "course_rating": 3.4609,
-      "course_review_count": 64,
-      "course_address": "Hounslow, Middlesex",
-      "distance_miles": 12.0,
-      "holes": 18,
-      "max_players": 4,
-      "price_gbp": 35.0,
-      "is_hot_deal": false,
-      "rate_type": "Best Available",
-      "booking_url": "https://www.golfnow.co.uk/tee-times/facility/15559/search",
-      "scraped_date": "2026-06-18"
+      "scraped_date": "2026-06-20"
     },
     {
       "date": "2026-06-21",
@@ -100,7 +66,7 @@
       "is_hot_deal": false,
       "rate_type": "Best Available",
       "booking_url": "https://www.golfnow.co.uk/tee-times/facility/15559/search",
-      "scraped_date": "2026-06-18"
+      "scraped_date": "2026-06-20"
     },
     {
       "date": "2026-06-27",
@@ -117,7 +83,7 @@
       "is_hot_deal": false,
       "rate_type": "Best Available",
       "booking_url": "https://www.golfnow.co.uk/tee-times/facility/15559/search",
-      "scraped_date": "2026-06-18"
+      "scraped_date": "2026-06-20"
     },
     {
       "date": "2026-06-28",
@@ -134,11 +100,11 @@
       "is_hot_deal": false,
       "rate_type": "Best Available",
       "booking_url": "https://www.golfnow.co.uk/tee-times/facility/15559/search",
-      "scraped_date": "2026-06-18"
+      "scraped_date": "2026-06-20"
     },
     {
       "date": "2026-06-27",
-      "tee_time": "07:38",
+      "tee_time": "07:45",
       "course_name": "Richmond Park Golf Club - Duke's Course",
       "facility_id": 14901,
       "course_rating": 3.0,
@@ -151,7 +117,7 @@
       "is_hot_deal": false,
       "rate_type": "Best Available",
       "booking_url": "https://www.golfnow.co.uk/tee-times/facility/14901/search",
-      "scraped_date": "2026-06-18"
+      "scraped_date": "2026-06-20"
     },
     {
       "date": "2026-06-28",
@@ -168,7 +134,7 @@
       "is_hot_deal": false,
       "rate_type": "Best Available",
       "booking_url": "https://www.golfnow.co.uk/tee-times/facility/14901/search",
-      "scraped_date": "2026-06-18"
+      "scraped_date": "2026-06-20"
     },
     {
       "date": "2026-06-27",
@@ -185,7 +151,7 @@
       "is_hot_deal": false,
       "rate_type": "Best Available",
       "booking_url": "https://www.golfnow.co.uk/tee-times/facility/15271/search",
-      "scraped_date": "2026-06-18"
+      "scraped_date": "2026-06-20"
     },
     {
       "date": "2026-06-28",
@@ -202,26 +168,9 @@
       "is_hot_deal": false,
       "rate_type": "Best Available",
       "booking_url": "https://www.golfnow.co.uk/tee-times/facility/15271/search",
-      "scraped_date": "2026-06-18"
-    },
-    {
-      "date": "2026-06-21",
-      "tee_time": "08:20",
-      "course_name": "West Middlesex Golf Club",
-      "facility_id": 10634,
-      "course_rating": 4.4009,
-      "course_review_count": 183,
-      "course_address": "Greenford, Middlesex",
-      "distance_miles": 10.0,
-      "holes": 18,
-      "max_players": 4,
-      "price_gbp": 60.0,
-      "is_hot_deal": false,
-      "rate_type": "Best Available",
-      "booking_url": "https://www.golfnow.co.uk/tee-times/facility/10634/search",
-      "scraped_date": "2026-06-18"
+      "scraped_date": "2026-06-20"
     }
   ],
-  "scraped_at": "2026-06-18T23:24:34.549077+00:00",
+  "scraped_at": "2026-06-20T12:16:33.886063+00:00",
   "error": null
 }
