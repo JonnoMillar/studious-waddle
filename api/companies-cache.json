@@ -1,6 +1,81 @@
 {
-  "refreshed_at": "2026-06-20T12:16:44.043Z",
+  "refreshed_at": "2026-06-21T12:31:51.902Z",
   "companies": [
+    {
+      "name": "Figure AI",
+      "tag": "Robotics",
+      "desc": "Humanoid robots designed for industrial and commercial work",
+      "url": "https://figure.ai",
+      "initials": "FA",
+      "logo": "https://www.google.com/s2/favicons?domain=figure.ai&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "This AI company now has more robots than human workers - India Today",
+        "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPTEU0SEYzaXdBNjdYZTNZOWVoNjhUMi1jUElrZUl4MzRfV0J1ZEFoekNzR3gwVUdfU2VYSVFKZmk4dFVUZURDZmpLSURzU29YU2pINW9SSWlfX3h5UkoyQUV4N0xMQWRPZWdWWWZ1Rzh3cWFqbE1qbHZTM0w0cW9iU3poTjB6Q1ZobDNrTnY0OE0zLUJvV21STFpUZ2tVbmlLMTdfSXlMTlVwODIwMEhIUVdTNzg5ZGp2MjlXdTJ30gHDAUFVX3lxTE5qZEJxYW5pUTgtZDJidVo1M3NhSC1xa2lqcDRiZ3RzZHpzTkp5aUJEcW9DRkc0Zk44bmpYcGJfMFBLUk9HOUduVjIycTRZNUR0WHRiV2M4bXM2ZDVFRG9DbWRpMDF5RHYwUTNkZFYzUHl6d3NPbWNGcHNzbmxOeDV1V2M4NmhwcFhGMkZIbXRZV3MyX2NMMk1TQlY0YkxGem1iZEFfWmR5VTlRTk5TZy1OVGw5UjI5ci01LUFqVGRULURQUQ?oc=5",
+        "pubDate": "Sun, 21 Jun 2026 07:08:04 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "Anduril",
+      "tag": "Defense AI",
+      "desc": "Autonomous defense systems and AI-enabled military hardware",
+      "url": "https://anduril.com",
+      "initials": "A",
+      "logo": "https://www.google.com/s2/favicons?domain=anduril.com&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "The Pentagon moves towards mass-producing the future of aerial warfare - New Atlas",
+        "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNQ1JFRTJQakk4YWVhOE9pMnRaN1N1d0pZUmJkS2d3MHpBT0RZWmU3RmhYQlRIQkxxRldET2ptX1BPc3IzbFdiNTZ0REVtT1JCaDlpWkdvUDhVdFcyZ3RKWTdiVHdsakwzTTBJbTRUTFhQRlN1aTdjWGdUN3A3QzV5VzlB?oc=5",
+        "pubDate": "Sun, 21 Jun 2026 01:09:01 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "Waymo",
+      "tag": "Autonomy",
+      "desc": "The most miles driven autonomously of any robotaxi service",
+      "url": "https://waymo.com",
+      "initials": "W",
+      "logo": "https://www.google.com/s2/favicons?domain=waymo.com&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "Waymo Has Been Defeated by New York City - Futurism",
+        "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9jQlpZdFM1S1prYkZuMy1QY3FkVDktckFQTzREclVXYXBVM0JyQURmandUVTdld3FEX2lXUlFxd2FsMVNzVFJsTHNGaHFnZ2hNWEtfMXMyZ2N5aGt2eTRNMkdrN0JrOENjVjFkRE91SWRIUDBlWUE4?oc=5",
+        "pubDate": "Sat, 20 Jun 2026 17:00:00 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "Cursor",
+      "tag": "Code Editor",
+      "desc": "AI-native code editor that pairs with Claude and GPT-4",
+      "url": "https://cursor.com",
+      "initials": "C",
+      "logo": "https://www.google.com/s2/favicons?domain=cursor.com&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "How SpaceX benefits from its Cursor acquisition - Yahoo Finance",
+        "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOY0FTVzNtYW1BUXZ2UkhudEFpYUlZZjdhY0tPYzZZMVZ2S3ExVHdsUEY4dm95VFlfNmxnemRNMS1GR0MwVndpay1uS0VMeGJSQUFvTUlQSHE0WTR5VFZ6bklqTW91LUhLZW14dlNBc2lrbEdfN3BPbWh2a1k3ZXp1TXdlWWlUbUNzdFI3R21XV2o1cFp1Y2Z5eU1BY3BTem9TckVtanlRTWp1bEU?oc=5",
+        "pubDate": "Sat, 20 Jun 2026 11:28:32 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "Anthropic",
+      "tag": "LLMs",
+      "desc": "AI safety company behind the Claude family of models",
+      "url": "https://anthropic.com",
+      "initials": "AN",
+      "logo": "https://www.google.com/s2/favicons?domain=anthropic.com&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "Did Anthropic talk its way into an AI export ban? - Financial Times",
+        "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPb0VpZVM2Nnh5VjJfRnhCLU9nVjdIOWE4ZG9kenZwZVExbWhVUzJfc01FbG9NTEJrUG80REFFQl9Fd1hMLTNRX216OXE3WVdGOHpVUTFFRDlndGIzei00NllhclR6d2RaQTZjMzB2WGYtcjFLNkhRS1MteHc4Z1VlNm5JYzQ?oc=5",
+        "pubDate": "Sat, 20 Jun 2026 11:00:09 GMT"
+      },
+      "sparkline": null
+    },
     {
       "name": "Commonwealth Fusion",
       "tag": "Energy",
@@ -17,36 +92,6 @@
       "sparkline": null
     },
     {
-      "name": "Anthropic",
-      "tag": "LLMs",
-      "desc": "AI safety company behind the Claude family of models",
-      "url": "https://anthropic.com",
-      "initials": "AN",
-      "logo": "https://www.google.com/s2/favicons?domain=anthropic.com&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "Trump tells Axios he no longer views Anthropic as national security threat - Reuters",
-        "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPRzlsZDZoSlNFS3NKdk1pblgwRGRDNzMwNXRmZjJzR1M1SmlBMWU1aWY1cFoxSG5uQkpib1VyZ29mdC1lSWNfdHBTVGxJeXZkc2Y2bUUzUktqd0ZjSEdxTHJMTy1ZWHExQ3dnT1NBMlA2dzJCc0hwSjEzdE83UHA5eTE1anFqeERoM3lQeTIzZ2EwVzIzYzE0Rmtrbm96elZCa01rYTJ2dDh4b3VoWmhNNE9PZklzRE0?oc=5",
-        "pubDate": "Fri, 19 Jun 2026 19:56:03 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "Cursor",
-      "tag": "Code Editor",
-      "desc": "AI-native code editor that pairs with Claude and GPT-4",
-      "url": "https://cursor.com",
-      "initials": "C",
-      "logo": "https://www.google.com/s2/favicons?domain=cursor.com&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "How SpaceX benefits from its Cursor acquisition - Yahoo Finance",
-        "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOY0FTVzNtYW1BUXZ2UkhudEFpYUlZZjdhY0tPYzZZMVZ2S3ExVHdsUEY4dm95VFlfNmxnemRNMS1GR0MwVndpay1uS0VMeGJSQUFvTUlQSHE0WTR5VFZ6bklqTW91LUhLZW14dlNBc2lrbEdfN3BPbWh2a1k3ZXp1TXdlWWlUbUNzdFI3R21XV2o1cFp1Y2Z5eU1BY3BTem9TckVtanlRTWp1bEU?oc=5",
-        "pubDate": "Fri, 19 Jun 2026 12:30:00 GMT"
-      },
-      "sparkline": null
-    },
-    {
       "name": "OpenAI",
       "tag": "LLMs",
       "desc": "Creator of ChatGPT and the GPT family of foundation models",
@@ -55,64 +100,11 @@
       "logo": "https://www.google.com/s2/favicons?domain=openai.com&sz=128",
       "ticker": null,
       "headline": {
-        "title": "Luca Guadagnino’s Nearly Finished Sam Altman Movie ‘Artificial’ Dropped by Amazon After OpenAI Partnership - Variety",
-        "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPMVBqY24tSVdzQ2lUaVRNRnIwcHZ0SXprTVZOem9hQ1hCZUlvRF9CUXVrcUpoS0lMZG5ZOFFUdGczY1lzVTZ3N3ZwZ3FENnJ1R21WNlVnZHhMdUFhVnplN3dBekRRWEIzZXJ6VXBucDNiX2NDU3hBTW9kR1dxakZ5cTJ6WFJIZDRZWnI0Qmg2N2RabGVXalZlaXA2U2M4M1U2MXE3eTl0bWNjOW8?oc=5",
-        "pubDate": "Fri, 19 Jun 2026 10:19:00 GMT"
+        "title": "Luca Guadagnino’s Sam Altman movie dropped by Amazon after it announces OpenAI partnership - The Guardian",
+        "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQZVU3UzlZMllndWRneS13MTMwejJEbXJtYmczdHFua0k5RVlCSmY0SzlyUlRwU2p3LTFvb2Y3T2Z6RVRQaFBKSnZFWjB1MXNnOEFvcFM5aDc3NUhoeUM3cE9MV1ltQ2FQcUVNNnotbVUtN0NMdGc2MzdtbFZoc21KVHVuZXBHT0pYbUJ4NTg2MGNHamNtT0c5QVZrN0dnUC1xdVp0X0V3Tm5uZU9TWGtN?oc=5",
+        "pubDate": "Fri, 19 Jun 2026 13:23:00 GMT"
       },
       "sparkline": null
-    },
-    {
-      "name": "Figure AI",
-      "tag": "Robotics",
-      "desc": "Humanoid robots designed for industrial and commercial work",
-      "url": "https://figure.ai",
-      "initials": "FA",
-      "logo": "https://www.google.com/s2/favicons?domain=figure.ai&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "Humanoid Robots Show Narrow Skills, Not Multitasking - Let's Data Science",
-        "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNMzVVM2QtdWdCOTVHamFEUXd2YnVZVnNrdGVkMlM5ZkZNcmhrTUE1T3dnYm5SdVg3dG8yd1pRbk1UNDF6RWtpSV9LM3lHYkVvZ3k3Wm50WVhka0JZX21BSmpxcFIweThiMmdoRklrTDZQLS1XaU56VDMxMmV2aHpKWWdLTktuLVluT0U1OWpMaVdGVzFYS2U2VQ?oc=5",
-        "pubDate": "Fri, 19 Jun 2026 06:23:00 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "Rocket Lab",
-      "tag": "Space",
-      "desc": "Small-satellite launch provider and space systems manufacturer",
-      "url": "https://rocketlabusa.com",
-      "initials": "RL",
-      "logo": "https://www.google.com/s2/favicons?domain=rocketlabusa.com&sz=128",
-      "ticker": "RKLB",
-      "headline": {
-        "title": "Should Investors Buy the Pullback in Rocket Lab Stock (RKLB)? Here’s Wall Street’s Take - TipRanks",
-        "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQaVdyNWIxMzZLUHRjWVBFcWlYeDFoLWRwLTJXQUhaSGtpcU1FeEFtMzV5RExHM2tSZDJHTUtfazBTNndXbGRGN3VDN1laQmd2TlRpNnpTYjd2VTRTTEpSejlxcHh6VWhIUVJOMVdJSHBUNm1WR0plaE9sMDN0Q2gzRnZaR3JuTTdoczJNaE8xQkkzaDItRVg4VFUzV0lHdDNVMnVaOXdPRkxqRkVHQXRfX0dn?oc=5",
-        "pubDate": "Fri, 19 Jun 2026 01:11:21 GMT"
-      },
-      "sparkline": [
-        127.30999755859375,
-        134.27999877929688,
-        125.44999694824219,
-        135.75999450683594,
-        143.1999969482422,
-        150.22999572753906,
-        148.02999877929688,
-        143.47999572753906,
-        122.38999938964844,
-        123.31999969482422,
-        114.69999694824219,
-        119.94999694824219,
-        110.08000183105469,
-        113.6500015258789,
-        108.2300033569336,
-        105.05000305175781,
-        114.77999877929688,
-        102.38999938964844,
-        109.25,
-        104.62999725341797,
-        107.9800033569336,
-        107.23999786376953
-      ]
     },
     {
       "name": "Perplexity",
@@ -126,21 +118,6 @@
         "title": "Perplexity Launches Brain, a Self-Improving Memory System That Builds a Context Graph of an Agent's Work and Learns Overnight - MarkTechPost",
         "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9aNmNHdEM3NXlSRG9oNk5WeHBTYlRNOU1wcUpJSm1Wa0lkeS1pS2o1OFlGNXpfeXdDMndsY2k3dmhtNzBSd0tnck9Kc2xjZXFmelE3ZWFjcElTZTNSeXBtT21xTDJqTWt6dm10VkExdGU1Z3Bv?oc=5",
         "pubDate": "Thu, 18 Jun 2026 20:26:20 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "xAI",
-      "tag": "LLMs",
-      "desc": "Elon Musk's AI company, developer of the Grok models",
-      "url": "https://x.ai",
-      "initials": "X",
-      "logo": "https://www.google.com/s2/favicons?domain=x.ai&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "Godfather of AI blasts Musk's xAI as 'failure,' says labs are risking a 'big bubble explosion' - CNBC",
-        "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQZ0xtN2k3bkpySVpWLWlMQVBIWWcwdWE5eXlMWE9IbGUxekRtVjBXblN0dXZKOWFOeDd1MmJfalhOR01VWGJma1JOZVZIa1VRNlBNeFgxREFxLVRHdm5QX0REd1JVamo5Q0Z2ZEZ1S0tFT1FFWXNMRHZwZEJsaEVTZm1rcmd5aGg0STM2QllTc2hJOTTSAZgBQVVfeXFMUHRzdl9sS0JnNlVScnNPV2NVUHVud1o1QmVqRDd2OXdQZTBuWF8yMFJRVTIwTWpqSTBXS0lnNFh0MUcwaVVvaHN6QkRPZE5OaW9DR254cWRDYl82ZThGWTV2UnpBR1lLZVVJYTlEamdyVmlJRlI5M1A2ZzZiQTNMb2ZyeUlmcEFFdWV6SkdSTkFnb0FWWlZzWkg?oc=5",
-        "pubDate": "Thu, 18 Jun 2026 11:11:11 GMT"
       },
       "sparkline": null
     }
