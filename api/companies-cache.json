@@ -1,18 +1,63 @@
 {
-  "refreshed_at": "2026-06-25T09:32:04.317Z",
+  "refreshed_at": "2026-06-26T09:36:45.988Z",
   "companies": [
     {
-      "name": "Anduril",
-      "tag": "Defense AI",
-      "desc": "Autonomous defense systems and AI-enabled military hardware",
-      "url": "https://anduril.com",
-      "initials": "A",
-      "logo": "https://www.google.com/s2/favicons?domain=anduril.com&sz=128",
+      "name": "OpenAI",
+      "tag": "LLMs",
+      "desc": "Creator of ChatGPT and the GPT family of foundation models",
+      "url": "https://openai.com",
+      "initials": "OAI",
+      "logo": "https://www.google.com/s2/favicons?domain=openai.com&sz=128",
       "ticker": null,
       "headline": {
-        "title": "EXCLUSIVE: U.S. defence firm Anduril in talks for Nissan plant to build drones in Japan, sources say - Reuters",
-        "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNdHM1ajZmSGx3RkRERFNvczBoaGU3cEVucUVHZk1ON2lwUml3N3FuNzJCalg3VEloRE5hVjlhTEkzbmxRZkhyOVhzTXMwdFZsYzhUMFJoZlhkNkJkaldkZm9hbmQzNXpzZWxpNkNJZjBERTFXTkpGbWlyYUNuckFJX0kwNlhaLVNybkVqY010aW5kb2hJYm5yRjNwdWk4TUpBYzVvQ3VQVm95eVpnRm9lbmZwdEt3UlRSMFNCaHVKRkNNdEFlZFpj?oc=5",
-        "pubDate": "Thu, 25 Jun 2026 05:09:00 GMT"
+        "title": "Trump Administration Asks OpenAI to Stagger Release of New Model Over Security Concerns - The Information",
+        "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPSmFRRDNqUHdqamVDUnVYSFNpZWZ1aVYxWjBhaG9DX1ZBTHRSTGhqUzFiMDY1N0VTTTFLaG5OWGFoRmU2WHNaekVGUjRkeEFLcHBISzhvZldmcUx6MjhRNEZFWGNFU1dOdW1vcEVmS0RYamhQYWNLQ1R2TGNRSHpidFEweWV6azNpRnI1QXN0bjJnYTU0czh6Q1J6dTJVRzBvOU9LWFlhbTlSWHd2aWlNLU9yaFJ4d1k?oc=5",
+        "pubDate": "Thu, 25 Jun 2026 20:16:00 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "Waymo",
+      "tag": "Autonomy",
+      "desc": "The most miles driven autonomously of any robotaxi service",
+      "url": "https://waymo.com",
+      "initials": "W",
+      "logo": "https://www.google.com/s2/favicons?domain=waymo.com&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "Waymo Registers German Entity for Future European Expansion - Bloomberg.com",
+        "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQeWJSeHJhUWtBd2wzT281V205aHVLZ2VTdzliSFI2empUN191N2U4X3RXWDZ0M1JxbURCLTg1eW9hRDFJWTlIQ3VrSTctTExZUEFIZEFCbGRiLTVXQ0ZCMUNZZ2Y2ZHFvSzF6UTZNWm9DNy1xRlVRbUI3UXNQWmtEbm9yZjdjQVF2am1HMzFqbklFYkwtSHFVRFJzMk04dVhJNWlhVVMyYUZqWEhTdVRn?oc=5",
+        "pubDate": "Thu, 25 Jun 2026 17:51:09 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "Scale AI",
+      "tag": "AI Data",
+      "desc": "Data labelling and RLHF infrastructure powering frontier AI",
+      "url": "https://scale.com",
+      "initials": "S",
+      "logo": "https://www.google.com/s2/favicons?domain=scale.com&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "What it actually takes to scale AI in Europe: ‘The best founders aren’t building for the next funding round’ - Sifted",
+        "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1EN0NsUl95aW5iQks4VUpMcEZtV0VEa05TdnNJVWFXQmdoMFFzZ2xIV1RjekN4TlhZcjFKYVlsODZZZDE4bUs4TDhYVUFOaWdYcVQtdEdOUFhHZUJxQ2JB?oc=5",
+        "pubDate": "Thu, 25 Jun 2026 14:09:34 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "Figure AI",
+      "tag": "Robotics",
+      "desc": "Humanoid robots designed for industrial and commercial work",
+      "url": "https://figure.ai",
+      "initials": "FA",
+      "logo": "https://www.google.com/s2/favicons?domain=figure.ai&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "BMW Group advances the use of Physical AI in production with Figure 03 project in Spartanburg - BMW Group",
+        "link": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxPNjJlc1ZtRWxFbUxqY3Z0MElMNUlQRDBfR0pLc0xKSGctRkJEa2tMZGxBSWVCZTdYM3YwZ2l6UTUtb2JvQVZsZkJIeGYtb3lRSndUZEE4Z2g3Nkp1T0R1ZkdST1pHU0JzTkFvYVd0LTFhQVV5UUJrazhMbURPc3dLM0ZmaC1NNG9BQ1pVdUF4X1l5cnQwLTdrYVZiUmNwX1VjY2RRMkFwY2pqdGdET05KcUgzSUZ3NDFBa2JQNWstaEFaRjVwMWk5U1NoTlBXSDVRUWpnWWFHcXdVZkhEMkw2c2lqb253M2dZeGRpY2RlSm9NbURNVEVsS3c1US0xZw?oc=5",
+        "pubDate": "Thu, 25 Jun 2026 13:03:00 GMT"
       },
       "sparkline": null
     },
@@ -25,76 +70,9 @@
       "logo": "https://www.google.com/s2/favicons?domain=anthropic.com&sz=128",
       "ticker": null,
       "headline": {
-        "title": "Anthropic accuses Chinese rival Alibaba of illicitly extracting AI capabilities - BBC",
-        "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9uU2lSaTc5MmljZDMzMXFBUUszVXM2V2d3X0NDQVc4NllibjkxbkNFWGlFTDlRVklyRjFHdXdWSHpiZThOQjhySVN5MzFxVUlaeTNKSHBBcnRZWjRL?oc=5",
-        "pubDate": "Thu, 25 Jun 2026 03:12:17 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "Palantir",
-      "tag": "Data Analytics",
-      "desc": "Big-data analytics platforms for government and enterprise",
-      "url": "https://palantir.com",
-      "initials": "PL",
-      "logo": "https://www.google.com/s2/favicons?domain=palantir.com&sz=128",
-      "ticker": "PLTR",
-      "headline": {
-        "title": "Met gets extension to Palantir AI project after Sadiq Khan blocked deal - The Guardian",
-        "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNS3BfNnRhQ2ZzbjFRUHljVGpVQlZtVk5EYy1qV2RKdzV0VnFGU1Npc3NJV2dCQ3F1NXk2V1VOZlByWllWRjZreVJKbWFXMjdVVEhoVGtIN0RSU0JTN0FMNHhHNFE5a2g4aGVNRUR1dHdHZkt1NW5zb2NKUU5YUWM4bEZjWnNsZC1iOUpFQ2dWTFZvdmJKN2dVRUZyc3ItQ0kzM2lBQmF6UXhLQ3dVbXNGVF9oaDF1S0M0OF9RNHNLMzI3cC1sVWR3VUxTZWlKUQ?oc=5",
-        "pubDate": "Wed, 24 Jun 2026 22:50:00 GMT"
-      },
-      "sparkline": [
-        136.60000610351562,
-        132.50999450683594,
-        143.33999633789062,
-        156.5399932861328,
-        160.64999389648438,
-        152.1699981689453,
-        142.1999969482422,
-        141.6999969482422,
-        135.52999877929688,
-        136.47000122070312,
-        132.07000732421875,
-        130.2100067138672,
-        131.0800018310547,
-        127.98999786376953,
-        134.7100067138672,
-        133.25,
-        130.6300048828125,
-        128.47000122070312,
-        119.5,
-        116.69999694824219,
-        113.5
-      ]
-    },
-    {
-      "name": "Neuralink",
-      "tag": "Brain-Computer",
-      "desc": "Implantable neural interfaces for restoring and augmenting human capability",
-      "url": "https://neuralink.com",
-      "initials": "NL",
-      "logo": "https://www.google.com/s2/favicons?domain=neuralink.com&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "Human patient with Elon Musk's Neuralink brain chip shares 100 days update; says: 100 days in and I alrea - The Times of India",
-        "link": "https://news.google.com/rss/articles/CBMiugJBVV95cUxNMXE3N3BGY2VIOVY2N204U0V6MlVyX0hiS2tCbEo0WDBjVFBUX1pyMWdvY2lqTXR0eVBWaHk2OWt4Mnp6SEJzMFVxVkpMR3k1ZUJwNERWZkFYcV9keDZqNWc5cnhweHc5Qmc2amlTT05QeHZMWkVneFUyd0kwSmtWT1JRbnAzZTlBZXJHSDd0NGtoUm1IM0NCbXlHbEZhci1MLTVuM0FXbWVfMWtQYmpmV2VucjdJQnZtVlBmVnRKSng3elc3N2xEOTNyRUY0WE1JVldXWW1jZW5iZ3ZQQ2xYc2E0c0pudG5VQnI0NHUxeEIzbmQxSjRFRE90eTQ0QkdzdF9qWXZPSktvWXJYZGhJVzktdGdvblJ0VWc2TDVJTEJ1NlgzZFBtMUtrdEJkSTlDMTBLMjdXa1BSZ9IBvwJBVV95cUxNTmFkd3dzMG8zaE1mWDhnV2tOeU5zdTFkSmZrSHl4NUl2bUYxOWl3YmFOcUJDM3lOdVBTSVltc3ZNaXU0Tm5DMlBpMk5CcEE5QUVWN2NpNXlkOHEtZTVwRjlEYXZKMGJrNGxwT0h2QTl0LTJoR0NwVzhpWDJBOXNIRnFTeFJCVloxd2xwRE1Rc2lVOGh5eWE1ZF9iMktEcnYwc3JrWDdrRVZFdjI2eXpLU2tBSEFfQ2dfSFpxSVdfSjBnbnRrZ1VpZnZ2VXFOUGNCUDY0cFFhd3A2ZjlPUXJHM3VSdWtRejFNZFNaUVJpb0RPemdKc1RSQk1CMXhZa19GSXJwNTdrY1MzWVNmbHV6dHE0NThwWEl2VkJzeTRfWk13UWFRdHR3OVp4RmQzNjRVMTlxc2lyckt1bDVlSHBR?oc=5",
-        "pubDate": "Wed, 24 Jun 2026 19:04:00 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "Physical Intelligence",
-      "tag": "Embodied AI",
-      "desc": "Training AI systems to manipulate physical objects",
-      "url": "https://physicalintelligence.company",
-      "initials": "PI",
-      "logo": "https://www.google.com/s2/favicons?domain=physicalintelligence.company&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "Physical Intelligence (π): General-Purpose AI for Robots - quasa.io",
-        "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOZUR4U0d4VlMzVWVvVklkMXpmUk1BcG9OT2FTU2hRS3pxLWlQZmlFZGFTVm5Qdk54Tjg3MFV4YUpPTVpKR0FKNW5VUVNxVVkta1JMdDllRllQTmY2YzJPWHdsY09IcFJKYndrSy0zcU9LYVZBSTllMkNzUnlsMldDcWdB?oc=5",
-        "pubDate": "Wed, 24 Jun 2026 18:39:07 GMT"
+        "title": "Anthropic has hired an economist with . . . interesting views on human survival - Financial Times",
+        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5tdFFmTzY0cEFWVGpiaWNQWTEzU2ExT01XR21Cc001U3FScDhvWHNfNFBjdHAwbGMyOFV0bDNPc1dOb0pvWGg3NjZZSzdhOTBYM3NCSG5NemdBMjJUS0x1S2JTdkdMWDdBdm5hUW9wQkI?oc=5",
+        "pubDate": "Thu, 25 Jun 2026 12:50:32 GMT"
       },
       "sparkline": null
     },
@@ -107,39 +85,39 @@
       "logo": "https://www.google.com/s2/favicons?domain=perplexity.ai&sz=128",
       "ticker": null,
       "headline": {
-        "title": "Perplexity AI Launches Computer for Counsel, Powered by Legal Tech Integrations - Law.com",
-        "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQY3VVeWo4aGM2VlZDeU9yT3NKaXJReldOTXQ3RDk4azdJYmlSZ2Y3NWw1NU9DUjYzZ1kxM3pnUWRuY0l5Z2tBVVZaaEtTeDZ5by1KNzU2TEppZzNyd0R4dGRGcGpxWkhoemN1RkNXREtLdjRnR1MyeGtSXzNueVdfZGJCLVpKQ3BqN1hSZ0luUlVoMERSRldwSjBBRjNCMW5EZU1mY25Ca1pVeDZmOU5tOTJoU3dURDE0TUdFcVhHc280Zw?oc=5",
-        "pubDate": "Wed, 24 Jun 2026 16:00:00 GMT"
+        "title": "Perplexity Makes Its Move Into Legal, Unveiling Industry Features at ‘Computer for Counsel’ Event - LawSites",
+        "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOZ1pJd19ZNjVXZUVaM3BMeHpqeWVLMEw2UWNGcGVZaHRLb2M1RU5MRHFFeFZMRm0yZjUyaHBKT3pWVnppSnM5cWFFN3RLUHc3Mmx2ZFRXS0o5ZEZPLTQ0SWRMQ1hzME9NQVFjc3pBTF9PY3ZJSTZLYUg4dTd1VGZtejNjWU1GS25vTDgyVEJfMjBsWEhxaHp1WXM1eU91UXYtTGFKdEFTR3VobEoyYzYtVi16Z3lURWZVdDBCTlYxNHpZbXFPVzNweENETQ?oc=5",
+        "pubDate": "Thu, 25 Jun 2026 12:43:52 GMT"
       },
       "sparkline": null
     },
     {
-      "name": "OpenAI",
-      "tag": "LLMs",
-      "desc": "Creator of ChatGPT and the GPT family of foundation models",
-      "url": "https://openai.com",
-      "initials": "OAI",
-      "logo": "https://www.google.com/s2/favicons?domain=openai.com&sz=128",
+      "name": "Physical Intelligence",
+      "tag": "Embodied AI",
+      "desc": "Training AI systems to manipulate physical objects",
+      "url": "https://physicalintelligence.company",
+      "initials": "PI",
+      "logo": "https://www.google.com/s2/favicons?domain=physicalintelligence.company&sz=128",
       "ticker": null,
       "headline": {
-        "title": "Stripe, Anthropic, and OpenAI are backing an effort to stop respiratory infections - MIT Technology Review",
-        "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQVlFuOFg1NzJxNW5FZks0dDNsdXJaT05ablBsY25aY3ZYRTZZS052S2xTdTJuSWVqS3JmMzF4bGRlRkROSWF2VEZ3Q2U4c01uU251am5LdlkxcEhTWWF0aFRGYy1MLXJOVTBhaFRWU0I5S2xxVkxRaGl0X2REeVVsanpqRW03SXVqdkRScVYyVUlPZTRxZ2JpbDBRekh0TVBvN1prTGRtNEZNMlJmdXNsdFdxT2QwQzR3cnBiNklMdTh5SDg0Q0VXNl91dDZTZ9IB0wFBVV95cUxQR1VqbzRKNVJYV1dyaktWcDlUM0o0R25aaVFnTTRkNW12XzAxYnlnQktMV01SN24wczAtWm1KcDBpWklsMUt6c1pDQjdHUTJDQ3ZyN2ZKVGtLWHNvbEE4b3ctdFc2YU9mdVYydjJ0VTg5RTdXa0ZLUFBDQmdvdU0wQXBhc0VBeGEtVUhGc2lQSW10NVhhY1ZUNE1LM2dqa1ZwTkprS1MyS0pJU3Q0cnFEYTlZd244WVBBRGhQa2hhTWl4MkNwRm85TjR4LTRyaGttbFU0?oc=5",
-        "pubDate": "Wed, 24 Jun 2026 12:00:00 GMT"
+        "title": "Carat: It’s the tension between artificial intelligence and physical intelligence - MediaCat UK - MediaCat UK",
+        "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPeURoem44a0tXYVBPZWRfeWtERnJpWElYdVNpSzVfc2hsVkw0Um5JbjdvclJSVjRJV3lmVjFDR2I5NmpQUmt4c2IyVjhSX2Zqc01ZTGQ3d0xZSXhaRkFEamUya0p0bWxWOGduT1d3LWlQek9YeWV4NERZM0ZUMlFuSE12bmg5OTdiazdFUGpWYWo3NmV6QlJXblVRbmNkVFNjUEHSAacBQVVfeXFMTjA5cGNlN3FxUE9NS0x6TzlHQ0NlazJ6VXJoUW5jNVhlRXY0MUpaUk9adWRQTXlTRW9TQjAwT2FRMGh0TTJXRE5fN1puSGg4NFBUTDAxa3h2QnRxSHFGblFKbkxUVW9sWTBkSXNGX1ZPRnhWTWtvWWljSmd0Tzc4ZjFwTXJ0MEFXTHpIT3hJb3Z5c25qUFRFaDJfVGc5d1FOVmM0VW1lNXM?oc=5",
+        "pubDate": "Thu, 25 Jun 2026 11:43:40 GMT"
       },
       "sparkline": null
     },
     {
-      "name": "xAI",
-      "tag": "LLMs",
-      "desc": "Elon Musk's AI company, developer of the Grok models",
-      "url": "https://x.ai",
-      "initials": "X",
-      "logo": "https://www.google.com/s2/favicons?domain=x.ai&sz=128",
+      "name": "Anduril",
+      "tag": "Defense AI",
+      "desc": "Autonomous defense systems and AI-enabled military hardware",
+      "url": "https://anduril.com",
+      "initials": "A",
+      "logo": "https://www.google.com/s2/favicons?domain=anduril.com&sz=128",
       "ticker": null,
       "headline": {
-        "title": "Reid Hoffman: SpaceX ‘isn’t an AI company,’ xAI is a ‘train wreck’—and there’s room for OpenAI, Anthropic - Fortune",
-        "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQNXlNQWNfMzV5UDlIb3FFa19PaXM2VmJmYlNhQ2U4MTFBOWtCOE9iSzNOdjFoTXFTQjltTkNKeHYtWTQycEFEOVNVbXZHOWhfWENOV1kxLTh4NFhlNnA0UjdxRk5nRHJmcjg0R25JOFVTS0prME10Z2hpazZEMnJMZ3g3eUZlN1BGWGUzWVNETHo?oc=5",
-        "pubDate": "Wed, 24 Jun 2026 09:00:00 GMT"
+        "title": "EXCLUSIVE: U.S. defence firm Anduril in talks for Nissan plant to build drones in Japan, sources say - Reuters",
+        "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNdHM1ajZmSGx3RkRERFNvczBoaGU3cEVucUVHZk1ON2lwUml3N3FuNzJCalg3VEloRE5hVjlhTEkzbmxRZkhyOVhzTXMwdFZsYzhUMFJoZlhkNkJkaldkZm9hbmQzNXpzZWxpNkNJZjBERTFXTkpGbWlyYUNuckFJX0kwNlhaLVNybkVqY010aW5kb2hJYm5yRjNwdWk4TUpBYzVvQ3VQVm95eVpnRm9lbmZwdEt3UlRSMFNCaHVKRkNNdEFlZFpj?oc=5",
+        "pubDate": "Thu, 25 Jun 2026 05:23:17 GMT"
       },
       "sparkline": null
     }
