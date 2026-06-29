@@ -1,18 +1,48 @@
 {
-  "refreshed_at": "2026-06-28T09:18:04.520Z",
+  "refreshed_at": "2026-06-29T11:09:42.094Z",
   "companies": [
     {
-      "name": "Mistral AI",
-      "tag": "LLMs",
-      "desc": "Europe's leading open-weight AI foundation models",
-      "url": "https://mistral.ai",
-      "initials": "M",
-      "logo": "https://www.google.com/s2/favicons?domain=mistral.ai&sz=128",
+      "name": "Scale AI",
+      "tag": "AI Data",
+      "desc": "Data labelling and RLHF infrastructure powering frontier AI",
+      "url": "https://scale.com",
+      "initials": "S",
+      "logo": "https://www.google.com/s2/favicons?domain=scale.com&sz=128",
       "ticker": null,
       "headline": {
-        "title": "Document AI Pipeline Errors Start at OCR: Mistral OCR 4 Collapses Three Stages to One - Tech Times",
-        "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPd2dfUVFJYk5XdkczRGxmSk5USUpySXBTODJxam5fZHFaMllWdG1BMHdSNmMzVFFkNDB4ZTI5VzdVRHZyLThQbFhubjNPaEpJUTRQQ3duYzZhOHRPZTVkU0o3TjNGc2p3WFZMc3VkcEh6alE1bFpHclk2cDZJZk9JYmpjVUs1bTRHYmVMSHAtLXN6VERmNko2UjRQY1ByNVdxc3l3d2ZzckRhQ1VKVlpVNnVJRkdlQkQtOFNnTVZwWmc4Zk5ob2cySk53dFlYZw?oc=5",
-        "pubDate": "Sun, 28 Jun 2026 03:19:33 GMT"
+        "title": "Founders scale AI study app to $13M revenue - Let's Data Science",
+        "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPSnNLanNObjlreTMwdGd2SEhEWFE3MVpEa1V1MVIwSWRVYnpJVUcxSWZFT1I0UEVGQzczanJUaTkxejc4VmUtTHgxckl2N2RLWkxXTEpyRGNiSDdMZjF5N0RqeDR3ZmJPUzI5cERGTnY4TlJQY29wLVhXeTN6V3I5OVVBdmNCT3NxekMxcQ?oc=5",
+        "pubDate": "Mon, 29 Jun 2026 09:46:17 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "xAI",
+      "tag": "LLMs",
+      "desc": "Elon Musk's AI company, developer of the Grok models",
+      "url": "https://x.ai",
+      "initials": "X",
+      "logo": "https://www.google.com/s2/favicons?domain=x.ai&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "xAI Accelerates AI Race With Grok 4.5 Beta Across SpaceX and Tesla - MEXC",
+        "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE42NHRVcEg2VHd4Qks2M0xXX0p0bVEtbEF0SnIwRUczNmtZZkdqTzJPeDh1RFFLaFZTem56U1U2SXNUaTBmRnJsQw?oc=5",
+        "pubDate": "Mon, 29 Jun 2026 09:34:55 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "Anduril",
+      "tag": "Defense AI",
+      "desc": "Autonomous defense systems and AI-enabled military hardware",
+      "url": "https://anduril.com",
+      "initials": "A",
+      "logo": "https://www.google.com/s2/favicons?domain=anduril.com&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "Anduril Industries - Orange County Business Journal",
+        "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBxQkxLc2Fxd1dLbFptRzB5SzVLV3pCUS1DQml0eFJ5czFzM05kWTFxeHA5M09DQldZWmMwRmRiejNZSXJDREVqWjl3NXF4WXFReGhRbGVteHJzbGdvV2tHcGF3MkZWZkVtSHI0T3BpV0ZoTzA?oc=5",
+        "pubDate": "Mon, 29 Jun 2026 07:26:51 GMT"
       },
       "sparkline": null
     },
@@ -25,9 +55,9 @@
       "logo": "https://www.google.com/s2/favicons?domain=crowdstrike.com&sz=128",
       "ticker": "CRWD",
       "headline": {
-        "title": "Gallery, 2026 CrowdStrike 24 Hours of Spa, Main Race - CrowdStrike 24 hours of Spa",
-        "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOaV9FRzg5S0JQN3JCYTNDQ1JzWTVwVHYzTEp0V0pURnVqN3hYUHgwOWtaUndRZ2R5VHRYaDNMSXBPT1Y3bHFQb1pKS3Z3emQ3NFlHeDJLeVIwVWV3dGtOUlMtRG4tWjBVLVlxbUktUWJWaGw0Y2JzLVMxT1ZxWFU1Tm82REtCZTZVSTZHa3l2RDZQeUFlM0M4QUJHdXdaNmtoUm1lSXgzVzU3RDRRdkE?oc=5",
-        "pubDate": "Sat, 27 Jun 2026 15:57:09 GMT"
+        "title": "Porsche triumphs in record-breaking CrowdStrike 24 Hours of Spa as Lionspeed GP storms to victory - CrowdStrike 24 hours of Spa",
+        "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNcVhadGd5dFVjRTlWejhxVjY4WmRqMGF5VmRQUmQ4UmVxczlVQ0QzbXFUb25wRWxnc1JJT2hiOVRXR2JOWkM2WFRNTjNMU0RLY19kYnJVVkh0b0tRY0xicl9ndVh3MzRRemVuTG1wNnhmc3VUc1U2WDBTOHFVM012VWlPSVNxbnhfSzdnUDZlaWpIMEhEOS1zck44dC1QNXhEMmZxSGhwa0FWeDVucDFsMDd3aHBac2g5cWV3dXpwVXhVenVZR2U0Y25xT2QzalZNdEpTVmhBMUhsd243Mnk2VA?oc=5",
+        "pubDate": "Sun, 28 Jun 2026 20:37:08 GMT"
       },
       "sparkline": [
         645.3599853515625,
@@ -55,17 +85,32 @@
       ]
     },
     {
-      "name": "Cursor",
-      "tag": "Code Editor",
-      "desc": "AI-native code editor that pairs with Claude and GPT-4",
-      "url": "https://cursor.com",
-      "initials": "C",
-      "logo": "https://www.google.com/s2/favicons?domain=cursor.com&sz=128",
+      "name": "Waymo",
+      "tag": "Autonomy",
+      "desc": "The most miles driven autonomously of any robotaxi service",
+      "url": "https://waymo.com",
+      "initials": "W",
+      "logo": "https://www.google.com/s2/favicons?domain=waymo.com&sz=128",
       "ticker": null,
       "headline": {
-        "title": "Cursor Study Finds Reward Hacking Inflates Coding-Agent Benchmark Scores on SWE-bench Pro - MarkTechPost",
-        "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQX1pwc1ItcThWQVZpQVVmRUpaazR5ODFKOWRyWm5zN2xER2V4aFlTWWh4dmZ4dkx3YVRDelY0NDNGeEh0WmN4ajZkUUtUNldBcG5MQi1MWGc0UXMxczFPUzZDMHpJWS1XWFRIcEhkX0Rnd1hodFd0TTdmVWJRVU1SWjJXbG1USDl5UWM3MHhUeUg3ZGVCalFUZk1MMW56RFNzNGlldjh2UlduRjNrMkhfcGFRSEpLNEZQbXp0YjJteVJSMEd1TEZoZnRR?oc=5",
-        "pubDate": "Fri, 26 Jun 2026 23:31:29 GMT"
+        "title": "Say 'Hi!' to Waymo's Newest Robotaxi. Here's How It Compares to Amazon's Zoox - PCMag",
+        "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQRnFFYlRIQ3J5VmszMFZLTEloVi1QNnpPRUVvVkVPOGhDSnc2MUd0YkVEV0RsUlh3V2d6OXJKYlpBOXkydkhTbUg3Z1NRLVFad2ZmSloxQWQ0WE1ETS1LcjdHMDROV1FjS1RZbkxOMHRXZlNMZG1WdjFkZ3loYktjMnVSeE1PNVRpR1VzUmJsdUg5VGlkNldDSWw1eEQyblhM?oc=5",
+        "pubDate": "Sun, 28 Jun 2026 13:00:33 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "Mistral AI",
+      "tag": "LLMs",
+      "desc": "Europe's leading open-weight AI foundation models",
+      "url": "https://mistral.ai",
+      "initials": "M",
+      "logo": "https://www.google.com/s2/favicons?domain=mistral.ai&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "Document AI Pipeline Errors Start at OCR: Mistral OCR 4 Collapses Three Stages to One - Tech Times",
+        "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPd2dfUVFJYk5XdkczRGxmSk5USUpySXBTODJxam5fZHFaMllWdG1BMHdSNmMzVFFkNDB4ZTI5VzdVRHZyLThQbFhubjNPaEpJUTRQQ3duYzZhOHRPZTVkU0o3TjNGc2p3WFZMc3VkcEh6alE1bFpHclk2cDZJZk9JYmpjVUs1bTRHYmVMSHAtLXN6VERmNko2UjRQY1ByNVdxc3l3d2ZzckRhQ1VKVlpVNnVJRkdlQkQtOFNnTVZwWmc4Zk5ob2cySk53dFlYZw?oc=5",
+        "pubDate": "Sun, 28 Jun 2026 03:19:33 GMT"
       },
       "sparkline": null
     },
@@ -78,115 +123,24 @@
       "logo": "https://www.google.com/s2/favicons?domain=anthropic.com&sz=128",
       "ticker": null,
       "headline": {
-        "title": "Exclusive / US releases powerful Anthropic model Mythos to some US companies - Semafor",
-        "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQeG1SQ2UxUF9nRHQ1ejZ2VU95NllPMFBvd3d4NzVMcEU2ai1JSzlTS3p2em5naEZickIyZWw3S0RPVzl0c0JBZnM5SDBzaEViRWoxY3FXNnBvQy1OdHEySlJmS0x3ZGVaa000RFpUNWwxTjI0bmdkSkhEMGFmMTJrTmE1YWZ0RUsxYnEzS1o3QlMxdHpxTHZDbHVrbFRGQUlCMGl3TmI2Z1dPN1U?oc=5",
-        "pubDate": "Fri, 26 Jun 2026 22:30:00 GMT"
+        "title": "China Has Matched Anthropic in Cybersecurity, Resetting AI Race - WSJ",
+        "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPMVFScDFiaWE0dmRBMlFJZzZacVZhT0ZLQXBkcHA1UExXT1FjRHk3LXN4YnREVHdleDR0cHl0eUxiTGdka1gxUERmYnQyd1ZiOUZEaUM5bkozSXp6RVlEWjJ6OXBZbnA5TEpPaDExd0dQUWxmbFFDSDJ3ekJTNWpCOUdlZ2U?oc=5",
+        "pubDate": "Sun, 28 Jun 2026 01:00:00 GMT"
       },
       "sparkline": null
     },
     {
-      "name": "OpenAI",
-      "tag": "LLMs",
-      "desc": "Creator of ChatGPT and the GPT family of foundation models",
-      "url": "https://openai.com",
-      "initials": "OAI",
-      "logo": "https://www.google.com/s2/favicons?domain=openai.com&sz=128",
+      "name": "Perplexity",
+      "tag": "AI Search",
+      "desc": "Answer engine combining web search with AI-generated summaries",
+      "url": "https://perplexity.ai",
+      "initials": "P",
+      "logo": "https://www.google.com/s2/favicons?domain=perplexity.ai&sz=128",
       "ticker": null,
       "headline": {
-        "title": "China's Zhipu is closing in on top U.S. AI models with Anthropic and OpenAI held back - CNBC",
-        "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPSFBiWXhDV3VHdk83TGVfaWRuem1fODFCeUg2ckJFcGlXZzJFYUJKTzFQb0FKQ1BJLUZZN0Z3VkxKOW5Yb0lEQkw4WXB5cTRsenFGdnZLUURTeW1KdWZGakFWdlV0dFNRVkdpcElQS3lRNDhSN2x4R2xQT0FCT1Yxa01SbDdkNFdFM2fSAY8BQVVfeXFMTkFzUHpXWjJ3dGkybjdSLXBaNTEyX1Uyek4zU2ROMDRBbU5MdkV5Y3BwRm9PNEx5dzYyRDF5Y0ItMVNPZEVEZ1QzVWFRZHRhbVBJQ2FMRm01Wl9NMkxfbVVzaWcyMmh5bTczQy05MWtSeFRUWUxyeFZoekV2S0kzQXA3Si1xb2ltNVRNQXpXZWs?oc=5",
-        "pubDate": "Fri, 26 Jun 2026 22:08:09 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "Rocket Lab",
-      "tag": "Space",
-      "desc": "Small-satellite launch provider and space systems manufacturer",
-      "url": "https://rocketlabusa.com",
-      "initials": "RL",
-      "logo": "https://www.google.com/s2/favicons?domain=rocketlabusa.com&sz=128",
-      "ticker": "RKLB",
-      "headline": {
-        "title": "Rocket Lab launches 'Ten Owl of Ten' mission, sending up Japanese Earth-observing radar satellite (video) - Space",
-        "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxObjRWRkpsUG5CWk85N2k2bThHdVdIeWRGTkpUZ0hmcXBrMkN0SmRadFV2TmNPcEdjQzVXQmxLSzN6dlhTaHVBR09Eb2NneU5UZEZ2bktpOWFXQXlSYW5aTnJ4SWM5NVppR0xtVnZQdTN4ZkExb05ldGN3RFRxbm5BSFYzR2xfWHNYVHNUa3phdmwyRHBRWHpkamlFM0JnRHIwRm1mTDZ5TkF2YmExZEdIOFFuZWNuZGM?oc=5",
-        "pubDate": "Fri, 26 Jun 2026 17:54:06 GMT"
-      },
-      "sparkline": [
-        150.22999572753906,
-        148.02999877929688,
-        143.47999572753906,
-        122.38999938964844,
-        123.31999969482422,
-        114.69999694824219,
-        119.94999694824219,
-        110.08000183105469,
-        113.6500015258789,
-        108.2300033569336,
-        105.05000305175781,
-        114.77999877929688,
-        102.38999938964844,
-        109.25,
-        104.62999725341797,
-        107.9800033569336,
-        107.23999786376953,
-        100.29000091552734,
-        95.12000274658203,
-        85.41000366210938,
-        80.69000244140625,
-        84.54000091552734
-      ]
-    },
-    {
-      "name": "Palantir",
-      "tag": "Data Analytics",
-      "desc": "Big-data analytics platforms for government and enterprise",
-      "url": "https://palantir.com",
-      "initials": "PL",
-      "logo": "https://www.google.com/s2/favicons?domain=palantir.com&sz=128",
-      "ticker": "PLTR",
-      "headline": {
-        "title": "Exclusive: How Palantir harvested millions in UK tax breaks - openDemocracy",
-        "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQWGp1N2ExNDdsVk5iSXhNVUxQeGYtV3ItendvV2NiZ3VEdzh1TUt2NWhKSW51bUVfY2dwT0Y2dldONnJGX2pkQVNkcG15MHVSVWZNQmI0bGtwYXNHZTFiS2tZUXJrZFBNWlA2dWYzYldISnN4aFpzTVcyQ3VzOFpjWkQ3akhoMm1IX3Q3X1Nnd1ZJUkE?oc=5",
-        "pubDate": "Fri, 26 Jun 2026 08:42:30 GMT"
-      },
-      "sparkline": [
-        132.50999450683594,
-        143.33999633789062,
-        156.5399932861328,
-        160.64999389648438,
-        152.1699981689453,
-        142.1999969482422,
-        141.6999969482422,
-        135.52999877929688,
-        136.47000122070312,
-        132.07000732421875,
-        130.2100067138672,
-        131.0800018310547,
-        127.98999786376953,
-        134.7100067138672,
-        133.25,
-        130.6300048828125,
-        128.47000122070312,
-        119.5,
-        116.69999694824219,
-        113.5,
-        107.2699966430664,
-        112.93000030517578
-      ]
-    },
-    {
-      "name": "Scale AI",
-      "tag": "AI Data",
-      "desc": "Data labelling and RLHF infrastructure powering frontier AI",
-      "url": "https://scale.com",
-      "initials": "S",
-      "logo": "https://www.google.com/s2/favicons?domain=scale.com&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "NVIDIA (NVDA), AWS (AMZN) Partner to Boost Production-Scale AI with Blackwell-Powered Instances - Yahoo Finance",
-        "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNVXZ1S2t1VmZmaERiLWR3ZDd1TmFIOGtXdFR2QnVTTm1CSnZ2MzBDSlNkSUFlbC1STFdPWWV6WXdtOWpFaUxvbHd1TFhtUG5qc0tZenNxSkdBSW5CcEpGYTQyZU41aHhiVTdEYy1ZdUpnSEk3bG5iaEs5WjdKeXhJb1d6X0JRRHRJaXF5bVdOVVdQV0FPRWcw?oc=5",
-        "pubDate": "Fri, 26 Jun 2026 08:04:30 GMT"
+        "title": "Perplexity Launches Computer for Counsel: A Multi-Model Agentic Layer for Legal Workflows - MarkTechPost",
+        "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOWXVkZXFvd2c0cWZOdEpmVWVzY0EtSzJWaGd2OFVkOG5ZaW1EUlNONjcxWDd2d3VyTXJtUHd4TFU4QTJxNVd6WTdiR0dZNk5QbnNOZm9aazk0aEw5TGl3blZZay1TZHp1UmdHRW5INFpaWHBIZFFCZkpaWjA1eGVqS3FxcU9xejA1NTk0SnNfd2QxR0FRZ25JbGlnYk13cEgzUm0xSDlzN3JZRkcyTHdEc1ZzY2pSUGt4Z1diRkpxTHV4Zjhnd01TYQ?oc=5",
+        "pubDate": "Fri, 26 Jun 2026 19:31:21 GMT"
       },
       "sparkline": null
     }
