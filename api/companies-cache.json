@@ -1,78 +1,18 @@
 {
-  "refreshed_at": "2026-06-30T09:49:13.573Z",
+  "refreshed_at": "2026-07-01T09:58:36.166Z",
   "companies": [
     {
-      "name": "xAI",
-      "tag": "LLMs",
-      "desc": "Elon Musk's AI company, developer of the Grok models",
-      "url": "https://x.ai",
-      "initials": "X",
-      "logo": "https://www.google.com/s2/favicons?domain=x.ai&sz=128",
+      "name": "Commonwealth Fusion",
+      "tag": "Energy",
+      "desc": "Next-generation tokamak fusion for clean energy at scale",
+      "url": "https://cfs.energy",
+      "initials": "CFS",
+      "logo": "https://www.google.com/s2/favicons?domain=cfs.energy&sz=128",
       "ticker": null,
       "headline": {
-        "title": "MP Jess Asato: Why I’m suing Elon Musk’s xAI over sexualised images of me - The Independent",
-        "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOSk54S1ZkTUtrMFJnbEY2eTVGNFBod28zcC13MDJCaGxwSzJRcTVsSWVYVDlTNDN6US1PczhyOWFKUXVRWGtjZE81UW9BaWNoeUo2TjVPMTdPUlAtalFGZGhSUURIQlhqcnFFVzFOTlhRcTdFa3NhWmpYOFBKejBoYU40WkVsRzNyNXotUE04LXRPTHhncjRvNlp3Mlg5X3dLbWc?oc=5",
-        "pubDate": "Tue, 30 Jun 2026 08:10:00 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "Groq",
-      "tag": "AI Chips",
-      "desc": "LPU inference chips delivering industry-leading token speed",
-      "url": "https://groq.com",
-      "initials": "G",
-      "logo": "https://www.google.com/s2/favicons?domain=groq.com&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "Groq Secures approximately $647 Million Investment, Racing Ahead in AI Inference Cloud Independent of Nvidia - BigGo Finance",
-        "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9iSkU0SnhUb3BzeHJGM3ctQ29QNE9WVjVMeWhXT1JVMDJLdlBjdWl3YWJNS09ET2lueWxabjd0SHZKOXJMazVTRGNQTEx4MFM5R1JRTjVkdzNZeXRNZUJFVE13U1ZtMV8yRmg3N2MzUVBvTEl0SHc?oc=5",
-        "pubDate": "Tue, 30 Jun 2026 05:35:00 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "Figure AI",
-      "tag": "Robotics",
-      "desc": "Humanoid robots designed for industrial and commercial work",
-      "url": "https://figure.ai",
-      "initials": "FA",
-      "logo": "https://www.google.com/s2/favicons?domain=figure.ai&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "Irish firm ServBlock takes on Jeff Bezos-backed humanoid robot tech company Figure AI in High Court trademark battle - Irish Independent",
-        "link": "https://news.google.com/rss/articles/CBMiigJBVV95cUxPdF96UDE1dW9EREo0Z2Q4ZmNjTzN0ZHBPYWlSVkowT19YX0l6T2FVX0RqQW5ZRlNRdTVtd3h1amV0N3Z4T1ZxdkNaT3YwRmkwMjd6ZmNWRS1DSmE4WEg5V3FjR01KX1hCbEtLLUlKTW50dDNaX3Uzd1BZelNyRVp1NHZLeDE2VzdMbkYtTnV5Smk1aFZwRGNxczNGckJDUHp2OUFWbUJ4cGtueFh5a2ZnZ1gzSUlmNFpQTnhYYkF6QWt5SUR3WWE5UTdzY0NDNE5RalFfVDNMQkdIQ1hkSC0zRWstR3lXVnpLQlg2VGRpc2Q5X3d3RFppaFF1ZTg3cUYtZ3BXS1NRdk4yZw?oc=5",
-        "pubDate": "Tue, 30 Jun 2026 05:30:00 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "Waymo",
-      "tag": "Autonomy",
-      "desc": "The most miles driven autonomously of any robotaxi service",
-      "url": "https://waymo.com",
-      "initials": "W",
-      "logo": "https://www.google.com/s2/favicons?domain=waymo.com&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "Waymo and Uber end robotaxi pilot in Phoenix - CNBC",
-        "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1jdzhScXEySzFCNmtpUXA1UVpmZW14WE1nbTY0VzFyS3NhSGV0TkdFUDRNeWpfQjNWbktHb3VoZkVEX3FPcWVYMVVBR1UxQm56S29NNWhDeWc3TFlMaENESVRoVkJoeGZocEdzTjBSUzBEVjZIeHNQX0130gF_QVVfeXFMUFQwTERVUFVSM0t6aTdlN3F2NllsYW9iR3RyYThpMDZKblZsRmljdzFRQUkxWWNDRTJlbk5FVWdjX2ZzSng2R0JpMUV3SC1ZUnhNLTVmaFM4Mi14dDRPTWR3QnhWZ1Z6NHNRREl2MzVPbUVYaFpXTXJieHBMOHEwdw?oc=5",
-        "pubDate": "Mon, 29 Jun 2026 22:31:12 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "Anduril",
-      "tag": "Defense AI",
-      "desc": "Autonomous defense systems and AI-enabled military hardware",
-      "url": "https://anduril.com",
-      "initials": "A",
-      "logo": "https://www.google.com/s2/favicons?domain=anduril.com&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "Spending Docs Identify Anduril Role In Marine Corps CCA - Aviation Week",
-        "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPRnBUQ3lDenlQLWxkeWFzck1taUIyT2NCNzVBWmNfS0N2Y0JMU2JrejhUaVc1V3hsdWNJcHdlUnZreGF1MGVfbF9lYkZ0OUczdnNBM19FVlFEd1lyM0dGNGl4NHhDS2huakpDeWJpS016WTVSZ0M1S3d2Vnh3ZTZqRVdfY2JoUmpRaWxsQmFoeWdobW9TR0w0ak5rRThMS3pSanNfRk9kZ00?oc=5",
-        "pubDate": "Mon, 29 Jun 2026 20:44:40 GMT"
+        "title": "Commonwealth Fusion Systems CFS named first international partner in UKAEA’s LIBRTI programme - EQS News",
+        "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNX1N4QjhPN0JWVHNza2dYMmF3aXpuZkN2eUtqTTAzUjJ5V3I2RW4zZHJiMm1ETmN5Zl9kSFp2aXg2bVBzWGI2UlJWdW5XVFFLSktneU9KM29OODBtU1NaeUhtWmI5SDEzdmk3U2puVlF1QUJIU1p0aUJnZDE2UUthekltME93bmJwUk51UUpHbDlHNmhweTVNRjN3Y0JFMlNRY1RqNTJvbmF3YklyblF2SUNXajZ0UGo0VW9TM1VOdU9SMlZvR3NRUmk4ak1HdDRkM3MzY0xMaktEaFFh?oc=5",
+        "pubDate": "Wed, 01 Jul 2026 04:08:07 GMT"
       },
       "sparkline": null
     },
@@ -85,9 +25,74 @@
       "logo": "https://www.google.com/s2/favicons?domain=anthropic.com&sz=128",
       "ticker": null,
       "headline": {
-        "title": "Is Anthropic’s Fable 5 Coming Back This Week? - Forbes",
-        "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPNGlCUkc1cXpNdzRFZUhQWW5HSGRRUGlJQ3Z6RFQ2dlUzU0pYTFFrNnM5akNxSVhMSmVOWG9MMWJNektqeTdlNnFlaDRfc0pWcXRaRElLbVM1eEVleDRvd24zallvYkFqOHlUbWF5eXNSdS1CX3I3akVYWlR3bVp0Y0tLbFhQZDdiN3ZiMnUzcW1sOGRWVHlfQUFKOEZCUQ?oc=5",
-        "pubDate": "Mon, 29 Jun 2026 20:25:41 GMT"
+        "title": "Fable and Mythos: Anthropic says US lifts export ban on its advanced AI tools - BBC",
+        "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5SZFJaQktyN0FiZkZPV2NudldQWUVrSWVlY1pnV1Y1NHFGb2tYX3pOc2Q1Sm9yYjRZWm8wS2E5ay1rWXVlRjJldEUtNTJTQU1PcDZiMnFfWEl5LWxQ?oc=5",
+        "pubDate": "Wed, 01 Jul 2026 01:13:36 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "CrowdStrike",
+      "tag": "Cybersecurity",
+      "desc": "Cloud-native endpoint protection and threat intelligence",
+      "url": "https://crowdstrike.com",
+      "initials": "CS",
+      "logo": "https://www.google.com/s2/favicons?domain=crowdstrike.com&sz=128",
+      "ticker": "CRWD",
+      "headline": {
+        "title": "Palo Alto, CrowdStrike both have best quarter ever as AI threats bolster cyber demand - CNBC",
+        "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9JNFBZYkxMQ3ZEQmozT1RxZVdqTTBlUFJnckM0dnJ3cDJlMkZLMnpwXzdWNHFReE9oaVgySWRfTmxPUG5CMEZWeDFmWUtSanJMUk02aE1hQWIzY2lPX0VRN1dPN1RYaUJIRXVKOUFzSDh6S3c4SW93b1A0aFhHOHfSAYQBQVVfeXFMUGNFdk5HaDVPR1lnamFsNF9PbEduTTgxd1pBbDZUdFJIVDhvY1gzcGFIMTlrWUNDLUt1RWV1WDFZa3lqZ0tUMGtTZVVCWG1XUFM5eHVhYlhPcWxoMjVmNjhHak9TZlkwaktIY2x1MkZpOE9ZdnpTMkhqSnF5WFJGWHNsTHVU?oc=5",
+        "pubDate": "Tue, 30 Jun 2026 20:11:37 GMT"
+      },
+      "sparkline": [
+        782.1699829101562,
+        768.9500122070312,
+        747.6099853515625,
+        719.0900268554688,
+        671.02001953125,
+        658.7899780273438,
+        644.9299926757812,
+        647.739990234375,
+        691.530029296875,
+        682.7999877929688,
+        692.9099731445312,
+        679.489990234375,
+        682.9600219726562,
+        684.8599853515625,
+        675.4400024414062,
+        680.9199829101562,
+        673.02001953125,
+        678.6500244140625,
+        701.0900268554688
+      ]
+    },
+    {
+      "name": "Perplexity",
+      "tag": "AI Search",
+      "desc": "Answer engine combining web search with AI-generated summaries",
+      "url": "https://perplexity.ai",
+      "initials": "P",
+      "logo": "https://www.google.com/s2/favicons?domain=perplexity.ai&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "Fake Perplexity extension on Chrome Web Store tracked searches - BleepingComputer",
+        "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPM0hTOW9NQVBZbGZhVGVFZ2hJcEZ1VTZJV3RRQUV5S2U1RTFVVXJUcDVMS0lKMnpESlI0Um9QcFlCVkZ5ejZoenRLVjQ4cjFGdWZoY2tpMWM2MkdhZTFxSUlEUDNJZDVHZnBlVHhaZmNuYjQ0ZWc2ZEp6MGRpbGVxRVpCUV92RU1teUxxUm43ejhaNjktOXM4czN2dUJSS3BGa3pVOXZRNDFMOGZfNmZZ0gG0AUFVX3lxTFBsUk1DTTExR1lZM00yWEt6ZnVNUGhfSXNQMGE3V1pnaVpoaWpHbDh0RjV5THVYNnI5YkZHLWdHR0pBREdfaV9jR00yUi1KY1N5OXB0dTNNeWhwZndNc2VVSHFjX2lmSktyUVh6MDR6czVxZ1ZucDI1TTZjTzJXVTRoY2k5WVFvVXBBZlUyMGVIWTc5R1p4RHV6VzcxamFKOWFWRm9zc3VqT1FxRjNieWZrX3pKUg?oc=5",
+        "pubDate": "Tue, 30 Jun 2026 15:46:19 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "Scale AI",
+      "tag": "AI Data",
+      "desc": "Data labelling and RLHF infrastructure powering frontier AI",
+      "url": "https://scale.com",
+      "initials": "S",
+      "logo": "https://www.google.com/s2/favicons?domain=scale.com&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "Klivvr Invests $10M to Scale AI-Driven Fintech Ecosystem in Egypt - FF News",
+        "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQMmdjcjE5Xy1xVDBaZ3NNRTdpX0pneDJMU2NRQzVkd3dvcEVhN1ZNYWR0VmxTenBySExKMmFDZWRRSi1JVGtNUlVRT1EwODhxVnlLQWtWUDBkd2hqY0ZNWnBfYVo2SU5yLVlaQW9HU3hPd2pnTUNKUkpwcnpjUlBKLVo5OGtXdDJXWHZiVUN5c2M4UQ?oc=5",
+        "pubDate": "Tue, 30 Jun 2026 15:24:02 GMT"
       },
       "sparkline": null
     },
@@ -100,47 +105,41 @@
       "logo": "https://www.google.com/s2/favicons?domain=openai.com&sz=128",
       "ticker": null,
       "headline": {
-        "title": "OpenAI is teasing new hardware… for Codex - The Verge",
-        "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNb0lTMVR3Z1lGRDRTMjZZMTJvOUJsbHJ1R2FpNmFqbV92VzNmcVUwQlAtTkFWNzk4Ynp4REQtRmJqazhaU2g4RjhrMWM1QUtGZ05BN21TYnVlakVKOEViUEtzUzBYdFVIS2E2UGNfWGlaSlpFcjRzN3Znc3c4Mk4td21qQjN0anF2UHRGaGJaVkRhRkZYN01B?oc=5",
-        "pubDate": "Mon, 29 Jun 2026 18:52:03 GMT"
+        "title": "OpenAI Discovers New Way to Cut Inference Costs in Half - The Information",
+        "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNSVFNUHpDQkVVazdjUmloMlM2eFZzc1J6bXVXQnJQdHFtQXppWm85V2pJcTIyM3FsUnpxSDh0YmNpQzBnZ3E5WTU3STk1b1d6TDBLdjRkX0NJanp1eG83Vnp0bTdfOGtieWpnREtpdTBmd0RWQndHbkxmTWg4UkY1ZDZrSl9iQXhUUDJIOHJETDJSZi1iVW9wLWxCdjJER2E2Znp6RA?oc=5",
+        "pubDate": "Tue, 30 Jun 2026 14:06:00 GMT"
       },
       "sparkline": null
     },
     {
-      "name": "Rocket Lab",
-      "tag": "Space",
-      "desc": "Small-satellite launch provider and space systems manufacturer",
-      "url": "https://rocketlabusa.com",
-      "initials": "RL",
-      "logo": "https://www.google.com/s2/favicons?domain=rocketlabusa.com&sz=128",
-      "ticker": "RKLB",
+      "name": "Mistral AI",
+      "tag": "LLMs",
+      "desc": "Europe's leading open-weight AI foundation models",
+      "url": "https://mistral.ai",
+      "initials": "M",
+      "logo": "https://www.google.com/s2/favicons?domain=mistral.ai&sz=128",
+      "ticker": null,
       "headline": {
-        "title": "Rocket Lab buys Iridium in $8 billion deal to take on SpaceX - Reuters",
-        "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQejk2T29RQV9nS05KV205R1FobVVPcFFySVdTaEhkYzV4djZNVDlPaEpOQTF5bGYxMUVxTG1LekJabG5PZ2w0TUsxRjRrQm1EVzdBdHZ2dkZSNEVCS0toS2ROV1dBWk1OSkI3Qk9hRjB2bnlNcXdjNV9PYlJyaDNzbmhFM3otb2hQc2FpWUt2YWdjRGN2dDZPZWZVSExvdDFPcWdHYUJRMEs5eVFQT1ZoYnkyUGhSMVUzQzJZZDRmeWxCZWlj?oc=5",
-        "pubDate": "Mon, 29 Jun 2026 17:35:19 GMT"
+        "title": "Mistral AI Launches OCR 4, Turning Unstructured Documents Into Layered Data - Open Source For You",
+        "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE92dkcwUlFlQ0Y4LUVoOGNkOC0ySHlJZG1MRkNYanlyR2ctOGFUc3hXT1lJVzl3WXlqSlN2ZWJDYkozeG5lSVJmclZEVGV6NG1UWWM3aFRMbjV4TUFOcXptdTJRdjBtd0lFSXhmNzdUVThUdw?oc=5",
+        "pubDate": "Tue, 30 Jun 2026 11:44:33 GMT"
       },
-      "sparkline": [
-        122.38999938964844,
-        123.31999969482422,
-        114.69999694824219,
-        119.94999694824219,
-        110.08000183105469,
-        113.6500015258789,
-        108.2300033569336,
-        105.05000305175781,
-        114.77999877929688,
-        102.38999938964844,
-        109.25,
-        104.62999725341797,
-        107.9800033569336,
-        107.23999786376953,
-        100.29000091552734,
-        95.12000274658203,
-        85.41000366210938,
-        80.69000244140625,
-        84.54000091552734,
-        98.01000213623047
-      ]
+      "sparkline": null
+    },
+    {
+      "name": "Groq",
+      "tag": "AI Chips",
+      "desc": "LPU inference chips delivering industry-leading token speed",
+      "url": "https://groq.com",
+      "initials": "G",
+      "logo": "https://www.google.com/s2/favicons?domain=groq.com&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "Powerlaw Corp. (Nasdaq: PWRL) Highlights Groq Holding as Company Closes $650 Million Round - Business Wire",
+        "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOWXZGblRnc1Z0NHR0ektQU2J5SW9rTEI5RllpRFQ3TEktX1B2SFNsYklkeWgza1dDdm9OOHdmeV9BZnF6UU5lMlR4b3luNUJ6ZWk2a2lZYjZCLVpCTVA2X0xHTHc5djB6R2RheEVCeDRuaE1zUnU0SlBtc05Bb2NELXNXUXBZcnV4dUgzNDlFa0tqb3RxWjc0NE9QbW1fRm9XVTExOW9fTlpVdmVUVGgxd2lUbVBKdERGQWFkSlNXOGFNd1BaSEVWTnFjem45VzM2QmNsaENNRDQ3akVwUWVv?oc=5",
+        "pubDate": "Tue, 30 Jun 2026 10:00:00 GMT"
+      },
+      "sparkline": null
     }
   ]
 }
