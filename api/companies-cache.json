@@ -1,6 +1,51 @@
 {
-  "refreshed_at": "2026-07-01T09:58:36.166Z",
+  "refreshed_at": "2026-07-02T09:20:54.170Z",
   "companies": [
+    {
+      "name": "Physical Intelligence",
+      "tag": "Embodied AI",
+      "desc": "Training AI systems to manipulate physical objects",
+      "url": "https://physicalintelligence.company",
+      "initials": "PI",
+      "logo": "https://www.google.com/s2/favicons?domain=physicalintelligence.company&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "MEIL, Analog Join Hands to Deploy Physical Intelligence in India - Siliconindia",
+        "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQd2dJUFNHMlN4MWlEejB5c2xwc2xsYmZBX2pCVXg5M0pzRUw0TDV1YURXcGZrT1d4MVdRaWgzcDJIVjZ2ZXNpV0tNbFZhODZpWm9EMjJVSGdmMEwzd19OM0VxZW1CVk5NSUJSSm9KdWpoaXNtM3c5RVV5VnU4LTdfdlNPS05TTDhRWW9mUmNOdWxFb2xMaGxmODNXc05mblFkMWlpX09NOGYzWDlSNlhNRm5vMUNodVBseml3TEdzWmRGRV81Rmc?oc=5",
+        "pubDate": "Thu, 02 Jul 2026 04:27:07 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "OpenAI",
+      "tag": "LLMs",
+      "desc": "Creator of ChatGPT and the GPT family of foundation models",
+      "url": "https://openai.com",
+      "initials": "OAI",
+      "logo": "https://www.google.com/s2/favicons?domain=openai.com&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "OpenAI proposes handing Trump administration 5% stake - Financial Times",
+        "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQOVFSLVZmZnlwTE9XTWNBVmo0WXFobFR5ZUgzODhuQTlZTlJVRnZlMElQT00zMTRLTVRzeVpINlpndkF5bFB1QTZhV0l6SXByMW1UVHpYZm02Z2RQVWJDaDZiU2JBcUdYbi0wenh5ck0xQWpVSnJTX3FhZ0Qwa2xkdEZkRm8?oc=5",
+        "pubDate": "Thu, 02 Jul 2026 04:00:23 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "xAI",
+      "tag": "LLMs",
+      "desc": "Elon Musk's AI company, developer of the Grok models",
+      "url": "https://x.ai",
+      "initials": "X",
+      "logo": "https://www.google.com/s2/favicons?domain=x.ai&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "Exclusive | SpaceX Showed Investors Prototype of Elon Musk’s New AI Device - WSJ",
+        "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPOWFQd2UyR0hnMVdEcm1LVE5TRUVnYzBfdmJsQlFpaU9qVG5pUUQxY1BQbW05ODk1Qk5JX0ozV3VsN0lsQ2NreGlBYkdwZmRrakZMakZ3Q3BFRkxYWXYzNU5ZSEw5YU1Ba0oxVEJCaEo1UGZCNXBRX0NBb0dBTHViTWRyX2ZOY2ZsMF9PeUlsb0tWVWFvV1hIaEJRaXV4ZG8?oc=5",
+        "pubDate": "Wed, 01 Jul 2026 18:11:00 GMT"
+      },
+      "sparkline": null
+    },
     {
       "name": "Commonwealth Fusion",
       "tag": "Energy",
@@ -10,9 +55,61 @@
       "logo": "https://www.google.com/s2/favicons?domain=cfs.energy&sz=128",
       "ticker": null,
       "headline": {
-        "title": "Commonwealth Fusion Systems CFS named first international partner in UKAEA’s LIBRTI programme - EQS News",
-        "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNX1N4QjhPN0JWVHNza2dYMmF3aXpuZkN2eUtqTTAzUjJ5V3I2RW4zZHJiMm1ETmN5Zl9kSFp2aXg2bVBzWGI2UlJWdW5XVFFLSktneU9KM29OODBtU1NaeUhtWmI5SDEzdmk3U2puVlF1QUJIU1p0aUJnZDE2UUthekltME93bmJwUk51UUpHbDlHNmhweTVNRjN3Y0JFMlNRY1RqNTJvbmF3YklyblF2SUNXajZ0UGo0VW9TM1VOdU9SMlZvR3NRUmk4ak1HdDRkM3MzY0xMaktEaFFh?oc=5",
-        "pubDate": "Wed, 01 Jul 2026 04:08:07 GMT"
+        "title": "New UK-US collaboration advances self-fueling fusion reactors - Interesting Engineering",
+        "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQTDdBX2YtRDN3TTUxN0pnTWg1VHVyZ3lKeUtaSDhyZjRIamtaaE00ekJidU9UemRkM1QzcXNoMmtZSncyOUh4SnY4N0F1ZkFSVHA2WXY4YlZKWHV4NGlDMEpvczJmQzI4d3NDMzZVUmFTMmlkaWFJMGl0cDNBN0pLcEZBaGVHaFdIU3c?oc=5",
+        "pubDate": "Wed, 01 Jul 2026 17:44:00 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "Palantir",
+      "tag": "Data Analytics",
+      "desc": "Big-data analytics platforms for government and enterprise",
+      "url": "https://palantir.com",
+      "initials": "PL",
+      "logo": "https://www.google.com/s2/favicons?domain=palantir.com&sz=128",
+      "ticker": "PLTR",
+      "headline": {
+        "title": "Palantir Billionaire Alex Karp Calls AI Industry ‘Effing Insane’ In Heated Interview - Forbes",
+        "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQTTUwTGtmdk8wbTFDTUtyYmVuTTF4bnJSLTV3TzBTbWpwV3Vyd0Y4WnBFcjJrRS1jdzNOMy1IQXFsQUxEbmljaWpHRWZYZkJhRnJRMDFlWVVKNEhVemV2dU9WVGpPcUxqVVNRZkNZVXNfRHFoNlE5bUhHLWstZWNRRzFrb0I2Z1dVMXdfeGg1UTZNV2N4YXg5S1Z4bE5OTms3TVhWRnRzZXAwQnJjNHh5MGhUdERVTm9mOW11MjVNQm5qa1R1ekZEd3hMYkI0d0k?oc=5",
+        "pubDate": "Wed, 01 Jul 2026 16:05:06 GMT"
+      },
+      "sparkline": [
+        152.1699981689453,
+        142.1999969482422,
+        141.6999969482422,
+        135.52999877929688,
+        136.47000122070312,
+        132.07000732421875,
+        130.2100067138672,
+        131.0800018310547,
+        127.98999786376953,
+        134.7100067138672,
+        133.25,
+        130.6300048828125,
+        128.47000122070312,
+        119.5,
+        116.69999694824219,
+        113.5,
+        107.2699966430664,
+        112.93000030517578,
+        115.69999694824219,
+        116.66999816894531,
+        125.7300033569336
+      ]
+    },
+    {
+      "name": "Scale AI",
+      "tag": "AI Data",
+      "desc": "Data labelling and RLHF infrastructure powering frontier AI",
+      "url": "https://scale.com",
+      "initials": "S",
+      "logo": "https://www.google.com/s2/favicons?domain=scale.com&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "Ex-DeepMind researchers land record Creandum funding to scale AI agents for Nasdaq - Tech.eu",
+        "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOblA4SFZKcFRtc3RKQ3hZRjctQUYyNTdpQ25pM19DbG0xbHVTdFZiR1BCZFZubTNKb3VOMThNR0xTUjlZWFFXVml4cXVMVTFXdTBxZG5vYjFPb0tYZG9XeWFiWEJuRTZaaWZZNE9KaGM5U3dialJZcVZJVnNZUHRJOFBrZlFETDFhbDZxLXhOM0FnMUFzX2hnOHVfWHRlRWF1UjJLRHEwOUFuZFlZLTJj?oc=5",
+        "pubDate": "Wed, 01 Jul 2026 10:48:01 GMT"
       },
       "sparkline": null
     },
@@ -32,41 +129,6 @@
       "sparkline": null
     },
     {
-      "name": "CrowdStrike",
-      "tag": "Cybersecurity",
-      "desc": "Cloud-native endpoint protection and threat intelligence",
-      "url": "https://crowdstrike.com",
-      "initials": "CS",
-      "logo": "https://www.google.com/s2/favicons?domain=crowdstrike.com&sz=128",
-      "ticker": "CRWD",
-      "headline": {
-        "title": "Palo Alto, CrowdStrike both have best quarter ever as AI threats bolster cyber demand - CNBC",
-        "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9JNFBZYkxMQ3ZEQmozT1RxZVdqTTBlUFJnckM0dnJ3cDJlMkZLMnpwXzdWNHFReE9oaVgySWRfTmxPUG5CMEZWeDFmWUtSanJMUk02aE1hQWIzY2lPX0VRN1dPN1RYaUJIRXVKOUFzSDh6S3c4SW93b1A0aFhHOHfSAYQBQVVfeXFMUGNFdk5HaDVPR1lnamFsNF9PbEduTTgxd1pBbDZUdFJIVDhvY1gzcGFIMTlrWUNDLUt1RWV1WDFZa3lqZ0tUMGtTZVVCWG1XUFM5eHVhYlhPcWxoMjVmNjhHak9TZlkwaktIY2x1MkZpOE9ZdnpTMkhqSnF5WFJGWHNsTHVU?oc=5",
-        "pubDate": "Tue, 30 Jun 2026 20:11:37 GMT"
-      },
-      "sparkline": [
-        782.1699829101562,
-        768.9500122070312,
-        747.6099853515625,
-        719.0900268554688,
-        671.02001953125,
-        658.7899780273438,
-        644.9299926757812,
-        647.739990234375,
-        691.530029296875,
-        682.7999877929688,
-        692.9099731445312,
-        679.489990234375,
-        682.9600219726562,
-        684.8599853515625,
-        675.4400024414062,
-        680.9199829101562,
-        673.02001953125,
-        678.6500244140625,
-        701.0900268554688
-      ]
-    },
-    {
       "name": "Perplexity",
       "tag": "AI Search",
       "desc": "Answer engine combining web search with AI-generated summaries",
@@ -78,66 +140,6 @@
         "title": "Fake Perplexity extension on Chrome Web Store tracked searches - BleepingComputer",
         "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPM0hTOW9NQVBZbGZhVGVFZ2hJcEZ1VTZJV3RRQUV5S2U1RTFVVXJUcDVMS0lKMnpESlI0Um9QcFlCVkZ5ejZoenRLVjQ4cjFGdWZoY2tpMWM2MkdhZTFxSUlEUDNJZDVHZnBlVHhaZmNuYjQ0ZWc2ZEp6MGRpbGVxRVpCUV92RU1teUxxUm43ejhaNjktOXM4czN2dUJSS3BGa3pVOXZRNDFMOGZfNmZZ0gG0AUFVX3lxTFBsUk1DTTExR1lZM00yWEt6ZnVNUGhfSXNQMGE3V1pnaVpoaWpHbDh0RjV5THVYNnI5YkZHLWdHR0pBREdfaV9jR00yUi1KY1N5OXB0dTNNeWhwZndNc2VVSHFjX2lmSktyUVh6MDR6czVxZ1ZucDI1TTZjTzJXVTRoY2k5WVFvVXBBZlUyMGVIWTc5R1p4RHV6VzcxamFKOWFWRm9zc3VqT1FxRjNieWZrX3pKUg?oc=5",
         "pubDate": "Tue, 30 Jun 2026 15:46:19 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "Scale AI",
-      "tag": "AI Data",
-      "desc": "Data labelling and RLHF infrastructure powering frontier AI",
-      "url": "https://scale.com",
-      "initials": "S",
-      "logo": "https://www.google.com/s2/favicons?domain=scale.com&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "Klivvr Invests $10M to Scale AI-Driven Fintech Ecosystem in Egypt - FF News",
-        "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQMmdjcjE5Xy1xVDBaZ3NNRTdpX0pneDJMU2NRQzVkd3dvcEVhN1ZNYWR0VmxTenBySExKMmFDZWRRSi1JVGtNUlVRT1EwODhxVnlLQWtWUDBkd2hqY0ZNWnBfYVo2SU5yLVlaQW9HU3hPd2pnTUNKUkpwcnpjUlBKLVo5OGtXdDJXWHZiVUN5c2M4UQ?oc=5",
-        "pubDate": "Tue, 30 Jun 2026 15:24:02 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "OpenAI",
-      "tag": "LLMs",
-      "desc": "Creator of ChatGPT and the GPT family of foundation models",
-      "url": "https://openai.com",
-      "initials": "OAI",
-      "logo": "https://www.google.com/s2/favicons?domain=openai.com&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "OpenAI Discovers New Way to Cut Inference Costs in Half - The Information",
-        "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNSVFNUHpDQkVVazdjUmloMlM2eFZzc1J6bXVXQnJQdHFtQXppWm85V2pJcTIyM3FsUnpxSDh0YmNpQzBnZ3E5WTU3STk1b1d6TDBLdjRkX0NJanp1eG83Vnp0bTdfOGtieWpnREtpdTBmd0RWQndHbkxmTWg4UkY1ZDZrSl9iQXhUUDJIOHJETDJSZi1iVW9wLWxCdjJER2E2Znp6RA?oc=5",
-        "pubDate": "Tue, 30 Jun 2026 14:06:00 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "Mistral AI",
-      "tag": "LLMs",
-      "desc": "Europe's leading open-weight AI foundation models",
-      "url": "https://mistral.ai",
-      "initials": "M",
-      "logo": "https://www.google.com/s2/favicons?domain=mistral.ai&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "Mistral AI Launches OCR 4, Turning Unstructured Documents Into Layered Data - Open Source For You",
-        "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE92dkcwUlFlQ0Y4LUVoOGNkOC0ySHlJZG1MRkNYanlyR2ctOGFUc3hXT1lJVzl3WXlqSlN2ZWJDYkozeG5lSVJmclZEVGV6NG1UWWM3aFRMbjV4TUFOcXptdTJRdjBtd0lFSXhmNzdUVThUdw?oc=5",
-        "pubDate": "Tue, 30 Jun 2026 11:44:33 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "Groq",
-      "tag": "AI Chips",
-      "desc": "LPU inference chips delivering industry-leading token speed",
-      "url": "https://groq.com",
-      "initials": "G",
-      "logo": "https://www.google.com/s2/favicons?domain=groq.com&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "Powerlaw Corp. (Nasdaq: PWRL) Highlights Groq Holding as Company Closes $650 Million Round - Business Wire",
-        "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOWXZGblRnc1Z0NHR0ektQU2J5SW9rTEI5RllpRFQ3TEktX1B2SFNsYklkeWgza1dDdm9OOHdmeV9BZnF6UU5lMlR4b3luNUJ6ZWk2a2lZYjZCLVpCTVA2X0xHTHc5djB6R2RheEVCeDRuaE1zUnU0SlBtc05Bb2NELXNXUXBZcnV4dUgzNDlFa0tqb3RxWjc0NE9QbW1fRm9XVTExOW9fTlpVdmVUVGgxd2lUbVBKdERGQWFkSlNXOGFNd1BaSEVWTnFjem45VzM2QmNsaENNRDQ3akVwUWVv?oc=5",
-        "pubDate": "Tue, 30 Jun 2026 10:00:00 GMT"
       },
       "sparkline": null
     }
