@@ -1,0 +1,28 @@
+name: primordium tests
+
+on:
+  push:
+    paths:
+      - 'primordium/**'
+      - '.github/workflows/primordium-tests.yml'
+  pull_request:
+    paths:
+      - 'primordium/**'
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: primordium
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      # Zero dependencies — nothing to install.
+      - name: Run test suite
+        run: node tests/run.js
+      - name: Benchmark (informational)
+        run: node tests/bench.js

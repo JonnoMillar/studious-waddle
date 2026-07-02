@@ -100,6 +100,7 @@ export class App {
       this._updateCharts();
       this._updateSpeciesList();
       this._updateInspectorStats();
+      this._detectEvents();
     }
 
     requestAnimationFrame((t) => this._frame(t));
@@ -209,6 +210,76 @@ export class App {
     });
   }
 
+  /**
+   * Derive notable events by diffing the species set between refreshes. This
+   * lives entirely in the UI — the engine emits nothing and stays deterministic;
+   * we just observe its state. Tracks speciation, extinction, and the rise of a
+   * new dominant predator guild.
+   */
+  _detectEvents() {
+    const tracker = this.world.speciesTracker;
+    const livingNow = new Map();
+    for (const sp of tracker.living()) livingNow.set(sp.id, sp.population);
+
+    if (!this._prevLiving) { this._prevLiving = livingNow; this._events = this._events || []; return; }
+
+    const events = [];
+    for (const [id, pop] of livingNow) {
+      if (!this._prevLiving.has(id)) {
+        const sp = tracker.get(id);
+        const carn = this._speciesIsPredator(id);
+        events.push({
+          hue: sp.hue,
+          text: `Species ${id} arose${sp.parentId ? ` from ${sp.parentId}` : ''}${carn ? ' — a hunter' : ''}`,
+        });
+      }
+    }
+    for (const id of this._prevLiving.keys()) {
+      if (!livingNow.has(id)) {
+        const sp = tracker.get(id);
+        events.push({ hue: sp ? sp.hue : 0, text: `Species ${id} went extinct`, dim: true });
+      }
+    }
+    // Apex-predator milestone: a carnivore species crossing 40 individuals.
+    for (const [id, pop] of livingNow) {
+      if (pop >= 40 && this._speciesIsPredator(id) && !this._apexSeen?.has(id)) {
+        (this._apexSeen = this._apexSeen || new Set()).add(id);
+        const sp = tracker.get(id);
+        events.push({ hue: sp.hue, text: `Species ${id} dominates as an apex predator (${pop})` });
+      }
+    }
+
+    if (events.length) {
+      for (const e of events) e.tick = this.world.tick;
+      this._events = [...events.reverse(), ...(this._events || [])].slice(0, 40);
+      this._renderEvents();
+    }
+    this._prevLiving = livingNow;
+  }
+
+  _speciesIsPredator(id) {
+    let carn = 0, n = 0;
+    for (const cr of this.world.creatures) {
+      if (cr.speciesId === id) { n++; if (cr.diet > 0.5) carn++; }
+    }
+    return n > 0 && carn / n > 0.5;
+  }
+
+  _renderEvents() {
+    const el = this.$('#event-log');
+    if (!this._events || !this._events.length) {
+      el.innerHTML = '<div class="muted">Watching for speciation, extinctions and predator booms…</div>';
+      return;
+    }
+    el.innerHTML = this._events
+      .map((e) => `<div class="ev${e.dim ? ' dim' : ''}">
+        <span class="ev-dot" style="background:hsl(${e.hue},65%,55%)"></span>
+        <span class="ev-t">${(e.tick / 1000).toFixed(1)}k</span>
+        <span class="ev-x">${e.text}</span>
+      </div>`)
+      .join('');
+  }
+
   _updateInspectorStats() {
     const cr = this.renderer.selected;
     const box = this.$('#inspect-stats');
@@ -299,6 +370,10 @@ export class App {
     this.$('#btn-follow').onclick = () => {
       if (this.renderer.selected) this.camera.follow = this.renderer.selected;
     };
+    const help = this.$('#help-overlay');
+    this.$('#btn-help').onclick = () => { help.hidden = false; };
+    this.$('#btn-help-close').onclick = () => { help.hidden = true; };
+    help.onclick = (e) => { if (e.target === help) help.hidden = true; };
 
     document.addEventListener('keydown', (e) => {
       if (e.target.tagName === 'INPUT') return;
@@ -307,6 +382,8 @@ export class App {
       else if (e.code === 'ArrowLeft') this._setSpeed(this.speedIndex - 1);
       else if (e.key === 's') this.renderer.showSenses = !this.renderer.showSenses;
       else if (e.key === '.') { if (this.paused) this.world.step(); }
+      else if (e.key === '?') { const h = this.$('#help-overlay'); h.hidden = !h.hidden; }
+      else if (e.key === 'Escape') this.$('#help-overlay').hidden = true;
     });
     this._setSpeed(this.speedIndex);
   }
@@ -327,6 +404,9 @@ export class App {
 
   _restart(seed) {
     this.seed = seed;
+    this._prevLiving = null;
+    this._events = [];
+    this._apexSeen = new Set();
     this.world = new World(seed);
     this.renderer.setWorld(this.world);
     this.camera = new Camera(this.renderer.cssW, this.renderer.cssH, this.world.config.width, this.world.config.height);
@@ -461,5 +541,28 @@ const TEMPLATE = /* html */ `
       <h3>Living species</h3>
       <div id="species-list" class="species-list"></div>
     </section>
+    <section class="panel">
+      <h3>Events <span class="hint">as they happen</span></h3>
+      <div id="event-log" class="event-log"><div class="muted">Watching for speciation, extinctions and predator booms…</div></div>
+    </section>
   </aside>
+</div>
+<button id="btn-help" class="help-fab" title="Keyboard shortcuts (?)">?</button>
+<div id="help-overlay" class="help-overlay" hidden>
+  <div class="help-card">
+    <h2>Primordium — controls</h2>
+    <table>
+      <tr><td><kbd>drag</kbd></td><td>pan the world</td></tr>
+      <tr><td><kbd>wheel</kbd></td><td>zoom to cursor</td></tr>
+      <tr><td><kbd>click</kbd></td><td>select &amp; follow a creature; open its brain</td></tr>
+      <tr><td><kbd>Space</kbd></td><td>play / pause</td></tr>
+      <tr><td><kbd>&larr;</kbd> <kbd>&rarr;</kbd></td><td>slower / faster (0&times;–64&times;)</td></tr>
+      <tr><td><kbd>.</kbd></td><td>single step (while paused)</td></tr>
+      <tr><td><kbd>s</kbd></td><td>toggle sense overlay</td></tr>
+      <tr><td><kbd>?</kbd></td><td>this help</td></tr>
+    </table>
+    <p>Every world is deterministic from its <b>seed</b> — share the URL to share
+    the exact run. <b>Save</b> downloads a snapshot that resumes bit-identically.</p>
+    <button id="btn-help-close" class="small">Close</button>
+  </div>
 </div>`;

@@ -97,8 +97,14 @@ export class Renderer {
 
   _drawPlants(ctx) {
     const zoom = this.camera.zoom;
-    ctx.fillStyle = zoom > 0.5 ? 'rgba(80,200,120,0.85)' : 'rgba(80,200,120,0.6)';
-    const r = Math.max(1.4, 2.2);
+    // When creatures are coloured by diet, herbivores are green too — so draw
+    // plants as a cooler, dimmer teal to keep the two readable apart. In the
+    // other colour modes a warmer leaf-green reads best.
+    const diet = this.colorMode === 'diet';
+    ctx.fillStyle = diet
+      ? (zoom > 0.5 ? 'rgba(52,150,150,0.7)' : 'rgba(52,150,150,0.5)')
+      : (zoom > 0.5 ? 'rgba(80,200,120,0.85)' : 'rgba(80,200,120,0.6)');
+    const r = diet ? 1.7 : 2.2;
     ctx.beginPath();
     for (const p of this.world.plants) {
       ctx.moveTo(p.x + r, p.y);
