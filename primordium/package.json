@@ -1,0 +1,14 @@
+{
+  "name": "primordium",
+  "version": "1.0.0",
+  "description": "An in-browser artificial-life laboratory: creatures with evolving neural-network brains hunt, graze, reproduce and speciate in a live, deterministic ecosystem.",
+  "type": "module",
+  "scripts": {
+    "test": "node tests/run.js",
+    "bench": "node tests/bench.js",
+    "serve": "node scripts/serve.js"
+  },
+  "keywords": ["artificial-life", "evolution", "neural-network", "simulation", "canvas", "zero-dependency"],
+  "license": "MIT",
+  "engines": { "node": ">=18" }
+}
