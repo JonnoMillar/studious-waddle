@@ -93,6 +93,21 @@ cd primordium && npm run serve        # http://localhost:8123
 
 Load a specific world with `?seed=aurora`. Any string is a valid seed.
 
+**Worlds worth a look** (every seed is stable — thousands of ticks with no
+population collapse — but they evolve very different balances):
+
+| Seed | Character |
+|---|---|
+| `aurora` | balanced — long predator–prey cycles, ~60% predator presence |
+| `onyx` | predator-dominated — hunters rule almost the entire run |
+| `tundra` | grazer-dominated — a sparse, cautious predator guild |
+| `cobalt` | high carrying capacity — the most crowded world |
+| `vireo` | a persistent apex-predator lineage that never lets go |
+
+A 30k-tick sweep across a dozen seeds: **zero extinctions**, population never
+falling below its starting value, predator guilds present for 18–100% of each
+run depending on the seed.
+
 ### Controls
 
 | Action | How |
