@@ -2,11 +2,45 @@
   "tee_times": [
     {
       "date": "2026-07-05",
-      "tee_time": "07:22",
+      "tee_time": "08:00",
+      "course_name": "Ilford Golf Club",
+      "facility_id": 15715,
+      "course_rating": 3.2586,
+      "course_review_count": 107,
+      "course_address": "Illford, Essex",
+      "distance_miles": 9.0,
+      "holes": 18,
+      "max_players": 4,
+      "price_gbp": 30.0,
+      "is_hot_deal": false,
+      "rate_type": "Best Available",
+      "booking_url": "https://www.golfnow.co.uk/tee-times/facility/15715/search",
+      "scraped_date": "2026-07-04"
+    },
+    {
+      "date": "2026-07-11",
+      "tee_time": "08:20",
+      "course_name": "Ilford Golf Club",
+      "facility_id": 15715,
+      "course_rating": 3.2586,
+      "course_review_count": 107,
+      "course_address": "Illford, Essex",
+      "distance_miles": 9.0,
+      "holes": 18,
+      "max_players": 4,
+      "price_gbp": 30.0,
+      "is_hot_deal": false,
+      "rate_type": "Best Available",
+      "booking_url": "https://www.golfnow.co.uk/tee-times/facility/15715/search",
+      "scraped_date": "2026-07-04"
+    },
+    {
+      "date": "2026-07-11",
+      "tee_time": "06:52",
       "course_name": "Chingford Golf Course",
       "facility_id": 14042,
-      "course_rating": 4.0926,
-      "course_review_count": 352,
+      "course_rating": 4.133,
+      "course_review_count": 353,
       "course_address": "London, Middlesex",
       "distance_miles": 11.0,
       "holes": 18,
@@ -15,10 +49,27 @@
       "is_hot_deal": false,
       "rate_type": "Best Available",
       "booking_url": "https://www.golfnow.co.uk/tee-times/facility/14042/search",
-      "scraped_date": "2026-07-02"
+      "scraped_date": "2026-07-04"
     },
     {
-      "date": "2026-07-04",
+      "date": "2026-07-12",
+      "tee_time": "06:45",
+      "course_name": "Chingford Golf Course",
+      "facility_id": 14042,
+      "course_rating": 4.133,
+      "course_review_count": 353,
+      "course_address": "London, Middlesex",
+      "distance_miles": 11.0,
+      "holes": 18,
+      "max_players": 4,
+      "price_gbp": 30.5,
+      "is_hot_deal": false,
+      "rate_type": "Best Available",
+      "booking_url": "https://www.golfnow.co.uk/tee-times/facility/14042/search",
+      "scraped_date": "2026-07-04"
+    },
+    {
+      "date": "2026-07-05",
       "tee_time": "07:12",
       "course_name": "Brent Valley Golf Club",
       "facility_id": 13883,
@@ -32,10 +83,10 @@
       "is_hot_deal": false,
       "rate_type": "Best Available",
       "booking_url": "https://www.golfnow.co.uk/tee-times/facility/13883/search",
-      "scraped_date": "2026-07-02"
+      "scraped_date": "2026-07-04"
     },
     {
-      "date": "2026-07-05",
+      "date": "2026-07-11",
       "tee_time": "07:02",
       "course_name": "Brent Valley Golf Club",
       "facility_id": 13883,
@@ -49,24 +100,24 @@
       "is_hot_deal": false,
       "rate_type": "Best Available",
       "booking_url": "https://www.golfnow.co.uk/tee-times/facility/13883/search",
-      "scraped_date": "2026-07-02"
+      "scraped_date": "2026-07-04"
     },
     {
-      "date": "2026-07-04",
-      "tee_time": "07:20",
-      "course_name": "London Airlinks Golf Course",
-      "facility_id": 15559,
-      "course_rating": 3.4609,
-      "course_review_count": 64,
-      "course_address": "Hounslow, Middlesex",
+      "date": "2026-07-11",
+      "tee_time": "07:50",
+      "course_name": "Whalebone Golf Club (Formerly Golf Kingdom)",
+      "facility_id": 18980,
+      "course_rating": 4.0,
+      "course_review_count": 11,
+      "course_address": "Romford, Essex",
       "distance_miles": 12.0,
       "holes": 18,
       "max_players": 4,
-      "price_gbp": 35.0,
+      "price_gbp": 32.0,
       "is_hot_deal": false,
       "rate_type": "Best Available",
-      "booking_url": "https://www.golfnow.co.uk/tee-times/facility/15559/search",
-      "scraped_date": "2026-07-02"
+      "booking_url": "https://www.golfnow.co.uk/tee-times/facility/18980/search",
+      "scraped_date": "2026-07-04"
     },
     {
       "date": "2026-07-05",
@@ -83,7 +134,7 @@
       "is_hot_deal": false,
       "rate_type": "Best Available",
       "booking_url": "https://www.golfnow.co.uk/tee-times/facility/15559/search",
-      "scraped_date": "2026-07-02"
+      "scraped_date": "2026-07-04"
     },
     {
       "date": "2026-07-11",
@@ -100,7 +151,7 @@
       "is_hot_deal": false,
       "rate_type": "Best Available",
       "booking_url": "https://www.golfnow.co.uk/tee-times/facility/15559/search",
-      "scraped_date": "2026-07-02"
+      "scraped_date": "2026-07-04"
     },
     {
       "date": "2026-07-12",
@@ -117,7 +168,7 @@
       "is_hot_deal": false,
       "rate_type": "Best Available",
       "booking_url": "https://www.golfnow.co.uk/tee-times/facility/15559/search",
-      "scraped_date": "2026-07-02"
+      "scraped_date": "2026-07-04"
     },
     {
       "date": "2026-07-11",
@@ -134,7 +185,7 @@
       "is_hot_deal": false,
       "rate_type": "Best Available",
       "booking_url": "https://www.golfnow.co.uk/tee-times/facility/14901/search",
-      "scraped_date": "2026-07-02"
+      "scraped_date": "2026-07-04"
     },
     {
       "date": "2026-07-11",
@@ -151,7 +202,7 @@
       "is_hot_deal": false,
       "rate_type": "Best Available",
       "booking_url": "https://www.golfnow.co.uk/tee-times/facility/15271/search",
-      "scraped_date": "2026-07-02"
+      "scraped_date": "2026-07-04"
     },
     {
       "date": "2026-07-12",
@@ -168,11 +219,11 @@
       "is_hot_deal": false,
       "rate_type": "Best Available",
       "booking_url": "https://www.golfnow.co.uk/tee-times/facility/15271/search",
-      "scraped_date": "2026-07-02"
+      "scraped_date": "2026-07-04"
     },
     {
       "date": "2026-07-05",
-      "tee_time": "07:32",
+      "tee_time": "07:40",
       "course_name": "West Middlesex Golf Club",
       "facility_id": 10634,
       "course_rating": 4.4009,
@@ -185,9 +236,9 @@
       "is_hot_deal": false,
       "rate_type": "Best Available",
       "booking_url": "https://www.golfnow.co.uk/tee-times/facility/10634/search",
-      "scraped_date": "2026-07-02"
+      "scraped_date": "2026-07-04"
     }
   ],
-  "scraped_at": "2026-07-02T18:26:27.510970+00:00",
+  "scraped_at": "2026-07-04T08:29:03.316473+00:00",
   "error": null
 }
