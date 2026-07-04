@@ -1,6 +1,43 @@
 {
-  "refreshed_at": "2026-07-03T09:26:39.355Z",
+  "refreshed_at": "2026-07-04T08:44:16.923Z",
   "companies": [
+    {
+      "name": "Rocket Lab",
+      "tag": "Space",
+      "desc": "Small-satellite launch provider and space systems manufacturer",
+      "url": "https://rocketlabusa.com",
+      "initials": "RL",
+      "logo": "https://www.google.com/s2/favicons?domain=rocketlabusa.com&sz=128",
+      "ticker": "RKLB",
+      "headline": {
+        "title": "Rocket Report: Indian startup nears first launch; SpaceX’s millenary milestone - Ars Technica",
+        "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOVkpiclg5alJPT1RMVHNidHBRN1pGc0hpdXZPWWtPTlF4bzFDMGZVemZqWDVMWDVQN3V4WDZNVXZkaHJ1Um5mM0NtSFRxODE5MFdlMnJnNnVFeHlKc1hyN3VhbTNDRXhscWhuT0hOa1g1T1dmdmJiZFpWVkdVQlYxTHBmNEl1QXVmbkRZSkNBS0lVZXdNR2NRX2hqOXFGVXpOR0t3UmNIQkQyTGlWS0JuVFZfRng?oc=5",
+        "pubDate": "Fri, 03 Jul 2026 13:55:35 GMT"
+      },
+      "sparkline": [
+        114.69999694824219,
+        119.94999694824219,
+        110.08000183105469,
+        113.6500015258789,
+        108.2300033569336,
+        105.05000305175781,
+        114.77999877929688,
+        102.38999938964844,
+        109.25,
+        104.62999725341797,
+        107.9800033569336,
+        107.23999786376953,
+        100.29000091552734,
+        95.12000274658203,
+        85.41000366210938,
+        80.69000244140625,
+        84.54000091552734,
+        98.01000213623047,
+        101.6500015258789,
+        100.06999969482422,
+        100.45999908447266
+      ]
+    },
     {
       "name": "Figure AI",
       "tag": "Robotics",
@@ -12,7 +49,7 @@
       "headline": {
         "title": "BMW: Boosting Factory Logistics Using AI Humanoid Robots - AI Magazine",
         "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPODEyTzFPYmk0dFRUbkJMcV9QTjRCNS1lSWdUUG1sbXVYSHZmb2RVRGNaM2FETWs2N1JhX3V5SU1wLTltcGt2WEEzd1ptRTdpTmt3UzFwWHA0bGdFeDZXMXJTV0ZmVDY2OUFCOVFXOFRWVXFobl9xRFdkX1YxZXhiZVZFY1Q4RWpGbW40?oc=5",
-        "pubDate": "Fri, 03 Jul 2026 08:45:15 GMT"
+        "pubDate": "Fri, 03 Jul 2026 08:52:15 GMT"
       },
       "sparkline": null
     },
@@ -28,21 +65,6 @@
         "title": "Anthropic moves to close loopholes that allow Chinese access to Claude - Financial Times",
         "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOSU9qQVN5REsxUUQtTTBFSEhPbE0zeF9ZSFJ2UWJvRVBQb0oyMFBSX1gxaEF5RjVvV1ZPOTJVT1Jibkw2bVZFNG1lVEo1WUdRWE9OY0JYenhhZWFnVUhzRk1RM01POF9LMWhSa2pKWXltVFNsWm44REVRVHcxTkdMS0lmOEM?oc=5",
         "pubDate": "Fri, 03 Jul 2026 04:01:47 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "Neuralink",
-      "tag": "Brain-Computer",
-      "desc": "Implantable neural interfaces for restoring and augmenting human capability",
-      "url": "https://neuralink.com",
-      "initials": "NL",
-      "logo": "https://www.google.com/s2/favicons?domain=neuralink.com&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "Vancouver 'RoboCop' is one of 1st Canadian ALS patients to receive Elon Musk's Neuralink brain implant - CBC",
-        "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQOTJhc1RuMHIxNlZTZlBhNFZwekhTaEppZDRETDZxeXlaTnRzYlluSzdTajlON0tPd1EyOVRjdlFITDJMTUJvTU02STNyakxIYWV2Q2k1WUJQMTBMSmVCMjFRM21vcHVLTzZFN0RrQktTakNjbTBhWHB4UXhZMWJKRldrcFhRYjRfQ29HaHZzblFlRVJHWTZJZEY0RHlwRXZPYmsxSQ?oc=5",
-        "pubDate": "Thu, 02 Jul 2026 22:02:24 GMT"
       },
       "sparkline": null
     },
@@ -114,41 +136,19 @@
       "sparkline": null
     },
     {
-      "name": "CrowdStrike",
-      "tag": "Cybersecurity",
-      "desc": "Cloud-native endpoint protection and threat intelligence",
-      "url": "https://crowdstrike.com",
-      "initials": "CS",
-      "logo": "https://www.google.com/s2/favicons?domain=crowdstrike.com&sz=128",
-      "ticker": "CRWD",
+      "name": "Mistral AI",
+      "tag": "LLMs",
+      "desc": "Europe's leading open-weight AI foundation models",
+      "url": "https://mistral.ai",
+      "initials": "M",
+      "logo": "https://www.google.com/s2/favicons?domain=mistral.ai&sz=128",
+      "ticker": null,
       "headline": {
-        "title": "CrowdStrike Stock Has Plunged 75% in Pre-Market Today—But Don’t Panic Just Yet - TipRanks",
-        "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQS3pIbUxodXA2WFFFdmpVQUpCMjY2aEpUbEFkY3hIMTcxbXFGSkk2cXFDX0hMQmF3bV9NeWZsSUtNQTJhcFhITm13bUlBMDBjNzZFMVZxcDYtUVFQTS04S3Y5dW0xeWRtM0ZLN2dhSTI3MUNBdFdsTV9iSUViTUs1SHVTSkg5bGZOaGoyZlFXWTgxdXBYLVlSeVZrb21mX1N5SVRLb3lfYzQzUQ?oc=5",
-        "pubDate": "Thu, 02 Jul 2026 09:32:34 GMT"
+        "title": "Leanstral 1.5: Proof Abundance for All - mistral.ai",
+        "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE12TlFuT3dEdGtDSGd1VUZVbXpUTGNaVjRtQThwZTJoMWZFQzJhVUtHTXAxLXZzSi0wd1A1azhCWU5hZEFfOUR3NGlNODVwRXc?oc=5",
+        "pubDate": "Thu, 02 Jul 2026 07:00:00 GMT"
       },
-      "sparkline": [
-        186.90249633789062,
-        179.7725067138672,
-        167.7550048828125,
-        164.69749450683594,
-        161.2324981689453,
-        161.93499755859375,
-        172.88250732421875,
-        170.6999969482422,
-        173.2274932861328,
-        169.87249755859375,
-        170.74000549316406,
-        171.21499633789062,
-        168.86000061035156,
-        170.22999572753906,
-        168.2550048828125,
-        169.66250610351562,
-        175.2725067138672,
-        185.7274932861328,
-        190.78500366210938,
-        193.18499755859375,
-        193.97999572753906
-      ]
+      "sparkline": null
     },
     {
       "name": "Scale AI",
