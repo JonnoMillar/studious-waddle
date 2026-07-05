@@ -1,6 +1,36 @@
 {
-  "refreshed_at": "2026-07-04T08:44:16.923Z",
+  "refreshed_at": "2026-07-05T09:12:30.134Z",
   "companies": [
+    {
+      "name": "Figure AI",
+      "tag": "Robotics",
+      "desc": "Humanoid robots designed for industrial and commercial work",
+      "url": "https://figure.ai",
+      "initials": "FA",
+      "logo": "https://www.google.com/s2/favicons?domain=figure.ai&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "BMW Deploys Figure 03 Humanoid in Plant Spartanburg Logistics - Let's Data Science",
+        "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPNHF6a3pfdndFQnpHdC1vZXlvV2dfMlppTGNxSkEwX0NRclpRZWMtWm9qcmlSQ1pvd0JfLWFxNFVyUnUwczdzb0tmVnpoMWlXUlBZN3RfOUkwdzc2SDVYVTAwMlFZLWVLSlh1STRWcTFGWHlKTlU1RGdpdXdXZ21NeExGLUlONVE5dTBfUWMwd3laNVF4SHhodVJiZ0Fua2wyRmNmNg?oc=5",
+        "pubDate": "Sat, 04 Jul 2026 15:25:02 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "OpenAI",
+      "tag": "LLMs",
+      "desc": "Creator of ChatGPT and the GPT family of foundation models",
+      "url": "https://openai.com",
+      "initials": "OAI",
+      "logo": "https://www.google.com/s2/favicons?domain=openai.com&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "OpenAI’s apparent failure to visit key site raises questions over UK investment - The Guardian",
+        "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOZ2tQWXRkeWVkSjJ2RXZ3LWdBZnRoeko3MnR2RHVVLVlWQXc3NllsbnpSaUJ0NC04Rndkb1ZtLXBBU1pZdENaRGlrNjE5TGk3N2pJR3VGblhpSnAxWG1pRFdXRFNBdmxaZ0Zya1NkeXQ5N2pzVy1rLWV5aDhETGYyZ3ZWSHlmODFhRHBoTGtKYjd5enF0RWo3aFFGWWJTVWV5RmxndTgzd21DNkNfdC1JUUZjOU5DZF9XdmM0?oc=5",
+        "pubDate": "Sat, 04 Jul 2026 14:15:00 GMT"
+      },
+      "sparkline": null
+    },
     {
       "name": "Rocket Lab",
       "tag": "Space",
@@ -39,17 +69,32 @@
       ]
     },
     {
-      "name": "Figure AI",
-      "tag": "Robotics",
-      "desc": "Humanoid robots designed for industrial and commercial work",
-      "url": "https://figure.ai",
-      "initials": "FA",
-      "logo": "https://www.google.com/s2/favicons?domain=figure.ai&sz=128",
+      "name": "Waymo",
+      "tag": "Autonomy",
+      "desc": "The most miles driven autonomously of any robotaxi service",
+      "url": "https://waymo.com",
+      "initials": "W",
+      "logo": "https://www.google.com/s2/favicons?domain=waymo.com&sz=128",
       "ticker": null,
       "headline": {
-        "title": "BMW: Boosting Factory Logistics Using AI Humanoid Robots - AI Magazine",
-        "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPODEyTzFPYmk0dFRUbkJMcV9QTjRCNS1lSWdUUG1sbXVYSHZmb2RVRGNaM2FETWs2N1JhX3V5SU1wLTltcGt2WEEzd1ptRTdpTmt3UzFwWHA0bGdFeDZXMXJTV0ZmVDY2OUFCOVFXOFRWVXFobl9xRFdkX1YxZXhiZVZFY1Q4RWpGbW40?oc=5",
-        "pubDate": "Fri, 03 Jul 2026 08:52:15 GMT"
+        "title": "Waymo &amp; Uber Partnership Ends in Phoenix, While Teens Do Idiotic Things in Waymos - CleanTechnica",
+        "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOQmc2UHBkT1lEY1c1bHBIeXNfLUE0N1Y5ZTlIN2lDSkg0eW9rdVNNUUNwSkYyXzlQNXJlaF9GZHdKWXZ6R2tnWnY0d3NZRmpJNXhocWkzLTRraUJwOXNmcUF6YS1QM0Vqdmd6cFc1aURSc0oyWU5nMU1CSy1YQnlYaEZqNVMxWFF1eDhvNDBSZ2RJaFhpRERpang0c0JRUGRZZDk4SzhrNVlySDNOSWxiQzM3bUZFeUE?oc=5",
+        "pubDate": "Fri, 03 Jul 2026 12:40:03 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "Anduril",
+      "tag": "Defense AI",
+      "desc": "Autonomous defense systems and AI-enabled military hardware",
+      "url": "https://anduril.com",
+      "initials": "A",
+      "logo": "https://www.google.com/s2/favicons?domain=anduril.com&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "Anduril's Jeff Miller says - Business Insider",
+        "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQZzV3YXk0QnJYS1lvbnA1N25md3BlWEwzMEYzemY4UmQ4S2stS0d3cUtvMlp6ZUd6T0pmTDROTDVfNHpJc3M0WEZjUHR0akdRQm8xbHZxV3ZpOUlfblZuNXRkMlhZMEgzcV9SN3lkc3h1TFpkd0RlWWx5aVBrVVdwMw?oc=5",
+        "pubDate": "Fri, 03 Jul 2026 07:23:31 GMT"
       },
       "sparkline": null
     },
@@ -62,63 +107,26 @@
       "logo": "https://www.google.com/s2/favicons?domain=anthropic.com&sz=128",
       "ticker": null,
       "headline": {
-        "title": "Anthropic moves to close loopholes that allow Chinese access to Claude - Financial Times",
-        "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOSU9qQVN5REsxUUQtTTBFSEhPbE0zeF9ZSFJ2UWJvRVBQb0oyMFBSX1gxaEF5RjVvV1ZPOTJVT1Jibkw2bVZFNG1lVEo1WUdRWE9OY0JYenhhZWFnVUhzRk1RM01POF9LMWhSa2pKWXltVFNsWm44REVRVHcxTkdMS0lmOEM?oc=5",
-        "pubDate": "Fri, 03 Jul 2026 04:01:47 GMT"
+        "title": "Alibaba to ban employees from using Anthropic's coding tool, source says - Reuters",
+        "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPc1ozV1JIcjJDWWRCZGZZZEN0Z0p4dHVpMkw3eXBWMF9EMlJOemlKSEg1WVRjV2I5VklmMGFFT3FLblVuTEtKa3dYUXctSmpMS0tQdzJhbmhGTEVlRjhHSWdrUUlXZXJydTN2Q3JQTXRSWUVzVkh5TThmaEtVZURBMzdFTHFHaWI0UE43aUw1QS1vbXRoS3BmRUQ0bExHZ0hDQzRmc09kSkxlNUVDOGxNRXctN2dWWGwtX21DSnN3?oc=5",
+        "pubDate": "Fri, 03 Jul 2026 06:50:00 GMT"
       },
       "sparkline": null
     },
     {
-      "name": "Waymo",
-      "tag": "Autonomy",
-      "desc": "The most miles driven autonomously of any robotaxi service",
-      "url": "https://waymo.com",
-      "initials": "W",
-      "logo": "https://www.google.com/s2/favicons?domain=waymo.com&sz=128",
+      "name": "xAI",
+      "tag": "LLMs",
+      "desc": "Elon Musk's AI company, developer of the Grok models",
+      "url": "https://x.ai",
+      "initials": "X",
+      "logo": "https://www.google.com/s2/favicons?domain=x.ai&sz=128",
       "ticker": null,
       "headline": {
-        "title": "No More Robotaxis In Phoenix As Waymo And Uber Part Ways - Men's Journal",
-        "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQQVgxWkRZOUd4dUtDVTZ3R0RMVDBCb1pzTm9WR0ZXNFVreXRhSXdWM0owVzBuLWd1dXdGTUU3N3o0TWpaM2pHeFZja3RwY1JyQTltdGx1dWNlVWNYSC1KZlYxUlZlSGljM1NJd0hwY28tUzRxVGVYa19HNnduYzZ3RzlSSEZZTmJLa3RoaVViOFhRSGc?oc=5",
-        "pubDate": "Thu, 02 Jul 2026 17:23:06 GMT"
+        "title": "Tesla Caps Employee AI Spend at $200 per Week After Adoption Push - The Information",
+        "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPTXRONUxXVmFvVFFKSU9oaUp5X3RDZGxKOURMclZrSzBrUUdDTnJrdGJUTUNKS0pGeGVMSlhVaWZHdU5hMnl3RHkyN0d2MkJuSFFkcG41aEZfekhVMmwxNnlLcm15RU9SVEliazNlUldrSDdtQWI2YVg5NVlGcWFQdHhIMEVKbnhvb1RKN1c2bk90MXRmTFd0a1R6TQ?oc=5",
+        "pubDate": "Thu, 02 Jul 2026 19:08:00 GMT"
       },
       "sparkline": null
-    },
-    {
-      "name": "Palantir",
-      "tag": "Data Analytics",
-      "desc": "Big-data analytics platforms for government and enterprise",
-      "url": "https://palantir.com",
-      "initials": "PL",
-      "logo": "https://www.google.com/s2/favicons?domain=palantir.com&sz=128",
-      "ticker": "PLTR",
-      "headline": {
-        "title": "Andy Burnham set to ditch Palantir from NHS - The Telegraph",
-        "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOTndMS2Q1ZDFMSmV2ZHdiMk1vdU9zVUkzaWlnRDFoLVZJeHZaVzllRzZhLVNvd2lvM0FwdDcxX19CRHhNRW9EMVROYVRreGJiMDhnSlgzeTJhazhUNlB5a3Q5YW16ZExHRnVoSmQ3OHgxZldSRUpLMHdfZnppbkZjelpHVG8xNEFENm5CNGduMUE?oc=5",
-        "pubDate": "Thu, 02 Jul 2026 14:30:00 GMT"
-      },
-      "sparkline": [
-        142.1999969482422,
-        141.6999969482422,
-        135.52999877929688,
-        136.47000122070312,
-        132.07000732421875,
-        130.2100067138672,
-        131.0800018310547,
-        127.98999786376953,
-        134.7100067138672,
-        133.25,
-        130.6300048828125,
-        128.47000122070312,
-        119.5,
-        116.69999694824219,
-        113.5,
-        107.2699966430664,
-        112.93000030517578,
-        115.69999694824219,
-        116.66999816894531,
-        125.7300033569336,
-        129.3000030517578
-      ]
     },
     {
       "name": "Cursor",
@@ -129,39 +137,9 @@
       "logo": "https://www.google.com/s2/favicons?domain=cursor.com&sz=128",
       "ticker": null,
       "headline": {
-        "title": "Z.ai launches ZCode to challenge Cursor, Claude Code and GitHub Copilot in AI coding - VentureBeat",
-        "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNbGJkdWhUUHVBNm94Njl4NXpzQ0FfMnFsUWlGWnhwTWxZWGpHMU1DS1JnN0dtWWE0TEFacWdha3JKd2NEcDlUQXVlWHMtRG1veWJuVUl3Q1BUay1oTzhUSWFpV3k1dE45cjJBZlFnYmdtbEdqTGdoV0FkbGFXTDF4aW91M3dhNzNSd1ptTVAyZTZjcGtiR1lteFUxUzNRaC16MDVVWlNuNEQ1SjVEcXljYktiLWg4eTRHNXc?oc=5",
-        "pubDate": "Thu, 02 Jul 2026 10:00:00 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "Mistral AI",
-      "tag": "LLMs",
-      "desc": "Europe's leading open-weight AI foundation models",
-      "url": "https://mistral.ai",
-      "initials": "M",
-      "logo": "https://www.google.com/s2/favicons?domain=mistral.ai&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "Leanstral 1.5: Proof Abundance for All - mistral.ai",
-        "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE12TlFuT3dEdGtDSGd1VUZVbXpUTGNaVjRtQThwZTJoMWZFQzJhVUtHTXAxLXZzSi0wd1A1azhCWU5hZEFfOUR3NGlNODVwRXc?oc=5",
-        "pubDate": "Thu, 02 Jul 2026 07:00:00 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "Scale AI",
-      "tag": "AI Data",
-      "desc": "Data labelling and RLHF infrastructure powering frontier AI",
-      "url": "https://scale.com",
-      "initials": "S",
-      "logo": "https://www.google.com/s2/favicons?domain=scale.com&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "NVIDIA Unlocks AI Compute at Scale, Inviting Partners to Power the AI Infrastructure Buildout - NVIDIA Blog",
-        "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQVG5VZ3ZIYWdHOGRWV0FXRW9sYzYxX1c2dHhKRmVPY3JlNlpPcHdfUzA0RkstUi04WTl0dzFqdEUtalQ1NFM5WjNJb3c5cmdveTJibUhIRzJGMUV0OVRYSFBNb3pwSHRlYWdQVVhpRkZNWmtHMmhJclBSSWRWZW5fT0NTenVLY0lzdURVdHJZQjBjQVdUQkc0M1N0NkMzU19CRndHZW1kRDNfN1I3TmJCbm5uRUtjQmRwQ1E?oc=5",
-        "pubDate": "Thu, 02 Jul 2026 05:50:08 GMT"
+        "title": "Can Cursor Remain a Platform for OpenAI and Anthropic’s Models Inside SpaceX? - WIRED",
+        "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQZjY0UDRiMHluV01ZaDgzU0plUVI3NFdhSjdncmhKZXdHQTNDSXBLRHdOMEVjVU9nNXJzcjN2TFozRTJwVTQxVVM0SU1kcUlGZE9mZEVpT0tuWTk0anBzYnJjdXJ3bGRfb0RISFd5c1N3SjMyaG5SMUVjWFFfTlVpdTlHc0dOX3c?oc=5",
+        "pubDate": "Thu, 02 Jul 2026 18:01:00 GMT"
       },
       "sparkline": null
     }
