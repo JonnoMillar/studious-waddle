@@ -1,0 +1,74 @@
+{"t": 1000000, "kind": "char", "v": "h", "win": "Claude - Chat"}
+{"t": 1000080, "kind": "char", "v": "e", "win": "Claude - Chat"}
+{"t": 1000160, "kind": "char", "v": "l", "win": "Claude - Chat"}
+{"t": 1000240, "kind": "char", "v": "l", "win": "Claude - Chat"}
+{"t": 1000320, "kind": "char", "v": "o", "win": "Claude - Chat"}
+{"t": 1000400, "kind": "space", "v": " ", "win": "Claude - Chat"}
+{"t": 1000500, "kind": "char", "v": "w", "win": "Claude - Chat"}
+{"t": 1000580, "kind": "char", "v": "r", "win": "Claude - Chat"}
+{"t": 1000660, "kind": "char", "v": "o", "win": "Claude - Chat"}
+{"t": 1000740, "kind": "char", "v": "l", "win": "Claude - Chat"}
+{"t": 1000820, "kind": "char", "v": "d", "win": "Claude - Chat"}
+{"t": 1000900, "kind": "backspace", "v": "", "win": "Claude - Chat"}
+{"t": 1000980, "kind": "backspace", "v": "", "win": "Claude - Chat"}
+{"t": 1001060, "kind": "backspace", "v": "", "win": "Claude - Chat"}
+{"t": 1001140, "kind": "backspace", "v": "", "win": "Claude - Chat"}
+{"t": 1001220, "kind": "char", "v": "o", "win": "Claude - Chat"}
+{"t": 1001300, "kind": "char", "v": "r", "win": "Claude - Chat"}
+{"t": 1001380, "kind": "char", "v": "l", "win": "Claude - Chat"}
+{"t": 1001460, "kind": "char", "v": "d", "win": "Claude - Chat"}
+{"t": 1001540, "kind": "space", "v": " ", "win": "Claude - Chat"}
+{"t": 1001640, "kind": "char", "v": "w", "win": "Claude - Chat"}
+{"t": 1001720, "kind": "char", "v": "o", "win": "Claude - Chat"}
+{"t": 1001800, "kind": "char", "v": "r", "win": "Claude - Chat"}
+{"t": 1001880, "kind": "char", "v": "l", "win": "Claude - Chat"}
+{"t": 1001960, "kind": "char", "v": "d", "win": "Claude - Chat"}
+{"t": 1002040, "kind": "space", "v": " ", "win": "Claude - Chat"}
+{"t": 1002140, "kind": "char", "v": "w", "win": "Claude - Chat"}
+{"t": 1002220, "kind": "char", "v": "r", "win": "Claude - Chat"}
+{"t": 1002300, "kind": "char", "v": "o", "win": "Claude - Chat"}
+{"t": 1002380, "kind": "char", "v": "l", "win": "Claude - Chat"}
+{"t": 1002460, "kind": "char", "v": "d", "win": "Claude - Chat"}
+{"t": 1002540, "kind": "backspace", "v": "", "win": "Claude - Chat"}
+{"t": 1002620, "kind": "backspace", "v": "", "win": "Claude - Chat"}
+{"t": 1002700, "kind": "backspace", "v": "", "win": "Claude - Chat"}
+{"t": 1002780, "kind": "backspace", "v": "", "win": "Claude - Chat"}
+{"t": 1002860, "kind": "char", "v": "o", "win": "Claude - Chat"}
+{"t": 1002940, "kind": "char", "v": "r", "win": "Claude - Chat"}
+{"t": 1003020, "kind": "char", "v": "l", "win": "Claude - Chat"}
+{"t": 1003100, "kind": "char", "v": "d", "win": "Claude - Chat"}
+{"t": 1003180, "kind": "space", "v": " ", "win": "Claude - Chat"}
+{"t": 1003280, "kind": "char", "v": "r", "win": "Claude - Chat"}
+{"t": 1003360, "kind": "char", "v": "h", "win": "Claude - Chat"}
+{"t": 1003440, "kind": "char", "v": "y", "win": "Claude - Chat"}
+{"t": 1003520, "kind": "char", "v": "t", "win": "Claude - Chat"}
+{"t": 1003600, "kind": "char", "v": "m", "win": "Claude - Chat"}
+{"t": 1003680, "kind": "backspace", "v": "", "win": "Claude - Chat"}
+{"t": 1003760, "kind": "backspace", "v": "", "win": "Claude - Chat"}
+{"t": 1003840, "kind": "backspace", "v": "", "win": "Claude - Chat"}
+{"t": 1003920, "kind": "char", "v": "y", "win": "Claude - Chat"}
+{"t": 1004000, "kind": "char", "v": "t", "win": "Claude - Chat"}
+{"t": 1004080, "kind": "char", "v": "h", "win": "Claude - Chat"}
+{"t": 1004160, "kind": "char", "v": "m", "win": "Claude - Chat"}
+{"t": 1004240, "kind": "space", "v": " ", "win": "Claude - Chat"}
+{"t": 1004440, "kind": "char", "v": "r", "win": "Claude - Chat"}
+{"t": 1004520, "kind": "char", "v": "h", "win": "Claude - Chat"}
+{"t": 1004600, "kind": "char", "v": "y", "win": "Claude - Chat"}
+{"t": 1004680, "kind": "char", "v": "t", "win": "Claude - Chat"}
+{"t": 1004760, "kind": "char", "v": "m", "win": "Claude - Chat"}
+{"t": 1004840, "kind": "backspace", "v": "", "win": "Claude - Chat"}
+{"t": 1004920, "kind": "backspace", "v": "", "win": "Claude - Chat"}
+{"t": 1005000, "kind": "backspace", "v": "", "win": "Claude - Chat"}
+{"t": 1005080, "kind": "char", "v": "y", "win": "Claude - Chat"}
+{"t": 1005160, "kind": "char", "v": "t", "win": "Claude - Chat"}
+{"t": 1005240, "kind": "char", "v": "h", "win": "Claude - Chat"}
+{"t": 1005320, "kind": "char", "v": "m", "win": "Claude - Chat"}
+{"t": 1005400, "kind": "space", "v": " ", "win": "Claude - Chat"}
+{"t": 1005600, "kind": "char", "v": "a", "win": "Claude - Chat"}
+{"t": 1005680, "kind": "char", "v": "b", "win": "Claude - Chat"}
+{"t": 1005760, "kind": "char", "v": "c", "win": "Claude - Chat"}
+{"t": 1005840, "kind": "nav", "v": "left", "win": "Claude - Chat"}
+{"t": 1005920, "kind": "char", "v": "d", "win": "Claude - Chat"}
+{"t": 1006000, "kind": "char", "v": "e", "win": "Claude - Chat"}
+{"t": 1006080, "kind": "char", "v": "f", "win": "Claude - Chat"}
+{"t": 1006160, "kind": "space", "v": " ", "win": "Claude - Chat"}
