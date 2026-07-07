@@ -1,5 +1,5 @@
 {
-  "refreshed_at": "2026-07-06T10:47:09.769Z",
+  "refreshed_at": "2026-07-07T09:51:02.877Z",
   "companies": [
     {
       "name": "Cursor",
@@ -10,9 +10,69 @@
       "logo": "https://www.google.com/s2/favicons?domain=cursor.com&sz=128",
       "ticker": null,
       "headline": {
-        "title": "Chinese Z.ai launches ZCode, challenges Cursor and Claude Code - TechCentral.ie",
-        "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPV3RrRE9sOTBsWlRHQy1KUHBfQU91MTRvZHdsbENOZG5wTVdZdFpQZXZENjZrZHRndHljLW45c1RrYVdwYTQwMWU2MlVJWldWU2VtcDlhNHJMTklzOW5ZLS1sUGFGNUlQa0dKRDRhQzFsRU9LMlNQaWE1ZUs0eG9vb2FRZ1hjdlR1emhhS1Y2NXFIWTg?oc=5",
-        "pubDate": "Mon, 06 Jul 2026 10:44:59 GMT"
+        "title": "Cursor AI Review: The AI That Codes Like It's Coming for Your Job? - MobileAppDaily",
+        "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9RRXd5N0djd1NhVGF3a1VqMjlRUk9yNVFWZjBCbGNHVVpyVHZueWNXT2d1ODh3TU5NTUdZaXRuYTFWaUxmeVhYYTRNenlhNTFGWVJ3cWtZNTROaE5jbkVkaDdn?oc=5",
+        "pubDate": "Tue, 07 Jul 2026 06:27:16 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "Figure AI",
+      "tag": "Robotics",
+      "desc": "Humanoid robots designed for industrial and commercial work",
+      "url": "https://figure.ai",
+      "initials": "FA",
+      "logo": "https://www.google.com/s2/favicons?domain=figure.ai&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "BMW Group deploys Figure 03 humanoid after tests with previous version - Moomoo",
+        "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNZkl2SVFTQXE1ZHdSdkNvSV9QU2J3R1Q4LTlEYVkzV2hEQmZ0V1R5c0N6WWk2QTdXQVdGVHdYalVSS2JNM2Z1cVBMRlotU3R0LWZYVEVWdGl4bWNtVktuUTE3SmszNHduWm1nek05eWdBbXZuN0FDMWI3VGFlZ0pEcGI3MWZGcE1UcExwNU5fZ0NtMzRHaGdBSTFKczdCbkZHdE5OOUJsd3Z2dFNvWnhjaFFqOUlmalE?oc=5",
+        "pubDate": "Tue, 07 Jul 2026 00:59:40 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "Groq",
+      "tag": "AI Chips",
+      "desc": "LPU inference chips delivering industry-leading token speed",
+      "url": "https://groq.com",
+      "initials": "G",
+      "logo": "https://www.google.com/s2/favicons?domain=groq.com&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "Groq Founder Jonathan Ross Says 'I Was a Terrible Leader,' Admits Mistakes Cost Years - Yahoo Finance",
+        "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPYlkwQUtPS0FGYy1QSEhXZ3ZKU2dmMC0xeTVfQ3pfS08tSi1JYlZLSjJKdjVpMV9YQ3RlRV9SaUNlSjFZMDBJUy1GTVBNVE9fS3F4MlZGM0IteEg4aURudjFkcUE1bmt2YWg3QTdlWlhXMXVqd2k2cENfUGZVV2ljanVXZVdmM195S3RZVVY0TTlLM3V1QzdQU05tZw?oc=5",
+        "pubDate": "Mon, 06 Jul 2026 22:31:10 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "xAI",
+      "tag": "LLMs",
+      "desc": "Elon Musk's AI company, developer of the Grok models",
+      "url": "https://x.ai",
+      "initials": "X",
+      "logo": "https://www.google.com/s2/favicons?domain=x.ai&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "XAI makes its rebrand to SpaceXAI complete with a new logo - Business Insider",
+        "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPcmt3bDZLNTdaNmpqRnZpbkxHTml3dVBwd1RSOGtLblJvNjQ3Z1lIeW1yYldIZDhVeHpkcGE5b0dhNkhtSEdwMHhyUTJYRFhYbnNlay00dXBaeXFyR3lPMHFpYVNQVUFUallIN3NUMTZRdVE3LWJ2TFhSRlB3NkVSRzJ0SDFnb1gtb3F0Yw?oc=5",
+        "pubDate": "Mon, 06 Jul 2026 21:50:00 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "Anthropic",
+      "tag": "LLMs",
+      "desc": "AI safety company behind the Claude family of models",
+      "url": "https://anthropic.com",
+      "initials": "AN",
+      "logo": "https://www.google.com/s2/favicons?domain=anthropic.com&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "China's Alibaba bans Anthropic AI for employees after 'distillation attack' accusation - CNBC",
+        "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE53Ykl5M1J5SW5wclpRaERtUUllclU0clBCaTlPYVJ5WWVGQkpIUTRYaXJJcS1XcmVYa2lVUkZhQnpWQ0NvY3h1alBReENVT1RZa2tJMWQ3SHdMU1F2cVJuWjM0bktmZElSbGE4WVk5VWd2VnRaa2FpRm5PM2cySU3SAYQBQVVfeXFMUC13eFAwV0ZDbm02SURnMjhrd3JvUEUzeHcxdEFkNFQzbFZwUnkyMDU0MnhqYzRzaHpLZjR3MHRSQ2VycnRuaXRVd3YyNzE5UUxMN2NKQU1DamFKYV9qLVNsN0NpS1VabzVnQjluZ05odnViTUZFM2txRUpkZHhRS3hGYUhs?oc=5",
+        "pubDate": "Mon, 06 Jul 2026 20:49:25 GMT"
       },
       "sparkline": null
     },
@@ -25,14 +85,11 @@
       "logo": "https://www.google.com/s2/favicons?domain=crowdstrike.com&sz=128",
       "ticker": "CRWD",
       "headline": {
-        "title": "Is CrowdStrike Stock a Buy After Its Stock Split? - Yahoo Finance",
-        "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQSmVEVDJuYmNzWFItdXJKaXhaTk5KZFprUHU0MUVLaDZkMGJmVmlxNTdCUEZmdUxUdmpFOXA3aXE2YUU5eVVEVEZzY1d0RWpSeTZzNENxaXJaZFp1bWhnNjU0WW80YV9YOEpfSXdkcGFBYndIRHdrcUNTTGNlSDhFNlRqbkprLTFmWGNjU0c1RFZPMjdTUzJGYm4zWmxOTjQ?oc=5",
-        "pubDate": "Mon, 06 Jul 2026 08:45:00 GMT"
+        "title": "Why is CrowdStrike stock up today? - Traders Union",
+        "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOVlNmeWRFMlo1c2I5VnVBWHltV0JhakJCazlab0xqNFVuX0FnbWVPZUZjWWN1RDZNRHl5RXUybU9qWXM4OWVqcFFZcWN6d0p4bzJlOXdKNDNyX1ZRMVpGbHdnNFhuU1NOVjE1UTJ4ZU9qQXlCRnhSVlR6UG01UVNYc2s5SThRbmRLVTJCNlpqbTBRRnNLRFlHejJ0Z3E0UkNQNkE?oc=5",
+        "pubDate": "Mon, 06 Jul 2026 20:00:29 GMT"
       },
       "sparkline": [
-        186.90249633789062,
-        179.7725067138672,
-        167.7550048828125,
         164.69749450683594,
         161.2324981689453,
         161.93499755859375,
@@ -50,96 +107,37 @@
         185.7274932861328,
         190.78500366210938,
         193.18499755859375,
-        193.97999572753906
+        193.97999572753906,
+        199.3800048828125
       ]
     },
     {
-      "name": "Neuralink",
-      "tag": "Brain-Computer",
-      "desc": "Implantable neural interfaces for restoring and augmenting human capability",
-      "url": "https://neuralink.com",
-      "initials": "NL",
-      "logo": "https://www.google.com/s2/favicons?domain=neuralink.com&sz=128",
+      "name": "Commonwealth Fusion",
+      "tag": "Energy",
+      "desc": "Next-generation tokamak fusion for clean energy at scale",
+      "url": "https://cfs.energy",
+      "initials": "CFS",
+      "logo": "https://www.google.com/s2/favicons?domain=cfs.energy&sz=128",
       "ticker": null,
       "headline": {
-        "title": "A BC police officer got Elon Musk's Neuralink implant for ALS — highlights the financial woes for those on disability - Yahoo! Finance Canada",
-        "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOeHlCdU1Fb3NmenlwX0ZxR1d2bjVQV1dvbzE4eHZCU2VMSXZVTzZjQTZtcXpGRGREeXpoV3ByYUZKNFB0VW4xbU1UZVJZZnRoQV9BVzI3Tm92UnI4YmRDdHU5UHZwdDFsTVRtNFZjZVFqUGxpZzU1VXpsLVhUb2dpTQ?oc=5",
-        "pubDate": "Mon, 06 Jul 2026 06:10:00 GMT"
+        "title": "Commonwealth Fusion Systems joins UKAEA’s LIBRTI program - American Nuclear Society -- ANS",
+        "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPSnJKT2lZZXl4elIwOXdhRkVmRDdKT1owT2RsQ2l3eW9zSy1SS3paZklNUWxQdk9FNnpqQzl5RG5sYWNzZ0FVdkhnb3ZzNHVrNGRYSTRDMUR4bEdRdUVNUThPS3Z6RURWRzdoTVJJbHZlSlpJcXhtQksyWmY2TkdLbUJBbDg1Um1XREdtclZDeEVwZG1OVXdLbjdB?oc=5",
+        "pubDate": "Mon, 06 Jul 2026 17:59:01 GMT"
       },
       "sparkline": null
     },
     {
-      "name": "Groq",
-      "tag": "AI Chips",
-      "desc": "LPU inference chips delivering industry-leading token speed",
-      "url": "https://groq.com",
-      "initials": "G",
-      "logo": "https://www.google.com/s2/favicons?domain=groq.com&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "Groq's founder says his 'terrible' leadership cost his company 3 to 4 years - Business Insider Africa",
-        "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOcGVtaXZmNFNRdklGRTAtX1pILUhNZEZMNDVOLTRnOFkzeTBKYXlJcEN1S0dyMUVLcWJqQ3g3MDZoUU8weU9STkhyeHlOR0s1X0xKNkdmZUx0Z3R2NFdnbmpPN2M2ZkNULTY4QnZQVFNxdVUzeXlNeGRxeDU3MXFselZmZ1JUQVlXYXE5RWtzMnhOdVgxb3FRdHRMX0ZmcWxURHY4ZTAzY1NMVkFxWGhBMFJMSHZCcUI5ekNiVmlfVTY?oc=5",
-        "pubDate": "Mon, 06 Jul 2026 04:44:56 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "Perplexity",
-      "tag": "AI Search",
-      "desc": "Answer engine combining web search with AI-generated summaries",
-      "url": "https://perplexity.ai",
-      "initials": "P",
-      "logo": "https://www.google.com/s2/favicons?domain=perplexity.ai&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "Perplexity AI CEO Aravind Srinivas says Bill Gates ‘tricked’ America into desk jobs: ‘It wasn’t like the - The Times of India",
-        "link": "https://news.google.com/rss/articles/CBMirAJBVV95cUxQaENBZHVKNmVaa05JTWk1VmVqM0I0MjhfdWJoSkgtUS04WVViUEZBUGdoeUdyR3VDZVZCYk9NTXRaamRuRWhVWTBUNzRNb1RxWTJWNFdqOFhqa1J0NFZaY0FyNWJlcl94cnd2RWgtNXVRcE4zYXBMLW9KSnBIX3RWYWlQQzcxN3BwOWRKZ1RlME1KM2VjQW4wczhjcVA2Sms0MXVPVEgyOXlLTlpZakU2dGVLU2tOS3FhNG1tbjN3NUE2UzJHc2I5ZF9sTk1Lck40RnE4QklEdHJnbTVFYWpPNl9LTk4zajZPa3RIUEVYdUR0RGlKWnJQaFA2T3NoN20yR1JxaHZLNzFIV2JTOXJ2bWQxLUZkT1pWSlMzMi1oYmJmMkdhTk4zR3VlVDXSAbICQVVfeXFMTk1YYzRBbVdkU2FPWUsxdEczT1kwNGxYY2lPdjJKd01iTlJORUJud25za3NWSkRESndWOWpJRzlZWTZqNnZ6LVlLWDFaRjlzNWozcWhIU1o3Q3lnVWxVN3ZjNnFTQ3BXQmtLWnh4Wnd4Y2JMcml3V1Y4czAwM1Rfd2FoZERxYmF5LUtHUDJYYml6eDE3cWxqU1BPcWZkN3lsY21Wem9oTHA5UzM3VGc2eHRYZEl1QXh2MEdwaEFXYWRLUnlmQVdqbjVOY2ZnaUQyc05aN3hZYzh2Z0NIZTdxcGdMLUJORXV6dkRhYVZiM3FKS0Z3Vkh1ZFJZMFI4bEd1SE9VM3FNQkNWcnd3NmhmTnlaRVJTVDhvWUo3MVBDMFRGNDJnQ25yZGxabElNUzdQYmRR?oc=5",
-        "pubDate": "Mon, 06 Jul 2026 04:39:00 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "OpenAI",
+      "name": "Mistral AI",
       "tag": "LLMs",
-      "desc": "Creator of ChatGPT and the GPT family of foundation models",
-      "url": "https://openai.com",
-      "initials": "OAI",
-      "logo": "https://www.google.com/s2/favicons?domain=openai.com&sz=128",
+      "desc": "Europe's leading open-weight AI foundation models",
+      "url": "https://mistral.ai",
+      "initials": "M",
+      "logo": "https://www.google.com/s2/favicons?domain=mistral.ai&sz=128",
       "ticker": null,
       "headline": {
-        "title": "Why OpenAI and Anthropic may struggle to float - Financial Times",
-        "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQTHdrUnpBd0c1Z0IxbkFrNUdkM1FJZlFhU3VnSVRCZVVLRU8zRjN2NURBdGxVYXdCQkc1UUthYTIzcHcyU0hkM21DOWpYbjVINUkyRWV6cDR5VGxteUVQazQ4TmhTME1nZHZyenJ6clVOVzBjMFJwS3VtWTR0alhweG9Pc1o?oc=5",
-        "pubDate": "Mon, 06 Jul 2026 04:01:04 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "Anthropic",
-      "tag": "LLMs",
-      "desc": "AI safety company behind the Claude family of models",
-      "url": "https://anthropic.com",
-      "initials": "AN",
-      "logo": "https://www.google.com/s2/favicons?domain=anthropic.com&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "Why OpenAI and Anthropic may struggle to float - Financial Times",
-        "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQTHdrUnpBd0c1Z0IxbkFrNUdkM1FJZlFhU3VnSVRCZVVLRU8zRjN2NURBdGxVYXdCQkc1UUthYTIzcHcyU0hkM21DOWpYbjVINUkyRWV6cDR5VGxteUVQazQ4TmhTME1nZHZyenJ6clVOVzBjMFJwS3VtWTR0alhweG9Pc1o?oc=5",
-        "pubDate": "Mon, 06 Jul 2026 04:01:04 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "Scale AI",
-      "tag": "AI Data",
-      "desc": "Data labelling and RLHF infrastructure powering frontier AI",
-      "url": "https://scale.com",
-      "initials": "S",
-      "logo": "https://www.google.com/s2/favicons?domain=scale.com&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "Singapore firms scale AI as governance lags behind - IT Brief Australia",
-        "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOMlhJM2dDc1BmazhoY1VfYXFOZ3JuTU41VjJQUThkelpJU3dNd2FJSTBRTWh1TXVkeXBweVY5eWpFMUxJZ3o5OER1eXJ2UWFqX3V2NlMzOGRvdDdEVmVSNjBPTmcwQ3FITi02WU9hVXozdE01RVdKSUJLU05DWXA3c3N5X0wxdw?oc=5",
-        "pubDate": "Sun, 05 Jul 2026 23:00:00 GMT"
+        "title": "Palantir’s Alex Karp and Mistral’s Arthur Mensch agree: AI lock-in is coming for enterprises - The New Stack",
+        "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE82eU9qS0ZHbTB4U2tqT2pxazYxakZYRlp5UTVjbmo0UE01aHRlVF9XY0tUb3hlVXJBbEtiaUFCbDhGM2VQUE1PVUE3ZXJJRlNsRzZvLVpfQjA?oc=5",
+        "pubDate": "Mon, 06 Jul 2026 17:19:57 GMT"
       },
       "sparkline": null
     }
