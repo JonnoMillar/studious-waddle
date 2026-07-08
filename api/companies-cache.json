@@ -1,6 +1,57 @@
 {
-  "refreshed_at": "2026-07-07T09:51:02.877Z",
+  "refreshed_at": "2026-07-08T08:36:33.365Z",
   "companies": [
+    {
+      "name": "Palantir",
+      "tag": "Data Analytics",
+      "desc": "Big-data analytics platforms for government and enterprise",
+      "url": "https://palantir.com",
+      "initials": "PL",
+      "logo": "https://www.google.com/s2/favicons?domain=palantir.com&sz=128",
+      "ticker": "PLTR",
+      "headline": {
+        "title": "The price of Palantir’s politics - Financial Times",
+        "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOWE1rSTlqQy1CZExHVHdJNnduOWxJX2twbU4zZjEwWG9xRXR4TVNvempJdTBoWlBIdGw3WXJMRzhna25yZ3N6ZkEyX21XOHYwanRUZWxTblFlNE5KSlZ6TXRTNmV4V2VhczVUZ0xLQUNha0JkbURUTjluWl9mNWVRUjd4RkY?oc=5",
+        "pubDate": "Wed, 08 Jul 2026 04:01:45 GMT"
+      },
+      "sparkline": [
+        136.47000122070312,
+        132.07000732421875,
+        130.2100067138672,
+        131.0800018310547,
+        127.98999786376953,
+        134.7100067138672,
+        133.25,
+        130.6300048828125,
+        128.47000122070312,
+        119.5,
+        116.69999694824219,
+        113.5,
+        107.2699966430664,
+        112.93000030517578,
+        115.69999694824219,
+        116.66999816894531,
+        125.7300033569336,
+        129.3000030517578,
+        132.5399932861328,
+        134.3699951171875
+      ]
+    },
+    {
+      "name": "Perplexity",
+      "tag": "AI Search",
+      "desc": "Answer engine combining web search with AI-generated summaries",
+      "url": "https://perplexity.ai",
+      "initials": "P",
+      "logo": "https://www.google.com/s2/favicons?domain=perplexity.ai&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "Perplexity is quietly building an AI coding tool to take on Cursor and Claude Code - Business Insider",
+        "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQRzZEZmpBWjZRU2ZqN3FpWnhEYUIwZDNwUG1ob2FMMWkxOTJ1Vkt5NUR0dFVxTmp2QU5HRlp4WkVYWkVqcjlTcjhJajJwNXQ1cGxyOC15eVFKSm5OelFsX0llV3FNWHZtSkFsVDBlbGNuTXNmTm1KMDBmQVZoUUxvM3ZoM1JlaXU2ak9uX0twc1gwYy1DVzdHSmJYRFNvTEVq?oc=5",
+        "pubDate": "Tue, 07 Jul 2026 23:22:00 GMT"
+      },
+      "sparkline": null
+    },
     {
       "name": "Cursor",
       "tag": "Code Editor",
@@ -10,54 +61,39 @@
       "logo": "https://www.google.com/s2/favicons?domain=cursor.com&sz=128",
       "ticker": null,
       "headline": {
-        "title": "Cursor AI Review: The AI That Codes Like It's Coming for Your Job? - MobileAppDaily",
-        "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9RRXd5N0djd1NhVGF3a1VqMjlRUk9yNVFWZjBCbGNHVVpyVHZueWNXT2d1ODh3TU5NTUdZaXRuYTFWaUxmeVhYYTRNenlhNTFGWVJ3cWtZNTROaE5jbkVkaDdn?oc=5",
-        "pubDate": "Tue, 07 Jul 2026 06:27:16 GMT"
+        "title": "SpaceXAI plans to launch new model with Cursor as soon as Wednesday, The Information reports - Reuters",
+        "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPM1lHOUltRDNpQXJOMG1XZjhhUjZidXBpZXBOODZQZ0FaMjg5bGFIdE5WSGJVdU5oZlZYZHVtaS1obEQ2RkpENFVtbkROamw2azRCVFdHVHJZQ3lsSFZLM01aQThHY09LWDlMbEtxMFdWaFRNdXhEeE84cW9CRGtLNVA1czFuRGE5aWFQbGExU0dMNkNaN2dwQURVQ3huT0JLM2g0TWN5RzA4VHY3Y2tHNUExbEhDZzY1OUdZN2NOeXhfMTVHY1l0QlZza1o2QVJUNGI4?oc=5",
+        "pubDate": "Tue, 07 Jul 2026 22:06:31 GMT"
       },
       "sparkline": null
     },
     {
-      "name": "Figure AI",
-      "tag": "Robotics",
-      "desc": "Humanoid robots designed for industrial and commercial work",
-      "url": "https://figure.ai",
-      "initials": "FA",
-      "logo": "https://www.google.com/s2/favicons?domain=figure.ai&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "BMW Group deploys Figure 03 humanoid after tests with previous version - Moomoo",
-        "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNZkl2SVFTQXE1ZHdSdkNvSV9QU2J3R1Q4LTlEYVkzV2hEQmZ0V1R5c0N6WWk2QTdXQVdGVHdYalVSS2JNM2Z1cVBMRlotU3R0LWZYVEVWdGl4bWNtVktuUTE3SmszNHduWm1nek05eWdBbXZuN0FDMWI3VGFlZ0pEcGI3MWZGcE1UcExwNU5fZ0NtMzRHaGdBSTFKczdCbkZHdE5OOUJsd3Z2dFNvWnhjaFFqOUlmalE?oc=5",
-        "pubDate": "Tue, 07 Jul 2026 00:59:40 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "Groq",
-      "tag": "AI Chips",
-      "desc": "LPU inference chips delivering industry-leading token speed",
-      "url": "https://groq.com",
-      "initials": "G",
-      "logo": "https://www.google.com/s2/favicons?domain=groq.com&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "Groq Founder Jonathan Ross Says 'I Was a Terrible Leader,' Admits Mistakes Cost Years - Yahoo Finance",
-        "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPYlkwQUtPS0FGYy1QSEhXZ3ZKU2dmMC0xeTVfQ3pfS08tSi1JYlZLSjJKdjVpMV9YQ3RlRV9SaUNlSjFZMDBJUy1GTVBNVE9fS3F4MlZGM0IteEg4aURudjFkcUE1bmt2YWg3QTdlWlhXMXVqd2k2cENfUGZVV2ljanVXZVdmM195S3RZVVY0TTlLM3V1QzdQU05tZw?oc=5",
-        "pubDate": "Mon, 06 Jul 2026 22:31:10 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "xAI",
+      "name": "OpenAI",
       "tag": "LLMs",
-      "desc": "Elon Musk's AI company, developer of the Grok models",
-      "url": "https://x.ai",
-      "initials": "X",
-      "logo": "https://www.google.com/s2/favicons?domain=x.ai&sz=128",
+      "desc": "Creator of ChatGPT and the GPT family of foundation models",
+      "url": "https://openai.com",
+      "initials": "OAI",
+      "logo": "https://www.google.com/s2/favicons?domain=openai.com&sz=128",
       "ticker": null,
       "headline": {
-        "title": "XAI makes its rebrand to SpaceXAI complete with a new logo - Business Insider",
-        "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPcmt3bDZLNTdaNmpqRnZpbkxHTml3dVBwd1RSOGtLblJvNjQ3Z1lIeW1yYldIZDhVeHpkcGE5b0dhNkhtSEdwMHhyUTJYRFhYbnNlay00dXBaeXFyR3lPMHFpYVNQVUFUallIN3NUMTZRdVE3LWJ2TFhSRlB3NkVSRzJ0SDFnb1gtb3F0Yw?oc=5",
-        "pubDate": "Mon, 06 Jul 2026 21:50:00 GMT"
+        "title": "OpenAI’s Chief Futurist Is Leaving the Company - WIRED",
+        "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQWTkxeF8tdmdaMFhaSjhMemJ5eE9UdEotZ3JtNl9FYXJnQTdVaEpjbnNhaTBtNXAzQjZybW8tcEw2WWEyNlpNR1NvdG4wcXJsTDk1dU1WM3JfOUZ3OHBXbEJ3RWV2aFlmS1drUXlfZnNESDhURG9UblNCOEJIMlBET1VHY2kwbFBLblFYSXZWeTA?oc=5",
+        "pubDate": "Tue, 07 Jul 2026 21:30:00 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "Waymo",
+      "tag": "Autonomy",
+      "desc": "The most miles driven autonomously of any robotaxi service",
+      "url": "https://waymo.com",
+      "initials": "W",
+      "logo": "https://www.google.com/s2/favicons?domain=waymo.com&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "Waymo reports teen riders for bad behavior and delivers them to the police - Los Angeles Times",
+        "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQT01ZVGZiZmkzb1BvRjdMMGZXa1pVa2ZYXzc3Wmo0NVljd3Y3TVl0dEdoSWp2d212TDNtRjR1TUFxLXR5bnJBWVdyY2xXREhqaFJpQl9XMWRLM0tsZUJIVmZ0d3hZSTZXRTBmcWZzXzllTm1pMDVoV3NlcEFGSlhHMHM4LUFuN1B6QWxOb0ZadW4wY1Y0Szhoc0xoOXl5ZDU1SDFKOGYxLUxlam9BQ1psb1pmWTRpc2s?oc=5",
+        "pubDate": "Tue, 07 Jul 2026 20:13:19 GMT"
       },
       "sparkline": null
     },
@@ -70,9 +106,9 @@
       "logo": "https://www.google.com/s2/favicons?domain=anthropic.com&sz=128",
       "ticker": null,
       "headline": {
-        "title": "China's Alibaba bans Anthropic AI for employees after 'distillation attack' accusation - CNBC",
-        "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE53Ykl5M1J5SW5wclpRaERtUUllclU0clBCaTlPYVJ5WWVGQkpIUTRYaXJJcS1XcmVYa2lVUkZhQnpWQ0NvY3h1alBReENVT1RZa2tJMWQ3SHdMU1F2cVJuWjM0bktmZElSbGE4WVk5VWd2VnRaa2FpRm5PM2cySU3SAYQBQVVfeXFMUC13eFAwV0ZDbm02SURnMjhrd3JvUEUzeHcxdEFkNFQzbFZwUnkyMDU0MnhqYzRzaHpLZjR3MHRSQ2VycnRuaXRVd3YyNzE5UUxMN2NKQU1DamFKYV9qLVNsN0NpS1VabzVnQjluZ05odnViTUZFM2txRUpkZHhRS3hGYUhs?oc=5",
-        "pubDate": "Mon, 06 Jul 2026 20:49:25 GMT"
+        "title": "Why the rise of open source AI isn’t hurting Anthropic … yet - TechCrunch",
+        "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOZUtFcjdaQ2poUmNMajdmWVktWmJ3R0NkSzBXUHlNeHVmVWpUSjRRZFVZdUl5a2MxNTNqM19NYlFWWUplUVl4N19lVVVjUnd2aFpubi1pZkpUcHNNQjg5NmprTGxnZW5iUE54emw1czNBLXQ3dWdTSU51bVhHVHVXbDNqUU1tb3VuLWNxNURkdnprQ0JKQnlR?oc=5",
+        "pubDate": "Tue, 07 Jul 2026 20:04:32 GMT"
       },
       "sparkline": null
     },
@@ -85,9 +121,9 @@
       "logo": "https://www.google.com/s2/favicons?domain=crowdstrike.com&sz=128",
       "ticker": "CRWD",
       "headline": {
-        "title": "Why is CrowdStrike stock up today? - Traders Union",
-        "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOVlNmeWRFMlo1c2I5VnVBWHltV0JhakJCazlab0xqNFVuX0FnbWVPZUZjWWN1RDZNRHl5RXUybU9qWXM4OWVqcFFZcWN6d0p4bzJlOXdKNDNyX1ZRMVpGbHdnNFhuU1NOVjE1UTJ4ZU9qQXlCRnhSVlR6UG01UVNYc2s5SThRbmRLVTJCNlpqbTBRRnNLRFlHejJ0Z3E0UkNQNkE?oc=5",
-        "pubDate": "Mon, 06 Jul 2026 20:00:29 GMT"
+        "title": "CrowdStrike (CRWD) Sees 5x AIDR Demand As Identity Push Broadens Its Platform - Yahoo Finance",
+        "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPSVJoLTVWcFJXNDl4WlBwa193d0E0dW9pR3RjVHFEc0ZRMmdudDdMbk9fNllQV1FMTU5Da0NTdEs5azY3OFZua3RmQ1ltMDZxcTExODVxal9Sd2lQSnBjelNmYXhvRTRBYThqS1ZxNFNPYmI0TlJVMmFiVzJfNXlDeFFWV0YtcXctX2NzNGkzY2pFdzEwY1laZEh3?oc=5",
+        "pubDate": "Tue, 07 Jul 2026 16:15:28 GMT"
       },
       "sparkline": [
         164.69749450683594,
@@ -108,36 +144,22 @@
         190.78500366210938,
         193.18499755859375,
         193.97999572753906,
-        199.3800048828125
+        199.3800048828125,
+        194.6199951171875
       ]
     },
     {
-      "name": "Commonwealth Fusion",
-      "tag": "Energy",
-      "desc": "Next-generation tokamak fusion for clean energy at scale",
-      "url": "https://cfs.energy",
-      "initials": "CFS",
-      "logo": "https://www.google.com/s2/favicons?domain=cfs.energy&sz=128",
+      "name": "Neuralink",
+      "tag": "Brain-Computer",
+      "desc": "Implantable neural interfaces for restoring and augmenting human capability",
+      "url": "https://neuralink.com",
+      "initials": "NL",
+      "logo": "https://www.google.com/s2/favicons?domain=neuralink.com&sz=128",
       "ticker": null,
       "headline": {
-        "title": "Commonwealth Fusion Systems joins UKAEA’s LIBRTI program - American Nuclear Society -- ANS",
-        "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPSnJKT2lZZXl4elIwOXdhRkVmRDdKT1owT2RsQ2l3eW9zSy1SS3paZklNUWxQdk9FNnpqQzl5RG5sYWNzZ0FVdkhnb3ZzNHVrNGRYSTRDMUR4bEdRdUVNUThPS3Z6RURWRzdoTVJJbHZlSlpJcXhtQksyWmY2TkdLbUJBbDg1Um1XREdtclZDeEVwZG1OVXdLbjdB?oc=5",
-        "pubDate": "Mon, 06 Jul 2026 17:59:01 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "Mistral AI",
-      "tag": "LLMs",
-      "desc": "Europe's leading open-weight AI foundation models",
-      "url": "https://mistral.ai",
-      "initials": "M",
-      "logo": "https://www.google.com/s2/favicons?domain=mistral.ai&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "Palantir’s Alex Karp and Mistral’s Arthur Mensch agree: AI lock-in is coming for enterprises - The New Stack",
-        "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE82eU9qS0ZHbTB4U2tqT2pxazYxakZYRlp5UTVjbmo0UE01aHRlVF9XY0tUb3hlVXJBbEtiaUFCbDhGM2VQUE1PVUE3ZXJJRlNsRzZvLVpfQjA?oc=5",
-        "pubDate": "Mon, 06 Jul 2026 17:19:57 GMT"
+        "title": "Neuralink tests brain implant approach that leaves protective layer intact - ALS News Today",
+        "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPdEpXazdLcjN1ZTY4TUVLWUtnSkNvUk9TcnJWcUJHLTc0NG9MSEo3REN2VXFZZS12VGIyVGhHZ1hoVnBiUkFPSGFfMUh6eVpEbHpzeklKcXFXZEpKQTNhcllBTXlxMGpEUUNsNVhudDJjVURScDNxcjg3MVlRSE44MkVvd3RVSDBHbHM3Q3hVdHlHWF9EekE?oc=5",
+        "pubDate": "Tue, 07 Jul 2026 15:21:08 GMT"
       },
       "sparkline": null
     }
