@@ -1,5 +1,5 @@
 {
-  "refreshed_at": "2026-07-10T09:44:06.523Z",
+  "refreshed_at": "2026-07-11T08:03:25.174Z",
   "companies": [
     {
       "name": "Mistral AI",
@@ -12,58 +12,7 @@
       "headline": {
         "title": "Robostral Navigate: single-camera AI navigation - mistral.ai",
         "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBuODdfOFZITFJmb0FyNW00TkZEdUtFYzVxWnV5bWxCY1dRc3hnVjdFUVpqNHRnWDBGVUMzYXViZ1ViVEVCR216YzNOZ0lDbXZHMGNnUW93?oc=5",
-        "pubDate": "Fri, 10 Jul 2026 08:36:31 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "Palantir",
-      "tag": "Data Analytics",
-      "desc": "Big-data analytics platforms for government and enterprise",
-      "url": "https://palantir.com",
-      "initials": "PL",
-      "logo": "https://www.google.com/s2/favicons?domain=palantir.com&sz=128",
-      "ticker": "PLTR",
-      "headline": {
-        "title": "Pro-Palantir data has litany of errors, English hospitals admit - Financial Times",
-        "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQUUkzQzhqTjlRSXZzVUFkRmp5dUJ1bnFCVkE1SGNwRGNnbFpYbUdhMEs2SHNJb2VWMFE2eldOVEN4RXRSaWZ0ZnZBektJT3NUM2VXMzdDV1haRW5yOWl0LUxoQk9CWWg0c2stYXUxQ2RNRXg2aVpYVURXVVJyV2dueTQzdy0?oc=5",
-        "pubDate": "Fri, 10 Jul 2026 04:00:26 GMT"
-      },
-      "sparkline": [
-        130.2100067138672,
-        131.0800018310547,
-        127.98999786376953,
-        134.7100067138672,
-        133.25,
-        130.6300048828125,
-        128.47000122070312,
-        119.5,
-        116.69999694824219,
-        113.5,
-        107.2699966430664,
-        112.93000030517578,
-        115.69999694824219,
-        116.66999816894531,
-        125.7300033569336,
-        129.3000030517578,
-        132.5399932861328,
-        134.3699951171875,
-        132.22000122070312,
-        129.0399932861328
-      ]
-    },
-    {
-      "name": "Physical Intelligence",
-      "tag": "Embodied AI",
-      "desc": "Training AI systems to manipulate physical objects",
-      "url": "https://physicalintelligence.company",
-      "initials": "PI",
-      "logo": "https://www.google.com/s2/favicons?domain=physicalintelligence.company&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "Automation Was Step One. Physical Intelligence Changes Everything - Wipro",
-        "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNYVh0ZEFMSklXVkRFbGxMV09lRDcxR0NmWmtnOXhqSG02bVBIdkt2MHZhS2M0aHI4MG5EOThXSnFKWUhpbTVfSlRVQkJ0Um12RmZWd21DWU5jd3h1M0RBQUFYckJ5UkhQd24wc3dHTlJKMm9SUFlWWnMyRW9nQ2pjWlNnR2NEMnp2eWF5cTRPZDZqQ3dQSXBvQVExRXp2aE5TZThWWG1lMmRmSjU2?oc=5",
-        "pubDate": "Thu, 09 Jul 2026 15:17:42 GMT"
+        "pubDate": "Sat, 11 Jul 2026 02:49:07 GMT"
       },
       "sparkline": null
     },
@@ -76,9 +25,75 @@
       "logo": "https://www.google.com/s2/favicons?domain=openai.com&sz=128",
       "ticker": null,
       "headline": {
-        "title": "Meta jumps into AI coding market in effort to chase Anthropic and OpenAI - CNBC",
-        "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOa1dxU1JNM2gybUFmVWR1STVhX2VWVGVGWGhxMEdXX0RBR243dGIzaDBqR1NCS2VSX2Z6ZVFXa181QUZSeHB0SDNhM25wYzNzYk1iY1NObWs3bE5iNlZKdC1jMmFhaklWNHpLQlN6UU5UT01HalhfY0hRRWFzbVk1ZDVSR1V1X1VuMTBsMFlMb0c0eTdVcnU0bDQ1aFE3NTFw0gGmAUFVX3lxTE1nWm5QWUJiRDFLYkZVcEdjUjZJcHlyRXItanp5YUhRSkRIMjVIRFd4YW5uYmlkWjNaLW4yY3FjanBOV2ZlUDY0TjFBZkVaeXh2NzFSdzVoYUZGQlpGaGUzMWVYNHktMkVrRVJWakdxbExxUjRyMVd2VDh0bF9SeG11VTNHRXIwdWFzdmlaNGZ4TzB1RXYteTI0aWFVcmJRQkRMNFpSNEE?oc=5",
-        "pubDate": "Thu, 09 Jul 2026 14:00:01 GMT"
+        "title": "Apple sues OpenAI, its employees claiming theft of trade secrets - BBC",
+        "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE4tV0pkQUd6ZWxHNE10OEJMcXluMXRoLUtBejhsdlppYkxoUmg2WmVRdk9xc0w0LWtrdnlxMVFSZjN0eFJ3UkY1T2hwbmh1N0V1VDk4S0djUE5lbUZz?oc=5",
+        "pubDate": "Fri, 10 Jul 2026 22:44:31 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "Rocket Lab",
+      "tag": "Space",
+      "desc": "Small-satellite launch provider and space systems manufacturer",
+      "url": "https://rocketlabusa.com",
+      "initials": "RL",
+      "logo": "https://www.google.com/s2/favicons?domain=rocketlabusa.com&sz=128",
+      "ticker": "RKLB",
+      "headline": {
+        "title": "Why Morgan Stanley thinks Rocket Lab is becoming ‘Player 2’ - thestreet.com",
+        "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOdGhtNDRaM1p0eVF6Ql91OFhRX08zYTRONXhOaEhyVlNJdXcxdnJBVUxYc19kZkxuRTNxLWlpUVdmODdCN2hucFRUVE5HZ1dOMy1XNHBOVWkyaHRTQkdJdUxwbjlGTzR4c1d1ZG80UENsRWRFTTJNbWRNZDZMaUU0U0RSVEZuU2NsLWljUkFmaVRwN0hscjB4ZzB3?oc=5",
+        "pubDate": "Fri, 10 Jul 2026 13:03:00 GMT"
+      },
+      "sparkline": [
+        114.77999877929688,
+        102.38999938964844,
+        109.25,
+        104.62999725341797,
+        107.9800033569336,
+        107.23999786376953,
+        100.29000091552734,
+        95.12000274658203,
+        85.41000366210938,
+        80.69000244140625,
+        84.54000091552734,
+        98.01000213623047,
+        101.6500015258789,
+        100.06999969482422,
+        100.45999908447266,
+        93.08999633789062,
+        83.41000366210938,
+        83.3499984741211,
+        82.55000305175781,
+        81.04000091552734
+      ]
+    },
+    {
+      "name": "Scale AI",
+      "tag": "AI Data",
+      "desc": "Data labelling and RLHF infrastructure powering frontier AI",
+      "url": "https://scale.com",
+      "initials": "S",
+      "logo": "https://www.google.com/s2/favicons?domain=scale.com&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "Telcos scale AI infrastructure investments as new monetization models emerge - Omdia",
+        "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPUml2cDhUdjNuOU9hVFhBRWJQSUxHRDBZVnV0VmxfWE56RWFZZ0JmSkV3Z3llc2JUeEVvZE5HUjMxWlZPU0pFZ0JrZFROeTBGbi16WW9wTmw2dDFHS0w1Qm0zaHpQSVhVVmtSc3VoYnpZaGNvYTJ6NmU5QWdFeUxieEZOdHFDUFBScmg2Ymplb2NkZGl1TUxEa0ZySDd3ZnRjMDZrcm45OEJJZFJZTjVuSk1fdnAwS3MzUjVNdzNfWUY?oc=5",
+        "pubDate": "Fri, 10 Jul 2026 09:57:32 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "Waymo",
+      "tag": "Autonomy",
+      "desc": "The most miles driven autonomously of any robotaxi service",
+      "url": "https://waymo.com",
+      "initials": "W",
+      "logo": "https://www.google.com/s2/favicons?domain=waymo.com&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "Waymo called the cops on teen riders, raising privacy concerns - NPR",
+        "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOdFlpRzJVeUFWYmZYNVhMbS1xUkFSWlJYM2RtVTdnVmY2RUtPOURWRGVCdUpKZVlyN29KYUZUQ2xlVGFIZGRmanNrZ0hjdnRONnBVV2FQMl80TTg0bGRURGJsZjBycWZ1alo2Yko5ZTctS1N1cU9FTDFrV2g2WDk2dnJQZi1WRk11YldpcHB0VVJpZkZQVngxbmNOWlA?oc=5",
+        "pubDate": "Fri, 10 Jul 2026 09:00:00 GMT"
       },
       "sparkline": null
     },
@@ -91,56 +106,62 @@
       "logo": "https://www.google.com/s2/favicons?domain=anthropic.com&sz=128",
       "ticker": null,
       "headline": {
-        "title": "Meta jumps into AI coding market in effort to chase Anthropic and OpenAI - CNBC",
-        "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOa1dxU1JNM2gybUFmVWR1STVhX2VWVGVGWGhxMEdXX0RBR243dGIzaDBqR1NCS2VSX2Z6ZVFXa181QUZSeHB0SDNhM25wYzNzYk1iY1NObWs3bE5iNlZKdC1jMmFhaklWNHpLQlN6UU5UT01HalhfY0hRRWFzbVk1ZDVSR1V1X1VuMTBsMFlMb0c0eTdVcnU0bDQ1aFE3NTFw0gGmAUFVX3lxTE1nWm5QWUJiRDFLYkZVcEdjUjZJcHlyRXItanp5YUhRSkRIMjVIRFd4YW5uYmlkWjNaLW4yY3FjanBOV2ZlUDY0TjFBZkVaeXh2NzFSdzVoYUZGQlpGaGUzMWVYNHktMkVrRVJWakdxbExxUjRyMVd2VDh0bF9SeG11VTNHRXIwdWFzdmlaNGZ4TzB1RXYteTI0aWFVcmJRQkRMNFpSNEE?oc=5",
-        "pubDate": "Thu, 09 Jul 2026 14:00:01 GMT"
+        "title": "Anthropic found a hidden space where Claude puzzles over concepts - MIT Technology Review",
+        "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPTVBLbm9aTGI4dlBYeGpyT2N4c3Zja214TUt2QllUQmswUzJTeXR4aWlsU25ibnJCaVlaZVFuMUtBbjBSQ0JEcjZfMnA1UE94cDBBdlBfbnZFY3RLR1Y0MjJrbVJNNjB6OUwyUTJRWXlYT1gtYTI2eGRDaDd1WThvZFYxaERDOEVYeS1UbU5iS0VjSmhUTExhajBDelFQSjUwdjFJd2ZoOEhkRmRBazZaYnRidzRlLUFEOHfSAb8BQVVfeXFMUFhtUFdVa1lqQk8zdFU3NE5QLTdrY0lFdERFRnRGNmtWMjNSdFhNSTF0M29qQnUweWc0Qm9HVEh3aWtGZUNuLVZHN3FmckxCZDJMYmY2ZC1OR0N0R1ZMcG5RU2tFdFlXYms3aEVyTjN2emh2YUVGUlRQRjh1MzBiMi1SUjlEOGVBUTlhaENnbS1lZXBHS3FvMS15YnFtdFZBa2xjQ3RqeWNCUHpOandrQnI1RjZSd2ZzN0RLXzZodm8?oc=5",
+        "pubDate": "Thu, 09 Jul 2026 20:22:28 GMT"
       },
       "sparkline": null
     },
     {
-      "name": "xAI",
-      "tag": "LLMs",
-      "desc": "Elon Musk's AI company, developer of the Grok models",
-      "url": "https://x.ai",
-      "initials": "X",
-      "logo": "https://www.google.com/s2/favicons?domain=x.ai&sz=128",
+      "name": "Anduril",
+      "tag": "Defense AI",
+      "desc": "Autonomous defense systems and AI-enabled military hardware",
+      "url": "https://anduril.com",
+      "initials": "A",
+      "logo": "https://www.google.com/s2/favicons?domain=anduril.com&sz=128",
       "ticker": null,
       "headline": {
-        "title": "Lawsuit: Man used Grok to make 7K sex images of stepdaughter, then shot himself - Ars Technica",
-        "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPN2pOeEZ1SjJSZDZVUDFJbG9yNzhRcnFrLUZHVDkyXzZYWHJpd01zUFVNRzJCa01kWkhIOW9fNnFVWjFnbUdkWmNJR2hFdHlHaEFQZk9OVDJJTlhoal90NlV4N0lmQ2Q4Q0JwZm5KT1JtVWFISUtHbUxaa291MVFnN0dGVmVGQ1NNRUk2d3hvMU9BUHQ2OEpEX25SNmtZZ09RMjQ1anZ3TC1tZFZvc05SZHpTQlpCRi14WnJHODdCd05RLTRS?oc=5",
-        "pubDate": "Wed, 08 Jul 2026 19:56:37 GMT"
+        "title": "Anduril CEO says it's bad to IPO in ‘middle of a hype cycle’ - CNBC",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1WLTcyMVl6XzVZNHQ0OFROLXVKSjVUcXBHQW45aENENnpXRmRDZVlmTGMyeFVNa3liZmlCMVdjMVZ3S2tXckdERUNDVktEZU96NmRnSFVTSXNELThqR1NPN2pOZWlKcnVWQ01TWdIBckFVX3lxTE00bjROWl9aVXRMc29LOVlyQ05rM2NBd1JEb256RGVNaXhqUUNLNlZVYmdrSktqVjBTQVl5T1JLNVJxTkQ3RUFPRjJldnhCcE55MWg0bVMzbHRpNEh5aFd2WjZIcU45WmFwUE52UzlXb084dw?oc=5",
+        "pubDate": "Thu, 09 Jul 2026 18:52:42 GMT"
       },
       "sparkline": null
     },
     {
-      "name": "Scale AI",
-      "tag": "AI Data",
-      "desc": "Data labelling and RLHF infrastructure powering frontier AI",
-      "url": "https://scale.com",
-      "initials": "S",
-      "logo": "https://www.google.com/s2/favicons?domain=scale.com&sz=128",
-      "ticker": null,
+      "name": "CrowdStrike",
+      "tag": "Cybersecurity",
+      "desc": "Cloud-native endpoint protection and threat intelligence",
+      "url": "https://crowdstrike.com",
+      "initials": "CS",
+      "logo": "https://www.google.com/s2/favicons?domain=crowdstrike.com&sz=128",
+      "ticker": "CRWD",
       "headline": {
-        "title": "Cerebras Stock: Wafer-Scale AI Offers Big Potential, Big Risks? - Yahoo Finance",
-        "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQMThlWFlfNWRMQVp1TVd2M3lNUkJGd0FvbkhCWktXMVRFaEpaZ1ZYTHhVWDJiR0VlcjRwdUhycXVhNE1acXNaLW8ybm9SczdTX2dGLWZ4NEpLcG1uRGR4dF95OV9sYVluQ3VFcVUyQnpadFc3c1lubzBUQjhobFlMS3hhWGFEaFlwaWtpOVQtM2RTLXNweUFxTQ?oc=5",
-        "pubDate": "Wed, 08 Jul 2026 18:44:00 GMT"
+        "title": "Morgan Stanley Keeps Overweight Rating on CrowdStrike (CRWD) - Yahoo Finance",
+        "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQU3pfTWZ3bmx4OWdVbkluMjJCbElwdjNMN3Y5bmtBM1F4QlNjTS1ZY0o1cXpLTmUxempFZWVWS0tZLUhPcVBPOWdQNkNkRWlJUEliRmJZc3Q3UmdIWm1qb0ZrV0JnY25qMmpCZ2toakdkbW5OREpiTVRlX3N4dFlpWUZwV25CRVFqV3VsR2RmYVdmQnh1WTNUU2ZNMU9LNTZoT1lKZGxn?oc=5",
+        "pubDate": "Thu, 09 Jul 2026 16:44:25 GMT"
       },
-      "sparkline": null
-    },
-    {
-      "name": "Cursor",
-      "tag": "Code Editor",
-      "desc": "AI-native code editor that pairs with Claude and GPT-4",
-      "url": "https://cursor.com",
-      "initials": "C",
-      "logo": "https://www.google.com/s2/favicons?domain=cursor.com&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "SpaceXAI, Cursor Unveil Grok AI Model for Legal, Finance Tasks - Bloomberg.com",
-        "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOQ01IWUk2UlM5bkZXSFRER1c4X0huc0MyOFF3UkVSRkppTTViUVRyWlVzSlQ3TzlhU1dQUkc2aDBWSnNLdHVPSVA4dnpjYklNc2RndklLeXdIb3pkUkpncTQxZkpxQ0pxYlI3UDZqM0JNak1zUmpNZlVfV0lRSWN2SkZIQTVOQ2pjTnRVMTl1WGZLZTRfdDNIWlZheDE2RjdSc2UzSl9TWlVKTG5jVTBxRg?oc=5",
-        "pubDate": "Wed, 08 Jul 2026 18:12:56 GMT"
-      },
-      "sparkline": null
+      "sparkline": [
+        172.88250732421875,
+        170.6999969482422,
+        173.2274932861328,
+        169.87249755859375,
+        170.74000549316406,
+        171.21499633789062,
+        168.86000061035156,
+        170.22999572753906,
+        168.2550048828125,
+        169.66250610351562,
+        175.2725067138672,
+        185.7274932861328,
+        190.78500366210938,
+        193.18499755859375,
+        193.97999572753906,
+        199.3800048828125,
+        194.6199951171875,
+        191.1199951171875,
+        198.39999389648438,
+        187.17999267578125
+      ]
     }
   ]
 }
