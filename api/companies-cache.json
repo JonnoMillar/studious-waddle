@@ -1,18 +1,33 @@
 {
-  "refreshed_at": "2026-07-16T08:21:33.701Z",
+  "refreshed_at": "2026-07-17T08:17:54.713Z",
   "companies": [
     {
-      "name": "Scale AI",
-      "tag": "AI Data",
-      "desc": "Data labelling and RLHF infrastructure powering frontier AI",
-      "url": "https://scale.com",
-      "initials": "S",
-      "logo": "https://www.google.com/s2/favicons?domain=scale.com&sz=128",
+      "name": "xAI",
+      "tag": "LLMs",
+      "desc": "Elon Musk's AI company, developer of the Grok models",
+      "url": "https://x.ai",
+      "initials": "X",
+      "logo": "https://www.google.com/s2/favicons?domain=x.ai&sz=128",
       "ticker": null,
       "headline": {
-        "title": "London-based Applied Computing raises €17.4 million to scale AI that works for the energy industry - EU-Startups",
-        "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPSnRxUnFFVUJGUHRoZ19jeHE5NlBrVTYwOW04NHhTYkdfS1VFM0J0d21aMkVPQmxINmhIQm1aMmNPZW1RWjJrRUQ1X0JUcDNrR3hydE9Fb2RJZVRSSTYwX0o3bW1yRDR6VmdZbmhyd0g1WEowd2VkcTAyWWoya193N0lNWjVMbDUzdXNoZjBlTUxIYlNQQnJEdzgzUG1OWmdlbEM1STAxeEtZT3V6YW5zSkFrWnU4S0Z2R2l0ZUxBTmRoQTJoUVBXaEVMWjlmUDBM?oc=5",
-        "pubDate": "Thu, 16 Jul 2026 07:00:46 GMT"
+        "title": "Musk’s xAI sues user who allegedly used Grok to create child sexual abuse material - The Guardian",
+        "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOZGFrSTl2NmFzX1FpbEJxUEFUTzVJT0dtcTlqWExNOTNyOXhKbXIzZlZ4N2JoZ0lYVkMtcF9QVWxRTFJpMGVQeHBYcEdlSDh6elNrRWtXX3pUVHBXTzBoemVlcDVQQjFLN01jNEFtUlc4WVRkaUNMRzdrOGozVmZnTHRnX1d1NFNENHJ3?oc=5",
+        "pubDate": "Thu, 16 Jul 2026 15:53:00 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "Mistral AI",
+      "tag": "LLMs",
+      "desc": "Europe's leading open-weight AI foundation models",
+      "url": "https://mistral.ai",
+      "initials": "M",
+      "logo": "https://www.google.com/s2/favicons?domain=mistral.ai&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "Exclusive: EQT’s €5bn Scaleup Fund in talks to lead Mistral round - Sifted",
+        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9EamV2Tk84b0ViUk1TRDYyR0FiOG8wQzNvSGpPbHZ4LWRVNl9OX1Z0Um5VbGV6X2xISHlwSEpZeThJbElmOEVOTkpWUVJXc200VXlPVjlRbFVIREM2OVhuQkYxdlE3RE0?oc=5",
+        "pubDate": "Thu, 16 Jul 2026 15:05:26 GMT"
       },
       "sparkline": null
     },
@@ -25,26 +40,62 @@
       "logo": "https://www.google.com/s2/favicons?domain=anthropic.com&sz=128",
       "ticker": null,
       "headline": {
-        "title": "Microsoft is reportedly training salespeople to talk down OpenAI and Anthropic - TechCrunch",
-        "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOWjdzTC1XUGdXQkxVckRTM2JKX1RoaFI3ekgwWmYzQllnQl8wTEtBX3BISU9yWTRIMGk5bWNOMm9KRGpDU0NxS3E1bjR4bkczcXFweHhRZlJpandqbEVBa3I3VFFZdVNINUVVUXZTMExUZm5XeXhsYW1ld3JtRFM2QUtTSHBZcnJZTnE5Q1NLXzAyZmpPNjJrT1NMSnhtOGgzLVEzQURqV1dvbzUybWowLURacw?oc=5",
-        "pubDate": "Wed, 15 Jul 2026 23:59:44 GMT"
+        "title": "Chinese AI start-up Moonshot launches model challenging Anthropic’s lead - Financial Times",
+        "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQWEJQT1JGSHNrRUxZWklhbkJmaklfbWJNWW9kaHpzSEwtQjZnb2tPTVhRLVUxcHNYbW91NFdyZzRteVBwNHdOTjFOcDFXcEtsLUloS2NValhlNENsYVpEWTYxYXhkb0t1cE81bUQ1SFRsRFYyV3ZVR3h3enhXOXBXV05pVXY?oc=5",
+        "pubDate": "Thu, 16 Jul 2026 09:51:11 GMT"
       },
       "sparkline": null
     },
     {
-      "name": "xAI",
-      "tag": "LLMs",
-      "desc": "Elon Musk's AI company, developer of the Grok models",
-      "url": "https://x.ai",
-      "initials": "X",
-      "logo": "https://www.google.com/s2/favicons?domain=x.ai&sz=128",
+      "name": "Scale AI",
+      "tag": "AI Data",
+      "desc": "Data labelling and RLHF infrastructure powering frontier AI",
+      "url": "https://scale.com",
+      "initials": "S",
+      "logo": "https://www.google.com/s2/favicons?domain=scale.com&sz=128",
       "ticker": null,
       "headline": {
-        "title": "xAI sues user for exploiting AI tool to sexualise minors - Al Jazeera",
-        "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNaDBzZnlYT2pHbWJxTkVmbnZkSldSOFVwdnZ5RUJvTmVyUVNlUjEtd3ExUzY0S3ZQVUhUaVdNZVV6bERUM0VSTUV2WnRJOEpvNWc2LVFiMFNaUVRaTjhuVGNHX1UtYnZBbXI0UmRMWVBfVlI3SndfUGpycWFfZ0kyWElfTWVyYmU4WUFjOFhPUWtDLU1DMmZKQXhBSGpuNFE4M0HSAacBQVVfeXFMT2ZfVmNRLW5HaFoyR1hDaVJQYnpybmRjN0h5NVVtdF93TmNlV1UzOXM0WGdfa3I3Y3NCTVJFUUNzNENPbl9LbU4zSURMMnpWZHJjOTBOemo2ZjNOZ2k5WFIyblVEVmlWQWhSN3RpVWVtU2J6cFQ1bkhPX3dCR09hQjhzWENUYzdwZFFYQjcyWkNkRmF1VWIzejRFRVMtUW1ZUmxkaHZEUkk?oc=5",
-        "pubDate": "Wed, 15 Jul 2026 21:37:32 GMT"
+        "title": "Applied Computing raises £14.8m to scale AI for energy operators - UKTN - UKTN",
+        "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQUmNHNDZBNVVOM2ZFYVRnWkdWbHFsbTcyV3dTa2VVMjhjbDN5MmpReHRCbG00c0RUWmZHMmk0WWdwMlljZWYzeHJXcEJBSVVLNXNvdlVjaTIzdU5uNm5wM3hFNUkyVkVxVklpV0VyWXpOekhrU1FzQmlOQUNIN1loTzRPWlNwZV9wcjRwWmpPRjFlNnptUC1KdndOMTJaaVBa?oc=5",
+        "pubDate": "Thu, 16 Jul 2026 09:00:21 GMT"
       },
       "sparkline": null
+    },
+    {
+      "name": "Palantir",
+      "tag": "Data Analytics",
+      "desc": "Big-data analytics platforms for government and enterprise",
+      "url": "https://palantir.com",
+      "initials": "PL",
+      "logo": "https://www.google.com/s2/favicons?domain=palantir.com&sz=128",
+      "ticker": "PLTR",
+      "headline": {
+        "title": "I investigated Palantir’s foothold in the British state – and what I found should worry us all | Peter Geoghegan - The Guardian",
+        "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPN0dSWDZxY2dHbjBMeEZsbnJUQWJJNkI2S2ltYThXaUhWdHRGU1llRUJqUWlIVmhnNTl1Vkw2bTZmY2Rmb2d2b2tMTllrXzVob3FycHp1NWQzYmhjLXoxX1psbkpZMUl4RWxYNGo5NG1HWE9EV2Vtb1laQ09OREVUN3phRXNHM05EMi16Xy1YRUVYbjJXUENjSVlia21iT2tEcXZod0h5bENIQ1VuSUxV?oc=5",
+        "pubDate": "Thu, 16 Jul 2026 08:54:00 GMT"
+      },
+      "sparkline": [
+        130.6300048828125,
+        128.47000122070312,
+        119.5,
+        116.69999694824219,
+        113.5,
+        107.2699966430664,
+        112.93000030517578,
+        115.69999694824219,
+        116.66999816894531,
+        125.7300033569336,
+        129.3000030517578,
+        132.5399932861328,
+        134.3699951171875,
+        132.22000122070312,
+        129.0399932861328,
+        126.79000091552734,
+        130.0399932861328,
+        133.72000122070312,
+        133.75999450683594,
+        134.44000244140625
+      ]
     },
     {
       "name": "Perplexity",
@@ -75,7 +126,6 @@
         "pubDate": "Wed, 15 Jul 2026 20:00:00 GMT"
       },
       "sparkline": [
-        104.62999725341797,
         107.9800033569336,
         107.23999786376953,
         100.29000091552734,
@@ -94,74 +144,24 @@
         81.04000091552734,
         76.7300033569336,
         78.80999755859375,
-        76.19999694824219
+        76.19999694824219,
+        67.3499984741211
       ]
     },
     {
-      "name": "OpenAI",
-      "tag": "LLMs",
-      "desc": "Creator of ChatGPT and the GPT family of foundation models",
-      "url": "https://openai.com",
-      "initials": "OAI",
-      "logo": "https://www.google.com/s2/favicons?domain=openai.com&sz=128",
+      "name": "Anduril",
+      "tag": "Defense AI",
+      "desc": "Autonomous defense systems and AI-enabled military hardware",
+      "url": "https://anduril.com",
+      "initials": "A",
+      "logo": "https://www.google.com/s2/favicons?domain=anduril.com&sz=128",
       "ticker": null,
       "headline": {
-        "title": "OpenAI’s first branded hardware is… a light-up keyboard? - Ars Technica",
-        "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNQ3MweXh5bXZUM05LZURRSWtoQlVjTGRmenlTVmJ6MDVHTGZwbFptTlYwU0g3Q0RYa3FZMHQ3MmdVOUdBTnVNV0ZfRTR3MVg0UTcxWU4wTTJsWG5nQzVxV1VNY1kxNlBYZVpCWWtNXy1nTGFURnZYRTlIRkxQNTlVQVEtanFTT2k0NExtclg3RDVYdWM?oc=5",
-        "pubDate": "Wed, 15 Jul 2026 16:00:33 GMT"
+        "title": "Anduril YFQ-44 Fires Live Air-to-Air Missile in Landmark CCA Test - Air &amp; Space Forces Magazine",
+        "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQWU5YaExSdHVqNVh4clJoNHpfQ3BGbk1IVklvcF9jTERLQXVMSC0tTGZfWHlIb0ZYMmpGTXpmZjE2anJoTnY3Q3VZbHVNaWtDekNDNUxpUWJLTE5Val8xbmdORThtb2ZLQ3hGSzRJSVFwQnJ5N1FsVU1xN1JORmNkR0tOZElxVlA0SENmbUlZcw?oc=5",
+        "pubDate": "Wed, 15 Jul 2026 18:30:20 GMT"
       },
       "sparkline": null
-    },
-    {
-      "name": "Commonwealth Fusion",
-      "tag": "Energy",
-      "desc": "Next-generation tokamak fusion for clean energy at scale",
-      "url": "https://cfs.energy",
-      "initials": "CFS",
-      "logo": "https://www.google.com/s2/favicons?domain=cfs.energy&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "6 Best Fusion Energy Stocks for 2026 and How to Invest - The Motley Fool",
-        "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNdDZ0TVctNU1yaXVpckVfZjBKbTBrZk1XWmJQVmZYbkhQNXZnZ0pocEtCZ0hkblhnbEl1R1ZmdWhpaG5DT0d3NjBBOG5aT0w4cS1fajFHN3JWaWZFVV9maDJlckQ3QnJ1OFdqS2Vqc3dFVUExU1pac1hzVVFBc0JVcmRMZzFYLTh3MFEtNUt5cVJldw?oc=5",
-        "pubDate": "Wed, 15 Jul 2026 14:20:00 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "Palantir",
-      "tag": "Data Analytics",
-      "desc": "Big-data analytics platforms for government and enterprise",
-      "url": "https://palantir.com",
-      "initials": "PL",
-      "logo": "https://www.google.com/s2/favicons?domain=palantir.com&sz=128",
-      "ticker": "PLTR",
-      "headline": {
-        "title": "I investigated Palantir’s foothold in the British state – and what I found should worry us all | Peter Geoghegan - The Guardian",
-        "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPN0dSWDZxY2dHbjBMeEZsbnJUQWJJNkI2S2ltYThXaUhWdHRGU1llRUJqUWlIVmhnNTl1Vkw2bTZmY2Rmb2d2b2tMTllrXzVob3FycHp1NWQzYmhjLXoxX1psbkpZMUl4RWxYNGo5NG1HWE9EV2Vtb1laQ09OREVUN3phRXNHM05EMi16Xy1YRUVYbjJXUENjSVlia21iT2tEcXZod0h5bENIQ1VuSUxV?oc=5",
-        "pubDate": "Wed, 15 Jul 2026 13:27:00 GMT"
-      },
-      "sparkline": [
-        133.25,
-        130.6300048828125,
-        128.47000122070312,
-        119.5,
-        116.69999694824219,
-        113.5,
-        107.2699966430664,
-        112.93000030517578,
-        115.69999694824219,
-        116.66999816894531,
-        125.7300033569336,
-        129.3000030517578,
-        132.5399932861328,
-        134.3699951171875,
-        132.22000122070312,
-        129.0399932861328,
-        126.79000091552734,
-        130.0399932861328,
-        133.72000122070312,
-        133.75999450683594
-      ]
     }
   ]
 }
