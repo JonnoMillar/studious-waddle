@@ -1,40 +1,40 @@
 {
-  "refreshed_at": "2026-07-18T07:59:39.077Z",
+  "refreshed_at": "2026-07-19T08:25:47.165Z",
   "companies": [
     {
-      "name": "Palantir",
-      "tag": "Data Analytics",
-      "desc": "Big-data analytics platforms for government and enterprise",
-      "url": "https://palantir.com",
-      "initials": "PL",
-      "logo": "https://www.google.com/s2/favicons?domain=palantir.com&sz=128",
-      "ticker": "PLTR",
+      "name": "Rocket Lab",
+      "tag": "Space",
+      "desc": "Small-satellite launch provider and space systems manufacturer",
+      "url": "https://rocketlabusa.com",
+      "initials": "RL",
+      "logo": "https://www.google.com/s2/favicons?domain=rocketlabusa.com&sz=128",
+      "ticker": "RKLB",
       "headline": {
-        "title": "ICE shared Medicaid data it wasn't supposed to have with Palantir - NPR",
-        "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5pSkMxaG9RUnMzODdCdnZ6eGI5WElSdm02X1NXRHVoVUhEbmVydWhBTWFTNXI5dXA4b2NmRWJqVzVpbWFTM3pReEtfSWtWTlUwVERUZzNhYllfLWxlYjF1a3NWUjlGVzMwdDJvcEdDNW5DSlprVmYtTDNIQQ?oc=5",
-        "pubDate": "Fri, 17 Jul 2026 23:32:02 GMT"
+        "title": "RKLB Stock Forecast 2030: Vertical Space Infrastructure - Northwise Project",
+        "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9NSTFKdXBteXh3Q0RpZ3YtY25qRVc5MjNHelJtelZkbXZWQU1XanpKOWtGdGo2YTNPWnNUOFVPVEc1MkgzVWZJalZFVXRzZG5zWm02Y3JYbUpoaVJPY1E?oc=5",
+        "pubDate": "Sat, 18 Jul 2026 14:16:56 GMT"
       },
       "sparkline": [
-        128.47000122070312,
-        119.5,
-        116.69999694824219,
-        113.5,
-        107.2699966430664,
-        112.93000030517578,
-        115.69999694824219,
-        116.66999816894531,
-        125.7300033569336,
-        129.3000030517578,
-        132.5399932861328,
-        134.3699951171875,
-        132.22000122070312,
-        129.0399932861328,
-        126.79000091552734,
-        130.0399932861328,
-        133.72000122070312,
-        133.75999450683594,
-        134.44000244140625,
-        132.3800048828125
+        107.23999786376953,
+        100.29000091552734,
+        95.12000274658203,
+        85.41000366210938,
+        80.69000244140625,
+        84.54000091552734,
+        98.01000213623047,
+        101.6500015258789,
+        100.06999969482422,
+        100.45999908447266,
+        93.08999633789062,
+        83.41000366210938,
+        83.3499984741211,
+        82.55000305175781,
+        81.04000091552734,
+        76.7300033569336,
+        78.80999755859375,
+        76.19999694824219,
+        67.3499984741211,
+        67.62000274658203
       ]
     },
     {
@@ -76,9 +76,60 @@
       "logo": "https://www.google.com/s2/favicons?domain=anthropic.com&sz=128",
       "ticker": null,
       "headline": {
-        "title": "China's Moonshot AI claims Kimi K3 can rival OpenAI and Anthropic - BBC",
-        "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9mMWxkTlZ0SGVOZWl3QlkwUmdmVDdTWVNxbG0tdWliZnc5NFlIcEtONFhnbjRZaEJhbEhTbE9SVmpKQzY5d1BndmJtcU44V19OQ3hzUFV0R2JTSnlW?oc=5",
-        "pubDate": "Fri, 17 Jul 2026 16:53:04 GMT"
+        "title": "Meta in Talks to Lease Computing Power to Anthropic in Potential $10 Billion Deal - The New York Times",
+        "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPZ0I2QWE2VG81R196RFJPdmpueDdyX05QbkxzbDhOVVBXZDRYVXpsU202RmVPNGtobW8yTVRSOFZaQ1hhYzBhWDVsaFByUklSOG1QWTFEcVNud0dhVE1RemJMa0EtSVJ1UzNXTHVRX1ZCaDBxbFhrSDM5TTdJZmRKdEdsMFZONUhWa0NXeQ?oc=5",
+        "pubDate": "Fri, 17 Jul 2026 16:17:06 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "Palantir",
+      "tag": "Data Analytics",
+      "desc": "Big-data analytics platforms for government and enterprise",
+      "url": "https://palantir.com",
+      "initials": "PL",
+      "logo": "https://www.google.com/s2/favicons?domain=palantir.com&sz=128",
+      "ticker": "PLTR",
+      "headline": {
+        "title": "Palantir CEO Alex Karp predicts he will get 20x richer from AI—but middle-class workers will get left behind - Fortune",
+        "link": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxPdmNFa3dxc2x5UGgwbWFDMkhPMzJGSldBMEZBTjJrQS0ydTVuSG93ZnNBT29FdV95dEU0S2hEUkFpUVJzNlRyRFBCaFVzYWp6SU1rUnE1RFh5QnBVdzhHV1RTZmN6enB6MjB6NnltNjFsaXJVaEtERmd5MVpWNGhoejJYMDJYaXAwTTl2QmZLRE5RaV9aOXFYQ2V3UllyR1pNSl96aThscmRDekZlV1R1MlVGRXF6c1dHMEh0UWhDZlVZcnV5cndkOFh5VUk1TVZmMXF2MFFBZHVGOU51SmVpTlF5TjltSS1Wa0dyRkpvNk1lQQ?oc=5",
+        "pubDate": "Fri, 17 Jul 2026 15:06:00 GMT"
+      },
+      "sparkline": [
+        128.47000122070312,
+        119.5,
+        116.69999694824219,
+        113.5,
+        107.2699966430664,
+        112.93000030517578,
+        115.69999694824219,
+        116.66999816894531,
+        125.7300033569336,
+        129.3000030517578,
+        132.5399932861328,
+        134.3699951171875,
+        132.22000122070312,
+        129.0399932861328,
+        126.79000091552734,
+        130.0399932861328,
+        133.72000122070312,
+        133.75999450683594,
+        134.44000244140625,
+        132.3800048828125
+      ]
+    },
+    {
+      "name": "Waymo",
+      "tag": "Autonomy",
+      "desc": "The most miles driven autonomously of any robotaxi service",
+      "url": "https://waymo.com",
+      "initials": "W",
+      "logo": "https://www.google.com/s2/favicons?domain=waymo.com&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "Self-driving Waymo car involved in crash with two vehicles in London - Metro.co.uk",
+        "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOcDVhSEVRS0xyYjk1RHpGV2pEUjZyejE5SkpCcU1QTElxckxESGcyRFdPRW5ydWZub1liM3I5OHAyRkVXWkc5elFZNmlkUnpTZGhyR3VfejJULWx1OERhdEljS25PZzRPQmM3MnQycDdfQk1KTk12S1pwVGVXQXNsUXZuVGFmVnZSZU9aNUw1NjJWVzdNY1VFcmNiSWtCcTjSAaQBQVVfeXFMTTVCcWhMUzBOX3R2SUdVNUVndHJsczZEUkl0SkxLVjNYemxVRTBlVUJLdExGZGV4bVRBUHd0SmtsNDdTeExHVU12RXp5cU9XYW5IMXhYQk5Kbk1qdmh6ZWpLNmp4ZHZTbXZFVDNBNV8zS2l2bTBiYVM0WVBvUkF2dEI1ZGZtQlVpNjRzZjdjZlE3b000ZjJmSHd0WU5yZHFqTnJQam4?oc=5",
+        "pubDate": "Fri, 17 Jul 2026 11:48:00 GMT"
       },
       "sparkline": null
     },
@@ -119,47 +170,17 @@
       ]
     },
     {
-      "name": "Waymo",
-      "tag": "Autonomy",
-      "desc": "The most miles driven autonomously of any robotaxi service",
-      "url": "https://waymo.com",
-      "initials": "W",
-      "logo": "https://www.google.com/s2/favicons?domain=waymo.com&sz=128",
+      "name": "Cursor",
+      "tag": "Code Editor",
+      "desc": "AI-native code editor that pairs with Claude and GPT-4",
+      "url": "https://cursor.com",
+      "initials": "C",
+      "logo": "https://www.google.com/s2/favicons?domain=cursor.com&sz=128",
       "ticker": null,
       "headline": {
-        "title": "San Francisco mayor pushes for tougher rules after the Waymo traffic fiasco - TechCrunch",
-        "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOeUE4bVVaYnRJNlFMUnpxd0RyUTFPY054YXpoSXRtLXFzcDZIZ0FzWnZmYlM5cXpjMmJ6V1prZzNoX2JhZ1hLME9hWVRFbkFRdV83enpMRHNxZkk4ajBkQ3pCbEFaNkJIcDlXbVVnOW9yckVwVWR5aWI2di1uZklUbjctMEdjZWQtVlVPcDM3ajdPZUZmQmxMRnpEby1BQzNGejVPYkU3TWVVeEVxWENv?oc=5",
-        "pubDate": "Thu, 16 Jul 2026 23:25:22 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "xAI",
-      "tag": "LLMs",
-      "desc": "Elon Musk's AI company, developer of the Grok models",
-      "url": "https://x.ai",
-      "initials": "X",
-      "logo": "https://www.google.com/s2/favicons?domain=x.ai&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "Musk’s xAI sues user who allegedly used Grok to create child sexual abuse material - The Guardian",
-        "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOZGFrSTl2NmFzX1FpbEJxUEFUTzVJT0dtcTlqWExNOTNyOXhKbXIzZlZ4N2JoZ0lYVkMtcF9QVWxRTFJpMGVQeHBYcEdlSDh6elNrRWtXX3pUVHBXTzBoemVlcDVQQjFLN01jNEFtUlc4WVRkaUNMRzdrOGozVmZnTHRnX1d1NFNENHJ3?oc=5",
-        "pubDate": "Thu, 16 Jul 2026 15:53:00 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "Mistral AI",
-      "tag": "LLMs",
-      "desc": "Europe's leading open-weight AI foundation models",
-      "url": "https://mistral.ai",
-      "initials": "M",
-      "logo": "https://www.google.com/s2/favicons?domain=mistral.ai&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "Exclusive: EQT’s €5bn Scaleup Fund in talks to lead Mistral round - Sifted",
-        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9EamV2Tk84b0ViUk1TRDYyR0FiOG8wQzNvSGpPbHZ4LWRVNl9OX1Z0Um5VbGV6X2xISHlwSEpZeThJbElmOEVOTkpWUVJXc200VXlPVjlRbFVIREM2OVhuQkYxdlE3RE0?oc=5",
-        "pubDate": "Thu, 16 Jul 2026 15:05:26 GMT"
+        "title": "Cursor Colombo proves Sri Lanka's AI talent is ready for the world - The Morning",
+        "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE15QkxYZ3Q2WnRBb3dyWjNwX0xTNWlsbUxhd1Rla2ZwSk4xNFYyYmlrOFVfb1hEbGl6Y2pMWXBBNkZDOWJ0TzM2Y2EwbzBDd3VIb1gtalVQeV94ZEdwUUJfS0NGbm1RUQ?oc=5",
+        "pubDate": "Fri, 17 Jul 2026 01:24:49 GMT"
       },
       "sparkline": null
     }
