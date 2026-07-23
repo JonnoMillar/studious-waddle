@@ -1,72 +1,16 @@
 {
-  "refreshed_at": "2026-07-22T08:35:29.693Z",
+  "refreshed_at": "2026-07-23T08:37:20.222Z",
   "companies": [
     {
-      "name": "Scale AI",
-      "tag": "AI Data",
-      "desc": "Data labelling and RLHF infrastructure powering frontier AI",
-      "url": "https://scale.com",
-      "initials": "S",
-      "logo": "https://www.google.com/s2/favicons?domain=scale.com&sz=128",
+      "name": "Figure AI",
+      "tag": "Robotics",
+      "desc": "Humanoid robots designed for industrial and commercial work",
+      "url": "https://figure.ai",
+      "initials": "FA",
+      "logo": "https://www.google.com/s2/favicons?domain=figure.ai&sz=128",
       "ticker": null,
-      "headline": {
-        "title": "CEOs Are Starting to See Value from AI. Now Comes Execution. - Boston Consulting Group",
-        "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9DNWgyWFJYaXAxcGwxTGxtWG1rMS1raU9uclhwSnVTUG94enJzZEItalg1NDdmTDJwaGhWT3JudzlXeTdQNUxXRzZGMFljYkFFN0VJNVhEOVo0MW1JXzVrQjdfWkxjVl9Nc2xwQmFR?oc=5",
-        "pubDate": "Wed, 22 Jul 2026 04:04:02 GMT"
-      },
+      "headline": null,
       "sparkline": null
-    },
-    {
-      "name": "Mistral AI",
-      "tag": "LLMs",
-      "desc": "Europe's leading open-weight AI foundation models",
-      "url": "https://mistral.ai",
-      "initials": "M",
-      "logo": "https://www.google.com/s2/favicons?domain=mistral.ai&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "Samsung in talks to invest in Mistral at €20bn valuation - Financial Times",
-        "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNSHZBMHVqSjJtbmRuZmNla19IekFEUUpLT0xkWkNGdV9MbV9KUWxJUUdCNlpvSkx3MUdLWHkwckxrVUQ2YTVCRldybU80OGFWalM4emlieTFLRm5nUUFJZzgteHRXQVEzVTV5SXc3NUVlR05nUFRYNGh4bVVIb25Lamt6NjI?oc=5",
-        "pubDate": "Wed, 22 Jul 2026 04:00:56 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "CrowdStrike",
-      "tag": "Cybersecurity",
-      "desc": "Cloud-native endpoint protection and threat intelligence",
-      "url": "https://crowdstrike.com",
-      "initials": "CS",
-      "logo": "https://www.google.com/s2/favicons?domain=crowdstrike.com&sz=128",
-      "ticker": "CRWD",
-      "headline": {
-        "title": "Is CrowdStrike Holdings (CRWD) Cheap On Its Schwarz Digits Partnership And Pullback? - Yahoo Finance UK",
-        "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQbVYxVmprZ1M4WWFIOUEwbzZfNl9lWUlJeHcyLVJNUnhDT1JtaFV2MjI4ZWpYTVZiajZQc2R1NW1XOFQ1STFBWHhxeHhfaTJvOEFMYzl0eHo0ZkFscGlJeEgwSkRpeWxJcGZ1X19rajYwX3RaUVpRSnpWeWtXUnA3QTBDY2F6aFRfTzByeXJCdUxlUQ?oc=5",
-        "pubDate": "Wed, 22 Jul 2026 03:21:00 GMT"
-      },
-      "sparkline": [
-        168.86000061035156,
-        170.22999572753906,
-        168.2550048828125,
-        169.66250610351562,
-        175.2725067138672,
-        185.7274932861328,
-        190.78500366210938,
-        193.18499755859375,
-        193.97999572753906,
-        199.3800048828125,
-        194.6199951171875,
-        191.1199951171875,
-        198.39999389648438,
-        187.17999267578125,
-        187.91000366210938,
-        210.72999572753906,
-        206.77000427246094,
-        203.75999450683594,
-        203.0800018310547,
-        198.49000549316406,
-        191.14999389648438
-      ]
     },
     {
       "name": "Physical Intelligence",
@@ -76,41 +20,18 @@
       "initials": "PI",
       "logo": "https://www.google.com/s2/favicons?domain=physicalintelligence.company&sz=128",
       "ticker": null,
-      "headline": {
-        "title": "The Anthropic-Physical Intelligence rumor roiling AI Twitter - TechCrunch",
-        "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOLTFxVXJLb0pHbEh1cER6U1lybHBRWHpYaFZjY19RMUpmTGNRRTBBZ3M1TDAxclFMbEdnVERtUEpFaHRSVlY0djY3Tk1tYTA4a1RpUkFGaEh0LWNZVjh3VWQ4U2ZwZGFwX01QT3BkVVFmdUNja3NMNlBveXlwV1BMNGplTGJlanhBcFRlR2hnSG9PNFdYSUZQOS16VQ?oc=5",
-        "pubDate": "Wed, 22 Jul 2026 03:20:57 GMT"
-      },
+      "headline": null,
       "sparkline": null
     },
     {
-      "name": "Neuralink",
-      "tag": "Brain-Computer",
-      "desc": "Implantable neural interfaces for restoring and augmenting human capability",
-      "url": "https://neuralink.com",
-      "initials": "NL",
-      "logo": "https://www.google.com/s2/favicons?domain=neuralink.com&sz=128",
+      "name": "Commonwealth Fusion",
+      "tag": "Energy",
+      "desc": "Next-generation tokamak fusion for clean energy at scale",
+      "url": "https://cfs.energy",
+      "initials": "CFS",
+      "logo": "https://www.google.com/s2/favicons?domain=cfs.energy&sz=128",
       "ticker": null,
-      "headline": {
-        "title": "Neuralink's valuation has surged in just over a year. Here's what's driving the frenzy. - Business Insider",
-        "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNMURNWlZRX3Y3SE9PTGQ2c0JWd05uTEZEWElQdEFtRjJaSHdkek1ySk9WN2NtT2FNbV9keWNsekpmRTczLVRQUFM1Z1N1cTFvTmVOSDJ6enhlSWZWeWJRY19ab1l5Rnl1QUY1UXVXYTFYdEFkWUFIemRGU1c4d1dpcUJOMjNmYzJ2MDgtbVdXckhSZGhEOVE?oc=5",
-        "pubDate": "Tue, 21 Jul 2026 22:21:00 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "OpenAI",
-      "tag": "LLMs",
-      "desc": "Creator of ChatGPT and the GPT family of foundation models",
-      "url": "https://openai.com",
-      "initials": "OAI",
-      "logo": "https://www.google.com/s2/favicons?domain=openai.com&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "OpenAI says AI models went rogue during testing, triggering 'unprecedented' breach at startup - Reuters",
-        "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQT3oyVDNzekNWY3BJUUZLVGNsb3Z3VUhXc3pfSmtEZG96bzk2RFQ4MTZBWDdQVHlyZTlDOWhEN1o3dzVuekVuWUh2cWFPMy1SU0sxWnl3WkVSbFpKTzBqOU54WjlwM0Jfd185OWsxT1BLbGpHcmlaNHdCalhub0x2cVVBai11dVhPdEVsZERZWHo3anRQMi0yUGZEN0VVOEZHcEJuZ1pxMHp2U2dkSWNhYmhOOXR0aGJjVXVTdHE3MGw1aEgw?oc=5",
-        "pubDate": "Tue, 21 Jul 2026 21:30:00 GMT"
-      },
+      "headline": null,
       "sparkline": null
     },
     {
@@ -121,26 +42,51 @@
       "initials": "W",
       "logo": "https://www.google.com/s2/favicons?domain=waymo.com&sz=128",
       "ticker": null,
-      "headline": {
-        "title": "Are Waymo robotaxis actually safer than NYC Uber and taxi drivers? - Gothamist",
-        "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQMl92clNIeDdxTmVKY3VYWWVQVUVNTTc2eUx0eTV5d0JhNDNfU2VQdlFULVh1WkVneXNiQ2czNjJ0WEJWaEszUkJfMFlydWhkMzRueFhWbjFLcHJISFBoSktMUURnbzdLMXY2VnRsNkt5ZHJKU1lScDEtcEpiQTlLV25HdmFwbVFEdGRObjJYX2Zhb0REaGc4?oc=5",
-        "pubDate": "Tue, 21 Jul 2026 20:38:00 GMT"
-      },
+      "headline": null,
       "sparkline": null
     },
     {
-      "name": "xAI",
+      "name": "Mistral AI",
       "tag": "LLMs",
-      "desc": "Elon Musk's AI company, developer of the Grok models",
-      "url": "https://x.ai",
-      "initials": "X",
-      "logo": "https://www.google.com/s2/favicons?domain=x.ai&sz=128",
+      "desc": "Europe's leading open-weight AI foundation models",
+      "url": "https://mistral.ai",
+      "initials": "M",
+      "logo": "https://www.google.com/s2/favicons?domain=mistral.ai&sz=128",
       "ticker": null,
-      "headline": {
-        "title": "Musk’s xAI sues user who allegedly used Grok to create child sexual abuse material - Memeburn",
-        "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPX1o1RWdSU1ZKZG5BNEFSbTBseDZydU9ObEM4UkxfcDl4ekVudDVVb0hSRHFweWk3SzkzbXAtQTV5NS02YjBmUmx2SlZVUW9UV1c3cXM1cXZHWjdZOHJESzVUZ1NGMThMY3NqTU1uWjZkUVJVOHhkUHp2SlN3M0dCZzBwa0Foa3pxdXBRZm9odkVtb2Fi?oc=5",
-        "pubDate": "Tue, 21 Jul 2026 17:35:11 GMT"
-      },
+      "headline": null,
+      "sparkline": null
+    },
+    {
+      "name": "Groq",
+      "tag": "AI Chips",
+      "desc": "LPU inference chips delivering industry-leading token speed",
+      "url": "https://groq.com",
+      "initials": "G",
+      "logo": "https://www.google.com/s2/favicons?domain=groq.com&sz=128",
+      "ticker": null,
+      "headline": null,
+      "sparkline": null
+    },
+    {
+      "name": "Scale AI",
+      "tag": "AI Data",
+      "desc": "Data labelling and RLHF infrastructure powering frontier AI",
+      "url": "https://scale.com",
+      "initials": "S",
+      "logo": "https://www.google.com/s2/favicons?domain=scale.com&sz=128",
+      "ticker": null,
+      "headline": null,
+      "sparkline": null
+    },
+    {
+      "name": "Neuralink",
+      "tag": "Brain-Computer",
+      "desc": "Implantable neural interfaces for restoring and augmenting human capability",
+      "url": "https://neuralink.com",
+      "initials": "NL",
+      "logo": "https://www.google.com/s2/favicons?domain=neuralink.com&sz=128",
+      "ticker": null,
+      "headline": null,
       "sparkline": null
     }
   ]
