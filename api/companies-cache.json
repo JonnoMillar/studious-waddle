@@ -1,59 +1,19 @@
 {
-  "refreshed_at": "2026-07-23T08:37:20.222Z",
+  "refreshed_at": "2026-07-24T08:33:17.057Z",
   "companies": [
     {
-      "name": "Figure AI",
-      "tag": "Robotics",
-      "desc": "Humanoid robots designed for industrial and commercial work",
-      "url": "https://figure.ai",
-      "initials": "FA",
-      "logo": "https://www.google.com/s2/favicons?domain=figure.ai&sz=128",
+      "name": "Scale AI",
+      "tag": "AI Data",
+      "desc": "Data labelling and RLHF infrastructure powering frontier AI",
+      "url": "https://scale.com",
+      "initials": "S",
+      "logo": "https://www.google.com/s2/favicons?domain=scale.com&sz=128",
       "ticker": null,
-      "headline": null,
-      "sparkline": null
-    },
-    {
-      "name": "Physical Intelligence",
-      "tag": "Embodied AI",
-      "desc": "Training AI systems to manipulate physical objects",
-      "url": "https://physicalintelligence.company",
-      "initials": "PI",
-      "logo": "https://www.google.com/s2/favicons?domain=physicalintelligence.company&sz=128",
-      "ticker": null,
-      "headline": null,
-      "sparkline": null
-    },
-    {
-      "name": "Commonwealth Fusion",
-      "tag": "Energy",
-      "desc": "Next-generation tokamak fusion for clean energy at scale",
-      "url": "https://cfs.energy",
-      "initials": "CFS",
-      "logo": "https://www.google.com/s2/favicons?domain=cfs.energy&sz=128",
-      "ticker": null,
-      "headline": null,
-      "sparkline": null
-    },
-    {
-      "name": "Waymo",
-      "tag": "Autonomy",
-      "desc": "The most miles driven autonomously of any robotaxi service",
-      "url": "https://waymo.com",
-      "initials": "W",
-      "logo": "https://www.google.com/s2/favicons?domain=waymo.com&sz=128",
-      "ticker": null,
-      "headline": null,
-      "sparkline": null
-    },
-    {
-      "name": "Mistral AI",
-      "tag": "LLMs",
-      "desc": "Europe's leading open-weight AI foundation models",
-      "url": "https://mistral.ai",
-      "initials": "M",
-      "logo": "https://www.google.com/s2/favicons?domain=mistral.ai&sz=128",
-      "ticker": null,
-      "headline": null,
+      "headline": {
+        "title": "ASUS Accelerates Enterprise AI at Scale with 6th-Gen AMD EPYC Server CPUs - PA Media",
+        "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOMjRGZUhUN0NxTnl4dGU3d0lVbTM0XzA1TlJmMUQ3M0ZUMEJ5N2NkeWVXRU1ocjhOLWVSVGJZeWJ0bWZfbnFPU0tneTE0SW9aV2xPSnhEMzAzTU4wV180NmsxTkt6T2dsaTB2aGtQTzAxQ3ZJeW03SmxFNlMwbVUtdzRKbmlNWTZVbDF1allBcGdoWllWVFphd2trQ2c2bU1zaWdDMEdseVRmZEJ6cmh4Y1RObUpaZzM0SlRkcUdBb3lxOGM?oc=5",
+        "pubDate": "Fri, 24 Jul 2026 04:39:43 GMT"
+      },
       "sparkline": null
     },
     {
@@ -64,29 +24,145 @@
       "initials": "G",
       "logo": "https://www.google.com/s2/favicons?domain=groq.com&sz=128",
       "ticker": null,
-      "headline": null,
+      "headline": {
+        "title": "AMD and Cerebras join forces against Nvidia’s Groq LPUs - The Register",
+        "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNZGdXa3hKX012VDNsdTZaU29ReXNMcTcxWUVSb1ZwaWdZd1Z5UHdoa0RIc0pKQl84NW9sb2NTWUpRWEkyZWRJOThWa2E2aXlMNmpZOG53am15WFk3ekpEemdvaUkxQ3MtaTJUWlEyUXMyM3ZLVk55dXRSSUgxalNfdzNpZzBfWV9iMWRqZUI5NXl4aklwdTNiM0xkaDRMMEtDMm0wRkg3STQ0RENURHc?oc=5",
+        "pubDate": "Thu, 23 Jul 2026 21:33:45 GMT"
+      },
       "sparkline": null
     },
     {
-      "name": "Scale AI",
-      "tag": "AI Data",
-      "desc": "Data labelling and RLHF infrastructure powering frontier AI",
-      "url": "https://scale.com",
-      "initials": "S",
-      "logo": "https://www.google.com/s2/favicons?domain=scale.com&sz=128",
+      "name": "Cursor",
+      "tag": "Code Editor",
+      "desc": "AI-native code editor that pairs with Claude and GPT-4",
+      "url": "https://cursor.com",
+      "initials": "C",
+      "logo": "https://www.google.com/s2/favicons?domain=cursor.com&sz=128",
       "ticker": null,
-      "headline": null,
+      "headline": {
+        "title": "Cursor, Ramp, and Meta are all building model routers — but two have major model ambitions themselves - The New Stack",
+        "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFB1Nl92cmZTR1lMcXkxYzVrN1A0WTF3SURLZHZtVlctNHk3SnM1QlF1MmtXQnFyN2hVdmI5dnZ4NjF3Vk90MUJXSmg0Mko3V0RBNnNxemNDVVhKamQ2SnhSaWU1WQ?oc=5",
+        "pubDate": "Thu, 23 Jul 2026 17:14:16 GMT"
+      },
       "sparkline": null
     },
     {
-      "name": "Neuralink",
-      "tag": "Brain-Computer",
-      "desc": "Implantable neural interfaces for restoring and augmenting human capability",
-      "url": "https://neuralink.com",
-      "initials": "NL",
-      "logo": "https://www.google.com/s2/favicons?domain=neuralink.com&sz=128",
+      "name": "Waymo",
+      "tag": "Autonomy",
+      "desc": "The most miles driven autonomously of any robotaxi service",
+      "url": "https://waymo.com",
+      "initials": "W",
+      "logo": "https://www.google.com/s2/favicons?domain=waymo.com&sz=128",
       "ticker": null,
-      "headline": null,
+      "headline": {
+        "title": "The surprising truth about driverless cars – after two weeks using them - The i Paper",
+        "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5vbUY0VzF6TU9qVk1aNmNielVnSjY3Zmp2ZGxyZlMzeV90QUlSdGJiS0tseFd6d3Vpa3ZnVDZyWWQwWlVEbGNSZ3pzdDNZcmxUczAwLUlsSnZMYnljMTNBUHJTVW9mdEVJSVN6WGFtYlpZakhJUXc?oc=5",
+        "pubDate": "Thu, 23 Jul 2026 15:02:42 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "CrowdStrike",
+      "tag": "Cybersecurity",
+      "desc": "Cloud-native endpoint protection and threat intelligence",
+      "url": "https://crowdstrike.com",
+      "initials": "CS",
+      "logo": "https://www.google.com/s2/favicons?domain=crowdstrike.com&sz=128",
+      "ticker": "CRWD",
+      "headline": {
+        "title": "CrowdStrike partners with Cerebras to accelerate AI security response - verdict.co.uk",
+        "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1ERW9DdDJiMFJJVkdKUzFHYlJEUkgyelJMZ2dsaDJsRlh4UHptM3pyc3BNTFI1cDdqaEdGeHlPYzBhSnc5TlM4RHI2cnZmOG9rNV9lLWN2MWRIaG5PbmdhcXozazUzWWtNSjVCX1lieWt1RF83cXd5MEsxQ2RwUQ?oc=5",
+        "pubDate": "Thu, 23 Jul 2026 08:17:47 GMT"
+      },
+      "sparkline": [
+        168.2550048828125,
+        169.66250610351562,
+        175.2725067138672,
+        185.7274932861328,
+        190.78500366210938,
+        193.18499755859375,
+        193.97999572753906,
+        199.3800048828125,
+        194.6199951171875,
+        191.1199951171875,
+        198.39999389648438,
+        187.17999267578125,
+        187.91000366210938,
+        210.72999572753906,
+        206.77000427246094,
+        203.75999450683594,
+        203.0800018310547,
+        198.49000549316406,
+        191.14999389648438,
+        188.4199981689453,
+        183.4199981689453
+      ]
+    },
+    {
+      "name": "OpenAI",
+      "tag": "LLMs",
+      "desc": "Creator of ChatGPT and the GPT family of foundation models",
+      "url": "https://openai.com",
+      "initials": "OAI",
+      "logo": "https://www.google.com/s2/favicons?domain=openai.com&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "Co-founder of firm hacked by rogue OpenAI models says it is 'a wake-up call' - BBC",
+        "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1sRC1FM3dKdm16Z3picUs3T3pHR2xWbUpLVmV1bXpUR3VFRkw1czFycndyOUgzQnZOMC04eFV5VnhFRG04NVpTdEtPLXpfbF9pcFM1dERYRHNHS0VC?oc=5",
+        "pubDate": "Thu, 23 Jul 2026 05:07:46 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "Palantir",
+      "tag": "Data Analytics",
+      "desc": "Big-data analytics platforms for government and enterprise",
+      "url": "https://palantir.com",
+      "initials": "PL",
+      "logo": "https://www.google.com/s2/favicons?domain=palantir.com&sz=128",
+      "ticker": "PLTR",
+      "headline": {
+        "title": "Mistral wanted to beat Anthropic. Now it’s becoming Palantir - Sifted",
+        "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBPOU1Kdk9jQkhLbFJxbGdiMTVsLVBTV0NnWVVyRGRWOHhtQU1LU1R5WFhhVnl2X21JV0FIbnVYVUVuNENOLV96cGJBWC1uNkVJRVZqTDhXMDE1MHdn?oc=5",
+        "pubDate": "Thu, 23 Jul 2026 04:05:10 GMT"
+      },
+      "sparkline": [
+        113.5,
+        107.2699966430664,
+        112.93000030517578,
+        115.69999694824219,
+        116.66999816894531,
+        125.7300033569336,
+        129.3000030517578,
+        132.5399932861328,
+        134.3699951171875,
+        132.22000122070312,
+        129.0399932861328,
+        126.79000091552734,
+        130.0399932861328,
+        133.72000122070312,
+        133.75999450683594,
+        134.44000244140625,
+        132.3800048828125,
+        134.85000610351562,
+        132.66000366210938,
+        124.56999969482422,
+        123.37000274658203
+      ]
+    },
+    {
+      "name": "xAI",
+      "tag": "LLMs",
+      "desc": "Elon Musk's AI company, developer of the Grok models",
+      "url": "https://x.ai",
+      "initials": "X",
+      "logo": "https://www.google.com/s2/favicons?domain=x.ai&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "Musk Leaves Room For a Potential SpaceX-Tesla Merger - Gizmodo",
+        "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOUVpzeG9yZlNGTTBXMXBiUEZtRHVfWVdFWURFNGpuNERLamE1WWo4QVllSVQtWkFodFN2YVdycDMzbmk0eklFeEpLSkswS2Z2UTkwTWtVU2ZuM1RMZlM3eTk5bThCdmRiSFhCNHpNN3J5c0FBODU3Q25Qb0FOc3hUY1RMbWx6bXhVTTdF?oc=5",
+        "pubDate": "Thu, 23 Jul 2026 03:39:34 GMT"
+      },
       "sparkline": null
     }
   ]
