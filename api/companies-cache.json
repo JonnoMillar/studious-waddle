@@ -1,51 +1,6 @@
 {
-  "refreshed_at": "2026-07-24T08:33:17.057Z",
+  "refreshed_at": "2026-07-25T08:12:34.416Z",
   "companies": [
-    {
-      "name": "Scale AI",
-      "tag": "AI Data",
-      "desc": "Data labelling and RLHF infrastructure powering frontier AI",
-      "url": "https://scale.com",
-      "initials": "S",
-      "logo": "https://www.google.com/s2/favicons?domain=scale.com&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "ASUS Accelerates Enterprise AI at Scale with 6th-Gen AMD EPYC Server CPUs - PA Media",
-        "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOMjRGZUhUN0NxTnl4dGU3d0lVbTM0XzA1TlJmMUQ3M0ZUMEJ5N2NkeWVXRU1ocjhOLWVSVGJZeWJ0bWZfbnFPU0tneTE0SW9aV2xPSnhEMzAzTU4wV180NmsxTkt6T2dsaTB2aGtQTzAxQ3ZJeW03SmxFNlMwbVUtdzRKbmlNWTZVbDF1allBcGdoWllWVFphd2trQ2c2bU1zaWdDMEdseVRmZEJ6cmh4Y1RObUpaZzM0SlRkcUdBb3lxOGM?oc=5",
-        "pubDate": "Fri, 24 Jul 2026 04:39:43 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "Groq",
-      "tag": "AI Chips",
-      "desc": "LPU inference chips delivering industry-leading token speed",
-      "url": "https://groq.com",
-      "initials": "G",
-      "logo": "https://www.google.com/s2/favicons?domain=groq.com&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "AMD and Cerebras join forces against Nvidia’s Groq LPUs - The Register",
-        "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNZGdXa3hKX012VDNsdTZaU29ReXNMcTcxWUVSb1ZwaWdZd1Z5UHdoa0RIc0pKQl84NW9sb2NTWUpRWEkyZWRJOThWa2E2aXlMNmpZOG53am15WFk3ekpEemdvaUkxQ3MtaTJUWlEyUXMyM3ZLVk55dXRSSUgxalNfdzNpZzBfWV9iMWRqZUI5NXl4aklwdTNiM0xkaDRMMEtDMm0wRkg3STQ0RENURHc?oc=5",
-        "pubDate": "Thu, 23 Jul 2026 21:33:45 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "Cursor",
-      "tag": "Code Editor",
-      "desc": "AI-native code editor that pairs with Claude and GPT-4",
-      "url": "https://cursor.com",
-      "initials": "C",
-      "logo": "https://www.google.com/s2/favicons?domain=cursor.com&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "Cursor, Ramp, and Meta are all building model routers — but two have major model ambitions themselves - The New Stack",
-        "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFB1Nl92cmZTR1lMcXkxYzVrN1A0WTF3SURLZHZtVlctNHk3SnM1QlF1MmtXQnFyN2hVdmI5dnZ4NjF3Vk90MUJXSmg0Mko3V0RBNnNxemNDVVhKamQ2SnhSaWU1WQ?oc=5",
-        "pubDate": "Thu, 23 Jul 2026 17:14:16 GMT"
-      },
-      "sparkline": null
-    },
     {
       "name": "Waymo",
       "tag": "Autonomy",
@@ -55,61 +10,54 @@
       "logo": "https://www.google.com/s2/favicons?domain=waymo.com&sz=128",
       "ticker": null,
       "headline": {
-        "title": "The surprising truth about driverless cars – after two weeks using them - The i Paper",
-        "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5vbUY0VzF6TU9qVk1aNmNielVnSjY3Zmp2ZGxyZlMzeV90QUlSdGJiS0tseFd6d3Vpa3ZnVDZyWWQwWlVEbGNSZ3pzdDNZcmxUczAwLUlsSnZMYnljMTNBUHJTVW9mdEVJSVN6WGFtYlpZakhJUXc?oc=5",
-        "pubDate": "Thu, 23 Jul 2026 15:02:42 GMT"
+        "title": "Waymo explores split with Uber as robotaxi tensions deepen - Financial Times",
+        "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOV19hOTVtaDdGWE5tOERqa04tSHRuVG1nSHYyc3VGbXp1T2c5YWJHZlREcnQyeWZKWTc4UFZZQkJncXFsMFJud0ZvZExlbFFCaGNvVmplSTBfSFdnaGRIelUzVlNiV096cTBTd3lGc1hBTnp5NWJ3RkpCY2pGNlJHYldaUVY?oc=5",
+        "pubDate": "Fri, 24 Jul 2026 19:15:14 GMT"
       },
       "sparkline": null
     },
     {
-      "name": "CrowdStrike",
-      "tag": "Cybersecurity",
-      "desc": "Cloud-native endpoint protection and threat intelligence",
-      "url": "https://crowdstrike.com",
-      "initials": "CS",
-      "logo": "https://www.google.com/s2/favicons?domain=crowdstrike.com&sz=128",
-      "ticker": "CRWD",
-      "headline": {
-        "title": "CrowdStrike partners with Cerebras to accelerate AI security response - verdict.co.uk",
-        "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1ERW9DdDJiMFJJVkdKUzFHYlJEUkgyelJMZ2dsaDJsRlh4UHptM3pyc3BNTFI1cDdqaEdGeHlPYzBhSnc5TlM4RHI2cnZmOG9rNV9lLWN2MWRIaG5PbmdhcXozazUzWWtNSjVCX1lieWt1RF83cXd5MEsxQ2RwUQ?oc=5",
-        "pubDate": "Thu, 23 Jul 2026 08:17:47 GMT"
-      },
-      "sparkline": [
-        168.2550048828125,
-        169.66250610351562,
-        175.2725067138672,
-        185.7274932861328,
-        190.78500366210938,
-        193.18499755859375,
-        193.97999572753906,
-        199.3800048828125,
-        194.6199951171875,
-        191.1199951171875,
-        198.39999389648438,
-        187.17999267578125,
-        187.91000366210938,
-        210.72999572753906,
-        206.77000427246094,
-        203.75999450683594,
-        203.0800018310547,
-        198.49000549316406,
-        191.14999389648438,
-        188.4199981689453,
-        183.4199981689453
-      ]
-    },
-    {
-      "name": "OpenAI",
+      "name": "Anthropic",
       "tag": "LLMs",
-      "desc": "Creator of ChatGPT and the GPT family of foundation models",
-      "url": "https://openai.com",
-      "initials": "OAI",
-      "logo": "https://www.google.com/s2/favicons?domain=openai.com&sz=128",
+      "desc": "AI safety company behind the Claude family of models",
+      "url": "https://anthropic.com",
+      "initials": "AN",
+      "logo": "https://www.google.com/s2/favicons?domain=anthropic.com&sz=128",
       "ticker": null,
       "headline": {
-        "title": "Co-founder of firm hacked by rogue OpenAI models says it is 'a wake-up call' - BBC",
-        "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1sRC1FM3dKdm16Z3picUs3T3pHR2xWbUpLVmV1bXpUR3VFRkw1czFycndyOUgzQnZOMC04eFV5VnhFRG04NVpTdEtPLXpfbF9pcFM1dERYRHNHS0VC?oc=5",
-        "pubDate": "Thu, 23 Jul 2026 05:07:46 GMT"
+        "title": "Anthropic's new AI model rivals Fable 5 and is cheaper as businesses fret about costs - CNBC",
+        "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNX0dWcGxxaVZCeDd0ejF4ZjQ4RExpVkduWG9JVlR3WlM0QUNiSmZpUHR2dWxicEY3WF9fMlhvWU1VY1BWZ3pBZ1NTTWc0ZFp3TmVaTTl0eXNHOVQ1MzJWa2hCaDlpcXRIX20tNEIwTnVLOVhBNldFVU1jYTI3RC1ZZS1B0gGHAUFVX3lxTE9SLWl6OUtCMHkwTDg1QXhpR2tyRHBpbzUzYmVUdHFPUTcxUTRRN19KcDlZd0dPVmM2d05QSkxaRnl4M3BGVzJrNUlscjJtclJZSlVqUXoyTy1wU0gwODE4VTltQTJzNVYyODJ0T3RuMG5ZdzlDR3lUQlBWOXE1RE1laGZTaU1BOA?oc=5",
+        "pubDate": "Fri, 24 Jul 2026 17:00:01 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "Scale AI",
+      "tag": "AI Data",
+      "desc": "Data labelling and RLHF infrastructure powering frontier AI",
+      "url": "https://scale.com",
+      "initials": "S",
+      "logo": "https://www.google.com/s2/favicons?domain=scale.com&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "Physical AI now mainstream as manufacturers scale AI implementation - Computer Weekly",
+        "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNQnUzcG9CYURfSGNkVmpEbzN2bG9zZjZLeFdVN0pLSDd4WDdLNTZFWDlUU3hzbjJZS2RQU3pVNGNiWC1FZ0RzWnM5Q3gwZzlEdTl6aVBvTERwZWExRHFJTHZEU2JucTAtQkdrbTlHT0lXRHhkZHVoa3dCVURLb0ZfQVRXdi01R0x6VDh5SUE1VDdKZ3ozbmNkZ1hIaTlyXzVMZURBN21JcVRrX0lWMjVxMzRnVQ?oc=5",
+        "pubDate": "Fri, 24 Jul 2026 16:15:38 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "Anduril",
+      "tag": "Defense AI",
+      "desc": "Autonomous defense systems and AI-enabled military hardware",
+      "url": "https://anduril.com",
+      "initials": "A",
+      "logo": "https://www.google.com/s2/favicons?domain=anduril.com&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "EXCLUSIVE: Defense tech company Anduril in talks to raise funding at about $100 billion valuation - Reuters",
+        "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQQi1vbktDeWx4OVF5U01jenY1R21ZSUxPeGtSU0xBYVBndjA1VFBlU2ZvRG4yb1p6bXJPLWpUcVNYQzk3OGR0d1diSHVhOGVSU1RiT0N5U0p6LU1qMjZ4eXEyNXc3UGJhYzhwOC1xVV9pRHVmMkNDX2NCMDQ0V0hudndUd0NfZURXaHRNUXpXWEczTmtRZXd3TldIS0VQaU9EcmR1ZTQtajNjRWVOc0s5dFlXMlh2SS1wUEZNYkNGMUNkRFlPeVNCbzVIeGZiWThpVjlYZ3R3?oc=5",
+        "pubDate": "Fri, 24 Jul 2026 15:50:35 GMT"
       },
       "sparkline": null
     },
@@ -122,12 +70,11 @@
       "logo": "https://www.google.com/s2/favicons?domain=palantir.com&sz=128",
       "ticker": "PLTR",
       "headline": {
-        "title": "Mistral wanted to beat Anthropic. Now it’s becoming Palantir - Sifted",
-        "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBPOU1Kdk9jQkhLbFJxbGdiMTVsLVBTV0NnWVVyRGRWOHhtQU1LU1R5WFhhVnl2X21JV0FIbnVYVUVuNENOLV96cGJBWC1uNkVJRVZqTDhXMDE1MHdn?oc=5",
-        "pubDate": "Thu, 23 Jul 2026 04:05:10 GMT"
+        "title": "After Palantir Beef, US Withdraws Bid to Improve Military Intel - Bloomberg.com",
+        "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNdFc5YVM4VXVvS0kxZTVpc05URTZLVndZa3JJZE5WNXRhSUlzZTdxMV9xTzg0ZTNNQUdHQTN0RVYxQVVfRTItVFVONmpBT25mZkwwa1gwU01zTmhaeG1pNTlUa0NadzhjeEVLYzVuVS1BV2s4Sjk0bXM4MDJWSGo1Z2tXOElhMENhUE5Hekh1di1HODlRM3RidDhXVVAxSjhyMVJjaklzVnprOFdyeVBBamVJSQ?oc=5",
+        "pubDate": "Fri, 24 Jul 2026 12:41:24 GMT"
       },
       "sparkline": [
-        113.5,
         107.2699966430664,
         112.93000030517578,
         115.69999694824219,
@@ -147,21 +94,74 @@
         134.85000610351562,
         132.66000366210938,
         124.56999969482422,
-        123.37000274658203
+        123.37000274658203,
+        122.91999816894531
       ]
     },
     {
-      "name": "xAI",
-      "tag": "LLMs",
-      "desc": "Elon Musk's AI company, developer of the Grok models",
-      "url": "https://x.ai",
-      "initials": "X",
-      "logo": "https://www.google.com/s2/favicons?domain=x.ai&sz=128",
+      "name": "Commonwealth Fusion",
+      "tag": "Energy",
+      "desc": "Next-generation tokamak fusion for clean energy at scale",
+      "url": "https://cfs.energy",
+      "initials": "CFS",
+      "logo": "https://www.google.com/s2/favicons?domain=cfs.energy&sz=128",
       "ticker": null,
       "headline": {
-        "title": "Musk Leaves Room For a Potential SpaceX-Tesla Merger - Gizmodo",
-        "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOUVpzeG9yZlNGTTBXMXBiUEZtRHVfWVdFWURFNGpuNERLamE1WWo4QVllSVQtWkFodFN2YVdycDMzbmk0eklFeEpLSkswS2Z2UTkwTWtVU2ZuM1RMZlM3eTk5bThCdmRiSFhCNHpNN3J5c0FBODU3Q25Qb0FOc3hUY1RMbWx6bXhVTTdF?oc=5",
-        "pubDate": "Thu, 23 Jul 2026 03:39:34 GMT"
+        "title": "Fusion is Ready. Is Trump’s Washington? - Politico",
+        "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOcHR3QnRVTVVJS0NKUEI4VVYycjgzS0lOaG5FZVpYRHNpNm5iQ3Z0YlNxY0N1ZWlUOXJlQkZuQ0RQZ210XzZmRXZxZFJDUmpLaDhQYzJqNm1jSDhOcW5GZmRhWXNMVnNiNEJiX3Vybkg0S1hkUElhcXRFR3dQSlplTko3UThCVVhQYVBocWRyUkVBNzFmaDA3UkZKNXpOcnU5UDBhRUZJYWY3UlNKcFdUTw?oc=5",
+        "pubDate": "Fri, 24 Jul 2026 09:00:00 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "CrowdStrike",
+      "tag": "Cybersecurity",
+      "desc": "Cloud-native endpoint protection and threat intelligence",
+      "url": "https://crowdstrike.com",
+      "initials": "CS",
+      "logo": "https://www.google.com/s2/favicons?domain=crowdstrike.com&sz=128",
+      "ticker": "CRWD",
+      "headline": {
+        "title": "Cato Networks, CrowdStrike Unite Security Operations with Network and Endpoint Integration - The Fast Mode",
+        "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOMjVuOHBpNEstWnNsS05BY2VPYS1iOWMwVkY5RkxfbG44bnJxNVFncFhsR3g3Ym8weC1CcTFueS11OVNGRVJWQ1ZFbi1zUWRYT3ZNQi1tX0RfWlUyVHpCN09Dal9JbFVPNW5SQ2RDbjduNkJfbjdmaE53UTNGSVkzaXV0RVZ0RXpsX1d2Q1MwSlAxb2ZjeUUzWHNVU2FyLVMtOTFYOEU0Z0FjbFhSMXd3NEIxVUNlWDFQc2RoNFlpQW9yNVZHUjZic0llbEw1d2c2T3Z5YW9HeE1pMFhN?oc=5",
+        "pubDate": "Thu, 23 Jul 2026 23:56:40 GMT"
+      },
+      "sparkline": [
+        169.66250610351562,
+        175.2725067138672,
+        185.7274932861328,
+        190.78500366210938,
+        193.18499755859375,
+        193.97999572753906,
+        199.3800048828125,
+        194.6199951171875,
+        191.1199951171875,
+        198.39999389648438,
+        187.17999267578125,
+        187.91000366210938,
+        210.72999572753906,
+        206.77000427246094,
+        203.75999450683594,
+        203.0800018310547,
+        198.49000549316406,
+        191.14999389648438,
+        188.4199981689453,
+        183.4199981689453,
+        183.27999877929688
+      ]
+    },
+    {
+      "name": "Groq",
+      "tag": "AI Chips",
+      "desc": "LPU inference chips delivering industry-leading token speed",
+      "url": "https://groq.com",
+      "initials": "G",
+      "logo": "https://www.google.com/s2/favicons?domain=groq.com&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "AMD and Cerebras join forces against Nvidia’s Groq LPUs - The Register",
+        "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNZGdXa3hKX012VDNsdTZaU29ReXNMcTcxWUVSb1ZwaWdZd1Z5UHdoa0RIc0pKQl84NW9sb2NTWUpRWEkyZWRJOThWa2E2aXlMNmpZOG53am15WFk3ekpEemdvaUkxQ3MtaTJUWlEyUXMyM3ZLVk55dXRSSUgxalNfdzNpZzBfWV9iMWRqZUI5NXl4aklwdTNiM0xkaDRMMEtDMm0wRkg3STQ0RENURHc?oc=5",
+        "pubDate": "Thu, 23 Jul 2026 21:33:45 GMT"
       },
       "sparkline": null
     }
