@@ -1,18 +1,18 @@
 {
-  "refreshed_at": "2026-07-25T08:12:34.416Z",
+  "refreshed_at": "2026-07-26T08:33:03.168Z",
   "companies": [
     {
-      "name": "Waymo",
-      "tag": "Autonomy",
-      "desc": "The most miles driven autonomously of any robotaxi service",
-      "url": "https://waymo.com",
-      "initials": "W",
-      "logo": "https://www.google.com/s2/favicons?domain=waymo.com&sz=128",
+      "name": "Perplexity",
+      "tag": "AI Search",
+      "desc": "Answer engine combining web search with AI-generated summaries",
+      "url": "https://perplexity.ai",
+      "initials": "P",
+      "logo": "https://www.google.com/s2/favicons?domain=perplexity.ai&sz=128",
       "ticker": null,
       "headline": {
-        "title": "Waymo explores split with Uber as robotaxi tensions deepen - Financial Times",
-        "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOV19hOTVtaDdGWE5tOERqa04tSHRuVG1nSHYyc3VGbXp1T2c5YWJHZlREcnQyeWZKWTc4UFZZQkJncXFsMFJud0ZvZExlbFFCaGNvVmplSTBfSFdnaGRIelUzVlNiV096cTBTd3lGc1hBTnp5NWJ3RkpCY2pGNlJHYldaUVY?oc=5",
-        "pubDate": "Fri, 24 Jul 2026 19:15:14 GMT"
+        "title": "Brave's $5 Search API wins AI answer test as Perplexity finishes last - PPC Land",
+        "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNRFFIT3FoeFVRbDlQRHFkc1lsazltUkJRUjFrRk96eUFBSHZYWXItcTFwU0NpbHNGcEprcXBiaGFDTGM5clUwR2J5SF9GdlU4clBpejRPeGRLeTZ5VHhWTGs3SDZId3VDYmwwNWxUUjJ1V3AxZ05naURxUGFMRV9MMXR4N0loMThuOUE0VTB3?oc=5",
+        "pubDate": "Sun, 26 Jul 2026 07:20:45 GMT"
       },
       "sparkline": null
     },
@@ -25,9 +25,24 @@
       "logo": "https://www.google.com/s2/favicons?domain=anthropic.com&sz=128",
       "ticker": null,
       "headline": {
-        "title": "Anthropic's new AI model rivals Fable 5 and is cheaper as businesses fret about costs - CNBC",
-        "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNX0dWcGxxaVZCeDd0ejF4ZjQ4RExpVkduWG9JVlR3WlM0QUNiSmZpUHR2dWxicEY3WF9fMlhvWU1VY1BWZ3pBZ1NTTWc0ZFp3TmVaTTl0eXNHOVQ1MzJWa2hCaDlpcXRIX20tNEIwTnVLOVhBNldFVU1jYTI3RC1ZZS1B0gGHAUFVX3lxTE9SLWl6OUtCMHkwTDg1QXhpR2tyRHBpbzUzYmVUdHFPUTcxUTRRN19KcDlZd0dPVmM2d05QSkxaRnl4M3BGVzJrNUlscjJtclJZSlVqUXoyTy1wU0gwODE4VTltQTJzNVYyODJ0T3RuMG5ZdzlDR3lUQlBWOXE1RE1laGZTaU1BOA?oc=5",
-        "pubDate": "Fri, 24 Jul 2026 17:00:01 GMT"
+        "title": "Why this philosopher turned down Anthropic - Financial Times",
+        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFByU05OUTZrdDgtUk1OQ0pTendaYmVkbDNlTjNYaVctSU1YX05pZ04zeTZpVFpHZTVnTDRHWlNKcFpVUGE4QllPYXp1Q0lhSUIxSUdyVlNsa2E0REdnVXNEVURPT0dCY01UUjJONlB0Nkw?oc=5",
+        "pubDate": "Sat, 25 Jul 2026 04:02:41 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "Waymo",
+      "tag": "Autonomy",
+      "desc": "The most miles driven autonomously of any robotaxi service",
+      "url": "https://waymo.com",
+      "initials": "W",
+      "logo": "https://www.google.com/s2/favicons?domain=waymo.com&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "Waymo explores split with Uber as robotaxi tensions deepen - Financial Times",
+        "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOV19hOTVtaDdGWE5tOERqa04tSHRuVG1nSHYyc3VGbXp1T2c5YWJHZlREcnQyeWZKWTc4UFZZQkJncXFsMFJud0ZvZExlbFFCaGNvVmplSTBfSFdnaGRIelUzVlNiV096cTBTd3lGc1hBTnp5NWJ3RkpCY2pGNlJHYldaUVY?oc=5",
+        "pubDate": "Fri, 24 Jul 2026 19:15:14 GMT"
       },
       "sparkline": null
     },
@@ -62,6 +77,21 @@
       "sparkline": null
     },
     {
+      "name": "OpenAI",
+      "tag": "LLMs",
+      "desc": "Creator of ChatGPT and the GPT family of foundation models",
+      "url": "https://openai.com",
+      "initials": "OAI",
+      "logo": "https://www.google.com/s2/favicons?domain=openai.com&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "Be skeptical of OpenAI’s rogue hacker agent story | John Thickstun - The Guardian",
+        "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1RVU9pcWhLek5XVDJlSi1XQ3UxR0laS0wwTkh2Z29rMnhfWUExMHpqOEpwRGc4OGxJSVRnejhnd2Y1QS1DYVRySVo0RXpQOGdwMjFGTEtDT0xpQ09tazQyMXRyVjl3NkhTTzF1NXBHazdaWGlwbWhSY1hR?oc=5",
+        "pubDate": "Fri, 24 Jul 2026 15:48:00 GMT"
+      },
+      "sparkline": null
+    },
+    {
       "name": "Palantir",
       "tag": "Data Analytics",
       "desc": "Big-data analytics platforms for government and enterprise",
@@ -70,9 +100,9 @@
       "logo": "https://www.google.com/s2/favicons?domain=palantir.com&sz=128",
       "ticker": "PLTR",
       "headline": {
-        "title": "After Palantir Beef, US Withdraws Bid to Improve Military Intel - Bloomberg.com",
-        "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNdFc5YVM4VXVvS0kxZTVpc05URTZLVndZa3JJZE5WNXRhSUlzZTdxMV9xTzg0ZTNNQUdHQTN0RVYxQVVfRTItVFVONmpBT25mZkwwa1gwU01zTmhaeG1pNTlUa0NadzhjeEVLYzVuVS1BV2s4Sjk0bXM4MDJWSGo1Z2tXOElhMENhUE5Hekh1di1HODlRM3RidDhXVVAxSjhyMVJjaklzVnprOFdyeVBBamVJSQ?oc=5",
-        "pubDate": "Fri, 24 Jul 2026 12:41:24 GMT"
+        "title": "Nvidia and Palantir urge US not to ban ‘open’ AI models after China scare - Financial Times",
+        "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOU2FyWGg1ZUJWeDUxVHUwQThYaWdrRng5M2poTEU0a2tfSGdJd0NwTnROQWFuTTNtTk5qcmNkbFB4NjJMYzhRR1NKWkd3aHh0blRIVFhibk1yN1VBenAxMVI0WjcxZDNEVDMzSDFuUmt2c2JqY0RQbjBZM3AxZDVMeEwxRG0?oc=5",
+        "pubDate": "Fri, 24 Jul 2026 15:20:23 GMT"
       },
       "sparkline": [
         107.2699966430664,
@@ -94,8 +124,7 @@
         134.85000610351562,
         132.66000366210938,
         124.56999969482422,
-        123.37000274658203,
-        122.91999816894531
+        123.37000274658203
       ]
     },
     {
@@ -110,58 +139,6 @@
         "title": "Fusion is Ready. Is Trump’s Washington? - Politico",
         "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOcHR3QnRVTVVJS0NKUEI4VVYycjgzS0lOaG5FZVpYRHNpNm5iQ3Z0YlNxY0N1ZWlUOXJlQkZuQ0RQZ210XzZmRXZxZFJDUmpLaDhQYzJqNm1jSDhOcW5GZmRhWXNMVnNiNEJiX3Vybkg0S1hkUElhcXRFR3dQSlplTko3UThCVVhQYVBocWRyUkVBNzFmaDA3UkZKNXpOcnU5UDBhRUZJYWY3UlNKcFdUTw?oc=5",
         "pubDate": "Fri, 24 Jul 2026 09:00:00 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "CrowdStrike",
-      "tag": "Cybersecurity",
-      "desc": "Cloud-native endpoint protection and threat intelligence",
-      "url": "https://crowdstrike.com",
-      "initials": "CS",
-      "logo": "https://www.google.com/s2/favicons?domain=crowdstrike.com&sz=128",
-      "ticker": "CRWD",
-      "headline": {
-        "title": "Cato Networks, CrowdStrike Unite Security Operations with Network and Endpoint Integration - The Fast Mode",
-        "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOMjVuOHBpNEstWnNsS05BY2VPYS1iOWMwVkY5RkxfbG44bnJxNVFncFhsR3g3Ym8weC1CcTFueS11OVNGRVJWQ1ZFbi1zUWRYT3ZNQi1tX0RfWlUyVHpCN09Dal9JbFVPNW5SQ2RDbjduNkJfbjdmaE53UTNGSVkzaXV0RVZ0RXpsX1d2Q1MwSlAxb2ZjeUUzWHNVU2FyLVMtOTFYOEU0Z0FjbFhSMXd3NEIxVUNlWDFQc2RoNFlpQW9yNVZHUjZic0llbEw1d2c2T3Z5YW9HeE1pMFhN?oc=5",
-        "pubDate": "Thu, 23 Jul 2026 23:56:40 GMT"
-      },
-      "sparkline": [
-        169.66250610351562,
-        175.2725067138672,
-        185.7274932861328,
-        190.78500366210938,
-        193.18499755859375,
-        193.97999572753906,
-        199.3800048828125,
-        194.6199951171875,
-        191.1199951171875,
-        198.39999389648438,
-        187.17999267578125,
-        187.91000366210938,
-        210.72999572753906,
-        206.77000427246094,
-        203.75999450683594,
-        203.0800018310547,
-        198.49000549316406,
-        191.14999389648438,
-        188.4199981689453,
-        183.4199981689453,
-        183.27999877929688
-      ]
-    },
-    {
-      "name": "Groq",
-      "tag": "AI Chips",
-      "desc": "LPU inference chips delivering industry-leading token speed",
-      "url": "https://groq.com",
-      "initials": "G",
-      "logo": "https://www.google.com/s2/favicons?domain=groq.com&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "AMD and Cerebras join forces against Nvidia’s Groq LPUs - The Register",
-        "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNZGdXa3hKX012VDNsdTZaU29ReXNMcTcxWUVSb1ZwaWdZd1Z5UHdoa0RIc0pKQl84NW9sb2NTWUpRWEkyZWRJOThWa2E2aXlMNmpZOG53am15WFk3ekpEemdvaUkxQ3MtaTJUWlEyUXMyM3ZLVk55dXRSSUgxalNfdzNpZzBfWV9iMWRqZUI5NXl4aklwdTNiM0xkaDRMMEtDMm0wRkg3STQ0RENURHc?oc=5",
-        "pubDate": "Thu, 23 Jul 2026 21:33:45 GMT"
       },
       "sparkline": null
     }
