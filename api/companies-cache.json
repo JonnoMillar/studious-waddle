@@ -1,6 +1,43 @@
 {
-  "refreshed_at": "2026-07-26T08:33:03.168Z",
+  "refreshed_at": "2026-07-27T09:59:42.111Z",
   "companies": [
+    {
+      "name": "Rocket Lab",
+      "tag": "Space",
+      "desc": "Small-satellite launch provider and space systems manufacturer",
+      "url": "https://rocketlabusa.com",
+      "initials": "RL",
+      "logo": "https://www.google.com/s2/favicons?domain=rocketlabusa.com&sz=128",
+      "ticker": "RKLB",
+      "headline": {
+        "title": "Down 49% and 57%, is it time to buy SpaceX and Rocket Lab for my ISA? - Yahoo Finance UK",
+        "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBBQ08wXzRfSGFCdXQtaGtPOEdyQnk0ZUtFelRTUzVJcWFDdzgyZ25VYVYxYXdkdWYwZWZpTWp2alFUZ1NYaVN6bnN5VE9faGt0eE9FWGMyTzRMVjVPV3lKQlg2cmNMYmdnaVZaaTNVeHM0WjN4V293?oc=5",
+        "pubDate": "Mon, 27 Jul 2026 08:49:05 GMT"
+      },
+      "sparkline": [
+        80.69000244140625,
+        84.54000091552734,
+        98.01000213623047,
+        101.6500015258789,
+        100.06999969482422,
+        100.45999908447266,
+        93.08999633789062,
+        83.41000366210938,
+        83.3499984741211,
+        82.55000305175781,
+        81.04000091552734,
+        76.7300033569336,
+        78.80999755859375,
+        76.19999694824219,
+        67.3499984741211,
+        67.62000274658203,
+        65.73999786376953,
+        69.12000274658203,
+        69.75,
+        69.98999786376953,
+        63.90999984741211
+      ]
+    },
     {
       "name": "Perplexity",
       "tag": "AI Search",
@@ -10,9 +47,54 @@
       "logo": "https://www.google.com/s2/favicons?domain=perplexity.ai&sz=128",
       "ticker": null,
       "headline": {
-        "title": "Brave's $5 Search API wins AI answer test as Perplexity finishes last - PPC Land",
-        "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNRFFIT3FoeFVRbDlQRHFkc1lsazltUkJRUjFrRk96eUFBSHZYWXItcTFwU0NpbHNGcEprcXBiaGFDTGM5clUwR2J5SF9GdlU4clBpejRPeGRLeTZ5VHhWTGs3SDZId3VDYmwwNWxUUjJ1V3AxZ05naURxUGFMRV9MMXR4N0loMThuOUE0VTB3?oc=5",
-        "pubDate": "Sun, 26 Jul 2026 07:20:45 GMT"
+        "title": "I asked ChatGPT, Gemini, Claude and Perplexity what they think of each other - Tom's Guide",
+        "link": "https://news.google.com/rss/articles/CBMiigJBVV95cUxNNFE0b0dvOFkwWjB3TVZhRFg3TmE0VU1rWEhid3QtVHd6TF95Wmw3YV9rVFo2cFBuTkFBOHNKaE84Vjk4dkkyaVl4TGNxZW5XMjRvbTdfa0ROME1Ma3U3eEtqSm5wdkZNeEpBaGF5WkN0MjVPRlB4bjB1MUFsa2kzUzRmVjJQNXNyWVBUVXVMRTdFWGFhRTBEZFBodXpTWTYtMWRlX3NJWU8yRHB0bV9DYlNkWHZiRVlVS2Y1S3VSQzNKOVYyYzRuNThWdWdiU3A5WFdpNFdodTE4OVhzbGZ1UnBRT0NUb2tKY0swbzM3T1JoQkxlSm1UYldjbXNMZVk1RUduVHo1MjVvdw?oc=5",
+        "pubDate": "Mon, 27 Jul 2026 07:00:00 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "Scale AI",
+      "tag": "AI Data",
+      "desc": "Data labelling and RLHF infrastructure powering frontier AI",
+      "url": "https://scale.com",
+      "initials": "S",
+      "logo": "https://www.google.com/s2/favicons?domain=scale.com&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "AMD advances AI - Electronics Weekly",
+        "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE41SXFEVWZSVG9GbEdEem9DNklYRER0ZGlZZTh1Q1Bta0hwSnFuNGhJd0tfRkZTQmlzM2JYcmNZNHpXbHNlN2VHLVhscDlLZ3Y2YzJQWFRmN0R1c0ZBTGZEOG5SXzVKYi0zX0haVG1QeDBIQVhUMGxucEdZeXI?oc=5",
+        "pubDate": "Mon, 27 Jul 2026 05:34:36 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "OpenAI",
+      "tag": "LLMs",
+      "desc": "Creator of ChatGPT and the GPT family of foundation models",
+      "url": "https://openai.com",
+      "initials": "OAI",
+      "logo": "https://www.google.com/s2/favicons?domain=openai.com&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "Exclusive | Nvidia in Talks With OpenAI to Guarantee $250 Billion Financing for Data Center - WSJ",
+        "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNUHE0OEhmOHhqTDNLbU9NSXRleVFYNGZubkkyYjJKNVpTRGtYQmFPWGRYUjVQZDdnc0pQX3BZaldxeEE1MUYtSmZ3Q2JPdGo1MnAxT2VTSFVGUDdqdUJaVGJ1N0hvVVVsMkNIS2I3dXBlTVBfeGw0ZGxlRmtTVEZ5RE9Kc2JjTnFUbFhPakFHcTI1aXVzRTdHMHMwV2RwZ1gyZXJvUTlJODVXUXl1R19aMkh6T1cydw?oc=5",
+        "pubDate": "Sun, 26 Jul 2026 23:19:00 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "Cursor",
+      "tag": "Code Editor",
+      "desc": "AI-native code editor that pairs with Claude and GPT-4",
+      "url": "https://cursor.com",
+      "initials": "C",
+      "logo": "https://www.google.com/s2/favicons?domain=cursor.com&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "forget the mouse: augmental’s mouthpad lets the tongue control the cursor - Designboom",
+        "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQelJoVm54Z3VyWm91Z2JhbkotdXlfc0hBMUdjcER6Vzgyd1c2N3Bhbk55RmQzQlFEVXZiTnpZVFN0dktJdW9QMlpZNGZzbWotcGtud3dFeDVLY0RqVUJnQzJZRXdYektOTklkWTZpX3djMGpFamYyQzJLS2hIUFpONC0yMzY?oc=5",
+        "pubDate": "Sun, 26 Jul 2026 21:52:36 GMT"
       },
       "sparkline": null
     },
@@ -25,9 +107,24 @@
       "logo": "https://www.google.com/s2/favicons?domain=anthropic.com&sz=128",
       "ticker": null,
       "headline": {
-        "title": "Why this philosopher turned down Anthropic - Financial Times",
-        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFByU05OUTZrdDgtUk1OQ0pTendaYmVkbDNlTjNYaVctSU1YX05pZ04zeTZpVFpHZTVnTDRHWlNKcFpVUGE4QllPYXp1Q0lhSUIxSUdyVlNsa2E0REdnVXNEVURPT0dCY01UUjJONlB0Nkw?oc=5",
-        "pubDate": "Sat, 25 Jul 2026 04:02:41 GMT"
+        "title": "Nvidia Open Weights Letter Doubled To 50 Without Amazon And Anthropic - Forbes",
+        "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOdDdqVzNsSGsyVVZtcHQ5U2RQZlNBVE13X0xjNjBxVmw1WUl1QkRTZUpwbWoxb1VvZGRKU190cUFiS0VHZTZMTHY2cW9QVDBrWGFsLVd5SzRXVjZsczVjeFJZRjJwamo0eXJ2bkF1Q3I4VF84bVZyQURtMnRsYlNpWF9BMEpoSUJXUFNDaGNYWllCWkN1VkpmRkxtMmZRX3JVQWNsbHdIYXdmVkN2cWItVFpTM1NnY3ptZ3I2Zm1vaw?oc=5",
+        "pubDate": "Sun, 26 Jul 2026 01:19:42 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "xAI",
+      "tag": "LLMs",
+      "desc": "Elon Musk's AI company, developer of the Grok models",
+      "url": "https://x.ai",
+      "initials": "X",
+      "logo": "https://www.google.com/s2/favicons?domain=x.ai&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "Arkansas family sues xAI over use of Grok to create deepfake child sex abuse material - KATV",
+        "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNX3d5ZW9lRHFMcVI5MkNZTFJ5ZTZtYnQyREhPekhZaVN5OFNzdjFTRy00YURTRXNtQ3dtN0Z6YnNqa2x6VXZ0U0dWNzhmZ1RRb25fZXRtWEc0V3NSaG9zbllYT3FHNGQxUDFBVDI4eHZ3TklkUmFVYTZma3FKaTRna29JeHNLTGlHWTg0Y0dtOWZ6OFpDNDdPcko3dlNGZ1R1Z1pwRHd3QWp1c1V5cHc0ZVFQWQ?oc=5",
+        "pubDate": "Fri, 24 Jul 2026 21:00:52 GMT"
       },
       "sparkline": null
     },
@@ -43,102 +140,6 @@
         "title": "Waymo explores split with Uber as robotaxi tensions deepen - Financial Times",
         "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOV19hOTVtaDdGWE5tOERqa04tSHRuVG1nSHYyc3VGbXp1T2c5YWJHZlREcnQyeWZKWTc4UFZZQkJncXFsMFJud0ZvZExlbFFCaGNvVmplSTBfSFdnaGRIelUzVlNiV096cTBTd3lGc1hBTnp5NWJ3RkpCY2pGNlJHYldaUVY?oc=5",
         "pubDate": "Fri, 24 Jul 2026 19:15:14 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "Scale AI",
-      "tag": "AI Data",
-      "desc": "Data labelling and RLHF infrastructure powering frontier AI",
-      "url": "https://scale.com",
-      "initials": "S",
-      "logo": "https://www.google.com/s2/favicons?domain=scale.com&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "Physical AI now mainstream as manufacturers scale AI implementation - Computer Weekly",
-        "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNQnUzcG9CYURfSGNkVmpEbzN2bG9zZjZLeFdVN0pLSDd4WDdLNTZFWDlUU3hzbjJZS2RQU3pVNGNiWC1FZ0RzWnM5Q3gwZzlEdTl6aVBvTERwZWExRHFJTHZEU2JucTAtQkdrbTlHT0lXRHhkZHVoa3dCVURLb0ZfQVRXdi01R0x6VDh5SUE1VDdKZ3ozbmNkZ1hIaTlyXzVMZURBN21JcVRrX0lWMjVxMzRnVQ?oc=5",
-        "pubDate": "Fri, 24 Jul 2026 16:15:38 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "Anduril",
-      "tag": "Defense AI",
-      "desc": "Autonomous defense systems and AI-enabled military hardware",
-      "url": "https://anduril.com",
-      "initials": "A",
-      "logo": "https://www.google.com/s2/favicons?domain=anduril.com&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "EXCLUSIVE: Defense tech company Anduril in talks to raise funding at about $100 billion valuation - Reuters",
-        "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQQi1vbktDeWx4OVF5U01jenY1R21ZSUxPeGtSU0xBYVBndjA1VFBlU2ZvRG4yb1p6bXJPLWpUcVNYQzk3OGR0d1diSHVhOGVSU1RiT0N5U0p6LU1qMjZ4eXEyNXc3UGJhYzhwOC1xVV9pRHVmMkNDX2NCMDQ0V0hudndUd0NfZURXaHRNUXpXWEczTmtRZXd3TldIS0VQaU9EcmR1ZTQtajNjRWVOc0s5dFlXMlh2SS1wUEZNYkNGMUNkRFlPeVNCbzVIeGZiWThpVjlYZ3R3?oc=5",
-        "pubDate": "Fri, 24 Jul 2026 15:50:35 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "OpenAI",
-      "tag": "LLMs",
-      "desc": "Creator of ChatGPT and the GPT family of foundation models",
-      "url": "https://openai.com",
-      "initials": "OAI",
-      "logo": "https://www.google.com/s2/favicons?domain=openai.com&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "Be skeptical of OpenAI’s rogue hacker agent story | John Thickstun - The Guardian",
-        "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1RVU9pcWhLek5XVDJlSi1XQ3UxR0laS0wwTkh2Z29rMnhfWUExMHpqOEpwRGc4OGxJSVRnejhnd2Y1QS1DYVRySVo0RXpQOGdwMjFGTEtDT0xpQ09tazQyMXRyVjl3NkhTTzF1NXBHazdaWGlwbWhSY1hR?oc=5",
-        "pubDate": "Fri, 24 Jul 2026 15:48:00 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "Palantir",
-      "tag": "Data Analytics",
-      "desc": "Big-data analytics platforms for government and enterprise",
-      "url": "https://palantir.com",
-      "initials": "PL",
-      "logo": "https://www.google.com/s2/favicons?domain=palantir.com&sz=128",
-      "ticker": "PLTR",
-      "headline": {
-        "title": "Nvidia and Palantir urge US not to ban ‘open’ AI models after China scare - Financial Times",
-        "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOU2FyWGg1ZUJWeDUxVHUwQThYaWdrRng5M2poTEU0a2tfSGdJd0NwTnROQWFuTTNtTk5qcmNkbFB4NjJMYzhRR1NKWkd3aHh0blRIVFhibk1yN1VBenAxMVI0WjcxZDNEVDMzSDFuUmt2c2JqY0RQbjBZM3AxZDVMeEwxRG0?oc=5",
-        "pubDate": "Fri, 24 Jul 2026 15:20:23 GMT"
-      },
-      "sparkline": [
-        107.2699966430664,
-        112.93000030517578,
-        115.69999694824219,
-        116.66999816894531,
-        125.7300033569336,
-        129.3000030517578,
-        132.5399932861328,
-        134.3699951171875,
-        132.22000122070312,
-        129.0399932861328,
-        126.79000091552734,
-        130.0399932861328,
-        133.72000122070312,
-        133.75999450683594,
-        134.44000244140625,
-        132.3800048828125,
-        134.85000610351562,
-        132.66000366210938,
-        124.56999969482422,
-        123.37000274658203
-      ]
-    },
-    {
-      "name": "Commonwealth Fusion",
-      "tag": "Energy",
-      "desc": "Next-generation tokamak fusion for clean energy at scale",
-      "url": "https://cfs.energy",
-      "initials": "CFS",
-      "logo": "https://www.google.com/s2/favicons?domain=cfs.energy&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "Fusion is Ready. Is Trump’s Washington? - Politico",
-        "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOcHR3QnRVTVVJS0NKUEI4VVYycjgzS0lOaG5FZVpYRHNpNm5iQ3Z0YlNxY0N1ZWlUOXJlQkZuQ0RQZ210XzZmRXZxZFJDUmpLaDhQYzJqNm1jSDhOcW5GZmRhWXNMVnNiNEJiX3Vybkg0S1hkUElhcXRFR3dQSlplTko3UThCVVhQYVBocWRyUkVBNzFmaDA3UkZKNXpOcnU5UDBhRUZJYWY3UlNKcFdUTw?oc=5",
-        "pubDate": "Fri, 24 Jul 2026 09:00:00 GMT"
       },
       "sparkline": null
     }
