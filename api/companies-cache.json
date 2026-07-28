@@ -1,115 +1,18 @@
 {
-  "refreshed_at": "2026-07-27T09:59:42.111Z",
+  "refreshed_at": "2026-07-28T08:42:03.428Z",
   "companies": [
     {
-      "name": "Rocket Lab",
-      "tag": "Space",
-      "desc": "Small-satellite launch provider and space systems manufacturer",
-      "url": "https://rocketlabusa.com",
-      "initials": "RL",
-      "logo": "https://www.google.com/s2/favicons?domain=rocketlabusa.com&sz=128",
-      "ticker": "RKLB",
-      "headline": {
-        "title": "Down 49% and 57%, is it time to buy SpaceX and Rocket Lab for my ISA? - Yahoo Finance UK",
-        "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBBQ08wXzRfSGFCdXQtaGtPOEdyQnk0ZUtFelRTUzVJcWFDdzgyZ25VYVYxYXdkdWYwZWZpTWp2alFUZ1NYaVN6bnN5VE9faGt0eE9FWGMyTzRMVjVPV3lKQlg2cmNMYmdnaVZaaTNVeHM0WjN4V293?oc=5",
-        "pubDate": "Mon, 27 Jul 2026 08:49:05 GMT"
-      },
-      "sparkline": [
-        80.69000244140625,
-        84.54000091552734,
-        98.01000213623047,
-        101.6500015258789,
-        100.06999969482422,
-        100.45999908447266,
-        93.08999633789062,
-        83.41000366210938,
-        83.3499984741211,
-        82.55000305175781,
-        81.04000091552734,
-        76.7300033569336,
-        78.80999755859375,
-        76.19999694824219,
-        67.3499984741211,
-        67.62000274658203,
-        65.73999786376953,
-        69.12000274658203,
-        69.75,
-        69.98999786376953,
-        63.90999984741211
-      ]
-    },
-    {
-      "name": "Perplexity",
-      "tag": "AI Search",
-      "desc": "Answer engine combining web search with AI-generated summaries",
-      "url": "https://perplexity.ai",
-      "initials": "P",
-      "logo": "https://www.google.com/s2/favicons?domain=perplexity.ai&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "I asked ChatGPT, Gemini, Claude and Perplexity what they think of each other - Tom's Guide",
-        "link": "https://news.google.com/rss/articles/CBMiigJBVV95cUxNNFE0b0dvOFkwWjB3TVZhRFg3TmE0VU1rWEhid3QtVHd6TF95Wmw3YV9rVFo2cFBuTkFBOHNKaE84Vjk4dkkyaVl4TGNxZW5XMjRvbTdfa0ROME1Ma3U3eEtqSm5wdkZNeEpBaGF5WkN0MjVPRlB4bjB1MUFsa2kzUzRmVjJQNXNyWVBUVXVMRTdFWGFhRTBEZFBodXpTWTYtMWRlX3NJWU8yRHB0bV9DYlNkWHZiRVlVS2Y1S3VSQzNKOVYyYzRuNThWdWdiU3A5WFdpNFdodTE4OVhzbGZ1UnBRT0NUb2tKY0swbzM3T1JoQkxlSm1UYldjbXNMZVk1RUduVHo1MjVvdw?oc=5",
-        "pubDate": "Mon, 27 Jul 2026 07:00:00 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "Scale AI",
-      "tag": "AI Data",
-      "desc": "Data labelling and RLHF infrastructure powering frontier AI",
-      "url": "https://scale.com",
-      "initials": "S",
-      "logo": "https://www.google.com/s2/favicons?domain=scale.com&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "AMD advances AI - Electronics Weekly",
-        "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE41SXFEVWZSVG9GbEdEem9DNklYRER0ZGlZZTh1Q1Bta0hwSnFuNGhJd0tfRkZTQmlzM2JYcmNZNHpXbHNlN2VHLVhscDlLZ3Y2YzJQWFRmN0R1c0ZBTGZEOG5SXzVKYi0zX0haVG1QeDBIQVhUMGxucEdZeXI?oc=5",
-        "pubDate": "Mon, 27 Jul 2026 05:34:36 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "OpenAI",
+      "name": "Mistral AI",
       "tag": "LLMs",
-      "desc": "Creator of ChatGPT and the GPT family of foundation models",
-      "url": "https://openai.com",
-      "initials": "OAI",
-      "logo": "https://www.google.com/s2/favicons?domain=openai.com&sz=128",
+      "desc": "Europe's leading open-weight AI foundation models",
+      "url": "https://mistral.ai",
+      "initials": "M",
+      "logo": "https://www.google.com/s2/favicons?domain=mistral.ai&sz=128",
       "ticker": null,
       "headline": {
-        "title": "Exclusive | Nvidia in Talks With OpenAI to Guarantee $250 Billion Financing for Data Center - WSJ",
-        "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNUHE0OEhmOHhqTDNLbU9NSXRleVFYNGZubkkyYjJKNVpTRGtYQmFPWGRYUjVQZDdnc0pQX3BZaldxeEE1MUYtSmZ3Q2JPdGo1MnAxT2VTSFVGUDdqdUJaVGJ1N0hvVVVsMkNIS2I3dXBlTVBfeGw0ZGxlRmtTVEZ5RE9Kc2JjTnFUbFhPakFHcTI1aXVzRTdHMHMwV2RwZ1gyZXJvUTlJODVXUXl1R19aMkh6T1cydw?oc=5",
-        "pubDate": "Sun, 26 Jul 2026 23:19:00 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "Cursor",
-      "tag": "Code Editor",
-      "desc": "AI-native code editor that pairs with Claude and GPT-4",
-      "url": "https://cursor.com",
-      "initials": "C",
-      "logo": "https://www.google.com/s2/favicons?domain=cursor.com&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "forget the mouse: augmental’s mouthpad lets the tongue control the cursor - Designboom",
-        "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQelJoVm54Z3VyWm91Z2JhbkotdXlfc0hBMUdjcER6Vzgyd1c2N3Bhbk55RmQzQlFEVXZiTnpZVFN0dktJdW9QMlpZNGZzbWotcGtud3dFeDVLY0RqVUJnQzJZRXdYektOTklkWTZpX3djMGpFamYyQzJLS2hIUFpONC0yMzY?oc=5",
-        "pubDate": "Sun, 26 Jul 2026 21:52:36 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "Anthropic",
-      "tag": "LLMs",
-      "desc": "AI safety company behind the Claude family of models",
-      "url": "https://anthropic.com",
-      "initials": "AN",
-      "logo": "https://www.google.com/s2/favicons?domain=anthropic.com&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "Nvidia Open Weights Letter Doubled To 50 Without Amazon And Anthropic - Forbes",
-        "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOdDdqVzNsSGsyVVZtcHQ5U2RQZlNBVE13X0xjNjBxVmw1WUl1QkRTZUpwbWoxb1VvZGRKU190cUFiS0VHZTZMTHY2cW9QVDBrWGFsLVd5SzRXVjZsczVjeFJZRjJwamo0eXJ2bkF1Q3I4VF84bVZyQURtMnRsYlNpWF9BMEpoSUJXUFNDaGNYWllCWkN1VkpmRkxtMmZRX3JVQWNsbHdIYXdmVkN2cWItVFpTM1NnY3ptZ3I2Zm1vaw?oc=5",
-        "pubDate": "Sun, 26 Jul 2026 01:19:42 GMT"
+        "title": "Microsoft, Samsung expand presence in Europe’s sovereign AI market with Mistral deals - raconteur.net",
+        "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNbXZMOW01eUJCQl8tdHVUZFRYb0FPVTFHNnpyT1ptcnJUb2ZzcWdLc2VUcG9EQkpGS2hTcnJWQ25tSDNsS3lUMTE3WHBQZDhXbm9tZGNfb2NSZGg1aWZOS0NKaElEdFNKNFRreWpYSlEwaTYtdFprQ1B5WjB4Y2RnYlRHNVZod1N2N3M4TDRJVkJOT1dZbExnaXctOVlGN3RtWTZKNE1lUzloRDJpNDBObUJR?oc=5",
+        "pubDate": "Tue, 28 Jul 2026 08:00:00 GMT"
       },
       "sparkline": null
     },
@@ -122,24 +25,120 @@
       "logo": "https://www.google.com/s2/favicons?domain=x.ai&sz=128",
       "ticker": null,
       "headline": {
-        "title": "Arkansas family sues xAI over use of Grok to create deepfake child sex abuse material - KATV",
-        "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNX3d5ZW9lRHFMcVI5MkNZTFJ5ZTZtYnQyREhPekhZaVN5OFNzdjFTRy00YURTRXNtQ3dtN0Z6YnNqa2x6VXZ0U0dWNzhmZ1RRb25fZXRtWEc0V3NSaG9zbllYT3FHNGQxUDFBVDI4eHZ3TklkUmFVYTZma3FKaTRna29JeHNLTGlHWTg0Y0dtOWZ6OFpDNDdPcko3dlNGZ1R1Z1pwRHd3QWp1c1V5cHc0ZVFQWQ?oc=5",
-        "pubDate": "Fri, 24 Jul 2026 21:00:52 GMT"
+        "title": "UK lawmaker suing Musk's xAI seeks order to stop Grok generating sexualised images - Reuters",
+        "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNVEZqYTIyLTJKQm5vWDg1Wng1R194ajZTSWNVaUh0N19nMEdFbWtqbkQ1WlB3YlpPREN0U1lBSGFXNnVMRGpyV09sN0hnczMxZm84T1NvNFR2UktJV0F0UmdXbExaSWtFZDlwUG1yTmNUbXJOYXJzOEZITkhwMzVWTXE2clo3SWVmdTVMSkE3MGpHbFZvWGVILVdZdTBoOFVTdG0yOGQ2OTl2c2dEMDBkZFZ0cG01cmFZem00ckdmaG1xUW9ndTg4TVhlVQ?oc=5",
+        "pubDate": "Tue, 28 Jul 2026 07:28:09 GMT"
       },
       "sparkline": null
     },
     {
-      "name": "Waymo",
-      "tag": "Autonomy",
-      "desc": "The most miles driven autonomously of any robotaxi service",
-      "url": "https://waymo.com",
-      "initials": "W",
-      "logo": "https://www.google.com/s2/favicons?domain=waymo.com&sz=128",
+      "name": "Cursor",
+      "tag": "Code Editor",
+      "desc": "AI-native code editor that pairs with Claude and GPT-4",
+      "url": "https://cursor.com",
+      "initials": "C",
+      "logo": "https://www.google.com/s2/favicons?domain=cursor.com&sz=128",
       "ticker": null,
       "headline": {
-        "title": "Waymo explores split with Uber as robotaxi tensions deepen - Financial Times",
-        "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOV19hOTVtaDdGWE5tOERqa04tSHRuVG1nSHYyc3VGbXp1T2c5YWJHZlREcnQyeWZKWTc4UFZZQkJncXFsMFJud0ZvZExlbFFCaGNvVmplSTBfSFdnaGRIelUzVlNiV096cTBTd3lGc1hBTnp5NWJ3RkpCY2pGNlJHYldaUVY?oc=5",
-        "pubDate": "Fri, 24 Jul 2026 19:15:14 GMT"
+        "title": "Cursor makes its biggest India push yet ahead of SpaceX acquisition with localized pricing - TechCrunch",
+        "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPZEl2S2FLWkdtMjZFY0EwTjVCeTQxc19mUzMyb3NhUVQ2azVUcjhNeVQwZ1dPY0h6Q3IteDRPR3VUV2UxcUw1S1ZhRVdIZ3dSQ1Y3cE9ieU03Yzlpb0FhRmc1SjZTaTl4eWhCSWpOX0dSQVFWSE5BWnl4QkZRMG8yOFZNdmJ3TUh5SFJKbm1vWEdiVHZXdjlsbmM5RWVzRXEwUGJ4TWVVY3AzQjA3em5wYXRaMEJDTHhkYXlnUWxQZmlvMTg?oc=5",
+        "pubDate": "Tue, 28 Jul 2026 04:30:00 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "Anduril",
+      "tag": "Defense AI",
+      "desc": "Autonomous defense systems and AI-enabled military hardware",
+      "url": "https://anduril.com",
+      "initials": "A",
+      "logo": "https://www.google.com/s2/favicons?domain=anduril.com&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "Anduril CEO Brian Schimpf says AI and autonomous weapons will reshape modern warfare - CNBC",
+        "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQdXpjbmoyTkVLMGNkX2RnckotYUdqaTZBNlozc2EwMk1Xb2REaGpXLTFfX3BYUmhlMHFEa0YyeFVwTlBrRnNSY3J3SkVCQlZmNmlmOFUzSHNIdWctYWkzdXBjVGZGY08weWJpN2ZWb2JGVnJZdzNLdHdvM21GcVZKekFHRDBaVURhVVRyeDZmc2tRa3RSZWxveHd6d240OWZfNmhrelZzclBHNmtfQlNIQnF2NA?oc=5",
+        "pubDate": "Tue, 28 Jul 2026 03:51:09 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "Anthropic",
+      "tag": "LLMs",
+      "desc": "AI safety company behind the Claude family of models",
+      "url": "https://anthropic.com",
+      "initials": "AN",
+      "logo": "https://www.google.com/s2/favicons?domain=anthropic.com&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "Anthropic CEO Dario Amodei says AI company isn't advocating for ban of open-weight models - CNBC",
+        "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOT3ZWTGRXN2ZtQmwyOGpqd19OcHBBbHVoRVNUakhyWGp0ZnF1UHpYTXdBeUlBTE1BS3pUaFRsVm1CUlphR0Vfa3JYVXpOMzR3R3ZaVEZlSG5QblJkaEZIV0FINzVKUTRvUW9nM25tN3dFUlBZekdIbThnMkFRR25DV0JBSDRKcElXVHFNN29KOFFzclJfYnVCY2c5cG9wb1VjN3ZR0gGoAUFVX3lxTFAtSzFnVXpjSnBGXzRMLU84enhnRmE2Rk9IVmVoOUV4cjN4eXROTGx1RjB0WjNYOEVpZUpvYWhVUUdpN3F2TkROd2FMRUhJN1A1R0R2U2JiUmVCUXIzbnFSMUdXSUNfWWxvNzZ2THRGZjZ1VnRPVmZ4Z1Q5S284cnRHWVh5blF2UmVkdXlJSnNUQmhjV1VUdVBFREx3YWkyc0hFQ0tGZldiZg?oc=5",
+        "pubDate": "Mon, 27 Jul 2026 23:42:46 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "Palantir",
+      "tag": "Data Analytics",
+      "desc": "Big-data analytics platforms for government and enterprise",
+      "url": "https://palantir.com",
+      "initials": "PL",
+      "logo": "https://www.google.com/s2/favicons?domain=palantir.com&sz=128",
+      "ticker": "PLTR",
+      "headline": {
+        "title": "Palantir CEO warns US against Europe's AI regulation path, urges Trump admin to not ban open models - Fox Business",
+        "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPeG1zdzJreUdxNkVHcmVVcFVodzU3VTJqNTl6akFORTA3bFdOSnBhcy05dTEwejZEc1p1T0FKRVV6U1NabG91WkZlSmxSenYzRzN1ZHUxSmtDVWxQMENYWTgzR1Y5cXczdXN3dWEyaVUzLUtmNkRSUnhTQ0t5VHE2N0pQM3dQTFNodUVxS29kOHBoUTRPMmlicVAtS2lpMGZnLU1lWmY1ckJZbU1kN1c2aDZOLXFRellD0gG-AUFVX3lxTE5OWnlhWXEyZTJ5ZndqVVVSOUxaeDI1NVRUSzhnTVFzTXZWMHYtbVZzc0tkdnQ4aVJodkFyOHdfNVc1Y2JtUmdkX203M3lnWEVOeG91M05rU3N1RTIxZlA4dWYxemRNaGo0Y2owZ2xwaWZoOXpSbTZYN2RLcG1BR2tVMFZmRHNrYjV2TjBTNG9LRk56QmpZaTdhV3dXdEY4dFctRGs1UXlSNzgxSThNUnJ4NDU0WXpubVQ5a2U4Smc?oc=5",
+        "pubDate": "Mon, 27 Jul 2026 21:40:00 GMT"
+      },
+      "sparkline": [
+        115.69999694824219,
+        116.66999816894531,
+        125.7300033569336,
+        129.3000030517578,
+        132.5399932861328,
+        134.3699951171875,
+        132.22000122070312,
+        129.0399932861328,
+        126.79000091552734,
+        130.0399932861328,
+        133.72000122070312,
+        133.75999450683594,
+        134.44000244140625,
+        132.3800048828125,
+        134.85000610351562,
+        132.66000366210938,
+        124.56999969482422,
+        123.37000274658203,
+        122.91999816894531,
+        131.52999877929688
+      ]
+    },
+    {
+      "name": "Perplexity",
+      "tag": "AI Search",
+      "desc": "Answer engine combining web search with AI-generated summaries",
+      "url": "https://perplexity.ai",
+      "initials": "P",
+      "logo": "https://www.google.com/s2/favicons?domain=perplexity.ai&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "Search engines fix Claude leak but Perplexity users’ files still online - Protos | Informed crypto news",
+        "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNM2ZLMGYtbkFVaVhsMTV2cjBOcVh2WWZwNVREQkFJNXFhUkdUdThXVHNyUzJEWlVaMkpHSW50U2R3eGZsclRLUkFzeHFrTHo3ZHJYNHg1TzJNRmhzeTNVenluN0wyS2hHaUxDSGNSM2x3U0IxbUF4MjNja2NLYXJ6NzQtYURjMmE5bVMxZHB2OUtVZHhy?oc=5",
+        "pubDate": "Mon, 27 Jul 2026 19:07:38 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "Scale AI",
+      "tag": "AI Data",
+      "desc": "Data labelling and RLHF infrastructure powering frontier AI",
+      "url": "https://scale.com",
+      "initials": "S",
+      "logo": "https://www.google.com/s2/favicons?domain=scale.com&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "AGI secures $70m to scale AI-native insurance brokerage model - FinTech Global",
+        "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOcV8wVk1GdjEyRERYTmwyRDZoR250TGo4X09JTHFueHRjbVdWY1ZTQ01wZG1kZmo4Vkw1Tmxxczlia3dRTDJCcGVyc0N6ZWhsWDZmMHNuNTRKVlh5eGRLdVFOVjVKdUJMYjNzbFQ5SC1nQlR3MDFkbklsSzdtVkdMUU1lZWQ4dmxDZnhraGc1amNXS1JyTXZzV1QtWQ?oc=5",
+        "pubDate": "Mon, 27 Jul 2026 17:42:50 GMT"
       },
       "sparkline": null
     }
