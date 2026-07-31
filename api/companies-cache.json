@@ -1,51 +1,6 @@
 {
-  "refreshed_at": "2026-07-30T08:34:34.896Z",
+  "refreshed_at": "2026-07-31T08:56:08.872Z",
   "companies": [
-    {
-      "name": "Scale AI",
-      "tag": "AI Data",
-      "desc": "Data labelling and RLHF infrastructure powering frontier AI",
-      "url": "https://scale.com",
-      "initials": "S",
-      "logo": "https://www.google.com/s2/favicons?domain=scale.com&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "Lingnan University co-develops first large-scale AI archaeological system for ancient Chinese plant seeds - Asia Research News |",
-        "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQNUo0cWczTE9jengyQmU4Y2RLTkZ6bG5yVTVkQVZLMFprbUt2aDZISGxaRUFmaWJPMDJHcTdjdGtGRVBKdFJaQjdTWDZ3ZktLaFpDT2U0Nk1XZk9ncFQ3VjliWkVZbEg0dnJTbDhwV0JLVzlkb05qT19OWDFSYl9ic0hoSUIwc1oxTFU4N2VReTZ2RzBtQ0s5akExc0pmUUg0d0ZqVFRDSU1aRVlEUDVXS1ZwcmRONWNGeWh2LVNfNEVfQXRTS3dIMU5n?oc=5",
-        "pubDate": "Thu, 30 Jul 2026 06:46:33 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "Commonwealth Fusion",
-      "tag": "Energy",
-      "desc": "Next-generation tokamak fusion for clean energy at scale",
-      "url": "https://cfs.energy",
-      "initials": "CFS",
-      "logo": "https://www.google.com/s2/favicons?domain=cfs.energy&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "Commonwealth Fusion Systems Raises Another $1 Billion as Work on Commercial Power Plant Continues - POWER Magazine",
-        "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNbzlZbmZLejVienRNcXpvbUN2dEpISTM2MUtVa0twX1pnZDZwZm9zN1RlNFhXbk5FYTJQMkNwV2EtVENXdDV6dHdyelRYVVNsb0t3R3RCZ1ZRRVVRd1h3LXVkajBmdGhkREJPck5MMTh4N2h6Q0NIbHV2YS1ZQVBBZkxDXzZtc2ktc1ozNlFTbGZIMGxlNFJrdmVhSGItQWtTcm9mWTBtN1VOMW5WR3V4b190U2NvZHNXQk9OTGZTTQ?oc=5",
-        "pubDate": "Thu, 30 Jul 2026 04:00:24 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "Neuralink",
-      "tag": "Brain-Computer",
-      "desc": "Implantable neural interfaces for restoring and augmenting human capability",
-      "url": "https://neuralink.com",
-      "initials": "NL",
-      "logo": "https://www.google.com/s2/favicons?domain=neuralink.com&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "How Neuralink brain chip transformed life of ALS sufferer | Katie Pavlich Tonight - news10.com",
-        "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxObTJpVEpHS2RCcVJOTkFuOF9wNVlCT3pTMzljNVE5d3k1RV9PdUJ5aEpuc0xVVS1wbC1RSHFKTVh6cmg2WS16Q0VMaGVFOEdzSFlQQ3phUXdnSjk3QkU0OUJJUnZOeFExY2Nob1g5Y0dNeEFrQlJJaC00RDhGdkp4LUx4ZVM4R3pYS1ROZ0oydjN2ZkN1b1VmR3lHZkhuUTZpOXBDdUxyZnZSblJLNnBBMm9tdnlQcGVsa2c?oc=5",
-        "pubDate": "Thu, 30 Jul 2026 02:36:36 GMT"
-      },
-      "sparkline": null
-    },
     {
       "name": "OpenAI",
       "tag": "LLMs",
@@ -55,54 +10,9 @@
       "logo": "https://www.google.com/s2/favicons?domain=openai.com&sz=128",
       "ticker": null,
       "headline": {
-        "title": "Trump considering AI controls after OpenAI hacking incidents - BBC",
-        "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5kVzAxSWk5cThzeUJld1hVbm4wRlBVMnN4QTA5T3VXb3l6ZHo2dm9XOERlV1lrc0R1N2EzajNoWHpIUDVCZjBzeWYxUzg4eHNmcUwza3c2UkhyTm9v?oc=5",
-        "pubDate": "Thu, 30 Jul 2026 00:41:28 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "xAI",
-      "tag": "LLMs",
-      "desc": "Elon Musk's AI company, developer of the Grok models",
-      "url": "https://x.ai",
-      "initials": "X",
-      "logo": "https://www.google.com/s2/favicons?domain=x.ai&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "Elon Musk’s xAI sues Minnesota over law banning ‘nudification’ technology - theguardian.com",
-        "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPNWFkWF9ZeC15Uzl2LTZ3U0dYTkVoU1NmR1NnUzNheDZmd0xBZVh5dHB4dzlLcVpNU015ZmxXVm5fU1Q1NkdiYWhFSE9ybGgySWdRNVRUb3BvdnI5VE4xVUYycFVsZU9RRV9OR0VwOGNveEZzNVp5RnZMTWxqUVE5enctWUhQMm9DOFJ4eHQ5VFVQWXdtV1Z4bQ?oc=5",
-        "pubDate": "Thu, 30 Jul 2026 00:34:00 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "Anthropic",
-      "tag": "LLMs",
-      "desc": "AI safety company behind the Claude family of models",
-      "url": "https://anthropic.com",
-      "initials": "AN",
-      "logo": "https://www.google.com/s2/favicons?domain=anthropic.com&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "Microsoft is openly competing with OpenAI, Anthropic more than ever - TechCrunch",
-        "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxObWhuY2s3SC1VTV9rLTRCUmF4WGVZVHh3RGJYVTFvcHpjLWg1SmJfMEh4dVRuQkdkRkRSa0tZV3FCUU9UVTJ3VE55eERfNkhldHBxcWl2WGFxUnJJTDN2Vm5RdV93Y0d3aS1sTFBrV25xa21FZG9ObmVWaTMtMUZPMkk4MnJDWDZsTWFlUFI1cVV0MnlwUmhubHhIbmZIZktEZXBF?oc=5",
-        "pubDate": "Thu, 30 Jul 2026 00:21:06 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "Perplexity",
-      "tag": "AI Search",
-      "desc": "Answer engine combining web search with AI-generated summaries",
-      "url": "https://perplexity.ai",
-      "initials": "P",
-      "logo": "https://www.google.com/s2/favicons?domain=perplexity.ai&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "Perplexity employee who worked on Comet launches an AI browser aimed at knowledge work - TechCrunch",
-        "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPNGFidExRVzJrRndrYlhwOGNoRFA4Wk56MjVidG5SdERDUWxfRE01NGJlcFVQQngwdDJveTlBaXA3aTJVUEUwVEtmSGtKR0Q2aUxiOGM1eExMX1VjbWhjSUFhWFlJVWlIN0doa09MR2ZvcnZyTkRPWDQ2RVVLRUF1alVFenRnTUdENEVqWjhCMVNFT3hYdXh4WXpCb2RZY0RLWnQyMmNReWo4Tkc2QWM4M0VvTVVPcllFdmt6aklB?oc=5",
-        "pubDate": "Wed, 29 Jul 2026 15:00:00 GMT"
+        "title": "After OpenAI disclosure, Anthropic says Claude also hacked outside systems - Al Jazeera",
+        "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOWDhubWRSWHEwWS11eDdqbkJUQzJsbEdDNndpMzNVYXdteGl6Z20tUTdFTW1YV1RuRk0xMUFpdWcycmtVeXBGRDNPNnVGRzNtX1U3UlVoc1BqV3FxYXhNdUdYUUNGLXA5WGZ0UzVUMkY5U1BsS1M0a3FBdjZOaGFzR0FEd1dhMTlFWlhVeGktbGpCWU9pYVF4RmhxRHdIdkRIMmVQazZPb9IBrAFBVV95cUxPSUlKcDVSWEMyWmIwU010XzBsQVJxX2lhZkFrRC1TRjdlQUhQT1JkSFVKZ3pwNTdOZHZ4NlRkTnpRMThTTHc5cGRXWV9Ua19xV2ZyYWt6U1lUV3E1NVo3V0tvNHZvallqZzN1ZHpjWGZWV1psOFlsSUNzRVBfZURSMklxLUFoeUFrWHdCeHJZQlBzdXFBNzBfSlYwVjZKMlFTRWljWHU1NkVFOXBT?oc=5",
+        "pubDate": "Fri, 31 Jul 2026 04:09:17 GMT"
       },
       "sparkline": null
     },
@@ -115,9 +25,9 @@
       "logo": "https://www.google.com/s2/favicons?domain=crowdstrike.com&sz=128",
       "ticker": "CRWD",
       "headline": {
-        "title": "CrowdStrike (CRWD) Rides the AI Threat Wave, But Can It Lead the Pack? - Yahoo Finance UK",
-        "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNTGpoakxLbW0zN0NNc19YbUh2WG1jZWxXNG1QR0xqbXd0STZwWFZrUEFSWHlQVEdxd3N3a0VYcFMwc1FCNmRXNVcyOFJWX05IXy1oYzYycExGbDBlLXdCZERMZGdlbTZsN3FIVVpLdWNoYVFXUlNYU1BSdFFWbW1GNjJ5aWNTT1RO?oc=5",
-        "pubDate": "Wed, 29 Jul 2026 08:10:16 GMT"
+        "title": "How AI‑Driven Falcon Demand and M&amp;A Ambitions Could Reshape CrowdStrike Holdings’ (CRWD) Investment Narrative - Yahoo Finance UK",
+        "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9VZFJPS2RIZVhEZGw3cjBBSHRnUnh2aDJYcXpqME5BRWpENjJkY0wteURMQ25jVG1tbWxfQWQzTTQzY1pIT2U2VTJVRzN0Yk5TR3dRWExSOU5FVGVDT3pheGgyX2RoMjE3R0VwTHZXMUU1b3lTVjU5MzJrVzVTR3M?oc=5",
+        "pubDate": "Fri, 31 Jul 2026 02:09:00 GMT"
       },
       "sparkline": [
         190.78500366210938,
@@ -140,7 +50,144 @@
         183.27999877929688,
         180.11000061035156,
         181.8000030517578,
-        179.3800048828125
+        179.3800048828125,
+        185.22000122070312
+      ]
+    },
+    {
+      "name": "Anthropic",
+      "tag": "LLMs",
+      "desc": "AI safety company behind the Claude family of models",
+      "url": "https://anthropic.com",
+      "initials": "AN",
+      "logo": "https://www.google.com/s2/favicons?domain=anthropic.com&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "Anthropic's Claude AI escapes tests to hack three organisations - BBC",
+        "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE50SmtNcDZCM3hZNTNTOG02SDc1MFhUT2JNc3gzUGVEeVl4dDB2WWJmejdYMDNqUnY2T1MybmcyXzQ5akxPU3ZRNDBycVRiMzVTcDczdDE4Qjc5NUFV?oc=5",
+        "pubDate": "Fri, 31 Jul 2026 00:08:46 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "Mistral AI",
+      "tag": "LLMs",
+      "desc": "Europe's leading open-weight AI foundation models",
+      "url": "https://mistral.ai",
+      "initials": "M",
+      "logo": "https://www.google.com/s2/favicons?domain=mistral.ai&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "Peec AI Adds Mistral Coverage, Now Tracking 10+ LLMs Across the US, China, and Europe - markets.businessinsider.com",
+        "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPYUNHcHVDdzE1UzBtclVfaWJZNExEU1B1Si1sS2tnMTIyS1BBaTBiUzVNZUhBUUlsMVJad2dRUzgwNzRqeXh2Z1k0aEM5NFVXSm1oRWdwYkg2ZzkzQVVnVnphUWRKelBjekRmQlJPWGxkNVdtTHNvVERSQjhzejh2SVdMN1Y2ZXM5eEpCcnB0QWhsalJoNE9LZTZ0Uk5HMjktQVJkZXBGTWpRVktWcU0yZ3JQOXF6Y0xCejNmMGstbWlJSHBfTGpIemZGUXdvQUxhUWxyLXBjaw?oc=5",
+        "pubDate": "Thu, 30 Jul 2026 17:58:36 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "Scale AI",
+      "tag": "AI Data",
+      "desc": "Data labelling and RLHF infrastructure powering frontier AI",
+      "url": "https://scale.com",
+      "initials": "S",
+      "logo": "https://www.google.com/s2/favicons?domain=scale.com&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "Scale AI Appoints Francis deSouza as CEO to Lead Next Phase of Company’s Growth - Scale AI",
+        "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBMcmJ3MXV4OU5pQ1dNYUJWaVRWdUZLeHV2bUp5LWs1U2NQOExMRGpSdlRPOFpuNU5GQmNuR0J0Nk1aMUg4MHNSdkJpNl9ZZzlNQ2NEeGdKOXY?oc=5",
+        "pubDate": "Thu, 30 Jul 2026 16:42:13 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "Palantir",
+      "tag": "Data Analytics",
+      "desc": "Big-data analytics platforms for government and enterprise",
+      "url": "https://palantir.com",
+      "initials": "PL",
+      "logo": "https://www.google.com/s2/favicons?domain=palantir.com&sz=128",
+      "ticker": "PLTR",
+      "headline": {
+        "title": "Palantir: AI Could Turn Customers Into Competitors - Strong Sell (NASDAQ:PLTR) - Seeking Alpha",
+        "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOcW5SdWxCYjRiTFVmOUljVWI1Wl9qeGRWc2oyLWNTaUZFUnl6YXBjUURTRkY1QjVpM3RYekhtb3ZYRUc3OFRKeFVZWWxqY2F6RVR1UzZTY004MGM2LVdJRlZ5SnZQOWtkR0FyQ19MSnVDaTBiR0Q0SVhKVFRaTHI1dFUwM3dONGZMcld6Y0dkak11YU9wdF9ZcW1SX0FPQjZ6cE9Zaw?oc=5",
+        "pubDate": "Thu, 30 Jul 2026 16:40:57 GMT"
+      },
+      "sparkline": [
+        116.66999816894531,
+        125.7300033569336,
+        129.3000030517578,
+        132.5399932861328,
+        134.3699951171875,
+        132.22000122070312,
+        129.0399932861328,
+        126.79000091552734,
+        130.0399932861328,
+        133.72000122070312,
+        133.75999450683594,
+        134.44000244140625,
+        132.3800048828125,
+        134.85000610351562,
+        132.66000366210938,
+        124.56999969482422,
+        123.37000274658203,
+        122.91999816894531,
+        131.52999877929688,
+        123.52999877929688,
+        123,
+        122.26000213623047
+      ]
+    },
+    {
+      "name": "Commonwealth Fusion",
+      "tag": "Energy",
+      "desc": "Next-generation tokamak fusion for clean energy at scale",
+      "url": "https://cfs.energy",
+      "initials": "CFS",
+      "logo": "https://www.google.com/s2/favicons?domain=cfs.energy&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "When will fusion power startup Commonwealth Fusion Systems go public? - TechCrunch",
+        "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQMDVHV0MyMFNENWFGWlhIUFlQMmRBaGJVOGVtQVlBTENUN3otbVZGdW1Id0J0QXEyRTkzY3I5eEtRLTZSVTJUaDZWaXgyemZtdHdJSnIyLXpibDh2aV9UNjFKM2JJSEhzQUpWT3RYOHJwMHdmVWlnSFhBZDZTYnE0ZTdNazJnVWx2Vm9NUHQzRXBEUXlxVlJ4bnJ1bEJJbWs4cWlWMnFB?oc=5",
+        "pubDate": "Thu, 30 Jul 2026 15:45:36 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "Rocket Lab",
+      "tag": "Space",
+      "desc": "Small-satellite launch provider and space systems manufacturer",
+      "url": "https://rocketlabusa.com",
+      "initials": "RL",
+      "logo": "https://www.google.com/s2/favicons?domain=rocketlabusa.com&sz=128",
+      "ticker": "RKLB",
+      "headline": {
+        "title": "Rocket Lab Secures Multi-Launch Deal with iQPS for Three Dedicated Missions - Rocket Lab",
+        "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQWmMzZ3hXR1hNWk1Tc0xlUVFwcmF3VkkxMEJscHhNZnNnS0t5WjdLOE9vTUdlMTA0elh2MGl5QUt3MGc3NEJ5Vzd6ejZlQXFNNHR0aVRlbFRvd01aanVPRU5ZSmZMVjNBZ0hNMDJTVnZ3ZlM5ZmdhYmYyUzh4dEtmdzE0WG5meWRaaFlSWEpsajA4d1BEdWlXTTMyWWRveU9yQnNMSTJnZTFHWm1SQ3gw?oc=5",
+        "pubDate": "Thu, 30 Jul 2026 13:35:55 GMT"
+      },
+      "sparkline": [
+        101.6500015258789,
+        100.06999969482422,
+        100.45999908447266,
+        93.08999633789062,
+        83.41000366210938,
+        83.3499984741211,
+        82.55000305175781,
+        81.04000091552734,
+        76.7300033569336,
+        78.80999755859375,
+        76.19999694824219,
+        67.3499984741211,
+        67.62000274658203,
+        65.73999786376953,
+        69.12000274658203,
+        69.75,
+        69.98999786376953,
+        63.90999984741211,
+        66.94000244140625,
+        63.88999938964844,
+        58.599998474121094,
+        64.68000030517578
       ]
     }
   ]
