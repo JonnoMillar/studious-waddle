@@ -1,101 +1,63 @@
 {
-  "refreshed_at": "2026-07-31T08:56:08.872Z",
+  "refreshed_at": "2026-08-01T08:27:03.969Z",
   "companies": [
     {
-      "name": "OpenAI",
-      "tag": "LLMs",
-      "desc": "Creator of ChatGPT and the GPT family of foundation models",
-      "url": "https://openai.com",
-      "initials": "OAI",
-      "logo": "https://www.google.com/s2/favicons?domain=openai.com&sz=128",
+      "name": "Anduril",
+      "tag": "Defense AI",
+      "desc": "Autonomous defense systems and AI-enabled military hardware",
+      "url": "https://anduril.com",
+      "initials": "A",
+      "logo": "https://www.google.com/s2/favicons?domain=anduril.com&sz=128",
       "ticker": null,
       "headline": {
-        "title": "After OpenAI disclosure, Anthropic says Claude also hacked outside systems - Al Jazeera",
-        "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOWDhubWRSWHEwWS11eDdqbkJUQzJsbEdDNndpMzNVYXdteGl6Z20tUTdFTW1YV1RuRk0xMUFpdWcycmtVeXBGRDNPNnVGRzNtX1U3UlVoc1BqV3FxYXhNdUdYUUNGLXA5WGZ0UzVUMkY5U1BsS1M0a3FBdjZOaGFzR0FEd1dhMTlFWlhVeGktbGpCWU9pYVF4RmhxRHdIdkRIMmVQazZPb9IBrAFBVV95cUxPSUlKcDVSWEMyWmIwU010XzBsQVJxX2lhZkFrRC1TRjdlQUhQT1JkSFVKZ3pwNTdOZHZ4NlRkTnpRMThTTHc5cGRXWV9Ua19xV2ZyYWt6U1lUV3E1NVo3V0tvNHZvallqZzN1ZHpjWGZWV1psOFlsSUNzRVBfZURSMklxLUFoeUFrWHdCeHJZQlBzdXFBNzBfSlYwVjZKMlFTRWljWHU1NkVFOXBT?oc=5",
-        "pubDate": "Fri, 31 Jul 2026 04:09:17 GMT"
+        "title": "An American seabed drone with no cable running back to shore heard submarine drones come through a channel and put them on a Navy screen within seconds, during a six-week exercise across two continents - Autonocion.com",
+        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5vYUt5bktqcldSc1ZiMVhiSEw0TEhnUzQ3clpSbzVTZUQwbFdTWnZXWTlXWHNLX3hLU19DMURoM0h1Z01nd3gyajJPZTVtWGMxclJXS3RTMEs0cmRlaXdpdEpMSHFKelRW?oc=5",
+        "pubDate": "Fri, 31 Jul 2026 18:00:43 GMT"
       },
       "sparkline": null
     },
     {
-      "name": "CrowdStrike",
-      "tag": "Cybersecurity",
-      "desc": "Cloud-native endpoint protection and threat intelligence",
-      "url": "https://crowdstrike.com",
-      "initials": "CS",
-      "logo": "https://www.google.com/s2/favicons?domain=crowdstrike.com&sz=128",
-      "ticker": "CRWD",
-      "headline": {
-        "title": "How AI‑Driven Falcon Demand and M&amp;A Ambitions Could Reshape CrowdStrike Holdings’ (CRWD) Investment Narrative - Yahoo Finance UK",
-        "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9VZFJPS2RIZVhEZGw3cjBBSHRnUnh2aDJYcXpqME5BRWpENjJkY0wteURMQ25jVG1tbWxfQWQzTTQzY1pIT2U2VTJVRzN0Yk5TR3dRWExSOU5FVGVDT3pheGgyX2RoMjE3R0VwTHZXMUU1b3lTVjU5MzJrVzVTR3M?oc=5",
-        "pubDate": "Fri, 31 Jul 2026 02:09:00 GMT"
-      },
-      "sparkline": [
-        190.78500366210938,
-        193.18499755859375,
-        193.97999572753906,
-        199.3800048828125,
-        194.6199951171875,
-        191.1199951171875,
-        198.39999389648438,
-        187.17999267578125,
-        187.91000366210938,
-        210.72999572753906,
-        206.77000427246094,
-        203.75999450683594,
-        203.0800018310547,
-        198.49000549316406,
-        191.14999389648438,
-        188.4199981689453,
-        183.4199981689453,
-        183.27999877929688,
-        180.11000061035156,
-        181.8000030517578,
-        179.3800048828125,
-        185.22000122070312
-      ]
-    },
-    {
-      "name": "Anthropic",
-      "tag": "LLMs",
-      "desc": "AI safety company behind the Claude family of models",
-      "url": "https://anthropic.com",
-      "initials": "AN",
-      "logo": "https://www.google.com/s2/favicons?domain=anthropic.com&sz=128",
+      "name": "Physical Intelligence",
+      "tag": "Embodied AI",
+      "desc": "Training AI systems to manipulate physical objects",
+      "url": "https://physicalintelligence.company",
+      "initials": "PI",
+      "logo": "https://www.google.com/s2/favicons?domain=physicalintelligence.company&sz=128",
       "ticker": null,
       "headline": {
-        "title": "Anthropic's Claude AI escapes tests to hack three organisations - BBC",
-        "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE50SmtNcDZCM3hZNTNTOG02SDc1MFhUT2JNc3gzUGVEeVl4dDB2WWJmejdYMDNqUnY2T1MybmcyXzQ5akxPU3ZRNDBycVRiMzVTcDczdDE4Qjc5NUFV?oc=5",
-        "pubDate": "Fri, 31 Jul 2026 00:08:46 GMT"
+        "title": "How Physical AI is transforming the future of manufacturing robotics - Technology Record",
+        "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOSmY4c01XTUNKclJyLVhqaEFMS1hUXzBxbHhsNDhNUWdZWE5XS2xDMVdYMVNYNnFEVGVVWmJZeUNJelNKbmtjYURGZ3l0ZG1jb1VVQl9SVGFYU0p2TUFWSGlWazZjMEZqRkV1NEdDemRRWU1XeUhtSjQyS2YwM0FEYnlUQWx5QjZ1aHdSODZEajQxc1VrY1dnRmRlTEs2S0lFU29JYzE5QXMwNVdkdkE?oc=5",
+        "pubDate": "Fri, 31 Jul 2026 16:00:08 GMT"
       },
       "sparkline": null
     },
     {
-      "name": "Mistral AI",
+      "name": "xAI",
       "tag": "LLMs",
-      "desc": "Europe's leading open-weight AI foundation models",
-      "url": "https://mistral.ai",
-      "initials": "M",
-      "logo": "https://www.google.com/s2/favicons?domain=mistral.ai&sz=128",
+      "desc": "Elon Musk's AI company, developer of the Grok models",
+      "url": "https://x.ai",
+      "initials": "X",
+      "logo": "https://www.google.com/s2/favicons?domain=x.ai&sz=128",
       "ticker": null,
       "headline": {
-        "title": "Peec AI Adds Mistral Coverage, Now Tracking 10+ LLMs Across the US, China, and Europe - markets.businessinsider.com",
-        "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPYUNHcHVDdzE1UzBtclVfaWJZNExEU1B1Si1sS2tnMTIyS1BBaTBiUzVNZUhBUUlsMVJad2dRUzgwNzRqeXh2Z1k0aEM5NFVXSm1oRWdwYkg2ZzkzQVVnVnphUWRKelBjekRmQlJPWGxkNVdtTHNvVERSQjhzejh2SVdMN1Y2ZXM5eEpCcnB0QWhsalJoNE9LZTZ0Uk5HMjktQVJkZXBGTWpRVktWcU0yZ3JQOXF6Y0xCejNmMGstbWlJSHBfTGpIemZGUXdvQUxhUWxyLXBjaw?oc=5",
-        "pubDate": "Thu, 30 Jul 2026 17:58:36 GMT"
+        "title": "SpaceX won’t remove all of xAI’s unpermitted turbines for another year - TechCrunch",
+        "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQQmd3c1MwNlNBVms5dmh2QWZpMUpYYjhMSllfTndmazlJd0VmZE5PVXp4Vy1xVGQ1MVluQUNQNVZ5VzhQTmtIM1BFQXZpUVNMR0oybXM4alhCWkFiTlJ4Qkh0YTh4b3hHbV80RWIxTFN0UEtzRDdmT3JhcmFSUVdiUUlGSlEydEVLb2hDcFJ4UnlxZHNWUXJJV29MaXpjVTRhM2t3bDln?oc=5",
+        "pubDate": "Fri, 31 Jul 2026 15:16:17 GMT"
       },
       "sparkline": null
     },
     {
-      "name": "Scale AI",
-      "tag": "AI Data",
-      "desc": "Data labelling and RLHF infrastructure powering frontier AI",
-      "url": "https://scale.com",
-      "initials": "S",
-      "logo": "https://www.google.com/s2/favicons?domain=scale.com&sz=128",
+      "name": "Waymo",
+      "tag": "Autonomy",
+      "desc": "The most miles driven autonomously of any robotaxi service",
+      "url": "https://waymo.com",
+      "initials": "W",
+      "logo": "https://www.google.com/s2/favicons?domain=waymo.com&sz=128",
       "ticker": null,
       "headline": {
-        "title": "Scale AI Appoints Francis deSouza as CEO to Lead Next Phase of Company’s Growth - Scale AI",
-        "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBMcmJ3MXV4OU5pQ1dNYUJWaVRWdUZLeHV2bUp5LWs1U2NQOExMRGpSdlRPOFpuNU5GQmNuR0J0Nk1aMUg4MHNSdkJpNl9ZZzlNQ2NEeGdKOXY?oc=5",
-        "pubDate": "Thu, 30 Jul 2026 16:42:13 GMT"
+        "title": "A London Taxi Family Confronts the Driverless Future - Bloomberg.com",
+        "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPOVJlZl91c0RaN1dTM2g3RFBTb3VMN3laZy1EUmoxUUhPUlVPMUVYOEN4blJZMWg2RzRrcTdOU1Jub29HRlJybVU0WXEtNERacEFYeGctSEpDU2lrQWdSTnZtVmY2OGJhRFNrYktmRFFTTXBEWWdxbzVVSFJaOThway1LNGZsSGhXU1J1RXRMQl90ZS11RDFMN0FSQmFBOW9QZkZDOFNvUERaV05Vejdr?oc=5",
+        "pubDate": "Fri, 31 Jul 2026 15:07:04 GMT"
       },
       "sparkline": null
     },
@@ -108,12 +70,11 @@
       "logo": "https://www.google.com/s2/favicons?domain=palantir.com&sz=128",
       "ticker": "PLTR",
       "headline": {
-        "title": "Palantir: AI Could Turn Customers Into Competitors - Strong Sell (NASDAQ:PLTR) - Seeking Alpha",
-        "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOcW5SdWxCYjRiTFVmOUljVWI1Wl9qeGRWc2oyLWNTaUZFUnl6YXBjUURTRkY1QjVpM3RYekhtb3ZYRUc3OFRKeFVZWWxqY2F6RVR1UzZTY004MGM2LVdJRlZ5SnZQOWtkR0FyQ19MSnVDaTBiR0Q0SVhKVFRaTHI1dFUwM3dONGZMcld6Y0dkak11YU9wdF9ZcW1SX0FPQjZ6cE9Zaw?oc=5",
-        "pubDate": "Thu, 30 Jul 2026 16:40:57 GMT"
+        "title": "City Hall defends blocking Met's £50m Palantir deal - BBC",
+        "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5mN1FXV2s0TFNjbGhHRFpxdFNvTUZGUjNPSk05Uk41TENUQThsV1ZSMjJXc0pvUmk5SVhudVNMemtJZVpsUllCREw5ajRJYUpLdHJVaVpOMzRoY21R?oc=5",
+        "pubDate": "Fri, 31 Jul 2026 14:37:23 GMT"
       },
       "sparkline": [
-        116.66999816894531,
         125.7300033569336,
         129.3000030517578,
         132.5399932861328,
@@ -134,60 +95,76 @@
         131.52999877929688,
         123.52999877929688,
         123,
-        122.26000213623047
+        122.26000213623047,
+        123.05999755859375
       ]
     },
     {
-      "name": "Commonwealth Fusion",
-      "tag": "Energy",
-      "desc": "Next-generation tokamak fusion for clean energy at scale",
-      "url": "https://cfs.energy",
-      "initials": "CFS",
-      "logo": "https://www.google.com/s2/favicons?domain=cfs.energy&sz=128",
+      "name": "Mistral AI",
+      "tag": "LLMs",
+      "desc": "Europe's leading open-weight AI foundation models",
+      "url": "https://mistral.ai",
+      "initials": "M",
+      "logo": "https://www.google.com/s2/favicons?domain=mistral.ai&sz=128",
       "ticker": null,
       "headline": {
-        "title": "When will fusion power startup Commonwealth Fusion Systems go public? - TechCrunch",
-        "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQMDVHV0MyMFNENWFGWlhIUFlQMmRBaGJVOGVtQVlBTENUN3otbVZGdW1Id0J0QXEyRTkzY3I5eEtRLTZSVTJUaDZWaXgyemZtdHdJSnIyLXpibDh2aV9UNjFKM2JJSEhzQUpWT3RYOHJwMHdmVWlnSFhBZDZTYnE0ZTdNazJnVWx2Vm9NUHQzRXBEUXlxVlJ4bnJ1bEJJbWs4cWlWMnFB?oc=5",
-        "pubDate": "Thu, 30 Jul 2026 15:45:36 GMT"
+        "title": "How France's Mistral is taking on Silicon Valley's AI behemoths - Forbes India",
+        "link": "https://news.google.com/rss/articles/CBMioAJBVV95cUxQVU9JME41RFk4bzlrRk5TQUh0Y0dLRzZSLU9NWXNKcUpqZG9zdDBaVkJjU2w1amhMRFR5NjZnODZSRjRtM05OODRWVHBkcFdwV2ZsUEthd3lXOUhHQ2QyYmx5ZkRJOTB3T2hyWmtQeUlKVEtYVG90ZE1sTGZwNFE4c2lmUmNwc3BsNFNCODJtcVdfQlZobTVRdFhVTjlkM0NqdjhDVi14S0dUWlZEZTlIdEY5VFJqd1JBUmJGamJtTUFaYTRudEY3QzdnZ3FtVk1XOTN0dGJtcW1fa1pFdUptc3JzUGMzTTVQaGpLQXhhU1ZRSnRYbThYMjNrSFdMZkJoR0VSQnV5Uk5oUG9SME1JNWc3ZTBuSGdWVFBzOHcwZTDSAaYCQVVfeXFMTWZ1c25IaHk4SWdidzJRam80Zi13ZkJib2FfUk0wY3ByeVVEdGdTTk1VeEY1dXZ0bTQ3VUh2bE1ja0s0enh4Um01WEg5WVR3SW9hNGs3Uktyd2pBYUgycTFwMDhSb1p0UjVwNnhFQ3d1SkNDMGxfY2l6VHZQdDZtY2ZDMm1jeDZ6d2FiNnQwX3RvWlJ5anFXQWUzNTRGMEplNkNaU2wyaExKVHRYUU5jcUQtcDBybVZ2OFJwSXZQelZsdlA2dHFPSTg4YjFGcEN5Ul9FbXBNNlFESjNXRHZsYkxfNHhfbDR0Q290VE1Rck13U19LUEgxLW5la2U2ME9neEp0ZncyV1lSVVFZelB0ZktVNmVrNldTX1dDcHJrdDZwSlRUWU9n?oc=5",
+        "pubDate": "Fri, 31 Jul 2026 06:13:26 GMT"
       },
       "sparkline": null
     },
     {
-      "name": "Rocket Lab",
-      "tag": "Space",
-      "desc": "Small-satellite launch provider and space systems manufacturer",
-      "url": "https://rocketlabusa.com",
-      "initials": "RL",
-      "logo": "https://www.google.com/s2/favicons?domain=rocketlabusa.com&sz=128",
-      "ticker": "RKLB",
+      "name": "Perplexity",
+      "tag": "AI Search",
+      "desc": "Answer engine combining web search with AI-generated summaries",
+      "url": "https://perplexity.ai",
+      "initials": "P",
+      "logo": "https://www.google.com/s2/favicons?domain=perplexity.ai&sz=128",
+      "ticker": null,
       "headline": {
-        "title": "Rocket Lab Secures Multi-Launch Deal with iQPS for Three Dedicated Missions - Rocket Lab",
-        "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQWmMzZ3hXR1hNWk1Tc0xlUVFwcmF3VkkxMEJscHhNZnNnS0t5WjdLOE9vTUdlMTA0elh2MGl5QUt3MGc3NEJ5Vzd6ejZlQXFNNHR0aVRlbFRvd01aanVPRU5ZSmZMVjNBZ0hNMDJTVnZ3ZlM5ZmdhYmYyUzh4dEtmdzE0WG5meWRaaFlSWEpsajA4d1BEdWlXTTMyWWRveU9yQnNMSTJnZTFHWm1SQ3gw?oc=5",
-        "pubDate": "Thu, 30 Jul 2026 13:35:55 GMT"
+        "title": "Perplexity Open Sources Numbat To Monitor Risky AI Coding Agents - Forbes",
+        "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNemRFWDVhMWxwMHhqQndmWGJUcHU1QjRjc3JJay1jS3FFRzlDSVhVLVFlS1FmQ010YW1wdjRKbXRkVTlLRGRmVnVTb3BDdWk0Q0g0YlJ6MWI4N2JYcktuLXIxNW9XUVI4Sk5UUl9ZNjB6eVk4M1JjR0p3N0ZsWG1Scm1BRG5PWGFwNjE1amZsazVmOXlocmlod3Y2aWZYZTJQdEhodTBIa2N4VWhtVS1wZmt5V3RvOHBwQ2c?oc=5",
+        "pubDate": "Fri, 31 Jul 2026 03:38:50 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "CrowdStrike",
+      "tag": "Cybersecurity",
+      "desc": "Cloud-native endpoint protection and threat intelligence",
+      "url": "https://crowdstrike.com",
+      "initials": "CS",
+      "logo": "https://www.google.com/s2/favicons?domain=crowdstrike.com&sz=128",
+      "ticker": "CRWD",
+      "headline": {
+        "title": "How AI‑Driven Falcon Demand and M&amp;A Ambitions Could Reshape CrowdStrike Holdings’ (CRWD) Investment Narrative - Yahoo Finance UK",
+        "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9VZFJPS2RIZVhEZGw3cjBBSHRnUnh2aDJYcXpqME5BRWpENjJkY0wteURMQ25jVG1tbWxfQWQzTTQzY1pIT2U2VTJVRzN0Yk5TR3dRWExSOU5FVGVDT3pheGgyX2RoMjE3R0VwTHZXMUU1b3lTVjU5MzJrVzVTR3M?oc=5",
+        "pubDate": "Fri, 31 Jul 2026 02:09:00 GMT"
       },
       "sparkline": [
-        101.6500015258789,
-        100.06999969482422,
-        100.45999908447266,
-        93.08999633789062,
-        83.41000366210938,
-        83.3499984741211,
-        82.55000305175781,
-        81.04000091552734,
-        76.7300033569336,
-        78.80999755859375,
-        76.19999694824219,
-        67.3499984741211,
-        67.62000274658203,
-        65.73999786376953,
-        69.12000274658203,
-        69.75,
-        69.98999786376953,
-        63.90999984741211,
-        66.94000244140625,
-        63.88999938964844,
-        58.599998474121094,
-        64.68000030517578
+        193.18499755859375,
+        193.97999572753906,
+        199.3800048828125,
+        194.6199951171875,
+        191.1199951171875,
+        198.39999389648438,
+        187.17999267578125,
+        187.91000366210938,
+        210.72999572753906,
+        206.77000427246094,
+        203.75999450683594,
+        203.0800018310547,
+        198.49000549316406,
+        191.14999389648438,
+        188.4199981689453,
+        183.4199981689453,
+        183.27999877929688,
+        180.11000061035156,
+        181.8000030517578,
+        179.3800048828125,
+        185.22000122070312,
+        190.86000061035156
       ]
     }
   ]
