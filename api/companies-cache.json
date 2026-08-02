@@ -1,48 +1,18 @@
 {
-  "refreshed_at": "2026-08-01T08:27:03.969Z",
+  "refreshed_at": "2026-08-02T08:29:59.894Z",
   "companies": [
     {
-      "name": "Anduril",
-      "tag": "Defense AI",
-      "desc": "Autonomous defense systems and AI-enabled military hardware",
-      "url": "https://anduril.com",
-      "initials": "A",
-      "logo": "https://www.google.com/s2/favicons?domain=anduril.com&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "An American seabed drone with no cable running back to shore heard submarine drones come through a channel and put them on a Navy screen within seconds, during a six-week exercise across two continents - Autonocion.com",
-        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5vYUt5bktqcldSc1ZiMVhiSEw0TEhnUzQ3clpSbzVTZUQwbFdTWnZXWTlXWHNLX3hLU19DMURoM0h1Z01nd3gyajJPZTVtWGMxclJXS3RTMEs0cmRlaXdpdEpMSHFKelRW?oc=5",
-        "pubDate": "Fri, 31 Jul 2026 18:00:43 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "Physical Intelligence",
-      "tag": "Embodied AI",
-      "desc": "Training AI systems to manipulate physical objects",
-      "url": "https://physicalintelligence.company",
-      "initials": "PI",
-      "logo": "https://www.google.com/s2/favicons?domain=physicalintelligence.company&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "How Physical AI is transforming the future of manufacturing robotics - Technology Record",
-        "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOSmY4c01XTUNKclJyLVhqaEFMS1hUXzBxbHhsNDhNUWdZWE5XS2xDMVdYMVNYNnFEVGVVWmJZeUNJelNKbmtjYURGZ3l0ZG1jb1VVQl9SVGFYU0p2TUFWSGlWazZjMEZqRkV1NEdDemRRWU1XeUhtSjQyS2YwM0FEYnlUQWx5QjZ1aHdSODZEajQxc1VrY1dnRmRlTEs2S0lFU29JYzE5QXMwNVdkdkE?oc=5",
-        "pubDate": "Fri, 31 Jul 2026 16:00:08 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "xAI",
+      "name": "Mistral AI",
       "tag": "LLMs",
-      "desc": "Elon Musk's AI company, developer of the Grok models",
-      "url": "https://x.ai",
-      "initials": "X",
-      "logo": "https://www.google.com/s2/favicons?domain=x.ai&sz=128",
+      "desc": "Europe's leading open-weight AI foundation models",
+      "url": "https://mistral.ai",
+      "initials": "M",
+      "logo": "https://www.google.com/s2/favicons?domain=mistral.ai&sz=128",
       "ticker": null,
       "headline": {
-        "title": "SpaceX won’t remove all of xAI’s unpermitted turbines for another year - TechCrunch",
-        "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQQmd3c1MwNlNBVms5dmh2QWZpMUpYYjhMSllfTndmazlJd0VmZE5PVXp4Vy1xVGQ1MVluQUNQNVZ5VzhQTmtIM1BFQXZpUVNMR0oybXM4alhCWkFiTlJ4Qkh0YTh4b3hHbV80RWIxTFN0UEtzRDdmT3JhcmFSUVdiUUlGSlEydEVLb2hDcFJ4UnlxZHNWUXJJV29MaXpjVTRhM2t3bDln?oc=5",
-        "pubDate": "Fri, 31 Jul 2026 15:16:17 GMT"
+        "title": "Mistral AI Success Story: How Europe’s AI Unicorn Is Challenging OpenAI - Business Outreach Magazine",
+        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9CVEJBd2hSNU5RUE1JN3BVNi10T3BldlAzbmRMekdKUmVwOWhCRXo1eVNmaG5qYy05LWhCWVF0a0EwUzN1NmUzcnBValdDOWtIVDVHREcwUVlqaXlaaXFOTnZsS2RGR3hW?oc=5",
+        "pubDate": "Sat, 01 Aug 2026 12:43:32 GMT"
       },
       "sparkline": null
     },
@@ -55,9 +25,54 @@
       "logo": "https://www.google.com/s2/favicons?domain=waymo.com&sz=128",
       "ticker": null,
       "headline": {
-        "title": "A London Taxi Family Confronts the Driverless Future - Bloomberg.com",
-        "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPOVJlZl91c0RaN1dTM2g3RFBTb3VMN3laZy1EUmoxUUhPUlVPMUVYOEN4blJZMWg2RzRrcTdOU1Jub29HRlJybVU0WXEtNERacEFYeGctSEpDU2lrQWdSTnZtVmY2OGJhRFNrYktmRFFTTXBEWWdxbzVVSFJaOThway1LNGZsSGhXU1J1RXRMQl90ZS11RDFMN0FSQmFBOW9QZkZDOFNvUERaV05Vejdr?oc=5",
-        "pubDate": "Fri, 31 Jul 2026 15:07:04 GMT"
+        "title": "After noise complaints, judge orders Waymo to stop overnight charging in Santa Monica - Ars Technica",
+        "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxORnkzTVZNQzBBczJ3ZUhINzJKQ0FkUjRfanpnQzl3dFZrcGtfWnJ1M2ZmSFdZUW11QTEzLVdiWlVud3dmZDdZVzR6bzZ5ekQwVWlVQUdGRHNMcXRhTVdkVkc1dDNRTFdQYU9Ec0J4MFF5V1hZOHZ3Vl9GRDZJZnhFcnlXUTJwV3ItV0lsSnpKTUNqcXFydThTRE5hN1VfLTE3X2ZCZ0J1b08yODl4WVNLX2FnUlFRMklqU3RSZEVidzBYTmpqUVc2UA?oc=5",
+        "pubDate": "Sat, 01 Aug 2026 11:30:54 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "OpenAI",
+      "tag": "LLMs",
+      "desc": "Creator of ChatGPT and the GPT family of foundation models",
+      "url": "https://openai.com",
+      "initials": "OAI",
+      "logo": "https://www.google.com/s2/favicons?domain=openai.com&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "Amazon completes $50bn investment in OpenAI - Financial Times",
+        "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNaEFvajk1QWYtT0dWV0NBbFd5QTJKR0s4eHNLR3N0eV9yV0Q4NXkyS3R2UjFoRDlXWTROdHNBU1NtTENFS1BGLUVQaVEwc1ViTmhuY2FDeW5NZm5MVDB3azVTRjVKRGtEVTFfSlhETkRLTUdaY0ZVXzRERnRWYUVZNkVEaEs?oc=5",
+        "pubDate": "Fri, 31 Jul 2026 21:29:58 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "xAI",
+      "tag": "LLMs",
+      "desc": "Elon Musk's AI company, developer of the Grok models",
+      "url": "https://x.ai",
+      "initials": "X",
+      "logo": "https://www.google.com/s2/favicons?domain=x.ai&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "Judge denies request by Elon Musk’s xAI to pause Minnesota nudification ban - nbcnews.com",
+        "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQUmZlTWNyeU1JZUltV0NSR0dmeDVlN1M0SGV2ZE1zaHE0Nm9lSktBdHNVVjF3MGMzNW1PbURQaWtTWk5nY3I0U3FyWWh1cERsSndFcExOUll3M2I3UTdEbzdqN0VnMWZNY1M3dnZucVp0cEJxckdXWjZHdFRJUE93ZEZCaXhPQzZrWmZ4WW5xcDRjTFBiN0I2QUE1Mmp3cHJXUi1pNmpSN3hjaThlZGxVZg?oc=5",
+        "pubDate": "Fri, 31 Jul 2026 19:41:20 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "Anduril",
+      "tag": "Defense AI",
+      "desc": "Autonomous defense systems and AI-enabled military hardware",
+      "url": "https://anduril.com",
+      "initials": "A",
+      "logo": "https://www.google.com/s2/favicons?domain=anduril.com&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "An American seabed drone with no cable running back to shore heard submarine drones come through a channel and put them on a Navy screen within seconds, during a six-week exercise across two continents - autonocion.com",
+        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5vYUt5bktqcldSc1ZiMVhiSEw0TEhnUzQ3clpSbzVTZUQwbFdTWnZXWTlXWHNLX3hLU19DMURoM0h1Z01nd3gyajJPZTVtWGMxclJXS3RTMEs0cmRlaXdpdEpMSHFKelRW?oc=5",
+        "pubDate": "Fri, 31 Jul 2026 18:00:43 GMT"
       },
       "sparkline": null
     },
@@ -100,17 +115,17 @@
       ]
     },
     {
-      "name": "Mistral AI",
-      "tag": "LLMs",
-      "desc": "Europe's leading open-weight AI foundation models",
-      "url": "https://mistral.ai",
-      "initials": "M",
-      "logo": "https://www.google.com/s2/favicons?domain=mistral.ai&sz=128",
+      "name": "Physical Intelligence",
+      "tag": "Embodied AI",
+      "desc": "Training AI systems to manipulate physical objects",
+      "url": "https://physicalintelligence.company",
+      "initials": "PI",
+      "logo": "https://www.google.com/s2/favicons?domain=physicalintelligence.company&sz=128",
       "ticker": null,
       "headline": {
-        "title": "How France's Mistral is taking on Silicon Valley's AI behemoths - Forbes India",
-        "link": "https://news.google.com/rss/articles/CBMioAJBVV95cUxQVU9JME41RFk4bzlrRk5TQUh0Y0dLRzZSLU9NWXNKcUpqZG9zdDBaVkJjU2w1amhMRFR5NjZnODZSRjRtM05OODRWVHBkcFdwV2ZsUEthd3lXOUhHQ2QyYmx5ZkRJOTB3T2hyWmtQeUlKVEtYVG90ZE1sTGZwNFE4c2lmUmNwc3BsNFNCODJtcVdfQlZobTVRdFhVTjlkM0NqdjhDVi14S0dUWlZEZTlIdEY5VFJqd1JBUmJGamJtTUFaYTRudEY3QzdnZ3FtVk1XOTN0dGJtcW1fa1pFdUptc3JzUGMzTTVQaGpLQXhhU1ZRSnRYbThYMjNrSFdMZkJoR0VSQnV5Uk5oUG9SME1JNWc3ZTBuSGdWVFBzOHcwZTDSAaYCQVVfeXFMTWZ1c25IaHk4SWdidzJRam80Zi13ZkJib2FfUk0wY3ByeVVEdGdTTk1VeEY1dXZ0bTQ3VUh2bE1ja0s0enh4Um01WEg5WVR3SW9hNGs3Uktyd2pBYUgycTFwMDhSb1p0UjVwNnhFQ3d1SkNDMGxfY2l6VHZQdDZtY2ZDMm1jeDZ6d2FiNnQwX3RvWlJ5anFXQWUzNTRGMEplNkNaU2wyaExKVHRYUU5jcUQtcDBybVZ2OFJwSXZQelZsdlA2dHFPSTg4YjFGcEN5Ul9FbXBNNlFESjNXRHZsYkxfNHhfbDR0Q290VE1Rck13U19LUEgxLW5la2U2ME9neEp0ZncyV1lSVVFZelB0ZktVNmVrNldTX1dDcHJrdDZwSlRUWU9n?oc=5",
-        "pubDate": "Fri, 31 Jul 2026 06:13:26 GMT"
+        "title": "Disney Accelerator Announces its 2026 Participants - The Walt Disney Company",
+        "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5Mbm9Bc2p4Y2FHUjVRckJGZ2VQSUpEUGNmOFFPMzVYVnF1V2xOTHVzbEVVajVGTmJLUDVoNmNzZS1iOXFpWGx5Q1VESGFNcGlvLVlzNzU3eHBoZkpoZUo5SnVleFYzWnVSTVJXbXRBNl9LZ1VQcDZr?oc=5",
+        "pubDate": "Fri, 31 Jul 2026 13:00:07 GMT"
       },
       "sparkline": null
     },
@@ -128,44 +143,6 @@
         "pubDate": "Fri, 31 Jul 2026 03:38:50 GMT"
       },
       "sparkline": null
-    },
-    {
-      "name": "CrowdStrike",
-      "tag": "Cybersecurity",
-      "desc": "Cloud-native endpoint protection and threat intelligence",
-      "url": "https://crowdstrike.com",
-      "initials": "CS",
-      "logo": "https://www.google.com/s2/favicons?domain=crowdstrike.com&sz=128",
-      "ticker": "CRWD",
-      "headline": {
-        "title": "How AI‑Driven Falcon Demand and M&amp;A Ambitions Could Reshape CrowdStrike Holdings’ (CRWD) Investment Narrative - Yahoo Finance UK",
-        "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9VZFJPS2RIZVhEZGw3cjBBSHRnUnh2aDJYcXpqME5BRWpENjJkY0wteURMQ25jVG1tbWxfQWQzTTQzY1pIT2U2VTJVRzN0Yk5TR3dRWExSOU5FVGVDT3pheGgyX2RoMjE3R0VwTHZXMUU1b3lTVjU5MzJrVzVTR3M?oc=5",
-        "pubDate": "Fri, 31 Jul 2026 02:09:00 GMT"
-      },
-      "sparkline": [
-        193.18499755859375,
-        193.97999572753906,
-        199.3800048828125,
-        194.6199951171875,
-        191.1199951171875,
-        198.39999389648438,
-        187.17999267578125,
-        187.91000366210938,
-        210.72999572753906,
-        206.77000427246094,
-        203.75999450683594,
-        203.0800018310547,
-        198.49000549316406,
-        191.14999389648438,
-        188.4199981689453,
-        183.4199981689453,
-        183.27999877929688,
-        180.11000061035156,
-        181.8000030517578,
-        179.3800048828125,
-        185.22000122070312,
-        190.86000061035156
-      ]
     }
   ]
 }
