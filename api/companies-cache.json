@@ -1,5 +1,5 @@
 {
-  "refreshed_at": "2026-08-03T09:54:39.171Z",
+  "refreshed_at": "2026-08-04T08:45:22.162Z",
   "companies": [
     {
       "name": "Anthropic",
@@ -10,49 +10,41 @@
       "logo": "https://www.google.com/s2/favicons?domain=anthropic.com&sz=128",
       "ticker": null,
       "headline": {
-        "title": "Alibaba Adds to China AI Breakthroughs With New Qwen Model - Bloomberg.com",
-        "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQWjlHM1ZsVFZ2VWZiRG4xcTd3aWdrU2U2SEwySXh3RWxPYWhBSlM0MTU2M2M3dlVDTnN5TDVUUkJvUGw5WXczVlB0ZzBPMk5NTjhOWkwwcGRHYWk4MGVUdjhRNUc5NXFkN1BFSHdrVnJtM0ZXSDNwM3phcnA5WE1LWjMwbUVhRHV2YUl2SmFBUVZUbXNTQ0EtZVBXRHhoSjlobzJuOWk4SnJvalVfZTdaWkVtRHdjN21v?oc=5",
-        "pubDate": "Mon, 03 Aug 2026 04:50:00 GMT"
+        "title": "Inside Google’s $200bn Wall Street finance machine for Anthropic - Financial Times",
+        "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQQlV0a0ZQV0NYRkVGM0Z4QndJSmV0U1ctNjlKT1d2dHZEcDRuVHRXZDJwRm94MXM4TUE0akFsOE9IU1ZQcU9WblJVVzMxY1pyUnNZVHRIb2l2MkhsaXhQRDVBLV96RVhIRmgxQ3ZxUU9RRkxpYjF4bC0wREZLanR6MHB2U3c?oc=5",
+        "pubDate": "Tue, 04 Aug 2026 07:03:13 GMT"
       },
       "sparkline": null
     },
     {
-      "name": "CrowdStrike",
-      "tag": "Cybersecurity",
-      "desc": "Cloud-native endpoint protection and threat intelligence",
-      "url": "https://crowdstrike.com",
-      "initials": "CS",
-      "logo": "https://www.google.com/s2/favicons?domain=crowdstrike.com&sz=128",
-      "ticker": "CRWD",
+      "name": "Figure AI",
+      "tag": "Robotics",
+      "desc": "Humanoid robots designed for industrial and commercial work",
+      "url": "https://figure.ai",
+      "initials": "FA",
+      "logo": "https://www.google.com/s2/favicons?domain=figure.ai&sz=128",
+      "ticker": null,
       "headline": {
-        "title": "CrowdStrike finds AI systems under direct attack as exploit windows shrink - SiliconANGLE",
-        "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQLUpvVW90MHVmR3BVVjVnTS1OcDVWckxkNU91OWxOSl85TVUwTURDaFdPNEpkcXpQN043OUZJYU9HTmJUai0yUURlNkJZSzFNZG9JVFFJZmstc1pwSEVHbFBjM0lkck8xdV9LdXhzWWo3bWpscDF3c0s5NEVkX3Foc3YyQm9aZFpib3lOSGtraElZVWtmT0hNM0FnMzcwYTFpeTRDcA?oc=5",
-        "pubDate": "Mon, 03 Aug 2026 04:01:34 GMT"
+        "title": "The World’s Most Valuable Humanoid Robot Companies in 2026 - Memeburn",
+        "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPdHRFbDFSRkw0dENJWGo1Qk5NZnBrM0E1cnIta0ctX2ZsZ1kya3ZxMTM2VHVCeFFVWDhDYnpuOEJmZlpCT2RtS1BxUnZMUnFSR1dDTHRFVXNad3Q2WmpsWmhnaV9LZkFEMFlQLVNXeVh6ZnRsd0xJVm93eF80U2lUeDI1OUpUdw?oc=5",
+        "pubDate": "Tue, 04 Aug 2026 06:07:05 GMT"
       },
-      "sparkline": [
-        193.18499755859375,
-        193.97999572753906,
-        199.3800048828125,
-        194.6199951171875,
-        191.1199951171875,
-        198.39999389648438,
-        187.17999267578125,
-        187.91000366210938,
-        210.72999572753906,
-        206.77000427246094,
-        203.75999450683594,
-        203.0800018310547,
-        198.49000549316406,
-        191.14999389648438,
-        188.4199981689453,
-        183.4199981689453,
-        183.27999877929688,
-        180.11000061035156,
-        181.8000030517578,
-        179.3800048828125,
-        185.22000122070312,
-        190.86000061035156
-      ]
+      "sparkline": null
+    },
+    {
+      "name": "Scale AI",
+      "tag": "AI Data",
+      "desc": "Data labelling and RLHF infrastructure powering frontier AI",
+      "url": "https://scale.com",
+      "initials": "S",
+      "logo": "https://www.google.com/s2/favicons?domain=scale.com&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "Is Pharma Failing to Scale AI? - HLTH",
+        "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFAwaFVFSTFfWU9zTlNqQzIzU3NVS2E0WmNVYklxUHg0ZXdaR0xVTXh3VnR1cTZNaEFHOUFXLVl1QzNtMEdReDJ0M1NiaXBTTW9TUlFBS2V4T1lBOXVnMFNkaU1hN0Itb0NQRjM2d1lFaUJtQQ?oc=5",
+        "pubDate": "Tue, 04 Aug 2026 01:01:48 GMT"
+      },
+      "sparkline": null
     },
     {
       "name": "Palantir",
@@ -63,13 +55,11 @@
       "logo": "https://www.google.com/s2/favicons?domain=palantir.com&sz=128",
       "ticker": "PLTR",
       "headline": {
-        "title": "NHS England to revise Palantir platform data after staff concerns - Financial Times",
-        "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQc3REZDVKNHZjckxfWjZWMnY0SmpGRi0xdHJPNko2bHpOQm1oa1haNkZHTzZBbGNxb0xweXdyUmphWlNfM19ndDBsd19raHdNX1ZGNF9YR3ZNbllTVzZyRHBNR09ZcXVHR0FWTEhLXzN1S3lOeUtLNXlSZTRobF9FbktxTVc?oc=5",
-        "pubDate": "Mon, 03 Aug 2026 04:01:27 GMT"
+        "title": "Palantir’s stock climbs after earnings, as AI drives turbocharged growth - MarketWatch",
+        "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPZElFZU03bG9oTUtPVTBBdm00M3Y3R3U1V0N3QmlYM2Y5YkRTYnpIVGJTc3YtNXFhcDRMUW9vTy1EaC1iLTJzMjQ1eURCcEgtZ1BfWFI5eU1xc1AzSGNNQjJXcnZDSU5hLWVWYnk4aWNBYWt0dXI2dDJBaVdwZXA1UVhKVDR5T1BKWFV6QjJGNEE3Tnp2cWdrVGNLY1VEQQ?oc=5",
+        "pubDate": "Mon, 03 Aug 2026 21:59:00 GMT"
       },
       "sparkline": [
-        125.7300033569336,
-        129.3000030517578,
         132.5399932861328,
         134.3699951171875,
         132.22000122070312,
@@ -93,17 +83,68 @@
       ]
     },
     {
-      "name": "OpenAI",
-      "tag": "LLMs",
-      "desc": "Creator of ChatGPT and the GPT family of foundation models",
-      "url": "https://openai.com",
-      "initials": "OAI",
-      "logo": "https://www.google.com/s2/favicons?domain=openai.com&sz=128",
+      "name": "Anduril",
+      "tag": "Defense AI",
+      "desc": "Autonomous defense systems and AI-enabled military hardware",
+      "url": "https://anduril.com",
+      "initials": "A",
+      "logo": "https://www.google.com/s2/favicons?domain=anduril.com&sz=128",
       "ticker": null,
       "headline": {
-        "title": "OpenAI’s amazing — but vastly oversold — new model Astra - Marcus on AI | Substack",
-        "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBmcXFpN2pDczFwYUxBMEc1ZF9BbDQ3RS1hWU1YQkM0bFRRT1AwTk1NRXhlNmV0X3hFSzVENktCZHp1WXFlMEd6ZFA4YmV3MC1meHMydy1KMjRMM2s5c0tYMi1jQVZ1NmkySkNOZmJHbTRZY19RYkVmVg?oc=5",
-        "pubDate": "Sun, 02 Aug 2026 21:25:27 GMT"
+        "title": "Anduril and Archer Unveil Defense VTOL - Halldale Group",
+        "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBlUjUxWEhYY3BabDRMZzBoUFAtRThaLXhSdWw0MlAzNmx6RHVaQ0VlOF9PeE53dW12eklFVWI0WEFZc2tNSjNWQ2FTZUR1N2dKOXB0dUUyVjRKME5YRUtBVW5scWxXaXA3NVY4ajBXaUkyZ1hER1pSdmdEYw?oc=5",
+        "pubDate": "Mon, 03 Aug 2026 19:46:17 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "CrowdStrike",
+      "tag": "Cybersecurity",
+      "desc": "Cloud-native endpoint protection and threat intelligence",
+      "url": "https://crowdstrike.com",
+      "initials": "CS",
+      "logo": "https://www.google.com/s2/favicons?domain=crowdstrike.com&sz=128",
+      "ticker": "CRWD",
+      "headline": {
+        "title": "CrowdStrike: Cloud Crime Surges as Attackers Turn Trust Against Defenders - Virtualization Review",
+        "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPMEFWOHZ5MTNPcjZEdERWRUR5VTJwN1NnUGdvT0VIQkFLRy1KY2k0NmpaVklkUkhxZXpkV1BKdXZwZFEtUXBscldjajJYb1d6QWI3bzN1bHBiRFk1UjVwb2hvODhxSWw2ZThfY3ZHcE1SS1JZeC0zelJDSjc2U3RSSWR1SkVWREpXdUVHOVE5WDlnVnJwQVhtY0RTYmJ4Y3A4Ml9CZ3I3djRrd0Z2cVVTdUc5YVFFTUtkcUgxLWUzUHllWmxlUlJJVmln?oc=5",
+        "pubDate": "Mon, 03 Aug 2026 19:37:23 GMT"
+      },
+      "sparkline": [
+        199.3800048828125,
+        194.6199951171875,
+        191.1199951171875,
+        198.39999389648438,
+        187.17999267578125,
+        187.91000366210938,
+        210.72999572753906,
+        206.77000427246094,
+        203.75999450683594,
+        203.0800018310547,
+        198.49000549316406,
+        191.14999389648438,
+        188.4199981689453,
+        183.4199981689453,
+        183.27999877929688,
+        180.11000061035156,
+        181.8000030517578,
+        179.3800048828125,
+        185.22000122070312,
+        190.86000061035156
+      ]
+    },
+    {
+      "name": "Commonwealth Fusion",
+      "tag": "Energy",
+      "desc": "Next-generation tokamak fusion for clean energy at scale",
+      "url": "https://cfs.energy",
+      "initials": "CFS",
+      "logo": "https://www.google.com/s2/favicons?domain=cfs.energy&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "This fusion startup just raised another $1 billion for its first commercial power plant - Fast Company",
+        "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPMmVKLVFpOENQYi14WlZfcTQ2Znc4ZWZlSS1zT1VsMjE0LXNQQldrRG5OVGdCZ19QczdER0x5R2NJaENWcTJWQXlkNjBoaFloY1RxNnJpQTI4MXV2SnJ2RTN2RXJrZGg0UHBMYXJ2b3ZqcGszSXFoSjN0ZV9hUV9NWE91MU9kZU5MOVpCdkd2UXpHSkxKQ2U1dGc4WTk5LUlDZ2VPQjE5TzNSZmNnWTFKS0l3SFREZjdrR252d2Rha1c?oc=5",
+        "pubDate": "Mon, 03 Aug 2026 12:20:01 GMT"
       },
       "sparkline": null
     },
@@ -116,79 +157,11 @@
       "logo": "https://www.google.com/s2/favicons?domain=x.ai&sz=128",
       "ticker": null,
       "headline": {
-        "title": "Minnesota’s Nudification Ban Is Now in Effect Despite xAI’s Efforts to Stop It - Gizmodo",
-        "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQTVU3dl9wVGxVZGJfbUFtTVVmb0dKRWk5UGNTZVNPVjJfTlpuRVJ1X0VvbjQ3Z014b1ZmVjVmWlYzVjhuVENjZm5wNU5zVGg5SC1odzRCemJqTmJOQUJOdnR0d3BUblR0VW5TRHVXc3ZENUpoRUxMd2VnSzdaX1V6ZXROaklIVnVZWU0zeXVnamI1b0xnUGprWVk3elEwakxNMHBGb0hiSE9OTmM?oc=5",
-        "pubDate": "Sun, 02 Aug 2026 18:17:56 GMT"
+        "title": "Nudification law to go into effect Saturday after judge denies delay request from Musk’s AI company - mronline.org",
+        "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPZVROZnNlX2xNbkNTbS1mRFl0ZXpqYmIxZTJjYlhzRVd1SmEyR3ZsVXM3RFNndmJhZUY2MURjZE5zM2ZpcEtod2ZiMUlGWkdkamNuME84NGt2QXJuR21hcWxzemZNaENfUERXLVd5clVPcWM0bDZrREhHdElrcmRKcmx5bzJYUl9MS3RiTC1pUF9hemh6bHF1eWFKbms2NGRjT3FBc0N3aFM5akNYWFhoNThoWVJ0d0U2ZmhkSi02VHNSbDhPVjJyMGhQUQ?oc=5",
+        "pubDate": "Mon, 03 Aug 2026 12:06:19 GMT"
       },
       "sparkline": null
-    },
-    {
-      "name": "Waymo",
-      "tag": "Autonomy",
-      "desc": "The most miles driven autonomously of any robotaxi service",
-      "url": "https://waymo.com",
-      "initials": "W",
-      "logo": "https://www.google.com/s2/favicons?domain=waymo.com&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "Americans Can’t Buy Chinese EVs. Waymo Is Importing Thousands - Forbes",
-        "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNUXJxQlhKeXN3X3o3Z2xLUkE1QjdUdmlYM3pBYUg3cW12OWNCZ3dBS3l5RnpoYWpybUFfUHlleUNPTWNVelFrY0I0eXM4TS1wMlJfX3Z5MVBwQkVmSGlRSUlxOGlpQzlRWHdmMmdTMVJ0T2dfVEJubWFpRnFYY05fbnZYYWpUdksxc1ZfVG8xTDVYb1RJdFRDVGdCa1F0WVAxT2MxVVJubkUzZjdmVDRneFNB?oc=5",
-        "pubDate": "Sun, 02 Aug 2026 10:30:00 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "Mistral AI",
-      "tag": "LLMs",
-      "desc": "Europe's leading open-weight AI foundation models",
-      "url": "https://mistral.ai",
-      "initials": "M",
-      "logo": "https://www.google.com/s2/favicons?domain=mistral.ai&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "Mistral AI Success Story: How Europe’s AI Unicorn Is Challenging OpenAI - Business Outreach Magazine",
-        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9CVEJBd2hSNU5RUE1JN3BVNi10T3BldlAzbmRMekdKUmVwOWhCRXo1eVNmaG5qYy05LWhCWVF0a0EwUzN1NmUzcnBValdDOWtIVDVHREcwUVlqaXlaaXFOTnZsS2RGR3hW?oc=5",
-        "pubDate": "Sat, 01 Aug 2026 12:43:32 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "Rocket Lab",
-      "tag": "Space",
-      "desc": "Small-satellite launch provider and space systems manufacturer",
-      "url": "https://rocketlabusa.com",
-      "initials": "RL",
-      "logo": "https://www.google.com/s2/favicons?domain=rocketlabusa.com&sz=128",
-      "ticker": "RKLB",
-      "headline": {
-        "title": "Prediction: Rocket Lab Will Turn Profitable and Free-Cash-Flow-Positive in 2027 -- Thanks to Iridium - The Motley Fool",
-        "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOLVEwN3ZySUdQZ0g4VHFwVGtOb2Q5RkdLZUNpX3dISHZiRVMyMDlYVFdLY0VyV1JJUjVRSlFlTUFMSk80b3R0VGxPS3lWeEZ3M2t2OXRqbDdzbmsxNVl5U2RocTk4aU9mbm9IT1lrSFVmVTR5ZTBPNlE5OURqWDJlVWkzaFFXbzV0R1pVMWJsbGJxWTRBRDk0WQ?oc=5",
-        "pubDate": "Sat, 01 Aug 2026 11:06:00 GMT"
-      },
-      "sparkline": [
-        100.06999969482422,
-        100.45999908447266,
-        93.08999633789062,
-        83.41000366210938,
-        83.3499984741211,
-        82.55000305175781,
-        81.04000091552734,
-        76.7300033569336,
-        78.80999755859375,
-        76.19999694824219,
-        67.3499984741211,
-        67.62000274658203,
-        65.73999786376953,
-        69.12000274658203,
-        69.75,
-        69.98999786376953,
-        63.90999984741211,
-        66.94000244140625,
-        63.88999938964844,
-        58.599998474121094,
-        64.68000030517578,
-        64.94999694824219
-      ]
     }
   ]
 }
