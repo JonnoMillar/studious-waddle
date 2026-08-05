@@ -1,5 +1,5 @@
 {
-  "refreshed_at": "2026-08-04T08:45:22.162Z",
+  "refreshed_at": "2026-08-05T08:42:41.023Z",
   "companies": [
     {
       "name": "Anthropic",
@@ -10,39 +10,122 @@
       "logo": "https://www.google.com/s2/favicons?domain=anthropic.com&sz=128",
       "ticker": null,
       "headline": {
-        "title": "Inside Google’s $200bn Wall Street finance machine for Anthropic - Financial Times",
-        "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQQlV0a0ZQV0NYRkVGM0Z4QndJSmV0U1ctNjlKT1d2dHZEcDRuVHRXZDJwRm94MXM4TUE0akFsOE9IU1ZQcU9WblJVVzMxY1pyUnNZVHRIb2l2MkhsaXhQRDVBLV96RVhIRmgxQ3ZxUU9RRkxpYjF4bC0wREZLanR6MHB2U3c?oc=5",
-        "pubDate": "Tue, 04 Aug 2026 07:03:13 GMT"
+        "title": "AI used new levels of 'autonomy and deception' to trick people in safety test - BBC",
+        "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9hVEpkVXFKSV93Z2VqWklmTV9uUndrWTRmRjBhVWpTZkVtS05meWs0X1RKVDl1enZwTVFBWDdjX0ozc0JXVU5fcW1ldFRrclV6ZmZ4Y2RnMnc4eVlT?oc=5",
+        "pubDate": "Wed, 05 Aug 2026 00:02:18 GMT"
       },
       "sparkline": null
     },
     {
-      "name": "Figure AI",
-      "tag": "Robotics",
-      "desc": "Humanoid robots designed for industrial and commercial work",
-      "url": "https://figure.ai",
-      "initials": "FA",
-      "logo": "https://www.google.com/s2/favicons?domain=figure.ai&sz=128",
+      "name": "Rocket Lab",
+      "tag": "Space",
+      "desc": "Small-satellite launch provider and space systems manufacturer",
+      "url": "https://rocketlabusa.com",
+      "initials": "RL",
+      "logo": "https://www.google.com/s2/favicons?domain=rocketlabusa.com&sz=128",
+      "ticker": "RKLB",
+      "headline": {
+        "title": "Rocket Lab Will Track Airborne Threats From Space - Stock Titan",
+        "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQS3lPM2NJN2h0MGl1VlowM2FyQ2J2WXc2RjlaUEIwYnBielpfcWxEU2lMMWtISTE1UUo5amFZSVBiMnBESVhEbVFSeFpiNzZCYnRuZThMOFktNVk2a2czUEpiZm1NS0VfbDBOVUY4UEhyZklRa3AwVXNtdzMwZHV0SzBVZVRkUWVYa1BxaVJKcFUyeXh4TzNXUW5QYWUtMi1JcFJLYnFYdlAtUWVhNl9JUW9nM1M?oc=5",
+        "pubDate": "Tue, 04 Aug 2026 23:18:14 GMT"
+      },
+      "sparkline": [
+        93.08999633789062,
+        83.41000366210938,
+        83.3499984741211,
+        82.55000305175781,
+        81.04000091552734,
+        76.7300033569336,
+        78.80999755859375,
+        76.19999694824219,
+        67.3499984741211,
+        67.62000274658203,
+        65.73999786376953,
+        69.12000274658203,
+        69.75,
+        69.98999786376953,
+        63.90999984741211,
+        66.94000244140625,
+        63.88999938964844,
+        58.599998474121094,
+        64.68000030517578,
+        64.94999694824219,
+        70.43000030517578,
+        74.4800033569336
+      ]
+    },
+    {
+      "name": "Perplexity",
+      "tag": "AI Search",
+      "desc": "Answer engine combining web search with AI-generated summaries",
+      "url": "https://perplexity.ai",
+      "initials": "P",
+      "logo": "https://www.google.com/s2/favicons?domain=perplexity.ai&sz=128",
       "ticker": null,
       "headline": {
-        "title": "The World’s Most Valuable Humanoid Robot Companies in 2026 - Memeburn",
-        "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPdHRFbDFSRkw0dENJWGo1Qk5NZnBrM0E1cnIta0ctX2ZsZ1kya3ZxMTM2VHVCeFFVWDhDYnpuOEJmZlpCT2RtS1BxUnZMUnFSR1dDTHRFVXNad3Q2WmpsWmhnaV9LZkFEMFlQLVNXeVh6ZnRsd0xJVm93eF80U2lUeDI1OUpUdw?oc=5",
-        "pubDate": "Tue, 04 Aug 2026 06:07:05 GMT"
+        "title": "Perplexity Has Successfully Overturned Amazon's Injunction On Its AI Shopping Bot - Engadget",
+        "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNbVlqa1N5cVlmRXZiTkt0Nm53R1VOVlVIc0VzNTlVMGtaTmxvN2w1dTRmMS1iOUlZNFZmTldnY2RFM3QwRTJOVTc3ZzBTLWNySnBvMUQzODIyN0t0QzBiYUlGX0RvNXozakZYREY2MXNSNVhaZ2ZNaUk0X0NtRjgzOEpldGZmOHJDdTNZNU52ZmVxa0ZCYzJZVU45c3ZJQkRhRjUwWlY0czZ1RDRnazJkNmQ0Yw?oc=5",
+        "pubDate": "Tue, 04 Aug 2026 21:58:34 GMT"
       },
       "sparkline": null
     },
     {
-      "name": "Scale AI",
-      "tag": "AI Data",
-      "desc": "Data labelling and RLHF infrastructure powering frontier AI",
-      "url": "https://scale.com",
-      "initials": "S",
-      "logo": "https://www.google.com/s2/favicons?domain=scale.com&sz=128",
+      "name": "OpenAI",
+      "tag": "LLMs",
+      "desc": "Creator of ChatGPT and the GPT family of foundation models",
+      "url": "https://openai.com",
+      "initials": "OAI",
+      "logo": "https://www.google.com/s2/favicons?domain=openai.com&sz=128",
       "ticker": null,
       "headline": {
-        "title": "Is Pharma Failing to Scale AI? - HLTH",
-        "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFAwaFVFSTFfWU9zTlNqQzIzU3NVS2E0WmNVYklxUHg0ZXdaR0xVTXh3VnR1cTZNaEFHOUFXLVl1QzNtMEdReDJ0M1NiaXBTTW9TUlFBS2V4T1lBOXVnMFNkaU1hN0Itb0NQRjM2d1lFaUJtQQ?oc=5",
-        "pubDate": "Tue, 04 Aug 2026 01:01:48 GMT"
+        "title": "OpenAI and Anthropic models went rogue in cyber tests, UK watchdog says - Financial Times",
+        "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNQzljVTVSUVRxaUJweXNMdlBxeHJ0TGs1QWdHeS1sUzl2V1NCWlZLYXlxT21NOVVjZUFxVHN6N0N3QjBKVnVNWUNib09aTHYzZVVCdjRINUZ1d1dvT1dqekJMNXk2WFVObE13N1Q1LXVCVXR5R19ZaXFVMzhfWFRtamtXd28?oc=5",
+        "pubDate": "Tue, 04 Aug 2026 21:46:13 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "Mistral AI",
+      "tag": "LLMs",
+      "desc": "Europe's leading open-weight AI foundation models",
+      "url": "https://mistral.ai",
+      "initials": "M",
+      "logo": "https://www.google.com/s2/favicons?domain=mistral.ai&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "Introducing Shieldstral. - mistral.ai",
+        "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTFBzdl9BMnZNN3pna2RmTVVvSlBxVmRHR0tSRWZBQnNtS1VNUjNaUVBscEgxWlpiZndVRHdtVGNlSE0taXRwYjQya192d2U?oc=5",
+        "pubDate": "Tue, 04 Aug 2026 14:01:45 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "Cursor",
+      "tag": "Code Editor",
+      "desc": "AI-native code editor that pairs with Claude and GPT-4",
+      "url": "https://cursor.com",
+      "initials": "C",
+      "logo": "https://www.google.com/s2/favicons?domain=cursor.com&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "Mixture-of-Kittens: our open-source MoE megakernel for NVL72s - Cursor",
+        "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9odUZLRUptYlhMcHJQbUlHT1YxekVlaHBKWWE3RWxQamxBbFU2NmZDb3F2al80OUhnZUJuaDVpRnJRSWU2Y2pnaWk5aWw1UktiVWdyQQ?oc=5",
+        "pubDate": "Tue, 04 Aug 2026 12:00:00 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "Anduril",
+      "tag": "Defense AI",
+      "desc": "Autonomous defense systems and AI-enabled military hardware",
+      "url": "https://anduril.com",
+      "initials": "A",
+      "logo": "https://www.google.com/s2/favicons?domain=anduril.com&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "Exclusive | Anduril Weighs Baltimore Shipyard Investment to Build Drone Boats - wsj.com",
+        "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNUF9mN2d3UG80YnZNZzVaUUhFcjJQSjRSZDdxUXZJNFR4RkpBazYzMXp1czZIcTV3Y0UyUk5ZR0tiS2VwWHVGLWJyVzZRRkVVcV9tZjFPS1U2ZjZuU0pRSWlBcnpIR2R4bVNqc2lvQW9GS0llakdWOWs1aHIzRXZHQWhET3h5Yko5NUgwZUNJTWxMZzYzdDRlVWJnT29pelpWeFp0MUZ5dzBKbzB2RTNZdHc2OA?oc=5",
+        "pubDate": "Tue, 04 Aug 2026 00:01:00 GMT"
       },
       "sparkline": null
     },
@@ -55,9 +138,9 @@
       "logo": "https://www.google.com/s2/favicons?domain=palantir.com&sz=128",
       "ticker": "PLTR",
       "headline": {
-        "title": "Palantir’s stock climbs after earnings, as AI drives turbocharged growth - MarketWatch",
-        "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPZElFZU03bG9oTUtPVTBBdm00M3Y3R3U1V0N3QmlYM2Y5YkRTYnpIVGJTc3YtNXFhcDRMUW9vTy1EaC1iLTJzMjQ1eURCcEgtZ1BfWFI5eU1xc1AzSGNNQjJXcnZDSU5hLWVWYnk4aWNBYWt0dXI2dDJBaVdwZXA1UVhKVDR5T1BKWFV6QjJGNEE3Tnp2cWdrVGNLY1VEQQ?oc=5",
-        "pubDate": "Mon, 03 Aug 2026 21:59:00 GMT"
+        "title": "Palantir Shares Jump on ‘Otherworldly’ Sales, Improved Forecast - wsj.com",
+        "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPblhBSU5ndlFUZTBqbDR5RmFXbXRHUHh6VnI0cjlRN29nMFAtMWMtVXBDMnRDZE82RTlyUk9FZm9zbGJHNXY0U25ablU5V3M0eXpfVzZjT0dkU0xkTnVSR25sZkxMeGJycThFSGtlOENQM2JQblNFMTBQaEFkdFdNZVRjdEhhMllxNElQeThyQmhyc19DMTNVQTFpNGE?oc=5",
+        "pubDate": "Mon, 03 Aug 2026 22:24:00 GMT"
       },
       "sparkline": [
         132.5399932861328,
@@ -79,89 +162,10 @@
         123.52999877929688,
         123,
         122.26000213623047,
-        123.05999755859375
+        123.05999755859375,
+        125.6500015258789,
+        162.66000366210938
       ]
-    },
-    {
-      "name": "Anduril",
-      "tag": "Defense AI",
-      "desc": "Autonomous defense systems and AI-enabled military hardware",
-      "url": "https://anduril.com",
-      "initials": "A",
-      "logo": "https://www.google.com/s2/favicons?domain=anduril.com&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "Anduril and Archer Unveil Defense VTOL - Halldale Group",
-        "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBlUjUxWEhYY3BabDRMZzBoUFAtRThaLXhSdWw0MlAzNmx6RHVaQ0VlOF9PeE53dW12eklFVWI0WEFZc2tNSjNWQ2FTZUR1N2dKOXB0dUUyVjRKME5YRUtBVW5scWxXaXA3NVY4ajBXaUkyZ1hER1pSdmdEYw?oc=5",
-        "pubDate": "Mon, 03 Aug 2026 19:46:17 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "CrowdStrike",
-      "tag": "Cybersecurity",
-      "desc": "Cloud-native endpoint protection and threat intelligence",
-      "url": "https://crowdstrike.com",
-      "initials": "CS",
-      "logo": "https://www.google.com/s2/favicons?domain=crowdstrike.com&sz=128",
-      "ticker": "CRWD",
-      "headline": {
-        "title": "CrowdStrike: Cloud Crime Surges as Attackers Turn Trust Against Defenders - Virtualization Review",
-        "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPMEFWOHZ5MTNPcjZEdERWRUR5VTJwN1NnUGdvT0VIQkFLRy1KY2k0NmpaVklkUkhxZXpkV1BKdXZwZFEtUXBscldjajJYb1d6QWI3bzN1bHBiRFk1UjVwb2hvODhxSWw2ZThfY3ZHcE1SS1JZeC0zelJDSjc2U3RSSWR1SkVWREpXdUVHOVE5WDlnVnJwQVhtY0RTYmJ4Y3A4Ml9CZ3I3djRrd0Z2cVVTdUc5YVFFTUtkcUgxLWUzUHllWmxlUlJJVmln?oc=5",
-        "pubDate": "Mon, 03 Aug 2026 19:37:23 GMT"
-      },
-      "sparkline": [
-        199.3800048828125,
-        194.6199951171875,
-        191.1199951171875,
-        198.39999389648438,
-        187.17999267578125,
-        187.91000366210938,
-        210.72999572753906,
-        206.77000427246094,
-        203.75999450683594,
-        203.0800018310547,
-        198.49000549316406,
-        191.14999389648438,
-        188.4199981689453,
-        183.4199981689453,
-        183.27999877929688,
-        180.11000061035156,
-        181.8000030517578,
-        179.3800048828125,
-        185.22000122070312,
-        190.86000061035156
-      ]
-    },
-    {
-      "name": "Commonwealth Fusion",
-      "tag": "Energy",
-      "desc": "Next-generation tokamak fusion for clean energy at scale",
-      "url": "https://cfs.energy",
-      "initials": "CFS",
-      "logo": "https://www.google.com/s2/favicons?domain=cfs.energy&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "This fusion startup just raised another $1 billion for its first commercial power plant - Fast Company",
-        "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPMmVKLVFpOENQYi14WlZfcTQ2Znc4ZWZlSS1zT1VsMjE0LXNQQldrRG5OVGdCZ19QczdER0x5R2NJaENWcTJWQXlkNjBoaFloY1RxNnJpQTI4MXV2SnJ2RTN2RXJrZGg0UHBMYXJ2b3ZqcGszSXFoSjN0ZV9hUV9NWE91MU9kZU5MOVpCdkd2UXpHSkxKQ2U1dGc4WTk5LUlDZ2VPQjE5TzNSZmNnWTFKS0l3SFREZjdrR252d2Rha1c?oc=5",
-        "pubDate": "Mon, 03 Aug 2026 12:20:01 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "xAI",
-      "tag": "LLMs",
-      "desc": "Elon Musk's AI company, developer of the Grok models",
-      "url": "https://x.ai",
-      "initials": "X",
-      "logo": "https://www.google.com/s2/favicons?domain=x.ai&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "Nudification law to go into effect Saturday after judge denies delay request from Musk’s AI company - mronline.org",
-        "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPZVROZnNlX2xNbkNTbS1mRFl0ZXpqYmIxZTJjYlhzRVd1SmEyR3ZsVXM3RFNndmJhZUY2MURjZE5zM2ZpcEtod2ZiMUlGWkdkamNuME84NGt2QXJuR21hcWxzemZNaENfUERXLVd5clVPcWM0bDZrREhHdElrcmRKcmx5bzJYUl9MS3RiTC1pUF9hemh6bHF1eWFKbms2NGRjT3FBc0N3aFM5akNYWFhoNThoWVJ0d0U2ZmhkSi02VHNSbDhPVjJyMGhQUQ?oc=5",
-        "pubDate": "Mon, 03 Aug 2026 12:06:19 GMT"
-      },
-      "sparkline": null
     }
   ]
 }
