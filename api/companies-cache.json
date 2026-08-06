@@ -1,131 +1,33 @@
 {
-  "refreshed_at": "2026-08-05T08:42:41.023Z",
+  "refreshed_at": "2026-08-06T08:44:21.015Z",
   "companies": [
     {
-      "name": "Anthropic",
-      "tag": "LLMs",
-      "desc": "AI safety company behind the Claude family of models",
-      "url": "https://anthropic.com",
-      "initials": "AN",
-      "logo": "https://www.google.com/s2/favicons?domain=anthropic.com&sz=128",
+      "name": "Neuralink",
+      "tag": "Brain-Computer",
+      "desc": "Implantable neural interfaces for restoring and augmenting human capability",
+      "url": "https://neuralink.com",
+      "initials": "NL",
+      "logo": "https://www.google.com/s2/favicons?domain=neuralink.com&sz=128",
       "ticker": null,
       "headline": {
-        "title": "AI used new levels of 'autonomy and deception' to trick people in safety test - BBC",
-        "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9hVEpkVXFKSV93Z2VqWklmTV9uUndrWTRmRjBhVWpTZkVtS05meWs0X1RKVDl1enZwTVFBWDdjX0ozc0JXVU5fcW1ldFRrclV6ZmZ4Y2RnMnc4eVlT?oc=5",
-        "pubDate": "Wed, 05 Aug 2026 00:02:18 GMT"
+        "title": "Musk Wants To Roll Out Super-Powers For Humans Next Year - 2oceansvibe.com",
+        "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPZ1U1SGJERlBicXpZUkZMd2JBSy1yVFd4RGhVRTZxSEt1NDNBdXMwdnJ4STJPeC13UFRWZzZmd0tBekhNcDlHaDlTajktQnVjU3RrLXZVbE1YbnZ4QVREeldtaV9xV1QyTlhyN1Y2a244aTJJcDQwYXRfSV9nVzBJMjlMSU1JQlhDZXVN?oc=5",
+        "pubDate": "Thu, 06 Aug 2026 06:57:41 GMT"
       },
       "sparkline": null
     },
     {
-      "name": "Rocket Lab",
-      "tag": "Space",
-      "desc": "Small-satellite launch provider and space systems manufacturer",
-      "url": "https://rocketlabusa.com",
-      "initials": "RL",
-      "logo": "https://www.google.com/s2/favicons?domain=rocketlabusa.com&sz=128",
-      "ticker": "RKLB",
-      "headline": {
-        "title": "Rocket Lab Will Track Airborne Threats From Space - Stock Titan",
-        "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQS3lPM2NJN2h0MGl1VlowM2FyQ2J2WXc2RjlaUEIwYnBielpfcWxEU2lMMWtISTE1UUo5amFZSVBiMnBESVhEbVFSeFpiNzZCYnRuZThMOFktNVk2a2czUEpiZm1NS0VfbDBOVUY4UEhyZklRa3AwVXNtdzMwZHV0SzBVZVRkUWVYa1BxaVJKcFUyeXh4TzNXUW5QYWUtMi1JcFJLYnFYdlAtUWVhNl9JUW9nM1M?oc=5",
-        "pubDate": "Tue, 04 Aug 2026 23:18:14 GMT"
-      },
-      "sparkline": [
-        93.08999633789062,
-        83.41000366210938,
-        83.3499984741211,
-        82.55000305175781,
-        81.04000091552734,
-        76.7300033569336,
-        78.80999755859375,
-        76.19999694824219,
-        67.3499984741211,
-        67.62000274658203,
-        65.73999786376953,
-        69.12000274658203,
-        69.75,
-        69.98999786376953,
-        63.90999984741211,
-        66.94000244140625,
-        63.88999938964844,
-        58.599998474121094,
-        64.68000030517578,
-        64.94999694824219,
-        70.43000030517578,
-        74.4800033569336
-      ]
-    },
-    {
-      "name": "Perplexity",
-      "tag": "AI Search",
-      "desc": "Answer engine combining web search with AI-generated summaries",
-      "url": "https://perplexity.ai",
-      "initials": "P",
-      "logo": "https://www.google.com/s2/favicons?domain=perplexity.ai&sz=128",
+      "name": "Scale AI",
+      "tag": "AI Data",
+      "desc": "Data labelling and RLHF infrastructure powering frontier AI",
+      "url": "https://scale.com",
+      "initials": "S",
+      "logo": "https://www.google.com/s2/favicons?domain=scale.com&sz=128",
       "ticker": null,
       "headline": {
-        "title": "Perplexity Has Successfully Overturned Amazon's Injunction On Its AI Shopping Bot - Engadget",
-        "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNbVlqa1N5cVlmRXZiTkt0Nm53R1VOVlVIc0VzNTlVMGtaTmxvN2w1dTRmMS1iOUlZNFZmTldnY2RFM3QwRTJOVTc3ZzBTLWNySnBvMUQzODIyN0t0QzBiYUlGX0RvNXozakZYREY2MXNSNVhaZ2ZNaUk0X0NtRjgzOEpldGZmOHJDdTNZNU52ZmVxa0ZCYzJZVU45c3ZJQkRhRjUwWlY0czZ1RDRnazJkNmQ0Yw?oc=5",
-        "pubDate": "Tue, 04 Aug 2026 21:58:34 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "OpenAI",
-      "tag": "LLMs",
-      "desc": "Creator of ChatGPT and the GPT family of foundation models",
-      "url": "https://openai.com",
-      "initials": "OAI",
-      "logo": "https://www.google.com/s2/favicons?domain=openai.com&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "OpenAI and Anthropic models went rogue in cyber tests, UK watchdog says - Financial Times",
-        "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNQzljVTVSUVRxaUJweXNMdlBxeHJ0TGs1QWdHeS1sUzl2V1NCWlZLYXlxT21NOVVjZUFxVHN6N0N3QjBKVnVNWUNib09aTHYzZVVCdjRINUZ1d1dvT1dqekJMNXk2WFVObE13N1Q1LXVCVXR5R19ZaXFVMzhfWFRtamtXd28?oc=5",
-        "pubDate": "Tue, 04 Aug 2026 21:46:13 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "Mistral AI",
-      "tag": "LLMs",
-      "desc": "Europe's leading open-weight AI foundation models",
-      "url": "https://mistral.ai",
-      "initials": "M",
-      "logo": "https://www.google.com/s2/favicons?domain=mistral.ai&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "Introducing Shieldstral. - mistral.ai",
-        "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTFBzdl9BMnZNN3pna2RmTVVvSlBxVmRHR0tSRWZBQnNtS1VNUjNaUVBscEgxWlpiZndVRHdtVGNlSE0taXRwYjQya192d2U?oc=5",
-        "pubDate": "Tue, 04 Aug 2026 14:01:45 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "Cursor",
-      "tag": "Code Editor",
-      "desc": "AI-native code editor that pairs with Claude and GPT-4",
-      "url": "https://cursor.com",
-      "initials": "C",
-      "logo": "https://www.google.com/s2/favicons?domain=cursor.com&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "Mixture-of-Kittens: our open-source MoE megakernel for NVL72s - Cursor",
-        "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9odUZLRUptYlhMcHJQbUlHT1YxekVlaHBKWWE3RWxQamxBbFU2NmZDb3F2al80OUhnZUJuaDVpRnJRSWU2Y2pnaWk5aWw1UktiVWdyQQ?oc=5",
-        "pubDate": "Tue, 04 Aug 2026 12:00:00 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "Anduril",
-      "tag": "Defense AI",
-      "desc": "Autonomous defense systems and AI-enabled military hardware",
-      "url": "https://anduril.com",
-      "initials": "A",
-      "logo": "https://www.google.com/s2/favicons?domain=anduril.com&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "Exclusive | Anduril Weighs Baltimore Shipyard Investment to Build Drone Boats - wsj.com",
-        "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNUF9mN2d3UG80YnZNZzVaUUhFcjJQSjRSZDdxUXZJNFR4RkpBazYzMXp1czZIcTV3Y0UyUk5ZR0tiS2VwWHVGLWJyVzZRRkVVcV9tZjFPS1U2ZjZuU0pRSWlBcnpIR2R4bVNqc2lvQW9GS0llakdWOWs1aHIzRXZHQWhET3h5Yko5NUgwZUNJTWxMZzYzdDRlVWJnT29pelpWeFp0MUZ5dzBKbzB2RTNZdHc2OA?oc=5",
-        "pubDate": "Tue, 04 Aug 2026 00:01:00 GMT"
+        "title": "Belize Bank Partners with Backbase for Nation-Scale AI-Native Digital Banking Transformation - FF News",
+        "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQSXM2a2U1UXdqaTdFd2d0WmhsQWJIWTJJcjJtWWhnUFZZNm9NMGhKV0FuWk9yRFJtUDhaVFBLZ3pyNWl4UE10Qko2MDhqZEFlZ2hlS05KalJhbGtzcWlKelNlQ2FacGJwYXNCT29EWGZsRU9jWVlLV3VuYVlBR2g5V05ienRvTlQzb2QxTU1xaGpmbVY3dmtOQU1KU3cwUmdSck1qQUptQ2o4QjRRWGdYRHlvMm1Ic2M?oc=5",
+        "pubDate": "Thu, 06 Aug 2026 06:02:33 GMT"
       },
       "sparkline": null
     },
@@ -138,9 +40,9 @@
       "logo": "https://www.google.com/s2/favicons?domain=palantir.com&sz=128",
       "ticker": "PLTR",
       "headline": {
-        "title": "Palantir Shares Jump on ‘Otherworldly’ Sales, Improved Forecast - wsj.com",
-        "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPblhBSU5ndlFUZTBqbDR5RmFXbXRHUHh6VnI0cjlRN29nMFAtMWMtVXBDMnRDZE82RTlyUk9FZm9zbGJHNXY0U25ablU5V3M0eXpfVzZjT0dkU0xkTnVSR25sZkxMeGJycThFSGtlOENQM2JQblNFMTBQaEFkdFdNZVRjdEhhMllxNElQeThyQmhyc19DMTNVQTFpNGE?oc=5",
-        "pubDate": "Mon, 03 Aug 2026 22:24:00 GMT"
+        "title": "At least half a dozen senior NHS leaders linked to Palantir - Financial Times",
+        "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOY0NRTXdPTW5LRFFqb2ZYNlFVSmxKQVVtZXhwSXpicWlMNkE5SWtxWGMzMmZrTkEtSEJDTG9fSDhqalEyZTBuUEVpVV9PVUdwenpWT182VnlvdUotRFByNTA3ME0xcTF0c3NTeFk1M1N2TkloelhxVFEyX3FDUWxHd3pqSE4?oc=5",
+        "pubDate": "Thu, 06 Aug 2026 04:00:23 GMT"
       },
       "sparkline": [
         132.5399932861328,
@@ -164,7 +66,107 @@
         122.26000213623047,
         123.05999755859375,
         125.6500015258789,
-        162.66000366210938
+        162.66000366210938,
+        158.42999267578125
+      ]
+    },
+    {
+      "name": "Anduril",
+      "tag": "Defense AI",
+      "desc": "Autonomous defense systems and AI-enabled military hardware",
+      "url": "https://anduril.com",
+      "initials": "A",
+      "logo": "https://www.google.com/s2/favicons?domain=anduril.com&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "U.S. Marine Corps ACVs to Counter Drones with Anduril Jammer Package - USNI News",
+        "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNNU9JQjhjSmhkbzU1TGhVbHVCVk5wa1FoeU5JN1YtTUp1UTluenBZX01DZVV2cjBQekwweWU2YzFEcEd5a1p0Q0k1RXJRWlJjZkYwOFlSaFA5NFFpMFBrNWhZMkhKdUZZckpVQVE4VmJwQ2d3eDVfbVViU1IzSVRYc3Fwa0RJTjlpZzVIRy1rdGFFMkZ2SWZoRzhoLXUxNUVyMWc?oc=5",
+        "pubDate": "Wed, 05 Aug 2026 17:26:00 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "xAI",
+      "tag": "LLMs",
+      "desc": "Elon Musk's AI company, developer of the Grok models",
+      "url": "https://x.ai",
+      "initials": "X",
+      "logo": "https://www.google.com/s2/favicons?domain=x.ai&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "SpaceX hit by surging AI costs as insiders prepare to sell their shares - NBC News",
+        "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNRE9hRWJJZ1lJRGl5clJ5QmJ6UkVZZmEybmVPVlAtQUxmeHpYcllpWk5wRW1PZ1IwaWNyalAyUDhqR2x3TThKMWNTS1FzVHpmczNMMWNpLXNJZHlndWVPWW1BMHVLc3NUcGFKZV9UTjh2aXhRdnJDUXpjbDhsT1BFczRCT0phOXhLNDJUMzJxVERjZ3BJ?oc=5",
+        "pubDate": "Wed, 05 Aug 2026 12:24:00 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "OpenAI",
+      "tag": "LLMs",
+      "desc": "Creator of ChatGPT and the GPT family of foundation models",
+      "url": "https://openai.com",
+      "initials": "OAI",
+      "logo": "https://www.google.com/s2/favicons?domain=openai.com&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "AI models shock UK testers by using fake identities to try to trick developers - The Guardian",
+        "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPZ3dmZ3FReWJ6X0p4TjQ1dEVrZ0JHd3BKdDl3VjJULW1NVGxCV2pDaktaZHVHQko0WVRoQV9lb2FUSC1RdG1YZVhPRUhQZHlKTGtqZUp0YkQzcHp6ODFfbURCR0M2LWJuUGo1cUd2RXA0Y0tOR1hwNnpvWEJldWVTWEVyV0w0TUtuSGNGT1dEVzRjT1RhQlBkak9wdlhWZnFfU1czNzNqcTk1UmFPRVZlSjNXbTVOLUpmNkZTZE5hNHlMc19u?oc=5",
+        "pubDate": "Wed, 05 Aug 2026 08:40:00 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "Anthropic",
+      "tag": "LLMs",
+      "desc": "AI safety company behind the Claude family of models",
+      "url": "https://anthropic.com",
+      "initials": "AN",
+      "logo": "https://www.google.com/s2/favicons?domain=anthropic.com&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "AI models shock UK testers by using fake identities to try to trick developers - The Guardian",
+        "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPZ3dmZ3FReWJ6X0p4TjQ1dEVrZ0JHd3BKdDl3VjJULW1NVGxCV2pDaktaZHVHQko0WVRoQV9lb2FUSC1RdG1YZVhPRUhQZHlKTGtqZUp0YkQzcHp6ODFfbURCR0M2LWJuUGo1cUd2RXA0Y0tOR1hwNnpvWEJldWVTWEVyV0w0TUtuSGNGT1dEVzRjT1RhQlBkak9wdlhWZnFfU1czNzNqcTk1UmFPRVZlSjNXbTVOLUpmNkZTZE5hNHlMc19u?oc=5",
+        "pubDate": "Wed, 05 Aug 2026 08:40:00 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "CrowdStrike",
+      "tag": "Cybersecurity",
+      "desc": "Cloud-native endpoint protection and threat intelligence",
+      "url": "https://crowdstrike.com",
+      "initials": "CS",
+      "logo": "https://www.google.com/s2/favicons?domain=crowdstrike.com&sz=128",
+      "ticker": "CRWD",
+      "headline": {
+        "title": "CrowdStrike invests in Israeli cyber startup Above as insider threats climb the security agenda - calcalistech.com",
+        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9Jc3BHQTcyVnRsbVB6bTFraEdSdW1EVVZXaDc4TEUwYklNSXpkUmZ1ajlyU2lSVGRwMmVNaFVfWnF2YXJqMWFnNHQ2S3lwQVZoVE1JeGlkaWdUYzFmTXpYYXlhQ1paUmM?oc=5",
+        "pubDate": "Wed, 05 Aug 2026 06:15:00 GMT"
+      },
+      "sparkline": [
+        199.3800048828125,
+        194.6199951171875,
+        191.1199951171875,
+        198.39999389648438,
+        187.17999267578125,
+        187.91000366210938,
+        210.72999572753906,
+        206.77000427246094,
+        203.75999450683594,
+        203.0800018310547,
+        198.49000549316406,
+        191.14999389648438,
+        188.4199981689453,
+        183.4199981689453,
+        183.27999877929688,
+        180.11000061035156,
+        181.8000030517578,
+        179.3800048828125,
+        185.22000122070312,
+        190.86000061035156,
+        202.5399932861328,
+        211.22000122070312,
+        209.86000061035156
       ]
     }
   ]
