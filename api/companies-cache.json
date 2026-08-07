@@ -1,18 +1,72 @@
 {
-  "refreshed_at": "2026-08-06T08:44:21.015Z",
+  "refreshed_at": "2026-08-07T07:22:46.314Z",
   "companies": [
     {
-      "name": "Neuralink",
-      "tag": "Brain-Computer",
-      "desc": "Implantable neural interfaces for restoring and augmenting human capability",
-      "url": "https://neuralink.com",
-      "initials": "NL",
-      "logo": "https://www.google.com/s2/favicons?domain=neuralink.com&sz=128",
+      "name": "Rocket Lab",
+      "tag": "Space",
+      "desc": "Small-satellite launch provider and space systems manufacturer",
+      "url": "https://rocketlabusa.com",
+      "initials": "RL",
+      "logo": "https://www.google.com/s2/favicons?domain=rocketlabusa.com&sz=128",
+      "ticker": "RKLB",
+      "headline": {
+        "title": "Rocket Lab launches Japanese Earth-observing satellite after 5-week delay (video, photos) - Space",
+        "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPNHB3VzVPWVd4djVySUpzNWdOcG0wbjAzaDhwdDhvbk9GV3R0a0hGbkVRaXVJQlFwbU5jUmM5WnpLOGlFX3B3Z2xBa0YyclJVUGNRd2N0VVE2YlBSMEpQZU5vNFFwcmhzSWZnQWJ6cVRram1mcWFPdlp2ejZfaXlhc3NUd2NKZjI1b0FRZ1VadzdvU2plb3hBbmdfT0Rnd2lKSWdpM3Z0V3RuQ0E0VW80cUhzbms5VE1ubHBrN3g5RE1GOFpDNnVsVFpYaHpwLVpZb211YXN2QjZzMDMycXZj?oc=5",
+        "pubDate": "Thu, 06 Aug 2026 18:34:06 GMT"
+      },
+      "sparkline": [
+        83.41000366210938,
+        83.3499984741211,
+        82.55000305175781,
+        81.04000091552734,
+        76.7300033569336,
+        78.80999755859375,
+        76.19999694824219,
+        67.3499984741211,
+        67.62000274658203,
+        65.73999786376953,
+        69.12000274658203,
+        69.75,
+        69.98999786376953,
+        63.90999984741211,
+        66.94000244140625,
+        63.88999938964844,
+        58.599998474121094,
+        64.68000030517578,
+        64.94999694824219,
+        70.43000030517578,
+        74.4800033569336,
+        74.81999969482422,
+        75.66999816894531
+      ]
+    },
+    {
+      "name": "Anduril",
+      "tag": "Defense AI",
+      "desc": "Autonomous defense systems and AI-enabled military hardware",
+      "url": "https://anduril.com",
+      "initials": "A",
+      "logo": "https://www.google.com/s2/favicons?domain=anduril.com&sz=128",
       "ticker": null,
       "headline": {
-        "title": "Musk Wants To Roll Out Super-Powers For Humans Next Year - 2oceansvibe.com",
-        "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPZ1U1SGJERlBicXpZUkZMd2JBSy1yVFd4RGhVRTZxSEt1NDNBdXMwdnJ4STJPeC13UFRWZzZmd0tBekhNcDlHaDlTajktQnVjU3RrLXZVbE1YbnZ4QVREeldtaV9xV1QyTlhyN1Y2a244aTJJcDQwYXRfSV9nVzBJMjlMSU1JQlhDZXVN?oc=5",
-        "pubDate": "Thu, 06 Aug 2026 06:57:41 GMT"
+        "title": "Exclusive: Major Republican fundraiser winning contracts from Trump administration, emails reveal - The Guardian",
+        "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPOGNFendrUGVJVktQanNpMHlkNU5Fb0JXQzRWdENpNDJaN3VuYUVOQmtOU1NmSUJBbXg3OXRxWW9xcUNsSXo0M3RmNDl6VndlZkVfM3JOZGpqdHJOUllsZG40WDE2UjJ6X1RLN29DUzFETHgtdmU1aTBWZXNmWUp4aGZpRmQ3YkdCOEtQdE1TTE12aldiU0JUSg?oc=5",
+        "pubDate": "Thu, 06 Aug 2026 18:29:00 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "OpenAI",
+      "tag": "LLMs",
+      "desc": "Creator of ChatGPT and the GPT family of foundation models",
+      "url": "https://openai.com",
+      "initials": "OAI",
+      "logo": "https://www.google.com/s2/favicons?domain=openai.com&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "First OpenAI, now Meta - why do AI hacks keep happening? - BBC",
+        "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE0yZWRQQzA3a0hQQk5EbmFaVEsyNjgyWG1lTkQwOUcyVmt6WXlBNnJzRF9lb19XRHhmV29JY1V2dXhmblpZYUpIa0F6VHZ0U1haWVl2TkI2RzhvUUFP?oc=5",
+        "pubDate": "Thu, 06 Aug 2026 15:59:34 GMT"
       },
       "sparkline": null
     },
@@ -25,9 +79,9 @@
       "logo": "https://www.google.com/s2/favicons?domain=scale.com&sz=128",
       "ticker": null,
       "headline": {
-        "title": "Belize Bank Partners with Backbase for Nation-Scale AI-Native Digital Banking Transformation - FF News",
-        "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQSXM2a2U1UXdqaTdFd2d0WmhsQWJIWTJJcjJtWWhnUFZZNm9NMGhKV0FuWk9yRFJtUDhaVFBLZ3pyNWl4UE10Qko2MDhqZEFlZ2hlS05KalJhbGtzcWlKelNlQ2FacGJwYXNCT29EWGZsRU9jWVlLV3VuYVlBR2g5V05ienRvTlQzb2QxTU1xaGpmbVY3dmtOQU1KU3cwUmdSck1qQUptQ2o4QjRRWGdYRHlvMm1Ic2M?oc=5",
-        "pubDate": "Thu, 06 Aug 2026 06:02:33 GMT"
+        "title": "Sedric Joins American Fintech Council to Scale AI-Driven Compliance Governance - FF News",
+        "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNZDl6anlOaC1ETkFPVTQ3ZTV4bmZoS293QXRjTnlSRWd2cHRsTmtuREI1Z01yMmN6YjFubXRmaU1FMHQ4REtWX1lWVWVpMmw3MXB6NjhMQnFWRVM1UnZ5c0xfNGR2YXd0eGpkNEd0ZVN1bDVGVV9LVDF2TjRGMldRQnh6QlEybFllcjdTYzV1MFQ5VkZHX2V5QkRDM08yYXVROVFLdQ?oc=5",
+        "pubDate": "Thu, 06 Aug 2026 15:14:18 GMT"
       },
       "sparkline": null
     },
@@ -40,12 +94,11 @@
       "logo": "https://www.google.com/s2/favicons?domain=palantir.com&sz=128",
       "ticker": "PLTR",
       "headline": {
-        "title": "At least half a dozen senior NHS leaders linked to Palantir - Financial Times",
-        "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOY0NRTXdPTW5LRFFqb2ZYNlFVSmxKQVVtZXhwSXpicWlMNkE5SWtxWGMzMmZrTkEtSEJDTG9fSDhqalEyZTBuUEVpVV9PVUdwenpWT182VnlvdUotRFByNTA3ME0xcTF0c3NTeFk1M1N2TkloelhxVFEyX3FDUWxHd3pqSE4?oc=5",
-        "pubDate": "Thu, 06 Aug 2026 04:00:23 GMT"
+        "title": "Why $370bn tech group Palantir pays 1.4 percent tax rate: Report - Al Jazeera",
+        "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOcmtBTFEwT09QS0hTa0diSmNLN1NXNTlvUFlyYjVDb28yWk1rWkdpaE9LNjhYbTRWckY4TVlJcnVkMXpUMFc1LTEtajBGMmdZQkNPcDVfVktBZl81eFBfc3hYVkpIQ183ZU9GZVhBd2dmdWg1dEE0cjlpaUtOcGJmTkFYZTZiLUFETHZPSG80elFtSFdiZHktNjNPdzRCVlFaZlZOTtIBqgFBVV95cUxPZ1pGV01wRGFZNXBVZHZLUWRmX0Z5a0ZFU2d3NElxZmNtUkRRcngzZFBzWnc2TFVURTY1dmpPSktVdV9qSFM4TUZxOXl0dF9FVUY1YnVaUFBEeHJlb2I1cVUyTW8tdVZKMThsS0dJOGtDQTVUVlI2bkh6WmE4SWxmZktCQUQ3Ull3QW0wMWlZYmZEMzlTTnJGVGVSejJTZTJiX1B6WXlWRHhSdw?oc=5",
+        "pubDate": "Thu, 06 Aug 2026 14:15:57 GMT"
       },
       "sparkline": [
-        132.5399932861328,
         134.3699951171875,
         132.22000122070312,
         129.0399932861328,
@@ -67,21 +120,22 @@
         123.05999755859375,
         125.6500015258789,
         162.66000366210938,
-        158.42999267578125
+        158.42999267578125,
+        155.9199981689453
       ]
     },
     {
-      "name": "Anduril",
-      "tag": "Defense AI",
-      "desc": "Autonomous defense systems and AI-enabled military hardware",
-      "url": "https://anduril.com",
-      "initials": "A",
-      "logo": "https://www.google.com/s2/favicons?domain=anduril.com&sz=128",
+      "name": "Cursor",
+      "tag": "Code Editor",
+      "desc": "AI-native code editor that pairs with Claude and GPT-4",
+      "url": "https://cursor.com",
+      "initials": "C",
+      "logo": "https://www.google.com/s2/favicons?domain=cursor.com&sz=128",
       "ticker": null,
       "headline": {
-        "title": "U.S. Marine Corps ACVs to Counter Drones with Anduril Jammer Package - USNI News",
-        "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNNU9JQjhjSmhkbzU1TGhVbHVCVk5wa1FoeU5JN1YtTUp1UTluenBZX01DZVV2cjBQekwweWU2YzFEcEd5a1p0Q0k1RXJRWlJjZkYwOFlSaFA5NFFpMFBrNWhZMkhKdUZZckpVQVE4VmJwQ2d3eDVfbVViU1IzSVRYc3Fwa0RJTjlpZzVIRy1rdGFFMkZ2SWZoRzhoLXUxNUVyMWc?oc=5",
-        "pubDate": "Wed, 05 Aug 2026 17:26:00 GMT"
+        "title": "How Cursor Router chooses the right model for the task - Cursor",
+        "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9DU1BJZkZIM3dqNFJJNUVRMVIyS0JkaUFTVkJjQmtFVGVKbU9zYUpFRUF4eWhUQzZSdThPU0JfSEtUcnN3bFNMX1kzTTNMWFFJSDdhQWV5ZG9acGs?oc=5",
+        "pubDate": "Thu, 06 Aug 2026 12:00:00 GMT"
       },
       "sparkline": null
     },
@@ -94,24 +148,9 @@
       "logo": "https://www.google.com/s2/favicons?domain=x.ai&sz=128",
       "ticker": null,
       "headline": {
-        "title": "SpaceX hit by surging AI costs as insiders prepare to sell their shares - NBC News",
-        "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNRE9hRWJJZ1lJRGl5clJ5QmJ6UkVZZmEybmVPVlAtQUxmeHpYcllpWk5wRW1PZ1IwaWNyalAyUDhqR2x3TThKMWNTS1FzVHpmczNMMWNpLXNJZHlndWVPWW1BMHVLc3NUcGFKZV9UTjh2aXhRdnJDUXpjbDhsT1BFczRCT0phOXhLNDJUMzJxVERjZ3BJ?oc=5",
-        "pubDate": "Wed, 05 Aug 2026 12:24:00 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "OpenAI",
-      "tag": "LLMs",
-      "desc": "Creator of ChatGPT and the GPT family of foundation models",
-      "url": "https://openai.com",
-      "initials": "OAI",
-      "logo": "https://www.google.com/s2/favicons?domain=openai.com&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "AI models shock UK testers by using fake identities to try to trick developers - The Guardian",
-        "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPZ3dmZ3FReWJ6X0p4TjQ1dEVrZ0JHd3BKdDl3VjJULW1NVGxCV2pDaktaZHVHQko0WVRoQV9lb2FUSC1RdG1YZVhPRUhQZHlKTGtqZUp0YkQzcHp6ODFfbURCR0M2LWJuUGo1cUd2RXA0Y0tOR1hwNnpvWEJldWVTWEVyV0w0TUtuSGNGT1dEVzRjT1RhQlBkak9wdlhWZnFfU1czNzNqcTk1UmFPRVZlSjNXbTVOLUpmNkZTZE5hNHlMc19u?oc=5",
-        "pubDate": "Wed, 05 Aug 2026 08:40:00 GMT"
+        "title": "xAI moat bigger than Anthropic, OpenAI, bullish on SpaceX: ERShares - CNBC",
+        "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOZThsSWl2Tm45cWZGd3E0aG1MUjhzRUQ3OXJBUjdRZFJYU2VvUGZJeGhQOWg3LVVwZDJEc3JjLWt1YVJOeHJyS2xLNmQ1cXRvaGdBRnhpTllJdXQ2eFI3ejg2NlFRbUtUcmllM0txRkQ1QlByenhMS3VtbkNkY2NZTlR6SS1yTV9QeTkwMUZLaWYxVHUwaG5UU3FkNHBoVDVtOE5kRlVGNkl6S3M?oc=5",
+        "pubDate": "Wed, 05 Aug 2026 04:32:00 GMT"
       },
       "sparkline": null
     },
@@ -124,50 +163,11 @@
       "logo": "https://www.google.com/s2/favicons?domain=anthropic.com&sz=128",
       "ticker": null,
       "headline": {
-        "title": "AI models shock UK testers by using fake identities to try to trick developers - The Guardian",
-        "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPZ3dmZ3FReWJ6X0p4TjQ1dEVrZ0JHd3BKdDl3VjJULW1NVGxCV2pDaktaZHVHQko0WVRoQV9lb2FUSC1RdG1YZVhPRUhQZHlKTGtqZUp0YkQzcHp6ODFfbURCR0M2LWJuUGo1cUd2RXA0Y0tOR1hwNnpvWEJldWVTWEVyV0w0TUtuSGNGT1dEVzRjT1RhQlBkak9wdlhWZnFfU1czNzNqcTk1UmFPRVZlSjNXbTVOLUpmNkZTZE5hNHlMc19u?oc=5",
-        "pubDate": "Wed, 05 Aug 2026 08:40:00 GMT"
+        "title": "Anthropic AI used fake profiles to target people in hack then hid the evidence - BBC",
+        "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9hVEpkVXFKSV93Z2VqWklmTV9uUndrWTRmRjBhVWpTZkVtS05meWs0X1RKVDl1enZwTVFBWDdjX0ozc0JXVU5fcW1ldFRrclV6ZmZ4Y2RnMnc4eVlT?oc=5",
+        "pubDate": "Wed, 05 Aug 2026 00:02:18 GMT"
       },
       "sparkline": null
-    },
-    {
-      "name": "CrowdStrike",
-      "tag": "Cybersecurity",
-      "desc": "Cloud-native endpoint protection and threat intelligence",
-      "url": "https://crowdstrike.com",
-      "initials": "CS",
-      "logo": "https://www.google.com/s2/favicons?domain=crowdstrike.com&sz=128",
-      "ticker": "CRWD",
-      "headline": {
-        "title": "CrowdStrike invests in Israeli cyber startup Above as insider threats climb the security agenda - calcalistech.com",
-        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9Jc3BHQTcyVnRsbVB6bTFraEdSdW1EVVZXaDc4TEUwYklNSXpkUmZ1ajlyU2lSVGRwMmVNaFVfWnF2YXJqMWFnNHQ2S3lwQVZoVE1JeGlkaWdUYzFmTXpYYXlhQ1paUmM?oc=5",
-        "pubDate": "Wed, 05 Aug 2026 06:15:00 GMT"
-      },
-      "sparkline": [
-        199.3800048828125,
-        194.6199951171875,
-        191.1199951171875,
-        198.39999389648438,
-        187.17999267578125,
-        187.91000366210938,
-        210.72999572753906,
-        206.77000427246094,
-        203.75999450683594,
-        203.0800018310547,
-        198.49000549316406,
-        191.14999389648438,
-        188.4199981689453,
-        183.4199981689453,
-        183.27999877929688,
-        180.11000061035156,
-        181.8000030517578,
-        179.3800048828125,
-        185.22000122070312,
-        190.86000061035156,
-        202.5399932861328,
-        211.22000122070312,
-        209.86000061035156
-      ]
     }
   ]
 }
