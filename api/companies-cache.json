@@ -1,6 +1,114 @@
 {
-  "refreshed_at": "2026-08-07T07:22:46.314Z",
+  "refreshed_at": "2026-08-08T07:00:32.649Z",
   "companies": [
+    {
+      "name": "Scale AI",
+      "tag": "AI Data",
+      "desc": "Data labelling and RLHF infrastructure powering frontier AI",
+      "url": "https://scale.com",
+      "initials": "S",
+      "logo": "https://www.google.com/s2/favicons?domain=scale.com&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "Delfi Appoints Glen Fossella as CRO to Scale AI-Native Balance Sheet Intelligence - FF News",
+        "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPQkhvc3p0TmNDUmtfVnRMQWFUWDVBTXpBckxFYXQ5S1ByYTBQMmNXSE5nSktRMFRLU0xVUHk0Y0NoSUJIajhwakJkN2ZvT1lYUTM5ZmtkY3JEcTRuZnBldVdLeHZidHhrMkhidE1FSDJqNnRuVGwtb0E4a09YMTlBNllkNjJNY2h4NjlYT29Ec3ZYV1I5VWJYQ2IyYUxhRmlvU3lZSHdoYXk?oc=5",
+        "pubDate": "Fri, 07 Aug 2026 20:50:29 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "CrowdStrike",
+      "tag": "Cybersecurity",
+      "desc": "Cloud-native endpoint protection and threat intelligence",
+      "url": "https://crowdstrike.com",
+      "initials": "CS",
+      "logo": "https://www.google.com/s2/favicons?domain=crowdstrike.com&sz=128",
+      "ticker": "CRWD",
+      "headline": {
+        "title": "Cloudflare (NET) Jumps on AI Demand as CrowdStrike (CRWD) Sets a High Bar - Yahoo Finance",
+        "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPVDV6ZWIxSFJrY1Fscks1b0FaRVEwNnZDUXZKcV9UeThFTENKRE9VOG9FdUVjeTQ1VlQzWmxCV0xLc0FOdVFsNW8xSlBBVW14VmUxNHVpcmY5TkhUc2V4MS1Pc2dKdkE4SG9waWN1enJ3TzZEVHBrVE9BZ3Y5V1FTTGhmVGNlSnVwb3FzOXctY3Jpd3hKTEhiSEVn?oc=5",
+        "pubDate": "Fri, 07 Aug 2026 15:22:26 GMT"
+      },
+      "sparkline": [
+        191.1199951171875,
+        198.39999389648438,
+        187.17999267578125,
+        187.91000366210938,
+        210.72999572753906,
+        206.77000427246094,
+        203.75999450683594,
+        203.0800018310547,
+        198.49000549316406,
+        191.14999389648438,
+        188.4199981689453,
+        183.4199981689453,
+        183.27999877929688,
+        180.11000061035156,
+        181.8000030517578,
+        179.3800048828125,
+        185.22000122070312,
+        190.86000061035156,
+        202.5399932861328,
+        211.22000122070312,
+        209.86000061035156,
+        207.38999938964844,
+        214.4199981689453
+      ]
+    },
+    {
+      "name": "Anthropic",
+      "tag": "LLMs",
+      "desc": "AI safety company behind the Claude family of models",
+      "url": "https://anthropic.com",
+      "initials": "AN",
+      "logo": "https://www.google.com/s2/favicons?domain=anthropic.com&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "ByteDance targets mega AI model nearing Anthropic’s Mythos - Financial Times",
+        "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQQ2RnUmZkaXcyRWthc2hFbk1BYVhZYnNVRXhLWUxXS1VCMkxMVEhRSlI1RkJRclNNRUlhNG9heThEZzVEVUZQVkdLYmlVcFpFNmhlNkhJMzdrc1VfT2ZQSW9FNWswYUswcWhKN09nTXYxM0loTURNM2RUSE5abnVjVWI0NU4?oc=5",
+        "pubDate": "Fri, 07 Aug 2026 04:36:57 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "Palantir",
+      "tag": "Data Analytics",
+      "desc": "Big-data analytics platforms for government and enterprise",
+      "url": "https://palantir.com",
+      "initials": "PL",
+      "logo": "https://www.google.com/s2/favicons?domain=palantir.com&sz=128",
+      "ticker": "PLTR",
+      "headline": {
+        "title": "America’s largest newspaper chain, USA Today Co., partners with Palantir to analyze audience data as search traffic falls - Nieman Lab",
+        "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPTnVNVzg0dThUUTNTNlMwV2tVeHZQZG5hNkd6amRtVjZDbUJ3NDljS0tZVWJwOUdvTm1hNkczcXBiR0NwNENkNDc1ZlBma3F2MzF5SWdBVHlTY2lqOGoyQ3gxVGN5Z3Bnd2ZWNU5KU1BwWkRjUXdpNkNoVHM1T3c1b2cxWWtGSVFVNGJScmZheThTUUV2al92bEs5d1prQmZITEZqbnk0VWZfaS1vTmI2a3JPbU1mME9vXzk4OWx0QXFaeHV3NUV3?oc=5",
+        "pubDate": "Thu, 06 Aug 2026 20:58:00 GMT"
+      },
+      "sparkline": [
+        132.22000122070312,
+        129.0399932861328,
+        126.79000091552734,
+        130.0399932861328,
+        133.72000122070312,
+        133.75999450683594,
+        134.44000244140625,
+        132.3800048828125,
+        134.85000610351562,
+        132.66000366210938,
+        124.56999969482422,
+        123.37000274658203,
+        122.91999816894531,
+        131.52999877929688,
+        123.52999877929688,
+        123,
+        122.26000213623047,
+        123.05999755859375,
+        125.6500015258789,
+        162.66000366210938,
+        158.42999267578125,
+        155.9199981689453,
+        172.00999450683594
+      ]
+    },
     {
       "name": "Rocket Lab",
       "tag": "Space",
@@ -15,7 +123,6 @@
         "pubDate": "Thu, 06 Aug 2026 18:34:06 GMT"
       },
       "sparkline": [
-        83.41000366210938,
         83.3499984741211,
         82.55000305175781,
         81.04000091552734,
@@ -37,7 +144,8 @@
         70.43000030517578,
         74.4800033569336,
         74.81999969482422,
-        75.66999816894531
+        75.66999816894531,
+        82.83000183105469
       ]
     },
     {
@@ -71,60 +179,6 @@
       "sparkline": null
     },
     {
-      "name": "Scale AI",
-      "tag": "AI Data",
-      "desc": "Data labelling and RLHF infrastructure powering frontier AI",
-      "url": "https://scale.com",
-      "initials": "S",
-      "logo": "https://www.google.com/s2/favicons?domain=scale.com&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "Sedric Joins American Fintech Council to Scale AI-Driven Compliance Governance - FF News",
-        "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNZDl6anlOaC1ETkFPVTQ3ZTV4bmZoS293QXRjTnlSRWd2cHRsTmtuREI1Z01yMmN6YjFubXRmaU1FMHQ4REtWX1lWVWVpMmw3MXB6NjhMQnFWRVM1UnZ5c0xfNGR2YXd0eGpkNEd0ZVN1bDVGVV9LVDF2TjRGMldRQnh6QlEybFllcjdTYzV1MFQ5VkZHX2V5QkRDM08yYXVROVFLdQ?oc=5",
-        "pubDate": "Thu, 06 Aug 2026 15:14:18 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "Palantir",
-      "tag": "Data Analytics",
-      "desc": "Big-data analytics platforms for government and enterprise",
-      "url": "https://palantir.com",
-      "initials": "PL",
-      "logo": "https://www.google.com/s2/favicons?domain=palantir.com&sz=128",
-      "ticker": "PLTR",
-      "headline": {
-        "title": "Why $370bn tech group Palantir pays 1.4 percent tax rate: Report - Al Jazeera",
-        "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOcmtBTFEwT09QS0hTa0diSmNLN1NXNTlvUFlyYjVDb28yWk1rWkdpaE9LNjhYbTRWckY4TVlJcnVkMXpUMFc1LTEtajBGMmdZQkNPcDVfVktBZl81eFBfc3hYVkpIQ183ZU9GZVhBd2dmdWg1dEE0cjlpaUtOcGJmTkFYZTZiLUFETHZPSG80elFtSFdiZHktNjNPdzRCVlFaZlZOTtIBqgFBVV95cUxPZ1pGV01wRGFZNXBVZHZLUWRmX0Z5a0ZFU2d3NElxZmNtUkRRcngzZFBzWnc2TFVURTY1dmpPSktVdV9qSFM4TUZxOXl0dF9FVUY1YnVaUFBEeHJlb2I1cVUyTW8tdVZKMThsS0dJOGtDQTVUVlI2bkh6WmE4SWxmZktCQUQ3Ull3QW0wMWlZYmZEMzlTTnJGVGVSejJTZTJiX1B6WXlWRHhSdw?oc=5",
-        "pubDate": "Thu, 06 Aug 2026 14:15:57 GMT"
-      },
-      "sparkline": [
-        134.3699951171875,
-        132.22000122070312,
-        129.0399932861328,
-        126.79000091552734,
-        130.0399932861328,
-        133.72000122070312,
-        133.75999450683594,
-        134.44000244140625,
-        132.3800048828125,
-        134.85000610351562,
-        132.66000366210938,
-        124.56999969482422,
-        123.37000274658203,
-        122.91999816894531,
-        131.52999877929688,
-        123.52999877929688,
-        123,
-        122.26000213623047,
-        123.05999755859375,
-        125.6500015258789,
-        162.66000366210938,
-        158.42999267578125,
-        155.9199981689453
-      ]
-    },
-    {
       "name": "Cursor",
       "tag": "Code Editor",
       "desc": "AI-native code editor that pairs with Claude and GPT-4",
@@ -136,36 +190,6 @@
         "title": "How Cursor Router chooses the right model for the task - Cursor",
         "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9DU1BJZkZIM3dqNFJJNUVRMVIyS0JkaUFTVkJjQmtFVGVKbU9zYUpFRUF4eWhUQzZSdThPU0JfSEtUcnN3bFNMX1kzTTNMWFFJSDdhQWV5ZG9acGs?oc=5",
         "pubDate": "Thu, 06 Aug 2026 12:00:00 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "xAI",
-      "tag": "LLMs",
-      "desc": "Elon Musk's AI company, developer of the Grok models",
-      "url": "https://x.ai",
-      "initials": "X",
-      "logo": "https://www.google.com/s2/favicons?domain=x.ai&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "xAI moat bigger than Anthropic, OpenAI, bullish on SpaceX: ERShares - CNBC",
-        "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOZThsSWl2Tm45cWZGd3E0aG1MUjhzRUQ3OXJBUjdRZFJYU2VvUGZJeGhQOWg3LVVwZDJEc3JjLWt1YVJOeHJyS2xLNmQ1cXRvaGdBRnhpTllJdXQ2eFI3ejg2NlFRbUtUcmllM0txRkQ1QlByenhMS3VtbkNkY2NZTlR6SS1yTV9QeTkwMUZLaWYxVHUwaG5UU3FkNHBoVDVtOE5kRlVGNkl6S3M?oc=5",
-        "pubDate": "Wed, 05 Aug 2026 04:32:00 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "Anthropic",
-      "tag": "LLMs",
-      "desc": "AI safety company behind the Claude family of models",
-      "url": "https://anthropic.com",
-      "initials": "AN",
-      "logo": "https://www.google.com/s2/favicons?domain=anthropic.com&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "Anthropic AI used fake profiles to target people in hack then hid the evidence - BBC",
-        "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9hVEpkVXFKSV93Z2VqWklmTV9uUndrWTRmRjBhVWpTZkVtS05meWs0X1RKVDl1enZwTVFBWDdjX0ozc0JXVU5fcW1ldFRrclV6ZmZ4Y2RnMnc4eVlT?oc=5",
-        "pubDate": "Wed, 05 Aug 2026 00:02:18 GMT"
       },
       "sparkline": null
     }
