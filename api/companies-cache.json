@@ -1,59 +1,65 @@
 {
-  "refreshed_at": "2026-08-08T07:00:32.649Z",
+  "refreshed_at": "2026-08-09T07:02:41.411Z",
   "companies": [
     {
-      "name": "Scale AI",
-      "tag": "AI Data",
-      "desc": "Data labelling and RLHF infrastructure powering frontier AI",
-      "url": "https://scale.com",
-      "initials": "S",
-      "logo": "https://www.google.com/s2/favicons?domain=scale.com&sz=128",
+      "name": "Waymo",
+      "tag": "Autonomy",
+      "desc": "The most miles driven autonomously of any robotaxi service",
+      "url": "https://waymo.com",
+      "initials": "W",
+      "logo": "https://www.google.com/s2/favicons?domain=waymo.com&sz=128",
       "ticker": null,
       "headline": {
-        "title": "Delfi Appoints Glen Fossella as CRO to Scale AI-Native Balance Sheet Intelligence - FF News",
-        "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPQkhvc3p0TmNDUmtfVnRMQWFUWDVBTXpBckxFYXQ5S1ByYTBQMmNXSE5nSktRMFRLU0xVUHk0Y0NoSUJIajhwakJkN2ZvT1lYUTM5ZmtkY3JEcTRuZnBldVdLeHZidHhrMkhidE1FSDJqNnRuVGwtb0E4a09YMTlBNllkNjJNY2h4NjlYT29Ec3ZYV1I5VWJYQ2IyYUxhRmlvU3lZSHdoYXk?oc=5",
-        "pubDate": "Fri, 07 Aug 2026 20:50:29 GMT"
+        "title": "Man dies after being struck by car and driverless Waymo in Dallas - CBS News",
+        "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQT1RKLUJwVDlYci1iYXNRSm50dEprbFBVRzhCNXF2MHBRMlh1NlpnTWNSa1FCOWR4WHRxNW14TG8zX0tIS2Z3d0EzVE9RLUhwOUdhVG8tZ0g3RmlYWGpWeTM4d19fTmRjN1FTN0RtR3N6cktxeVRxTmVBcnN6VWkzNDdYZmh3VUFvTmNVQkpUbW1mOUVQYmxYREFmWDdMNDVOcGJhNw?oc=5",
+        "pubDate": "Sun, 09 Aug 2026 03:09:00 GMT"
       },
       "sparkline": null
     },
     {
-      "name": "CrowdStrike",
-      "tag": "Cybersecurity",
-      "desc": "Cloud-native endpoint protection and threat intelligence",
-      "url": "https://crowdstrike.com",
-      "initials": "CS",
-      "logo": "https://www.google.com/s2/favicons?domain=crowdstrike.com&sz=128",
-      "ticker": "CRWD",
+      "name": "xAI",
+      "tag": "LLMs",
+      "desc": "Elon Musk's AI company, developer of the Grok models",
+      "url": "https://x.ai",
+      "initials": "X",
+      "logo": "https://www.google.com/s2/favicons?domain=x.ai&sz=128",
+      "ticker": null,
       "headline": {
-        "title": "Cloudflare (NET) Jumps on AI Demand as CrowdStrike (CRWD) Sets a High Bar - Yahoo Finance",
-        "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPVDV6ZWIxSFJrY1Fscks1b0FaRVEwNnZDUXZKcV9UeThFTENKRE9VOG9FdUVjeTQ1VlQzWmxCV0xLc0FOdVFsNW8xSlBBVW14VmUxNHVpcmY5TkhUc2V4MS1Pc2dKdkE4SG9waWN1enJ3TzZEVHBrVE9BZ3Y5V1FTTGhmVGNlSnVwb3FzOXctY3Jpd3hKTEhiSEVn?oc=5",
-        "pubDate": "Fri, 07 Aug 2026 15:22:26 GMT"
+        "title": "Elon Musk’s XAI Fires Back at IHRA’s Darryl Cuttell - Drag Bike News",
+        "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQY0RRTWJnWVp4QzBSSjl3SjRwQWRMeTloOUh2MElEZG5XOURNcnI2OUhCb3JUUmtiVDU0OEgzVUY2NjlBbGNqazdfOVhoSmJpVTB4dWYwRzZWcXMyS3Rvc2pGZjgxOE9maWFPOC1faGtkaXVtMWtyTUE4X0oxTC1ucg?oc=5",
+        "pubDate": "Sat, 08 Aug 2026 20:14:22 GMT"
       },
-      "sparkline": [
-        191.1199951171875,
-        198.39999389648438,
-        187.17999267578125,
-        187.91000366210938,
-        210.72999572753906,
-        206.77000427246094,
-        203.75999450683594,
-        203.0800018310547,
-        198.49000549316406,
-        191.14999389648438,
-        188.4199981689453,
-        183.4199981689453,
-        183.27999877929688,
-        180.11000061035156,
-        181.8000030517578,
-        179.3800048828125,
-        185.22000122070312,
-        190.86000061035156,
-        202.5399932861328,
-        211.22000122070312,
-        209.86000061035156,
-        207.38999938964844,
-        214.4199981689453
-      ]
+      "sparkline": null
+    },
+    {
+      "name": "OpenAI",
+      "tag": "LLMs",
+      "desc": "Creator of ChatGPT and the GPT family of foundation models",
+      "url": "https://openai.com",
+      "initials": "OAI",
+      "logo": "https://www.google.com/s2/favicons?domain=openai.com&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "OpenAI to pause some work on AI model Astra due to security concerns | AI (artificial intelligence) - The Guardian",
+        "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPY1dJNXVXYnpmS0U2OFQtSDhFcURicFNyMGFMVGVjdTAtQWJmc21hcUU3dGJaNnBMeVMySHVhTGZmRF9xUko1c2JJS3haRjlTaWtVV3QtelExODdVTGtfNThUb0RrS2JFN3pqWEJoUkkwSHpoSWJaemNFam1zbXFwUkJnbFRjRFZV?oc=5",
+        "pubDate": "Sat, 08 Aug 2026 16:51:00 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "Groq",
+      "tag": "AI Chips",
+      "desc": "LPU inference chips delivering industry-leading token speed",
+      "url": "https://groq.com",
+      "initials": "G",
+      "logo": "https://www.google.com/s2/favicons?domain=groq.com&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "Nvidia’s Groq Bet To Drive Token Boom, Fuel Its Next Leg Of Revenue Growth, Says Analyst Beth Kindig - Stocktwits",
+        "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOV2g4MDU2ejBDa1E4Y2QzbE83SUlCOWVqc1hMamo2OVVxNW1WNG8tTTNVY0tmTmZVZjI4MFFXaGY2SThyck1keHpydEVpckt3S2FYci1EVWtfdEtKS2NJN1BRRTkxd0tFT2hJeXk3bUh6R1pDNkY3ZXVZN3k2SjRCQlhFeXkxYjdIVWY1YzktZVAxZUxjazJMeXdVOEF1YndlWFhLZjdqT19vYmlxSktEWXJCWjIwZmQ3ODVPTEMyWXU5eVk?oc=5",
+        "pubDate": "Sat, 08 Aug 2026 10:29:01 GMT"
+      },
+      "sparkline": null
     },
     {
       "name": "Anthropic",
@@ -69,45 +75,6 @@
         "pubDate": "Fri, 07 Aug 2026 04:36:57 GMT"
       },
       "sparkline": null
-    },
-    {
-      "name": "Palantir",
-      "tag": "Data Analytics",
-      "desc": "Big-data analytics platforms for government and enterprise",
-      "url": "https://palantir.com",
-      "initials": "PL",
-      "logo": "https://www.google.com/s2/favicons?domain=palantir.com&sz=128",
-      "ticker": "PLTR",
-      "headline": {
-        "title": "America’s largest newspaper chain, USA Today Co., partners with Palantir to analyze audience data as search traffic falls - Nieman Lab",
-        "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPTnVNVzg0dThUUTNTNlMwV2tVeHZQZG5hNkd6amRtVjZDbUJ3NDljS0tZVWJwOUdvTm1hNkczcXBiR0NwNENkNDc1ZlBma3F2MzF5SWdBVHlTY2lqOGoyQ3gxVGN5Z3Bnd2ZWNU5KU1BwWkRjUXdpNkNoVHM1T3c1b2cxWWtGSVFVNGJScmZheThTUUV2al92bEs5d1prQmZITEZqbnk0VWZfaS1vTmI2a3JPbU1mME9vXzk4OWx0QXFaeHV3NUV3?oc=5",
-        "pubDate": "Thu, 06 Aug 2026 20:58:00 GMT"
-      },
-      "sparkline": [
-        132.22000122070312,
-        129.0399932861328,
-        126.79000091552734,
-        130.0399932861328,
-        133.72000122070312,
-        133.75999450683594,
-        134.44000244140625,
-        132.3800048828125,
-        134.85000610351562,
-        132.66000366210938,
-        124.56999969482422,
-        123.37000274658203,
-        122.91999816894531,
-        131.52999877929688,
-        123.52999877929688,
-        123,
-        122.26000213623047,
-        123.05999755859375,
-        125.6500015258789,
-        162.66000366210938,
-        158.42999267578125,
-        155.9199981689453,
-        172.00999450683594
-      ]
     },
     {
       "name": "Rocket Lab",
@@ -164,34 +131,43 @@
       "sparkline": null
     },
     {
-      "name": "OpenAI",
-      "tag": "LLMs",
-      "desc": "Creator of ChatGPT and the GPT family of foundation models",
-      "url": "https://openai.com",
-      "initials": "OAI",
-      "logo": "https://www.google.com/s2/favicons?domain=openai.com&sz=128",
-      "ticker": null,
+      "name": "CrowdStrike",
+      "tag": "Cybersecurity",
+      "desc": "Cloud-native endpoint protection and threat intelligence",
+      "url": "https://crowdstrike.com",
+      "initials": "CS",
+      "logo": "https://www.google.com/s2/favicons?domain=crowdstrike.com&sz=128",
+      "ticker": "CRWD",
       "headline": {
-        "title": "First OpenAI, now Meta - why do AI hacks keep happening? - BBC",
-        "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE0yZWRQQzA3a0hQQk5EbmFaVEsyNjgyWG1lTkQwOUcyVmt6WXlBNnJzRF9lb19XRHhmV29JY1V2dXhmblpZYUpIa0F6VHZ0U1haWVl2TkI2RzhvUUFP?oc=5",
-        "pubDate": "Thu, 06 Aug 2026 15:59:34 GMT"
+        "title": "Markets round-up: Corero, Barrier Networks, CrowdStrike, ESET… - IT Europa",
+        "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNd3pCYWRQUDFfdi1VcjZOUGh1SHF1UGFqMndNaC13U0ZtdmFKamt3SENNQ0taUDliMlpRVE1rWnV3M2xEeDF3LS1yTkFPYzFYODctU1FPZ0NDTlFZNmlmLTI0eVNnR0o0VkN4WjQxSmtQZmJjVmF2RlJpNDFMaDBLbk5JMzhTWDRSajNtUw?oc=5",
+        "pubDate": "Thu, 06 Aug 2026 15:15:37 GMT"
       },
-      "sparkline": null
-    },
-    {
-      "name": "Cursor",
-      "tag": "Code Editor",
-      "desc": "AI-native code editor that pairs with Claude and GPT-4",
-      "url": "https://cursor.com",
-      "initials": "C",
-      "logo": "https://www.google.com/s2/favicons?domain=cursor.com&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "How Cursor Router chooses the right model for the task - Cursor",
-        "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9DU1BJZkZIM3dqNFJJNUVRMVIyS0JkaUFTVkJjQmtFVGVKbU9zYUpFRUF4eWhUQzZSdThPU0JfSEtUcnN3bFNMX1kzTTNMWFFJSDdhQWV5ZG9acGs?oc=5",
-        "pubDate": "Thu, 06 Aug 2026 12:00:00 GMT"
-      },
-      "sparkline": null
+      "sparkline": [
+        191.1199951171875,
+        198.39999389648438,
+        187.17999267578125,
+        187.91000366210938,
+        210.72999572753906,
+        206.77000427246094,
+        203.75999450683594,
+        203.0800018310547,
+        198.49000549316406,
+        191.14999389648438,
+        188.4199981689453,
+        183.4199981689453,
+        183.27999877929688,
+        180.11000061035156,
+        181.8000030517578,
+        179.3800048828125,
+        185.22000122070312,
+        190.86000061035156,
+        202.5399932861328,
+        211.22000122070312,
+        209.86000061035156,
+        207.38999938964844,
+        214.4199981689453
+      ]
     }
   ]
 }
