@@ -1,48 +1,33 @@
 {
-  "refreshed_at": "2026-08-09T07:02:41.411Z",
+  "refreshed_at": "2026-08-10T07:49:32.233Z",
   "companies": [
     {
-      "name": "Waymo",
-      "tag": "Autonomy",
-      "desc": "The most miles driven autonomously of any robotaxi service",
-      "url": "https://waymo.com",
-      "initials": "W",
-      "logo": "https://www.google.com/s2/favicons?domain=waymo.com&sz=128",
+      "name": "Perplexity",
+      "tag": "AI Search",
+      "desc": "Answer engine combining web search with AI-generated summaries",
+      "url": "https://perplexity.ai",
+      "initials": "P",
+      "logo": "https://www.google.com/s2/favicons?domain=perplexity.ai&sz=128",
       "ticker": null,
       "headline": {
-        "title": "Man dies after being struck by car and driverless Waymo in Dallas - CBS News",
-        "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQT1RKLUJwVDlYci1iYXNRSm50dEprbFBVRzhCNXF2MHBRMlh1NlpnTWNSa1FCOWR4WHRxNW14TG8zX0tIS2Z3d0EzVE9RLUhwOUdhVG8tZ0g3RmlYWGpWeTM4d19fTmRjN1FTN0RtR3N6cktxeVRxTmVBcnN6VWkzNDdYZmh3VUFvTmNVQkpUbW1mOUVQYmxYREFmWDdMNDVOcGJhNw?oc=5",
-        "pubDate": "Sun, 09 Aug 2026 03:09:00 GMT"
+        "title": "Amazon Loses Bid to Block Perplexity’s AI Shopping Tools - Global Cosmetics News",
+        "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNRFN0V0I2eTFZUUwtd0VId0dMZmUxMHllNmx4T19lM3NISUhISTlZSGNaRzQyUzFDUnloUlpnRVRRNU5Ya0lzem1pSE80Y0tHckMwcU9RLWZIRkgySHBMSmdPUGdBQXRvRDRmVDdqOGpoMHgwZFJGMG1PemdFTGRSanlWY2lfb0ZwSTVSOUwtUHZoTnlwZ2c0?oc=5",
+        "pubDate": "Mon, 10 Aug 2026 05:02:07 GMT"
       },
       "sparkline": null
     },
     {
-      "name": "xAI",
-      "tag": "LLMs",
-      "desc": "Elon Musk's AI company, developer of the Grok models",
-      "url": "https://x.ai",
-      "initials": "X",
-      "logo": "https://www.google.com/s2/favicons?domain=x.ai&sz=128",
+      "name": "Commonwealth Fusion",
+      "tag": "Energy",
+      "desc": "Next-generation tokamak fusion for clean energy at scale",
+      "url": "https://cfs.energy",
+      "initials": "CFS",
+      "logo": "https://www.google.com/s2/favicons?domain=cfs.energy&sz=128",
       "ticker": null,
       "headline": {
-        "title": "Elon Musk’s XAI Fires Back at IHRA’s Darryl Cuttell - Drag Bike News",
-        "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQY0RRTWJnWVp4QzBSSjl3SjRwQWRMeTloOUh2MElEZG5XOURNcnI2OUhCb3JUUmtiVDU0OEgzVUY2NjlBbGNqazdfOVhoSmJpVTB4dWYwRzZWcXMyS3Rvc2pGZjgxOE9maWFPOC1faGtkaXVtMWtyTUE4X0oxTC1ucg?oc=5",
-        "pubDate": "Sat, 08 Aug 2026 20:14:22 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "OpenAI",
-      "tag": "LLMs",
-      "desc": "Creator of ChatGPT and the GPT family of foundation models",
-      "url": "https://openai.com",
-      "initials": "OAI",
-      "logo": "https://www.google.com/s2/favicons?domain=openai.com&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "OpenAI to pause some work on AI model Astra due to security concerns | AI (artificial intelligence) - The Guardian",
-        "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPY1dJNXVXYnpmS0U2OFQtSDhFcURicFNyMGFMVGVjdTAtQWJmc21hcUU3dGJaNnBMeVMySHVhTGZmRF9xUko1c2JJS3haRjlTaWtVV3QtelExODdVTGtfNThUb0RrS2JFN3pqWEJoUkkwSHpoSWJaemNFam1zbXFwUkJnbFRjRFZV?oc=5",
-        "pubDate": "Sat, 08 Aug 2026 16:51:00 GMT"
+        "title": "“Nuclear fusion power generation is now a matter of timing and scale” - pulse.mk.co.kr",
+        "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1seFp6d2NWYzE4bkxScV9JcXM5eTFDMFpBUFo5MFI2MkN2SjVpZlRHalhQZS1uZFFjMVNodDdRV0xlTU41dVVodjkwQXVRUXExdEtmYlBvWQ?oc=5",
+        "pubDate": "Mon, 10 Aug 2026 05:00:22 GMT"
       },
       "sparkline": null
     },
@@ -55,9 +40,39 @@
       "logo": "https://www.google.com/s2/favicons?domain=groq.com&sz=128",
       "ticker": null,
       "headline": {
-        "title": "Nvidia’s Groq Bet To Drive Token Boom, Fuel Its Next Leg Of Revenue Growth, Says Analyst Beth Kindig - Stocktwits",
-        "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOV2g4MDU2ejBDa1E4Y2QzbE83SUlCOWVqc1hMamo2OVVxNW1WNG8tTTNVY0tmTmZVZjI4MFFXaGY2SThyck1keHpydEVpckt3S2FYci1EVWtfdEtKS2NJN1BRRTkxd0tFT2hJeXk3bUh6R1pDNkY3ZXVZN3k2SjRCQlhFeXkxYjdIVWY1YzktZVAxZUxjazJMeXdVOEF1YndlWFhLZjdqT19vYmlxSktEWXJCWjIwZmQ3ODVPTEMyWXU5eVk?oc=5",
-        "pubDate": "Sat, 08 Aug 2026 10:29:01 GMT"
+        "title": "Ultra-High Interactivity on NVIDIA GPUs? - TileRT InferenceX - SemiAnalysis",
+        "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5lNjZGQ1AwclBWSXlpaGNmRTY4QkNQVFVBejBZRGFxanhjN3VYWlpzQzVsVzM1R19PZzFaSC1HMkVWV0Z6eEprNUpBUUNvcl9OV2loRE5pMGFWcW0yLWlBZEtCejl6TlcxVGZQdTU5YTV0VHR3bHhzWkZqckg?oc=5",
+        "pubDate": "Mon, 10 Aug 2026 04:51:35 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "Scale AI",
+      "tag": "AI Data",
+      "desc": "Data labelling and RLHF infrastructure powering frontier AI",
+      "url": "https://scale.com",
+      "initials": "S",
+      "logo": "https://www.google.com/s2/favicons?domain=scale.com&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "IMC Selects CoreWeave to Scale AI Cloud Infrastructure for Research - The Fast Mode",
+        "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQNzh2bG82MDIweWU0OWdQWFdHbkxzdkNzQWJLRkgzek1DS1BJbjJfdk9FOFpXTUJta2tjNTd4Qm56NTZ4UUxCaGdfOFVBdTB1N2JXUG9mbWVrV1FjNEIxTGhsSFo1TEZiWTVJRk9YM2pjSnFOTXg3aFc4aFBxSW9aekFmT0xYMHFsTHdrZFJuVjB6d3dscEpSWHlValZ0eGpHNnZmcTJ4V2NvaktDTkVqakxTNFJQNFdzejY2WnJKOA?oc=5",
+        "pubDate": "Mon, 10 Aug 2026 01:42:31 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "Cursor",
+      "tag": "Code Editor",
+      "desc": "AI-native code editor that pairs with Claude and GPT-4",
+      "url": "https://cursor.com",
+      "initials": "C",
+      "logo": "https://www.google.com/s2/favicons?domain=cursor.com&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "How Cursor recruits elite AI engineers when huge salaries aren't enough - Business Insider",
+        "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPazFEamNMUUdJN1hxOENWT0RNUDA2d29pR0p0b09uZ3R5MktldWR6Y0F3d09iUXFVWkpUcDVUb0V4LXlmMndNN2RwVE5XZXloWlkxRjlkaHVGbXJib0ZRVU1QMUxTUzlJajdrNkFQeWJvTDlxemYxbVg4dmRnQ2JxRE1BS09WZHQyZHIzQmpwTmduNUZhM0gwVFowMnRHTFRyUWJBMDlBaDRadw?oc=5",
+        "pubDate": "Sun, 09 Aug 2026 19:50:00 GMT"
       },
       "sparkline": null
     },
@@ -70,9 +85,9 @@
       "logo": "https://www.google.com/s2/favicons?domain=anthropic.com&sz=128",
       "ticker": null,
       "headline": {
-        "title": "ByteDance targets mega AI model nearing Anthropic’s Mythos - Financial Times",
-        "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQQ2RnUmZkaXcyRWthc2hFbk1BYVhZYnNVRXhLWUxXS1VCMkxMVEhRSlI1RkJRclNNRUlhNG9heThEZzVEVUZQVkdLYmlVcFpFNmhlNkhJMzdrc1VfT2ZQSW9FNWswYUswcWhKN09nTXYxM0loTURNM2RUSE5abnVjVWI0NU4?oc=5",
-        "pubDate": "Fri, 07 Aug 2026 04:36:57 GMT"
+        "title": "Anthropic is turning Claude Code’s auto mode on by default - TechCrunch",
+        "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNVUhsdFk2X0hXZVBLOFBkUEZHR3FCLVEweG5WSHVaYnJFNnhlOGtVWUxOaVNGNDhXZzNJR1JtbnlJWnZseFF0NGt2bFBRTnJldGdOb19zVnhHQ3MzNzg4ODY5MVJvamFETV83bUhGc3JmenoxRmNzTnZOWXlhYU45VmVpamRveDIwT1Ytc2xLTV9YZUp0MFdN?oc=5",
+        "pubDate": "Sun, 09 Aug 2026 19:20:32 GMT"
       },
       "sparkline": null
     },
@@ -85,9 +100,9 @@
       "logo": "https://www.google.com/s2/favicons?domain=rocketlabusa.com&sz=128",
       "ticker": "RKLB",
       "headline": {
-        "title": "Rocket Lab launches Japanese Earth-observing satellite after 5-week delay (video, photos) - Space",
-        "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPNHB3VzVPWVd4djVySUpzNWdOcG0wbjAzaDhwdDhvbk9GV3R0a0hGbkVRaXVJQlFwbU5jUmM5WnpLOGlFX3B3Z2xBa0YyclJVUGNRd2N0VVE2YlBSMEpQZU5vNFFwcmhzSWZnQWJ6cVRram1mcWFPdlp2ejZfaXlhc3NUd2NKZjI1b0FRZ1VadzdvU2plb3hBbmdfT0Rnd2lKSWdpM3Z0V3RuQ0E0VW80cUhzbms5VE1ubHBrN3g5RE1GOFpDNnVsVFpYaHpwLVpZb211YXN2QjZzMDMycXZj?oc=5",
-        "pubDate": "Thu, 06 Aug 2026 18:34:06 GMT"
+        "title": "Rocket Lab or Archer Aviation: Top Investor Calls One a ‘High-Conviction Stock,’ the Other a ‘Bad Bet’ - TipRanks",
+        "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQZ2R4OGhGc3d6QnNfdTJBTExDb0N6QXR6UHd0S3gzTTBVRTZNX3ZULTdtQmdWSjBqcU94UmhURHZXLVhmVUZKU25XTWlCdC05QnhuSlE2UThRTVlXWWo3REI5eTVDV1BuYUdqZmtFOVBCQXEzdFpBWVNfMF9peWhDaWRaZXJvMzVEemZVelhKZ0JCdWkyNlBsc3MzUmRWUVIxNFJRVVRyM2I1ZzJoZjZpa2hmNXRGd3k5Z3NZSHF5Zk0zV2Rj?oc=5",
+        "pubDate": "Sun, 09 Aug 2026 13:29:11 GMT"
       },
       "sparkline": [
         83.3499984741211,
@@ -116,58 +131,19 @@
       ]
     },
     {
-      "name": "Anduril",
-      "tag": "Defense AI",
-      "desc": "Autonomous defense systems and AI-enabled military hardware",
-      "url": "https://anduril.com",
-      "initials": "A",
-      "logo": "https://www.google.com/s2/favicons?domain=anduril.com&sz=128",
+      "name": "OpenAI",
+      "tag": "LLMs",
+      "desc": "Creator of ChatGPT and the GPT family of foundation models",
+      "url": "https://openai.com",
+      "initials": "OAI",
+      "logo": "https://www.google.com/s2/favicons?domain=openai.com&sz=128",
       "ticker": null,
       "headline": {
-        "title": "Exclusive: Major Republican fundraiser winning contracts from Trump administration, emails reveal - The Guardian",
-        "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPOGNFendrUGVJVktQanNpMHlkNU5Fb0JXQzRWdENpNDJaN3VuYUVOQmtOU1NmSUJBbXg3OXRxWW9xcUNsSXo0M3RmNDl6VndlZkVfM3JOZGpqdHJOUllsZG40WDE2UjJ6X1RLN29DUzFETHgtdmU1aTBWZXNmWUp4aGZpRmQ3YkdCOEtQdE1TTE12aldiU0JUSg?oc=5",
-        "pubDate": "Thu, 06 Aug 2026 18:29:00 GMT"
+        "title": "How a small Israeli startup was linked to rogue AI hacks at OpenAI, Anthropic and Meta - CNBC",
+        "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQMU95TFhjeUdscnZoOElsdnRhRmV5eTNEZ0dpa3VRTmFCdEVmSTRNOGIyWjJOcTl1aFo3OENPNC1DTFJoWGk5YTJjSVhEQjd1ZzhFQVFteEI1R3dwb0ctbkNuREx2MkpMbHVMVnBfczV5eG1NQlZ2anZ6MXlDdnplS2ljSWVoVlBQaWhZS0JfdUQxNGZEY3VqLUZBTWY5MENKRUpKTnpn0gGrAUFVX3lxTE1uTHVPT3VwRk16aWFGZFFmdEI2akJOaXhmVmpjNkhzVDRkdUpoRDcyZS1HQ2NzZzAyRTJzcjJGTDIyNG5CYTMxY2NxNC1NS2hZQ2VRdUNZUVgweWNPZnBoQjJpd3BudHN5WFJFU2RrcU1EbU5OMEprNGlHQVJzRk1UbndLeUNOSjd0S0FiNjhUbjBkVXdaN2lkdlBTRWt1MjZ3WVh1SmtyNVdXcw?oc=5",
+        "pubDate": "Sun, 09 Aug 2026 11:31:42 GMT"
       },
       "sparkline": null
-    },
-    {
-      "name": "CrowdStrike",
-      "tag": "Cybersecurity",
-      "desc": "Cloud-native endpoint protection and threat intelligence",
-      "url": "https://crowdstrike.com",
-      "initials": "CS",
-      "logo": "https://www.google.com/s2/favicons?domain=crowdstrike.com&sz=128",
-      "ticker": "CRWD",
-      "headline": {
-        "title": "Markets round-up: Corero, Barrier Networks, CrowdStrike, ESET… - IT Europa",
-        "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNd3pCYWRQUDFfdi1VcjZOUGh1SHF1UGFqMndNaC13U0ZtdmFKamt3SENNQ0taUDliMlpRVE1rWnV3M2xEeDF3LS1yTkFPYzFYODctU1FPZ0NDTlFZNmlmLTI0eVNnR0o0VkN4WjQxSmtQZmJjVmF2RlJpNDFMaDBLbk5JMzhTWDRSajNtUw?oc=5",
-        "pubDate": "Thu, 06 Aug 2026 15:15:37 GMT"
-      },
-      "sparkline": [
-        191.1199951171875,
-        198.39999389648438,
-        187.17999267578125,
-        187.91000366210938,
-        210.72999572753906,
-        206.77000427246094,
-        203.75999450683594,
-        203.0800018310547,
-        198.49000549316406,
-        191.14999389648438,
-        188.4199981689453,
-        183.4199981689453,
-        183.27999877929688,
-        180.11000061035156,
-        181.8000030517578,
-        179.3800048828125,
-        185.22000122070312,
-        190.86000061035156,
-        202.5399932861328,
-        211.22000122070312,
-        209.86000061035156,
-        207.38999938964844,
-        214.4199981689453
-      ]
     }
   ]
 }
