@@ -1,56 +1,18 @@
 {
-  "refreshed_at": "2026-08-12T07:38:58.519Z",
+  "refreshed_at": "2026-08-13T07:40:57.999Z",
   "companies": [
     {
-      "name": "CrowdStrike",
-      "tag": "Cybersecurity",
-      "desc": "Cloud-native endpoint protection and threat intelligence",
-      "url": "https://crowdstrike.com",
-      "initials": "CS",
-      "logo": "https://www.google.com/s2/favicons?domain=crowdstrike.com&sz=128",
-      "ticker": "CRWD",
-      "headline": {
-        "title": "CrowdStrike named leader in IDC MarketScape MDR study - securitybrief.com.au",
-        "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNSjZaZ2VqUjF1b3pKY1owd0VpbDExV1Q0MkcwYTlWd0ZwQkdrS3g4T1Y4NGRGOHhvQThTb0gxc2pJWXIzQkx5eWViRjRlZUpPVWFTNXJ0Z2VLM3l2Tk10SE5LNmt2bTNwbnBUZWw0aHdtdFVZVmhoUW1VOU5jOG55MVI0QldlQ3lJRERXRjVWeldIQQ?oc=5",
-        "pubDate": "Wed, 12 Aug 2026 02:24:00 GMT"
-      },
-      "sparkline": [
-        187.91000366210938,
-        210.72999572753906,
-        206.77000427246094,
-        203.75999450683594,
-        203.0800018310547,
-        198.49000549316406,
-        191.14999389648438,
-        188.4199981689453,
-        183.4199981689453,
-        183.27999877929688,
-        180.11000061035156,
-        181.8000030517578,
-        179.3800048828125,
-        185.22000122070312,
-        190.86000061035156,
-        202.5399932861328,
-        211.22000122070312,
-        209.86000061035156,
-        207.38999938964844,
-        214.4199981689453,
-        225.16000366210938,
-        221.89999389648438
-      ]
-    },
-    {
-      "name": "Scale AI",
-      "tag": "AI Data",
-      "desc": "Data labelling and RLHF infrastructure powering frontier AI",
-      "url": "https://scale.com",
-      "initials": "S",
-      "logo": "https://www.google.com/s2/favicons?domain=scale.com&sz=128",
+      "name": "Figure AI",
+      "tag": "Robotics",
+      "desc": "Humanoid robots designed for industrial and commercial work",
+      "url": "https://figure.ai",
+      "initials": "FA",
+      "logo": "https://www.google.com/s2/favicons?domain=figure.ai&sz=128",
       "ticker": null,
       "headline": {
-        "title": "Why Financial Services Firms Need Modern Infrastructure to Scale AI - BizTech Magazine",
-        "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPM2tQSmt2VW5uT24xRjdQM3o3cXhwRDE2VFJNNUJFb3B5bWl3bjRkU0l6RXVkeWtxT2QxNVRsdHpEMkVIMGdZRmNrbVB3Rk1PNC12Q05NV1NYSXg4RnFDdG9NdlV5MmQ5OV9xRm5OaGgzUlptRkRzTVpIOGJXeXVUWms5U2VRNlVPTlVOLTBWbk9ZZDl1VjJqQzFrYVFndW5CZ1lLNy1ZZDR6aFR0?oc=5",
-        "pubDate": "Tue, 11 Aug 2026 19:49:22 GMT"
+        "title": "Initial Portfolio, Retail Offer and Capital Access Window - TradingView",
+        "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOSmJBTTZ6SkpiaVQtTlNpamZEU0RsckJJVXRTOVVJZENwdkFobDhza1dGMmVvNUhJY243NEYtaUo2bDR4ZEltLS1ud1RmVWIzY0tSc3Q4SUVfUGNUcEJiNXFXc180ZXVkVkNDWHJzVXl0QzJ3Z19vZFpIc2MwR3hEM1Y5d3RpWWZjcXQwVmc4VHdQWUJYNVpGVDdKbDBYby04cnhxTkhXTEswbWhsTlJlX2Vtd210ZUhD?oc=5",
+        "pubDate": "Thu, 13 Aug 2026 06:18:00 GMT"
       },
       "sparkline": null
     },
@@ -63,9 +25,9 @@
       "logo": "https://www.google.com/s2/favicons?domain=anthropic.com&sz=128",
       "ticker": null,
       "headline": {
-        "title": "Riot Platforms strikes deal with Anthropic as bitcoin miners shift focus to AI infrastructure - CNBC",
-        "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxObWxYNUZ5WjBMLVUyVlNrYVl5dlpWeTdjZldZY1JJVnhVa2VxdHVORTlja3NHdG5DTU5XWS1JMWM0a2VRUjY2dWc3SGhWdmp6amNTbkw1VTVHa2NJYVdLekhUQWR6bm9jNTVnbUpCbWxEcXFxSFZybUotWGxMbjVKWEJ4RmZFck5RV3VTUFBTMTdxdHU1SVA2UkpOVFJobVZsLXFOMjNRODFsVW5LdFFz0gG0AUFVX3lxTE5UcEFfSUNIOW9FRDd1ZkFvX20xMjRlRVoxMy10blZRVnJHWnpwNy0xX2FpNlpyNVQ2a0QzTnlxNFRZcnB3clI2aDUtM0xBQ05tM1RPajAzT2JGQ25hZHFCUTlpV3F5RktVMGhmTE1VbE5USlBkd0o0VnI5eHFUUWtiOGZuUFJaNnMydm1tZ2hUeEVqVU5WOE41dHg1YUluN3gyVEYwZ2EweUZPZThhOExLX0tWdA?oc=5",
-        "pubDate": "Tue, 11 Aug 2026 17:43:14 GMT"
+        "title": "Anthropic investors bet on $2tn valuation in record IPO - Financial Times",
+        "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQUWRXMGN5WXlraTZ5dzRnUHVkcEtuUnhDV1FJU1pBNUVndnJXRkM5dkdrSDVXbDVLckNaOTZnUm9uRks4ZDRPN1JJSDF2SmFwX2tTTHNncTZiT21hd1hoc1VyVEJPZnlHZnNMcVRGczM4QVlVV1R6TG96VnpjWUktbUJHVVM?oc=5",
+        "pubDate": "Thu, 13 Aug 2026 04:01:00 GMT"
       },
       "sparkline": null
     },
@@ -78,9 +40,39 @@
       "logo": "https://www.google.com/s2/favicons?domain=cursor.com&sz=128",
       "ticker": null,
       "headline": {
-        "title": "Introducing Grok Bot - X.ai",
-        "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9CZnlxMXRUUXNoeEMwOGZIcjVOLW9JODJFTTRSV21XV2FvU3Q5ZUJpS2FOcTNoay1ud056cG5tcEJGV05uVE5lWlFFeVpDUXc?oc=5",
-        "pubDate": "Tue, 11 Aug 2026 16:59:33 GMT"
+        "title": "Grok Gets Cursor-Driven Upgrade, Claims to Be Competitive With Top Models - Gizmodo",
+        "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOZDU5RmhJdkpXbzNqZkpLN0U0UWhIREs4SElKRXJFWW9WekxObURGRmcxMGE1RjVJZXBQUFhJcXhmSUhxLXh0a2hub3pnZXl4RW5ZNmEwaC13OGxxMlZSSmc2aGFvWm1jN3UyMzdBOEE0X1lYZXVNd3cyc2RLX2ZPYWpUY0JLZ0RaSllCTDhieXlhRzYwYzFtaEtQSU5PTURUTjlCOGhB?oc=5",
+        "pubDate": "Wed, 12 Aug 2026 22:18:55 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "Scale AI",
+      "tag": "AI Data",
+      "desc": "Data labelling and RLHF infrastructure powering frontier AI",
+      "url": "https://scale.com",
+      "initials": "S",
+      "logo": "https://www.google.com/s2/favicons?domain=scale.com&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "Fisent raises $4.3m to scale AI automation for finance - FinTech Global",
+        "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOQ0JGZ3puLUxNVjRkTnpYcVRFdWRSZkpoeDAwTU5TSVNtOXl0TUw2cDhkZEJIYXRsX2I1VlpDU3NJOTRkc0NuRzlzLUdDUFZ1UDV5aUhxNF9vNmFOd1NRUHE4WVA5bU9vdFA5akFSQVNXdWp6ZHlCWjBLWlk1S25KRk1fLTEtUDU1V3pEMnlIV1RUUQ?oc=5",
+        "pubDate": "Wed, 12 Aug 2026 15:44:53 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "OpenAI",
+      "tag": "LLMs",
+      "desc": "Creator of ChatGPT and the GPT family of foundation models",
+      "url": "https://openai.com",
+      "initials": "OAI",
+      "logo": "https://www.google.com/s2/favicons?domain=openai.com&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "If the markets reject OpenAI and Anthropic, the US should nationalize them | Bruce Schneier and Nathan E Sanders - The Guardian",
+        "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNbEtIeUhGRW5BN25TUG9kcWZaRnRhcUZQNHVMWVpFaUhGYXFQU2J5T2NZMkdZTFNQMk1mUWNRMWFSOVlUajk2cTIwYjk3WjdCSm91RTEyU3I4UzdtcWxqYkJDZ09fUjJwbHZHWkRNSkpjeklINGpDZGRDNVRiR0ZNaFJFS19FeE0?oc=5",
+        "pubDate": "Wed, 12 Aug 2026 14:13:00 GMT"
       },
       "sparkline": null
     },
@@ -95,9 +87,48 @@
       "headline": {
         "title": "In-region inference, open models, and new European infrastructure for sovereign AI. - mistral.ai",
         "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9zbGlwUWhiRC1udXFGMzJHeGZkUmN6bHk4T3UxWE5uM2trY2xhUUdTeXZzQ1ZSTXlvc3AzMWREczBUcjg0N1g4ZWdaSkJkVldfYWJ0SjR5cGFGMlFpdUpFTGNTS0EyVm45dllmc21TckJwT05IalE?oc=5",
-        "pubDate": "Tue, 11 Aug 2026 16:23:37 GMT"
+        "pubDate": "Tue, 11 Aug 2026 23:37:50 GMT"
       },
       "sparkline": null
+    },
+    {
+      "name": "Palantir",
+      "tag": "Data Analytics",
+      "desc": "Big-data analytics platforms for government and enterprise",
+      "url": "https://palantir.com",
+      "initials": "PL",
+      "logo": "https://www.google.com/s2/favicons?domain=palantir.com&sz=128",
+      "ticker": "PLTR",
+      "headline": {
+        "title": "Give Palantir up to $244M through 2028, says internal Defense Department memo - The Register",
+        "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQYnJHekIxMTIzSHR3NUpxZ1VickFQcmtCYWxyMzRoS2hpVGhMVElLU2NBallEWk9vcFBiRHFHclRGTlgzZFQ5ZXBDQ2hKb3p6bWNsbnZBV0JCRWd0R01rN0dPeVRTTkZYMFNBa25ud29oSk5HcEpGNUh0eDRyQlZfbGxuUWxDTVhZWFpqbmJsM0x0RURhSTk2ZG9NUnBrb0JUZFFnQ3dnd0hJVWhUQTdIMXNGOA?oc=5",
+        "pubDate": "Tue, 11 Aug 2026 21:15:00 GMT"
+      },
+      "sparkline": [
+        130.0399932861328,
+        133.72000122070312,
+        133.75999450683594,
+        134.44000244140625,
+        132.3800048828125,
+        134.85000610351562,
+        132.66000366210938,
+        124.56999969482422,
+        123.37000274658203,
+        122.91999816894531,
+        131.52999877929688,
+        123.52999877929688,
+        123,
+        122.26000213623047,
+        123.05999755859375,
+        125.6500015258789,
+        162.66000366210938,
+        158.42999267578125,
+        155.9199981689453,
+        172.00999450683594,
+        175.22999572753906,
+        174.94000244140625,
+        171.0399932861328
+      ]
     },
     {
       "name": "xAI",
@@ -108,39 +139,9 @@
       "logo": "https://www.google.com/s2/favicons?domain=x.ai&sz=128",
       "ticker": null,
       "headline": {
-        "title": "The SpaceX Sham - dissentmagazine.org",
-        "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNaHNMUUxjTFR0bVplTEdQa0NsMFhUeVRzd0kwQS0zc0RpNWpKQ1R0NlpJRDJ5WTNwSU1VYnNBZkpPOTNEbDktQzRSaWM2aW0yaktXQ2tyeWQyQ2swYlB4aDZxVHByTVJkN1FjYzNXc1FwdDFwZXpZRUFhQ3BXV052dGlFSW0?oc=5",
-        "pubDate": "Tue, 11 Aug 2026 14:49:26 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "Perplexity",
-      "tag": "AI Search",
-      "desc": "Answer engine combining web search with AI-generated summaries",
-      "url": "https://perplexity.ai",
-      "initials": "P",
-      "logo": "https://www.google.com/s2/favicons?domain=perplexity.ai&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "Perplexity blocks Time’s ads served to AI agents, calling them ‘deceptive’ - Digiday",
-        "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOUU8xc2pERllIM2RSOHFqd3Ffb05DVGwwMmxTNVN0T1o0QkJwV2RHVk5GS1RqWTFRb0RBQU9pTnBLRTdQRUxlV0dTZ1dKM3QyNHJyRzRacHU4Wnh5OENuUFc4RDJ2d1FCeGppaVlKX3hObllBd2YyTUI3Tnp1WmVXRTd2eDkzXzdGLWw0VzNfRUJFajMyN1d2WXhnVk9udw?oc=5",
-        "pubDate": "Tue, 11 Aug 2026 04:03:57 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "OpenAI",
-      "tag": "LLMs",
-      "desc": "Creator of ChatGPT and the GPT family of foundation models",
-      "url": "https://openai.com",
-      "initials": "OAI",
-      "logo": "https://www.google.com/s2/favicons?domain=openai.com&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "Can a 30-person start-up build Britain’s answer to OpenAI? - Financial Times",
-        "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOMTFRUlY3WkZjdW1GNVhMS3hmRGZTLTFSZWZVLXg4dEdycVVnM0xpWVFlTUMzZ0FtOHJaZFNHVFdyRzlDLUJndEtueWlKVy1tUVFfUG5rRnNRZXhYSVl5Q3JMWkVDZzROSkF1aVRLd0pwM1ZVdjZPbWg4MndURHA3QXdsMDY?oc=5",
-        "pubDate": "Tue, 11 Aug 2026 04:01:31 GMT"
+        "title": "His Start-Up’s Goal: A.I. That Is Trainable and Not Controlled by a Big Company - The New York Times",
+        "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQVl9aRkNka2lrQ2RYZE1IZll6Mzd2RGZ6S1ZxYVlSTjZEN1RLN0VhSnpMd2RpLXUyNTJ2eFRDc2dZYmNIcXR4ODRFZGJxakI3VllRVE93WExsRjQ3TDZjRk1tdUFDM3UyT0ZvWkc4a1NNTWN4eXhUYkpxZm5JcFIzUk9CRlFPQQ?oc=5",
+        "pubDate": "Tue, 11 Aug 2026 11:00:07 GMT"
       },
       "sparkline": null
     }
