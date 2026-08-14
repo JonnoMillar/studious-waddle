@@ -1,18 +1,18 @@
 {
-  "refreshed_at": "2026-08-13T07:40:57.999Z",
+  "refreshed_at": "2026-08-14T07:38:09.155Z",
   "companies": [
     {
-      "name": "Figure AI",
-      "tag": "Robotics",
-      "desc": "Humanoid robots designed for industrial and commercial work",
-      "url": "https://figure.ai",
-      "initials": "FA",
-      "logo": "https://www.google.com/s2/favicons?domain=figure.ai&sz=128",
+      "name": "OpenAI",
+      "tag": "LLMs",
+      "desc": "Creator of ChatGPT and the GPT family of foundation models",
+      "url": "https://openai.com",
+      "initials": "OAI",
+      "logo": "https://www.google.com/s2/favicons?domain=openai.com&sz=128",
       "ticker": null,
       "headline": {
-        "title": "Initial Portfolio, Retail Offer and Capital Access Window - TradingView",
-        "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOSmJBTTZ6SkpiaVQtTlNpamZEU0RsckJJVXRTOVVJZENwdkFobDhza1dGMmVvNUhJY243NEYtaUo2bDR4ZEltLS1ud1RmVWIzY0tSc3Q4SUVfUGNUcEJiNXFXc180ZXVkVkNDWHJzVXl0QzJ3Z19vZFpIc2MwR3hEM1Y5d3RpWWZjcXQwVmc4VHdQWUJYNVpGVDdKbDBYby04cnhxTkhXTEswbWhsTlJlX2Vtd210ZUhD?oc=5",
-        "pubDate": "Thu, 13 Aug 2026 06:18:00 GMT"
+        "title": "OpenAI and Anthropic in price war as Chinese AI rivals gain ground - Financial Times",
+        "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQenJmNmtJVlBpd3MxYW1iN0hVSmlsT19lbHBQbTE1SnlsNG1zSm9QX2dFVWdKVnlKakE0SDVnQnRwYWxrdnd2UzJIZS12U0FMdlJYVEpab3NLNS03YzZweEI1Wkpmb1NxVVJYNXdGaDB6U0ZSTkxscm5ScURqeXlDZ0dGYlM?oc=5",
+        "pubDate": "Fri, 14 Aug 2026 04:00:14 GMT"
       },
       "sparkline": null
     },
@@ -25,24 +25,9 @@
       "logo": "https://www.google.com/s2/favicons?domain=anthropic.com&sz=128",
       "ticker": null,
       "headline": {
-        "title": "Anthropic investors bet on $2tn valuation in record IPO - Financial Times",
-        "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQUWRXMGN5WXlraTZ5dzRnUHVkcEtuUnhDV1FJU1pBNUVndnJXRkM5dkdrSDVXbDVLckNaOTZnUm9uRks4ZDRPN1JJSDF2SmFwX2tTTHNncTZiT21hd1hoc1VyVEJPZnlHZnNMcVRGczM4QVlVV1R6TG96VnpjWUktbUJHVVM?oc=5",
-        "pubDate": "Thu, 13 Aug 2026 04:01:00 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "Cursor",
-      "tag": "Code Editor",
-      "desc": "AI-native code editor that pairs with Claude and GPT-4",
-      "url": "https://cursor.com",
-      "initials": "C",
-      "logo": "https://www.google.com/s2/favicons?domain=cursor.com&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "Grok Gets Cursor-Driven Upgrade, Claims to Be Competitive With Top Models - Gizmodo",
-        "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOZDU5RmhJdkpXbzNqZkpLN0U0UWhIREs4SElKRXJFWW9WekxObURGRmcxMGE1RjVJZXBQUFhJcXhmSUhxLXh0a2hub3pnZXl4RW5ZNmEwaC13OGxxMlZSSmc2aGFvWm1jN3UyMzdBOEE0X1lYZXVNd3cyc2RLX2ZPYWpUY0JLZ0RaSllCTDhieXlhRzYwYzFtaEtQSU5PTURUTjlCOGhB?oc=5",
-        "pubDate": "Wed, 12 Aug 2026 22:18:55 GMT"
+        "title": "OpenAI and Anthropic in price war as Chinese AI rivals gain ground - Financial Times",
+        "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQenJmNmtJVlBpd3MxYW1iN0hVSmlsT19lbHBQbTE1SnlsNG1zSm9QX2dFVWdKVnlKakE0SDVnQnRwYWxrdnd2UzJIZS12U0FMdlJYVEpab3NLNS03YzZweEI1Wkpmb1NxVVJYNXdGaDB6U0ZSTkxscm5ScURqeXlDZ0dGYlM?oc=5",
+        "pubDate": "Fri, 14 Aug 2026 04:00:14 GMT"
       },
       "sparkline": null
     },
@@ -55,41 +40,50 @@
       "logo": "https://www.google.com/s2/favicons?domain=scale.com&sz=128",
       "ticker": null,
       "headline": {
-        "title": "Fisent raises $4.3m to scale AI automation for finance - FinTech Global",
-        "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOQ0JGZ3puLUxNVjRkTnpYcVRFdWRSZkpoeDAwTU5TSVNtOXl0TUw2cDhkZEJIYXRsX2I1VlpDU3NJOTRkc0NuRzlzLUdDUFZ1UDV5aUhxNF9vNmFOd1NRUHE4WVA5bU9vdFA5akFSQVNXdWp6ZHlCWjBLWlk1S25KRk1fLTEtUDU1V3pEMnlIV1RUUQ?oc=5",
-        "pubDate": "Wed, 12 Aug 2026 15:44:53 GMT"
+        "title": "Edge Focus Secures Strategic Investment from Atlas Merchant Capital to Scale AI Credit Infrastructure - FF News",
+        "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQLXNELXpiY1c4Rl9ubzdvQTZUUzNnT0xEbmc4Sl9mN04xbG5hMEMxVmh1ZUFYTXBtQi1tZDBwM3hNQk5DYzhOWERVblk4bmdoMDl4Rmd6VmhjY3g3dmF3UmlvRFhDYUYxWGpfcFNZejNiQkpCd2UtS0JqOHo5MExnTDkwWkhYNFBoUGJCUzRPeUhyRFBUU3Vyc1pPWGVRNTUzVWRZX0FnMHFmSkxJcFFYTGRJRQ?oc=5",
+        "pubDate": "Thu, 13 Aug 2026 22:12:00 GMT"
       },
       "sparkline": null
     },
     {
-      "name": "OpenAI",
-      "tag": "LLMs",
-      "desc": "Creator of ChatGPT and the GPT family of foundation models",
-      "url": "https://openai.com",
-      "initials": "OAI",
-      "logo": "https://www.google.com/s2/favicons?domain=openai.com&sz=128",
-      "ticker": null,
+      "name": "CrowdStrike",
+      "tag": "Cybersecurity",
+      "desc": "Cloud-native endpoint protection and threat intelligence",
+      "url": "https://crowdstrike.com",
+      "initials": "CS",
+      "logo": "https://www.google.com/s2/favicons?domain=crowdstrike.com&sz=128",
+      "ticker": "CRWD",
       "headline": {
-        "title": "If the markets reject OpenAI and Anthropic, the US should nationalize them | Bruce Schneier and Nathan E Sanders - The Guardian",
-        "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNbEtIeUhGRW5BN25TUG9kcWZaRnRhcUZQNHVMWVpFaUhGYXFQU2J5T2NZMkdZTFNQMk1mUWNRMWFSOVlUajk2cTIwYjk3WjdCSm91RTEyU3I4UzdtcWxqYkJDZ09fUjJwbHZHWkRNSkpjeklINGpDZGRDNVRiR0ZNaFJFS19FeE0?oc=5",
-        "pubDate": "Wed, 12 Aug 2026 14:13:00 GMT"
+        "title": "Why CrowdStrike Holdings (CRWD) Outpaced the Stock Market Today - Yahoo Finance Singapore",
+        "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQczRqblpwMXVFTGNCWDJoUnF3a1QyRkFaVHVmSUpMZFZuZ05CUWNsd2dIejNaWnRudmFvWTRLcy10QW4wdEJJLWZWNDl5MDQtT0d6WDdVLWN1a19QOF90aVgxM19ZWTJaUFl3d1dSNEZIamxfc0E4QjVMUWxlTFA4SjBtcHh0WE1QZUFWenRpSGg?oc=5",
+        "pubDate": "Thu, 13 Aug 2026 21:45:02 GMT"
       },
-      "sparkline": null
-    },
-    {
-      "name": "Mistral AI",
-      "tag": "LLMs",
-      "desc": "Europe's leading open-weight AI foundation models",
-      "url": "https://mistral.ai",
-      "initials": "M",
-      "logo": "https://www.google.com/s2/favicons?domain=mistral.ai&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "In-region inference, open models, and new European infrastructure for sovereign AI. - mistral.ai",
-        "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9zbGlwUWhiRC1udXFGMzJHeGZkUmN6bHk4T3UxWE5uM2trY2xhUUdTeXZzQ1ZSTXlvc3AzMWREczBUcjg0N1g4ZWdaSkJkVldfYWJ0SjR5cGFGMlFpdUpFTGNTS0EyVm45dllmc21TckJwT05IalE?oc=5",
-        "pubDate": "Tue, 11 Aug 2026 23:37:50 GMT"
-      },
-      "sparkline": null
+      "sparkline": [
+        210.72999572753906,
+        206.77000427246094,
+        203.75999450683594,
+        203.0800018310547,
+        198.49000549316406,
+        191.14999389648438,
+        188.4199981689453,
+        183.4199981689453,
+        183.27999877929688,
+        180.11000061035156,
+        181.8000030517578,
+        179.3800048828125,
+        185.22000122070312,
+        190.86000061035156,
+        202.5399932861328,
+        211.22000122070312,
+        209.86000061035156,
+        207.38999938964844,
+        214.4199981689453,
+        225.16000366210938,
+        221.89999389648438,
+        221.77999877929688,
+        225.52999877929688
+      ]
     },
     {
       "name": "Palantir",
@@ -100,12 +94,11 @@
       "logo": "https://www.google.com/s2/favicons?domain=palantir.com&sz=128",
       "ticker": "PLTR",
       "headline": {
-        "title": "Give Palantir up to $244M through 2028, says internal Defense Department memo - The Register",
-        "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQYnJHekIxMTIzSHR3NUpxZ1VickFQcmtCYWxyMzRoS2hpVGhMVElLU2NBallEWk9vcFBiRHFHclRGTlgzZFQ5ZXBDQ2hKb3p6bWNsbnZBV0JCRWd0R01rN0dPeVRTTkZYMFNBa25ud29oSk5HcEpGNUh0eDRyQlZfbGxuUWxDTVhZWFpqbmJsM0x0RURhSTk2ZG9NUnBrb0JUZFFnQ3dnd0hJVWhUQTdIMXNGOA?oc=5",
-        "pubDate": "Tue, 11 Aug 2026 21:15:00 GMT"
+        "title": "Revenue at Palantir-Backed Ondas Rises 1,236%. Stock Falls as Losses Widen. - Barron's",
+        "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOWE9iZG93RlFUVFktczQxNFkzV2dnZEV5cGlYRHJTSDd2NVJqaU9WUDZWVkpUMGNndkp0bmY2OHFHMk1kUDRwcmx0UlV4TXl6eVNvcWJzbUM2dHdiQVlDLTJvMUZXVHhnT2NMcmZPNHlXdGF4TWNScmJXcE10QzVRSFdHdw?oc=5",
+        "pubDate": "Thu, 13 Aug 2026 18:33:00 GMT"
       },
       "sparkline": [
-        130.0399932861328,
         133.72000122070312,
         133.75999450683594,
         134.44000244140625,
@@ -127,8 +120,24 @@
         172.00999450683594,
         175.22999572753906,
         174.94000244140625,
-        171.0399932861328
+        171.0399932861328,
+        179.00999450683594
       ]
+    },
+    {
+      "name": "Figure AI",
+      "tag": "Robotics",
+      "desc": "Humanoid robots designed for industrial and commercial work",
+      "url": "https://figure.ai",
+      "initials": "FA",
+      "logo": "https://www.google.com/s2/favicons?domain=figure.ai&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "Asteria invests $1 million in Figure AI, BMW robot supplier - International Business Times",
+        "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPc1BfZUtSWWw1WEg5aklYS1drRkVEY2F6UzljTW9hTE5rSm1aLU15R0o5QTlNUDNvUGZGWGwxU0RFQjFlTU1fWG5DNlQtWENYM25QbS1ETDVCNk9ORmVPWWRtaGhBYXVoMElSZGw3bHJzNTRDUXBWV3pGdFRCR1o1N25aY2N5WjAwc0RZZg?oc=5",
+        "pubDate": "Thu, 13 Aug 2026 14:27:50 GMT"
+      },
+      "sparkline": null
     },
     {
       "name": "xAI",
@@ -139,9 +148,24 @@
       "logo": "https://www.google.com/s2/favicons?domain=x.ai&sz=128",
       "ticker": null,
       "headline": {
-        "title": "His Start-Up’s Goal: A.I. That Is Trainable and Not Controlled by a Big Company - The New York Times",
-        "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQVl9aRkNka2lrQ2RYZE1IZll6Mzd2RGZ6S1ZxYVlSTjZEN1RLN0VhSnpMd2RpLXUyNTJ2eFRDc2dZYmNIcXR4ODRFZGJxakI3VllRVE93WExsRjQ3TDZjRk1tdUFDM3UyT0ZvWkc4a1NNTWN4eXhUYkpxZm5JcFIzUk9CRlFPQQ?oc=5",
-        "pubDate": "Tue, 11 Aug 2026 11:00:07 GMT"
+        "title": "ChatGPT to follow Claude’s watermark pledge – but Grok to swerve it - City AM",
+        "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPZlk3NElSOWprN0I0V1BnUWxRT2ZwbzczVGFYTGNHT2p3N2NDNkowNnVhZ3p6MmR4MHJSdlg0MEhxMTBrZjlBUFBoUmRlZlZJSndmc2cwUFFvQm9VU1phVF9iOGMtTFJvZVl0Wk1GcGNSWFI0aWxCSnpZZU9LVFVJX1QyNzVrZmtwZUd5Y3QwOXpwemhYbkE?oc=5",
+        "pubDate": "Wed, 12 Aug 2026 09:14:19 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "Anduril",
+      "tag": "Defense AI",
+      "desc": "Autonomous defense systems and AI-enabled military hardware",
+      "url": "https://anduril.com",
+      "initials": "A",
+      "logo": "https://www.google.com/s2/favicons?domain=anduril.com&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "Anduril founder says West aims to deter China from invading Taiwan - Taiwan News",
+        "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9DUkh5NDJuNFBrcjN3UjFNMjd5aC1NN3prUWxFRXZWTjNVTnVlSzdqMm1jbXYtUUc3UnhMV0NLVDVQVGtHQnNlQlEzZmstX0dWYlBodg?oc=5",
+        "pubDate": "Wed, 12 Aug 2026 07:44:00 GMT"
       },
       "sparkline": null
     }
