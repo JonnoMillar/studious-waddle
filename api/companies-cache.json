@@ -1,5 +1,5 @@
 {
-  "refreshed_at": "2026-08-14T07:38:09.155Z",
+  "refreshed_at": "2026-08-15T06:45:25.675Z",
   "companies": [
     {
       "name": "OpenAI",
@@ -10,39 +10,108 @@
       "logo": "https://www.google.com/s2/favicons?domain=openai.com&sz=128",
       "ticker": null,
       "headline": {
-        "title": "OpenAI and Anthropic in price war as Chinese AI rivals gain ground - Financial Times",
-        "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQenJmNmtJVlBpd3MxYW1iN0hVSmlsT19lbHBQbTE1SnlsNG1zSm9QX2dFVWdKVnlKakE0SDVnQnRwYWxrdnd2UzJIZS12U0FMdlJYVEpab3NLNS03YzZweEI1Wkpmb1NxVVJYNXdGaDB6U0ZSTkxscm5ScURqeXlDZ0dGYlM?oc=5",
-        "pubDate": "Fri, 14 Aug 2026 04:00:14 GMT"
+        "title": "OpenAI upheaval mounts as Sam Altman readies IPO push - Financial Times",
+        "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQRXcxN1ZMZG0wZzNlYWtTUVRkS1lJeW52eWh6clBCRWxNWkVXdmlzSHdZQ3lxc1o1a0t6VllWbURuYzNSOUM2ajRlQmVWMUZ5b0lRV3VRV09pNFdWSDdRNEtjUWhDWDBRWDA3WVNyN3hEQVJKdzl0dFAzdzcyOVZMb0VqR0M?oc=5",
+        "pubDate": "Sat, 15 Aug 2026 04:00:31 GMT"
       },
       "sparkline": null
     },
     {
-      "name": "Anthropic",
+      "name": "xAI",
       "tag": "LLMs",
-      "desc": "AI safety company behind the Claude family of models",
-      "url": "https://anthropic.com",
-      "initials": "AN",
-      "logo": "https://www.google.com/s2/favicons?domain=anthropic.com&sz=128",
+      "desc": "Elon Musk's AI company, developer of the Grok models",
+      "url": "https://x.ai",
+      "initials": "X",
+      "logo": "https://www.google.com/s2/favicons?domain=x.ai&sz=128",
       "ticker": null,
       "headline": {
-        "title": "OpenAI and Anthropic in price war as Chinese AI rivals gain ground - Financial Times",
-        "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQenJmNmtJVlBpd3MxYW1iN0hVSmlsT19lbHBQbTE1SnlsNG1zSm9QX2dFVWdKVnlKakE0SDVnQnRwYWxrdnd2UzJIZS12U0FMdlJYVEpab3NLNS03YzZweEI1Wkpmb1NxVVJYNXdGaDB6U0ZSTkxscm5ScURqeXlDZ0dGYlM?oc=5",
-        "pubDate": "Fri, 14 Aug 2026 04:00:14 GMT"
+        "title": "Nvidia discloses $21 billion stake in SpaceX at end of second quarter - CNBC",
+        "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOczZFNXoxeDBQS1Y4T3ZvdW96QzNlUlBGOWZ3WEtqbDZXaTc5MTZESDJyRTNha1F3WWhwdHNfYXd5RDhqR2psbjFYRWZsR2tJNmVBc1J6THl2cWt0TFduRHRySG5YR250N1hQUkdKLUNHd1hZM2wxbkNRWlJWZ25UVHpFa0Q5bmUteGJ4bjh6c1IyY1lHZlBwMUMzLW5YS09sQ21oN1F3aGTSAa4BQVVfeXFMT2ZZMHJZWGxvZ1FCZTQ4SVFmUVJqck5xTGdLNzNOYjRSYjRIU1V1OHNvM2lqQnpKQWYzWGVIbGpsNTFpWE1mTHcyNmZfWDBHUnVhMm11NzBjbGF3Wk1WZ0FnVjhmVjBOZXk3a09aZ1R4eFJqUHhwUmY2VXg5ckdzOGR4YTF6X1BLY1hSd2hsbWd1NnJfZ093cXY0MkpMeFEzbUFFRXByVlRzNnpzM3dB?oc=5",
+        "pubDate": "Fri, 14 Aug 2026 21:45:19 GMT"
       },
       "sparkline": null
     },
     {
-      "name": "Scale AI",
-      "tag": "AI Data",
-      "desc": "Data labelling and RLHF infrastructure powering frontier AI",
-      "url": "https://scale.com",
-      "initials": "S",
-      "logo": "https://www.google.com/s2/favicons?domain=scale.com&sz=128",
+      "name": "Waymo",
+      "tag": "Autonomy",
+      "desc": "The most miles driven autonomously of any robotaxi service",
+      "url": "https://waymo.com",
+      "initials": "W",
+      "logo": "https://www.google.com/s2/favicons?domain=waymo.com&sz=128",
       "ticker": null,
       "headline": {
-        "title": "Edge Focus Secures Strategic Investment from Atlas Merchant Capital to Scale AI Credit Infrastructure - FF News",
-        "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQLXNELXpiY1c4Rl9ubzdvQTZUUzNnT0xEbmc4Sl9mN04xbG5hMEMxVmh1ZUFYTXBtQi1tZDBwM3hNQk5DYzhOWERVblk4bmdoMDl4Rmd6VmhjY3g3dmF3UmlvRFhDYUYxWGpfcFNZejNiQkpCd2UtS0JqOHo5MExnTDkwWkhYNFBoUGJCUzRPeUhyRFBUU3Vyc1pPWGVRNTUzVWRZX0FnMHFmSkxJcFFYTGRJRQ?oc=5",
-        "pubDate": "Thu, 13 Aug 2026 22:12:00 GMT"
+        "title": "Waymo wins California approval to expand robotaxis across 18 counties - Electrek",
+        "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNLTRJaUVScUdrNVJDS2hNbUd6OUROQnBZNWF5WVVNcWtOUktZOEJOejVNblFlVjZTOE5SOUNTc1VlX3lZOUd5eUNBcThKdTYzMG1MZ2REbU8xVFNveGFONzVlemlJMV8xa21hNWtKLUVhaHJKWXR6dlpJcEFVVVlZV1BYSWNsQ0I3bGUzUA?oc=5",
+        "pubDate": "Fri, 14 Aug 2026 19:47:00 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "Neuralink",
+      "tag": "Brain-Computer",
+      "desc": "Implantable neural interfaces for restoring and augmenting human capability",
+      "url": "https://neuralink.com",
+      "initials": "NL",
+      "logo": "https://www.google.com/s2/favicons?domain=neuralink.com&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "Elon Musk’s Neuralink Chip Changed My Life - Macleans.ca",
+        "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNRTh4WldQd1dzVGJjVHhEUUFtX2JURmt2ajZjNGpZWWhYLThGcnk2aHlZeTV2UmJTenZZbGJzd0xlVlVmNXFucjd1OC1zZXllaU5jWU54VXprLXJldFppSjFydWZ3UE5nYy13V2drd1c2UW9DUHU5bzFLbGVwdnA2UlJGOXVwRWFS?oc=5",
+        "pubDate": "Fri, 14 Aug 2026 19:02:33 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "Rocket Lab",
+      "tag": "Space",
+      "desc": "Small-satellite launch provider and space systems manufacturer",
+      "url": "https://rocketlabusa.com",
+      "initials": "RL",
+      "logo": "https://www.google.com/s2/favicons?domain=rocketlabusa.com&sz=128",
+      "ticker": "RKLB",
+      "headline": {
+        "title": "US Space Force gives Rocket Lab $397 million to build threat-tracking 'Flatellites' - Space",
+        "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQcXNpTHhyY20ybS1qUVctb3lQSEo3MUFtaDBweHRPVE9fMXhETHNRdE0wSkRPc2VfM2dUdFU0UUtBSWRyQ2xZYVA0UGR1OGpXYkU4R2wtdmRkZUZDRjNLZFJzb1BId2dxRHhHNjQtUkxnSHR6YnRGVi0yanZJalRPSWZoUHdteUhqLXEyVHhEVDN0ZHJTbFRZMERkYXJURm1KNVBiQVJUNl8wNGxNd09xZGVwdHNjT3NNWTVHd3l3SkE0Y3dYRldpOFpOUVpKV1E?oc=5",
+        "pubDate": "Fri, 14 Aug 2026 17:00:00 GMT"
+      },
+      "sparkline": [
+        76.19999694824219,
+        67.3499984741211,
+        67.62000274658203,
+        65.73999786376953,
+        69.12000274658203,
+        69.75,
+        69.98999786376953,
+        63.90999984741211,
+        66.94000244140625,
+        63.88999938964844,
+        58.599998474121094,
+        64.68000030517578,
+        64.94999694824219,
+        70.43000030517578,
+        74.4800033569336,
+        74.81999969482422,
+        75.66999816894531,
+        82.83000183105469,
+        80.04000091552734,
+        80.01000213623047,
+        81.16999816894531,
+        80.0999984741211,
+        80.25
+      ]
+    },
+    {
+      "name": "Cursor",
+      "tag": "Code Editor",
+      "desc": "AI-native code editor that pairs with Claude and GPT-4",
+      "url": "https://cursor.com",
+      "initials": "C",
+      "logo": "https://www.google.com/s2/favicons?domain=cursor.com&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "SpaceX has closed its $60bn Cursor deal, and Cursor was buying a company the day before - The Next Web",
+        "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE56SXlWdzRUU2Q0ZGJMSHZiWFRsZmdaaG1JdHdGR0c3ZnVwX25FV0lGMzBPbGs1NEVVWjNiUGhOSFdkZURSeE9aSXJSUUF0UWNPcGYxa1B4TDVtN21WWlJkdVFPMGdidXJMaHRDTmxTUkdESXBxY0M1QzN2VU1IUQ?oc=5",
+        "pubDate": "Fri, 14 Aug 2026 14:54:56 GMT"
       },
       "sparkline": null
     },
@@ -55,12 +124,11 @@
       "logo": "https://www.google.com/s2/favicons?domain=crowdstrike.com&sz=128",
       "ticker": "CRWD",
       "headline": {
-        "title": "Why CrowdStrike Holdings (CRWD) Outpaced the Stock Market Today - Yahoo Finance Singapore",
-        "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQczRqblpwMXVFTGNCWDJoUnF3a1QyRkFaVHVmSUpMZFZuZ05CUWNsd2dIejNaWnRudmFvWTRLcy10QW4wdEJJLWZWNDl5MDQtT0d6WDdVLWN1a19QOF90aVgxM19ZWTJaUFl3d1dSNEZIamxfc0E4QjVMUWxlTFA4SjBtcHh0WE1QZUFWenRpSGg?oc=5",
-        "pubDate": "Thu, 13 Aug 2026 21:45:02 GMT"
+        "title": "Analysing the 2026 Threat Landscape with CrowdStrike - Cyber Magazine",
+        "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOZmVabldEZGpBZkxMUjR1RkpEbHBGWXFtRlVnZE1rN1lienEwRnpHSU9NWjZudGRZOVptY0dycEJDUDMzUzE0b3M5STE0WGNYNnp2bDJzU3RkYW04UHVRMUNpbzB2OF8zSVdqY3pYQmJwdnR1dlBZTE5ZY2d4cTdCSnYtWVYxTWF6N1pv?oc=5",
+        "pubDate": "Fri, 14 Aug 2026 12:39:49 GMT"
       },
       "sparkline": [
-        210.72999572753906,
         206.77000427246094,
         203.75999450683594,
         203.0800018310547,
@@ -82,90 +150,22 @@
         225.16000366210938,
         221.89999389648438,
         221.77999877929688,
-        225.52999877929688
+        225.52999877929688,
+        216.9499969482422
       ]
     },
     {
-      "name": "Palantir",
-      "tag": "Data Analytics",
-      "desc": "Big-data analytics platforms for government and enterprise",
-      "url": "https://palantir.com",
-      "initials": "PL",
-      "logo": "https://www.google.com/s2/favicons?domain=palantir.com&sz=128",
-      "ticker": "PLTR",
-      "headline": {
-        "title": "Revenue at Palantir-Backed Ondas Rises 1,236%. Stock Falls as Losses Widen. - Barron's",
-        "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOWE9iZG93RlFUVFktczQxNFkzV2dnZEV5cGlYRHJTSDd2NVJqaU9WUDZWVkpUMGNndkp0bmY2OHFHMk1kUDRwcmx0UlV4TXl6eVNvcWJzbUM2dHdiQVlDLTJvMUZXVHhnT2NMcmZPNHlXdGF4TWNScmJXcE10QzVRSFdHdw?oc=5",
-        "pubDate": "Thu, 13 Aug 2026 18:33:00 GMT"
-      },
-      "sparkline": [
-        133.72000122070312,
-        133.75999450683594,
-        134.44000244140625,
-        132.3800048828125,
-        134.85000610351562,
-        132.66000366210938,
-        124.56999969482422,
-        123.37000274658203,
-        122.91999816894531,
-        131.52999877929688,
-        123.52999877929688,
-        123,
-        122.26000213623047,
-        123.05999755859375,
-        125.6500015258789,
-        162.66000366210938,
-        158.42999267578125,
-        155.9199981689453,
-        172.00999450683594,
-        175.22999572753906,
-        174.94000244140625,
-        171.0399932861328,
-        179.00999450683594
-      ]
-    },
-    {
-      "name": "Figure AI",
-      "tag": "Robotics",
-      "desc": "Humanoid robots designed for industrial and commercial work",
-      "url": "https://figure.ai",
-      "initials": "FA",
-      "logo": "https://www.google.com/s2/favicons?domain=figure.ai&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "Asteria invests $1 million in Figure AI, BMW robot supplier - International Business Times",
-        "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPc1BfZUtSWWw1WEg5aklYS1drRkVEY2F6UzljTW9hTE5rSm1aLU15R0o5QTlNUDNvUGZGWGwxU0RFQjFlTU1fWG5DNlQtWENYM25QbS1ETDVCNk9ORmVPWWRtaGhBYXVoMElSZGw3bHJzNTRDUXBWV3pGdFRCR1o1N25aY2N5WjAwc0RZZg?oc=5",
-        "pubDate": "Thu, 13 Aug 2026 14:27:50 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "xAI",
+      "name": "Mistral AI",
       "tag": "LLMs",
-      "desc": "Elon Musk's AI company, developer of the Grok models",
-      "url": "https://x.ai",
-      "initials": "X",
-      "logo": "https://www.google.com/s2/favicons?domain=x.ai&sz=128",
+      "desc": "Europe's leading open-weight AI foundation models",
+      "url": "https://mistral.ai",
+      "initials": "M",
+      "logo": "https://www.google.com/s2/favicons?domain=mistral.ai&sz=128",
       "ticker": null,
       "headline": {
-        "title": "ChatGPT to follow Claude’s watermark pledge – but Grok to swerve it - City AM",
-        "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPZlk3NElSOWprN0I0V1BnUWxRT2ZwbzczVGFYTGNHT2p3N2NDNkowNnVhZ3p6MmR4MHJSdlg0MEhxMTBrZjlBUFBoUmRlZlZJSndmc2cwUFFvQm9VU1phVF9iOGMtTFJvZVl0Wk1GcGNSWFI0aWxCSnpZZU9LVFVJX1QyNzVrZmtwZUd5Y3QwOXpwemhYbkE?oc=5",
-        "pubDate": "Wed, 12 Aug 2026 09:14:19 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "Anduril",
-      "tag": "Defense AI",
-      "desc": "Autonomous defense systems and AI-enabled military hardware",
-      "url": "https://anduril.com",
-      "initials": "A",
-      "logo": "https://www.google.com/s2/favicons?domain=anduril.com&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "Anduril founder says West aims to deter China from invading Taiwan - Taiwan News",
-        "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9DUkh5NDJuNFBrcjN3UjFNMjd5aC1NN3prUWxFRXZWTjNVTnVlSzdqMm1jbXYtUUc3UnhMV0NLVDVQVGtHQnNlQlEzZmstX0dWYlBodg?oc=5",
-        "pubDate": "Wed, 12 Aug 2026 07:44:00 GMT"
+        "title": "Mistral to host external models, Chinese Z.ai to be first - Techzine Global",
+        "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPWE9SQzlaQ19COUtKWlRPMGFueEFhdU1pUVc5ZHZXNS0xWmtUTXJiTFFmWktkRmdZQUgySjk1ZTJNblpYbFA4cUs4ZzhZMG13RXJLUHkzaHBmb2IwY29ZLTVIX1NkUDFHcGNCVVdzSHo5cDh4R0ZWeEJ0LURzREtsMnNTQUNCNXFwbE5PblBXdTRsN01EVGlEN3M3VklDb1hHZ2FPR3J3?oc=5",
+        "pubDate": "Fri, 14 Aug 2026 12:13:13 GMT"
       },
       "sparkline": null
     }
