@@ -1,35 +1,41 @@
 {
-  "refreshed_at": "2026-08-17T07:03:42.634Z",
+  "refreshed_at": "2026-08-18T06:51:10.813Z",
   "companies": [
     {
-      "name": "Scale AI",
-      "tag": "AI Data",
-      "desc": "Data labelling and RLHF infrastructure powering frontier AI",
-      "url": "https://scale.com",
-      "initials": "S",
-      "logo": "https://www.google.com/s2/favicons?domain=scale.com&sz=128",
-      "ticker": null,
+      "name": "Palantir",
+      "tag": "Data Analytics",
+      "desc": "Big-data analytics platforms for government and enterprise",
+      "url": "https://palantir.com",
+      "initials": "PL",
+      "logo": "https://www.google.com/s2/favicons?domain=palantir.com&sz=128",
+      "ticker": "PLTR",
       "headline": {
-        "title": "Manna Coffee seeks seed funding at $15 million valuation to scale AI platform for autonomous retail - Retail Technology Innovation Hub",
-        "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPNV85NDdDSmhnY2ZRX3Zjak1YRGtCbUNjdFdNWGEyU3pSSjV5VFo4YXA4NXUtOHg4VnhIYkJoZVgydVBKdXE4VnNtZHJuZEdGdGhPZE9CWWxUY2Z1REVzWFdrM0hzTFVJc2h2UmRDLUtDUkNqN1loUUtzME9RR0oybDdValgzOWo0eWxYWGRjOWNBNWdsd3l6NHM3a19Hb2pWTDhvUVhPQmRkczVfNjdpUi02MTFGd01HdWdCdldwWmV3cTZKWEtJd2k4YnNfWTdCemdpajk0clBMc0cxTFBjMFBiYw?oc=5",
-        "pubDate": "Mon, 17 Aug 2026 05:01:46 GMT"
+        "title": "Palantir (PLTR) Stock May Be 9% Undervalued On Pentagon AI Momentum - Yahoo Finance",
+        "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPSjhBV1N6ZmoyTXJtZUxtNGhDMGNGSjEzNVM5YWxGVVh6T2VQb2dnX3ZVcUw1YS1WSnhWNm5zYllwNG5sY1Rsa09VVjAybkFvN1duMUIwN19JZXk5alZHdkllMTZRdElwUlhkZ3RiUmFSYjJIblpaR3NYUTFNeGZjZDkzMmcyOGR0VjF2TW1oSFhhSERZ?oc=5",
+        "pubDate": "Tue, 18 Aug 2026 04:32:00 GMT"
       },
-      "sparkline": null
-    },
-    {
-      "name": "Waymo",
-      "tag": "Autonomy",
-      "desc": "The most miles driven autonomously of any robotaxi service",
-      "url": "https://waymo.com",
-      "initials": "W",
-      "logo": "https://www.google.com/s2/favicons?domain=waymo.com&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "Waymo shipped 3,200 Chinese-built EVs to LA for its robotaxi fleet despite 127.5% tariffs Americans can't get around - Yahoo Finance",
-        "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQMThpMW1tQkU0RzJOV2lwU0ZKcnVCRmkxZVZaVHgySG8ycEQtTUdGUFBHLVFYWkdITG00ZHAwZGpsWldaWTRHbzBYN2RGSUR3MFRrVjNuRDZLaHhKTHRhVFBzeFMwQ08tdmcxTGc4QmRxV1VHTTZSZDNKWVlTVUNvblZjMDVGZWFDU2VwQ1VUX0tkZw?oc=5",
-        "pubDate": "Sun, 16 Aug 2026 16:30:00 GMT"
-      },
-      "sparkline": null
+      "sparkline": [
+        134.85000610351562,
+        132.66000366210938,
+        124.56999969482422,
+        123.37000274658203,
+        122.91999816894531,
+        131.52999877929688,
+        123.52999877929688,
+        123,
+        122.26000213623047,
+        123.05999755859375,
+        125.6500015258789,
+        162.66000366210938,
+        158.42999267578125,
+        155.9199981689453,
+        172.00999450683594,
+        175.22999572753906,
+        174.94000244140625,
+        171.0399932861328,
+        179.00999450683594,
+        174.0399932861328
+      ]
     },
     {
       "name": "Anduril",
@@ -40,9 +46,24 @@
       "logo": "https://www.google.com/s2/favicons?domain=anduril.com&sz=128",
       "ticker": null,
       "headline": {
-        "title": "Anduril’s windfall from US war against Iran and Trump family’s investment ties with the arms firm - PressTV",
-        "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPQklkVGpyUWp3OHZPZFdTN1pPYUxfRWlTODM4aU1uV0Y1RUthVXNOZU00TG1EbDBEZ3c4Y2hfT1hjaElYOWRhUzQ1eUM5NFZoV25FZmJReWIxNFQ4Y1piLW1KYUwyUHl6ZXR2c0daT2RwY0tMQ2owVUdTQnRlMVF3STBFaUlMNHQ3R3lhcndoODRKZ3BFZjFWNzdNNU4tcy1YYnZzakNFN3RhNHJYS3dQclVSU2xYUTA0ZHc?oc=5",
-        "pubDate": "Sun, 16 Aug 2026 09:12:00 GMT"
+        "title": "Anduril redesigns tech for Army’s Soldier Borne Mission Command program - DefenseScoop",
+        "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQNjl1dzBqSTBraGNWR015UzBtTjdQRDctakpDcTZGTG50X0pBMmVsTWhUcWtTZjRZd0VFR2VSV09xSEphU3pPMWpFSjNkNHVBRlVsWVNHX0dEMXRQYTlUa3IyUk9JYzAtWUpZZUR5V0lOLXYxNE9vU21WbnBIWUlQUkg0b2RLLS1aR2prZ2prQm4?oc=5",
+        "pubDate": "Tue, 18 Aug 2026 01:41:49 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "Cursor",
+      "tag": "Code Editor",
+      "desc": "AI-native code editor that pairs with Claude and GPT-4",
+      "url": "https://cursor.com",
+      "initials": "C",
+      "logo": "https://www.google.com/s2/favicons?domain=cursor.com&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "Cursor launches Origin code hosting platform as GitHub outage exposes opening in AI coding race - VentureBeat",
+        "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNTmlNYlYtdjRBZjF6S05yWFloc2Z3Uk5oSEVtTnc2TkdxNWNuSVM1bnRrU0pFSDJRcTM2UFVkdFotQmt6MUkwOUJWRUFIMXJJNkRNSFctNTN2UXRreFhOa0tucGY0OXhNdE0tbDREbVZMUkMzTmRRQ2J5TGhJd3pISkYwMDlWX0QzS2xZbGx0ZUFxbWc1SnJXV1Y4dHUwN1EwNzhZTzVqTHBoLWpnZVNLc3BaWE11R05YQ1M1aUo5X2xpb1dDbnpnN1Nwa3hjMUk?oc=5",
+        "pubDate": "Mon, 17 Aug 2026 22:00:00 GMT"
       },
       "sparkline": null
     },
@@ -55,24 +76,9 @@
       "logo": "https://www.google.com/s2/favicons?domain=anthropic.com&sz=128",
       "ticker": null,
       "headline": {
-        "title": "The U.S. Military Wants A.I. Dominance. Feuds and China May Thwart It. - The New York Times",
-        "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPcTlBWXp3WVBMVkNlVDViWFMxN1FMTFcycmVnaWIxUk95ZGUzeXFtVDk1MWFfb2VUQUhzQ2Z4T3VSbzAySllkMzJwek1OQm9qS3BZMWZNM0EzMWExNFk5bDU5NFFLeC13dVZmTzhoLXkzM1FNMVRmU3lPTXN1Rm9FUzE5dFZEUQ?oc=5",
-        "pubDate": "Sun, 16 Aug 2026 09:00:49 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "OpenAI",
-      "tag": "LLMs",
-      "desc": "Creator of ChatGPT and the GPT family of foundation models",
-      "url": "https://openai.com",
-      "initials": "OAI",
-      "logo": "https://www.google.com/s2/favicons?domain=openai.com&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "The first anti-AI protester to be jailed has a message for OpenAI, Anthropic and Meta: ‘Regain your humanity’ - The Guardian",
-        "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOblN1a1dNemtqcTAySkU3dGlCbkJybWJxckRTaXk2Z0VSTUE0X0hxbEN2ZWdaR3VfTUN4WXlIWXhtMUZ2d01BTXY5eklOanRHTFlmdXdRaTNLR3E5MDVrR2xRUFhwTnAyZWJON0hMMEVYQ2lBNFYxSGI3X1J4bHpoS1d2d0xERGNwdzBjVU1aa2c0Zw?oc=5",
-        "pubDate": "Sun, 16 Aug 2026 08:00:00 GMT"
+        "title": "Anthropic Revenue Run Rate Surpasses $65 Billion Ahead of IPO - Bloomberg.com",
+        "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPNVktR0ZGanRzYkMwQjBWRkhfbmVfLTVxR3JpYWtRbk1HemlQbjRab2EzTmN1VDNmYmk5Z0xIWGYzVmU2b3VTRENNTy00d1RrLXBoWjFPVE5hNEQyVDdrZ1ZuTzFaczRGODM0VnpycFpDa0tTZWpFSzYyU3d1dVNwQzlicGJPTm9WdlFHczFUMzNOalhjdDIwSWZZcVltMHdsVDY2OXE4QnZOQ2laUlU4Xw?oc=5",
+        "pubDate": "Mon, 17 Aug 2026 19:37:45 GMT"
       },
       "sparkline": null
     },
@@ -85,14 +91,11 @@
       "logo": "https://www.google.com/s2/favicons?domain=crowdstrike.com&sz=128",
       "ticker": "CRWD",
       "headline": {
-        "title": "This defence ETF holds BAE Systems, Palantir, and CrowdStrike. It’s smashing the FTSE 100 in 2026 - Yahoo Finance UK",
-        "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNdUdNR2ZlTHNRXzFtZU9RdV9YMktxeXVMM3Rwa1Z3YkpJSU1oUUdPRTcwMmZwb2ZLZTVCVFRmS3dJcFpycHhxX1ZBWVF6LW9BOHFvZkFER3NOaUJCdWlqMXNKeDFFTkZyTFVXTnVkdjB6SDlWN1ZXNnBkQ2VPTkxibUlENkg?oc=5",
-        "pubDate": "Sun, 16 Aug 2026 07:44:00 GMT"
+        "title": "Analysis: CrowdStrike, Palo Alto Networks SMB Moves Signal New Era In Cybersecurity Channel - crn.com",
+        "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOSnpQV2k5Zm0zT2VraU9UOWtNVjA3TnFhaVZXOUliMk9XN2t1b2JVNFU5cUVmeEFXWldVQ1VQZjB5bUcydTlXWVRFc0hjdkhfWHFINHJqR2FPUTVaa1ZoeWlYUktpRUdmU2NBQ0k2RGRqX0U2YmV3WlpYY2tNV25FbDlDVnEwLUJTNDJiZDRfVFhWUUdsRXVWWE5mdTJ0blZoaHJLM1NfTVk1QjBGU1BybEhsOEVVbGp2UUpDTWsybTcxMTdHVzRr?oc=5",
+        "pubDate": "Mon, 17 Aug 2026 17:17:00 GMT"
       },
       "sparkline": [
-        206.77000427246094,
-        203.75999450683594,
-        203.0800018310547,
         198.49000549316406,
         191.14999389648438,
         188.4199981689453,
@@ -116,32 +119,47 @@
       ]
     },
     {
-      "name": "xAI",
-      "tag": "LLMs",
-      "desc": "Elon Musk's AI company, developer of the Grok models",
-      "url": "https://x.ai",
-      "initials": "X",
-      "logo": "https://www.google.com/s2/favicons?domain=x.ai&sz=128",
+      "name": "Groq",
+      "tag": "AI Chips",
+      "desc": "LPU inference chips delivering industry-leading token speed",
+      "url": "https://groq.com",
+      "initials": "G",
+      "logo": "https://www.google.com/s2/favicons?domain=groq.com&sz=128",
       "ticker": null,
       "headline": {
-        "title": "Woman claims her stepfather used Grok to transform childhood photo into explicit imagery - TechCrunch",
-        "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQZFpCdDNfbTNZamlqUURGQW04YzVtNzZxOU50bFZhS1hTV3RqT043ZWtXSXhHekNSTWhVdXFnLUhEazNPNXlHWlVWM0ZDcUFJLTUwWW1SNjJwSnhtRWpxNmxhQndnZHZqaDY0TS1LRUliR0hTeXJ4Xy1OdmVfT3d1RjdVUThZVXVKbnhkcVdHWTQ1ZWFYbk1jYzg1TjNXV0lfSjZJSVNYaVNmaUVPQUhLclU0bU5HVlZlV2xObVVhYVM?oc=5",
-        "pubDate": "Sat, 15 Aug 2026 21:29:19 GMT"
+        "title": "Groq raises $350M to fuel its pivot from AI chips to neocloud - TechCrunch",
+        "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNdmdpUGFPRGhSSVhhdHFzYzVnSEFXcHdqRU9ELVJBWXczMlg0S01QamI4UGJ1dERVcTRxb3dkOFA3TEFnWVhrWEthbDVsQ2JncXAxUy0tV0d3eDhtcXc5RjkxeWd2cjNmWjZBYk83MkJtQWZoZFo2LXdhcEFWTm1EcW81NFMzSmdRVUlXZGdxSnNEbFdNazlBOUNrMA?oc=5",
+        "pubDate": "Mon, 17 Aug 2026 16:15:12 GMT"
       },
       "sparkline": null
     },
     {
-      "name": "Cursor",
-      "tag": "Code Editor",
-      "desc": "AI-native code editor that pairs with Claude and GPT-4",
-      "url": "https://cursor.com",
-      "initials": "C",
-      "logo": "https://www.google.com/s2/favicons?domain=cursor.com&sz=128",
+      "name": "Scale AI",
+      "tag": "AI Data",
+      "desc": "Data labelling and RLHF infrastructure powering frontier AI",
+      "url": "https://scale.com",
+      "initials": "S",
+      "logo": "https://www.google.com/s2/favicons?domain=scale.com&sz=128",
       "ticker": null,
       "headline": {
-        "title": "SpaceX officially closes its Cursor acquisition - TechCrunch",
-        "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNZVFYV1ZRV290UncwUWl4NEtCcDZDdGd1QTByQ1pXQWwyVm5QNDBTNFRTOHdHSjI5RnNweWRhTUdwdEZZczNWTEVhUUZ4UHBxSGsxYUFSQURiaHB6TnVWVHowaGpfWW9vMExXUUZSTV9tNVM3OEoxVUpGeHUxTURVbmppLTNYNWNwRWc?oc=5",
-        "pubDate": "Sat, 15 Aug 2026 16:30:00 GMT"
+        "title": "VastAdvisor Secures $1 Million SAFE Round to Scale AI-Driven Wealth Management - FF News",
+        "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNYV81U3J4YkJwLUZEVEg5ZXMxN19PSGNodHM3bzRCUnVnd2p0NkE3aVRIUFJfMW9jMGE5bTN4VUhXM0FEcjVtR2NUdk9zM3hVMlFBeVplUndLc0RMSVBhVUtzODVDaTJNdEd5eWpUNTQyVXdXQzdFLVJRZFNFd180Rk5ibjRRRVpaZ2xXamRVQ3dWSnVkWHRLZXFnMnJmb25TWkp3?oc=5",
+        "pubDate": "Mon, 17 Aug 2026 16:10:04 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "OpenAI",
+      "tag": "LLMs",
+      "desc": "Creator of ChatGPT and the GPT family of foundation models",
+      "url": "https://openai.com",
+      "initials": "OAI",
+      "logo": "https://www.google.com/s2/favicons?domain=openai.com&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "Nvidia pledges $100bn backing for OpenAI data centre in Ohio - Financial Times",
+        "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNOEdXR1M2dHNQbklPaU5lV1ZnZUNqS09yWVQzQkhmTnFGQVE3QmlzNG9neFhZekpNeVRhN2xneFVDTl9tRmRXZXc4UU9sLXFsbHVzUDVSajhnV3Qya3ctZHFXUXlTWEU1X0xFZlZpZUx4MGRDa3pVUkVmY1lDeDdnUWNfYmk?oc=5",
+        "pubDate": "Mon, 17 Aug 2026 13:57:59 GMT"
       },
       "sparkline": null
     }
