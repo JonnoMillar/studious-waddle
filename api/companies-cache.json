@@ -1,18 +1,48 @@
 {
-  "refreshed_at": "2026-08-20T06:52:59.272Z",
+  "refreshed_at": "2026-08-21T06:53:51.507Z",
   "companies": [
     {
-      "name": "Perplexity",
-      "tag": "AI Search",
-      "desc": "Answer engine combining web search with AI-generated summaries",
-      "url": "https://perplexity.ai",
-      "initials": "P",
-      "logo": "https://www.google.com/s2/favicons?domain=perplexity.ai&sz=128",
+      "name": "Physical Intelligence",
+      "tag": "Embodied AI",
+      "desc": "Training AI systems to manipulate physical objects",
+      "url": "https://physicalintelligence.company",
+      "initials": "PI",
+      "logo": "https://www.google.com/s2/favicons?domain=physicalintelligence.company&sz=128",
       "ticker": null,
       "headline": {
-        "title": "Interactive Brokers becomes official connector on Perplexity - FX News Group",
-        "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNMXY5YXVVdURCWVdCaW9JXzRGeHJDdjVpdm9RVFpsMUNuQnQ1TkhSbUV0R3ctUjhZTzdzYmtyNFlXV3JTbXpsTmNDUnZ6NHlYNVI5UlJuOGtKU0pOel9WOTNtcG5tdGdzQlRKOFdPcFp4QTBOdV90TGhJN1M2cjNsZjhnZ0pZb0c1N3k1YVhGc0QyT2l3Z2ZzcTFXS082bDFsYm95STRMdE12Y0JLcEE?oc=5",
-        "pubDate": "Thu, 20 Aug 2026 05:39:28 GMT"
+        "title": "Engineering Trust Through Physical Intelligence in Humanoids - Electronic Design",
+        "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQVW8wREdSX1NsdlpzM2JiRHhZM1NmRXhrUnBSSkJleEZKQ2dfRjlOVDEtTEExVlhSR1oyc0UwZko2b1ZYRzQ4V3EyRTNFN2VjczU4T0hrQi1WbFZkanRnRWF5TzFLNWZSWE1rc1g0aHNYQnFmbGVTbjI1MTNHRXo0ZDZRcE94Snp0SjRER2k1RGxmazBEdVpXOUpCYmlCeEctTEJSUjVsWTdaTFJmbEtreEtLZ1dvRmRGOGR1dnFibDQtbFhHdmV5Y204OFNvS0dXenJXTGthck9TZw?oc=5",
+        "pubDate": "Thu, 20 Aug 2026 21:35:49 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "Anthropic",
+      "tag": "LLMs",
+      "desc": "AI safety company behind the Claude family of models",
+      "url": "https://anthropic.com",
+      "initials": "AN",
+      "logo": "https://www.google.com/s2/favicons?domain=anthropic.com&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "Anthropic Expects to Match or Top SpaceX’s Record IPO Size - Bloomberg.com",
+        "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPZjdKM3p6TTVON2FNcXFDRVhHd056NU03dGQxNzFYYkNYc09xWDhwS1hETzdFUkoyVkpWM0o1VENSaENzWnIwODBmUThla2dsUWF5UkRuWThvVmRsRVdCZHhCaDVQZ2NYSVdLU2J4aHdaZ19OeDY5LUREbVg1cmR6ZmZxVk5OcG5YX0lHMmFUelNSYjNoVVBJVWNYdENoeFFZdmxEQVBPSDNsQWdIMFdtQnJn?oc=5",
+        "pubDate": "Thu, 20 Aug 2026 19:22:23 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "xAI",
+      "tag": "LLMs",
+      "desc": "Elon Musk's AI company, developer of the Grok models",
+      "url": "https://x.ai",
+      "initials": "X",
+      "logo": "https://www.google.com/s2/favicons?domain=x.ai&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "Grok keeps sending gibberish responses to users - TechCrunch",
+        "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOZG1jcVk2U2pwWndKUEMyLWZ2emk5cjNFVDFJcDFORV96Tmk3V2NCbTU4Tkd2c2JMVHl5N2pKMHNYbHJxZjY2bXVqWE12N1Z6MV9PcnNxSGRrSElla1UyT1lpcnhKaXpwcFNSMFZXVl9jU0hFbWdVSEY2cU5Xajh4M1R2ZXpfa0FUbVE?oc=5",
+        "pubDate": "Thu, 20 Aug 2026 17:32:16 GMT"
       },
       "sparkline": null
     },
@@ -25,9 +55,24 @@
       "logo": "https://www.google.com/s2/favicons?domain=scale.com&sz=128",
       "ticker": null,
       "headline": {
-        "title": "ING taps pilots to assess ability to scale AI - FutureCIO",
-        "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9Hckpld203RElrekFiT0dHaUVLSHRrb2NHZ2g3WHlxbTBKTGRMQk1xaGFBbVlVVzV2UHBhSzIyTEtPdW1oVHRjVnJzTUxrVWJIbEpuUHhUa19zd1BDZU8tY1d0SkR5cTdwQ0hBN1Z5OFA2RWcyWExCUA?oc=5",
-        "pubDate": "Thu, 20 Aug 2026 04:00:00 GMT"
+        "title": "Velatir raises €5m to scale AI infrastructure in Europe - FinTech Global",
+        "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOLUlGQk9ZODBneTZ2VDJPbEpGOTd0R0lXaFdFVXRYenFHVnFlZ1JjRE14TC1ZeVZRbWIyOXdJbWl5RWhfRTNmN3B0ZVA5MEFNLXg4X3JTaE84czlwRXkxV0N4QWhVaW5uc3Mxbmd2RTdIS0RpRzBzUVE0ZzZobWJ3X1NFemdRYm1pVTlheGk4NmtQaWYw?oc=5",
+        "pubDate": "Thu, 20 Aug 2026 15:48:44 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "OpenAI",
+      "tag": "LLMs",
+      "desc": "Creator of ChatGPT and the GPT family of foundation models",
+      "url": "https://openai.com",
+      "initials": "OAI",
+      "logo": "https://www.google.com/s2/favicons?domain=openai.com&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "It’s Greg Brockman’s OpenAI now - The Verge",
+        "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxON1Rnck8wS3ZmSnVPVnRVeFJOWHRUR0N5V243VGc1eG1CaFlONUQ5RlRDR0JuZXY0djhUUHBWTm44MG1uakhNY01jdjhIXy1USEtkUWlMTEpUTDJDOXJ3YTJ1VUtVNmxWNHotTnluR3d3Wkp4Nm9UUU83SnQ2YjRWWTVfY2E4b0RhU0JQMndXT0VzR3FvQ184OHRB?oc=5",
+        "pubDate": "Thu, 20 Aug 2026 15:45:55 GMT"
       },
       "sparkline": null
     },
@@ -40,12 +85,11 @@
       "logo": "https://www.google.com/s2/favicons?domain=crowdstrike.com&sz=128",
       "ticker": "CRWD",
       "headline": {
-        "title": "Rapid7, Tenable, CrowdStrike, Twilio, and Datadog Shares Plummet, What You Need To Know - Yahoo Finance",
-        "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQN2ZXYVBZYnBRM2dqdm1VeFJZUm95UmkwaVZFVTRtbV94aVlmVEZCdG1BTGhHTTFtVXIzVWFEWVNtNm04Ukp5aGFiRjRUMEpKNHZ2N3hYY2RCU254b2xGNHl1U2lsel9PTVRIMWhjVFk5VEFrbmY5Y00xdnJZN1gwajRRaHpOUTBkNHBNbUJjWFBneUVqOHlsN3B0Z0xxNmhHM29GVk01UDVvdw?oc=5",
-        "pubDate": "Wed, 19 Aug 2026 23:42:02 GMT"
+        "title": "Exclusive: CrowdStrike's CTO is leaving to launch an AI-cyber fund - Axios",
+        "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOaVA4RTlUZk5aMEtOYWlRb3ZrU2t5eGU3T2JmaDl4NHh5QmJ0SlVqVUc0RlFDVzVUV3VDaWxWU3NOYVctblZKOHZONVQ2WEFxd0FsMllmZUdKdzdZUXJGSm00TTVqeEt1bExJYUtVYk9telRfeWxzTlJPMWZHMk9VTWhzc3RuMFdLU1RXaV9KYjI3MkhBQnpLNUFuQzFldw?oc=5",
+        "pubDate": "Thu, 20 Aug 2026 15:24:39 GMT"
       },
       "sparkline": [
-        198.49000549316406,
         191.14999389648438,
         188.4199981689453,
         183.4199981689453,
@@ -67,75 +111,22 @@
         216.9499969482422,
         213.89999389648438,
         212.9199981689453,
-        201.6300048828125
+        201.6300048828125,
+        190.33999633789062
       ]
     },
     {
-      "name": "Palantir",
-      "tag": "Data Analytics",
-      "desc": "Big-data analytics platforms for government and enterprise",
-      "url": "https://palantir.com",
-      "initials": "PL",
-      "logo": "https://www.google.com/s2/favicons?domain=palantir.com&sz=128",
-      "ticker": "PLTR",
-      "headline": {
-        "title": "Protesters dressed as Gandalf surround Palantir founder’s house - The Telegraph",
-        "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOM1pqcDRnVERYaENUZUJpMTluSjlOSlFsdDUxcFdtS3hSWUpIenBMcVFrV2E1SFNtWGl1VkxnandZRUdEdTZlWEQ4dFpIMnZpUjJuZGkwZndyYlpPQkFCRkJXcFg5d3JvaHlZUkZNZzZ3eWVBQzRGdS1jbW9BMTAweGEzQnpDMU5P?oc=5",
-        "pubDate": "Wed, 19 Aug 2026 20:32:00 GMT"
-      },
-      "sparkline": [
-        134.85000610351562,
-        132.66000366210938,
-        124.56999969482422,
-        123.37000274658203,
-        122.91999816894531,
-        131.52999877929688,
-        123.52999877929688,
-        123,
-        122.26000213623047,
-        123.05999755859375,
-        125.6500015258789,
-        162.66000366210938,
-        158.42999267578125,
-        155.9199981689453,
-        172.00999450683594,
-        175.22999572753906,
-        174.94000244140625,
-        171.0399932861328,
-        179.00999450683594,
-        174.0399932861328,
-        172.5500030517578,
-        171.5399932861328,
-        175.19000244140625
-      ]
-    },
-    {
-      "name": "Figure AI",
-      "tag": "Robotics",
-      "desc": "Humanoid robots designed for industrial and commercial work",
-      "url": "https://figure.ai",
-      "initials": "FA",
-      "logo": "https://www.google.com/s2/favicons?domain=figure.ai&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "Kollmorgen to give a joint-by-joint guide to humanoid motion at RoboBusiness - The Robot Report",
-        "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPTXFfbGFXUEF5T01fRm9mY0tMSnZxVUpCYlduNkpRZjNqLWNodW1FbUJjdndKejU2cUYtMDVndlhKT3MtTXBGa3NlaWtnTlBKeVNwcVFhd0xlR2lEY2lXYXdxSE1ybTVfU2prNXJ6aGhtU2RJclNjNlRfWEdVU1dVb3N2NUtPTEloRU53ZXdSa2NKd2xtV3JwWEdCVjY5QQ?oc=5",
-        "pubDate": "Wed, 19 Aug 2026 20:22:29 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "OpenAI",
+      "name": "Mistral AI",
       "tag": "LLMs",
-      "desc": "Creator of ChatGPT and the GPT family of foundation models",
-      "url": "https://openai.com",
-      "initials": "OAI",
-      "logo": "https://www.google.com/s2/favicons?domain=openai.com&sz=128",
+      "desc": "Europe's leading open-weight AI foundation models",
+      "url": "https://mistral.ai",
+      "initials": "M",
+      "logo": "https://www.google.com/s2/favicons?domain=mistral.ai&sz=128",
       "ticker": null,
       "headline": {
-        "title": "OpenAI slows down training of advanced AI after cyber-attack - BBC",
-        "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE55OEctaW5saHN0V2s3dnZXZjNXbFJ5aEtrUzc1Wnh1aW9oZllFUkliXzBGcXpMMzJBcm15cURSOFR0djdnQnV0VmhFdWFIRF92RjRfcWx6QmVnY1pp?oc=5",
-        "pubDate": "Wed, 19 Aug 2026 11:19:12 GMT"
+        "title": "Agentic Search. More accurate and efficient results from your AI systems. - mistral.ai",
+        "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5PWUlINnhhZ3B2dnU0dng5c2JQZ01fMjk0UkN5Vm8xNlZmVHAycS1SVmZnb3U2RDd1Mm1SaGdvcVUxYzE4SDk0bjlRVWxVazF3?oc=5",
+        "pubDate": "Thu, 20 Aug 2026 14:11:33 GMT"
       },
       "sparkline": null
     },
@@ -148,24 +139,9 @@
       "logo": "https://www.google.com/s2/favicons?domain=waymo.com&sz=128",
       "ticker": null,
       "headline": {
-        "title": "Democrats Are Failing the Waymo Test - The Atlantic",
-        "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPVURsUjFUazZQS1pwT3ZBMVgzQVNNNW9VcUs4TTJtN0VTQmxDQVpxSHdoOXBrRG55Z3lyd1gzaWpld2M3a3d3MHM1Rm5odUp1bUFacjY0UEVVaEJxaFY4d2VLVXExMThRR283ZC1LZjNTWHJqQWY0ZXZMSU9wcE9DZmdGdw?oc=5",
-        "pubDate": "Wed, 19 Aug 2026 11:00:00 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "Anthropic",
-      "tag": "LLMs",
-      "desc": "AI safety company behind the Claude family of models",
-      "url": "https://anthropic.com",
-      "initials": "AN",
-      "logo": "https://www.google.com/s2/favicons?domain=anthropic.com&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "Exclusive | OpenAI’s Second-Quarter Sales Show Tepid Growth Compared With Anthropic - WSJ",
-        "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPOEdPZTRQN2NiUEpURUc2cFBxaGN3QlpNV203c05DczRMdFJDWHRoazgtZEVaQlE0aU9CWW9LcC1JcGJwZ1VXd1lsQ0dnOEQ0MzlDdjJZOV9Oend0M1NON0RnUEZ5UHlMMFhrR09UU3pzSlAwRnl5OXRPbWd3NVljR21NNjBmWkVnWm9fZWkxVmZjbFEyQjJod1ZvMjFqSHNFX0VOb0s1X0puUVk?oc=5",
-        "pubDate": "Tue, 18 Aug 2026 23:47:00 GMT"
+        "title": "Alphabet’s Waymo Has Built a Custom Chip for Its Robotaxis - Yahoo Finance",
+        "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNdGtWZEU4YXNxMmVqYUVzclZ1MU9ua0xtWEhTd20xMTM1Q2lTVWpITTVXMjQzRGpvaTNPanYwaEUybE1tOUNRb2VEcVZVazlzZzBpaEpUYno1dVFzbU1PcDBoZVRKeVRMOUJJcDRDemtraHYxbkxEQzZTUm9SZWdTOUV0c3pySzZRbXNTdkpCODRJVl9XTEFOTDlaUE0?oc=5",
+        "pubDate": "Thu, 20 Aug 2026 14:00:00 GMT"
       },
       "sparkline": null
     }
