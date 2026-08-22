@@ -1,8 +1,59 @@
 {
   "tee_times": [
     {
+      "date": "2026-08-29",
+      "tee_time": "08:20",
+      "course_name": "Ilford Golf Club",
+      "facility_id": 15715,
+      "course_rating": 3.1377,
+      "course_review_count": 109,
+      "course_address": "Illford, Essex",
+      "distance_miles": 9.0,
+      "holes": 18,
+      "max_players": 4,
+      "price_gbp": 25.0,
+      "is_hot_deal": false,
+      "rate_type": "Best Available",
+      "booking_url": "https://www.golfnow.co.uk/tee-times/facility/15715/search",
+      "scraped_date": "2026-08-22"
+    },
+    {
+      "date": "2026-08-29",
+      "tee_time": "06:52",
+      "course_name": "Chingford Golf Course",
+      "facility_id": 14042,
+      "course_rating": 4.179,
+      "course_review_count": 360,
+      "course_address": "London, Middlesex",
+      "distance_miles": 11.0,
+      "holes": 18,
+      "max_players": 4,
+      "price_gbp": 30.5,
+      "is_hot_deal": false,
+      "rate_type": "Best Available",
+      "booking_url": "https://www.golfnow.co.uk/tee-times/facility/14042/search",
+      "scraped_date": "2026-08-22"
+    },
+    {
+      "date": "2026-08-30",
+      "tee_time": "06:45",
+      "course_name": "Chingford Golf Course",
+      "facility_id": 14042,
+      "course_rating": 4.179,
+      "course_review_count": 360,
+      "course_address": "London, Middlesex",
+      "distance_miles": 11.0,
+      "holes": 18,
+      "max_players": 4,
+      "price_gbp": 30.5,
+      "is_hot_deal": false,
+      "rate_type": "Best Available",
+      "booking_url": "https://www.golfnow.co.uk/tee-times/facility/14042/search",
+      "scraped_date": "2026-08-22"
+    },
+    {
       "date": "2026-08-22",
-      "tee_time": "07:12",
+      "tee_time": "07:36",
       "course_name": "London Airlinks Golf Course",
       "facility_id": 15559,
       "course_rating": 3.5127,
@@ -15,11 +66,11 @@
       "is_hot_deal": false,
       "rate_type": "Best Available",
       "booking_url": "https://www.golfnow.co.uk/tee-times/facility/15559/search",
-      "scraped_date": "2026-08-20"
+      "scraped_date": "2026-08-22"
     },
     {
       "date": "2026-08-23",
-      "tee_time": "07:04",
+      "tee_time": "07:20",
       "course_name": "London Airlinks Golf Course",
       "facility_id": 15559,
       "course_rating": 3.5127,
@@ -32,7 +83,7 @@
       "is_hot_deal": false,
       "rate_type": "Best Available",
       "booking_url": "https://www.golfnow.co.uk/tee-times/facility/15559/search",
-      "scraped_date": "2026-08-20"
+      "scraped_date": "2026-08-22"
     },
     {
       "date": "2026-08-29",
@@ -49,7 +100,7 @@
       "is_hot_deal": false,
       "rate_type": "Best Available",
       "booking_url": "https://www.golfnow.co.uk/tee-times/facility/15559/search",
-      "scraped_date": "2026-08-20"
+      "scraped_date": "2026-08-22"
     },
     {
       "date": "2026-08-30",
@@ -66,28 +117,11 @@
       "is_hot_deal": false,
       "rate_type": "Best Available",
       "booking_url": "https://www.golfnow.co.uk/tee-times/facility/15559/search",
-      "scraped_date": "2026-08-20"
+      "scraped_date": "2026-08-22"
     },
     {
       "date": "2026-08-23",
-      "tee_time": "07:10",
-      "course_name": "Richmond Park Golf Club - Princes Course",
-      "facility_id": 15271,
-      "course_rating": 2.5238,
-      "course_review_count": 16,
-      "course_address": "Richmond, Surrey",
-      "distance_miles": 7.0,
-      "holes": 18,
-      "max_players": 4,
-      "price_gbp": 50.0,
-      "is_hot_deal": false,
-      "rate_type": "Best Available",
-      "booking_url": "https://www.golfnow.co.uk/tee-times/facility/15271/search",
-      "scraped_date": "2026-08-20"
-    },
-    {
-      "date": "2026-08-23",
-      "tee_time": "07:40",
+      "tee_time": "08:12",
       "course_name": "West Middlesex Golf Club",
       "facility_id": 10634,
       "course_rating": 4.3965,
@@ -100,9 +134,9 @@
       "is_hot_deal": false,
       "rate_type": "Best Available",
       "booking_url": "https://www.golfnow.co.uk/tee-times/facility/10634/search",
-      "scraped_date": "2026-08-20"
+      "scraped_date": "2026-08-22"
     }
   ],
-  "scraped_at": "2026-08-20T17:30:26.085041+00:00",
+  "scraped_at": "2026-08-22T06:28:39.552323+00:00",
   "error": null
 }
