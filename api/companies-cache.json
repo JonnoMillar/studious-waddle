@@ -1,50 +1,72 @@
 {
-  "refreshed_at": "2026-08-24T07:06:31.467Z",
+  "refreshed_at": "2026-08-25T06:55:23.645Z",
   "companies": [
     {
-      "name": "Neuralink",
-      "tag": "Brain-Computer",
-      "desc": "Implantable neural interfaces for restoring and augmenting human capability",
-      "url": "https://neuralink.com",
-      "initials": "NL",
-      "logo": "https://www.google.com/s2/favicons?domain=neuralink.com&sz=128",
+      "name": "xAI",
+      "tag": "LLMs",
+      "desc": "Elon Musk's AI company, developer of the Grok models",
+      "url": "https://x.ai",
+      "initials": "X",
+      "logo": "https://www.google.com/s2/favicons?domain=x.ai&sz=128",
       "ticker": null,
       "headline": {
-        "title": "Musk Says Neuralink to Begin Human Trials of Vision Chip - Khaama Press",
-        "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQUGFxMUZMUHRhUnpFQTJsbnBJYko4OUF5LWgtc3NEUldHR3FEMmlJclJyaW9MSG1JTlRuOUszNnl0XzhYWUFIVmVBYW1MQ1AwdG4tVENVcXNiZUFzX2dOSGdqMU9qQmtReWtadmVGNDVwQUt5MWlUd0Zka1RZSHd0eVFHLUNmbUU?oc=5",
-        "pubDate": "Mon, 24 Aug 2026 06:49:34 GMT"
+        "title": "Moderna basically cured cancer, so I used Grok Bot to create a trading strategy on it. It’s DESTROYING the market. - DataDrivenInvestor",
+        "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNaG50RkVWYUdlVnozc1BxdmNhYnoySmF5R3Y3c0xfamFEc1o2c1RVR0kxNXZPMDhYd21scERUVl90RGppNHhaalpUSmpiWDJGS3FSZ0VONzJ4V1BWeE05d25YVmlqWGE0U2syLWFKY055VTU4dllEY2J6NzVvcUh3NG1iNXNuLVlEVnFMdk44aFRpSXpnOF9VMnhWaGxMTHpZU1lQMjNGMERUekxrRmdhaHA5Sk1QN0hSV3ZQS1hZV3Z5N2pzdVY1Nmo2TDJXZXRN?oc=5",
+        "pubDate": "Tue, 25 Aug 2026 04:48:07 GMT"
       },
       "sparkline": null
     },
     {
-      "name": "Scale AI",
-      "tag": "AI Data",
-      "desc": "Data labelling and RLHF infrastructure powering frontier AI",
-      "url": "https://scale.com",
-      "initials": "S",
-      "logo": "https://www.google.com/s2/favicons?domain=scale.com&sz=128",
+      "name": "Commonwealth Fusion",
+      "tag": "Energy",
+      "desc": "Next-generation tokamak fusion for clean energy at scale",
+      "url": "https://cfs.energy",
+      "initials": "CFS",
+      "logo": "https://www.google.com/s2/favicons?domain=cfs.energy&sz=128",
       "ticker": null,
       "headline": {
-        "title": "Fasset Hits $1B Valuation as SBI Group Leads $68M Series C to Scale AI-Powered Stablecoin Neobanking - PA Media",
-        "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQRlpNRDVSaTlabGg0UkFkNWdaQzd0bllmWlg0WG1HWDU2Zk4yVE9CRGg4eW5CVVJPNnVPeEUzRzFaY3dLYktWWEtsM3habk8telRoUlkzSmljY29iN0Vya25rV3FCQ3RCbmNHTU1UNnpKMF85U2FkcEpHRkZ1M3dBOGxaZkhHdzdWdGdKRjY3QWZ1UkE1MWhQWTVEM2gtUW5fOENWVGVrWk0yY0h6Z1o5dFZXSlcxNjJLWGZTWGpJZDR1UEdDM0I5azJySFRUTU5halhMdVJESEUxSUIwWDdDalJVdWw?oc=5",
-        "pubDate": "Mon, 24 Aug 2026 06:06:49 GMT"
+        "title": "Don’t call us ‘nuclear’, say nuclear fusion start-ups - Financial Times",
+        "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOMG9SbjdsQlJPNktRX2NwWU5weG9PbGg5bzJGcmpVYWo1Um8xckhaWWY2NTNRcFVSb3VJeV9PX1dUNnZKcy0zQ1FRc1ZXT2tsOWcyaWp4clFONVRJTDl6SXhQcjJQN3NWRWNEWTNRQUVHM21Vb2tuSUg4VjhqMktpa01jU1U?oc=5",
+        "pubDate": "Tue, 25 Aug 2026 04:09:21 GMT"
       },
       "sparkline": null
     },
     {
-      "name": "Perplexity",
-      "tag": "AI Search",
-      "desc": "Answer engine combining web search with AI-generated summaries",
-      "url": "https://perplexity.ai",
-      "initials": "P",
-      "logo": "https://www.google.com/s2/favicons?domain=perplexity.ai&sz=128",
-      "ticker": null,
+      "name": "Palantir",
+      "tag": "Data Analytics",
+      "desc": "Big-data analytics platforms for government and enterprise",
+      "url": "https://palantir.com",
+      "initials": "PL",
+      "logo": "https://www.google.com/s2/favicons?domain=palantir.com&sz=128",
+      "ticker": "PLTR",
       "headline": {
-        "title": "Nvidia Discusses Perplexity Investment at $30 Billion-Plus Valuation - The Information",
-        "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQMGdwRGUxNHpRRFM3dndxcG04azgxTFYxWkotZjNIVjAyT2dtbWkyNFo1NEJ6bXNlU1BGR3JYN0RyS18xZHNycVRkMXZBNHZsSlhFSVVPWU9QdFlaX0pJa19SNmZ2M1ZZY0RqNnJIakJwSXZPSEhSWDBPNlg4MUc3VWpyZGdUSlI5N2NjX3hnaWU2TUp1cmVFdHlMNVMxc01xVExsOWVCT0NfRXRaYzdsTnNMaVFMR3dIVWwzeW10dkxhRUJmaWhkVUtzd1QybjN3?oc=5",
-        "pubDate": "Mon, 24 Aug 2026 03:06:00 GMT"
+        "title": "The little-known French company trying to unseat Palantir in Europe - Financial Times",
+        "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNRHFuV1JDd1lJZ1RjdEdGQ09xbFZ2VmlJb01YU1hGcU53dEpOdGVSUWh1cElaSFNLZ0VNMm4yTnJfOVBtX0t3NjNOLUpHSHhDU055VW8tbEFSM2l1c0RuVGZraWREaHFTYWVaUWF0ckRra0k5cFBUM1R1bl9wemZBd0dxclg?oc=5",
+        "pubDate": "Tue, 25 Aug 2026 04:00:09 GMT"
       },
-      "sparkline": null
+      "sparkline": [
+        131.52999877929688,
+        123.52999877929688,
+        123,
+        122.26000213623047,
+        123.05999755859375,
+        125.6500015258789,
+        162.66000366210938,
+        158.42999267578125,
+        155.9199981689453,
+        172.00999450683594,
+        175.22999572753906,
+        174.94000244140625,
+        171.0399932861328,
+        179.00999450683594,
+        174.0399932861328,
+        172.5500030517578,
+        171.5399932861328,
+        175.19000244140625,
+        173.9600067138672,
+        179.94000244140625,
+        175.88999938964844
+      ]
     },
     {
       "name": "CrowdStrike",
@@ -55,14 +77,11 @@
       "logo": "https://www.google.com/s2/favicons?domain=crowdstrike.com&sz=128",
       "ticker": "CRWD",
       "headline": {
-        "title": "CrowdStrike Holdings (CRWD) Expands AI Security Reach As Valuation Stays Near Fair Value - simplywall.st",
-        "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQenJVZ05XamM2dDhUWDJaSDRUazY4NmxaWFhQb3NNbk55SlhueVltdVBiQ2ViYUlHc0FGOU1MNWRpR2poUWNsNWxBejNpQzJ1X3VCdE5rLUEtUUotNnJ0c0NNZ0ZMOGQ0dVd1MFJLRk5tbEdVdXlRcHk0b2pyYzZwRmlMYXlhRnZIeGdUQVlHVXZiT3Babnprb2FDcUtJSWxfbVF4WHZucTlhZzVrQ1FOUTVndzl0S003X2ZTTnUtS0ZNMHFTUDhkRFY1VXdobFpaMmJ3cVZn0gHbAUFVX3lxTE1Ba0kwcWJrSncwaTNsb3p0ZkhKRUJUWUkyTWk1ekIzVm85Ym5hYU5ueHg1enRxLWN3UFhWV0lsejRHcEx2U2IyZzY0SmYyNUV4RUlHeWpIZFJETS1zVjlkMGhEVnE5T0hweThvaFByZEF0dmhXY0JWNzdndmZSN1hUaUhKTW54X0tYWkVTSGZyb1lBdzhDSUJaRGtSNUtkWFZtUjBuTTl5RVo5SkkwSU0zTzNhU19mMTBKSUxLZ3gtNkc0WFowcWNWNVJGNmdnM1hOcXhHLW5oM003VQ?oc=5",
-        "pubDate": "Mon, 24 Aug 2026 02:35:50 GMT"
+        "title": "CrowdStrike Earnings: What To Look For From CRWD - Yahoo Finance",
+        "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNd0pwTWlvWG4wbVpEbkVTLWNldF81YnFsVmZZSXBFTXlzMWdUckIwMEFsN2M4RUg2dlZiOV9fOTBqakhkblJldWtsUWRfSHNrd3lFWDZzWlZNUl83VTFDeFh4Tzlnb0puUG5sN2NtcUxaaGFEUmhXeVRHeEx4NU9KUEd3bjhnR2dKRkFsUElrOU9MN2Q2bWl5YTdhRQ?oc=5",
+        "pubDate": "Tue, 25 Aug 2026 03:33:00 GMT"
       },
       "sparkline": [
-        188.4199981689453,
-        183.4199981689453,
-        183.27999877929688,
         180.11000061035156,
         181.8000030517578,
         179.3800048828125,
@@ -82,53 +101,9 @@
         212.9199981689453,
         201.6300048828125,
         190.33999633789062,
-        191.9499969482422
+        191.9499969482422,
+        190.67999267578125
       ]
-    },
-    {
-      "name": "OpenAI",
-      "tag": "LLMs",
-      "desc": "Creator of ChatGPT and the GPT family of foundation models",
-      "url": "https://openai.com",
-      "initials": "OAI",
-      "logo": "https://www.google.com/s2/favicons?domain=openai.com&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "‘We are hitting a different chapter’: OpenAI leader warns of threat of ‘persistent’ AI cyber-attacks - The Guardian",
-        "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQTU9VbHZPQ2czTUlfNVZMVk53TkZRbUhPTTJJQ3o3SjE4VEpiZWx2UHBpWG5MZkN6aG9ZVWsycTk1ME9pNFNmaWFybG1oMmxlY2NoZEEyZlZwT09SY2dxdWZIYjFmSGRLNG91dkJLU1ZrYV8yRHY0eHc5TnR1UktESUpUR1l6SlRueXlIbU9aeW5TYTZqR0E?oc=5",
-        "pubDate": "Sun, 23 Aug 2026 19:00:00 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "Commonwealth Fusion",
-      "tag": "Energy",
-      "desc": "Next-generation tokamak fusion for clean energy at scale",
-      "url": "https://cfs.energy",
-      "initials": "CFS",
-      "logo": "https://www.google.com/s2/favicons?domain=cfs.energy&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "Eni Plans to Build a Commercial Fusion Power Plant in Europe - logos-pres.md",
-        "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPbHNzRnFra3FJbHFlOXIzNnZmbWFmZExiMEtOcHI5VVBxdHN1T3ZNSUpVdnE1aDIwZ3psbjR0OGFFV3lfTUV2aFlieF9SclZfUHhIZmF5NEE2RS1IVUN4N2V0M280MS16RHlhTTZkTlVuejEwZHNwR2lfMm5BYUhWR016a3JZY3l5Yk9rQTVrTGFMSWFxYVE?oc=5",
-        "pubDate": "Sun, 23 Aug 2026 16:45:37 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "Waymo",
-      "tag": "Autonomy",
-      "desc": "The most miles driven autonomously of any robotaxi service",
-      "url": "https://waymo.com",
-      "initials": "W",
-      "logo": "https://www.google.com/s2/favicons?domain=waymo.com&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "TechCrunch Mobility: The custom chip driving Waymo’s robotaxi ambitions - TechCrunch",
-        "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQS0REMkZkSk1McUoxWVR0NzlPZkk3RGVjZGNDVzhtVmFVc3N5aHhoOU5GS0RrMTZsenl4NGlzNjc0eU96TkJlT0JhUDFfQXdyTmJsWjFyRFNEeFZNRXJqUFcwd1doTlU3Z2U5QVpWcnlWejBHWHNpYm4zOHJxeFBnam9vbmlHTVpWWnJyZHhrN29KQUpvN1N4MGttbm1EZjkzN1ZIOEdoUQ?oc=5",
-        "pubDate": "Sun, 23 Aug 2026 16:03:00 GMT"
-      },
-      "sparkline": null
     },
     {
       "name": "Cursor",
@@ -139,9 +114,54 @@
       "logo": "https://www.google.com/s2/favicons?domain=cursor.com&sz=128",
       "ticker": null,
       "headline": {
-        "title": "How Cursor beat Git's scalability shortcomings - The Register",
-        "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNYm1fYTlibHZYZVlXRHIyUUpFVFEwTmRTTXM0cTVNbUVlT2VBVU9ibm1FZkdJWjhGdk1oRk1GN1A3SWlPUFRfQWUtdjF5WDdLWWpKVTRmQlN4LVRiZnpNX3RfNVVkbGhGNEtiNktfc01Lamxwb2JGelFGaGlaSFJpVWRNRlV0WjlSYWg1N0J1NnVEVE5tdzVqNFVOb1FEeDNa?oc=5",
-        "pubDate": "Sun, 23 Aug 2026 13:45:00 GMT"
+        "title": "Not ‘Used to Losing’: Apparent Elon Musk Pep Talk to His Cursor Staff Paints Sad Picture - Gizmodo",
+        "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNS0RacUZ3VHBLXzdhdERZNEdrbmxfTG1JRG9IVFVBbC1MUFZSTUZ1cGVhZjdZZE5sMU1xSEo1ZGViSlRDWWMxZFptbFVsVURtai1TeDg5ck9NMjdqSHpCSHlyb3RoMGhEQUlfa01PYXNfVDdXem1vb2l4dG1jMktnNkFMWWxEdE00QnBxSU5hZ3Nabm1OSFVmMDBsWC1naDI4d2Y0cGgtUnl4UnNLdWtmOFB5UnlCcXc?oc=5",
+        "pubDate": "Tue, 25 Aug 2026 01:45:56 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "Mistral AI",
+      "tag": "LLMs",
+      "desc": "Europe's leading open-weight AI foundation models",
+      "url": "https://mistral.ai",
+      "initials": "M",
+      "logo": "https://www.google.com/s2/favicons?domain=mistral.ai&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "Mistral x HUMAIN - mistral.ai",
+        "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBoM215alpsRHFKLTB6NUJ1cmRubHpweTlaczlWaTAyeWRfaTAtWUVZZGZpU0thZGNlWnRRUnRMLTVtYzcyZEx3d0FwWFFJeTk5cDZv?oc=5",
+        "pubDate": "Mon, 24 Aug 2026 19:06:44 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "Scale AI",
+      "tag": "AI Data",
+      "desc": "Data labelling and RLHF infrastructure powering frontier AI",
+      "url": "https://scale.com",
+      "initials": "S",
+      "logo": "https://www.google.com/s2/favicons?domain=scale.com&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "5 signals of trusted AI: How organizations scale AI with security, governance, and observability - Microsoft",
+        "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxOaVg4dkdGSHFXcHh2eE1BVC02ejZEQmlQYkh5d1pJWDdEWjFMTi1xT0xReHo4d0hFbjFTWWNmeDhoeWY2MkRzVkdYVGtfcFJKVGdabFFVb3lRcVYxSXpWSldsQnVkUExQYWdWT1Ryb3o5cG1ORDZnRGI4dHNzWTYtd0FPMGE0NzJfOHU1cmRYNlpuUkNuTHByYmtmTGUwUEs1R2hHNjIzdmdydXFIQ1NsU1N1ald6bFhwb2pDZnFSdWNtS1pWN3ZZVlk1RFFfNzJsTWYtUk1UaTdReGpWdTBiZmlQZmtpVVg4UjRRRnpSVQ?oc=5",
+        "pubDate": "Mon, 24 Aug 2026 16:00:00 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "Groq",
+      "tag": "AI Chips",
+      "desc": "LPU inference chips delivering industry-leading token speed",
+      "url": "https://groq.com",
+      "initials": "G",
+      "logo": "https://www.google.com/s2/favicons?domain=groq.com&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "Nvidia says Groq racks will be online this year following $20 billion purchase - CNBC",
+        "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOMTFMRjRjUUFFMy1CZlRYODREeGdMaExJYTh3OTFReW5LNWxXakxkRzJhcURaMndxYmlrRUktSHV2QUNRcVhiclBYLTVFTmNrMXpsX2t4UWk4YXV2a0syVE00TzhKaXdlc2JGcnRfOTczNXcydUhrNmExYkg5bWFoVnRWTmpxUzU0Mm5icTV5ZXBhN1NyNGJiTEZ4aEtSNk16SDRLcVI3c1ByUdIBrwFBVV95cUxOYWZ0eW9xbUlMR21BU1N2WEtuak15QVBMSzUySUJIS2tFcDE2NFBuRDdHbktZdW9FV0JfbWVrQ3pZY0VQbWVwcEtsd1Rwa1BsdzYxdEZzUjdHSmNVQ3VrN1A2YWxYTFJTZTV5aFQ4WlVmWkVfTTFfeHJNZkhQVG9nR09HWEZDZ1Z1UENWVEhsYmF0aE9xS0VSOTVZOC00bHFKYXUyNnU3OUNsZzEtU0xZ?oc=5",
+        "pubDate": "Mon, 24 Aug 2026 15:00:01 GMT"
       },
       "sparkline": null
     }
