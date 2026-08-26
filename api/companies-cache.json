@@ -1,71 +1,72 @@
 {
-  "refreshed_at": "2026-08-25T06:55:23.645Z",
+  "refreshed_at": "2026-08-26T06:56:05.401Z",
   "companies": [
     {
-      "name": "xAI",
+      "name": "OpenAI",
       "tag": "LLMs",
-      "desc": "Elon Musk's AI company, developer of the Grok models",
-      "url": "https://x.ai",
-      "initials": "X",
-      "logo": "https://www.google.com/s2/favicons?domain=x.ai&sz=128",
+      "desc": "Creator of ChatGPT and the GPT family of foundation models",
+      "url": "https://openai.com",
+      "initials": "OAI",
+      "logo": "https://www.google.com/s2/favicons?domain=openai.com&sz=128",
       "ticker": null,
       "headline": {
-        "title": "Moderna basically cured cancer, so I used Grok Bot to create a trading strategy on it. It’s DESTROYING the market. - DataDrivenInvestor",
-        "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNaG50RkVWYUdlVnozc1BxdmNhYnoySmF5R3Y3c0xfamFEc1o2c1RVR0kxNXZPMDhYd21scERUVl90RGppNHhaalpUSmpiWDJGS3FSZ0VONzJ4V1BWeE05d25YVmlqWGE0U2syLWFKY055VTU4dllEY2J6NzVvcUh3NG1iNXNuLVlEVnFMdk44aFRpSXpnOF9VMnhWaGxMTHpZU1lQMjNGMERUekxrRmdhaHA5Sk1QN0hSV3ZQS1hZV3Z5N2pzdVY1Nmo2TDJXZXRN?oc=5",
-        "pubDate": "Tue, 25 Aug 2026 04:48:07 GMT"
+        "title": "Exclusive | OpenAI’s Head of Data Centers Has Left the Company - WSJ",
+        "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNR1RrUjMxSkNzODB0a3VTU0kyVTZBVktqYUxEdUFKZFBXRl9uUzhnUjlaX3FsWUNfcHozYS1Oa1VKeW43MDM2eFluZlpwMWltb0pXeDgyT2tST0l1WHg5Q0pxaVB5RG9NRmY2aW9rWmE4d3FmcmMwOEp1TVlFeUFETERXVENDVTR5MWc?oc=5",
+        "pubDate": "Tue, 25 Aug 2026 21:30:00 GMT"
       },
       "sparkline": null
     },
     {
-      "name": "Commonwealth Fusion",
-      "tag": "Energy",
-      "desc": "Next-generation tokamak fusion for clean energy at scale",
-      "url": "https://cfs.energy",
-      "initials": "CFS",
-      "logo": "https://www.google.com/s2/favicons?domain=cfs.energy&sz=128",
+      "name": "Anthropic",
+      "tag": "LLMs",
+      "desc": "AI safety company behind the Claude family of models",
+      "url": "https://anthropic.com",
+      "initials": "AN",
+      "logo": "https://www.google.com/s2/favicons?domain=anthropic.com&sz=128",
       "ticker": null,
       "headline": {
-        "title": "Don’t call us ‘nuclear’, say nuclear fusion start-ups - Financial Times",
-        "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOMG9SbjdsQlJPNktRX2NwWU5weG9PbGg5bzJGcmpVYWo1Um8xckhaWWY2NTNRcFVSb3VJeV9PX1dUNnZKcy0zQ1FRc1ZXT2tsOWcyaWp4clFONVRJTDl6SXhQcjJQN3NWRWNEWTNRQUVHM21Vb2tuSUg4VjhqMktpa01jU1U?oc=5",
-        "pubDate": "Tue, 25 Aug 2026 04:09:21 GMT"
+        "title": "Exclusive | Anthropic Expected to Tell Investors It Sees Over $30 Trillion in Potential Revenue - WSJ",
+        "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPZjZaazBLZXFzWnlOOHJ2b24wZzZsOGd6Sy11ZGF2NXZ1NmJ0bWdYNklaOUszQ2NMT2J0YTh6X0V6ZUJNVl9LVF82blJCTHZadHEybHN1WEFBMy1NdXNoenIxNGdudjZscEVQT09xMjRjU3htekdoNk45SzdkbGRlMUdKWUJCVlpzcFlYM1RLSlVqWHBtZUM0azctZV8xaWpvbHJLcmxGNXQ5bV9Mc1JjQVJXcXZnaWJ1MmJN?oc=5",
+        "pubDate": "Tue, 25 Aug 2026 15:58:00 GMT"
       },
       "sparkline": null
     },
     {
-      "name": "Palantir",
-      "tag": "Data Analytics",
-      "desc": "Big-data analytics platforms for government and enterprise",
-      "url": "https://palantir.com",
-      "initials": "PL",
-      "logo": "https://www.google.com/s2/favicons?domain=palantir.com&sz=128",
-      "ticker": "PLTR",
+      "name": "Rocket Lab",
+      "tag": "Space",
+      "desc": "Small-satellite launch provider and space systems manufacturer",
+      "url": "https://rocketlabusa.com",
+      "initials": "RL",
+      "logo": "https://www.google.com/s2/favicons?domain=rocketlabusa.com&sz=128",
+      "ticker": "RKLB",
       "headline": {
-        "title": "The little-known French company trying to unseat Palantir in Europe - Financial Times",
-        "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNRHFuV1JDd1lJZ1RjdEdGQ09xbFZ2VmlJb01YU1hGcU53dEpOdGVSUWh1cElaSFNLZ0VNMm4yTnJfOVBtX0t3NjNOLUpHSHhDU055VW8tbEFSM2l1c0RuVGZraWREaHFTYWVaUWF0ckRra0k5cFBUM1R1bl9wemZBd0dxclg?oc=5",
-        "pubDate": "Tue, 25 Aug 2026 04:00:09 GMT"
+        "title": "Rocket Lab Stock: Launch This Bear Put Spread That Aims For A $295 Profit - Investor's Business Daily",
+        "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNYnRuT3dKUmN0RHRjTnZ2eUFWREszM3pFY1QxcFZjMlpRNjRfN0pBR1F1ajVNbjY5NjBGYjVEdnFUdWVGa19VYzdfbWRLVFluZHhNdkRmaEtiNGlRQUNvNmhFVFVpaUhreHlPNWtUQkZzY1VQM0d1eWEtR2tISTVTeC1QQjlzWV9SR2RTblQxZzVNZmpwLWRpcUF4MmpzalhrNkh1dEtLUmtmYVV6UWota1hvZmZXRGhmSWEyMlQ3U2c?oc=5",
+        "pubDate": "Tue, 25 Aug 2026 15:55:00 GMT"
       },
       "sparkline": [
-        131.52999877929688,
-        123.52999877929688,
-        123,
-        122.26000213623047,
-        123.05999755859375,
-        125.6500015258789,
-        162.66000366210938,
-        158.42999267578125,
-        155.9199981689453,
-        172.00999450683594,
-        175.22999572753906,
-        174.94000244140625,
-        171.0399932861328,
-        179.00999450683594,
-        174.0399932861328,
-        172.5500030517578,
-        171.5399932861328,
-        175.19000244140625,
-        173.9600067138672,
-        179.94000244140625,
-        175.88999938964844
+        66.94000244140625,
+        63.88999938964844,
+        58.599998474121094,
+        64.68000030517578,
+        64.94999694824219,
+        70.43000030517578,
+        74.4800033569336,
+        74.81999969482422,
+        75.66999816894531,
+        82.83000183105469,
+        80.04000091552734,
+        80.01000213623047,
+        81.16999816894531,
+        80.0999984741211,
+        80.25,
+        82.08000183105469,
+        79.16000366210938,
+        75.83999633789062,
+        72.94999694824219,
+        72.56999969482422,
+        68.27999877929688,
+        66.91000366210938
       ]
     },
     {
@@ -77,9 +78,9 @@
       "logo": "https://www.google.com/s2/favicons?domain=crowdstrike.com&sz=128",
       "ticker": "CRWD",
       "headline": {
-        "title": "CrowdStrike Earnings: What To Look For From CRWD - Yahoo Finance",
-        "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNd0pwTWlvWG4wbVpEbkVTLWNldF81YnFsVmZZSXBFTXlzMWdUckIwMEFsN2M4RUg2dlZiOV9fOTBqakhkblJldWtsUWRfSHNrd3lFWDZzWlZNUl83VTFDeFh4Tzlnb0puUG5sN2NtcUxaaGFEUmhXeVRHeEx4NU9KUEd3bjhnR2dKRkFsUElrOU9MN2Q2bWl5YTdhRQ?oc=5",
-        "pubDate": "Tue, 25 Aug 2026 03:33:00 GMT"
+        "title": "CrowdStrike’s Daniel Bernard: Frontier AI Requires Cybersecurity’s ‘Greatest Mobilization’ Ever - crn.com",
+        "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQdHRYX2VVZGV6NUg1QVIxUUliWEM4VXlLVnlNWWJTS25BYU5MVUdsTkNKczROT2U4R2pBVVl1SUVpQVlJNmFHMzNQTW00TDV4MmQ0d2pIU3FlcHFIY0dQOTI4X0JnWjJwNjB1UE1nZDBNdlNuc29QMkU0ekt1SHpZQkVXV0xiSlFxQjhGNjZkVjBxaEZZN3JHYjdDOEVkVDNCZUVuTHNjc2loaFp0ZXJtSlN2RUx6YmZ4aGpKRDh5dllNVXliTWUxeU9vOA?oc=5",
+        "pubDate": "Tue, 25 Aug 2026 13:14:00 GMT"
       },
       "sparkline": [
         180.11000061035156,
@@ -102,38 +103,62 @@
         201.6300048828125,
         190.33999633789062,
         191.9499969482422,
-        190.67999267578125
+        190.67999267578125,
+        185.3800048828125
       ]
     },
     {
-      "name": "Cursor",
-      "tag": "Code Editor",
-      "desc": "AI-native code editor that pairs with Claude and GPT-4",
-      "url": "https://cursor.com",
-      "initials": "C",
-      "logo": "https://www.google.com/s2/favicons?domain=cursor.com&sz=128",
+      "name": "Perplexity",
+      "tag": "AI Search",
+      "desc": "Answer engine combining web search with AI-generated summaries",
+      "url": "https://perplexity.ai",
+      "initials": "P",
+      "logo": "https://www.google.com/s2/favicons?domain=perplexity.ai&sz=128",
       "ticker": null,
       "headline": {
-        "title": "Not ‘Used to Losing’: Apparent Elon Musk Pep Talk to His Cursor Staff Paints Sad Picture - Gizmodo",
-        "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNS0RacUZ3VHBLXzdhdERZNEdrbmxfTG1JRG9IVFVBbC1MUFZSTUZ1cGVhZjdZZE5sMU1xSEo1ZGViSlRDWWMxZFptbFVsVURtai1TeDg5ck9NMjdqSHpCSHlyb3RoMGhEQUlfa01PYXNfVDdXem1vb2l4dG1jMktnNkFMWWxEdE00QnBxSU5hZ3Nabm1OSFVmMDBsWC1naDI4d2Y0cGgtUnl4UnNLdWtmOFB5UnlCcXc?oc=5",
-        "pubDate": "Tue, 25 Aug 2026 01:45:56 GMT"
+        "title": "Perplexity partners with Nvidia to launch Portable Computer, a fully local AI agent with zero token costs - Venturebeat",
+        "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPRVpZRmNaMUJxNHZsUEJtUGhpc2ZBaTloU3BOSFg0LU9IV3Yxcl9GbXh0Y2VRaGo5STFmYTZBNzNnUzdjSEsyUjR6YXVJbmRCelNqbVRQNUNPVmhGQ2ZCQk53T2MzZ0dZNjdLR3V3RlhGa0tMZU9NbExmcVo0a1ctRGhJOGxWeGVVMW9aTndVSHFwVXBpcTYyRUxjS1owWXhxcDFTdmMzOTNuZDdFeGU2WXktaEV5VHF1T21WZi00eUZhRzN0TmFMMkNqeDFUWUY0ZXAxcWt5THFJTEE?oc=5",
+        "pubDate": "Tue, 25 Aug 2026 13:00:00 GMT"
       },
       "sparkline": null
     },
     {
-      "name": "Mistral AI",
-      "tag": "LLMs",
-      "desc": "Europe's leading open-weight AI foundation models",
-      "url": "https://mistral.ai",
-      "initials": "M",
-      "logo": "https://www.google.com/s2/favicons?domain=mistral.ai&sz=128",
-      "ticker": null,
+      "name": "Palantir",
+      "tag": "Data Analytics",
+      "desc": "Big-data analytics platforms for government and enterprise",
+      "url": "https://palantir.com",
+      "initials": "PL",
+      "logo": "https://www.google.com/s2/favicons?domain=palantir.com&sz=128",
+      "ticker": "PLTR",
       "headline": {
-        "title": "Mistral x HUMAIN - mistral.ai",
-        "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBoM215alpsRHFKLTB6NUJ1cmRubHpweTlaczlWaTAyeWRfaTAtWUVZZGZpU0thZGNlWnRRUnRMLTVtYzcyZEx3d0FwWFFJeTk5cDZv?oc=5",
-        "pubDate": "Mon, 24 Aug 2026 19:06:44 GMT"
+        "title": "The little-known French company trying to unseat Palantir in Europe - Financial Times",
+        "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNRHFuV1JDd1lJZ1RjdEdGQ09xbFZ2VmlJb01YU1hGcU53dEpOdGVSUWh1cElaSFNLZ0VNMm4yTnJfOVBtX0t3NjNOLUpHSHhDU055VW8tbEFSM2l1c0RuVGZraWREaHFTYWVaUWF0ckRra0k5cFBUM1R1bl9wemZBd0dxclg?oc=5",
+        "pubDate": "Tue, 25 Aug 2026 10:40:40 GMT"
       },
-      "sparkline": null
+      "sparkline": [
+        131.52999877929688,
+        123.52999877929688,
+        123,
+        122.26000213623047,
+        123.05999755859375,
+        125.6500015258789,
+        162.66000366210938,
+        158.42999267578125,
+        155.9199981689453,
+        172.00999450683594,
+        175.22999572753906,
+        174.94000244140625,
+        171.0399932861328,
+        179.00999450683594,
+        174.0399932861328,
+        172.5500030517578,
+        171.5399932861328,
+        175.19000244140625,
+        173.9600067138672,
+        179.94000244140625,
+        175.88999938964844,
+        172.72999572753906
+      ]
     },
     {
       "name": "Scale AI",
@@ -144,24 +169,24 @@
       "logo": "https://www.google.com/s2/favicons?domain=scale.com&sz=128",
       "ticker": null,
       "headline": {
-        "title": "5 signals of trusted AI: How organizations scale AI with security, governance, and observability - Microsoft",
-        "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxOaVg4dkdGSHFXcHh2eE1BVC02ejZEQmlQYkh5d1pJWDdEWjFMTi1xT0xReHo4d0hFbjFTWWNmeDhoeWY2MkRzVkdYVGtfcFJKVGdabFFVb3lRcVYxSXpWSldsQnVkUExQYWdWT1Ryb3o5cG1ORDZnRGI4dHNzWTYtd0FPMGE0NzJfOHU1cmRYNlpuUkNuTHByYmtmTGUwUEs1R2hHNjIzdmdydXFIQ1NsU1N1ald6bFhwb2pDZnFSdWNtS1pWN3ZZVlk1RFFfNzJsTWYtUk1UaTdReGpWdTBiZmlQZmtpVVg4UjRRRnpSVQ?oc=5",
-        "pubDate": "Mon, 24 Aug 2026 16:00:00 GMT"
+        "title": "Verizon taps Google Cloud to scale AI operations - Mobile Europe",
+        "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOVVJWOHJBMDFEQzlEYjlSQVlOUXA2cWpQOTRRSjBXLUVpenBaS0dXbm85WENfT2hfNzVCb3VlU01XVkVnQmc1MHhvcUNrQWE2cW5PMXpKMjB4YmZzSXg0WnpTaVVmbXNjTWc4SjBwb2dWRkhndmdSWGZ2M2FubTR6VDlLbjV6UEE?oc=5",
+        "pubDate": "Tue, 25 Aug 2026 09:06:18 GMT"
       },
       "sparkline": null
     },
     {
-      "name": "Groq",
-      "tag": "AI Chips",
-      "desc": "LPU inference chips delivering industry-leading token speed",
-      "url": "https://groq.com",
-      "initials": "G",
-      "logo": "https://www.google.com/s2/favicons?domain=groq.com&sz=128",
+      "name": "Waymo",
+      "tag": "Autonomy",
+      "desc": "The most miles driven autonomously of any robotaxi service",
+      "url": "https://waymo.com",
+      "initials": "W",
+      "logo": "https://www.google.com/s2/favicons?domain=waymo.com&sz=128",
       "ticker": null,
       "headline": {
-        "title": "Nvidia says Groq racks will be online this year following $20 billion purchase - CNBC",
-        "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOMTFMRjRjUUFFMy1CZlRYODREeGdMaExJYTh3OTFReW5LNWxXakxkRzJhcURaMndxYmlrRUktSHV2QUNRcVhiclBYLTVFTmNrMXpsX2t4UWk4YXV2a0syVE00TzhKaXdlc2JGcnRfOTczNXcydUhrNmExYkg5bWFoVnRWTmpxUzU0Mm5icTV5ZXBhN1NyNGJiTEZ4aEtSNk16SDRLcVI3c1ByUdIBrwFBVV95cUxOYWZ0eW9xbUlMR21BU1N2WEtuak15QVBMSzUySUJIS2tFcDE2NFBuRDdHbktZdW9FV0JfbWVrQ3pZY0VQbWVwcEtsd1Rwa1BsdzYxdEZzUjdHSmNVQ3VrN1A2YWxYTFJTZTV5aFQ4WlVmWkVfTTFfeHJNZkhQVG9nR09HWEZDZ1Z1UENWVEhsYmF0aE9xS0VSOTVZOC00bHFKYXUyNnU3OUNsZzEtU0xZ?oc=5",
-        "pubDate": "Mon, 24 Aug 2026 15:00:01 GMT"
+        "title": "They Were Lyft Drivers. Now They're Cleaning Waymos. - Business Insider",
+        "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQeFE4ekg1T3ZRV1lvQ0lWNnpHZE1BVjlIU1BIcEFyWU9OclVGMWpTUVR5c3A4SkZzSGNjdXB0M2MtSE1wMnpCUW9ocU9VNjlQR0dYWDgtVTI3Q2hzQzNqSmJDaEFIUWx2ZGo2MnNsSUFJVnVkdGI0WnJFTXRmbF83X1NnSDE4dldmb0E?oc=5",
+        "pubDate": "Tue, 25 Aug 2026 08:13:01 GMT"
       },
       "sparkline": null
     }
