@@ -1,6 +1,91 @@
 {
-  "refreshed_at": "2026-08-27T17:29:37.830Z",
+  "refreshed_at": "2026-08-28T18:24:56.516Z",
   "companies": [
+    {
+      "name": "Anthropic",
+      "tag": "LLMs",
+      "desc": "AI safety company behind the Claude family of models",
+      "url": "https://anthropic.com",
+      "initials": "AN",
+      "logo": "https://www.google.com/s2/favicons?domain=anthropic.com&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "Pentagon’s blacklisting of Anthropic was unlawful, US judge rules - The Guardian",
+        "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPSlJhNzBFNUxUMW8xOWpySlkza2EyMENZSjBEQmJGc1Rrc2wtaXg0c0E0dGhqN092LXNqVHRRX0tyWUdHYi1rWmE5eGo2bWUtMS1KRmx0TUhxZ2JWdkUxNEVEaFdwUnJWN19hWkY1dmUzX0xsTm1CcjdvT2U5VGFmY3JJVUFGX2JEcHdNTVhMbnB0NVhEaEJRaEotaVBtQzJvbTJqa3lvcTVucGpjX1BQaGJ3?oc=5",
+        "pubDate": "Fri, 28 Aug 2026 16:26:00 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "Palantir",
+      "tag": "Data Analytics",
+      "desc": "Big-data analytics platforms for government and enterprise",
+      "url": "https://palantir.com",
+      "initials": "PL",
+      "logo": "https://www.google.com/s2/favicons?domain=palantir.com&sz=128",
+      "ticker": "PLTR",
+      "headline": {
+        "title": "Palantir Billionaire Peter Thiel Just Put 33% of His Portfolio Into These 3 Energy Stocks - Yahoo Finance",
+        "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNRHd3bGR4X1ZBbWpGZHVDOHdSSEw5dG5yR25GY18wM0YzZjQ4R1Z6cDY1Z0RIOV9ZdmRYT2xNOXpYVlk3Nk5ITEs2eGNFTVdFMFlDNW8za0d2V2pHWnlNbWc5SnAwaGEwQXRIaUl2SmE4LVpja0hSaU5GNFVSelBsVXJUODNtTmZRcTY0Tk1aNEtQSmlrVlhLY1lR?oc=5",
+        "pubDate": "Fri, 28 Aug 2026 15:50:00 GMT"
+      },
+      "sparkline": [
+        123.52999877929688,
+        123,
+        122.26000213623047,
+        123.05999755859375,
+        125.6500015258789,
+        162.66000366210938,
+        158.42999267578125,
+        155.9199981689453,
+        172.00999450683594,
+        175.22999572753906,
+        174.94000244140625,
+        171.0399932861328,
+        179.00999450683594,
+        174.0399932861328,
+        172.5500030517578,
+        171.5399932861328,
+        175.19000244140625,
+        173.9600067138672,
+        179.94000244140625,
+        175.88999938964844,
+        172.72999572753906,
+        177.5,
+        185.92999267578125,
+        185.82000732421875
+      ]
+    },
+    {
+      "name": "Anduril",
+      "tag": "Defense AI",
+      "desc": "Autonomous defense systems and AI-enabled military hardware",
+      "url": "https://anduril.com",
+      "initials": "A",
+      "logo": "https://www.google.com/s2/favicons?domain=anduril.com&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "Taiwan to Acquire More Than 2,000 Altius Drones From Anduril - The Defense Post",
+        "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5HNERLODVMNlQ2Y3oxdi0yTk9kTThTVzJ0UG5Na0xxdDdkYTFiVXNETXhGY0U3QXdOZHpWczFEMTdiSE1yTVk2Zk1sUnU0QjBkdEJjdUhwemhEZjVwM0tTQ2RPS3dtU2NTYXZRbkhkRVhKd1UwRG1sddIBfkFVX3lxTE5CbkRlR0tER3Mxc1IyZ1FkUUNoV0ctemZaNXZibXZsbF80MlVjR2VISm5BcVFhM3EtUndpNWZPZTJKTHBCd0hkTkZzazZMY0E3ZUhiOG9Ua1N1c3ZyX3k4eTZJbmJxM05FN3FMdGNmZVhJdlFjdmlzWGlDWWFFQQ?oc=5",
+        "pubDate": "Fri, 28 Aug 2026 09:03:58 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "xAI",
+      "tag": "LLMs",
+      "desc": "Elon Musk's AI company, developer of the Grok models",
+      "url": "https://x.ai",
+      "initials": "X",
+      "logo": "https://www.google.com/s2/favicons?domain=x.ai&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "Musk’s AI company sues its users as victim lawsuits over Grok deepfakes mount - Politico",
+        "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOQlZJbi1FeDJrVHdzOGFoVWNKTG5MNFpVVDFyc0ZDM3RfYmVXZWtDMlZlYzVLelZ6MVliWGlqYlR5U2hPZGhDXzcyMEsxTU5VbF9UeExqLXBaTF9aVnZsNndBNXMtNUpqazNVcjFlQW5aUUJ4TDR1dm5mbnVDMFkxQzFXQUtjZHM5Y01ndTZBb2M?oc=5",
+        "pubDate": "Fri, 28 Aug 2026 09:00:00 GMT"
+      },
+      "sparkline": null
+    },
     {
       "name": "Scale AI",
       "tag": "AI Data",
@@ -10,81 +95,66 @@
       "logo": "https://www.google.com/s2/favicons?domain=scale.com&sz=128",
       "ticker": null,
       "headline": {
-        "title": "Australian organisations still struggle to scale AI despite rising interest - Consultancy.com.au",
-        "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPbnFYNnAyNTRWZGVSNGNhcTA2YlFnVHE4N0lmS0lLMjR4RW9kdEMtcDhHS0M2WlFCVVZDcHFHV0hYdUtEYVAtVktha2RxTUE1bHNhTXIzT0Zjd21iWXZDWmNmMHdHUXRVOTRMV0tvT21kZDlHQ1NmUThGVEN4SU16Z3hsQ0t1bFY5RlNTLWg4emV5NHgzeTBLX1BuM2ZpQlRIWEhNM1VlSXh2X3A3M1IwLUg4cXlsQ2pmNEN0QjVn0gG-AUFVX3lxTE9ucVg2cDI1NFZkZVI0Y2FxMDZiUWdUcTg3SWZLSUsyNHhFb2R0Qy1wOEdLQzZaUUJVVkNwcUdXSFh1S0RhUC1WS2FrZHFNQTVsc2FNcjNPRmN3bWJZdkNaY2Ywd0dRdFU5NExXS29PbWRkOUdDU2ZROEZUQ3hJTXpneGxDS3VsVjlGU1MtaDh6ZXk0eDN5MEtfUG4zZmlCVEhYSE0zVWVJeHZfcDczUjAtSDhxeWxDamY0Q3RCNWc?oc=5",
-        "pubDate": "Thu, 27 Aug 2026 14:53:27 GMT"
+        "title": "Roma AI raises $1.2M seed to scale AI agents across Latin America - Dealroom",
+        "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPTDU4akJwNmRyTzZ4ZVdGOU1JWjAxR01VWkczeTFBeW9mZXlUN212Qkd1ME5YQl9BaUVmNHNkel9tQlREM0ZpLTRwcEpCOVExSkV1ckN5MzVJUFYtTkp0aVJUUXlyUlhlam1Xank3QjdiRDBhQ3daaDFmUFNiTGJJdEZ3Z1AzRUx3YTRYLXBZQ2dSSmRwb01rdjlyWS16V2c?oc=5",
+        "pubDate": "Fri, 28 Aug 2026 07:27:50 GMT"
       },
       "sparkline": null
     },
     {
-      "name": "Waymo",
-      "tag": "Autonomy",
-      "desc": "The most miles driven autonomously of any robotaxi service",
-      "url": "https://waymo.com",
-      "initials": "W",
-      "logo": "https://www.google.com/s2/favicons?domain=waymo.com&sz=128",
+      "name": "Neuralink",
+      "tag": "Brain-Computer",
+      "desc": "Implantable neural interfaces for restoring and augmenting human capability",
+      "url": "https://neuralink.com",
+      "initials": "NL",
+      "logo": "https://www.google.com/s2/favicons?domain=neuralink.com&sz=128",
       "ticker": null,
       "headline": {
-        "title": "Waymo takes a shot at Tesla’s self-driving: it’s a ‘false summit’ - Electrek",
-        "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1ydDJVMER2aVpVS2g4alFFZEpMbHFUbkRKZ3BRajdkTkI3WERpR2RvbXZtVENieFZtQmNxeW01ZHdKMGhxZjRRQml0dFlwS2pMSVkxOEtoTjhOWnpuOEZwOVE3X204N0tNNjE4cFpIY2hNOWp6ODBTMw?oc=5",
-        "pubDate": "Thu, 27 Aug 2026 13:49:00 GMT"
+        "title": "Police sergeant recounts his Neuralink journey with Elon Musk’s brain chip - Teslarati",
+        "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPdmxWTFM4eWhYaTNZS2dkcEtqeFZyMlRjT253T0VZSFFZUTgtTVV4U21xRWVaWFU4WlZhLXZSSGh0WEM4UzZTTjNjOTZrZzdwb1A3enRRMWRlWnNsYlpWOFBldWhLdEIxaHprOWZUaHBsc2xvTm1NMjNXT0E0enBPVWFvTlNuWDkwbjhYMGd4aHh1V1RDOVRlaWFxemFpVmtLNHc?oc=5",
+        "pubDate": "Fri, 28 Aug 2026 06:46:16 GMT"
       },
       "sparkline": null
     },
     {
-      "name": "CrowdStrike",
-      "tag": "Cybersecurity",
-      "desc": "Cloud-native endpoint protection and threat intelligence",
-      "url": "https://crowdstrike.com",
-      "initials": "CS",
-      "logo": "https://www.google.com/s2/favicons?domain=crowdstrike.com&sz=128",
-      "ticker": "CRWD",
+      "name": "Rocket Lab",
+      "tag": "Space",
+      "desc": "Small-satellite launch provider and space systems manufacturer",
+      "url": "https://rocketlabusa.com",
+      "initials": "RL",
+      "logo": "https://www.google.com/s2/favicons?domain=rocketlabusa.com&sz=128",
+      "ticker": "RKLB",
       "headline": {
-        "title": "Okta's stock skyrockets 20%, CrowdStrike's surges 15% as rising AI threat boosts earnings - CNBC",
-        "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQYVJldC1ZTV9paFZLVVlkSUUzSUZDVmxPWXVibjd0THZQeHVzY09YdTdXbUEzLW5rR01GUlkwZ2l3cU9QUG5xdnFzZXZpSFJwQ1R3Z1dNSlBCaEstcURpOGFJYmJ6ZzUzQVdJX19vaUNtT2VUVmo2WVRJTEY0YlIwM29CUHcwOEF4cnpWcm12ZlFOdzVpQzIyS3JUQ0lfTnVEZ0NVWHZvallsWnNLYWl5bTVCUDdHUdIBuwFBVV95cUxNN2pydGJQS1BhLTIwTzZfUmpHMExfQXNxdDlEd2IwcWVnS2xvRktLc3dmbXpzM0xscjhPX29INzVLa3hONHkyUVBmcXg4bUhYN1dVYVVKUXE1YjNLRW5OWDFBSGpXVG40Q2hLUm1VV1NHWERoNlF2Vlp3akJNZl96MXg0TGtjZ1BGVXNFVmtJM2NCRVhCeHNuUG94UUM5UEhpMG5rSzZKaTBOSjUtRlp3S0ZWNEgtZS1aMmVV?oc=5",
-        "pubDate": "Thu, 27 Aug 2026 13:47:39 GMT"
+        "title": "SpaceX Pushes FCC to Scrutinize Rocket Lab-Iridium Deal Amid Spectrum Clash - PCMag",
+        "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOd01tNmg4eHVjQ2FtbEQyRWhCQnQ1bGxXcE1BNTVYNlBUZDNXTUNzYURkQU93Q0dIWWppZWJseXdKSjN1VnIwblJibzdFb01QSF95dFdCekVIand0LTJ2MXZGbU9XdkZQNW92VmthaExzVWx4Q2RXZ2RoaTc0OXgweElrUjJmUks1V2sza1pDT3FKTS1iNUNfT1Z0ajJWWWhaV01yVg?oc=5",
+        "pubDate": "Fri, 28 Aug 2026 00:01:26 GMT"
       },
       "sparkline": [
-        180.11000061035156,
-        181.8000030517578,
-        179.3800048828125,
-        185.22000122070312,
-        190.86000061035156,
-        202.5399932861328,
-        211.22000122070312,
-        209.86000061035156,
-        207.38999938964844,
-        214.4199981689453,
-        225.16000366210938,
-        221.89999389648438,
-        221.77999877929688,
-        225.52999877929688,
-        216.9499969482422,
-        213.89999389648438,
-        212.9199981689453,
-        201.6300048828125,
-        190.33999633789062,
-        191.9499969482422,
-        190.67999267578125,
-        185.3800048828125,
-        189.17999267578125,
-        225.4250030517578
+        63.88999938964844,
+        58.599998474121094,
+        64.68000030517578,
+        64.94999694824219,
+        70.43000030517578,
+        74.4800033569336,
+        74.81999969482422,
+        75.66999816894531,
+        82.83000183105469,
+        80.04000091552734,
+        80.01000213623047,
+        81.16999816894531,
+        80.0999984741211,
+        80.25,
+        82.08000183105469,
+        79.16000366210938,
+        75.83999633789062,
+        72.94999694824219,
+        72.56999969482422,
+        68.27999877929688,
+        66.91000366210938,
+        66.18000030517578,
+        67.52999877929688,
+        63.685001373291016
       ]
-    },
-    {
-      "name": "Cursor",
-      "tag": "Code Editor",
-      "desc": "AI-native code editor that pairs with Claude and GPT-4",
-      "url": "https://cursor.com",
-      "initials": "C",
-      "logo": "https://www.google.com/s2/favicons?domain=cursor.com&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "EXCLUSIVE: Russian-speaking cybercriminals used SpaceX’s Cursor AI tool to hack seven companies - Reuters",
-        "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNaXdXdy00QS15UDVRUERiUFlHYlp5QXI5X0d2b05GMlUzZjFYZG1FcFJkd2FQbGRoWFVKMWJiU21ydmpyNU1kRTVvSWMwUXg2bGRhZmNkMTRtaFNQTmYtQjZmOGFXVG9aNW1ReDRwUk9XRzdDSlU3WDRMUUhhNEtrY2tLOUo3eE82ajlFYWJlRTdfLUJ6RzJ6RmtlcFByUWN3emt0aUxDTVIwV016bTNmR1N1cWhyWVB2QzBuV0tESQ?oc=5",
-        "pubDate": "Thu, 27 Aug 2026 12:08:50 GMT"
-      },
-      "sparkline": null
     },
     {
       "name": "OpenAI",
@@ -95,54 +165,9 @@
       "logo": "https://www.google.com/s2/favicons?domain=openai.com&sz=128",
       "ticker": null,
       "headline": {
-        "title": "Unexpected chat between OpenAI agents led to Hugging Face hack - BBC",
-        "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE8wUDZvbkprZlBDMkE4QlhtdmFySnp3RFhQY3dUSG5aT3ZUbDNrY0kydmREaFgtblI4eld0bDhYeEw2SktvakloQmNUc2ZLcHdFU1AtemI2dF9LUlo3?oc=5",
-        "pubDate": "Wed, 26 Aug 2026 22:03:45 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "Anthropic",
-      "tag": "LLMs",
-      "desc": "AI safety company behind the Claude family of models",
-      "url": "https://anthropic.com",
-      "initials": "AN",
-      "logo": "https://www.google.com/s2/favicons?domain=anthropic.com&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "Anthropic to Pay Nscale $45 Billion for AI Computing Power - Bloomberg.com",
-        "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPVzVZckV2QWFDb2xsVWN6OGhuamVpbENEQTZxZWk3SjFxVWxhSlVWeERya1lGM0dzbGx0RGlsMU1kLWhxcFQxVldKZThrR01CUS1Gcnhya0NEMGk2aklKMnZIRHIzZlNlTWRIekdlQ19jaU5NczBNUmpqY1hWVlVTbTFVclF2dWRGUVZ3SUN2NFp4OXA3QktYcW5LWWNHZWtmMDBxVFItc2FBS3Iy?oc=5",
-        "pubDate": "Wed, 26 Aug 2026 17:02:32 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "Perplexity",
-      "tag": "AI Search",
-      "desc": "Answer engine combining web search with AI-generated summaries",
-      "url": "https://perplexity.ai",
-      "initials": "P",
-      "logo": "https://www.google.com/s2/favicons?domain=perplexity.ai&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "Now Perplexity is trying to get into the local AI action - The Register",
-        "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQdU1JYlBBZGZ2R1hvbFhEd21CUGIxS2o3bmlPTE9zZ2ZLc1JmOW0tTUs4aUVCU3RUbC1DOXoyN0M5ZHJQOHE5SDhQczZrVGtqYUttWG9ka2N4RkN3Z1UwOVdGSjFrQ3J5bllWLWVFdDFPd1ZYOW5nbmU4UDd1OHRlOWIyMFNNVmE3X1pHbFY5WGZzM0NQNnR2WEN0SDlvTVlXZHloeHBpZVktM25pOXdRaGlESQ?oc=5",
-        "pubDate": "Tue, 25 Aug 2026 23:39:23 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "Commonwealth Fusion",
-      "tag": "Energy",
-      "desc": "Next-generation tokamak fusion for clean energy at scale",
-      "url": "https://cfs.energy",
-      "initials": "CFS",
-      "logo": "https://www.google.com/s2/favicons?domain=cfs.energy&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "US roadmap targets fusion deployment by mid 2030s - Reuters",
-        "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOZlhOY0FIeVVLWDYxTXlvYWNjZ3Vnem9lVDRPVHBLaFYwN3hFX1F1TXVOYkNpVTY1eGNpWjllaGE1Mk9zQmhzMXZyNGtudTU2d25KWF9ITWtDWkpIS1YyY2xFTkNhMUpxMXVVd0RrdzRFVngzVTg3WWN5ODBJdmlEUVJPV2s0cWFCY3NXRXZqU2dLQmxGclBoZjE3Rm1ZVFhaM2pFNzQ0dU5NUExM?oc=5",
-        "pubDate": "Tue, 25 Aug 2026 15:55:51 GMT"
+        "title": "Google, Microsoft and OpenAI among 100 firms calling for better cyber defences - BBC",
+        "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBwblRxaTl2ejlEUC1ZSE1MNVc0dFQ5NjI4bGNxWFNuN3VsMjhhaUNwdU0wM2RVNTVRYTBHQklUVmV5aVZZczRYbjVnaXkwTzJFTjdGMGxsQ1VJeEVG?oc=5",
+        "pubDate": "Thu, 27 Aug 2026 17:01:27 GMT"
       },
       "sparkline": null
     }
