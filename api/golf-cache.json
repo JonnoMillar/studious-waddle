@@ -1,24 +1,7 @@
 {
   "tee_times": [
     {
-      "date": "2026-08-29",
-      "tee_time": "08:20",
-      "course_name": "Ilford Golf Club",
-      "facility_id": 15715,
-      "course_rating": 3.1377,
-      "course_review_count": 109,
-      "course_address": "Illford, Essex",
-      "distance_miles": 9.0,
-      "holes": 18,
-      "max_players": 4,
-      "price_gbp": 25.0,
-      "is_hot_deal": false,
-      "rate_type": "Best Available",
-      "booking_url": "https://www.golfnow.co.uk/tee-times/facility/15715/search",
-      "scraped_date": "2026-08-22"
-    },
-    {
-      "date": "2026-08-29",
+      "date": "2026-08-30",
       "tee_time": "06:52",
       "course_name": "Chingford Golf Course",
       "facility_id": 14042,
@@ -32,10 +15,10 @@
       "is_hot_deal": false,
       "rate_type": "Best Available",
       "booking_url": "https://www.golfnow.co.uk/tee-times/facility/14042/search",
-      "scraped_date": "2026-08-22"
+      "scraped_date": "2026-08-28"
     },
     {
-      "date": "2026-08-30",
+      "date": "2026-09-05",
       "tee_time": "06:45",
       "course_name": "Chingford Golf Course",
       "facility_id": 14042,
@@ -49,11 +32,28 @@
       "is_hot_deal": false,
       "rate_type": "Best Available",
       "booking_url": "https://www.golfnow.co.uk/tee-times/facility/14042/search",
-      "scraped_date": "2026-08-22"
+      "scraped_date": "2026-08-28"
     },
     {
-      "date": "2026-08-22",
-      "tee_time": "07:36",
+      "date": "2026-08-29",
+      "tee_time": "08:20",
+      "course_name": "Whalebone Golf Club (Formerly Golf Kingdom)",
+      "facility_id": 18980,
+      "course_rating": 4.098,
+      "course_review_count": 11,
+      "course_address": "Romford, Essex",
+      "distance_miles": 12.0,
+      "holes": 18,
+      "max_players": 4,
+      "price_gbp": 32.0,
+      "is_hot_deal": false,
+      "rate_type": "Best Available",
+      "booking_url": "https://www.golfnow.co.uk/tee-times/facility/18980/search",
+      "scraped_date": "2026-08-28"
+    },
+    {
+      "date": "2026-08-29",
+      "tee_time": "07:12",
       "course_name": "London Airlinks Golf Course",
       "facility_id": 15559,
       "course_rating": 3.5127,
@@ -66,10 +66,10 @@
       "is_hot_deal": false,
       "rate_type": "Best Available",
       "booking_url": "https://www.golfnow.co.uk/tee-times/facility/15559/search",
-      "scraped_date": "2026-08-22"
+      "scraped_date": "2026-08-28"
     },
     {
-      "date": "2026-08-23",
+      "date": "2026-08-30",
       "tee_time": "07:20",
       "course_name": "London Airlinks Golf Course",
       "facility_id": 15559,
@@ -83,45 +83,45 @@
       "is_hot_deal": false,
       "rate_type": "Best Available",
       "booking_url": "https://www.golfnow.co.uk/tee-times/facility/15559/search",
-      "scraped_date": "2026-08-22"
+      "scraped_date": "2026-08-28"
+    },
+    {
+      "date": "2026-09-05",
+      "tee_time": "07:04",
+      "course_name": "London Airlinks Golf Course",
+      "facility_id": 15559,
+      "course_rating": 3.5127,
+      "course_review_count": 65,
+      "course_address": "Hounslow, Middlesex",
+      "distance_miles": 12.0,
+      "holes": 18,
+      "max_players": 4,
+      "price_gbp": 35.0,
+      "is_hot_deal": false,
+      "rate_type": "Best Available",
+      "booking_url": "https://www.golfnow.co.uk/tee-times/facility/15559/search",
+      "scraped_date": "2026-08-28"
+    },
+    {
+      "date": "2026-09-06",
+      "tee_time": "07:12",
+      "course_name": "London Airlinks Golf Course",
+      "facility_id": 15559,
+      "course_rating": 3.5127,
+      "course_review_count": 65,
+      "course_address": "Hounslow, Middlesex",
+      "distance_miles": 12.0,
+      "holes": 18,
+      "max_players": 4,
+      "price_gbp": 35.0,
+      "is_hot_deal": false,
+      "rate_type": "Best Available",
+      "booking_url": "https://www.golfnow.co.uk/tee-times/facility/15559/search",
+      "scraped_date": "2026-08-28"
     },
     {
       "date": "2026-08-29",
-      "tee_time": "07:04",
-      "course_name": "London Airlinks Golf Course",
-      "facility_id": 15559,
-      "course_rating": 3.5127,
-      "course_review_count": 65,
-      "course_address": "Hounslow, Middlesex",
-      "distance_miles": 12.0,
-      "holes": 18,
-      "max_players": 4,
-      "price_gbp": 35.0,
-      "is_hot_deal": false,
-      "rate_type": "Best Available",
-      "booking_url": "https://www.golfnow.co.uk/tee-times/facility/15559/search",
-      "scraped_date": "2026-08-22"
-    },
-    {
-      "date": "2026-08-30",
-      "tee_time": "07:04",
-      "course_name": "London Airlinks Golf Course",
-      "facility_id": 15559,
-      "course_rating": 3.5127,
-      "course_review_count": 65,
-      "course_address": "Hounslow, Middlesex",
-      "distance_miles": 12.0,
-      "holes": 18,
-      "max_players": 4,
-      "price_gbp": 35.0,
-      "is_hot_deal": false,
-      "rate_type": "Best Available",
-      "booking_url": "https://www.golfnow.co.uk/tee-times/facility/15559/search",
-      "scraped_date": "2026-08-22"
-    },
-    {
-      "date": "2026-08-23",
-      "tee_time": "08:12",
+      "tee_time": "07:40",
       "course_name": "West Middlesex Golf Club",
       "facility_id": 10634,
       "course_rating": 4.3965,
@@ -134,9 +134,26 @@
       "is_hot_deal": false,
       "rate_type": "Best Available",
       "booking_url": "https://www.golfnow.co.uk/tee-times/facility/10634/search",
-      "scraped_date": "2026-08-22"
+      "scraped_date": "2026-08-28"
+    },
+    {
+      "date": "2026-08-30",
+      "tee_time": "08:04",
+      "course_name": "West Middlesex Golf Club",
+      "facility_id": 10634,
+      "course_rating": 4.3965,
+      "course_review_count": 184,
+      "course_address": "Greenford, Middlesex",
+      "distance_miles": 10.0,
+      "holes": 18,
+      "max_players": 4,
+      "price_gbp": 60.0,
+      "is_hot_deal": false,
+      "rate_type": "Best Available",
+      "booking_url": "https://www.golfnow.co.uk/tee-times/facility/10634/search",
+      "scraped_date": "2026-08-28"
     }
   ],
-  "scraped_at": "2026-08-22T06:28:39.552323+00:00",
+  "scraped_at": "2026-08-28T01:19:37.745859+00:00",
   "error": null
 }
