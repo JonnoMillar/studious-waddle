@@ -1,21 +1,6 @@
 {
-  "refreshed_at": "2026-08-28T18:24:56.516Z",
+  "refreshed_at": "2026-08-29T12:31:32.951Z",
   "companies": [
-    {
-      "name": "Anthropic",
-      "tag": "LLMs",
-      "desc": "AI safety company behind the Claude family of models",
-      "url": "https://anthropic.com",
-      "initials": "AN",
-      "logo": "https://www.google.com/s2/favicons?domain=anthropic.com&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "Pentagon’s blacklisting of Anthropic was unlawful, US judge rules - The Guardian",
-        "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPSlJhNzBFNUxUMW8xOWpySlkza2EyMENZSjBEQmJGc1Rrc2wtaXg0c0E0dGhqN092LXNqVHRRX0tyWUdHYi1rWmE5eGo2bWUtMS1KRmx0TUhxZ2JWdkUxNEVEaFdwUnJWN19hWkY1dmUzX0xsTm1CcjdvT2U5VGFmY3JJVUFGX2JEcHdNTVhMbnB0NVhEaEJRaEotaVBtQzJvbTJqa3lvcTVucGpjX1BQaGJ3?oc=5",
-        "pubDate": "Fri, 28 Aug 2026 16:26:00 GMT"
-      },
-      "sparkline": null
-    },
     {
       "name": "Palantir",
       "tag": "Data Analytics",
@@ -25,12 +10,11 @@
       "logo": "https://www.google.com/s2/favicons?domain=palantir.com&sz=128",
       "ticker": "PLTR",
       "headline": {
-        "title": "Palantir Billionaire Peter Thiel Just Put 33% of His Portfolio Into These 3 Energy Stocks - Yahoo Finance",
-        "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNRHd3bGR4X1ZBbWpGZHVDOHdSSEw5dG5yR25GY18wM0YzZjQ4R1Z6cDY1Z0RIOV9ZdmRYT2xNOXpYVlk3Nk5ITEs2eGNFTVdFMFlDNW8za0d2V2pHWnlNbWc5SnAwaGEwQXRIaUl2SmE4LVpja0hSaU5GNFVSelBsVXJUODNtTmZRcTY0Tk1aNEtQSmlrVlhLY1lR?oc=5",
-        "pubDate": "Fri, 28 Aug 2026 15:50:00 GMT"
+        "title": "Microsoft, Palantir Lead Five Stocks Near Buy Points In Hot Sector - Investor's Business Daily",
+        "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQaUpiWVl3OUwtMVB1Z0NWSDFVMXl5NDFkLU5aMlgyWWQ5UDRoeWNyc29TeUo5TlZtdXhuTWJZSUZvYU1VT29TZEU3TXJFZERiTkNnQU9jS1I5dk9NbzVpMWppRDR1RDNCTjVDeTBHS1U1Y0t6ZUVaWFJQdkYwNDdmVEVZRU9zd1lYTEE?oc=5",
+        "pubDate": "Sat, 29 Aug 2026 11:55:00 GMT"
       },
       "sparkline": [
-        123.52999877929688,
         123,
         122.26000213623047,
         123.05999755859375,
@@ -52,8 +36,7 @@
         175.88999938964844,
         172.72999572753906,
         177.5,
-        185.92999267578125,
-        185.82000732421875
+        185.92999267578125
       ]
     },
     {
@@ -65,54 +48,54 @@
       "logo": "https://www.google.com/s2/favicons?domain=anduril.com&sz=128",
       "ticker": null,
       "headline": {
-        "title": "Taiwan to Acquire More Than 2,000 Altius Drones From Anduril - The Defense Post",
-        "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5HNERLODVMNlQ2Y3oxdi0yTk9kTThTVzJ0UG5Na0xxdDdkYTFiVXNETXhGY0U3QXdOZHpWczFEMTdiSE1yTVk2Zk1sUnU0QjBkdEJjdUhwemhEZjVwM0tTQ2RPS3dtU2NTYXZRbkhkRVhKd1UwRG1sddIBfkFVX3lxTE5CbkRlR0tER3Mxc1IyZ1FkUUNoV0ctemZaNXZibXZsbF80MlVjR2VISm5BcVFhM3EtUndpNWZPZTJKTHBCd0hkTkZzazZMY0E3ZUhiOG9Ua1N1c3ZyX3k4eTZJbmJxM05FN3FMdGNmZVhJdlFjdmlzWGlDWWFFQQ?oc=5",
-        "pubDate": "Fri, 28 Aug 2026 09:03:58 GMT"
+        "title": "Anduril Secretly Building Hypersonic Missiles and Drones | Afterburner - MiGFlug's Magazine - MiGFlug",
+        "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNZkVOanZkVU9kZkdSellhdDJWemtzaUZWajdiNTF4TnBjQzZZbE96azRrb0ZiWUVRYzF1VEl4UEF4M3Q4bTZKRFRURmI1TVZTdmw2NWVvNmEwa0NEMXJTUkxxWnF2c3VHcDAweGcwQnNJaVI5NzUwVVFMVzBZUlZyM3VmcUNDYVl5TFJ4cjVNRVpCS21ycXhB?oc=5",
+        "pubDate": "Sat, 29 Aug 2026 03:54:36 GMT"
       },
       "sparkline": null
     },
     {
-      "name": "xAI",
+      "name": "Cursor",
+      "tag": "Code Editor",
+      "desc": "AI-native code editor that pairs with Claude and GPT-4",
+      "url": "https://cursor.com",
+      "initials": "C",
+      "logo": "https://www.google.com/s2/favicons?domain=cursor.com&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "Our decision on Cursor following its acquisition by SpaceX - OpenAI",
+        "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOU2EyMlNDTjROMndmaFl0eE1DQ2xsVUh1cXFlX3FVeERuS2wyQWw3UFZUTzlhNU1KUDV4ZExBMGRBZTdfVWtLa2VIZGJhN1p3VVdiYlpkLURzT2R1dUktbEVHZ2QtSEtueThvN214XzBoV2JadXU1OFJCY1pELWRpOUNHbi13ZVpIMjB3Tg?oc=5",
+        "pubDate": "Sat, 29 Aug 2026 01:46:12 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "OpenAI",
       "tag": "LLMs",
-      "desc": "Elon Musk's AI company, developer of the Grok models",
-      "url": "https://x.ai",
-      "initials": "X",
-      "logo": "https://www.google.com/s2/favicons?domain=x.ai&sz=128",
+      "desc": "Creator of ChatGPT and the GPT family of foundation models",
+      "url": "https://openai.com",
+      "initials": "OAI",
+      "logo": "https://www.google.com/s2/favicons?domain=openai.com&sz=128",
       "ticker": null,
       "headline": {
-        "title": "Musk’s AI company sues its users as victim lawsuits over Grok deepfakes mount - Politico",
-        "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOQlZJbi1FeDJrVHdzOGFoVWNKTG5MNFpVVDFyc0ZDM3RfYmVXZWtDMlZlYzVLelZ6MVliWGlqYlR5U2hPZGhDXzcyMEsxTU5VbF9UeExqLXBaTF9aVnZsNndBNXMtNUpqazNVcjFlQW5aUUJ4TDR1dm5mbnVDMFkxQzFXQUtjZHM5Y01ndTZBb2M?oc=5",
-        "pubDate": "Fri, 28 Aug 2026 09:00:00 GMT"
+        "title": "OpenAI, Anthropic and 100 major companies sound alarm over urgent AI danger - The Independent",
+        "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOZ0pFY2lOTmZPaUxETVRQaTlaMnRzS25GWjVuSjNyQV93LUo3VURqMWdXTnlCS1pDa1lsS1lsTUFEMmNzOGN4d2htNW4tZm1ST1FaMEZqTUkwaGRoVGkxVTVyaDVBWkZZeXhlSm5SZHg5cWFBY0s4cXdMWGpwY2RXbU1Iem9TZnlLTzBwZXlETlg4bVBGNDkwbnI0NnBxcVht?oc=5",
+        "pubDate": "Fri, 28 Aug 2026 10:57:00 GMT"
       },
       "sparkline": null
     },
     {
-      "name": "Scale AI",
-      "tag": "AI Data",
-      "desc": "Data labelling and RLHF infrastructure powering frontier AI",
-      "url": "https://scale.com",
-      "initials": "S",
-      "logo": "https://www.google.com/s2/favicons?domain=scale.com&sz=128",
+      "name": "Anthropic",
+      "tag": "LLMs",
+      "desc": "AI safety company behind the Claude family of models",
+      "url": "https://anthropic.com",
+      "initials": "AN",
+      "logo": "https://www.google.com/s2/favicons?domain=anthropic.com&sz=128",
       "ticker": null,
       "headline": {
-        "title": "Roma AI raises $1.2M seed to scale AI agents across Latin America - Dealroom",
-        "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPTDU4akJwNmRyTzZ4ZVdGOU1JWjAxR01VWkczeTFBeW9mZXlUN212Qkd1ME5YQl9BaUVmNHNkel9tQlREM0ZpLTRwcEpCOVExSkV1ckN5MzVJUFYtTkp0aVJUUXlyUlhlam1Xank3QjdiRDBhQ3daaDFmUFNiTGJJdEZ3Z1AzRUx3YTRYLXBZQ2dSSmRwb01rdjlyWS16V2c?oc=5",
-        "pubDate": "Fri, 28 Aug 2026 07:27:50 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "Neuralink",
-      "tag": "Brain-Computer",
-      "desc": "Implantable neural interfaces for restoring and augmenting human capability",
-      "url": "https://neuralink.com",
-      "initials": "NL",
-      "logo": "https://www.google.com/s2/favicons?domain=neuralink.com&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "Police sergeant recounts his Neuralink journey with Elon Musk’s brain chip - Teslarati",
-        "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPdmxWTFM4eWhYaTNZS2dkcEtqeFZyMlRjT253T0VZSFFZUTgtTVV4U21xRWVaWFU4WlZhLXZSSGh0WEM4UzZTTjNjOTZrZzdwb1A3enRRMWRlWnNsYlpWOFBldWhLdEIxaHprOWZUaHBsc2xvTm1NMjNXT0E0enBPVWFvTlNuWDkwbjhYMGd4aHh1V1RDOVRlaWFxemFpVmtLNHc?oc=5",
-        "pubDate": "Fri, 28 Aug 2026 06:46:16 GMT"
+        "title": "Trump administration illegally retaliated against Anthropic, judge rules - BBC",
+        "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE45RHBmYXVKdjFjU3BxTWkxaWZyMjBvM2JhSm1yT00yR0hiMVFlQUpqMmVFNGNzbVlhYzB4c25oaUNYRGNITXVuaU1JYUtacTgwMjYxS05mcVprMExH?oc=5",
+        "pubDate": "Fri, 28 Aug 2026 02:57:30 GMT"
       },
       "sparkline": null
     },
@@ -127,10 +110,9 @@
       "headline": {
         "title": "SpaceX Pushes FCC to Scrutinize Rocket Lab-Iridium Deal Amid Spectrum Clash - PCMag",
         "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOd01tNmg4eHVjQ2FtbEQyRWhCQnQ1bGxXcE1BNTVYNlBUZDNXTUNzYURkQU93Q0dIWWppZWJseXdKSjN1VnIwblJibzdFb01QSF95dFdCekVIand0LTJ2MXZGbU9XdkZQNW92VmthaExzVWx4Q2RXZ2RoaTc0OXgweElrUjJmUks1V2sza1pDT3FKTS1iNUNfT1Z0ajJWWWhaV01yVg?oc=5",
-        "pubDate": "Fri, 28 Aug 2026 00:01:26 GMT"
+        "pubDate": "Thu, 27 Aug 2026 21:07:31 GMT"
       },
       "sparkline": [
-        63.88999938964844,
         58.599998474121094,
         64.68000030517578,
         64.94999694824219,
@@ -152,22 +134,36 @@
         68.27999877929688,
         66.91000366210938,
         66.18000030517578,
-        67.52999877929688,
-        63.685001373291016
+        67.52999877929688
       ]
     },
     {
-      "name": "OpenAI",
+      "name": "xAI",
       "tag": "LLMs",
-      "desc": "Creator of ChatGPT and the GPT family of foundation models",
-      "url": "https://openai.com",
-      "initials": "OAI",
-      "logo": "https://www.google.com/s2/favicons?domain=openai.com&sz=128",
+      "desc": "Elon Musk's AI company, developer of the Grok models",
+      "url": "https://x.ai",
+      "initials": "X",
+      "logo": "https://www.google.com/s2/favicons?domain=x.ai&sz=128",
       "ticker": null,
       "headline": {
-        "title": "Google, Microsoft and OpenAI among 100 firms calling for better cyber defences - BBC",
-        "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBwblRxaTl2ejlEUC1ZSE1MNVc0dFQ5NjI4bGNxWFNuN3VsMjhhaUNwdU0wM2RVNTVRYTBHQklUVmV5aVZZczRYbjVnaXkwTzJFTjdGMGxsQ1VJeEVG?oc=5",
-        "pubDate": "Thu, 27 Aug 2026 17:01:27 GMT"
+        "title": "Elon Musk’s xAI used child porn to train Grok models, lawsuit says - Ars Technica",
+        "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPR2xvS1BEUmtXZ2ZPVkJlYVE0Ylh2SzNoaExwdGktZ2lRUVRQd2lEbHNaWTN2ZU9qN3hHaWkyWlhVeGdsNURLc09nemsxeGNtQzFpUExrUXY3UlNnbk1DM042N19kbWR0VnE4UEtwOVNvRDcycml6ZUNZbHRpUE1HUWZ6cHpSbmNIRlBTM3ZvZ0hMMWZmb3ZzQVMwQ0lmaXZpZEJrR0VRMTltdWZvZ1E?oc=5",
+        "pubDate": "Thu, 27 Aug 2026 20:52:31 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "Waymo",
+      "tag": "Autonomy",
+      "desc": "The most miles driven autonomously of any robotaxi service",
+      "url": "https://waymo.com",
+      "initials": "W",
+      "logo": "https://www.google.com/s2/favicons?domain=waymo.com&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "In a swipe at Tesla, Waymo says ‘cameras… aren’t enough’ - The Verge",
+        "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOLU1YVTh6QnlldjJqdnN5WTI4d1JhdHNkMHdvZjF6SVpyZkU4dUZrVUliUjVVS2VEM3FNQkI5Y0ZhcER0aXZuLTRDUlBfdHAzd2ZJVV9ycHBHc0FBUlJMbk41Q3VZbUstQkRwZ1h0OHV6Q3pJTWRhOWZaSUtmX1VYRGNjbUVnWDBENm5UbDV6NzVtd0toaVRhUXV3?oc=5",
+        "pubDate": "Thu, 27 Aug 2026 14:55:20 GMT"
       },
       "sparkline": null
     }
