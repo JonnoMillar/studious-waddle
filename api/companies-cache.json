@@ -1,6 +1,120 @@
 {
-  "refreshed_at": "2026-08-29T12:31:32.951Z",
+  "refreshed_at": "2026-08-30T11:36:41.206Z",
   "companies": [
+    {
+      "name": "Rocket Lab",
+      "tag": "Space",
+      "desc": "Small-satellite launch provider and space systems manufacturer",
+      "url": "https://rocketlabusa.com",
+      "initials": "RL",
+      "logo": "https://www.google.com/s2/favicons?domain=rocketlabusa.com&sz=128",
+      "ticker": "RKLB",
+      "headline": {
+        "title": "Rocket Lab Stock And 2 Defense Names Riding The Government Backlog Theme - simplywall.st",
+        "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQajlXWlB4WTlfQWJHNEluX2l0X19vb0xPbXI0czhWNjZ5dHFqNGROVHFNeEZjX2hYVUJVLVpscFlRZFI3OWdUUjQyS0dRWUFfN1FaZ3NrZThTdF80VVhIbHhqLWthYnNWN1hjRFRJdnJTenJEZzJsTHZ4RFZrc1R4Znc5OF9PMTc5aEVlcE12N0NFVEM1M0pfM1RidHpHT2ROVjV3cmJTa0NGRGxHZlhUdHc4VVJjdTZmOFZ4ZU1rc2N1dkFuNVlCeVBUd3dCWVNDR3BZQtIB2gFBVV95cUxNdXRQcFpWOEt6MTRWb3hUTDBITDV2QVVfSDJZNG5oRWppN3llcXpYem8wcXRVYURlZ2w2QmhSNWRIVTdLeHV4eVBVTkRJRUFRak9NODgtMGhxYUswWkJqeDVFZ3RfdWV4RDFtazhUVDI1RG5aSW1Mdjk3RTQ2OXJSbkdoVTFUUHM5WFZqVEs3NUxjaG5fV3M4SkJoVUY3V18tNmlMQWFkdzdmeUFVRHlDNWJZQi1Vbkg5T241VFA5SmhyYjg2Ny1PZjFKdWRzQ1VuOV9FdXI1UV9QUQ?oc=5",
+        "pubDate": "Sun, 30 Aug 2026 11:24:47 GMT"
+      },
+      "sparkline": [
+        58.599998474121094,
+        64.68000030517578,
+        64.94999694824219,
+        70.43000030517578,
+        74.4800033569336,
+        74.81999969482422,
+        75.66999816894531,
+        82.83000183105469,
+        80.04000091552734,
+        80.01000213623047,
+        81.16999816894531,
+        80.0999984741211,
+        80.25,
+        82.08000183105469,
+        79.16000366210938,
+        75.83999633789062,
+        72.94999694824219,
+        72.56999969482422,
+        68.27999877929688,
+        66.91000366210938,
+        66.18000030517578,
+        67.52999877929688,
+        64.38999938964844
+      ]
+    },
+    {
+      "name": "Scale AI",
+      "tag": "AI Data",
+      "desc": "Data labelling and RLHF infrastructure powering frontier AI",
+      "url": "https://scale.com",
+      "initials": "S",
+      "logo": "https://www.google.com/s2/favicons?domain=scale.com&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "Cisco Adds Supermicro Rack-Scale AI Systems for October - quasa.io",
+        "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQME9NMXlyTW5Jd2tNQ1NxMlMtNlAzaWgtYy1fc282bk5FTDlKSWg0QUVqd2VQbGg1UjdkVnNrOGI2Sm9NWTRPNHdsVU1sbmVZOU4xQXEzeC15VTdLb2lUQlBIQ040elVUVFVXWkZUdU0xeVY0b3lFUUR0LUo5MFdXbUFVdDFFaVFkSG1OQkh3aXVwUERDRjVHdEpMbnM?oc=5",
+        "pubDate": "Sun, 30 Aug 2026 04:20:00 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "Mistral AI",
+      "tag": "LLMs",
+      "desc": "Europe's leading open-weight AI foundation models",
+      "url": "https://mistral.ai",
+      "initials": "M",
+      "logo": "https://www.google.com/s2/favicons?domain=mistral.ai&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "Venice AI vs Ollama vs Mistral: Uncensored Models 2026 - tech-insider.org",
+        "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxORmRHd09HWHlmOHlMamVEc1drWGVqT1Q3VElvcGJ1MTB5eWdNTWcwOU1XUjNDWWoycFYzN2Y2SF9qWFRxN010b1RLbkF1dFBPLW1CclJOLXp1bFVxcTh0SzlyVXpRdUJranZqZENGQVE4Qk8zTUMzTE81dFVOYzZGeFJDcF9GTDBMdlE?oc=5",
+        "pubDate": "Sat, 29 Aug 2026 19:44:42 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "OpenAI",
+      "tag": "LLMs",
+      "desc": "Creator of ChatGPT and the GPT family of foundation models",
+      "url": "https://openai.com",
+      "initials": "OAI",
+      "logo": "https://www.google.com/s2/favicons?domain=openai.com&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "OpenAI to end model access to Cursor after acquisition by Elon Musk's SpaceX - CNBC",
+        "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE90bmQ0enBvenh2RFZzWDJtV2FWRnFMVzNRMEJrbG1RSmtWbnZ6MU1XcHV0TUJ1dll3YkJJM1RSMUgyRWVsV3NTeHpUV1JOeEZVb01TRkctT0c0NjZIc0haWFVTdzVkSmFLM1htanRGeVJZMmxNb2NaWnBn0gF_QVVfeXFMTnNMYVB6Q3hkc1l0NnRTSVhOeU5uT21nbUxOZDZjU2ota0tocTk2a3JjOWdxeUp0M2ttVUpHNk1ZTlB5MWp6QkR5c21aUlduUERGbzRZenhNZ1ZIQVVWTWt6RmJJdW8xcVAtRW05NnIxVGI5UE1uaVA4Q0V6NWd4cw?oc=5",
+        "pubDate": "Sat, 29 Aug 2026 19:05:55 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "Anthropic",
+      "tag": "LLMs",
+      "desc": "AI safety company behind the Claude family of models",
+      "url": "https://anthropic.com",
+      "initials": "AN",
+      "logo": "https://www.google.com/s2/favicons?domain=anthropic.com&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "Music publishers sue Anthropic, allege \"blantant theft\" of copyrighted music - Axios",
+        "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE4yWkVsWkZ5bXMySGRnSmIwVWNQR2x6Z3B6ZzF0TVU1WGZtN1R2bVczRkFJOU5HZE93VlJFbmZGU3RVeEdPWC1IalN4bXEzbmhPb3RpTGt2TmE0U0lqcTdrR0QtT1VYY05za0hkRGVrOV9sU3hvU2JOX1JR?oc=5",
+        "pubDate": "Sat, 29 Aug 2026 16:44:27 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "Waymo",
+      "tag": "Autonomy",
+      "desc": "The most miles driven autonomously of any robotaxi service",
+      "url": "https://waymo.com",
+      "initials": "W",
+      "logo": "https://www.google.com/s2/favicons?domain=waymo.com&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "Former Lyft Drivers Now Doing Menial Tasks for Their Waymo Overlords - Futurism",
+        "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQSk9uTzBEd2FaSnJ3aUU4TjN2SzFSTW9kWDlRNnlCVi1KVExvTXBCQ2tMaVFlX2tiNTZ1MDRfODdpaW1sQTA3bTZUbkZUeno0SXFjNThpa1hqdWw4bzNFZ3pQY005eTVkdjhGWGNQa1NjS0NKLWRjeXRhRVBaU3R3RWhYclA?oc=5",
+        "pubDate": "Sat, 29 Aug 2026 14:02:00 GMT"
+      },
+      "sparkline": null
+    },
     {
       "name": "Palantir",
       "tag": "Data Analytics",
@@ -36,23 +150,9 @@
         175.88999938964844,
         172.72999572753906,
         177.5,
-        185.92999267578125
+        185.92999267578125,
+        186.2899932861328
       ]
-    },
-    {
-      "name": "Anduril",
-      "tag": "Defense AI",
-      "desc": "Autonomous defense systems and AI-enabled military hardware",
-      "url": "https://anduril.com",
-      "initials": "A",
-      "logo": "https://www.google.com/s2/favicons?domain=anduril.com&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "Anduril Secretly Building Hypersonic Missiles and Drones | Afterburner - MiGFlug's Magazine - MiGFlug",
-        "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNZkVOanZkVU9kZkdSellhdDJWemtzaUZWajdiNTF4TnBjQzZZbE96azRrb0ZiWUVRYzF1VEl4UEF4M3Q4bTZKRFRURmI1TVZTdmw2NWVvNmEwa0NEMXJTUkxxWnF2c3VHcDAweGcwQnNJaVI5NzUwVVFMVzBZUlZyM3VmcUNDYVl5TFJ4cjVNRVpCS21ycXhB?oc=5",
-        "pubDate": "Sat, 29 Aug 2026 03:54:36 GMT"
-      },
-      "sparkline": null
     },
     {
       "name": "Cursor",
@@ -66,104 +166,6 @@
         "title": "Our decision on Cursor following its acquisition by SpaceX - OpenAI",
         "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOU2EyMlNDTjROMndmaFl0eE1DQ2xsVUh1cXFlX3FVeERuS2wyQWw3UFZUTzlhNU1KUDV4ZExBMGRBZTdfVWtLa2VIZGJhN1p3VVdiYlpkLURzT2R1dUktbEVHZ2QtSEtueThvN214XzBoV2JadXU1OFJCY1pELWRpOUNHbi13ZVpIMjB3Tg?oc=5",
         "pubDate": "Sat, 29 Aug 2026 01:46:12 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "OpenAI",
-      "tag": "LLMs",
-      "desc": "Creator of ChatGPT and the GPT family of foundation models",
-      "url": "https://openai.com",
-      "initials": "OAI",
-      "logo": "https://www.google.com/s2/favicons?domain=openai.com&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "OpenAI, Anthropic and 100 major companies sound alarm over urgent AI danger - The Independent",
-        "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOZ0pFY2lOTmZPaUxETVRQaTlaMnRzS25GWjVuSjNyQV93LUo3VURqMWdXTnlCS1pDa1lsS1lsTUFEMmNzOGN4d2htNW4tZm1ST1FaMEZqTUkwaGRoVGkxVTVyaDVBWkZZeXhlSm5SZHg5cWFBY0s4cXdMWGpwY2RXbU1Iem9TZnlLTzBwZXlETlg4bVBGNDkwbnI0NnBxcVht?oc=5",
-        "pubDate": "Fri, 28 Aug 2026 10:57:00 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "Anthropic",
-      "tag": "LLMs",
-      "desc": "AI safety company behind the Claude family of models",
-      "url": "https://anthropic.com",
-      "initials": "AN",
-      "logo": "https://www.google.com/s2/favicons?domain=anthropic.com&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "Trump administration illegally retaliated against Anthropic, judge rules - BBC",
-        "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE45RHBmYXVKdjFjU3BxTWkxaWZyMjBvM2JhSm1yT00yR0hiMVFlQUpqMmVFNGNzbVlhYzB4c25oaUNYRGNITXVuaU1JYUtacTgwMjYxS05mcVprMExH?oc=5",
-        "pubDate": "Fri, 28 Aug 2026 02:57:30 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "Rocket Lab",
-      "tag": "Space",
-      "desc": "Small-satellite launch provider and space systems manufacturer",
-      "url": "https://rocketlabusa.com",
-      "initials": "RL",
-      "logo": "https://www.google.com/s2/favicons?domain=rocketlabusa.com&sz=128",
-      "ticker": "RKLB",
-      "headline": {
-        "title": "SpaceX Pushes FCC to Scrutinize Rocket Lab-Iridium Deal Amid Spectrum Clash - PCMag",
-        "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOd01tNmg4eHVjQ2FtbEQyRWhCQnQ1bGxXcE1BNTVYNlBUZDNXTUNzYURkQU93Q0dIWWppZWJseXdKSjN1VnIwblJibzdFb01QSF95dFdCekVIand0LTJ2MXZGbU9XdkZQNW92VmthaExzVWx4Q2RXZ2RoaTc0OXgweElrUjJmUks1V2sza1pDT3FKTS1iNUNfT1Z0ajJWWWhaV01yVg?oc=5",
-        "pubDate": "Thu, 27 Aug 2026 21:07:31 GMT"
-      },
-      "sparkline": [
-        58.599998474121094,
-        64.68000030517578,
-        64.94999694824219,
-        70.43000030517578,
-        74.4800033569336,
-        74.81999969482422,
-        75.66999816894531,
-        82.83000183105469,
-        80.04000091552734,
-        80.01000213623047,
-        81.16999816894531,
-        80.0999984741211,
-        80.25,
-        82.08000183105469,
-        79.16000366210938,
-        75.83999633789062,
-        72.94999694824219,
-        72.56999969482422,
-        68.27999877929688,
-        66.91000366210938,
-        66.18000030517578,
-        67.52999877929688
-      ]
-    },
-    {
-      "name": "xAI",
-      "tag": "LLMs",
-      "desc": "Elon Musk's AI company, developer of the Grok models",
-      "url": "https://x.ai",
-      "initials": "X",
-      "logo": "https://www.google.com/s2/favicons?domain=x.ai&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "Elon Musk’s xAI used child porn to train Grok models, lawsuit says - Ars Technica",
-        "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPR2xvS1BEUmtXZ2ZPVkJlYVE0Ylh2SzNoaExwdGktZ2lRUVRQd2lEbHNaWTN2ZU9qN3hHaWkyWlhVeGdsNURLc09nemsxeGNtQzFpUExrUXY3UlNnbk1DM042N19kbWR0VnE4UEtwOVNvRDcycml6ZUNZbHRpUE1HUWZ6cHpSbmNIRlBTM3ZvZ0hMMWZmb3ZzQVMwQ0lmaXZpZEJrR0VRMTltdWZvZ1E?oc=5",
-        "pubDate": "Thu, 27 Aug 2026 20:52:31 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "Waymo",
-      "tag": "Autonomy",
-      "desc": "The most miles driven autonomously of any robotaxi service",
-      "url": "https://waymo.com",
-      "initials": "W",
-      "logo": "https://www.google.com/s2/favicons?domain=waymo.com&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "In a swipe at Tesla, Waymo says ‘cameras… aren’t enough’ - The Verge",
-        "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOLU1YVTh6QnlldjJqdnN5WTI4d1JhdHNkMHdvZjF6SVpyZkU4dUZrVUliUjVVS2VEM3FNQkI5Y0ZhcER0aXZuLTRDUlBfdHAzd2ZJVV9ycHBHc0FBUlJMbk41Q3VZbUstQkRwZ1h0OHV6Q3pJTWRhOWZaSUtmX1VYRGNjbUVnWDBENm5UbDV6NzVtd0toaVRhUXV3?oc=5",
-        "pubDate": "Thu, 27 Aug 2026 14:55:20 GMT"
       },
       "sparkline": null
     }
