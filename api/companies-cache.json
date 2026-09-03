@@ -1,56 +1,18 @@
 {
-  "refreshed_at": "2026-09-02T10:57:38.199Z",
+  "refreshed_at": "2026-09-03T10:56:51.165Z",
   "companies": [
     {
-      "name": "Rocket Lab",
-      "tag": "Space",
-      "desc": "Small-satellite launch provider and space systems manufacturer",
-      "url": "https://rocketlabusa.com",
-      "initials": "RL",
-      "logo": "https://www.google.com/s2/favicons?domain=rocketlabusa.com&sz=128",
-      "ticker": "RKLB",
-      "headline": {
-        "title": "Berenberg initiates Rocket Lab stock with buy rating on space dominance - Investing.com UK",
-        "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOdWx2aE13SHdjU0JGWXZmNWdSS2h4MmpmMlduNkVfRnAyN21FbE5hcjZQNGk4b2xPd0d1bUZfMjZ4ZGdGNVdEWmV5b0M2V0RuMXVTX2VoUnZ1ekZVOEs0UEo0LUlsZ19aakJ1UjVaUlA4VFg3V0RUdTJlNXRPNGJsaDJ1bDI5dmVsSXp4ZGZBU2lnVWR0ZWZTd1lIZ1htNDFRMHBOTEhTZmdWczJyUDdFTFptbE9WaVBIejljR0VFNWJ3WlFQSFNhT1hob0c?oc=5",
-        "pubDate": "Wed, 02 Sep 2026 08:18:00 GMT"
-      },
-      "sparkline": [
-        70.43000030517578,
-        74.4800033569336,
-        74.81999969482422,
-        75.66999816894531,
-        82.83000183105469,
-        80.04000091552734,
-        80.01000213623047,
-        81.16999816894531,
-        80.0999984741211,
-        80.25,
-        82.08000183105469,
-        79.16000366210938,
-        75.83999633789062,
-        72.94999694824219,
-        72.56999969482422,
-        68.27999877929688,
-        66.91000366210938,
-        66.18000030517578,
-        67.52999877929688,
-        64.38999938964844,
-        63.91999816894531,
-        62.540000915527344
-      ]
-    },
-    {
-      "name": "Anthropic",
-      "tag": "LLMs",
-      "desc": "AI safety company behind the Claude family of models",
-      "url": "https://anthropic.com",
-      "initials": "AN",
-      "logo": "https://www.google.com/s2/favicons?domain=anthropic.com&sz=128",
+      "name": "Neuralink",
+      "tag": "Brain-Computer",
+      "desc": "Implantable neural interfaces for restoring and augmenting human capability",
+      "url": "https://neuralink.com",
+      "initials": "NL",
+      "logo": "https://www.google.com/s2/favicons?domain=neuralink.com&sz=128",
       "ticker": null,
       "headline": {
-        "title": "Architect of British government’s AI strategy joins Anthropic - theguardian.com",
-        "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOQXBKOFd0a013ZjVJdUZUbFFzOFhlVklsbmxZdmZhUkFaVkR6eVJsMDd0RzZ3M1JHbUpVcldIVEo3cVV5QjVlMUNBSng1LWwwTzVwWEgwaURCZGNIUnRkMDFkWDktSGFqY0FDUWdxRktmal9LWWMwdFVtdGxrb21YV0lHSk5rbGlVWUljaHhMTFBwT2xGOGpiZndnbw?oc=5",
-        "pubDate": "Wed, 02 Sep 2026 07:39:00 GMT"
+        "title": "Brain implants fuel U.S.-China bioscience rivalry - Axios",
+        "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOX2pwYWR6NFQ1dHdmN0JPRFhSaHo3LU1ZTXlYclpPLUZSWEx0emhVdDZXZDdTSHhQLWZFbUE5NUZHOU9aVHYwczFOMXc4eVZDZEpfdFFPRGxIckMyQXVyN0NGdDhlaTdFdVVmTVNMcFlEcm5qelpyN2l1Q3dmbHA3WEtn?oc=5",
+        "pubDate": "Thu, 03 Sep 2026 10:41:15 GMT"
       },
       "sparkline": null
     },
@@ -63,24 +25,39 @@
       "logo": "https://www.google.com/s2/favicons?domain=perplexity.ai&sz=128",
       "ticker": null,
       "headline": {
-        "title": "Perplexity Releases Hybrid Compute on Mac: Cloud Agents Orchestrate Down to a Local Model, Gated On Device - marktechpost.com",
-        "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOR3NidEU4OWd5cF9yb2ZKbVR4MTZXTFZhRUpGNXJnS0dSQXJRZVpaaTRFVTRWOHdqTFFfVXBmcEphZnJDREVHNDRQM3d2YjhDMGRKQzgyR19PemxfS18zR0pNUWdDNzE0djl4QTdxRzNJNThoYkRCZ0MtaWFQcnF5a2dhaFFpZEFQZmlsZWF0dTB5VE5EVDJqRDc4STY5ekxVYzR0bFlPOXlraGRhQnNvc09ReHNsZ3NCNUdZcHNtWTNRakNGTUxocE9qcDhENHNtOEhURW9mSUMzREplYkHSAeMBQVVfeXFMUHhpRUI0ajBsd1liTWdDLUdSY2U2SWw1SzR3S1lJYkNGcTlqeGhjV1lyS0ZkMWV0aW9tc2dSRGxoRnA1OVFvZ1R4Tms3c2ppQ2N0ME1GWXBWMzB4dGxsTUZieExheE9Mb1llUWhEUkxxcFhpMVE2Ty1UYXdreG9PdERVQnZudmVtbDBHQVkxcjU3UFNCbW9FNmp2Mm9DSlVhSGF4aGNRQ0hoc3VvX3RSODJZQVZsS0YzTEx4R2UxQ2lFWkVKekNJOWpXMWNjNHc2Q2lJOWRJc2ljNmtNcW9WZ1BaOXM?oc=5",
-        "pubDate": "Wed, 02 Sep 2026 05:12:00 GMT"
+        "title": "Flanks partners with Perplexity on AI-driven wealth management - MoneyAge",
+        "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxObGRXRC1jUjZIUU1HczlCVmhfVHJsOGhkMDhqVF8xZldEeklGWjdJN2lzZ2dmZ1FVYTRLUmFweGptcGhlcFVlelBfSWhzYmtuVzRpamh3eGpFeXRiUEZtSWtWeGdwQm55dml0eTgyRjNXdm9YVWZfeVRqMnlFSnR0SlhYdndZenVfY0J5SE5hZHkzR2c?oc=5",
+        "pubDate": "Thu, 03 Sep 2026 08:49:26 GMT"
       },
       "sparkline": null
     },
     {
-      "name": "Scale AI",
-      "tag": "AI Data",
-      "desc": "Data labelling and RLHF infrastructure powering frontier AI",
-      "url": "https://scale.com",
-      "initials": "S",
-      "logo": "https://www.google.com/s2/favicons?domain=scale.com&sz=128",
+      "name": "Mistral AI",
+      "tag": "LLMs",
+      "desc": "Europe's leading open-weight AI foundation models",
+      "url": "https://mistral.ai",
+      "initials": "M",
+      "logo": "https://www.google.com/s2/favicons?domain=mistral.ai&sz=128",
       "ticker": null,
       "headline": {
-        "title": "Engageware appoints new CFO, CTO, and CCO to scale AI growth - fintechfutures.com",
-        "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOZ2xfZmlZSlhpcVRkLThZMEJlRWpIbjdTTjJsdXNTUUtzbDhpb2lXWWx4Y3BVZkg4VHVBeEdpMFNaLWFZV3lzZThYSlJBbkpVbF9RMFpkeVc1TUl5ZnEtRC05MDNaeDYzYnJfTmx6QmR5QVJZelFxRkdyLVY3d0tmYjJjanlGakt1XzlhVm4wMmNteTR2V3RGMnNwczFUV0VPY01fTHhpd2IxaW1o?oc=5",
-        "pubDate": "Wed, 02 Sep 2026 05:01:14 GMT"
+        "title": "‘We’re doomed’: French minister warns against relying on Mistral for AI - Malay Mail",
+        "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOUmlHYWZOdzFvenZNMnVfY0JZbVkxMGR2RzVDMlNwVVFRX3QxMUs0Y2VYMGRDeWR6Q0JiNV9UMXk4ZjRMRUI1LWlqblpFdnpVSUJsbFBYcWFRVmFYaTFBalRZOVJFczl6RUxlYlRrZjh4VEYxNjdPOXhSdFo4WldJSkhzakhWU3JzNEU5cjlMak10VDNRdnpTdnJnZS1Xak8wbl9RZXJyX09pWUhHemdReWtualFkd0lYV0E2dUR0SFRRWU5TbGp6MNIBzgFBVV95cUxPYTJxZ2xSQzU1LVpDMEYyQWtFQzRQdHJNRkRseVQtczc1M0JlZ29GYV9HSHEtc3VsTmp1M1Y1LXhmT2RZTkk5M010XzdPRjJzMFNjLVhHdXZKSDFTRS1nVWR3amE1Tk9RVnpBVVJMN2RIMnVRY0tkOURRUVBYLUtHSURvZzM0bHlKTnZoNU5wb3JXaHZxSkhHcEhpNENWSU52OVotOENvb1VTY0xFWmRDdWJ0OFFtNFV2R0lmY1h2SVZQbVJQcndzVzNLRUNVdw?oc=5",
+        "pubDate": "Thu, 03 Sep 2026 06:11:56 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "xAI",
+      "tag": "LLMs",
+      "desc": "Elon Musk's AI company, developer of the Grok models",
+      "url": "https://x.ai",
+      "initials": "X",
+      "logo": "https://www.google.com/s2/favicons?domain=x.ai&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "There is evidence against former officials involved in misappropriation of donations - aimnews.org",
+        "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNYkR2Q0Qtb0FwN0NEeUp1UjRYcUpTeEI1ZGVSOFFXX2xvRHJnN212ZGptcUZfVEZXOXQ4TmNGNDVtbFo5bnQ0ektkNlYycWkxVlpVekdaQjR1Z0tkWUtyaTR1S3dyQ1BwcVpjajh5NVZBR1dLdzQwVk95RlJpOXZOSmJGa2hjVy1mRDFVbVdjQUtRQmFSYmxLbkt3Tjdoc3ZTYmxLYzBSaWZFY0tlTWtIc0VhSlRpZ1E?oc=5",
+        "pubDate": "Wed, 02 Sep 2026 22:17:19 GMT"
       },
       "sparkline": null
     },
@@ -93,9 +70,39 @@
       "logo": "https://www.google.com/s2/favicons?domain=anduril.com&sz=128",
       "ticker": null,
       "headline": {
-        "title": "Army’s TITAN platform moving into production phase with $192M delivery award for Palantir, Anduril - DefenseScoop",
-        "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQcm9BQk94MGE3QzExMGx3aXgxMUM1ZzJTc3lPTGdWenM4aXVUN2lodm9SWUh4eExNTFdSS2tfZ0ZpT0psSk1ZUW9feGtlV1M5NlVDZzlqcmhKSm12aGxTOHFjcXRDZU1IbkZENmpJellUbEFTaFI2MHA3VHV3RkpTYWYwWGxTeUpqNVUxcGh5LVJQUzhydHc?oc=5",
-        "pubDate": "Wed, 02 Sep 2026 04:32:40 GMT"
+        "title": "US Army awards $192M to Palantir, Anduril for TITAN production - Defense News",
+        "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOLWs3RFlac2hxdUk2ZXlzcm5tMVR5YkdOV0laVTZYOEVsN194M0lNZy0tVE1maGJneHduUC1JbnhGZ0JqQk80N3NnNEtUTlNsaTZGTzhaVVZuTFZSR1RBb1ZRZDRlanlyQVRwQlZQZDhDRHd5bkFlVHpZRFUzeE1PQVE4MnFfLWMtTkZ6OUpNOUdSUEtmSkpvOTQ4NjBkNkFIUFRnS3RiT29qNm8xNElvM0t2OGpiSEJsLWY4?oc=5",
+        "pubDate": "Wed, 02 Sep 2026 21:43:17 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "Scale AI",
+      "tag": "AI Data",
+      "desc": "Data labelling and RLHF infrastructure powering frontier AI",
+      "url": "https://scale.com",
+      "initials": "S",
+      "logo": "https://www.google.com/s2/favicons?domain=scale.com&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "Moratorium approved on large-scale AI data centre applications in Sault Ste. Marie, Ont. - Yahoo News UK",
+        "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQb1FRVUpJUjJnTkhpNUJlXzhNNThxYzBFTnhLVWZDdGcxc1ZqOW5NX1hQSlhzXzJRUHZfbkY2QXhXWVRhc2xKQ0tlMHZHMWFyU3Z6dnQ1OGJ1OFVIdGNOd1hqRzdFd0liZklFRjVtSTBiZzh4SkdIN3pORWtoSENoNQ?oc=5",
+        "pubDate": "Wed, 02 Sep 2026 20:12:09 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "Waymo",
+      "tag": "Autonomy",
+      "desc": "The most miles driven autonomously of any robotaxi service",
+      "url": "https://waymo.com",
+      "initials": "W",
+      "logo": "https://www.google.com/s2/favicons?domain=waymo.com&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "Waymo Taps Pimco, Blackstone for $3 Billion in First Debt Deal - Bloomberg.com",
+        "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPTkJkMVcyS2tKQ1RwaFYtWmVKcUc1WTRsMDc0MkVBaVRDc2lLRkdVZEJHUHdUR1BjSlIzWWpZNUVPU1ZmUVByZmZrTjJVVUNjX2tkV3B5N3ZON3lXNlBUWXpQY2I1aHpYX1dOdllxNEtVWmpxbkl4aHM2WWQ1M2VxNmUwMWhjdnNUMWE4NjYwRHJHTWRmMm5zS3VfMloyc1ZrcEtPbm5VY2tKVF9UUjZLTQ?oc=5",
+        "pubDate": "Wed, 02 Sep 2026 17:41:55 GMT"
       },
       "sparkline": null
     },
@@ -108,9 +115,9 @@
       "logo": "https://www.google.com/s2/favicons?domain=crowdstrike.com&sz=128",
       "ticker": "CRWD",
       "headline": {
-        "title": "Cops, CrowdStrike disrupt Sality botnet by poisoning the network and diverting into sinkholes - The Register",
-        "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQTjlzb0pzYUFnNWRjWkxGdVR5VjR4dHFfeFE0NXhCdTNybURqTndQQmxndmVIT1BsOHdyQnVXVVZlblRMRVNGTDluM1MyeERmOW5lVGlfeThsaXJMV1NCS1hlRElCSXF3SDdUOEpxUHE0bUJLYS1DSGNydlhza19DZGo3eTZyTXNqb1Z6UmxUcjVyZU5fNWZmR000MkdCVWQ2TFpTVVdjNGRmNE5mVmJvSk00NENBUXhQZ2dqY3dvNXU4dXdBTVBWaWNUMmFtRnU0OG1RaGNWeS1WdUdOc241TWtTNVExdw?oc=5",
-        "pubDate": "Tue, 01 Sep 2026 23:54:07 GMT"
+        "title": "CrowdStrike Announces Agentic Identity Provider - CrowdStrike",
+        "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOejEzb1Rhc1MxM3RHS1F3eHlEYUZ4cFA3eTMzYW4yd0lrbVp5Z1BKVFlIUU5PVHBaNFZIOExHV2oyLUpVZXpMZ3I1QVozaUxrYXRnNzVHYVNBZkstMVRIMUZjUFJQbmRDOEQxd0lmcFp5QlJqRF9BTTBacC02OW1nclh1MUJWNVAzcGUwZjdJODY?oc=5",
+        "pubDate": "Wed, 02 Sep 2026 16:40:47 GMT"
       },
       "sparkline": [
         202.5399932861328,
@@ -134,60 +141,8 @@
         227.9600067138672,
         218.39999389648438,
         231,
-        215.07000732421875
-      ]
-    },
-    {
-      "name": "OpenAI",
-      "tag": "LLMs",
-      "desc": "Creator of ChatGPT and the GPT family of foundation models",
-      "url": "https://openai.com",
-      "initials": "OAI",
-      "logo": "https://www.google.com/s2/favicons?domain=openai.com&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "OpenAI Is About to Release Its First AI Model With ‘Critical’ Cyber Abilities - WIRED",
-        "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQSFE3NkFwdlQ2WktBelBib0paY3NRUVhCZkRuZF9laks5ZVd5MFhCd0JHWjlqYjF5a1F0WC1GbE5NalgyVEh4REhiRG91TVZFZWs4cUVsWkZBM1hKbnlXRXV1c05NSHVIaGlJUTg4eHpLRTN5QlpXVnpUM2tXY2Z1SWhLSWVzOTROWldMUHdzQQ?oc=5",
-        "pubDate": "Tue, 01 Sep 2026 20:00:00 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "Palantir",
-      "tag": "Data Analytics",
-      "desc": "Big-data analytics platforms for government and enterprise",
-      "url": "https://palantir.com",
-      "initials": "PL",
-      "logo": "https://www.google.com/s2/favicons?domain=palantir.com&sz=128",
-      "ticker": "PLTR",
-      "headline": {
-        "title": "Ukraine's Fedorov says Palantir CEO will be first major investor in new defence company - Reuters",
-        "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNcmkyd1cwT1ZNMVA1VnRWYU9RYVhXVUJiZUNzN0J6SGlfMmF1NHJ1VWh3YlAtdG12WXFXNm1wamRSTlZ6VE5PSFNoRk1zYXR5YXFmdmdTMHZjZTByNThRU2ZjeFlMQl9yNFFpX3Y4ZS05OVVYQk13bzZNS3p3MlZXaGNXWkNFbFpmaV9PQU9CYUxFU3R4dW13TjVEUGdaMjBEYVQ1QXcyWWIxbksxYmFFZEk1MjFpd2hBeDFYcGlzWlVzT3p4SnJVUnZYZTRPNnR2NUJXTg?oc=5",
-        "pubDate": "Tue, 01 Sep 2026 16:58:48 GMT"
-      },
-      "sparkline": [
-        125.6500015258789,
-        162.66000366210938,
-        158.42999267578125,
-        155.9199981689453,
-        172.00999450683594,
-        175.22999572753906,
-        174.94000244140625,
-        171.0399932861328,
-        179.00999450683594,
-        174.0399932861328,
-        172.5500030517578,
-        171.5399932861328,
-        175.19000244140625,
-        173.9600067138672,
-        179.94000244140625,
-        175.88999938964844,
-        172.72999572753906,
-        177.5,
-        185.92999267578125,
-        186.2899932861328,
-        186.3800048828125,
-        179.9199981689453
+        215.07000732421875,
+        203.4199981689453
       ]
     }
   ]
