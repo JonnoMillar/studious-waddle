@@ -1,6 +1,21 @@
 {
-  "refreshed_at": "2026-09-04T10:57:02.777Z",
+  "refreshed_at": "2026-09-05T10:17:29.547Z",
   "companies": [
+    {
+      "name": "Perplexity",
+      "tag": "AI Search",
+      "desc": "Answer engine combining web search with AI-generated summaries",
+      "url": "https://perplexity.ai",
+      "initials": "P",
+      "logo": "https://www.google.com/s2/favicons?domain=perplexity.ai&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "I asked AI to rank the 10 jobs most likely to be replaced by AI — here's what they all agreed on - Tom's Guide",
+        "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxPM09Hem1mZ2UzQVRMNGJEQ2VfVnRxNnFWUm5HaEJ1eE1MWER2NTV2cElsWHdlblAzRFRpVnhBd19kUWtOTU1jc3hBTGExcWhCVllLR0N4TFEwTHMxWksxMWlnb29PR25hSERiNUZ0MEo0MjFRc3NpcExoVEF5MnVfejh6dkZ0T2xJRlE1ZExkUGw0ZDlzcWNSUTZ3bWc2V2hoZGtjSFd2YTNSTnRUTHpnbl9RaDVlUG41YmFmV3RiQ3hIWHRNVlZzdVI5SFpwWXN2SDZjUjN1Y1AzVHg0YmQ2UXdEQ1dWeHRrUjZsMw?oc=5",
+        "pubDate": "Sat, 05 Sep 2026 05:30:00 GMT"
+      },
+      "sparkline": null
+    },
     {
       "name": "Scale AI",
       "tag": "AI Data",
@@ -10,24 +25,39 @@
       "logo": "https://www.google.com/s2/favicons?domain=scale.com&sz=128",
       "ticker": null,
       "headline": {
-        "title": "Three lessons on how governance turns Agentic AI into trusted operations - Capita",
-        "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQVHZpNjhac1BzUTN0NS16OVFvNWpLX0dZcmRyMURwSXhscWF1YUxEMjcxMklvbEFTRnF3WVQtMTh5dktrUG9iTGdhb01yYjFweFJPeVJVY2VwSWREZE5RT1hUUU56WXRueVhCRUFsNlVkSGpSVzJ6U29oMndmdnd6ZVJ6TWdTWDRLMDEtdVZ6X3VFdHdEVm5wS0pwMTQ5dkdMSFdQZGZn?oc=5",
-        "pubDate": "Fri, 04 Sep 2026 00:00:00 GMT"
+        "title": "Haystack Robotics raises $3.95m to scale AI disinfection robots - Dealroom",
+        "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPaW9qSE5oVGxUUDJibVVvVWNDWkozSFRoaEZHTElzMGpQaFYyZkduR3RYVF9iUnlqVm51ZnVvT3k0dExLVXZiTTVOUDFjMWNnWk91bFYzU2hZbWsxcWZZVWcxUXhpMkVieUFxNzNKVXNKRjhoV3BlTFZzaHpFWV94Rnc3QV9RTmdScldUM1dvc2dtVWMyUU5XNFB1UDg?oc=5",
+        "pubDate": "Sat, 05 Sep 2026 04:51:31 GMT"
       },
       "sparkline": null
     },
     {
-      "name": "Anduril",
-      "tag": "Defense AI",
-      "desc": "Autonomous defense systems and AI-enabled military hardware",
-      "url": "https://anduril.com",
-      "initials": "A",
-      "logo": "https://www.google.com/s2/favicons?domain=anduril.com&sz=128",
+      "name": "xAI",
+      "tag": "LLMs",
+      "desc": "Elon Musk's AI company, developer of the Grok models",
+      "url": "https://x.ai",
+      "initials": "X",
+      "logo": "https://www.google.com/s2/favicons?domain=x.ai&sz=128",
       "ticker": null,
       "headline": {
-        "title": "Anduril and the Fury: The Start-Ups Taking On the Defence Primes - MiGFlug",
-        "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNWHZMbjRLWEtJMjlxaV9mUjFQLVlQZWRXTW9zeHQxbk9JYjRjWHhfVmJDb2NFVmpLTGVyenhjeFc4VkRtZDduNG5xNXBpWmdEUFRqOHl5YzNNajlxLTVVUmdXbWQyOHlkdmNYQlhaV2VJSDA4MzZRLVZCUVV6LUNqQkVpRUo2VGhkXzNrbGdn?oc=5",
-        "pubDate": "Thu, 03 Sep 2026 20:32:08 GMT"
+        "title": "Musk’s xAI loses court bid to block Minnesota's AI ‘nudification’ ban - Reuters",
+        "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQS1VRQXhtR19VS2tKbVEzTnB6YjFUNl8zV3NFSURDZDRTcmZRS2tHa0RPOHdlMklXMWVSckNXdm5HWjdYNWhSTlFNeUlkdWFxWHo2SFdXU19ieWlQaUlEUjNrUjJkV1JSajZaNGxxUkVkM19qR2NOMkZvcWMwRHpIVTJybUlQZFB2ZmpvRy1CeURQcmp0ZFctU3RzMnItM29yajY5blZoT1ZjY0cwWFg1aVFoSGtpZw?oc=5",
+        "pubDate": "Fri, 04 Sep 2026 20:11:05 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "Anthropic",
+      "tag": "LLMs",
+      "desc": "AI safety company behind the Claude family of models",
+      "url": "https://anthropic.com",
+      "initials": "AN",
+      "logo": "https://www.google.com/s2/favicons?domain=anthropic.com&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "Anthropic close to awarding Morgan Stanley and Goldman Sachs top roles in $2tn IPO - ft.com",
+        "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNaWxaRF9ValREekRRNE00M0JmTWVkZE9hN0hyLXlhVTktdFVtdjBqaENTcTBJZUdmbHJ6UEtHVTB4Z3JqcTBRWjhoYWkxYWgtbGNhTkRxclJJT0hLUHJYTDRUV1NINERTal82WVZjRVJYekIwZ0stYjFYdk9YSEx3eUNSRkw?oc=5",
+        "pubDate": "Fri, 04 Sep 2026 19:46:21 GMT"
       },
       "sparkline": null
     },
@@ -40,11 +70,50 @@
       "logo": "https://www.google.com/s2/favicons?domain=openai.com&sz=128",
       "ticker": null,
       "headline": {
-        "title": "OpenAI's GPT-6 Astra on ARC-AGI-3 - ARC Prize",
-        "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE90VUZhWlJWX1Bfb25GeFEwR0UxaTh1REVQME5VOXdEYWFhU3I5Mm9NaXZfbVhUTmZkRGNmN3ZkWjVxVDdvYkE?oc=5",
-        "pubDate": "Thu, 03 Sep 2026 20:04:04 GMT"
+        "title": "OpenAI agents hijacked German website before Hugging Face hack, report claims - BBC",
+        "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE04aWF3b1AtTXlBZjEzZXZJSmhPYlJKNUtYa0tpZ0JCazgzb2ViQmN0NWV1T25SbjZFaHdwY29HU2lyWFdRWVVnX20zTDB1U0kyaV96MFJmSHRGTC05?oc=5",
+        "pubDate": "Fri, 04 Sep 2026 14:59:13 GMT"
       },
       "sparkline": null
+    },
+    {
+      "name": "Palantir",
+      "tag": "Data Analytics",
+      "desc": "Big-data analytics platforms for government and enterprise",
+      "url": "https://palantir.com",
+      "initials": "PL",
+      "logo": "https://www.google.com/s2/favicons?domain=palantir.com&sz=128",
+      "ticker": "PLTR",
+      "headline": {
+        "title": "Sadiq Khan agrees to have his texts and emails searched in Palantir legal battle - The Guardian",
+        "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQT0s2alUyVEdwTVlob2NZU0ZOaW1rS0ZieU9DU2NIUWt2S0NGMTNjRHVtNEdCMl9NcEN4OW1zdUQya2NiX1FKTDNvUUJ5cjM5TG15OS00SXVVVFpISlFoT1Zoek9ldGVvMXBRZ2cyZjl6b19ROVhDdG91YjRBQ2FSWnZfQU5HLUtWTVMwRkk0VzJBdWJtRG1DN3JkT3hIMWhmUWFWcVVDdXZVNHBiQk8tdmE4aV83dw?oc=5",
+        "pubDate": "Thu, 03 Sep 2026 22:04:00 GMT"
+      },
+      "sparkline": [
+        158.42999267578125,
+        155.9199981689453,
+        172.00999450683594,
+        175.22999572753906,
+        174.94000244140625,
+        171.0399932861328,
+        179.00999450683594,
+        174.0399932861328,
+        172.5500030517578,
+        171.5399932861328,
+        175.19000244140625,
+        173.9600067138672,
+        179.94000244140625,
+        175.88999938964844,
+        172.72999572753906,
+        177.5,
+        185.92999267578125,
+        186.2899932861328,
+        186.3800048828125,
+        179.9199981689453,
+        169.4600067138672,
+        182.52999877929688,
+        174.3300018310547
+      ]
     },
     {
       "name": "CrowdStrike",
@@ -60,7 +129,6 @@
         "pubDate": "Thu, 03 Sep 2026 18:08:22 GMT"
       },
       "sparkline": [
-        211.22000122070312,
         209.86000061035156,
         207.38999938964844,
         214.4199981689453,
@@ -82,23 +150,9 @@
         231,
         215.07000732421875,
         203.4199981689453,
-        214.97000122070312
+        214.97000122070312,
+        213.10000610351562
       ]
-    },
-    {
-      "name": "Anthropic",
-      "tag": "LLMs",
-      "desc": "AI safety company behind the Claude family of models",
-      "url": "https://anthropic.com",
-      "initials": "AN",
-      "logo": "https://www.google.com/s2/favicons?domain=anthropic.com&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "OpenAI says it has overtaken Anthropic with its latest AI model - Financial Times",
-        "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPVFcxemxHOTBaaDF0M1dGZGY2eGwtZE1VQjBkeFVVMnRCbXktam5PVlZnYkxXbGFtcHUzRk1VbjdtdnctOXMySkZiVXlRLUlwY1BfUXJ3VF90OGZNNFZXYWNEdWd3M1JGUXVld044M1F0MGZZemZIRDJLdGpYbHNNblJ2TDE?oc=5",
-        "pubDate": "Thu, 03 Sep 2026 18:00:11 GMT"
-      },
-      "sparkline": null
     },
     {
       "name": "Cursor",
@@ -112,60 +166,6 @@
         "title": "OpenAI Cut Off a Billion-Dollar Customer to Avoid Elon Musk - WIRED",
         "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5qVVRudFQ0M3NsY194Q0dkRmYyaFlCaHhfX000NkNEbmxPY3FuaTdiR3BGNDZCeV9HenpHRy1yMVRQcHJIdmhLZ0czd29PVHpWc2htdjhCdHEzcGlJOUtwWDEwYV9ObVRxczdQcmlHWkxkVURSNkdz?oc=5",
         "pubDate": "Thu, 03 Sep 2026 16:42:00 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "Rocket Lab",
-      "tag": "Space",
-      "desc": "Small-satellite launch provider and space systems manufacturer",
-      "url": "https://rocketlabusa.com",
-      "initials": "RL",
-      "logo": "https://www.google.com/s2/favicons?domain=rocketlabusa.com&sz=128",
-      "ticker": "RKLB",
-      "headline": {
-        "title": "Rocket issues delay 1st-ever private mission to Venus: 'We are awaiting Neutron readiness' - Space",
-        "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPR2NEU041bzJZWkNTMDAyU1QwYU1HUnVya25OdHNmQVhya2ZrTEpOZFpvRXNCdWQ0ei1ZdGtiVXpja2gtTHJMZmFZNmh5bExVeUJuX1pzT1JaSUh6aFFZQUhmcEFkX0VKZW03QmJhc3hMOTlXUE9UTXZJSjBFSFZUeU9jRmF3R2pBMU55cDFpYmF6aTRDTE1HYXFNaW9kYThSVkZXeHVGSTlqY1hGVFB6M2FCek9oWXltTTZ3ZTRlYTFXTWs?oc=5",
-        "pubDate": "Thu, 03 Sep 2026 10:00:00 GMT"
-      },
-      "sparkline": [
-        74.4800033569336,
-        74.81999969482422,
-        75.66999816894531,
-        82.83000183105469,
-        80.04000091552734,
-        80.01000213623047,
-        81.16999816894531,
-        80.0999984741211,
-        80.25,
-        82.08000183105469,
-        79.16000366210938,
-        75.83999633789062,
-        72.94999694824219,
-        72.56999969482422,
-        68.27999877929688,
-        66.91000366210938,
-        66.18000030517578,
-        67.52999877929688,
-        64.38999938964844,
-        63.91999816894531,
-        62.540000915527344,
-        63.099998474121094,
-        63.810001373291016
-      ]
-    },
-    {
-      "name": "xAI",
-      "tag": "LLMs",
-      "desc": "Elon Musk's AI company, developer of the Grok models",
-      "url": "https://x.ai",
-      "initials": "X",
-      "logo": "https://www.google.com/s2/favicons?domain=x.ai&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "Child sexual abuse survivor alleges Elon Musk’s AI chatbot used photos of her to generate new illegal images - theguardian.com",
-        "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNMzVOSVYwT2M0amI4ZWJ6dkxDaEZ6LTN3dkFMczlCd1h3aXNjR3FZS2RybTNFS3VkRmo5VTN3M0t4NHJhOS1QYmlVaXNicUY5WHRwWHlMZTh0WkJXek5OWVdSeEFPeC1FV09veXo1OEt6QnhJQkpScHI2NzRHRkp5UmRIaTA0dFdNUDFLM0dFei0?oc=5",
-        "pubDate": "Thu, 03 Sep 2026 09:02:00 GMT"
       },
       "sparkline": null
     }
