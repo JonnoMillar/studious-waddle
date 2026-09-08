@@ -1,6 +1,90 @@
 {
-  "refreshed_at": "2026-09-07T12:02:57.491Z",
+  "refreshed_at": "2026-09-08T10:56:30.624Z",
   "companies": [
+    {
+      "name": "Palantir",
+      "tag": "Data Analytics",
+      "desc": "Big-data analytics platforms for government and enterprise",
+      "url": "https://palantir.com",
+      "initials": "PL",
+      "logo": "https://www.google.com/s2/favicons?domain=palantir.com&sz=128",
+      "ticker": "PLTR",
+      "headline": {
+        "title": "Britain’s grid operator gave Palantir contract without inviting rival bids - Financial Times",
+        "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPLVVrNF91azhqODkxVHRJblpKV0ZvT3NHd2JQVVRxX1IwZW9XVHpqV2Fqa25FY19SbFNjdW03SDJIOWp0UlZyenhHNHRvSW9ORWhtUVp4b2hwdWJ3X0F0Nmw1bWRJUUZIS0VTUmYycFlPaWg3ckJXOFdqSjZLR2lpRXYwS1c?oc=5",
+        "pubDate": "Tue, 08 Sep 2026 10:41:15 GMT"
+      },
+      "sparkline": [
+        158.42999267578125,
+        155.9199981689453,
+        172.00999450683594,
+        175.22999572753906,
+        174.94000244140625,
+        171.0399932861328,
+        179.00999450683594,
+        174.0399932861328,
+        172.5500030517578,
+        171.5399932861328,
+        175.19000244140625,
+        173.9600067138672,
+        179.94000244140625,
+        175.88999938964844,
+        172.72999572753906,
+        177.5,
+        185.92999267578125,
+        186.2899932861328,
+        186.3800048828125,
+        179.9199981689453,
+        169.4600067138672,
+        182.52999877929688,
+        174.3300018310547
+      ]
+    },
+    {
+      "name": "Perplexity",
+      "tag": "AI Search",
+      "desc": "Answer engine combining web search with AI-generated summaries",
+      "url": "https://perplexity.ai",
+      "initials": "P",
+      "logo": "https://www.google.com/s2/favicons?domain=perplexity.ai&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "Perplexity Discover Curator Applications 2026: Join the First 25 Curators and Get Global Exposure - Global South Opportunities",
+        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE44UUpKUEUxUnU4MmRIWllEUkFFdS1pZHNmQU1VNG56LTF0SzVHVnE5dnRnczlud29iZURsekhkZU9mWG13LUpXM19DeVNxV1BwVHhhWW14NXQtNndmaWFXc1lWcDFVUW1nNnVWMWliOUE?oc=5",
+        "pubDate": "Tue, 08 Sep 2026 09:26:41 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "Mistral AI",
+      "tag": "LLMs",
+      "desc": "Europe's leading open-weight AI foundation models",
+      "url": "https://mistral.ai",
+      "initials": "M",
+      "logo": "https://www.google.com/s2/favicons?domain=mistral.ai&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "Making sovereign, open-weight AI the technology frontier - mistral.ai",
+        "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNRzU0cTlwNHctb0FiY092UVlJZFh4UmxsQ2lPLTdkVEU2SlRzVU12VzI2RGRYWEFqS2NMcVlXdXNTUGczTjFTbjZGMXY4bHhZYXN6bVpGQ0M0cndmMmthYjhUcGhPWlZsb1ZWeHhHOUdZWE93bTdUMjBNMzZQNTR6Mw?oc=5",
+        "pubDate": "Tue, 08 Sep 2026 05:03:58 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "Anthropic",
+      "tag": "LLMs",
+      "desc": "AI safety company behind the Claude family of models",
+      "url": "https://anthropic.com",
+      "initials": "AN",
+      "logo": "https://www.google.com/s2/favicons?domain=anthropic.com&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "Architect of UK’s AI policy quits after Anthropic conflict of interest concerns - The Guardian",
+        "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNdFB2blFFQU9kMW1aZjJSRVFxVVZlSllBZzNiZWpYRXh2eUNCUUVIZlItUGFyOHNCNzJQczJZSmVKM1poc0lEZDNONjB5VG52RnhtSVlhQlgxUFZXSUJzOER1TWJEUkRnSk1KbWx1WExLUXJ5dVpKaTlvNDM2ZzVHdmU0Yk9OcGdwMTV4bUgzU0Z3b0hNenNuOWF2bUl1SHk2SkhubHdMa0pwcXM1ZU5QTmQ1Ry1YTzR6Sldz?oc=5",
+        "pubDate": "Tue, 08 Sep 2026 01:30:00 GMT"
+      },
+      "sparkline": null
+    },
     {
       "name": "Scale AI",
       "tag": "AI Data",
@@ -10,24 +94,39 @@
       "logo": "https://www.google.com/s2/favicons?domain=scale.com&sz=128",
       "ticker": null,
       "headline": {
-        "title": "Three lessons from governing Agentic AI at scale - Capita",
-        "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQVHZpNjhac1BzUTN0NS16OVFvNWpLX0dZcmRyMURwSXhscWF1YUxEMjcxMklvbEFTRnF3WVQtMTh5dktrUG9iTGdhb01yYjFweFJPeVJVY2VwSWREZE5RT1hUUU56WXRueVhCRUFsNlVkSGpSVzJ6U29oMndmdnd6ZVJ6TWdTWDRLMDEtdVZ6X3VFdHdEVm5wS0pwMTQ5dkdMSFdQZGZn?oc=5",
-        "pubDate": "Mon, 07 Sep 2026 11:00:00 GMT"
+        "title": "CNCF Welcomes New Silver Members as Enterprises Scale AI From Training to Inference - PR Newswire",
+        "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPVnhIVWpkUm1CbFZ3VktKV2x2Y0MtSU5xajdZdkN1U1lWOEt3QjVnbWhaX1VyMDVud0ZnZ0pxNk40Y1pwSTZVOTJUb2xfZ1FjLW05TXZRM1JJRVg5MFBnNHdNd1p2M1NNc2xUOEJqanpNZ0x4aDJGbUl3MFVjWnBpM3NaUjdQWkRrc28yajB4NVg2djFucWNnVHlnWEt1azZpajluNi1xUjk4N1lwYWJKbXBqSldDWWtsTXR1RmZmalNoSUdXcVlNZ3VXSjlBS3FXUHBSLXF3?oc=5",
+        "pubDate": "Tue, 08 Sep 2026 01:00:00 GMT"
       },
       "sparkline": null
     },
     {
-      "name": "Anduril",
-      "tag": "Defense AI",
-      "desc": "Autonomous defense systems and AI-enabled military hardware",
-      "url": "https://anduril.com",
-      "initials": "A",
-      "logo": "https://www.google.com/s2/favicons?domain=anduril.com&sz=128",
+      "name": "xAI",
+      "tag": "LLMs",
+      "desc": "Elon Musk's AI company, developer of the Grok models",
+      "url": "https://x.ai",
+      "initials": "X",
+      "logo": "https://www.google.com/s2/favicons?domain=x.ai&sz=128",
       "ticker": null,
       "headline": {
-        "title": "The Comms Strategist Behind Anduril, Shopify &amp; Cognition - Dealroom",
-        "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxONEdTLUtaTlYyWmtEb240QlVEdFd1MTlyM0Q4YThwNzdkMUdFajFsbnlVVU1QbWxEWjcybEZyZkxzSUtGQ2huYkY1a2RtRlNiMlFvLUtGb1dEOVR2ZzcyYldfYjRNbDR0amZaYmJfWVpGLUpSY1dIY1czRDQ3Y21SQTRKRzhXQk9BWWhBNGotY1o?oc=5",
-        "pubDate": "Mon, 07 Sep 2026 10:30:08 GMT"
+        "title": "Elon Musk's xAI loses second bid to block Minnesota's AI nudify-app ban - TechSpot",
+        "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPWkVDb0g4NU91Y2dNYVhVRHoxdEhGYk5nbUJPa1hFM01oaWpOa2ZRTHUzQ09IU21xSjB5UWpxT1JkSGJTRi1DTkRHNkxibnlzTmU4b3lBbHFueG1wTDJtb196SG1abUVRaXIxbE1CUVMxVW8talRsaERpX0VrS19KeUdlU1hCR3YtTnd5SUYwanltb2JES3hUdGVJQlN1S00w?oc=5",
+        "pubDate": "Mon, 07 Sep 2026 14:03:00 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "OpenAI",
+      "tag": "LLMs",
+      "desc": "Creator of ChatGPT and the GPT family of foundation models",
+      "url": "https://openai.com",
+      "initials": "OAI",
+      "logo": "https://www.google.com/s2/favicons?domain=openai.com&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "OpenAI chief scientist warns no-one is prepared for consequences of AI - BBC",
+        "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1waC1yMGJqLTh3NGNXd05uV2MwQzlMS3RmSGdYeDJDckJFZ29NMW5JcFJ0T3JjSGVoRlJDSUYtTWxZQlV3bi1EZW1HZE5aMzRHMk55aWs1WHFmRjZX?oc=5",
+        "pubDate": "Mon, 07 Sep 2026 12:22:07 GMT"
       },
       "sparkline": null
     },
@@ -40,7 +139,7 @@
       "logo": "https://www.google.com/s2/favicons?domain=rocketlabusa.com&sz=128",
       "ticker": "RKLB",
       "headline": {
-        "title": "Rocket Lab's Neutron Just Slipped Again. Here's the Only Date That Still Matters for Shareholders. - The Motley Fool",
+        "title": "Rocket Lab's Neutron Just Slipped Again. Here's the Only Date That Still Matters for Shareholders. - fool.com",
         "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPMU8zZVByTEJlb3BxcVp1UTg5MUp4aDB0Y0VRWGY2N0J2alJRYVhQb3J4REN6MHFmRlFmMmFydllWLW1GR2dadUpWMFFyNl9kM2lWVDVNNTJJbFIyN0NiYmFMRkxad1NVX3lIWWVjSU94aVFyS3JRTG5CSFRjRU40ZkwzR2x5WXFIN0JjZkZXMV9wNEJhQlVDNw?oc=5",
         "pubDate": "Mon, 07 Sep 2026 10:05:00 GMT"
       },
@@ -68,105 +167,6 @@
         63.099998474121094,
         63.810001373291016,
         64.26000213623047
-      ]
-    },
-    {
-      "name": "Mistral AI",
-      "tag": "LLMs",
-      "desc": "Europe's leading open-weight AI foundation models",
-      "url": "https://mistral.ai",
-      "initials": "M",
-      "logo": "https://www.google.com/s2/favicons?domain=mistral.ai&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "Mistral AI: from Europe's Anthropic to its Palantir — Sifted analysis - Dealroom",
-        "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQQnFGOFJJMzg3bjhRNl9FTXpzV3hGc1JyVFVuMVMyUWVkYmVwZ1BIWHJzcXpZNmotbGVncW5MazlxUS05ZGYxX2ZCeldvMjVMam9tSWR1M0ppdkd2WjR4RWJVVW9GMjZWRmZublJPWUZLSnpxbUdTc3pjTWEzY3JjZzFOaFcweVMtdW1FWWF5NEd6NkZhN2NkMFpPY1ZjMmdaY1E?oc=5",
-        "pubDate": "Mon, 07 Sep 2026 09:35:57 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "OpenAI",
-      "tag": "LLMs",
-      "desc": "Creator of ChatGPT and the GPT family of foundation models",
-      "url": "https://openai.com",
-      "initials": "OAI",
-      "logo": "https://www.google.com/s2/favicons?domain=openai.com&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "Harvey + Legora on OpenAI’s GPT-6 Astra - Artificial Lawyer",
-        "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQdHhNVlVSb3g3X3BRUG9YODhqTjlMeFd1OW43T3oweVRYTWdHVUZZUzlyUEdTWUY0eTVpWmJaeDhUZkhoeElTTDdqX0dJNnJrMzVLZnY2X1RINXFKU1lzQlpmRktWNkVrUER4QUxud0xMQ0VScXdvWUk4RFVSclBWSTUxY3U4aFh6?oc=5",
-        "pubDate": "Mon, 07 Sep 2026 07:24:29 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "Groq",
-      "tag": "AI Chips",
-      "desc": "LPU inference chips delivering industry-leading token speed",
-      "url": "https://groq.com",
-      "initials": "G",
-      "logo": "https://www.google.com/s2/favicons?domain=groq.com&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "NVIDIA (NVDA)’s $20 Billion Groq Bet Goes Live This Year With New AI Racks - Yahoo Finance UK",
-        "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOWnR5a2pJRHdiWXhNM0dmcXJHUEVLNWJpT2V0OUItaDh6a0UtemgtSnVURUJkd3haMGNjMHpxZnBwdGhnX0pudWxzZFB2VnhxNm5ZWEpMR1FtWDk3T0dYa0IzVlBuekdmRGxuQ051UUFjUTR1VEFDM1BwRF9QbkdoSXVB?oc=5",
-        "pubDate": "Sun, 06 Sep 2026 19:07:37 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "Anthropic",
-      "tag": "LLMs",
-      "desc": "AI safety company behind the Claude family of models",
-      "url": "https://anthropic.com",
-      "initials": "AN",
-      "logo": "https://www.google.com/s2/favicons?domain=anthropic.com&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "How Anthropic Clinched $517 Billion in Compute Deals in 11 Months - The Information",
-        "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQLXRPY1Z1di1Kbks0MzNxSkpJdi1DTkRoQzZxUDJHVW90Q2pCalNYaDVIZ2Y0MENIS2laWE1MdEYtRGZFNFhaRDJKcEVsRHBsY2p2X0pUT3REVEc1VzhHN1JQQ0NmR0IybE5USmFQd1pfSFBBWVAyQzAwME43eEZCd0lCX0pycjIyWU9TT0VBczZyZk9sWnRmNGNn?oc=5",
-        "pubDate": "Sun, 06 Sep 2026 15:00:00 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "Palantir",
-      "tag": "Data Analytics",
-      "desc": "Big-data analytics platforms for government and enterprise",
-      "url": "https://palantir.com",
-      "initials": "PL",
-      "logo": "https://www.google.com/s2/favicons?domain=palantir.com&sz=128",
-      "ticker": "PLTR",
-      "headline": {
-        "title": "Twelve English police forces involved in contentious Palantir pilot programmes - ft.com",
-        "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQM0h6d0drdS1MaEdvdzAxNU83SnQ5Xzl6WHdxVW0zOXM1aEFyS3RxV2FMZnJUOWpfNEp5QW9QRFh6RzE3NEhlRGVxdkoxUnZvUkpxd2FKU3JOaUM5TkFOWGVYSDI2ZU9rQV9lTlN1b2J5Ni1yUWhtWllxNTZvTmdONEhwTzg?oc=5",
-        "pubDate": "Sun, 06 Sep 2026 04:03:04 GMT"
-      },
-      "sparkline": [
-        158.42999267578125,
-        155.9199981689453,
-        172.00999450683594,
-        175.22999572753906,
-        174.94000244140625,
-        171.0399932861328,
-        179.00999450683594,
-        174.0399932861328,
-        172.5500030517578,
-        171.5399932861328,
-        175.19000244140625,
-        173.9600067138672,
-        179.94000244140625,
-        175.88999938964844,
-        172.72999572753906,
-        177.5,
-        185.92999267578125,
-        186.2899932861328,
-        186.3800048828125,
-        179.9199981689453,
-        169.4600067138672,
-        182.52999877929688,
-        174.3300018310547
       ]
     }
   ]
