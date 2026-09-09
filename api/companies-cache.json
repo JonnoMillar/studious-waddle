@@ -1,72 +1,18 @@
 {
-  "refreshed_at": "2026-09-08T10:56:30.624Z",
+  "refreshed_at": "2026-09-09T11:00:57.345Z",
   "companies": [
     {
-      "name": "Palantir",
-      "tag": "Data Analytics",
-      "desc": "Big-data analytics platforms for government and enterprise",
-      "url": "https://palantir.com",
-      "initials": "PL",
-      "logo": "https://www.google.com/s2/favicons?domain=palantir.com&sz=128",
-      "ticker": "PLTR",
-      "headline": {
-        "title": "Britain’s grid operator gave Palantir contract without inviting rival bids - Financial Times",
-        "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPLVVrNF91azhqODkxVHRJblpKV0ZvT3NHd2JQVVRxX1IwZW9XVHpqV2Fqa25FY19SbFNjdW03SDJIOWp0UlZyenhHNHRvSW9ORWhtUVp4b2hwdWJ3X0F0Nmw1bWRJUUZIS0VTUmYycFlPaWg3ckJXOFdqSjZLR2lpRXYwS1c?oc=5",
-        "pubDate": "Tue, 08 Sep 2026 10:41:15 GMT"
-      },
-      "sparkline": [
-        158.42999267578125,
-        155.9199981689453,
-        172.00999450683594,
-        175.22999572753906,
-        174.94000244140625,
-        171.0399932861328,
-        179.00999450683594,
-        174.0399932861328,
-        172.5500030517578,
-        171.5399932861328,
-        175.19000244140625,
-        173.9600067138672,
-        179.94000244140625,
-        175.88999938964844,
-        172.72999572753906,
-        177.5,
-        185.92999267578125,
-        186.2899932861328,
-        186.3800048828125,
-        179.9199981689453,
-        169.4600067138672,
-        182.52999877929688,
-        174.3300018310547
-      ]
-    },
-    {
-      "name": "Perplexity",
-      "tag": "AI Search",
-      "desc": "Answer engine combining web search with AI-generated summaries",
-      "url": "https://perplexity.ai",
-      "initials": "P",
-      "logo": "https://www.google.com/s2/favicons?domain=perplexity.ai&sz=128",
+      "name": "Waymo",
+      "tag": "Autonomy",
+      "desc": "The most miles driven autonomously of any robotaxi service",
+      "url": "https://waymo.com",
+      "initials": "W",
+      "logo": "https://www.google.com/s2/favicons?domain=waymo.com&sz=128",
       "ticker": null,
       "headline": {
-        "title": "Perplexity Discover Curator Applications 2026: Join the First 25 Curators and Get Global Exposure - Global South Opportunities",
-        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE44UUpKUEUxUnU4MmRIWllEUkFFdS1pZHNmQU1VNG56LTF0SzVHVnE5dnRnczlud29iZURsekhkZU9mWG13LUpXM19DeVNxV1BwVHhhWW14NXQtNndmaWFXc1lWcDFVUW1nNnVWMWliOUE?oc=5",
-        "pubDate": "Tue, 08 Sep 2026 09:26:41 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "Mistral AI",
-      "tag": "LLMs",
-      "desc": "Europe's leading open-weight AI foundation models",
-      "url": "https://mistral.ai",
-      "initials": "M",
-      "logo": "https://www.google.com/s2/favicons?domain=mistral.ai&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "Making sovereign, open-weight AI the technology frontier - mistral.ai",
-        "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNRzU0cTlwNHctb0FiY092UVlJZFh4UmxsQ2lPLTdkVEU2SlRzVU12VzI2RGRYWEFqS2NMcVlXdXNTUGczTjFTbjZGMXY4bHhZYXN6bVpGQ0M0cndmMmthYjhUcGhPWlZsb1ZWeHhHOUdZWE93bTdUMjBNMzZQNTR6Mw?oc=5",
-        "pubDate": "Tue, 08 Sep 2026 05:03:58 GMT"
+        "title": "Lyft Begins Offering Waymo Robotaxi Rides on Its App in Nashville - Bloomberg.com",
+        "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPM3RJcEEtNkpUUkstUFY0VmJhSlVFSTg2WlBLeFJVQzdKZHVoR05jbUFYcVNjSG1BNm5Udks1cS14M0pLVW5rUlVpeERCZjEyVzJITU5Ha0tCWU1SV1k2dE1aeXl0LVllWWd0bzVhZkFZTzhpaTR0OUNrLWJWSHlKcjVQV0d2R3psbjhhNEY4dWtzZkUzQkZHZ3lOY2lZaGZFZV9sLW1vb3NJV2RhajZGcXl1N0FjZUU?oc=5",
+        "pubDate": "Wed, 09 Sep 2026 10:00:05 GMT"
       },
       "sparkline": null
     },
@@ -79,9 +25,24 @@
       "logo": "https://www.google.com/s2/favicons?domain=anthropic.com&sz=128",
       "ticker": null,
       "headline": {
-        "title": "Architect of UK’s AI policy quits after Anthropic conflict of interest concerns - The Guardian",
-        "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNdFB2blFFQU9kMW1aZjJSRVFxVVZlSllBZzNiZWpYRXh2eUNCUUVIZlItUGFyOHNCNzJQczJZSmVKM1poc0lEZDNONjB5VG52RnhtSVlhQlgxUFZXSUJzOER1TWJEUkRnSk1KbWx1WExLUXJ5dVpKaTlvNDM2ZzVHdmU0Yk9OcGdwMTV4bUgzU0Z3b0hNenNuOWF2bUl1SHk2SkhubHdMa0pwcXM1ZU5QTmQ1Ry1YTzR6Sldz?oc=5",
-        "pubDate": "Tue, 08 Sep 2026 01:30:00 GMT"
+        "title": "Anthropic researcher quits over AI labs ‘gambling with our lives’ - Financial Times",
+        "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPVEd5ek5kaWNlMEhuc1B5NDktbmhCN1RhNEZFQ3ZUYjJyWm1WUWdkdUhYMnZVNTExLWd2VzF0M1hHVUd1dDlfRmtaRDhTZ0ZicXVJTHJ1RzFlNXZ3V1VNTnZDb1pUb0F4aTdGMlBIZWZpZ21TYnQyanFMWVMtdzlZVnAyTUk?oc=5",
+        "pubDate": "Wed, 09 Sep 2026 09:31:37 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "Cursor",
+      "tag": "Code Editor",
+      "desc": "AI-native code editor that pairs with Claude and GPT-4",
+      "url": "https://cursor.com",
+      "initials": "C",
+      "logo": "https://www.google.com/s2/favicons?domain=cursor.com&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "Coder launches Agent Relay for Cursor in private preview - IT Brief UK",
+        "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOdnViQ2FLbU1UcUc4Tzk5RnBVMHczUVJSUDRjYmZWdUItR0xLMEMtTlZ3SHFhMjB0aEVjdzcxd2xtSG5odEtoemtCVVhlOVN3c3c1WHRCVjZYWlBDYWdFS3RSekVxSnJJRFZDVEk2eEVyb09uMmljMzdiM0hNaEFfZFhRcVpvZ3RZRXJLaA?oc=5",
+        "pubDate": "Wed, 09 Sep 2026 08:30:00 GMT"
       },
       "sparkline": null
     },
@@ -94,39 +55,9 @@
       "logo": "https://www.google.com/s2/favicons?domain=scale.com&sz=128",
       "ticker": null,
       "headline": {
-        "title": "CNCF Welcomes New Silver Members as Enterprises Scale AI From Training to Inference - PR Newswire",
-        "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPVnhIVWpkUm1CbFZ3VktKV2x2Y0MtSU5xajdZdkN1U1lWOEt3QjVnbWhaX1VyMDVud0ZnZ0pxNk40Y1pwSTZVOTJUb2xfZ1FjLW05TXZRM1JJRVg5MFBnNHdNd1p2M1NNc2xUOEJqanpNZ0x4aDJGbUl3MFVjWnBpM3NaUjdQWkRrc28yajB4NVg2djFucWNnVHlnWEt1azZpajluNi1xUjk4N1lwYWJKbXBqSldDWWtsTXR1RmZmalNoSUdXcVlNZ3VXSjlBS3FXUHBSLXF3?oc=5",
-        "pubDate": "Tue, 08 Sep 2026 01:00:00 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "xAI",
-      "tag": "LLMs",
-      "desc": "Elon Musk's AI company, developer of the Grok models",
-      "url": "https://x.ai",
-      "initials": "X",
-      "logo": "https://www.google.com/s2/favicons?domain=x.ai&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "Elon Musk's xAI loses second bid to block Minnesota's AI nudify-app ban - TechSpot",
-        "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPWkVDb0g4NU91Y2dNYVhVRHoxdEhGYk5nbUJPa1hFM01oaWpOa2ZRTHUzQ09IU21xSjB5UWpxT1JkSGJTRi1DTkRHNkxibnlzTmU4b3lBbHFueG1wTDJtb196SG1abUVRaXIxbE1CUVMxVW8talRsaERpX0VrS19KeUdlU1hCR3YtTnd5SUYwanltb2JES3hUdGVJQlN1S00w?oc=5",
-        "pubDate": "Mon, 07 Sep 2026 14:03:00 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "OpenAI",
-      "tag": "LLMs",
-      "desc": "Creator of ChatGPT and the GPT family of foundation models",
-      "url": "https://openai.com",
-      "initials": "OAI",
-      "logo": "https://www.google.com/s2/favicons?domain=openai.com&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "OpenAI chief scientist warns no-one is prepared for consequences of AI - BBC",
-        "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1waC1yMGJqLTh3NGNXd05uV2MwQzlMS3RmSGdYeDJDckJFZ29NMW5JcFJ0T3JjSGVoRlJDSUYtTWxZQlV3bi1EZW1HZE5aMzRHMk55aWs1WHFmRjZX?oc=5",
-        "pubDate": "Mon, 07 Sep 2026 12:22:07 GMT"
+        "title": "London-based CloudNC raises €17.2 million to scale AI-powered precision machining - EU-Startups",
+        "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOYnVReXplTWQxanh6U2lkX2xncmtKMHFzYjlRY2ZSeTNyb0EtUl9DQzE1Q3J1NVdJMmFhYjZOZ2hoUEVLaUdfWHpycWRheGtNVVVfYTY4Sm1PMTZXRnBPb3MwRkxhX2Y4aHB2a1VmTWZ6b3FQU0d1YUMxTzB1Q1RERWxKemp4YlBOVF9XZW14ai16WWlmS0JHRmdzdFlXZXVpYy1vM2NEQlVJeDhjZWJ0OGY2YmI4bzdYcEE?oc=5",
+        "pubDate": "Wed, 09 Sep 2026 08:12:09 GMT"
       },
       "sparkline": null
     },
@@ -139,14 +70,11 @@
       "logo": "https://www.google.com/s2/favicons?domain=rocketlabusa.com&sz=128",
       "ticker": "RKLB",
       "headline": {
-        "title": "Rocket Lab's Neutron Just Slipped Again. Here's the Only Date That Still Matters for Shareholders. - fool.com",
-        "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPMU8zZVByTEJlb3BxcVp1UTg5MUp4aDB0Y0VRWGY2N0J2alJRYVhQb3J4REN6MHFmRlFmMmFydllWLW1GR2dadUpWMFFyNl9kM2lWVDVNNTJJbFIyN0NiYmFMRkxad1NVX3lIWWVjSU94aVFyS3JRTG5CSFRjRU40ZkwzR2x5WXFIN0JjZkZXMV9wNEJhQlVDNw?oc=5",
-        "pubDate": "Mon, 07 Sep 2026 10:05:00 GMT"
+        "title": "Rocket Lab Introduces High-Efficiency Solar Cell to Reduce Reliance on Supply-Constrained Critical Minerals - rocketlabcorp.com",
+        "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQR2tkbmdfOU1pbFlSdTJCOEhnUThleGpUOXZKZWxKQkpzbTJlYVozWmpycDlTY3FtVFo4MXlQV3lraGIxNEU2TnFMWUdUaFBCUEE2Ul9MbWlZRC1iLXdLWHA3RW15bGdqV3FNWGNvVHdZM29weTNpUERMamdRTjhIMnpoMHFGZHJaajFIbTNYZExXOGpCYk5qc1hLSGU1aGF5TWRBa2ktTHJGZHdvUzV2NFZlN2w4Z013MkJXX3A2a0dKeU1EVVJuN2poTzlQd1NYcHpEalJveHlNZw?oc=5",
+        "pubDate": "Wed, 09 Sep 2026 02:21:10 GMT"
       },
       "sparkline": [
-        74.81999969482422,
-        75.66999816894531,
-        82.83000183105469,
         80.04000091552734,
         80.01000213623047,
         81.16999816894531,
@@ -166,8 +94,54 @@
         62.540000915527344,
         63.099998474121094,
         63.810001373291016,
-        64.26000213623047
+        64.26000213623047,
+        65.87000274658203
       ]
+    },
+    {
+      "name": "OpenAI",
+      "tag": "LLMs",
+      "desc": "Creator of ChatGPT and the GPT family of foundation models",
+      "url": "https://openai.com",
+      "initials": "OAI",
+      "logo": "https://www.google.com/s2/favicons?domain=openai.com&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "OpenAI claims to have solved maths problem that stumped humans for decades - The Guardian",
+        "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQRktSM0hpSXlkVHhtQi1saTdsMERvYURwXzhrZk5xQzBTTGdBYVAtR2Q2NnBraDBfcDg5TmJmRnFQbkpTekt6dHNCOXBXQTVySkdBUlN4a0ItdWk2MjU4dkdSM2twLUFEN3BKUXdIVm5WbUJ6RG5oNzNBOFVnRGhnNURQR0ZDWWVTQjhhMjhkQ3RrUUFUV2tVSVFqdUJUNWRCLVB1SU4zeEYxZ1l1aFhRaEhnczhaejZ3M0RQU2pXNA?oc=5",
+        "pubDate": "Tue, 08 Sep 2026 21:39:00 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "Anduril",
+      "tag": "Defense AI",
+      "desc": "Autonomous defense systems and AI-enabled military hardware",
+      "url": "https://anduril.com",
+      "initials": "A",
+      "logo": "https://www.google.com/s2/favicons?domain=anduril.com&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "U.S. military’s Anduril Dive-LD drone was ‘dead in the water’ before Iran nabbed it - DefenseScoop",
+        "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOZkptT2NWZGx1MXhKS01lOFlERXdxeTJ2VjB3RkluSkRkR3lWWlFfNjd0aXFLdThGUFQxbERPUEg1a210MkY5Ry0ya25kQS1XYUItcmV4X3pfbjlfb2p4UzdSQWYwb1RhbnJuRVJ4eVZCSGNWaUd5VFlQWVlRSFUtTWdFU0c0eElITGM1Q181eGVBZw?oc=5",
+        "pubDate": "Tue, 08 Sep 2026 21:05:35 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "Mistral AI",
+      "tag": "LLMs",
+      "desc": "Europe's leading open-weight AI foundation models",
+      "url": "https://mistral.ai",
+      "initials": "M",
+      "logo": "https://www.google.com/s2/favicons?domain=mistral.ai&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "Mistral raises record €3bn as Europe strains to keep pace in AI race - Financial Times",
+        "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQTjlnSWVPWm84bENtZ1VsbERndnh6dS1FaTVLVDl6bzNuTmhHa0stNms0ZHdJV09oYUFURkk5cFZ4MFpla2ZUVnlQU19SeWVEclZaR0lLRnhrV0szeXJZblZ1LVdKN0tvSDJRQ1pkWVJab3RTZ192Q1FaUzgza05fRnZDY2U?oc=5",
+        "pubDate": "Tue, 08 Sep 2026 08:04:18 GMT"
+      },
+      "sparkline": null
     }
   ]
 }
