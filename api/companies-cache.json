@@ -1,18 +1,93 @@
 {
-  "refreshed_at": "2026-09-09T11:00:57.345Z",
+  "refreshed_at": "2026-09-10T10:57:44.674Z",
   "companies": [
     {
-      "name": "Waymo",
-      "tag": "Autonomy",
-      "desc": "The most miles driven autonomously of any robotaxi service",
-      "url": "https://waymo.com",
-      "initials": "W",
-      "logo": "https://www.google.com/s2/favicons?domain=waymo.com&sz=128",
+      "name": "Commonwealth Fusion",
+      "tag": "Energy",
+      "desc": "Next-generation tokamak fusion for clean energy at scale",
+      "url": "https://cfs.energy",
+      "initials": "CFS",
+      "logo": "https://www.google.com/s2/favicons?domain=cfs.energy&sz=128",
       "ticker": null,
       "headline": {
-        "title": "Lyft Begins Offering Waymo Robotaxi Rides on Its App in Nashville - Bloomberg.com",
-        "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPM3RJcEEtNkpUUkstUFY0VmJhSlVFSTg2WlBLeFJVQzdKZHVoR05jbUFYcVNjSG1BNm5Udks1cS14M0pLVW5rUlVpeERCZjEyVzJITU5Ha0tCWU1SV1k2dE1aeXl0LVllWWd0bzVhZkFZTzhpaTR0OUNrLWJWSHlKcjVQV0d2R3psbjhhNEY4dWtzZkUzQkZHZ3lOY2lZaGZFZV9sLW1vb3NJV2RhajZGcXl1N0FjZUU?oc=5",
-        "pubDate": "Wed, 09 Sep 2026 10:00:05 GMT"
+        "title": "Hyundai backs Bill Gates-funded US fusion startup CFS in power push - KED Global",
+        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFB5YnlwWDZQdU9ha3RYVVhkSnRfekZ5QzduS3ZEYU15dE05Z254SkF5Q0ZvSTVpRm1ZYkNnZkJGRnNGV2Q1UzF3U1FsOEUtMmpvNlV2ZmZmdDNLUDFJN3c3dHFnVWtPZ3Jr?oc=5",
+        "pubDate": "Thu, 10 Sep 2026 08:23:17 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "Physical Intelligence",
+      "tag": "Embodied AI",
+      "desc": "Training AI systems to manipulate physical objects",
+      "url": "https://physicalintelligence.company",
+      "initials": "PI",
+      "logo": "https://www.google.com/s2/favicons?domain=physicalintelligence.company&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "ADI agrees $1.35bn acquisition of Alif Semiconductor to strengthen edge AI capabilities - New Electronics",
+        "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOUmZvSTE1X1ZuU1FYZWVTM2dLV2JwbUVfdVlwRkFvd3FMT2VSY2toNGJKOENFNHItSE52VkR6OTRhZUoyYU53XzViSXFpODZnNVA1NFJGODJaMUF1ZmRIOHhnRWhtVGxUb3NkWUo3VkxrYzVjYjB6a3gyTWF2bWw3eFFzVzlLNmUzYVZFTWlPcWRBcXVMaUcwODU1NDV2SVRBa3hFbGN2TVRqbXhISEd0aXZaRndOamxYQmNGR1A1U0hGWS1VX245T3ItNA?oc=5",
+        "pubDate": "Thu, 10 Sep 2026 08:08:40 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "Groq",
+      "tag": "AI Chips",
+      "desc": "LPU inference chips delivering industry-leading token speed",
+      "url": "https://groq.com",
+      "initials": "G",
+      "logo": "https://www.google.com/s2/favicons?domain=groq.com&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "DOJ probes Nvidia's licensing deal with AI startup Groq, NYT reports - Reuters",
+        "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOM04tamJVM0lINldJeEdvdDNHbTMxM2NMY0FzZjlGbWQzRVRjWGMweU9WM1NFeXU2U0NwdDdxZ1JOSVVUM0tjZVlkQTZvbE41VGlOT2FVbVJrRjN4Wk1ldW1od2tBcUR2T1ZKR244TjQwdWtHTm5qVFRyOFdzSGVGWVNtbFUwdHVZdl9Fak9SR1JlUWN0VUNXdFZPajZuTGVMRVJ0QUFCNzlRajdUWjVGVGNJQkotdlhFQjFoREQ1WQ?oc=5",
+        "pubDate": "Thu, 10 Sep 2026 01:07:00 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "Scale AI",
+      "tag": "AI Data",
+      "desc": "Data labelling and RLHF infrastructure powering frontier AI",
+      "url": "https://scale.com",
+      "initials": "S",
+      "logo": "https://www.google.com/s2/favicons?domain=scale.com&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "China slams US claims of ‘industrial-scale’ AI theft - Al Jazeera",
+        "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQeXdzNmNWRGQ2ZUFLcTRnZGNMbHFJVV9fU1NHUGxTVEE4cUgxT0RXVlE0WFJiM3ZYdm1qam5xUlAteUlHUzV6c3A1OU9CQVk5czJoOGFkbEVrRE0zVVZmRXdOUUZGYVBpSkc1azZ4dUtDLXZfbFFpMm5GR05jREhJaGpZR2psVi1ZZHp5RlQ4RkNsbGFr0gGaAUFVX3lxTE85bkI4eGtESWxuRGtzSzBidDJRTjhXcU1scnA3SzVLNHRKYWN0dWtLbjIxc1NOT3lfZWNjdDFVYTlDbzF6VFpSLS03MlExS1BTSmw3MkFzSDhmZnVZYjNQVXdSa1NxUWFTWmN6YUtYZXoyRGFyZkp1cEIyak4wZE9zb2ZZdE8yUEtsSEd4S2ZCTEhPd3Q5S0hWUlE?oc=5",
+        "pubDate": "Wed, 09 Sep 2026 19:30:46 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "Perplexity",
+      "tag": "AI Search",
+      "desc": "Answer engine combining web search with AI-generated summaries",
+      "url": "https://perplexity.ai",
+      "initials": "P",
+      "logo": "https://www.google.com/s2/favicons?domain=perplexity.ai&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "ChatGPT, Gemini &amp; Claude Lead AI Visibility, Is It Time To Stop Tracking Perplexity? - Search Engine Journal",
+        "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPQjhEVnNXSXRSOFJoVHlYS0V1Vk1GQTQ0TTlLX21PODcwV2N2VENBNU9FNExqVEkya19fV3ZQWnNUbk5uRUpycEtPdkgyZF8tTFhnSUh6d2Jkd3YtVzg5YWQ0dUhieEdXZFh1TDgzanNnVHMza3pmU3o0TU9rbENzYlI2SVlkeFpJRlR6TC1MdGRQYUpMa2JMd2o3Zld6aEpCc3diTl83VkI0b1RJR2FicHhTVm0wY19ZeWw3ZEl4clA?oc=5",
+        "pubDate": "Wed, 09 Sep 2026 19:00:58 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "Mistral AI",
+      "tag": "LLMs",
+      "desc": "Europe's leading open-weight AI foundation models",
+      "url": "https://mistral.ai",
+      "initials": "M",
+      "logo": "https://www.google.com/s2/favicons?domain=mistral.ai&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "Modernizing complex legacy code with AI agents. - mistral.ai",
+        "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9YcHhmdERoVjc0bTg1RDZadW1VdVN1aEZQRTVKN3dPQjJHRmVOS2Q4OGs0MHJRT25lend4bmJ2cTkzbmVaU2pKRDFyOEZla1Q0SEdIYmNZQzNEWnlJZi1J?oc=5",
+        "pubDate": "Wed, 09 Sep 2026 17:24:24 GMT"
       },
       "sparkline": null
     },
@@ -32,114 +107,17 @@
       "sparkline": null
     },
     {
-      "name": "Cursor",
-      "tag": "Code Editor",
-      "desc": "AI-native code editor that pairs with Claude and GPT-4",
-      "url": "https://cursor.com",
-      "initials": "C",
-      "logo": "https://www.google.com/s2/favicons?domain=cursor.com&sz=128",
+      "name": "Waymo",
+      "tag": "Autonomy",
+      "desc": "The most miles driven autonomously of any robotaxi service",
+      "url": "https://waymo.com",
+      "initials": "W",
+      "logo": "https://www.google.com/s2/favicons?domain=waymo.com&sz=128",
       "ticker": null,
       "headline": {
-        "title": "Coder launches Agent Relay for Cursor in private preview - IT Brief UK",
-        "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOdnViQ2FLbU1UcUc4Tzk5RnBVMHczUVJSUDRjYmZWdUItR0xLMEMtTlZ3SHFhMjB0aEVjdzcxd2xtSG5odEtoemtCVVhlOVN3c3c1WHRCVjZYWlBDYWdFS3RSekVxSnJJRFZDVEk2eEVyb09uMmljMzdiM0hNaEFfZFhRcVpvZ3RZRXJLaA?oc=5",
-        "pubDate": "Wed, 09 Sep 2026 08:30:00 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "Scale AI",
-      "tag": "AI Data",
-      "desc": "Data labelling and RLHF infrastructure powering frontier AI",
-      "url": "https://scale.com",
-      "initials": "S",
-      "logo": "https://www.google.com/s2/favicons?domain=scale.com&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "London-based CloudNC raises €17.2 million to scale AI-powered precision machining - EU-Startups",
-        "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOYnVReXplTWQxanh6U2lkX2xncmtKMHFzYjlRY2ZSeTNyb0EtUl9DQzE1Q3J1NVdJMmFhYjZOZ2hoUEVLaUdfWHpycWRheGtNVVVfYTY4Sm1PMTZXRnBPb3MwRkxhX2Y4aHB2a1VmTWZ6b3FQU0d1YUMxTzB1Q1RERWxKemp4YlBOVF9XZW14ai16WWlmS0JHRmdzdFlXZXVpYy1vM2NEQlVJeDhjZWJ0OGY2YmI4bzdYcEE?oc=5",
-        "pubDate": "Wed, 09 Sep 2026 08:12:09 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "Rocket Lab",
-      "tag": "Space",
-      "desc": "Small-satellite launch provider and space systems manufacturer",
-      "url": "https://rocketlabusa.com",
-      "initials": "RL",
-      "logo": "https://www.google.com/s2/favicons?domain=rocketlabusa.com&sz=128",
-      "ticker": "RKLB",
-      "headline": {
-        "title": "Rocket Lab Introduces High-Efficiency Solar Cell to Reduce Reliance on Supply-Constrained Critical Minerals - rocketlabcorp.com",
-        "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQR2tkbmdfOU1pbFlSdTJCOEhnUThleGpUOXZKZWxKQkpzbTJlYVozWmpycDlTY3FtVFo4MXlQV3lraGIxNEU2TnFMWUdUaFBCUEE2Ul9MbWlZRC1iLXdLWHA3RW15bGdqV3FNWGNvVHdZM29weTNpUERMamdRTjhIMnpoMHFGZHJaajFIbTNYZExXOGpCYk5qc1hLSGU1aGF5TWRBa2ktTHJGZHdvUzV2NFZlN2w4Z013MkJXX3A2a0dKeU1EVVJuN2poTzlQd1NYcHpEalJveHlNZw?oc=5",
-        "pubDate": "Wed, 09 Sep 2026 02:21:10 GMT"
-      },
-      "sparkline": [
-        80.04000091552734,
-        80.01000213623047,
-        81.16999816894531,
-        80.0999984741211,
-        80.25,
-        82.08000183105469,
-        79.16000366210938,
-        75.83999633789062,
-        72.94999694824219,
-        72.56999969482422,
-        68.27999877929688,
-        66.91000366210938,
-        66.18000030517578,
-        67.52999877929688,
-        64.38999938964844,
-        63.91999816894531,
-        62.540000915527344,
-        63.099998474121094,
-        63.810001373291016,
-        64.26000213623047,
-        65.87000274658203
-      ]
-    },
-    {
-      "name": "OpenAI",
-      "tag": "LLMs",
-      "desc": "Creator of ChatGPT and the GPT family of foundation models",
-      "url": "https://openai.com",
-      "initials": "OAI",
-      "logo": "https://www.google.com/s2/favicons?domain=openai.com&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "OpenAI claims to have solved maths problem that stumped humans for decades - The Guardian",
-        "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQRktSM0hpSXlkVHhtQi1saTdsMERvYURwXzhrZk5xQzBTTGdBYVAtR2Q2NnBraDBfcDg5TmJmRnFQbkpTekt6dHNCOXBXQTVySkdBUlN4a0ItdWk2MjU4dkdSM2twLUFEN3BKUXdIVm5WbUJ6RG5oNzNBOFVnRGhnNURQR0ZDWWVTQjhhMjhkQ3RrUUFUV2tVSVFqdUJUNWRCLVB1SU4zeEYxZ1l1aFhRaEhnczhaejZ3M0RQU2pXNA?oc=5",
-        "pubDate": "Tue, 08 Sep 2026 21:39:00 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "Anduril",
-      "tag": "Defense AI",
-      "desc": "Autonomous defense systems and AI-enabled military hardware",
-      "url": "https://anduril.com",
-      "initials": "A",
-      "logo": "https://www.google.com/s2/favicons?domain=anduril.com&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "U.S. military’s Anduril Dive-LD drone was ‘dead in the water’ before Iran nabbed it - DefenseScoop",
-        "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOZkptT2NWZGx1MXhKS01lOFlERXdxeTJ2VjB3RkluSkRkR3lWWlFfNjd0aXFLdThGUFQxbERPUEg1a210MkY5Ry0ya25kQS1XYUItcmV4X3pfbjlfb2p4UzdSQWYwb1RhbnJuRVJ4eVZCSGNWaUd5VFlQWVlRSFUtTWdFU0c0eElITGM1Q181eGVBZw?oc=5",
-        "pubDate": "Tue, 08 Sep 2026 21:05:35 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "Mistral AI",
-      "tag": "LLMs",
-      "desc": "Europe's leading open-weight AI foundation models",
-      "url": "https://mistral.ai",
-      "initials": "M",
-      "logo": "https://www.google.com/s2/favicons?domain=mistral.ai&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "Mistral raises record €3bn as Europe strains to keep pace in AI race - Financial Times",
-        "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQTjlnSWVPWm84bENtZ1VsbERndnh6dS1FaTVLVDl6bzNuTmhHa0stNms0ZHdJV09oYUFURkk5cFZ4MFpla2ZUVnlQU19SeWVEclZaR0lLRnhrV0szeXJZblZ1LVdKN0tvSDJRQ1pkWVJab3RTZ192Q1FaUzgza05fRnZDY2U?oc=5",
-        "pubDate": "Tue, 08 Sep 2026 08:04:18 GMT"
+        "title": "How Amazon’s Zoox Is Taking On Waymo in San Francisco - The New York Times",
+        "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPOWU4QTJrc3E1QkphbFFmY3NmM3dNaThGM0tVNGJrdVFrclp3bjNaeUpQV01yNjNCTWtuQkloNWdMTUgxUDNWbU9pR0FPNVJicHJadVBBck1FeUt2VUE2YmdHSmdwOTUxb2Q2dnhEeDRXUWpzN1Y0QXBoWkxvZ1QySA?oc=5",
+        "pubDate": "Wed, 09 Sep 2026 09:02:45 GMT"
       },
       "sparkline": null
     }
