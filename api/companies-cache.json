@@ -1,6 +1,74 @@
 {
-  "refreshed_at": "2026-09-10T10:57:44.674Z",
+  "refreshed_at": "2026-09-11T10:56:16.712Z",
   "companies": [
+    {
+      "name": "Anthropic",
+      "tag": "LLMs",
+      "desc": "AI safety company behind the Claude family of models",
+      "url": "https://anthropic.com",
+      "initials": "AN",
+      "logo": "https://www.google.com/s2/favicons?domain=anthropic.com&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "Anthropic blocks possible attempt to use AI to make biological weapons - BBC",
+        "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBrcXFPTUpsT2dQTWp5eWtOTE9ZQ3BycXlHc0V6cDZoelBXRUhCTmZwM0U4dGV2SGtNUFZFeDhuTTRMR0p5NG91bUdUS0t2M1E3Tzk2OTBER3A3Zw?oc=5",
+        "pubDate": "Fri, 11 Sep 2026 08:15:25 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "xAI",
+      "tag": "LLMs",
+      "desc": "Elon Musk's AI company, developer of the Grok models",
+      "url": "https://x.ai",
+      "initials": "X",
+      "logo": "https://www.google.com/s2/favicons?domain=x.ai&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "In posts attacking ChatGPT, Katie Miller didn’t disclose her stake in its rival - The Washington Post",
+        "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOd0tlVHA0NjlfZlVSWEoyVm9ZN1Ytb1JLdHlQM2dvUUt0U2xZTjM4WWhXTmNwYkw3UWxEQlg2V0lLR0FyLVBsellJLTF1UnFTY3oyRWZkSE9NdEpRNzl1a1l4VEFOS0dpRFQ5bTBQRENwY1FWSzlFZ1V0dnFSaW1Db1NYRVlPYVRIVEhYZ1J3LWwta2RqMmk4dTV6VzU0VnFEclFJMjZOcHNPTEd5QVFsaExqdmV5RDdVeVlv?oc=5",
+        "pubDate": "Fri, 11 Sep 2026 02:29:05 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "Palantir",
+      "tag": "Data Analytics",
+      "desc": "Big-data analytics platforms for government and enterprise",
+      "url": "https://palantir.com",
+      "initials": "PL",
+      "logo": "https://www.google.com/s2/favicons?domain=palantir.com&sz=128",
+      "ticker": "PLTR",
+      "headline": {
+        "title": "Here’s Palantir CEO Alex Karp Wearing a Keffiyeh in College - Gizmodo",
+        "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNNHlEX213bjlKM0VGSHowM2dFYzZyNGNSVzRDdHFhMkZzQjJIc2dMUUU0RmkzbE1JQWFXV2JLVmhrWENBTDJxZl9ueDlHTVd2MlpQQ25pNWlOLTRsTzZBb2VOUExXV2hibXZ4M3dYVUpZYi1LYTU5RlRrakZ3WnRWbUtSMG5DbUV3YjR3VXlETTlGQW8?oc=5",
+        "pubDate": "Thu, 10 Sep 2026 21:25:24 GMT"
+      },
+      "sparkline": [
+        174.94000244140625,
+        171.0399932861328,
+        179.00999450683594,
+        174.0399932861328,
+        172.5500030517578,
+        171.5399932861328,
+        175.19000244140625,
+        173.9600067138672,
+        179.94000244140625,
+        175.88999938964844,
+        172.72999572753906,
+        177.5,
+        185.92999267578125,
+        186.2899932861328,
+        186.3800048828125,
+        179.9199981689453,
+        169.4600067138672,
+        182.52999877929688,
+        174.3300018310547,
+        170.3000030517578,
+        169.52999877929688,
+        165.86000061035156
+      ]
+    },
     {
       "name": "Commonwealth Fusion",
       "tag": "Energy",
@@ -10,39 +78,9 @@
       "logo": "https://www.google.com/s2/favicons?domain=cfs.energy&sz=128",
       "ticker": null,
       "headline": {
-        "title": "Hyundai backs Bill Gates-funded US fusion startup CFS in power push - KED Global",
-        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFB5YnlwWDZQdU9ha3RYVVhkSnRfekZ5QzduS3ZEYU15dE05Z254SkF5Q0ZvSTVpRm1ZYkNnZkJGRnNGV2Q1UzF3U1FsOEUtMmpvNlV2ZmZmdDNLUDFJN3c3dHFnVWtPZ3Jr?oc=5",
-        "pubDate": "Thu, 10 Sep 2026 08:23:17 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "Physical Intelligence",
-      "tag": "Embodied AI",
-      "desc": "Training AI systems to manipulate physical objects",
-      "url": "https://physicalintelligence.company",
-      "initials": "PI",
-      "logo": "https://www.google.com/s2/favicons?domain=physicalintelligence.company&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "ADI agrees $1.35bn acquisition of Alif Semiconductor to strengthen edge AI capabilities - New Electronics",
-        "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOUmZvSTE1X1ZuU1FYZWVTM2dLV2JwbUVfdVlwRkFvd3FMT2VSY2toNGJKOENFNHItSE52VkR6OTRhZUoyYU53XzViSXFpODZnNVA1NFJGODJaMUF1ZmRIOHhnRWhtVGxUb3NkWUo3VkxrYzVjYjB6a3gyTWF2bWw3eFFzVzlLNmUzYVZFTWlPcWRBcXVMaUcwODU1NDV2SVRBa3hFbGN2TVRqbXhISEd0aXZaRndOamxYQmNGR1A1U0hGWS1VX245T3ItNA?oc=5",
-        "pubDate": "Thu, 10 Sep 2026 08:08:40 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "Groq",
-      "tag": "AI Chips",
-      "desc": "LPU inference chips delivering industry-leading token speed",
-      "url": "https://groq.com",
-      "initials": "G",
-      "logo": "https://www.google.com/s2/favicons?domain=groq.com&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "DOJ probes Nvidia's licensing deal with AI startup Groq, NYT reports - Reuters",
-        "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOM04tamJVM0lINldJeEdvdDNHbTMxM2NMY0FzZjlGbWQzRVRjWGMweU9WM1NFeXU2U0NwdDdxZ1JOSVVUM0tjZVlkQTZvbE41VGlOT2FVbVJrRjN4Wk1ldW1od2tBcUR2T1ZKR244TjQwdWtHTm5qVFRyOFdzSGVGWVNtbFUwdHVZdl9Fak9SR1JlUWN0VUNXdFZPajZuTGVMRVJ0QUFCNzlRajdUWjVGVGNJQkotdlhFQjFoREQ1WQ?oc=5",
-        "pubDate": "Thu, 10 Sep 2026 01:07:00 GMT"
+        "title": "From SPARC to ARC: CFS prepares for a first-of-a-kind fusion plant - American Nuclear Society",
+        "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQV0NaOVRCaE1wMkdneDVRVHdVdl9iMTR5TjJJa2pLNFZNTzRocVBHYThfOUlCVXZNOTdoWmZ0dzhfZVdZYVVZdDhnU0RfcjBVZWJOQVFDTm1NOVF0X3NIOXhScXp0LThqQ242UXA3TmllWm1xTGZVQmFhVjhhZGFiWDdSdXhCQ1RfLTdHb3N4d2VlRlhjaEx2eElGajNCOWJuS2xv?oc=5",
+        "pubDate": "Thu, 10 Sep 2026 15:58:32 GMT"
       },
       "sparkline": null
     },
@@ -55,71 +93,79 @@
       "logo": "https://www.google.com/s2/favicons?domain=scale.com&sz=128",
       "ticker": null,
       "headline": {
-        "title": "China slams US claims of ‘industrial-scale’ AI theft - Al Jazeera",
-        "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQeXdzNmNWRGQ2ZUFLcTRnZGNMbHFJVV9fU1NHUGxTVEE4cUgxT0RXVlE0WFJiM3ZYdm1qam5xUlAteUlHUzV6c3A1OU9CQVk5czJoOGFkbEVrRE0zVVZmRXdOUUZGYVBpSkc1azZ4dUtDLXZfbFFpMm5GR05jREhJaGpZR2psVi1ZZHp5RlQ4RkNsbGFr0gGaAUFVX3lxTE85bkI4eGtESWxuRGtzSzBidDJRTjhXcU1scnA3SzVLNHRKYWN0dWtLbjIxc1NOT3lfZWNjdDFVYTlDbzF6VFpSLS03MlExS1BTSmw3MkFzSDhmZnVZYjNQVXdSa1NxUWFTWmN6YUtYZXoyRGFyZkp1cEIyak4wZE9zb2ZZdE8yUEtsSEd4S2ZCTEhPd3Q5S0hWUlE?oc=5",
-        "pubDate": "Wed, 09 Sep 2026 19:30:46 GMT"
+        "title": "IVEX raises €5m to scale AI-based automotive safety testing - Automotive Testing Technology International",
+        "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOaHR5dHM4R0dYWnA4M2EwQ3VBR3ZYblFIN2habWtPRndsdWhtZmMtYjBtQ3dwdlVnN0UxUXMtelFITm04eVFZUmd0U1hKcmxrNlhOS3FEM3pMQ0ZqOVNXTlhNRzZyT3ZBYmZhLWlrUzhqYnh6SEw1REY5UVpRU2NZMzJHWFlhd2o3aEZ1SUFRTi1ObzBhZ1RWV2dNYXFmMHV1UEVDWWZOdGw4Q3ptcFZWYmtZM2oyeVppVEZfUnhqbFpGcHp4U0xhUjhydHpVc2N4OWJPTC0zYw?oc=5",
+        "pubDate": "Thu, 10 Sep 2026 14:58:36 GMT"
       },
       "sparkline": null
     },
     {
-      "name": "Perplexity",
-      "tag": "AI Search",
-      "desc": "Answer engine combining web search with AI-generated summaries",
-      "url": "https://perplexity.ai",
-      "initials": "P",
-      "logo": "https://www.google.com/s2/favicons?domain=perplexity.ai&sz=128",
+      "name": "Cursor",
+      "tag": "Code Editor",
+      "desc": "AI-native code editor that pairs with Claude and GPT-4",
+      "url": "https://cursor.com",
+      "initials": "C",
+      "logo": "https://www.google.com/s2/favicons?domain=cursor.com&sz=128",
       "ticker": null,
       "headline": {
-        "title": "ChatGPT, Gemini &amp; Claude Lead AI Visibility, Is It Time To Stop Tracking Perplexity? - Search Engine Journal",
-        "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPQjhEVnNXSXRSOFJoVHlYS0V1Vk1GQTQ0TTlLX21PODcwV2N2VENBNU9FNExqVEkya19fV3ZQWnNUbk5uRUpycEtPdkgyZF8tTFhnSUh6d2Jkd3YtVzg5YWQ0dUhieEdXZFh1TDgzanNnVHMza3pmU3o0TU9rbENzYlI2SVlkeFpJRlR6TC1MdGRQYUpMa2JMd2o3Zld6aEpCc3diTl83VkI0b1RJR2FicHhTVm0wY19ZeWw3ZEl4clA?oc=5",
-        "pubDate": "Wed, 09 Sep 2026 19:00:58 GMT"
+        "title": "Russian developers have been blocked from accessing the popular AI assistant Cursor - UA.NEWS",
+        "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQd2U4Wk1wR3dCSlUyQ2plOUFjN0ljcm1fSTdtWV83RmpKa1VhNXVGbGl2aVhmQ3Y3S2kzR2VrU2ZQRHFiTnpEVnJ5eFBQWTJJZ0tWUENFTnFYLVgtMU00bFI2bnRQZmg0OVNNSlNGVDZvc3RsejlpRnZVdHoxZzlTV0lwN3pQamdTVUVxMm1wbV9GUkc5WVlzZjlzWG9FVS1EN2QxWjBB?oc=5",
+        "pubDate": "Thu, 10 Sep 2026 12:47:36 GMT"
       },
       "sparkline": null
     },
     {
-      "name": "Mistral AI",
+      "name": "OpenAI",
       "tag": "LLMs",
-      "desc": "Europe's leading open-weight AI foundation models",
-      "url": "https://mistral.ai",
-      "initials": "M",
-      "logo": "https://www.google.com/s2/favicons?domain=mistral.ai&sz=128",
+      "desc": "Creator of ChatGPT and the GPT family of foundation models",
+      "url": "https://openai.com",
+      "initials": "OAI",
+      "logo": "https://www.google.com/s2/favicons?domain=openai.com&sz=128",
       "ticker": null,
       "headline": {
-        "title": "Modernizing complex legacy code with AI agents. - mistral.ai",
-        "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9YcHhmdERoVjc0bTg1RDZadW1VdVN1aEZQRTVKN3dPQjJHRmVOS2Q4OGs0MHJRT25lend4bmJ2cTkzbmVaU2pKRDFyOEZla1Q0SEdIYmNZQzNEWnlJZi1J?oc=5",
-        "pubDate": "Wed, 09 Sep 2026 17:24:24 GMT"
+        "title": "OpenAI not on track to reduce risk of ‘catastrophic’ loss of control, says board member - The Guardian",
+        "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNOFBpUHBCdGgzUnVsT29ueldXNVZsRGdTeUtYM3JjSVl5ZktPOF9zT1hrT0NVamFsSlVlQ0ZGYkljNUFWRkVmVGlRaWdOb3VXSERwRktObmV4U0Y1ZnNVLV9nS2FCVUltV01ubW5peVV5cGZWMGpRSEFVTXEyLUdxSHZlQzNaYWZiMTh2NDlhZ3Q3Nk1MSDBKblhROXhjWWNSZWdZNzNjTTFfazNCQkVRNnV5aGoxSVpw?oc=5",
+        "pubDate": "Thu, 10 Sep 2026 12:23:00 GMT"
       },
       "sparkline": null
     },
     {
-      "name": "Anthropic",
-      "tag": "LLMs",
-      "desc": "AI safety company behind the Claude family of models",
-      "url": "https://anthropic.com",
-      "initials": "AN",
-      "logo": "https://www.google.com/s2/favicons?domain=anthropic.com&sz=128",
-      "ticker": null,
+      "name": "CrowdStrike",
+      "tag": "Cybersecurity",
+      "desc": "Cloud-native endpoint protection and threat intelligence",
+      "url": "https://crowdstrike.com",
+      "initials": "CS",
+      "logo": "https://www.google.com/s2/favicons?domain=crowdstrike.com&sz=128",
+      "ticker": "CRWD",
       "headline": {
-        "title": "Anthropic researcher quits over AI labs ‘gambling with our lives’ - Financial Times",
-        "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPVEd5ek5kaWNlMEhuc1B5NDktbmhCN1RhNEZFQ3ZUYjJyWm1WUWdkdUhYMnZVNTExLWd2VzF0M1hHVUd1dDlfRmtaRDhTZ0ZicXVJTHJ1RzFlNXZ3V1VNTnZDb1pUb0F4aTdGMlBIZWZpZ21TYnQyanFMWVMtdzlZVnAyTUk?oc=5",
-        "pubDate": "Wed, 09 Sep 2026 09:31:37 GMT"
+        "title": "Nvidia CEO Jensen Huang Just Called CrowdStrike Its Top Security Partner. How to Play CRWD Stock Here. - Barchart.com",
+        "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNclhyb0VoeVNVR0cwVU9VY3JMcjlSY054cmlhWFJKOXhuNWozTGZlVzktX2FIbExYaWRxZEplX09tM3BQaGpjaTc3d21hNUdlTWphTWdwWmR1d0xTOFBTUHIzcDR3YmVqcmRFTlg1Q2J5bXpwUGFTVzRGallOYmlSOW9QTEk5UEJMVTEtZG1VVzFVZDJnZkg4NTVid0hheWZOdDh5Q2ZBWGtwWFhkcmFCR2xqZlp0U09vaDRoV1lpRWpidFI3TzItZTc4NHVDX0RaR0lGRUZVQ1JwT0RE?oc=5",
+        "pubDate": "Thu, 10 Sep 2026 11:30:02 GMT"
       },
-      "sparkline": null
-    },
-    {
-      "name": "Waymo",
-      "tag": "Autonomy",
-      "desc": "The most miles driven autonomously of any robotaxi service",
-      "url": "https://waymo.com",
-      "initials": "W",
-      "logo": "https://www.google.com/s2/favicons?domain=waymo.com&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "How Amazon’s Zoox Is Taking On Waymo in San Francisco - The New York Times",
-        "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPOWU4QTJrc3E1QkphbFFmY3NmM3dNaThGM0tVNGJrdVFrclp3bjNaeUpQV01yNjNCTWtuQkloNWdMTUgxUDNWbU9pR0FPNVJicHJadVBBck1FeUt2VUE2YmdHSmdwOTUxb2Q2dnhEeDRXUWpzN1Y0QXBoWkxvZ1QySA?oc=5",
-        "pubDate": "Wed, 09 Sep 2026 09:02:45 GMT"
-      },
-      "sparkline": null
+      "sparkline": [
+        221.89999389648438,
+        221.77999877929688,
+        225.52999877929688,
+        216.9499969482422,
+        213.89999389648438,
+        212.9199981689453,
+        201.6300048828125,
+        190.33999633789062,
+        191.9499969482422,
+        190.67999267578125,
+        185.3800048828125,
+        189.17999267578125,
+        227.9600067138672,
+        218.39999389648438,
+        231,
+        215.07000732421875,
+        203.4199981689453,
+        214.97000122070312,
+        213.10000610351562,
+        210.02000427246094,
+        207.8000030517578,
+        208.86000061035156
+      ]
     }
   ]
 }
