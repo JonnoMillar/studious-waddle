@@ -1,6 +1,36 @@
 {
-  "refreshed_at": "2026-09-15T11:25:54.426Z",
+  "refreshed_at": "2026-09-16T11:11:57.753Z",
   "companies": [
+    {
+      "name": "Anthropic",
+      "tag": "LLMs",
+      "desc": "AI safety company behind the Claude family of models",
+      "url": "https://anthropic.com",
+      "initials": "AN",
+      "logo": "https://www.google.com/s2/favicons?domain=anthropic.com&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "Anthropic lands deal in $31bn datacentre in western Queensland, David Crisafulli says - The Guardian",
+        "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQMGptU0Vaa0U0Ry1MalF3ZUFXb1N5aDNzRjlLV3g0X080V0prdVdpcHdLLUs1MUxlLWtsbGd5NjZPSGc0b1dMeGdKeW01QXhHUnJKc25BSHNtbnp1ZUVHcU5QLTFqdUEwV3M4bXB2ZkxZZENDNjdpOFd1NFYxMUZQS08zUi1UbGxXdm1wcjd1Q20waGx6SVNJeHU4aTRocjJ6YWh1a1gtMHdJdEJJcHc?oc=5",
+        "pubDate": "Wed, 16 Sep 2026 07:46:00 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "Cursor",
+      "tag": "Code Editor",
+      "desc": "AI-native code editor that pairs with Claude and GPT-4",
+      "url": "https://cursor.com",
+      "initials": "C",
+      "logo": "https://www.google.com/s2/favicons?domain=cursor.com&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "What Cursor Taught Me About Working With AI - HackerNoon",
+        "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBzVzVrOWRIbmRQeV9LNUdmUmpVQ3gtSmRVcGZmenN0SmtZS1FKMGpvblZhbkI4SkFyc0ZRR0JFWlZYTUZZMlA5ZEZ5UVVxZkU3dUVLbTdVNjExcnlYYThHVFFEay03bUl1S2ozenVENXNLM09R?oc=5",
+        "pubDate": "Wed, 16 Sep 2026 06:18:42 GMT"
+      },
+      "sparkline": null
+    },
     {
       "name": "Perplexity",
       "tag": "AI Search",
@@ -10,24 +40,24 @@
       "logo": "https://www.google.com/s2/favicons?domain=perplexity.ai&sz=128",
       "ticker": null,
       "headline": {
-        "title": "Perplexity Agent Now Runs Privately On Windows PCs With NVIDIA RTX - Quantum Zeitgeist",
-        "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOUFFCTzFnanBsMzczb01fd0pndEZ6MnA3anlUUkJBdk12Nl84SmtkSFNqY0lIRldMWm5HUUYwcDg5T0pHWTU2NGdrNTU5VWhxblJ1ekFKUS1oQzlIV3hfVDRCOFFYVnduTks2QVNycG5yX085dTZoYjNNM2ljUjRKWDF3?oc=5",
-        "pubDate": "Tue, 15 Sep 2026 10:57:34 GMT"
+        "title": "Perplexity is betting big on creators - Digiday",
+        "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5Fd2pXNnlESFFJeE1NMG5zalJ4ZnV5WWJiNUhGT2lKU2p3ZU5WbWxVdjN5NmdSVXpTVHdNZ2ZWSlZDckthT2U3eDlBLXpDSnlQWHJHRXZ5d1VQc3psMEd4U215UlMwTFVSTzcyVC1qRFZGSGd3dXBj?oc=5",
+        "pubDate": "Wed, 16 Sep 2026 04:02:46 GMT"
       },
       "sparkline": null
     },
     {
-      "name": "Scale AI",
-      "tag": "AI Data",
-      "desc": "Data labelling and RLHF infrastructure powering frontier AI",
-      "url": "https://scale.com",
-      "initials": "S",
-      "logo": "https://www.google.com/s2/favicons?domain=scale.com&sz=128",
+      "name": "OpenAI",
+      "tag": "LLMs",
+      "desc": "Creator of ChatGPT and the GPT family of foundation models",
+      "url": "https://openai.com",
+      "initials": "OAI",
+      "logo": "https://www.google.com/s2/favicons?domain=openai.com&sz=128",
       "ticker": null,
       "headline": {
-        "title": "Galaxy Digital Appoints Taylor Reinhardt as Head of Investor Relations to Scale AI and Crypto Story - FF News",
-        "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQOWRaeE1DbkNzQjFtM3N4WFd2Zi1maWsxQVluczNOMVZKa2JfcHpyZzhkVElnNUwtbGhaT3E3NzJENTNBMXhFTW5zYXQzR1BwbUZHcFN3VmVtdEFpU3NlNGgxZmxodjRUV2w2X2ZiMGdSanZkR1FZTnJDa0lpUmw5dEhKOHFpRXBNZ2pJQ2hiRUJ2aVJ3NWpDcnVBbGVJcE14LTdoZGR0Zm1COUVTT1VHVXpqaC0zZHF5TWZHWjBiLW4?oc=5",
-        "pubDate": "Tue, 15 Sep 2026 10:55:59 GMT"
+        "title": "OpenAI boss says world 'right to be afraid' but should trust AI firms - BBC",
+        "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBIV3RzenFUWFo1SlRUcDU0YThVYk0zMVh1QVBzNXhEazJHSEQ4VmM0UThBUXA0VUQwUEFpOXBIbV9wQ19rMXY4Z2VuWTZWZTRIS1BTS3dRSUpFcjRpRGc?oc=5",
+        "pubDate": "Tue, 15 Sep 2026 22:13:10 GMT"
       },
       "sparkline": null
     },
@@ -40,126 +70,54 @@
       "logo": "https://www.google.com/s2/favicons?domain=groq.com&sz=128",
       "ticker": null,
       "headline": {
-        "title": "How Nvidia gutted a onetime rival and left behind a $3.5 billion AI cloud - businessinsider.com",
-        "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOLW55VF9QQ3k5QnZBLUt3NkR0NWg5TjBkTU43bldRVm1VMmZxakZqRnVPc0xPUjJ4eERSYWU3UklvU1RZNms0NjRtNWdLY0kzWmhLaVV4QTZXRU91eThEUnQ3NHZBbG5sMjRydmQtOEQtaFpndWtXeDBYVkt4TTF2S0Z4STlmWUs0V1dqTGFTNFFIME56RUxRYQ?oc=5",
-        "pubDate": "Tue, 15 Sep 2026 09:03:33 GMT"
+        "title": "How NVIDIA Groq 3 LPX Deterministic Execution Drives Power-Efficient High-Interactivity Inference on NVIDIA Vera Rubin | NVIDIA Technical Blog - NVIDIA Developer",
+        "link": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxNc1Q3MWxxV3lrblJfQnlKMjlvemc5aFpVa29ud1lTY0h3NTQtaDNZWEZ2TU11YWVxSG1jTGUwZkV0bGJWaVROSkZQODhmN3FXeGpVMW1scjdrRTJydEdwU3pDQTJXblFkT2FBbHRIREtXYi1HY0xlVEdKc2Z3RDhTYWNGNDNmcnNQZHhqR1h1dDFxVVhrYnRSSlYwcnBZM1poa2p5bC1Fb1hPa1VHTXFKRmdmZkhZODNmV1J3cGNsOTNPT3FOa3N5cFdCclNBUHFlLXByVXVidFRWdXJOMEJVVE1yOXFybjEt?oc=5",
+        "pubDate": "Tue, 15 Sep 2026 16:55:53 GMT"
       },
       "sparkline": null
     },
     {
-      "name": "Mistral AI",
+      "name": "Scale AI",
+      "tag": "AI Data",
+      "desc": "Data labelling and RLHF infrastructure powering frontier AI",
+      "url": "https://scale.com",
+      "initials": "S",
+      "logo": "https://www.google.com/s2/favicons?domain=scale.com&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "Vision Bank and Publicis Sapient Partner to Scale AI Innovation in Saudi Arabia - FF News",
+        "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOMXVjRUhEZGVMZlZpZGRhZEFvMF8zMWF3SUdfZ0VqM1F6d2JJd3RId2d0ajd6a1M3a25TTi1LUXQxUGQ3WGZzd204bWRRZzBja2FnR2pTenlNUERpVVFQc1lxVXVCRXdVb0hiN2VBWTdRclFaT3Z1eTNmLWw5UDdYeW1BMVBCUnpXOVBBd3VzY0FxMmgyaGpEa1R4YkM4MENvaGFRNWVYaF8zZTMzaV96Qzgxbw?oc=5",
+        "pubDate": "Tue, 15 Sep 2026 15:43:58 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "Anduril",
+      "tag": "Defense AI",
+      "desc": "Autonomous defense systems and AI-enabled military hardware",
+      "url": "https://anduril.com",
+      "initials": "A",
+      "logo": "https://www.google.com/s2/favicons?domain=anduril.com&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "Anduril integrating additional weapons onto FQ-44 uncrewed fighter - FlightGlobal",
+        "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPUmQ4TllwbXhwVUlqN2doejQ1bTk4bmt0N0h2ajFkal9YcVRlYTh5NWR0MWZQVG93cGdoMEIzR0tYNVFKUHRrWEl6UGZqYXpBbWNsUUFLMFJFc2tIQWVOcXJXMjRxNDZQSmZaZjVVSnlMSmVuLU5STE5YX09xYkdXM0RrX0VTMm9ZblRReXh5RVVSTlV1RHkwSEV4Qy12TlVhN0w3ZXZLWGh2aWNBNnptS1RR?oc=5",
+        "pubDate": "Tue, 15 Sep 2026 13:49:15 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "xAI",
       "tag": "LLMs",
-      "desc": "Europe's leading open-weight AI foundation models",
-      "url": "https://mistral.ai",
-      "initials": "M",
-      "logo": "https://www.google.com/s2/favicons?domain=mistral.ai&sz=128",
+      "desc": "Elon Musk's AI company, developer of the Grok models",
+      "url": "https://x.ai",
+      "initials": "X",
+      "logo": "https://www.google.com/s2/favicons?domain=x.ai&sz=128",
       "ticker": null,
       "headline": {
-        "title": "TotalEnergies Partners With Mistral AI to Boost Oil Exploration - Bloomberg.com",
-        "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPYXVoWDRRR2dvbkx3ZW5rdFBoWlExdzU3UHg3d2hWWV84LWdUVXZ2Ynl2SDc1c1lBM3V3dFFYaW5iaml1OHIxOF9UcVIzemxsdjZLZ2w4a2I1WWFuRkZUb0lOMG9DX0Q4SEJlT090d293bWRjWktNLUNuLTFIeU56S3FrRWhVTDNHVndBRnZGLTVlajlLT2VlVFlMSWphamVaQjJ3NmVOZzRIMTFZSm1OelliRHk?oc=5",
-        "pubDate": "Tue, 15 Sep 2026 07:38:38 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "Physical Intelligence",
-      "tag": "Embodied AI",
-      "desc": "Training AI systems to manipulate physical objects",
-      "url": "https://physicalintelligence.company",
-      "initials": "PI",
-      "logo": "https://www.google.com/s2/favicons?domain=physicalintelligence.company&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "Analog Devices to Acquire Alif Semiconductor, Adding an AI-Native Processing Platform to Advance Physical Intelligence for the Next Generation of Real-World Systems - Yahoo Finance",
-        "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOYjRNbXQwVUpHdVNxY2hZVFZ2S3JoTmtFTTAzRnlkWTQ1YnhBanZudzVyUXBDOXZwQVJwdUFQNHBLUkxqMlhCeWpiQ3dMazZ1eC1FSjJtci1LcGgzMFV1NkpYRXB6anZIWEVkVEE2djVPMEFITkNkN2luV09mWEkydnRUMktDWTljN216dmJrWlhrNGttQjBGUmstVWg0UFZ4YXA2MEkxV08?oc=5",
-        "pubDate": "Tue, 15 Sep 2026 06:47:00 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "Rocket Lab",
-      "tag": "Space",
-      "desc": "Small-satellite launch provider and space systems manufacturer",
-      "url": "https://rocketlabusa.com",
-      "initials": "RL",
-      "logo": "https://www.google.com/s2/favicons?domain=rocketlabusa.com&sz=128",
-      "ticker": "RKLB",
-      "headline": {
-        "title": "Rocket Lab is seeing red about NASA’s decision on a Mars spacecraft - Ars Technica",
-        "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOcllxR05naENRTTdYSmJUa1VYcXpNaTcxZVRTNmNZM3IySmczSXdMcXR2bnNVU0NkYzRTSmdnYUtTLW1OTVhDUHRxZTNhZVZDTG9lbHphRGVjb005cGVHdnZLenFTZ05EeDYwMXRYSWRueGJ6VmZsd3E5dUxpV2xSVmk0aWJieUNsTGVxcDhqQ0d6WWNfTTBnb0llM04tWGlIX3FGem1UcF8?oc=5",
-        "pubDate": "Mon, 14 Sep 2026 21:32:22 GMT"
-      },
-      "sparkline": [
-        82.08000183105469,
-        79.16000366210938,
-        75.83999633789062,
-        72.94999694824219,
-        72.56999969482422,
-        68.27999877929688,
-        66.91000366210938,
-        66.18000030517578,
-        67.52999877929688,
-        64.38999938964844,
-        63.91999816894531,
-        62.540000915527344,
-        63.099998474121094,
-        63.810001373291016,
-        64.26000213623047,
-        65.87000274658203,
-        63.06999969482422,
-        61.959999084472656,
-        62.95000076293945,
-        62.54999923706055
-      ]
-    },
-    {
-      "name": "CrowdStrike",
-      "tag": "Cybersecurity",
-      "desc": "Cloud-native endpoint protection and threat intelligence",
-      "url": "https://crowdstrike.com",
-      "initials": "CS",
-      "logo": "https://www.google.com/s2/favicons?domain=crowdstrike.com&sz=128",
-      "ticker": "CRWD",
-      "headline": {
-        "title": "Why CrowdStrike and Palo Alto Are Leading the Software Stock Rally - Barron's",
-        "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNWHVQMDF2Sm04V0hnaVlCTHZIaFNUb21mUVBFRWRuSklDT2tNV2UxNkVNNGlTNlZuOWcxZ0JvTElGeFB6cHNLSVQyYnpncmRfVmNodk1WY2JsYjBDSV9OOWZxNEpzZDNnd0RzUUNvOVNEWTUxWFpqRk9GSm9PQU1hNElERDREbnJmQ2hwMlRnTWlCTGtpMHhfM0E4TQ?oc=5",
-        "pubDate": "Mon, 14 Sep 2026 18:13:00 GMT"
-      },
-      "sparkline": [
-        213.89999389648438,
-        212.9199981689453,
-        201.6300048828125,
-        190.33999633789062,
-        191.9499969482422,
-        190.67999267578125,
-        185.3800048828125,
-        189.17999267578125,
-        227.9600067138672,
-        218.39999389648438,
-        231,
-        215.07000732421875,
-        203.4199981689453,
-        214.97000122070312,
-        213.10000610351562,
-        210.02000427246094,
-        207.8000030517578,
-        208.86000061035156,
-        206.74000549316406,
-        235.3800048828125
-      ]
-    },
-    {
-      "name": "Commonwealth Fusion",
-      "tag": "Energy",
-      "desc": "Next-generation tokamak fusion for clean energy at scale",
-      "url": "https://cfs.energy",
-      "initials": "CFS",
-      "logo": "https://www.google.com/s2/favicons?domain=cfs.energy&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "Nuclear Fusion Company gets $1 Billion Hyundai Investment - Tomorrow's World Today",
-        "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQSlNCbWhUREZXVVV5LV9YbnR6VXFaeUF3M3I5VGdLb2dfbGRiZE5NS2lvejlKanFVYTN2YzNSWXB1d2hsLXhmVm03UmNtYzlpcktVOEQ0bVF2M0RJMXdKdEVsMC1RVXZYMl9DN04tR3c4TVVueWFjS2ZaLTJxa3FDQm9HcHp2Ulk3QWkxdmlYY2szTnVJb1JWNkZxel9KTzRjVTV3?oc=5",
-        "pubDate": "Mon, 14 Sep 2026 14:27:11 GMT"
+        "title": "The world's richest man says he's living in a trailer - Business Insider",
+        "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOXzM3TGR1NVh3QkFKWlFUbkw0TW91em96OU93enJtdjYtN0pLZzc0eHlSVFZRNjA2bW5ERkU4bnp1eF9PVFhuSGZsX0lxcUh0RkMtTWNuZ2R4ZWxoRE9TZVBqMGZpbHBiTDdxZzd4LUhSTW5RNTlpdEN0M0V0ckNrbWJLZnl5QjdSOTBWN1RPTWgwTWhiUENkbjQwNW14T1NR?oc=5",
+        "pubDate": "Tue, 15 Sep 2026 11:48:00 GMT"
       },
       "sparkline": null
     }
