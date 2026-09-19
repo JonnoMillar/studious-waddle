@@ -1,89 +1,6 @@
 {
-  "refreshed_at": "2026-09-18T10:54:01.776Z",
+  "refreshed_at": "2026-09-19T10:36:52.370Z",
   "companies": [
-    {
-      "name": "Scale AI",
-      "tag": "AI Data",
-      "desc": "Data labelling and RLHF infrastructure powering frontier AI",
-      "url": "https://scale.com",
-      "initials": "S",
-      "logo": "https://www.google.com/s2/favicons?domain=scale.com&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "ASUS AI Tech 2026 Seoul: Building the Infrastructure for the Next Era of AI - ASUS Pressroom",
-        "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPSHlTSVBOYnhpMTVIeFJrSmdOcVc2LUJHRllCWUYwNlJqS3NlUjNaVkVISW9Yckh3aG4wOFNlc3BubEEzR2t4QmRYNnhMX0g4MDdnN1liVGZ2NTQ0MjR1Z3llMEllVGtvNnIxWkN4ak1iNmU1cWdDYW50b0tTeWNtTlMyUmY?oc=5",
-        "pubDate": "Fri, 18 Sep 2026 07:46:03 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "Palantir",
-      "tag": "Data Analytics",
-      "desc": "Big-data analytics platforms for government and enterprise",
-      "url": "https://palantir.com",
-      "initials": "PL",
-      "logo": "https://www.google.com/s2/favicons?domain=palantir.com&sz=128",
-      "ticker": "PLTR",
-      "headline": {
-        "title": "Former Labour deputy leader Tom Watson joins Palantir - The Guardian",
-        "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPenpPcWpXN0ZHWkFxYnhkQ1UxZHc2VnBUY3lpY1d2VG1PS3pGMkJoMDBaOUZ1cS1qRHdRbFp1OVMxYVRaWWxqMThMSEtQZ2FwWHlNRnp0azJWdkVQTDVDXzdkOEFkMFJKUTYtbkVrY09GSFRQOU15QW01ZXlTbUxSbzRsUDNDNU8zSGlWeHU1TzAydUR3dGhyZ3BjdGptWmY0d0liTw?oc=5",
-        "pubDate": "Fri, 18 Sep 2026 06:00:00 GMT"
-      },
-      "sparkline": [
-        171.5399932861328,
-        175.19000244140625,
-        173.9600067138672,
-        179.94000244140625,
-        175.88999938964844,
-        172.72999572753906,
-        177.5,
-        185.92999267578125,
-        186.2899932861328,
-        186.3800048828125,
-        179.9199981689453,
-        169.4600067138672,
-        182.52999877929688,
-        174.3300018310547,
-        170.3000030517578,
-        169.52999877929688,
-        165.86000061035156,
-        167.22999572753906,
-        173.30999755859375,
-        172.55999755859375,
-        174.33999633789062,
-        176.24000549316406
-      ]
-    },
-    {
-      "name": "Waymo",
-      "tag": "Autonomy",
-      "desc": "The most miles driven autonomously of any robotaxi service",
-      "url": "https://waymo.com",
-      "initials": "W",
-      "logo": "https://www.google.com/s2/favicons?domain=waymo.com&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "Alphabet's Waymo to launch driverless ride-hailing service in Singapore in 2028 - CNA",
-        "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQeWk2WWhuWElFd1c0Um81b1VZRkNieGZWM1Jxdk1xalZFSk1ESkZZeXg1czUxVjBkazd1aEVqX2d5T1ZhZWU0ajVENTVGMVdVbXNsalhaQl8tYWp5UTN2UUdTcVlydWlJeXFraWExWWZPb1BRTVcwSjBQN0l4a04ydlhMM29oN0ZQdEVkbTVNeXc?oc=5",
-        "pubDate": "Fri, 18 Sep 2026 02:09:00 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "OpenAI",
-      "tag": "LLMs",
-      "desc": "Creator of ChatGPT and the GPT family of foundation models",
-      "url": "https://openai.com",
-      "initials": "OAI",
-      "logo": "https://www.google.com/s2/favicons?domain=openai.com&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "Exclusive | Hackers Used Anthropic’s Claude to Break Into OpenAI - WSJ",
-        "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPQmNxc081M1NZa0l1MDZtRG16czdBY2M3X09PVUNCcFUzdS14ZEk1dEdDS0diT2toWlY4VmtMMkNaU1pVVDRaOEpDY0tMRi0zc3dweFpEMWZQOFpPQklqTUcwelZXelBDVXJQWE1GM25BYXgxbHc3ZHBBTk1xV3ViUzloX2s2d0tCd0RLS3lKZmFNdw?oc=5",
-        "pubDate": "Fri, 18 Sep 2026 01:00:00 GMT"
-      },
-      "sparkline": null
-    },
     {
       "name": "Anthropic",
       "tag": "LLMs",
@@ -93,9 +10,9 @@
       "logo": "https://www.google.com/s2/favicons?domain=anthropic.com&sz=128",
       "ticker": null,
       "headline": {
-        "title": "Exclusive | Hackers Used Anthropic’s Claude to Break Into OpenAI - WSJ",
-        "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPQmNxc081M1NZa0l1MDZtRG16czdBY2M3X09PVUNCcFUzdS14ZEk1dEdDS0diT2toWlY4VmtMMkNaU1pVVDRaOEpDY0tMRi0zc3dweFpEMWZQOFpPQklqTUcwelZXelBDVXJQWE1GM25BYXgxbHc3ZHBBTk1xV3ViUzloX2s2d0tCd0RLS3lKZmFNdw?oc=5",
-        "pubDate": "Fri, 18 Sep 2026 01:00:00 GMT"
+        "title": "Investors warn Anthropic could struggle to sustain revenues post-IPO - Financial Times",
+        "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOUHlWc1I1bW5JN243Qk1QaERIaktRX05iTFZwTTB2ZVpSRnRDdGlEaHFlZ2lHMzVnRzZkUEw0Y0l1allHbjRZeVRKM0lYY0oxZDhjWXpHb3Uxb0poTEhjN3BvU3h2Uk0ydlFvdEVxRjc0Mkx0WUpzVGZNSnlDWjdwMldfR3k?oc=5",
+        "pubDate": "Sat, 19 Sep 2026 08:31:39 GMT"
       },
       "sparkline": null
     },
@@ -108,12 +25,11 @@
       "logo": "https://www.google.com/s2/favicons?domain=rocketlabusa.com&sz=128",
       "ticker": "RKLB",
       "headline": {
-        "title": "Palantir, Rocket Lab among biggest climbers in power ranking - Yahoo Finance",
-        "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOeDRkWW9rZW5nUC1aQlNqdkJ1cHpEXzZIaWdhdE1OaGRFSDd5d2NwbXVqZGQtX1Bzel9BZjZRZ3NWTEhuUV9ibUZTeVFlZThFN29ybjlNNHJQa1IzcHgtWXo0NE9MUUxCVmNiLU04ZTdRaVMxUV95VXFDdm5TbWNKZm8yWC1qS1d1ZzNoOUR3MXNaajZMN0Judm1iSmx1TDA?oc=5",
-        "pubDate": "Thu, 17 Sep 2026 22:10:47 GMT"
+        "title": "Rocket Lab launches an Earth-observing radar satellite from New Zealand (photo) - Space",
+        "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOY005NHhIdnFwXzdHUUg0dHlPUVladjZLemEzckVDcFVzaUo3czNnb01ORkxSVFFHU1RLMzZCUnpZQktPYUlwRC1fYkxwUzZ1R2t3VUFnbHVFWk5aR040azVXRFFvMzYtaHBrWVUtSEtNNE1XTEgyblRObHNDRDU4SGVqVVFNUlc0d3Q5TW5uSUN1N2ppZmQweEEzNFBSMEc1ZmIzdWNB?oc=5",
+        "pubDate": "Sat, 19 Sep 2026 07:26:15 GMT"
       },
       "sparkline": [
-        79.16000366210938,
         75.83999633789062,
         72.94999694824219,
         72.56999969482422,
@@ -134,8 +50,39 @@
         62.54999923706055,
         63.54999923706055,
         63.70000076293945,
-        67.81999969482422
+        67.81999969482422,
+        64.56999969482422
       ]
+    },
+    {
+      "name": "Scale AI",
+      "tag": "AI Data",
+      "desc": "Data labelling and RLHF infrastructure powering frontier AI",
+      "url": "https://scale.com",
+      "initials": "S",
+      "logo": "https://www.google.com/s2/favicons?domain=scale.com&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "Scale AI and Passes founder Lucy Guo says AI is making people work harder, not less: ‘I worked a 26-hour day’ - Fortune",
+        "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNX3dzdlZBRE5JaFF5bTh4cVZRTmU3RkdtSXBJOVNVS2RDTThJYzk0RzE2aEMzTjI1ZUVPcXFmbU5WXzRhcUF5elN1Qkk1RUUta1VNcGxBNEJKSzR0bE8yYzBaT05oMDl0ZXZsSTdsZk8yejlmNkVFRlkzSTFOQUc4R1V5a0pGR1FlWkNsT245Y1NWdjhkNE0tcDJpa0hhb3VHYkg4N1V6OWNiU3hoWWV0Y051VzIwSERXMGRDVXRjSmRaODg3UDE3MHM2aw?oc=5",
+        "pubDate": "Sat, 19 Sep 2026 07:02:00 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "OpenAI",
+      "tag": "LLMs",
+      "desc": "Creator of ChatGPT and the GPT family of foundation models",
+      "url": "https://openai.com",
+      "initials": "OAI",
+      "logo": "https://www.google.com/s2/favicons?domain=openai.com&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "OpenAI expects to burn $280bn by 2030 - Financial Times",
+        "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPcFJUYnM1WGQ5aHhEU0FMdHRPbjkzSWI4UnNHTkRESlJ6OURsTlNzN25fWWsyTHhHcGpSM0xQZXVuU1FtRW1WNFZ6T3BJcXRNTWFoRlhZcktaVE1IUmZ4Ykkwc253em1Jai10dGxUbFk0d0t5VEUyemwtajF2MURaQnFKTW8?oc=5",
+        "pubDate": "Fri, 18 Sep 2026 22:33:32 GMT"
+      },
+      "sparkline": null
     },
     {
       "name": "Neuralink",
@@ -146,24 +93,77 @@
       "logo": "https://www.google.com/s2/favicons?domain=neuralink.com&sz=128",
       "ticker": null,
       "headline": {
-        "title": "Musk’s brain chips make stunning new leap - News.com.au",
-        "link": "https://news.google.com/rss/articles/CBMikgJBVV95cUxQc0o5cDVkb0hVSlVpTW9fZzA4djdqX3dRVC1qeEJ5RTE5WWx2U21nUlFzM0NVMHdFTzNGU2NiWHd5ckNPZzNJUTlfbEtyZnFXR2dMMlNsSzJuRjBsSkFhRDNqMGx4UzBZTzhhTm5tMmVpLWV3TjQ4emJFcTkzdlU4QlRoY2xIa3NGUmJkN2Z6SGkxRkJLVlpHZ2FJR0RpRTk4aF90YVAtb1hJbGdCakxkODNPSmRfSGEwalN5dUY2ZXlfWU9BUHlwamVWSXQ2X0N0MEFDMm45eDU1bHViREdtVUJ4RkVrNnNYLUpwWlFCLVc3TUlfSzlxMUdjMEtxSDEwTWtIQXc1blpVbEUtdXh0b2VR0gGXAkFVX3lxTE9oOTc4MTBNaVZHR2c1azR2Ri1sUE1vZUR4dlZIOU1oZ3ZvWi1wd1pOcVpGRmhVRGl0TjlDbXJiQTNCenlrbXA0Uzk0UU5BUjRCZXV0bmExS1A5ZlRuTXB5dHU3cmdWTjdxWUozT21iWDFJLW16S0lzNFR2cHVwSlZvWnlpQlN0d2xsY2dJa3JJU0hmOVdQYnZ1VV8wZ3FaR2x5Tkdab3dfQnNtdWNLbHBQdzZhZ2JwLWVDXzFlUVktYmpxOGVYbldRREkzNmpvMlFXZUZyNjc4cVRtU1JoWFBfM0VfUkF1UkNDRHlLeEpJNVl0aTl2WTRvN05vZ1ZqTDdheURhZ01Wd2tJWDJubmIyakcxRzlYRQ?oc=5",
-        "pubDate": "Thu, 17 Sep 2026 18:54:03 GMT"
+        "title": "Elon Musk's Neuralink patient uses brain implant to say 'I Love You' - The News International",
+        "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxONTBGMndXVGJjdTh3cS1MQ3pEVDBSbGNZVkY3UHpFWjdCN0QxMDdZWjBWcmtnNnpfMkRDU0xRSXZVSXBZSVBrSFFSNU00NnlMMkJ1UFdEb1MzZXVKQWhHdzFCZkc4UmIzMl9ERjVIdDU3ZDhMYnNSVWFucDZQTTVuMzFyVVk3bDNyc281R2ppS1NXRE1VTnl3RFdKVExuSHFTNlAwRUZZM2ZhVmfSAacBQVVfeXFMTzVGVUc1XzM0VGN2bUo0a2NEOS1uc0Z2Tk5IZXF1T1kzeFFFVlEwYzdEQW93dVA2TDZyeDdvMV9WTTl5YkQwd0FRVW5aVXZfMEszNkFtU01fVVBBYXNzQm0xZ284TWIwZGRSV1hwSk5sdHhtUC0wNThjZDFBdnBjX1U4TEV4MDY4X0VLYTlTSGVOZ0hteUctUHF6Z0pveDZJcmxSaU1kQlE?oc=5",
+        "pubDate": "Fri, 18 Sep 2026 17:44:00 GMT"
       },
       "sparkline": null
     },
     {
-      "name": "Figure AI",
-      "tag": "Robotics",
-      "desc": "Humanoid robots designed for industrial and commercial work",
-      "url": "https://figure.ai",
-      "initials": "FA",
-      "logo": "https://www.google.com/s2/favicons?domain=figure.ai&sz=128",
+      "name": "Palantir",
+      "tag": "Data Analytics",
+      "desc": "Big-data analytics platforms for government and enterprise",
+      "url": "https://palantir.com",
+      "initials": "PL",
+      "logo": "https://www.google.com/s2/favicons?domain=palantir.com&sz=128",
+      "ticker": "PLTR",
+      "headline": {
+        "title": "Ex-Labour deputy leader Tom Watson joins Palantir - BBC",
+        "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5rWnQ1RFIydXVOYmVESlpXcmNNeXZBZW5YY3ZMWGlpNEpJSW9EdVR6b0JlY0dzSWs1ZFBLMkRRX0R6TjhDb2oyU1ZiSGk4azN5bmJidUdIVGl4bkxRTXc?oc=5",
+        "pubDate": "Fri, 18 Sep 2026 11:23:18 GMT"
+      },
+      "sparkline": [
+        175.19000244140625,
+        173.9600067138672,
+        179.94000244140625,
+        175.88999938964844,
+        172.72999572753906,
+        177.5,
+        185.92999267578125,
+        186.2899932861328,
+        186.3800048828125,
+        179.9199981689453,
+        169.4600067138672,
+        182.52999877929688,
+        174.3300018310547,
+        170.3000030517578,
+        169.52999877929688,
+        165.86000061035156,
+        167.22999572753906,
+        173.30999755859375,
+        172.55999755859375,
+        174.33999633789062,
+        176.24000549316406,
+        177.63999938964844
+      ]
+    },
+    {
+      "name": "xAI",
+      "tag": "LLMs",
+      "desc": "Elon Musk's AI company, developer of the Grok models",
+      "url": "https://x.ai",
+      "initials": "X",
+      "logo": "https://www.google.com/s2/favicons?domain=x.ai&sz=128",
       "ticker": null,
       "headline": {
-        "title": "Helix 2.5: Zero-Shot 30-Home Generalization - Figure",
-        "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5GMFR5dFZVTmFvUU53VnhtcGxoUkhpcG5YaGpqeGJMUi1NeXBMVU90NE1WUDIxbXVpaWN2eDh1V3dBT1hmVHducnRnTXZTTGh6clNwdUh1YkJqczV4UjFzeTNpMzBybVJncmh0MVlPRzdZZmRTQ0JqRw?oc=5",
-        "pubDate": "Thu, 17 Sep 2026 13:00:00 GMT"
+        "title": "Opinion | Can Washington accept yes from the AI giants? - The Washington Post",
+        "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOYy01TUVkQi1ySGtYYy03WjJJWVpTbGowR3RzX1Y1cDZwTzdsQlFCeVpZZVFFbTFndll5dzZldFVyZHFnQzFTTHdxay1zNml3dlRlVlJnMWlnR1VrWlNyQmVwcVVoM3prRHVKS2Y4bkRBZmVkVG1GNENQWkJnUU5ZVUQ4VzRzbUExX3ZhYmZPR3lNTUNUSXltbG1md1VVRGUxaWxjWEx5UkxOMGFuVEMtdjNoWQ?oc=5",
+        "pubDate": "Fri, 18 Sep 2026 02:08:44 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "Waymo",
+      "tag": "Autonomy",
+      "desc": "The most miles driven autonomously of any robotaxi service",
+      "url": "https://waymo.com",
+      "initials": "W",
+      "logo": "https://www.google.com/s2/favicons?domain=waymo.com&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "Waymo says Singapore will be its next international robotaxi city - The Verge",
+        "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQR0VnQmxibk5TczB1cWx6ZUR4VExNWjlwZXo3SzgzZTRjdlg1XzRtZk0wSWtqVFBaVGswRks5OXFKYi1YMGhCUTc3LWhjOWFQZ1FfSzJmS1R6bXFuX3JFSWd4R01ybjVXWWN0T0tMblNDNGdiNGVWNVl5UnFWQmxhTWF0cGZhWVJzZmxN?oc=5",
+        "pubDate": "Fri, 18 Sep 2026 02:00:00 GMT"
       },
       "sparkline": null
     }
