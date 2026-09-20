@@ -1,6 +1,59 @@
 {
-  "refreshed_at": "2026-09-19T10:36:52.370Z",
+  "refreshed_at": "2026-09-20T10:59:36.711Z",
   "companies": [
+    {
+      "name": "CrowdStrike",
+      "tag": "Cybersecurity",
+      "desc": "Cloud-native endpoint protection and threat intelligence",
+      "url": "https://crowdstrike.com",
+      "initials": "CS",
+      "logo": "https://www.google.com/s2/favicons?domain=crowdstrike.com&sz=128",
+      "ticker": "CRWD",
+      "headline": {
+        "title": "CrowdStrike CEO sends strong six-word message on AI cyber safety - thestreet.com",
+        "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQNjc5SndoeVFlQnVlelBQWDF3U2N5T0pHT2VTVUc1WUVfeEFGeFBtQzYwdzJHS3E0b0lnRG80VzJBT2R6eU9RLURtMmNnR1NBZ3VpX0pkOXU2ZUZvdDRfblBVSW96b0ZHRXpQNFRJd1ltX2M0UExyb01sNzF5dnBEb0xFc0k4d1dBd3F4cWcxNFcwbDM5SDhRYWxOa0Z1QQ?oc=5",
+        "pubDate": "Sat, 19 Sep 2026 15:35:00 GMT"
+      },
+      "sparkline": [
+        201.6300048828125,
+        190.33999633789062,
+        191.9499969482422,
+        190.67999267578125,
+        185.3800048828125,
+        189.17999267578125,
+        227.9600067138672,
+        218.39999389648438,
+        231,
+        215.07000732421875,
+        203.4199981689453,
+        214.97000122070312,
+        213.10000610351562,
+        210.02000427246094,
+        207.8000030517578,
+        208.86000061035156,
+        206.74000549316406,
+        235.3800048828125,
+        242.49000549316406,
+        241.36000061035156,
+        245.6999969482422,
+        237.64999389648438
+      ]
+    },
+    {
+      "name": "Cursor",
+      "tag": "Code Editor",
+      "desc": "AI-native code editor that pairs with Claude and GPT-4",
+      "url": "https://cursor.com",
+      "initials": "C",
+      "logo": "https://www.google.com/s2/favicons?domain=cursor.com&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "Windows 11 is getting a better way to find your mouse cursor, and we tried it - Windows Latest",
+        "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOS0V0Sm9SSXlCenlIa0lDcWZhY0RnU2JnU2F1ckJsSTczRXdJOEVIWTF0eVVtY01TbnlXWUl5SVhiSFFmZmRsdWI2ZXV0c3A5eWVDUU14LTVrMmxWUXZnXzFCaXFTNDNxM3d6djFrY0ZsV3JqVHc1Vl9OWi13WDRqSHdaOVNpQ0RuS04wa1pEV3dDOGhUNFJqeUZoMVluRDBVX3I3M2R5OWM3TTlRS3B3MkxCakp1Y2g5V3c?oc=5",
+        "pubDate": "Sat, 19 Sep 2026 14:57:06 GMT"
+      },
+      "sparkline": null
+    },
     {
       "name": "Anthropic",
       "tag": "LLMs",
@@ -10,9 +63,9 @@
       "logo": "https://www.google.com/s2/favicons?domain=anthropic.com&sz=128",
       "ticker": null,
       "headline": {
-        "title": "Investors warn Anthropic could struggle to sustain revenues post-IPO - Financial Times",
-        "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOUHlWc1I1bW5JN243Qk1QaERIaktRX05iTFZwTTB2ZVpSRnRDdGlEaHFlZ2lHMzVnRzZkUEw0Y0l1allHbjRZeVRKM0lYY0oxZDhjWXpHb3Uxb0poTEhjN3BvU3h2Uk0ydlFvdEVxRjc0Mkx0WUpzVGZNSnlDWjdwMldfR3k?oc=5",
-        "pubDate": "Sat, 19 Sep 2026 08:31:39 GMT"
+        "title": "Anthropic billionaire cofounder who studied literature says non-STEM degrees will win in the AI age - Fortune",
+        "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPMTdMQ3p5TWFvTUFlbUR3SGRNdENCY2Y4UkdBbmY1QURLVWxrTkxzbmtCRzF4bXRmRWc5cUtkVDJwMHYzb2FaSmZIZUszZU1nZ2dFVkZDU1FQOFBHdjlmbEhRb0NCY3V4a2FpcDgyWDhGWS1LUnBHeTZTLXU2SWZBNXlFXzduTjJvajVqNE8tRndIcnU1NklRYmZ1ZVVpdTVIZjVjU3F2WFppRnFmNU5VaG0xaFBKaEJBSjgxVlhkYjF0bmhEVkxHQTBBVUxZX20zV0NhYkJVS2NuWVk?oc=5",
+        "pubDate": "Sat, 19 Sep 2026 13:05:00 GMT"
       },
       "sparkline": null
     },
@@ -25,9 +78,9 @@
       "logo": "https://www.google.com/s2/favicons?domain=rocketlabusa.com&sz=128",
       "ticker": "RKLB",
       "headline": {
-        "title": "Rocket Lab launches an Earth-observing radar satellite from New Zealand (photo) - Space",
+        "title": "Rocket Lab launches an Earth-observing radar satellite from New Zealand (video) - Space",
         "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOY005NHhIdnFwXzdHUUg0dHlPUVladjZLemEzckVDcFVzaUo3czNnb01ORkxSVFFHU1RLMzZCUnpZQktPYUlwRC1fYkxwUzZ1R2t3VUFnbHVFWk5aR040azVXRFFvMzYtaHBrWVUtSEtNNE1XTEgyblRObHNDRDU4SGVqVVFNUlc0d3Q5TW5uSUN1N2ppZmQweEEzNFBSMEc1ZmIzdWNB?oc=5",
-        "pubDate": "Sat, 19 Sep 2026 07:26:15 GMT"
+        "pubDate": "Sat, 19 Sep 2026 06:12:02 GMT"
       },
       "sparkline": [
         75.83999633789062,
@@ -55,6 +108,21 @@
       ]
     },
     {
+      "name": "Anduril",
+      "tag": "Defense AI",
+      "desc": "Autonomous defense systems and AI-enabled military hardware",
+      "url": "https://anduril.com",
+      "initials": "A",
+      "logo": "https://www.google.com/s2/favicons?domain=anduril.com&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "Defence firm Anduril says US delay on Taiwan arms sales affecting its business - Reuters",
+        "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNUS1zbnlmMUNZQU8teS1FUnNoOE1EMVNycDNJUVcyQ25QRGpyQk9WaVZPRG8zbzJCWlJSS3RDNHlqWmgzZkJibklPaVpGanBMQWc4LUFrN2s3NC1ieGpFVEMwY0w0eHhZckJ5NGNSZzQ3QnJPel9LeGdWclh0allIZDFHVTVta3k5Z1pwVlEzRlZSQzduNF9zNXhVaVlDQnFFX2VlTExZNnVrODVJUE9RbkJGZ0hzaV9MN1hkU3FxU0I?oc=5",
+        "pubDate": "Sat, 19 Sep 2026 04:26:00 GMT"
+      },
+      "sparkline": null
+    },
+    {
       "name": "Scale AI",
       "tag": "AI Data",
       "desc": "Data labelling and RLHF infrastructure powering frontier AI",
@@ -63,39 +131,24 @@
       "logo": "https://www.google.com/s2/favicons?domain=scale.com&sz=128",
       "ticker": null,
       "headline": {
-        "title": "Scale AI and Passes founder Lucy Guo says AI is making people work harder, not less: ‘I worked a 26-hour day’ - Fortune",
-        "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNX3dzdlZBRE5JaFF5bTh4cVZRTmU3RkdtSXBJOVNVS2RDTThJYzk0RzE2aEMzTjI1ZUVPcXFmbU5WXzRhcUF5elN1Qkk1RUUta1VNcGxBNEJKSzR0bE8yYzBaT05oMDl0ZXZsSTdsZk8yejlmNkVFRlkzSTFOQUc4R1V5a0pGR1FlWkNsT245Y1NWdjhkNE0tcDJpa0hhb3VHYkg4N1V6OWNiU3hoWWV0Y051VzIwSERXMGRDVXRjSmRaODg3UDE3MHM2aw?oc=5",
-        "pubDate": "Sat, 19 Sep 2026 07:02:00 GMT"
+        "title": "How a Platform Approach Can Scale AI’s Impact in Life Sciences - Applied Clinical Trials Online",
+        "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPOGY1Nmoxc0V5OUlHSUJBOFlIem5RVmZBNzVBRUN0XzE3MTl3eEJqeXVZbkdodmYxZkpaYUxLV1ZadEMtWWVUSDFELThydWZmcVJ4VVpvTUFIQ0pwNFdaVTI5bVhUaEpTby1JU1ZOOE9zWWI4TnlPbXRHNkFEQ3dGaEdndndab3MtR0lXLVk4RVNLNU0?oc=5",
+        "pubDate": "Fri, 18 Sep 2026 14:46:31 GMT"
       },
       "sparkline": null
     },
     {
-      "name": "OpenAI",
-      "tag": "LLMs",
-      "desc": "Creator of ChatGPT and the GPT family of foundation models",
-      "url": "https://openai.com",
-      "initials": "OAI",
-      "logo": "https://www.google.com/s2/favicons?domain=openai.com&sz=128",
+      "name": "Physical Intelligence",
+      "tag": "Embodied AI",
+      "desc": "Training AI systems to manipulate physical objects",
+      "url": "https://physicalintelligence.company",
+      "initials": "PI",
+      "logo": "https://www.google.com/s2/favicons?domain=physicalintelligence.company&sz=128",
       "ticker": null,
       "headline": {
-        "title": "OpenAI expects to burn $280bn by 2030 - Financial Times",
-        "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPcFJUYnM1WGQ5aHhEU0FMdHRPbjkzSWI4UnNHTkRESlJ6OURsTlNzN25fWWsyTHhHcGpSM0xQZXVuU1FtRW1WNFZ6T3BJcXRNTWFoRlhZcktaVE1IUmZ4Ykkwc253em1Jai10dGxUbFk0d0t5VEUyemwtajF2MURaQnFKTW8?oc=5",
-        "pubDate": "Fri, 18 Sep 2026 22:33:32 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "Neuralink",
-      "tag": "Brain-Computer",
-      "desc": "Implantable neural interfaces for restoring and augmenting human capability",
-      "url": "https://neuralink.com",
-      "initials": "NL",
-      "logo": "https://www.google.com/s2/favicons?domain=neuralink.com&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "Elon Musk's Neuralink patient uses brain implant to say 'I Love You' - The News International",
-        "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxONTBGMndXVGJjdTh3cS1MQ3pEVDBSbGNZVkY3UHpFWjdCN0QxMDdZWjBWcmtnNnpfMkRDU0xRSXZVSXBZSVBrSFFSNU00NnlMMkJ1UFdEb1MzZXVKQWhHdzFCZkc4UmIzMl9ERjVIdDU3ZDhMYnNSVWFucDZQTTVuMzFyVVk3bDNyc281R2ppS1NXRE1VTnl3RFdKVExuSHFTNlAwRUZZM2ZhVmfSAacBQVVfeXFMTzVGVUc1XzM0VGN2bUo0a2NEOS1uc0Z2Tk5IZXF1T1kzeFFFVlEwYzdEQW93dVA2TDZyeDdvMV9WTTl5YkQwd0FRVW5aVXZfMEszNkFtU01fVVBBYXNzQm0xZ284TWIwZGRSV1hwSk5sdHhtUC0wNThjZDFBdnBjX1U4TEV4MDY4X0VLYTlTSGVOZ0hteUctUHF6Z0pveDZJcmxSaU1kQlE?oc=5",
-        "pubDate": "Fri, 18 Sep 2026 17:44:00 GMT"
+        "title": "OpenAI’s highest robotics salary is $500,000, and it is not for building robots - The Next Web",
+        "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9NVEtRbjh2b2JXaEVsZnIyQ0oyZVU4WllpZE14eV9zRkhzU0N6Z0xPc2hodDlWbHdReEVqRWY0NjNFUzVlZzlNY1NhZktuMjdVNm1pbVB1d2VSd0xnc3d1c3FZSlFtLWp4d3Z5V2xBLXp6Q21hSS1F?oc=5",
+        "pubDate": "Fri, 18 Sep 2026 12:54:46 GMT"
       },
       "sparkline": null
     },
@@ -136,36 +189,6 @@
         176.24000549316406,
         177.63999938964844
       ]
-    },
-    {
-      "name": "xAI",
-      "tag": "LLMs",
-      "desc": "Elon Musk's AI company, developer of the Grok models",
-      "url": "https://x.ai",
-      "initials": "X",
-      "logo": "https://www.google.com/s2/favicons?domain=x.ai&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "Opinion | Can Washington accept yes from the AI giants? - The Washington Post",
-        "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOYy01TUVkQi1ySGtYYy03WjJJWVpTbGowR3RzX1Y1cDZwTzdsQlFCeVpZZVFFbTFndll5dzZldFVyZHFnQzFTTHdxay1zNml3dlRlVlJnMWlnR1VrWlNyQmVwcVVoM3prRHVKS2Y4bkRBZmVkVG1GNENQWkJnUU5ZVUQ4VzRzbUExX3ZhYmZPR3lNTUNUSXltbG1md1VVRGUxaWxjWEx5UkxOMGFuVEMtdjNoWQ?oc=5",
-        "pubDate": "Fri, 18 Sep 2026 02:08:44 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "Waymo",
-      "tag": "Autonomy",
-      "desc": "The most miles driven autonomously of any robotaxi service",
-      "url": "https://waymo.com",
-      "initials": "W",
-      "logo": "https://www.google.com/s2/favicons?domain=waymo.com&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "Waymo says Singapore will be its next international robotaxi city - The Verge",
-        "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQR0VnQmxibk5TczB1cWx6ZUR4VExNWjlwZXo3SzgzZTRjdlg1XzRtZk0wSWtqVFBaVGswRks5OXFKYi1YMGhCUTc3LWhjOWFQZ1FfSzJmS1R6bXFuX3JFSWd4R01ybjVXWWN0T0tMblNDNGdiNGVWNVl5UnFWQmxhTWF0cGZhWVJzZmxN?oc=5",
-        "pubDate": "Fri, 18 Sep 2026 02:00:00 GMT"
-      },
-      "sparkline": null
     }
   ]
 }
