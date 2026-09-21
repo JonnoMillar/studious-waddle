@@ -1,71 +1,33 @@
 {
-  "refreshed_at": "2026-09-20T10:59:36.711Z",
+  "refreshed_at": "2026-09-21T12:26:28.426Z",
   "companies": [
     {
-      "name": "CrowdStrike",
-      "tag": "Cybersecurity",
-      "desc": "Cloud-native endpoint protection and threat intelligence",
-      "url": "https://crowdstrike.com",
-      "initials": "CS",
-      "logo": "https://www.google.com/s2/favicons?domain=crowdstrike.com&sz=128",
-      "ticker": "CRWD",
-      "headline": {
-        "title": "CrowdStrike CEO sends strong six-word message on AI cyber safety - thestreet.com",
-        "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQNjc5SndoeVFlQnVlelBQWDF3U2N5T0pHT2VTVUc1WUVfeEFGeFBtQzYwdzJHS3E0b0lnRG80VzJBT2R6eU9RLURtMmNnR1NBZ3VpX0pkOXU2ZUZvdDRfblBVSW96b0ZHRXpQNFRJd1ltX2M0UExyb01sNzF5dnBEb0xFc0k4d1dBd3F4cWcxNFcwbDM5SDhRYWxOa0Z1QQ?oc=5",
-        "pubDate": "Sat, 19 Sep 2026 15:35:00 GMT"
-      },
-      "sparkline": [
-        201.6300048828125,
-        190.33999633789062,
-        191.9499969482422,
-        190.67999267578125,
-        185.3800048828125,
-        189.17999267578125,
-        227.9600067138672,
-        218.39999389648438,
-        231,
-        215.07000732421875,
-        203.4199981689453,
-        214.97000122070312,
-        213.10000610351562,
-        210.02000427246094,
-        207.8000030517578,
-        208.86000061035156,
-        206.74000549316406,
-        235.3800048828125,
-        242.49000549316406,
-        241.36000061035156,
-        245.6999969482422,
-        237.64999389648438
-      ]
-    },
-    {
-      "name": "Cursor",
-      "tag": "Code Editor",
-      "desc": "AI-native code editor that pairs with Claude and GPT-4",
-      "url": "https://cursor.com",
-      "initials": "C",
-      "logo": "https://www.google.com/s2/favicons?domain=cursor.com&sz=128",
+      "name": "Scale AI",
+      "tag": "AI Data",
+      "desc": "Data labelling and RLHF infrastructure powering frontier AI",
+      "url": "https://scale.com",
+      "initials": "S",
+      "logo": "https://www.google.com/s2/favicons?domain=scale.com&sz=128",
       "ticker": null,
       "headline": {
-        "title": "Windows 11 is getting a better way to find your mouse cursor, and we tried it - Windows Latest",
-        "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOS0V0Sm9SSXlCenlIa0lDcWZhY0RnU2JnU2F1ckJsSTczRXdJOEVIWTF0eVVtY01TbnlXWUl5SVhiSFFmZmRsdWI2ZXV0c3A5eWVDUU14LTVrMmxWUXZnXzFCaXFTNDNxM3d6djFrY0ZsV3JqVHc1Vl9OWi13WDRqSHdaOVNpQ0RuS04wa1pEV3dDOGhUNFJqeUZoMVluRDBVX3I3M2R5OWM3TTlRS3B3MkxCakp1Y2g5V3c?oc=5",
-        "pubDate": "Sat, 19 Sep 2026 14:57:06 GMT"
+        "title": "AXA taps BytePlus to scale AI across insurance - fintech.global",
+        "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPVHgwbzZkSmVISUlKZEI0UVFEZFBTbWdrR091cEFmYk5uWHcwazNoZk1rOENKSEV3OG01SjFqSzBUX3NHazRicmFyWXpUUTFzRXNTTmxvSnM5TGpSSVlYUnowNG9kN25HVS1sZ1VLZE1wV243MFVvZ09LQkx1Uk5WYkdFWmdBMUdQ?oc=5",
+        "pubDate": "Mon, 21 Sep 2026 12:19:00 GMT"
       },
       "sparkline": null
     },
     {
-      "name": "Anthropic",
+      "name": "xAI",
       "tag": "LLMs",
-      "desc": "AI safety company behind the Claude family of models",
-      "url": "https://anthropic.com",
-      "initials": "AN",
-      "logo": "https://www.google.com/s2/favicons?domain=anthropic.com&sz=128",
+      "desc": "Elon Musk's AI company, developer of the Grok models",
+      "url": "https://x.ai",
+      "initials": "X",
+      "logo": "https://www.google.com/s2/favicons?domain=x.ai&sz=128",
       "ticker": null,
       "headline": {
-        "title": "Anthropic billionaire cofounder who studied literature says non-STEM degrees will win in the AI age - Fortune",
-        "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPMTdMQ3p5TWFvTUFlbUR3SGRNdENCY2Y4UkdBbmY1QURLVWxrTkxzbmtCRzF4bXRmRWc5cUtkVDJwMHYzb2FaSmZIZUszZU1nZ2dFVkZDU1FQOFBHdjlmbEhRb0NCY3V4a2FpcDgyWDhGWS1LUnBHeTZTLXU2SWZBNXlFXzduTjJvajVqNE8tRndIcnU1NklRYmZ1ZVVpdTVIZjVjU3F2WFppRnFmNU5VaG0xaFBKaEJBSjgxVlhkYjF0bmhEVkxHQTBBVUxZX20zV0NhYkJVS2NuWVk?oc=5",
-        "pubDate": "Sat, 19 Sep 2026 13:05:00 GMT"
+        "title": "OpenAI, Anthropic, Google, xAI Sued Over AI Slowdown Calls - MediaNama",
+        "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNM0IzX2J3b3hPdGhHbUhlYjFpYnc0Q19ud0k3eGFndVJtY3FvQ09KaGVDcGVzMWoyRUZEOHpua3ppZ3lWT2lZVG9nV2NnYzZMNm9KQ2tpdEFFbFBLelgxVXU5eWR5LWNuSzVsdjltVXRhUWFIbzVmNHp6OHJEV1U3dmkzZVF6bERFa1RGVzltSQ?oc=5",
+        "pubDate": "Mon, 21 Sep 2026 12:07:06 GMT"
       },
       "sparkline": null
     },
@@ -78,9 +40,9 @@
       "logo": "https://www.google.com/s2/favicons?domain=rocketlabusa.com&sz=128",
       "ticker": "RKLB",
       "headline": {
-        "title": "Rocket Lab launches an Earth-observing radar satellite from New Zealand (video) - Space",
-        "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOY005NHhIdnFwXzdHUUg0dHlPUVladjZLemEzckVDcFVzaUo3czNnb01ORkxSVFFHU1RLMzZCUnpZQktPYUlwRC1fYkxwUzZ1R2t3VUFnbHVFWk5aR040azVXRFFvMzYtaHBrWVUtSEtNNE1XTEgyblRObHNDRDU4SGVqVVFNUlc0d3Q5TW5uSUN1N2ppZmQweEEzNFBSMEc1ZmIzdWNB?oc=5",
-        "pubDate": "Sat, 19 Sep 2026 06:12:02 GMT"
+        "title": "Four Launches From 100: Rocket Lab Gets a Bullish New Call, With Iridium and Mynaric Along for the Ride - Yahoo Finance",
+        "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxORVJET2JBR0t1UUtYa1dhdW9jOXV6ZFM5aDNtWm5LMzd0MEM4eGZpc3J2eUJLV2FYYnNId3VBeU41SVp2dGpYQk9MYk5Zckc5WkdhX3QzVjRCa2pET0ZoRjRYYnBFUkp4dTBSMFQ0VUdwc0RnejBGQkZzQ3JYSm9aQlBFcmh5ZkM4V0c5MlVCN1g1NnlmNzh2Tg?oc=5",
+        "pubDate": "Mon, 21 Sep 2026 11:51:17 GMT"
       },
       "sparkline": [
         75.83999633789062,
@@ -108,32 +70,47 @@
       ]
     },
     {
-      "name": "Anduril",
-      "tag": "Defense AI",
-      "desc": "Autonomous defense systems and AI-enabled military hardware",
-      "url": "https://anduril.com",
-      "initials": "A",
-      "logo": "https://www.google.com/s2/favicons?domain=anduril.com&sz=128",
+      "name": "Perplexity",
+      "tag": "AI Search",
+      "desc": "Answer engine combining web search with AI-generated summaries",
+      "url": "https://perplexity.ai",
+      "initials": "P",
+      "logo": "https://www.google.com/s2/favicons?domain=perplexity.ai&sz=128",
       "ticker": null,
       "headline": {
-        "title": "Defence firm Anduril says US delay on Taiwan arms sales affecting its business - Reuters",
-        "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNUS1zbnlmMUNZQU8teS1FUnNoOE1EMVNycDNJUVcyQ25QRGpyQk9WaVZPRG8zbzJCWlJSS3RDNHlqWmgzZkJibklPaVpGanBMQWc4LUFrN2s3NC1ieGpFVEMwY0w0eHhZckJ5NGNSZzQ3QnJPel9LeGdWclh0allIZDFHVTVta3k5Z1pwVlEzRlZSQzduNF9zNXhVaVlDQnFFX2VlTExZNnVrODVJUE9RbkJGZ0hzaV9MN1hkU3FxU0I?oc=5",
-        "pubDate": "Sat, 19 Sep 2026 04:26:00 GMT"
+        "title": "Perplexity Brings Its Local AI Agent to Windows - techrepublic.com",
+        "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNN2lzTGl1SFhTSnU1VmpLa3gxUXJuT2ZNaWVCY2xiaFJuUXlUemxqNzIwalRTRjh4bE1EWVg0UHRvQlNFR1hfdTlUZ2hORkxqdnRWRmNzNnRJQWQ4bzJPNnNvRkctYlJVOTlBVUlLWk9CWUIxeGxhVWdUbENGMW10cjdha1k5UQ?oc=5",
+        "pubDate": "Mon, 21 Sep 2026 11:32:34 GMT"
       },
       "sparkline": null
     },
     {
-      "name": "Scale AI",
-      "tag": "AI Data",
-      "desc": "Data labelling and RLHF infrastructure powering frontier AI",
-      "url": "https://scale.com",
-      "initials": "S",
-      "logo": "https://www.google.com/s2/favicons?domain=scale.com&sz=128",
+      "name": "Cursor",
+      "tag": "Code Editor",
+      "desc": "AI-native code editor that pairs with Claude and GPT-4",
+      "url": "https://cursor.com",
+      "initials": "C",
+      "logo": "https://www.google.com/s2/favicons?domain=cursor.com&sz=128",
       "ticker": null,
       "headline": {
-        "title": "How a Platform Approach Can Scale AI’s Impact in Life Sciences - Applied Clinical Trials Online",
-        "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPOGY1Nmoxc0V5OUlHSUJBOFlIem5RVmZBNzVBRUN0XzE3MTl3eEJqeXVZbkdodmYxZkpaYUxLV1ZadEMtWWVUSDFELThydWZmcVJ4VVpvTUFIQ0pwNFdaVTI5bVhUaEpTby1JU1ZOOE9zWWI4TnlPbXRHNkFEQ3dGaEdndndab3MtR0lXLVk4RVNLNU0?oc=5",
-        "pubDate": "Fri, 18 Sep 2026 14:46:31 GMT"
+        "title": "8 Best Cursor Alternatives 2026: Prices, Free Tiers and Verdict - AFFiNCO",
+        "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE51dlc3LUhOWFVJNTVGZks3LXdUNDhJNF83a19ORnFLVU51SERkTkdRbGI4ZXAxaFdJRVlFbUlQajBJbExzUUVYUHBLbjN6SmdrTkE?oc=5",
+        "pubDate": "Mon, 21 Sep 2026 11:02:01 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "OpenAI",
+      "tag": "LLMs",
+      "desc": "Creator of ChatGPT and the GPT family of foundation models",
+      "url": "https://openai.com",
+      "initials": "OAI",
+      "logo": "https://www.google.com/s2/favicons?domain=openai.com&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "SoftBank launches one of biggest junk bond deals to fund OpenAI bet - Financial Times",
+        "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPVzNIMjVDRU1MdTRVS2JqZTFGMVdNcTA3YlBYN3RjekNZcTZIcmEyS2NmOU5lTlluU01ZY3BWOUxVMW5CYVk0eTVpVm5LZFNhTnIxSWprNEpmZnk3bnhSWGhxRlgycl9LYnhrWGNqZG1iMjlyQVhxenJkTE1RLUkzUXd6Qi0?oc=5",
+        "pubDate": "Mon, 21 Sep 2026 09:32:29 GMT"
       },
       "sparkline": null
     },
@@ -146,49 +123,26 @@
       "logo": "https://www.google.com/s2/favicons?domain=physicalintelligence.company&sz=128",
       "ticker": null,
       "headline": {
-        "title": "OpenAI’s highest robotics salary is $500,000, and it is not for building robots - The Next Web",
-        "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9NVEtRbjh2b2JXaEVsZnIyQ0oyZVU4WllpZE14eV9zRkhzU0N6Z0xPc2hodDlWbHdReEVqRWY0NjNFUzVlZzlNY1NhZktuMjdVNm1pbVB1d2VSd0xnc3d1c3FZSlFtLWp4d3Z5V2xBLXp6Q21hSS1F?oc=5",
-        "pubDate": "Fri, 18 Sep 2026 12:54:46 GMT"
+        "title": "Physical AI Brings A New Intelligence Layer To Manufacturing - BW Disrupt",
+        "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPX24tLXA2dmlHTU0zY3E2dXdOcGY2VGJhU2dUV1d3MzNuNnJoQk92cHMxWWxsYUFuVXhqcXI3cHprVEZpd254SGotLUtwZkstUTVsU1Z4dWZIQUtPN25LbklzYUYyV2lHVzNtTWR0bm42Vm9mVFNpd0pvMzU2ZlZHZ1pucGFybjVvTmJvTGNFUXVjMU1iVWotdUNXMmFYcnBKLVk0?oc=5",
+        "pubDate": "Mon, 21 Sep 2026 05:41:57 GMT"
       },
       "sparkline": null
     },
     {
-      "name": "Palantir",
-      "tag": "Data Analytics",
-      "desc": "Big-data analytics platforms for government and enterprise",
-      "url": "https://palantir.com",
-      "initials": "PL",
-      "logo": "https://www.google.com/s2/favicons?domain=palantir.com&sz=128",
-      "ticker": "PLTR",
+      "name": "Anthropic",
+      "tag": "LLMs",
+      "desc": "AI safety company behind the Claude family of models",
+      "url": "https://anthropic.com",
+      "initials": "AN",
+      "logo": "https://www.google.com/s2/favicons?domain=anthropic.com&sz=128",
+      "ticker": null,
       "headline": {
-        "title": "Ex-Labour deputy leader Tom Watson joins Palantir - BBC",
-        "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5rWnQ1RFIydXVOYmVESlpXcmNNeXZBZW5YY3ZMWGlpNEpJSW9EdVR6b0JlY0dzSWs1ZFBLMkRRX0R6TjhDb2oyU1ZiSGk4azN5bmJidUdIVGl4bkxRTXc?oc=5",
-        "pubDate": "Fri, 18 Sep 2026 11:23:18 GMT"
+        "title": "Lex in depth: Anthropic at $2tn isn’t far-fetched - Financial Times",
+        "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNcEZDMGtoTHV5SFVqZWU4UjlXb0ZjSFhDQ25qN3h1WGpaOHB2UnI5UGxGeVltUGR2cTE4eTRNeW5nTmk5aG1udWtBMHN5LUxiVmkyS1FKY25jSFhlV0VqRnJ3cDRveDZqbWI2V3NNYWVfZzFURTFQcmlwcG5ubzZTa1Q0QjM?oc=5",
+        "pubDate": "Mon, 21 Sep 2026 04:03:04 GMT"
       },
-      "sparkline": [
-        175.19000244140625,
-        173.9600067138672,
-        179.94000244140625,
-        175.88999938964844,
-        172.72999572753906,
-        177.5,
-        185.92999267578125,
-        186.2899932861328,
-        186.3800048828125,
-        179.9199981689453,
-        169.4600067138672,
-        182.52999877929688,
-        174.3300018310547,
-        170.3000030517578,
-        169.52999877929688,
-        165.86000061035156,
-        167.22999572753906,
-        173.30999755859375,
-        172.55999755859375,
-        174.33999633789062,
-        176.24000549316406,
-        177.63999938964844
-      ]
+      "sparkline": null
     }
   ]
 }
