@@ -1,5 +1,5 @@
 {
-  "refreshed_at": "2026-09-21T12:26:28.426Z",
+  "refreshed_at": "2026-09-22T11:16:07.323Z",
   "companies": [
     {
       "name": "Scale AI",
@@ -10,79 +10,62 @@
       "logo": "https://www.google.com/s2/favicons?domain=scale.com&sz=128",
       "ticker": null,
       "headline": {
-        "title": "AXA taps BytePlus to scale AI across insurance - fintech.global",
-        "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPVHgwbzZkSmVISUlKZEI0UVFEZFBTbWdrR091cEFmYk5uWHcwazNoZk1rOENKSEV3OG01SjFqSzBUX3NHazRicmFyWXpUUTFzRXNTTmxvSnM5TGpSSVlYUnowNG9kN25HVS1sZ1VLZE1wV243MFVvZ09LQkx1Uk5WYkdFWmdBMUdQ?oc=5",
-        "pubDate": "Mon, 21 Sep 2026 12:19:00 GMT"
+        "title": "Footprint Raises $25M Series B to Scale AI-Native Financial Crime Compliance Platform - FF News",
+        "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQdmZNdkFZUE1UWlFZa25qVk5md1pISG9LWTZDNlJiclpSU29PVURLWGVWc0RpalhIMHAyZ2IwaHR6TGk4bXBUek12aV9MRVJHX2tNeldoQjk1cVBHcV9scHNqeUo1di1qenY1NFhOTnN1NFZrRDFyTWxDNU9leXlxaTRqMEJfOEFBYnc?oc=5",
+        "pubDate": "Tue, 22 Sep 2026 10:14:24 GMT"
       },
       "sparkline": null
     },
     {
-      "name": "xAI",
+      "name": "Mistral AI",
       "tag": "LLMs",
-      "desc": "Elon Musk's AI company, developer of the Grok models",
-      "url": "https://x.ai",
-      "initials": "X",
-      "logo": "https://www.google.com/s2/favicons?domain=x.ai&sz=128",
+      "desc": "Europe's leading open-weight AI foundation models",
+      "url": "https://mistral.ai",
+      "initials": "M",
+      "logo": "https://www.google.com/s2/favicons?domain=mistral.ai&sz=128",
       "ticker": null,
       "headline": {
-        "title": "OpenAI, Anthropic, Google, xAI Sued Over AI Slowdown Calls - MediaNama",
-        "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNM0IzX2J3b3hPdGhHbUhlYjFpYnc0Q19ud0k3eGFndVJtY3FvQ09KaGVDcGVzMWoyRUZEOHpua3ppZ3lWT2lZVG9nV2NnYzZMNm9KQ2tpdEFFbFBLelgxVXU5eWR5LWNuSzVsdjltVXRhUWFIbzVmNHp6OHJEV1U3dmkzZVF6bERFa1RGVzltSQ?oc=5",
-        "pubDate": "Mon, 21 Sep 2026 12:07:06 GMT"
+        "title": "OpenRouter's Peter Walker flags Mistral's early token-share moment - Dealroom",
+        "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQaUFXeTRVNjZFaHRTWEhZSGg1dUFqOGV0SFF6S2VtUHkxR0dFQnlZYUJyV01lbC0zVWRvMXVGWEhVZUgzWjduLVRXVldvVVdqZEY2RHY2LVNIUGc1bmJtdkUxTWQ4cHZUV1d2NmtTSUpSa18tSV80UTVNRzlaVzhYVElyRHhuTFlOelVUY3pxS0RtQkZ6TkJTTGZCYXRnaTJrRWo4cE1R?oc=5",
+        "pubDate": "Tue, 22 Sep 2026 08:05:57 GMT"
       },
       "sparkline": null
     },
     {
-      "name": "Rocket Lab",
-      "tag": "Space",
-      "desc": "Small-satellite launch provider and space systems manufacturer",
-      "url": "https://rocketlabusa.com",
-      "initials": "RL",
-      "logo": "https://www.google.com/s2/favicons?domain=rocketlabusa.com&sz=128",
-      "ticker": "RKLB",
+      "name": "CrowdStrike",
+      "tag": "Cybersecurity",
+      "desc": "Cloud-native endpoint protection and threat intelligence",
+      "url": "https://crowdstrike.com",
+      "initials": "CS",
+      "logo": "https://www.google.com/s2/favicons?domain=crowdstrike.com&sz=128",
+      "ticker": "CRWD",
       "headline": {
-        "title": "Four Launches From 100: Rocket Lab Gets a Bullish New Call, With Iridium and Mynaric Along for the Ride - Yahoo Finance",
-        "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxORVJET2JBR0t1UUtYa1dhdW9jOXV6ZFM5aDNtWm5LMzd0MEM4eGZpc3J2eUJLV2FYYnNId3VBeU41SVp2dGpYQk9MYk5Zckc5WkdhX3QzVjRCa2pET0ZoRjRYYnBFUkp4dTBSMFQ0VUdwc0RnejBGQkZzQ3JYSm9aQlBFcmh5ZkM4V0c5MlVCN1g1NnlmNzh2Tg?oc=5",
-        "pubDate": "Mon, 21 Sep 2026 11:51:17 GMT"
+        "title": "How to Play CrowdStrike Stock at All-Time Highs - Barchart.com",
+        "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOOE1UX0dxRkFNMW9XNDExTDZYMkhTbjdDRkQ0WmpJT0t0Z05DZVVIWUlyLWdCVjVOay00WGczMjI4MUdITll0Z3BjejNGa1pwTWZqVllBRUhZR2pkb1BSemVFNHNOTGhqMTBuQ054S0RTSHBOV1RVNWZkR3o4QzJBUFVrZlVWSmpPZndTSmtOajNxNEdVY0E?oc=5",
+        "pubDate": "Mon, 21 Sep 2026 20:54:05 GMT"
       },
       "sparkline": [
-        75.83999633789062,
-        72.94999694824219,
-        72.56999969482422,
-        68.27999877929688,
-        66.91000366210938,
-        66.18000030517578,
-        67.52999877929688,
-        64.38999938964844,
-        63.91999816894531,
-        62.540000915527344,
-        63.099998474121094,
-        63.810001373291016,
-        64.26000213623047,
-        65.87000274658203,
-        63.06999969482422,
-        61.959999084472656,
-        62.95000076293945,
-        62.54999923706055,
-        63.54999923706055,
-        63.70000076293945,
-        67.81999969482422,
-        64.56999969482422
+        190.67999267578125,
+        185.3800048828125,
+        189.17999267578125,
+        227.9600067138672,
+        218.39999389648438,
+        231,
+        215.07000732421875,
+        203.4199981689453,
+        214.97000122070312,
+        213.10000610351562,
+        210.02000427246094,
+        207.8000030517578,
+        208.86000061035156,
+        206.74000549316406,
+        235.3800048828125,
+        242.49000549316406,
+        241.36000061035156,
+        245.6999969482422,
+        237.64999389648438,
+        249.35000610351562
       ]
-    },
-    {
-      "name": "Perplexity",
-      "tag": "AI Search",
-      "desc": "Answer engine combining web search with AI-generated summaries",
-      "url": "https://perplexity.ai",
-      "initials": "P",
-      "logo": "https://www.google.com/s2/favicons?domain=perplexity.ai&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "Perplexity Brings Its Local AI Agent to Windows - techrepublic.com",
-        "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNN2lzTGl1SFhTSnU1VmpLa3gxUXJuT2ZNaWVCY2xiaFJuUXlUemxqNzIwalRTRjh4bE1EWVg0UHRvQlNFR1hfdTlUZ2hORkxqdnRWRmNzNnRJQWQ4bzJPNnNvRkctYlJVOTlBVUlLWk9CWUIxeGxhVWdUbENGMW10cjdha1k5UQ?oc=5",
-        "pubDate": "Mon, 21 Sep 2026 11:32:34 GMT"
-      },
-      "sparkline": null
     },
     {
       "name": "Cursor",
@@ -93,54 +76,90 @@
       "logo": "https://www.google.com/s2/favicons?domain=cursor.com&sz=128",
       "ticker": null,
       "headline": {
-        "title": "8 Best Cursor Alternatives 2026: Prices, Free Tiers and Verdict - AFFiNCO",
-        "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE51dlc3LUhOWFVJNTVGZks3LXdUNDhJNF83a19ORnFLVU51SERkTkdRbGI4ZXAxaFdJRVlFbUlQajBJbExzUUVYUHBLbjN6SmdrTkE?oc=5",
-        "pubDate": "Mon, 21 Sep 2026 11:02:01 GMT"
+        "title": "Windows 11 tests redesigned Mouse Indicator with new cursor controls - BetaNews",
+        "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9vMWJSQ2U4S29WNXFkS0h0ZklNc29hLXpwanU4cGhVdkY0SnBaVjhva2pGRzhzX0VGQWVOejZ0aHNkQXNhNUlGaU9VSDNaZ3pFeC12ak9Ndi1mcHc0VFIwbzl2WnhGVGlBQjlsenlnTy1iQk9WbFE?oc=5",
+        "pubDate": "Mon, 21 Sep 2026 18:34:12 GMT"
       },
       "sparkline": null
     },
     {
-      "name": "OpenAI",
+      "name": "Palantir",
+      "tag": "Data Analytics",
+      "desc": "Big-data analytics platforms for government and enterprise",
+      "url": "https://palantir.com",
+      "initials": "PL",
+      "logo": "https://www.google.com/s2/favicons?domain=palantir.com&sz=128",
+      "ticker": "PLTR",
+      "headline": {
+        "title": "Five UK police forces end Palantir project after two years - Financial Times",
+        "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOVkE3SDI3N2ROT0xEVkJlcUI3MFJjTHFHZ1ZtcGN5M2dBNk1LNFptaHYxSnBpRGQzODhMM2lCLTQzVEdNRUFrZlZneE5IRVgyVHpTcFUwdlBCd2ZmTEktamp1U1hQSUNqVF91T2h1bmhLTUVBWTZiWGtPSkdZcUgzUGVqUHE?oc=5",
+        "pubDate": "Mon, 21 Sep 2026 18:25:13 GMT"
+      },
+      "sparkline": [
+        175.88999938964844,
+        172.72999572753906,
+        177.5,
+        185.92999267578125,
+        186.2899932861328,
+        186.3800048828125,
+        179.9199981689453,
+        169.4600067138672,
+        182.52999877929688,
+        174.3300018310547,
+        170.3000030517578,
+        169.52999877929688,
+        165.86000061035156,
+        167.22999572753906,
+        173.30999755859375,
+        172.55999755859375,
+        174.33999633789062,
+        176.24000549316406,
+        177.63999938964844,
+        183.08999633789062
+      ]
+    },
+    {
+      "name": "xAI",
       "tag": "LLMs",
-      "desc": "Creator of ChatGPT and the GPT family of foundation models",
-      "url": "https://openai.com",
-      "initials": "OAI",
-      "logo": "https://www.google.com/s2/favicons?domain=openai.com&sz=128",
+      "desc": "Elon Musk's AI company, developer of the Grok models",
+      "url": "https://x.ai",
+      "initials": "X",
+      "logo": "https://www.google.com/s2/favicons?domain=x.ai&sz=128",
       "ticker": null,
       "headline": {
-        "title": "SoftBank launches one of biggest junk bond deals to fund OpenAI bet - Financial Times",
-        "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPVzNIMjVDRU1MdTRVS2JqZTFGMVdNcTA3YlBYN3RjekNZcTZIcmEyS2NmOU5lTlluU01ZY3BWOUxVMW5CYVk0eTVpVm5LZFNhTnIxSWprNEpmZnk3bnhSWGhxRlgycl9LYnhrWGNqZG1iMjlyQVhxenJkTE1RLUkzUXd6Qi0?oc=5",
-        "pubDate": "Mon, 21 Sep 2026 09:32:29 GMT"
+        "title": "Former xAI Staffer Eyes $50 Million for Firm to Fight Deepfakes - Bloomberg.com",
+        "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOQXFYQXBoekh0aTJhd2NOc3N5TFFOenBmZFltYmtXWXRIMUx3VFhBZWxEV1hTWFlpNG9XTXB5MnpOVFlSQmlxbVViMlU0V25vSGpXQmNLcUNVVzZEeDhnNUZVd1FTS3FMejVqZ2p2NlVQblF6LVRvX3ZZWjJlLWQ4OUJna2pjMFUzR0NsOGVZN2xtd1p0TFZuMlFLMUFEMEN2dUJaM0pYRHdaWm42VF9ULTNMbw?oc=5",
+        "pubDate": "Mon, 21 Sep 2026 17:31:11 GMT"
       },
       "sparkline": null
     },
     {
-      "name": "Physical Intelligence",
-      "tag": "Embodied AI",
-      "desc": "Training AI systems to manipulate physical objects",
-      "url": "https://physicalintelligence.company",
-      "initials": "PI",
-      "logo": "https://www.google.com/s2/favicons?domain=physicalintelligence.company&sz=128",
+      "name": "Waymo",
+      "tag": "Autonomy",
+      "desc": "The most miles driven autonomously of any robotaxi service",
+      "url": "https://waymo.com",
+      "initials": "W",
+      "logo": "https://www.google.com/s2/favicons?domain=waymo.com&sz=128",
       "ticker": null,
       "headline": {
-        "title": "Physical AI Brings A New Intelligence Layer To Manufacturing - BW Disrupt",
-        "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPX24tLXA2dmlHTU0zY3E2dXdOcGY2VGJhU2dUV1d3MzNuNnJoQk92cHMxWWxsYUFuVXhqcXI3cHprVEZpd254SGotLUtwZkstUTVsU1Z4dWZIQUtPN25LbklzYUYyV2lHVzNtTWR0bm42Vm9mVFNpd0pvMzU2ZlZHZ1pucGFybjVvTmJvTGNFUXVjMU1iVWotdUNXMmFYcnBKLVk0?oc=5",
-        "pubDate": "Mon, 21 Sep 2026 05:41:57 GMT"
+        "title": "Driverless taxi passengers face bans for having sex - The Times",
+        "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOMFVpelc0ZVE1UGw4MDFXSnhCUk53MlZfZTFTaGlreTF2eW1Wd0wxdHpQeS0tNTlwcW9oT1lsWURkTU1xNmtQSGk4bzQ1eTM1Tk5zLS1XMURyd1B4OWsyV0F5VkFRZk56QnBWcnJXYWw1N3RNUFdfWnhvY3ZyS1lEQ2xlcHFnNFRqRTZveGZOVTAyUmZfcEQtSmsyaVppQQ?oc=5",
+        "pubDate": "Mon, 21 Sep 2026 17:25:18 GMT"
       },
       "sparkline": null
     },
     {
-      "name": "Anthropic",
-      "tag": "LLMs",
-      "desc": "AI safety company behind the Claude family of models",
-      "url": "https://anthropic.com",
-      "initials": "AN",
-      "logo": "https://www.google.com/s2/favicons?domain=anthropic.com&sz=128",
+      "name": "Perplexity",
+      "tag": "AI Search",
+      "desc": "Answer engine combining web search with AI-generated summaries",
+      "url": "https://perplexity.ai",
+      "initials": "P",
+      "logo": "https://www.google.com/s2/favicons?domain=perplexity.ai&sz=128",
       "ticker": null,
       "headline": {
-        "title": "Lex in depth: Anthropic at $2tn isn’t far-fetched - Financial Times",
-        "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNcEZDMGtoTHV5SFVqZWU4UjlXb0ZjSFhDQ25qN3h1WGpaOHB2UnI5UGxGeVltUGR2cTE4eTRNeW5nTmk5aG1udWtBMHN5LUxiVmkyS1FKY25jSFhlV0VqRnJ3cDRveDZqbWI2V3NNYWVfZzFURTFQcmlwcG5ubzZTa1Q0QjM?oc=5",
-        "pubDate": "Mon, 21 Sep 2026 04:03:04 GMT"
+        "title": "Amazon blocks Meta’s Muse and accuses Perplexity of misleading a court - The Next Web",
+        "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOdHBaMzh6Q3c4SnV2amFJYWZydk9CSDhhZGE0NmN4U1pTOGxGUi1acUw1RlF5d0hIYXNWM1NuWlN2R1dNdXpDZlFJVVZjU3FyeGU0bnNVSi1lamptU1hlX0hkelZsNVNCWmNrajdBYi1PeDFuVy1XRGtfQjMxNjNKMg?oc=5",
+        "pubDate": "Mon, 21 Sep 2026 16:10:24 GMT"
       },
       "sparkline": null
     }
