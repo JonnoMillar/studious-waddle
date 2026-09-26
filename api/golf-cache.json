@@ -1,7 +1,7 @@
 {
   "tee_times": [
     {
-      "date": "2026-09-26",
+      "date": "2026-10-03",
       "tee_time": "08:20",
       "course_name": "Ilford Golf Club",
       "facility_id": 15715,
@@ -15,11 +15,11 @@
       "is_hot_deal": false,
       "rate_type": "Best Available",
       "booking_url": "https://www.golfnow.co.uk/tee-times/facility/15715/search",
-      "scraped_date": "2026-09-24"
+      "scraped_date": "2026-09-26"
     },
     {
-      "date": "2026-09-27",
-      "tee_time": "07:30",
+      "date": "2026-10-03",
+      "tee_time": "06:52",
       "course_name": "Chingford Golf Course",
       "facility_id": 14042,
       "course_rating": 4.0928,
@@ -32,11 +32,28 @@
       "is_hot_deal": false,
       "rate_type": "Best Available",
       "booking_url": "https://www.golfnow.co.uk/tee-times/facility/14042/search",
-      "scraped_date": "2026-09-24"
+      "scraped_date": "2026-09-26"
+    },
+    {
+      "date": "2026-10-04",
+      "tee_time": "07:00",
+      "course_name": "Chingford Golf Course",
+      "facility_id": 14042,
+      "course_rating": 4.0928,
+      "course_review_count": 362,
+      "course_address": "London, Middlesex",
+      "distance_miles": 11.0,
+      "holes": 18,
+      "max_players": 4,
+      "price_gbp": 30.5,
+      "is_hot_deal": false,
+      "rate_type": "Best Available",
+      "booking_url": "https://www.golfnow.co.uk/tee-times/facility/14042/search",
+      "scraped_date": "2026-09-26"
     },
     {
       "date": "2026-09-27",
-      "tee_time": "07:02",
+      "tee_time": "07:32",
       "course_name": "Brent Valley Golf Club",
       "facility_id": 13883,
       "course_rating": 3.2517,
@@ -49,11 +66,11 @@
       "is_hot_deal": false,
       "rate_type": "Best Available",
       "booking_url": "https://www.golfnow.co.uk/tee-times/facility/13883/search",
-      "scraped_date": "2026-09-24"
+      "scraped_date": "2026-09-26"
     },
     {
       "date": "2026-09-27",
-      "tee_time": "07:44",
+      "tee_time": "07:52",
       "course_name": "London Airlinks Golf Course",
       "facility_id": 15559,
       "course_rating": 3.5296,
@@ -66,7 +83,7 @@
       "is_hot_deal": false,
       "rate_type": "Best Available",
       "booking_url": "https://www.golfnow.co.uk/tee-times/facility/15559/search",
-      "scraped_date": "2026-09-24"
+      "scraped_date": "2026-09-26"
     },
     {
       "date": "2026-10-03",
@@ -83,7 +100,7 @@
       "is_hot_deal": false,
       "rate_type": "Best Available",
       "booking_url": "https://www.golfnow.co.uk/tee-times/facility/15559/search",
-      "scraped_date": "2026-09-24"
+      "scraped_date": "2026-09-26"
     },
     {
       "date": "2026-10-04",
@@ -100,7 +117,7 @@
       "is_hot_deal": false,
       "rate_type": "Best Available",
       "booking_url": "https://www.golfnow.co.uk/tee-times/facility/15559/search",
-      "scraped_date": "2026-09-24"
+      "scraped_date": "2026-09-26"
     },
     {
       "date": "2026-10-03",
@@ -117,11 +134,11 @@
       "is_hot_deal": false,
       "rate_type": "Best Available",
       "booking_url": "https://www.golfnow.co.uk/tee-times/facility/14901/search",
-      "scraped_date": "2026-09-24"
+      "scraped_date": "2026-09-26"
     },
     {
       "date": "2026-10-03",
-      "tee_time": "07:59",
+      "tee_time": "08:20",
       "course_name": "Richmond Park Golf Club - Princes Course",
       "facility_id": 15271,
       "course_rating": 2.5238,
@@ -134,7 +151,7 @@
       "is_hot_deal": false,
       "rate_type": "Best Available",
       "booking_url": "https://www.golfnow.co.uk/tee-times/facility/15271/search",
-      "scraped_date": "2026-09-24"
+      "scraped_date": "2026-09-26"
     },
     {
       "date": "2026-10-04",
@@ -151,26 +168,9 @@
       "is_hot_deal": false,
       "rate_type": "Best Available",
       "booking_url": "https://www.golfnow.co.uk/tee-times/facility/15271/search",
-      "scraped_date": "2026-09-24"
-    },
-    {
-      "date": "2026-09-27",
-      "tee_time": "08:12",
-      "course_name": "West Middlesex Golf Club",
-      "facility_id": 10634,
-      "course_rating": 4.3482,
-      "course_review_count": 186,
-      "course_address": "Greenford, Middlesex",
-      "distance_miles": 10.0,
-      "holes": 18,
-      "max_players": 4,
-      "price_gbp": 60.0,
-      "is_hot_deal": false,
-      "rate_type": "Best Available",
-      "booking_url": "https://www.golfnow.co.uk/tee-times/facility/10634/search",
-      "scraped_date": "2026-09-24"
+      "scraped_date": "2026-09-26"
     }
   ],
-  "scraped_at": "2026-09-24T20:17:36.074657+00:00",
+  "scraped_at": "2026-09-26T10:37:53.603641+00:00",
   "error": null
 }
