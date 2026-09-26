@@ -1,6 +1,51 @@
 {
-  "refreshed_at": "2026-09-25T11:31:14.426Z",
+  "refreshed_at": "2026-09-26T11:06:07.717Z",
   "companies": [
+    {
+      "name": "Anduril",
+      "tag": "Defense AI",
+      "desc": "Autonomous defense systems and AI-enabled military hardware",
+      "url": "https://anduril.com",
+      "initials": "A",
+      "logo": "https://www.google.com/s2/favicons?domain=anduril.com&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "Anduril's $5 Billion Air Force Contract Finally Has a Name - currently.att.yahoo.com",
+        "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNak5lVklHaXRwcXE5WEloVDc2c3RsMHgxQ0pHd2xSTnFjY0k5a0Q3NjZFVlZvVjZnTWVKbUVDdEZ3ZlN2aUU4TDZHazdUMXQwX0tWaC1DQWFXaWRqMl9pLWpjODFySmM5b3RLU0xWVlJ5ZGI1ZS1FaXp0djg5eVVCUWlBRFZlUQ?oc=5",
+        "pubDate": "Sat, 26 Sep 2026 09:25:00 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "OpenAI",
+      "tag": "LLMs",
+      "desc": "Creator of ChatGPT and the GPT family of foundation models",
+      "url": "https://openai.com",
+      "initials": "OAI",
+      "logo": "https://www.google.com/s2/favicons?domain=openai.com&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "OpenAI says agents leaked 53 images from ChatGPT users in latest example of rogue activity - The Guardian",
+        "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNd0dTclpUU0M5bk5NTkk3MlVJeF9vZXZiQVRTLW03V3pxRjZ1WHlxaDBRVUUxbUN5eVRhQlpoTnZQZUdodndHVU9ldHQyazVwamc3OUZqaUktVmxvZmd3d3Y3RHg4Y0lzakJ1bWZtSG5fbFlMbmE4WnBVei1WdS1mem1CYWJ1MFJ1ZEJZRkJwUHJQdEU?oc=5",
+        "pubDate": "Fri, 25 Sep 2026 22:55:00 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "Commonwealth Fusion",
+      "tag": "Energy",
+      "desc": "Next-generation tokamak fusion for clean energy at scale",
+      "url": "https://cfs.energy",
+      "initials": "CFS",
+      "logo": "https://www.google.com/s2/favicons?domain=cfs.energy&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "From SPARC to ARC: CFS prepares for a first-of-a-kind fusion plant - American Nuclear Society -- ANS",
+        "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQV0NaOVRCaE1wMkdneDVRVHdVdl9iMTR5TjJJa2pLNFZNTzRocVBHYThfOUlCVXZNOTdoWmZ0dzhfZVdZYVVZdDhnU0RfcjBVZWJOQVFDTm1NOVF0X3NIOXhScXp0LThqQ242UXA3TmllWm1xTGZVQmFhVjhhZGFiWDdSdXhCQ1RfLTdHb3N4d2VlRlhjaEx2eElGajNCOWJuS2xv?oc=5",
+        "pubDate": "Fri, 25 Sep 2026 12:33:25 GMT"
+      },
+      "sparkline": null
+    },
     {
       "name": "Anthropic",
       "tag": "LLMs",
@@ -17,21 +62,6 @@
       "sparkline": null
     },
     {
-      "name": "Scale AI",
-      "tag": "AI Data",
-      "desc": "Data labelling and RLHF infrastructure powering frontier AI",
-      "url": "https://scale.com",
-      "initials": "S",
-      "logo": "https://www.google.com/s2/favicons?domain=scale.com&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "How is Standard Chartered building the controls needed to scale AI? - The Asian Banker",
-        "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNeG5uR1pZRFc0RmNUVXBUVm4tZm1nbUc4RGp1SVBTNUVMNG5ZNnN5QUczUjB5X3RoQThuem1BNXBNb0tlVXZ6VEw1c3EtZnJmLUExNmlYUXh1MDAxcXlQWlNUN1ZfNUprcTNOUmtZYl9ZM2VxaXRpcG54bTdrdXYwNjdEVzZyV3FacEZfVUdCSENQUnNnUWJRM1ByLWdyeVZUd0hHVnBablRIbHZaeXFuNHV4VnQwZXZUYkE?oc=5",
-        "pubDate": "Fri, 25 Sep 2026 09:30:55 GMT"
-      },
-      "sparkline": null
-    },
-    {
       "name": "xAI",
       "tag": "LLMs",
       "desc": "Elon Musk's AI company, developer of the Grok models",
@@ -40,8 +70,8 @@
       "logo": "https://www.google.com/s2/favicons?domain=x.ai&sz=128",
       "ticker": null,
       "headline": {
-        "title": "Elon Musk Aims to Double Colossus 2’s Nvidia Chips by Year-End - Bloomberg",
-        "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPbXBxTEhITGFuWVlDRnZwR091R2poVktlRXFWc19zQkJocmtoakN4WDVkaEpIR2pudThGSDVpYVNjYjN5azE3dHdMUWNnamwzcmVVNTh1RE41U3ZpZXBPVzhweWs1QWN5WFZvRTVtaFZhOGRSa1Y4MmIwX2pjcF9ZRUJTZVhfeVU3SnhOdWwzM0F6Zm5lOWJmZlZDZnpjU3A5ZEFwVE9zUFBxeEd5OUlnX0x1NA?oc=5",
+        "title": "Elon Musk Aims to Double Colossus 2’s Nvidia Chips by Year-End - Yahoo Finance",
+        "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQYTRKSjZ6ZmdMYzVXeDBTUHB5MFJzdk9nNTdMSDdRR3U5LU9waWFsb21oY1AtNHZVcG5sdkdMOFoxUERueEJwcG0tUl9SUmRwMnhhTkRXd2hDbGdtUFk3OEdqeE9hR25zcUF6QzNQTzNlWWxvblk0U04yYW15TVdNQUpHWmtNVjIzR3Rqb2RPaWVKSy1Fc3JDUXhn?oc=5",
         "pubDate": "Fri, 25 Sep 2026 06:04:00 GMT"
       },
       "sparkline": null
@@ -90,82 +120,6 @@
         "pubDate": "Thu, 24 Sep 2026 13:21:06 GMT"
       },
       "sparkline": null
-    },
-    {
-      "name": "Rocket Lab",
-      "tag": "Space",
-      "desc": "Small-satellite launch provider and space systems manufacturer",
-      "url": "https://rocketlabusa.com",
-      "initials": "RL",
-      "logo": "https://www.google.com/s2/favicons?domain=rocketlabusa.com&sz=128",
-      "ticker": "RKLB",
-      "headline": {
-        "title": "Cathie Wood Just Made Another Big Bet on Rocket Lab - Yahoo Finance",
-        "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPcnZWR0ZuTEFmX2h5TzNPVElWVnBQX3lya050RU1UXzNXMUNqaEVTbnExX0J6NGhrb3BXbXdhVm9LQkR1SFlpaTU1eEdnYUlQa04tbnV3ZV9LTVR0SEkyV3QyVFFPbF9QZW9lQW9BdUtxS1FOLTE4TmNCMjdaYzN1QUxXamFDcWRtMV9CX0hGZGFhV29XRTVWcGpR?oc=5",
-        "pubDate": "Thu, 24 Sep 2026 12:05:51 GMT"
-      },
-      "sparkline": [
-        66.91000366210938,
-        66.18000030517578,
-        67.52999877929688,
-        64.38999938964844,
-        63.91999816894531,
-        62.540000915527344,
-        63.099998474121094,
-        63.810001373291016,
-        64.26000213623047,
-        65.87000274658203,
-        63.06999969482422,
-        61.959999084472656,
-        62.95000076293945,
-        62.54999923706055,
-        63.54999923706055,
-        63.70000076293945,
-        67.81999969482422,
-        64.56999969482422,
-        69.88999938964844,
-        71.9800033569336,
-        70.30999755859375,
-        73.61000061035156
-      ]
-    },
-    {
-      "name": "Palantir",
-      "tag": "Data Analytics",
-      "desc": "Big-data analytics platforms for government and enterprise",
-      "url": "https://palantir.com",
-      "initials": "PL",
-      "logo": "https://www.google.com/s2/favicons?domain=palantir.com&sz=128",
-      "ticker": "PLTR",
-      "headline": {
-        "title": "Tom Watson’s move to Palantir is the latest sign of how far the rot has spread in UK politics | Clive Lewis - The Guardian",
-        "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQM21pV1hjNkVCN0s1emVhaVFCQmFZUk5ZSGxMZWFfdmdjU3ZDb3V6dlRmdkhCMW1zZ2Rqa1BqZnFaMk9YVDlZZVhUNFpubnlJMXFud21DMnJraDZEQkxRY3NMc0ZKTTBnanhGOExLUGdDZlI5RVJySHhYVkFUVVd1TTZzZVFubEZCWGZ1am1R?oc=5",
-        "pubDate": "Thu, 24 Sep 2026 11:00:00 GMT"
-      },
-      "sparkline": [
-        172.72999572753906,
-        177.5,
-        185.92999267578125,
-        186.2899932861328,
-        186.3800048828125,
-        179.9199981689453,
-        169.4600067138672,
-        182.52999877929688,
-        174.3300018310547,
-        170.3000030517578,
-        169.52999877929688,
-        165.86000061035156,
-        167.22999572753906,
-        173.30999755859375,
-        172.55999755859375,
-        174.33999633789062,
-        176.24000549316406,
-        177.63999938964844,
-        183.08999633789062,
-        184.99000549316406,
-        191.7899932861328,
-        192.58999633789062
-      ]
     }
   ]
 }
