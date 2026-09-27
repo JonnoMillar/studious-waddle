@@ -1,51 +1,6 @@
 {
-  "refreshed_at": "2026-09-26T11:06:07.717Z",
+  "refreshed_at": "2026-09-27T11:44:38.999Z",
   "companies": [
-    {
-      "name": "Anduril",
-      "tag": "Defense AI",
-      "desc": "Autonomous defense systems and AI-enabled military hardware",
-      "url": "https://anduril.com",
-      "initials": "A",
-      "logo": "https://www.google.com/s2/favicons?domain=anduril.com&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "Anduril's $5 Billion Air Force Contract Finally Has a Name - currently.att.yahoo.com",
-        "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNak5lVklHaXRwcXE5WEloVDc2c3RsMHgxQ0pHd2xSTnFjY0k5a0Q3NjZFVlZvVjZnTWVKbUVDdEZ3ZlN2aUU4TDZHazdUMXQwX0tWaC1DQWFXaWRqMl9pLWpjODFySmM5b3RLU0xWVlJ5ZGI1ZS1FaXp0djg5eVVCUWlBRFZlUQ?oc=5",
-        "pubDate": "Sat, 26 Sep 2026 09:25:00 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "OpenAI",
-      "tag": "LLMs",
-      "desc": "Creator of ChatGPT and the GPT family of foundation models",
-      "url": "https://openai.com",
-      "initials": "OAI",
-      "logo": "https://www.google.com/s2/favicons?domain=openai.com&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "OpenAI says agents leaked 53 images from ChatGPT users in latest example of rogue activity - The Guardian",
-        "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNd0dTclpUU0M5bk5NTkk3MlVJeF9vZXZiQVRTLW03V3pxRjZ1WHlxaDBRVUUxbUN5eVRhQlpoTnZQZUdodndHVU9ldHQyazVwamc3OUZqaUktVmxvZmd3d3Y3RHg4Y0lzakJ1bWZtSG5fbFlMbmE4WnBVei1WdS1mem1CYWJ1MFJ1ZEJZRkJwUHJQdEU?oc=5",
-        "pubDate": "Fri, 25 Sep 2026 22:55:00 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "Commonwealth Fusion",
-      "tag": "Energy",
-      "desc": "Next-generation tokamak fusion for clean energy at scale",
-      "url": "https://cfs.energy",
-      "initials": "CFS",
-      "logo": "https://www.google.com/s2/favicons?domain=cfs.energy&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "From SPARC to ARC: CFS prepares for a first-of-a-kind fusion plant - American Nuclear Society -- ANS",
-        "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQV0NaOVRCaE1wMkdneDVRVHdVdl9iMTR5TjJJa2pLNFZNTzRocVBHYThfOUlCVXZNOTdoWmZ0dzhfZVdZYVVZdDhnU0RfcjBVZWJOQVFDTm1NOVF0X3NIOXhScXp0LThqQ242UXA3TmllWm1xTGZVQmFhVjhhZGFiWDdSdXhCQ1RfLTdHb3N4d2VlRlhjaEx2eElGajNCOWJuS2xv?oc=5",
-        "pubDate": "Fri, 25 Sep 2026 12:33:25 GMT"
-      },
-      "sparkline": null
-    },
     {
       "name": "Anthropic",
       "tag": "LLMs",
@@ -55,39 +10,9 @@
       "logo": "https://www.google.com/s2/favicons?domain=anthropic.com&sz=128",
       "ticker": null,
       "headline": {
-        "title": "The cheap new AI model taking aim at OpenAI and Anthropic - Financial Times",
-        "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNTW1CaHpfdENaOXJ3OGZmLWVfQ2xUU0FaTEJ5WVhGZzUtMmNENXM3Q0luMUpvZEpCcXVfYV9GQXdlWEs4Um1TbEVFLWNLdl9Ha1ZXQXl3UlU0Y3ZHbTVadWY5Q3lUU01WMGVKWjZBLWpaZnEzbE0wd3gwTVFPUEpXMEdRRHY?oc=5",
-        "pubDate": "Fri, 25 Sep 2026 09:59:38 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "xAI",
-      "tag": "LLMs",
-      "desc": "Elon Musk's AI company, developer of the Grok models",
-      "url": "https://x.ai",
-      "initials": "X",
-      "logo": "https://www.google.com/s2/favicons?domain=x.ai&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "Elon Musk Aims to Double Colossus 2’s Nvidia Chips by Year-End - Yahoo Finance",
-        "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQYTRKSjZ6ZmdMYzVXeDBTUHB5MFJzdk9nNTdMSDdRR3U5LU9waWFsb21oY1AtNHZVcG5sdkdMOFoxUERueEJwcG0tUl9SUmRwMnhhTkRXd2hDbGdtUFk3OEdqeE9hR25zcUF6QzNQTzNlWWxvblk0U04yYW15TVdNQUpHWmtNVjIzR3Rqb2RPaWVKSy1Fc3JDUXhn?oc=5",
-        "pubDate": "Fri, 25 Sep 2026 06:04:00 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "Waymo",
-      "tag": "Autonomy",
-      "desc": "The most miles driven autonomously of any robotaxi service",
-      "url": "https://waymo.com",
-      "initials": "W",
-      "logo": "https://www.google.com/s2/favicons?domain=waymo.com&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "Waymo is scaling fast: Here’s what the fleet data shows - TechCrunch",
-        "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQaHl5bFBSbVlXWmNuN292ZU9UQUZCblZQTXVucHhuekZ5V1I2WS02V0RLbGo5cW1BWHQyZW16MXRUWnBWMVhaaTc5X0Z6MzZxS1Vwc1lIODhVa0lCaXpzMTY3SzUzcHY4cll6bXRRemI3Z09QRzFwTnhVYnRFSWdGTld5V0t0ZXdBOFRzRjJWbmNZZw?oc=5",
-        "pubDate": "Thu, 24 Sep 2026 23:24:33 GMT"
+        "title": "Scoop: Top AI companies probing tens of thousands of security incidents - Axios",
+        "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOaUlRV1JkUEZFRkRINVBlWTR1SWxkZ1hjcUdOMkJDNzF4UXdBVHd2LVlqQmlwb0R3cTVuTFk3MEp1eHlUT0hsRTAzekszcl81ZjNoWDZCMkZBTlk4Z3dlV1RoZnd3YVZSQmpUWWEyc3EyWUFnRHFiQjNacUVEYmxuYXFxVldIdVJ3?oc=5",
+        "pubDate": "Sun, 27 Sep 2026 10:40:16 GMT"
       },
       "sparkline": null
     },
@@ -100,26 +25,147 @@
       "logo": "https://www.google.com/s2/favicons?domain=perplexity.ai&sz=128",
       "ticker": null,
       "headline": {
-        "title": "ChatGPT now sends 95.1% of AI referral traffic to websites, BrightEdge says - The Next Web",
-        "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOeFhzMkgtWlA4MW9nSUQtNDA1cWtkM25NbXlRa0FYc3ZuS213U25WcUVPc3piRTNjSEtEbnIyNHpaSFl4NG5zWW1XdG5hZTRBYU9yeXpyV3dWMlJ5TFBTM1RUMjYxYXNXQ2x6RDZ4Q1JzNXAxS3R5OGk0bDUteTJnd1Bodw?oc=5",
-        "pubDate": "Thu, 24 Sep 2026 19:21:53 GMT"
+        "title": "I replaced Gemini with Perplexity, and it’s a more reliable assistant for Android - How-To Geek",
+        "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPRFdvVTA5ZURxUXMwVU5sam84dlFfaW5meUJWSmVqU3c3dVVPNDNiaFFuT2NSYjVoem9vOHZqSF9XalVNMXczNXhQc0NEQWNfQmNjangyY3FYc1E3VEFDTWViczNZQzR2ZHBReDY3NU1lSlZVd3FJdk5sNkZneWlQRXJfelBkTGptYWZDZnd2c0twUUVGSUhQR25vcWVaUQ?oc=5",
+        "pubDate": "Sun, 27 Sep 2026 10:30:13 GMT"
       },
       "sparkline": null
     },
     {
-      "name": "Cursor",
-      "tag": "Code Editor",
-      "desc": "AI-native code editor that pairs with Claude and GPT-4",
-      "url": "https://cursor.com",
-      "initials": "C",
-      "logo": "https://www.google.com/s2/favicons?domain=cursor.com&sz=128",
+      "name": "Scale AI",
+      "tag": "AI Data",
+      "desc": "Data labelling and RLHF infrastructure powering frontier AI",
+      "url": "https://scale.com",
+      "initials": "S",
+      "logo": "https://www.google.com/s2/favicons?domain=scale.com&sz=128",
       "ticker": null,
       "headline": {
-        "title": "Cursor acquired Firetiger. A month later, it launched a bot that tracks code changes from PR to production. - The New Stack",
-        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFAwZTFUU1psZzJaS3VaLTM3MkRkeHRvUnBHMkVKSFZCenhWWERCOHFHYks1bVp1cGViS05NZU93RGtCN3dzZDR1NC1OemdIcDBTcHNORUd1NjVEQ2ZUT0xTYUZNbDd6ajY2eTcteQ?oc=5",
-        "pubDate": "Thu, 24 Sep 2026 13:21:06 GMT"
+        "title": "Broken promises, confiscated land: the hyperscale AI datacentre being built in a tiny Indian village - The Guardian",
+        "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQTGJHYzBnQnBBekZzTEZWTUxZYWJXcXBIa3d6bUJCOFpMTEQzRFk0OFdrc04yNGNXeUtsR2dwSVdRQVY3MEdPb00yUE9vRlRraHQ3YW5IcXBZRFlXNTlZaEpjNHY2QXl0VWFUREpfYU5KX1JVank2TTJ5VmZSaHpwT2k3WktCcE1MVnYwc3BWdWZpWDdCdDA5WU5Kc09tU0dNS1NsT190SXo2LWNxbDNTQ1JSaGV5TE81eHFsMDkwdHY?oc=5",
+        "pubDate": "Sun, 27 Sep 2026 10:16:00 GMT"
       },
       "sparkline": null
+    },
+    {
+      "name": "OpenAI",
+      "tag": "LLMs",
+      "desc": "Creator of ChatGPT and the GPT family of foundation models",
+      "url": "https://openai.com",
+      "initials": "OAI",
+      "logo": "https://www.google.com/s2/favicons?domain=openai.com&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "OpenAI halts training of latest models as reports mount of AI agents going rogue - The Guardian",
+        "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQdWZCRDBDd0E2YnBTeGJZNXhZLURBOXlJZTR2dGhwY0c1bWlNX3N6MkhWcVRiSF9oNjJLWmJfY0Nwcy05SFB0RGJ2ckhaNjdueWFxMjdnWHhodFM1MEJkRXVnUzJZTTJidXdGckk1ZkI0RDZRNmVQQXYyTmxtbnJKZFdMNFRMbFhwcWY5RHdFeGpIY3prOVo1RWstRWhPVVRldXgyV1E1Q2FaOEZxSC1rTld2eFFHWnJTcXk2WmgxRG15a0ViblgzYzh3TQ?oc=5",
+        "pubDate": "Sun, 27 Sep 2026 10:01:00 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "Rocket Lab",
+      "tag": "Space",
+      "desc": "Small-satellite launch provider and space systems manufacturer",
+      "url": "https://rocketlabusa.com",
+      "initials": "RL",
+      "logo": "https://www.google.com/s2/favicons?domain=rocketlabusa.com&sz=128",
+      "ticker": "RKLB",
+      "headline": {
+        "title": "MISSION SUCCESS: Rocket Lab Launches 97th Electron Mission - Rocket Lab",
+        "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQQ19CVS02WFhXNHZwWjRISGxObmJCOUxQMzEyemRDMFBtQVcySWx4S21pUXZidEVNWTBIblh1aFhDU1dVU1B2Qm5MTTRXN0tJSmpoemRWUmU4QkhpY1RaZHF3LTlQTHR6LV9ldlBjTncwR1BzTEV6bnNpZ0JmRU5TNVI3ZkVlX0ZOZXctYVhTaWIzZ00wTm1v?oc=5",
+        "pubDate": "Sat, 26 Sep 2026 03:44:07 GMT"
+      },
+      "sparkline": [
+        66.18000030517578,
+        67.52999877929688,
+        64.38999938964844,
+        63.91999816894531,
+        62.540000915527344,
+        63.099998474121094,
+        63.810001373291016,
+        64.26000213623047,
+        65.87000274658203,
+        63.06999969482422,
+        61.959999084472656,
+        62.95000076293945,
+        62.54999923706055,
+        63.54999923706055,
+        63.70000076293945,
+        67.81999969482422,
+        64.56999969482422,
+        69.88999938964844,
+        71.9800033569336,
+        70.30999755859375,
+        73.61000061035156,
+        73.94999694824219
+      ]
+    },
+    {
+      "name": "Commonwealth Fusion",
+      "tag": "Energy",
+      "desc": "Next-generation tokamak fusion for clean energy at scale",
+      "url": "https://cfs.energy",
+      "initials": "CFS",
+      "logo": "https://www.google.com/s2/favicons?domain=cfs.energy&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "From SPARC to ARC: CFS prepares for a first-of-a-kind fusion plant - American Nuclear Society -- ANS",
+        "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQV0NaOVRCaE1wMkdneDVRVHdVdl9iMTR5TjJJa2pLNFZNTzRocVBHYThfOUlCVXZNOTdoWmZ0dzhfZVdZYVVZdDhnU0RfcjBVZWJOQVFDTm1NOVF0X3NIOXhScXp0LThqQ242UXA3TmllWm1xTGZVQmFhVjhhZGFiWDdSdXhCQ1RfLTdHb3N4d2VlRlhjaEx2eElGajNCOWJuS2xv?oc=5",
+        "pubDate": "Fri, 25 Sep 2026 23:45:05 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "Anduril",
+      "tag": "Defense AI",
+      "desc": "Autonomous defense systems and AI-enabled military hardware",
+      "url": "https://anduril.com",
+      "initials": "A",
+      "logo": "https://www.google.com/s2/favicons?domain=anduril.com&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "Latvia To Order Anduril’s Barracuda Cruise Missile For Long-Range Strike Capability - twz.com",
+        "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPdk1aNjJldTV1RmltZ1ZBaFRabnR3X0lPUFppNkRwR1YtVlJUQ2RCb09SQV9ldGVCckpnckFQRUg4ZVk3RENoM1NMekM1QldVblROZmVET3FVQWNCUDBxLW1SaFdoa1FnSlA1NjYzd1FKb20zc3JzTUlKdzJTN2oyNkU4YlVaTXFIRTRjQklHR24wU1VPdU5iUUgwMTNWeW5kZEFVcU1adEYwRUlNM2ZUS2R2SEM1SnM?oc=5",
+        "pubDate": "Fri, 25 Sep 2026 18:49:40 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "CrowdStrike",
+      "tag": "Cybersecurity",
+      "desc": "Cloud-native endpoint protection and threat intelligence",
+      "url": "https://crowdstrike.com",
+      "initials": "CS",
+      "logo": "https://www.google.com/s2/favicons?domain=crowdstrike.com&sz=128",
+      "ticker": "CRWD",
+      "headline": {
+        "title": "US Justice Department Closes Investigation of CrowdStrike Deals - Bloomberg.com",
+        "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxONHY2RUZrTlFzYmN1ZjVVNjdvdG9ic1MxY0Nram94OWRSVE9qeU15WlB4RWttSWhJM2dVZmk4QU9zbjhuamVlNU1vVy1nbFVkbzlWR1ZRY2NoYlkzc1dwaHFObU9xbmV4bDNsSkRIS0p6RVhEa1dOaDI3bHlqOGJzMVBWMWRTeTlQS3k3UVlKVk8tVmlJcTlQT0xSSnRZSGY3S3F5U08zOEdyaUtiaUFmbDB0eFc?oc=5",
+        "pubDate": "Fri, 25 Sep 2026 17:15:12 GMT"
+      },
+      "sparkline": [
+        189.17999267578125,
+        227.9600067138672,
+        218.39999389648438,
+        231,
+        215.07000732421875,
+        203.4199981689453,
+        214.97000122070312,
+        213.10000610351562,
+        210.02000427246094,
+        207.8000030517578,
+        208.86000061035156,
+        206.74000549316406,
+        235.3800048828125,
+        242.49000549316406,
+        241.36000061035156,
+        245.6999969482422,
+        237.64999389648438,
+        249.35000610351562,
+        250.05999755859375,
+        262.489990234375,
+        259.6700134277344,
+        252.1300048828125
+      ]
     }
   ]
 }
