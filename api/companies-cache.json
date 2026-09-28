@@ -1,65 +1,43 @@
 {
-  "refreshed_at": "2026-09-27T11:44:38.999Z",
+  "refreshed_at": "2026-09-28T13:24:04.662Z",
   "companies": [
     {
-      "name": "Anthropic",
-      "tag": "LLMs",
-      "desc": "AI safety company behind the Claude family of models",
-      "url": "https://anthropic.com",
-      "initials": "AN",
-      "logo": "https://www.google.com/s2/favicons?domain=anthropic.com&sz=128",
-      "ticker": null,
+      "name": "Palantir",
+      "tag": "Data Analytics",
+      "desc": "Big-data analytics platforms for government and enterprise",
+      "url": "https://palantir.com",
+      "initials": "PL",
+      "logo": "https://www.google.com/s2/favicons?domain=palantir.com&sz=128",
+      "ticker": "PLTR",
       "headline": {
-        "title": "Scoop: Top AI companies probing tens of thousands of security incidents - Axios",
-        "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOaUlRV1JkUEZFRkRINVBlWTR1SWxkZ1hjcUdOMkJDNzF4UXdBVHd2LVlqQmlwb0R3cTVuTFk3MEp1eHlUT0hsRTAzekszcl81ZjNoWDZCMkZBTlk4Z3dlV1RoZnd3YVZSQmpUWWEyc3EyWUFnRHFiQjNacUVEYmxuYXFxVldIdVJ3?oc=5",
-        "pubDate": "Sun, 27 Sep 2026 10:40:16 GMT"
+        "title": "EXCLUSIVE: Activist Jana pushes Fiserv to accelerate cost cuts and tap Palantir - Reuters",
+        "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNQjdOZ01zU2ZoZDJLbWk1V1hNZGs5MUVUZVdpRnVUYmFOdE16N2lzRXh1UmkzWndGMnhoZUFUcURFWUcxeWZrcVdManEwU3Bta1p6WUxlS1JLVExJV0lSYl9LdklkUFVMME5vUHdBT2ZKbGwyVlQ5dmVfMVRVUUtEME4waFZsdkdMaDFCck9VWEVhcnVjdzUzSjNtQmhqN1M3el9SVlZKTXFjdw?oc=5",
+        "pubDate": "Mon, 28 Sep 2026 12:37:02 GMT"
       },
-      "sparkline": null
-    },
-    {
-      "name": "Perplexity",
-      "tag": "AI Search",
-      "desc": "Answer engine combining web search with AI-generated summaries",
-      "url": "https://perplexity.ai",
-      "initials": "P",
-      "logo": "https://www.google.com/s2/favicons?domain=perplexity.ai&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "I replaced Gemini with Perplexity, and it’s a more reliable assistant for Android - How-To Geek",
-        "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPRFdvVTA5ZURxUXMwVU5sam84dlFfaW5meUJWSmVqU3c3dVVPNDNiaFFuT2NSYjVoem9vOHZqSF9XalVNMXczNXhQc0NEQWNfQmNjangyY3FYc1E3VEFDTWViczNZQzR2ZHBReDY3NU1lSlZVd3FJdk5sNkZneWlQRXJfelBkTGptYWZDZnd2c0twUUVGSUhQR25vcWVaUQ?oc=5",
-        "pubDate": "Sun, 27 Sep 2026 10:30:13 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "Scale AI",
-      "tag": "AI Data",
-      "desc": "Data labelling and RLHF infrastructure powering frontier AI",
-      "url": "https://scale.com",
-      "initials": "S",
-      "logo": "https://www.google.com/s2/favicons?domain=scale.com&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "Broken promises, confiscated land: the hyperscale AI datacentre being built in a tiny Indian village - The Guardian",
-        "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQTGJHYzBnQnBBekZzTEZWTUxZYWJXcXBIa3d6bUJCOFpMTEQzRFk0OFdrc04yNGNXeUtsR2dwSVdRQVY3MEdPb00yUE9vRlRraHQ3YW5IcXBZRFlXNTlZaEpjNHY2QXl0VWFUREpfYU5KX1JVank2TTJ5VmZSaHpwT2k3WktCcE1MVnYwc3BWdWZpWDdCdDA5WU5Kc09tU0dNS1NsT190SXo2LWNxbDNTQ1JSaGV5TE81eHFsMDkwdHY?oc=5",
-        "pubDate": "Sun, 27 Sep 2026 10:16:00 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "OpenAI",
-      "tag": "LLMs",
-      "desc": "Creator of ChatGPT and the GPT family of foundation models",
-      "url": "https://openai.com",
-      "initials": "OAI",
-      "logo": "https://www.google.com/s2/favicons?domain=openai.com&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "OpenAI halts training of latest models as reports mount of AI agents going rogue - The Guardian",
-        "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQdWZCRDBDd0E2YnBTeGJZNXhZLURBOXlJZTR2dGhwY0c1bWlNX3N6MkhWcVRiSF9oNjJLWmJfY0Nwcy05SFB0RGJ2ckhaNjdueWFxMjdnWHhodFM1MEJkRXVnUzJZTTJidXdGckk1ZkI0RDZRNmVQQXYyTmxtbnJKZFdMNFRMbFhwcWY5RHdFeGpIY3prOVo1RWstRWhPVVRldXgyV1E1Q2FaOEZxSC1rTld2eFFHWnJTcXk2WmgxRG15a0ViblgzYzh3TQ?oc=5",
-        "pubDate": "Sun, 27 Sep 2026 10:01:00 GMT"
-      },
-      "sparkline": null
+      "sparkline": [
+        177.5,
+        185.92999267578125,
+        186.2899932861328,
+        186.3800048828125,
+        179.9199981689453,
+        169.4600067138672,
+        182.52999877929688,
+        174.3300018310547,
+        170.3000030517578,
+        169.52999877929688,
+        165.86000061035156,
+        167.22999572753906,
+        173.30999755859375,
+        172.55999755859375,
+        174.33999633789062,
+        176.24000549316406,
+        177.63999938964844,
+        183.08999633789062,
+        184.99000549316406,
+        191.7899932861328,
+        192.58999633789062,
+        189.6699981689453
+      ]
     },
     {
       "name": "Rocket Lab",
@@ -70,9 +48,9 @@
       "logo": "https://www.google.com/s2/favicons?domain=rocketlabusa.com&sz=128",
       "ticker": "RKLB",
       "headline": {
-        "title": "MISSION SUCCESS: Rocket Lab Launches 97th Electron Mission - Rocket Lab",
-        "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQQ19CVS02WFhXNHZwWjRISGxObmJCOUxQMzEyemRDMFBtQVcySWx4S21pUXZidEVNWTBIblh1aFhDU1dVU1B2Qm5MTTRXN0tJSmpoemRWUmU4QkhpY1RaZHF3LTlQTHR6LV9ldlBjTncwR1BzTEV6bnNpZ0JmRU5TNVI3ZkVlX0ZOZXctYVhTaWIzZ00wTm1v?oc=5",
-        "pubDate": "Sat, 26 Sep 2026 03:44:07 GMT"
+        "title": "Cantor Fitzgerald reiterates Rocket Lab stock rating on launch record By Investing.com - Investing.com UK",
+        "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNeDBXQ01fcDkxQmxfdjctNmQ2Ym52RF9XR0hGeGdfWHZXTUhFLVpEcGpidWRnZkFnY0hIOUNxTkptbzR6U1pWVmpoUk93VFVvQkZxZDFFSF84cXNBRF84ejJjNmV2WGY3QVJFbXpCX2l6eUxkUW9lUzB5RHRaSHFXMDFUN0szbmQ5TDUyeDVubUkzRzVOXzBNeHZnQXhQTERWZDg5SzYzNDlHUXlTZkd5bmFMZ1VZUDNXaHJLMXFfN1FMQ3JUVDJ0czBR?oc=5",
+        "pubDate": "Mon, 28 Sep 2026 12:10:00 GMT"
       },
       "sparkline": [
         66.18000030517578,
@@ -100,72 +78,94 @@
       ]
     },
     {
-      "name": "Commonwealth Fusion",
-      "tag": "Energy",
-      "desc": "Next-generation tokamak fusion for clean energy at scale",
-      "url": "https://cfs.energy",
-      "initials": "CFS",
-      "logo": "https://www.google.com/s2/favicons?domain=cfs.energy&sz=128",
+      "name": "Physical Intelligence",
+      "tag": "Embodied AI",
+      "desc": "Training AI systems to manipulate physical objects",
+      "url": "https://physicalintelligence.company",
+      "initials": "PI",
+      "logo": "https://www.google.com/s2/favicons?domain=physicalintelligence.company&sz=128",
       "ticker": null,
       "headline": {
-        "title": "From SPARC to ARC: CFS prepares for a first-of-a-kind fusion plant - American Nuclear Society -- ANS",
-        "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQV0NaOVRCaE1wMkdneDVRVHdVdl9iMTR5TjJJa2pLNFZNTzRocVBHYThfOUlCVXZNOTdoWmZ0dzhfZVdZYVVZdDhnU0RfcjBVZWJOQVFDTm1NOVF0X3NIOXhScXp0LThqQ242UXA3TmllWm1xTGZVQmFhVjhhZGFiWDdSdXhCQ1RfLTdHb3N4d2VlRlhjaEx2eElGajNCOWJuS2xv?oc=5",
-        "pubDate": "Fri, 25 Sep 2026 23:45:05 GMT"
+        "title": "Lab Spotlight: Tsay’s Physical Intelligence Lab investigates a new role for the cerebellum - The Tartan",
+        "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxObU9PY2tDRWNCQ05lT25BaXlYUmhTenZKbzN2QllYWXpPRE9NZlpHeWpqU2lCbUtTcUJ5b3JIcW9oOWxublRRSkE2b2NTQm4wbW5uT05rVjV0QUREM2JWUkEtZkg3ZTVpVnNUM2llUlhWcmJRbEVodzc3bGpQWkNYcTN3Tk1kX3BqdkptZWN0WkJvUGtKZ2FwRVdDWnBGTnBSWGFHanowc3JxdnZEcGhyZ2xHLUwydGJ0M21KNl83bFg?oc=5",
+        "pubDate": "Mon, 28 Sep 2026 12:00:00 GMT"
       },
       "sparkline": null
     },
     {
-      "name": "Anduril",
-      "tag": "Defense AI",
-      "desc": "Autonomous defense systems and AI-enabled military hardware",
-      "url": "https://anduril.com",
-      "initials": "A",
-      "logo": "https://www.google.com/s2/favicons?domain=anduril.com&sz=128",
+      "name": "Anthropic",
+      "tag": "LLMs",
+      "desc": "AI safety company behind the Claude family of models",
+      "url": "https://anthropic.com",
+      "initials": "AN",
+      "logo": "https://www.google.com/s2/favicons?domain=anthropic.com&sz=128",
       "ticker": null,
       "headline": {
-        "title": "Latvia To Order Anduril’s Barracuda Cruise Missile For Long-Range Strike Capability - twz.com",
-        "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPdk1aNjJldTV1RmltZ1ZBaFRabnR3X0lPUFppNkRwR1YtVlJUQ2RCb09SQV9ldGVCckpnckFQRUg4ZVk3RENoM1NMekM1QldVblROZmVET3FVQWNCUDBxLW1SaFdoa1FnSlA1NjYzd1FKb20zc3JzTUlKdzJTN2oyNkU4YlVaTXFIRTRjQklHR24wU1VPdU5iUUgwMTNWeW5kZEFVcU1adEYwRUlNM2ZUS2R2SEM1SnM?oc=5",
-        "pubDate": "Fri, 25 Sep 2026 18:49:40 GMT"
+        "title": "Did Anthropic’s A.I. Really Make a Scientific Discovery on Its Own? - The New York Times",
+        "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQREYyMjZVV2F2QllnOVpLTnc4WWR3OGphX3A5WlJRTjhUTEROU0FIb2h0Wkgzb0h1VWRqNnhaUFlkdHRQb0dpXzFVeFlrZVVBcjQ5RzRPVW00MXNmdEV2LVNnRE00TkVZSTdaenhyNE9BOE9GdjlyTUZfeVlMa1JhYlZmNkxIUQ?oc=5",
+        "pubDate": "Mon, 28 Sep 2026 11:41:00 GMT"
       },
       "sparkline": null
     },
     {
-      "name": "CrowdStrike",
-      "tag": "Cybersecurity",
-      "desc": "Cloud-native endpoint protection and threat intelligence",
-      "url": "https://crowdstrike.com",
-      "initials": "CS",
-      "logo": "https://www.google.com/s2/favicons?domain=crowdstrike.com&sz=128",
-      "ticker": "CRWD",
+      "name": "Groq",
+      "tag": "AI Chips",
+      "desc": "LPU inference chips delivering industry-leading token speed",
+      "url": "https://groq.com",
+      "initials": "G",
+      "logo": "https://www.google.com/s2/favicons?domain=groq.com&sz=128",
+      "ticker": null,
       "headline": {
-        "title": "US Justice Department Closes Investigation of CrowdStrike Deals - Bloomberg.com",
-        "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxONHY2RUZrTlFzYmN1ZjVVNjdvdG9ic1MxY0Nram94OWRSVE9qeU15WlB4RWttSWhJM2dVZmk4QU9zbjhuamVlNU1vVy1nbFVkbzlWR1ZRY2NoYlkzc1dwaHFObU9xbmV4bDNsSkRIS0p6RVhEa1dOaDI3bHlqOGJzMVBWMWRTeTlQS3k3UVlKVk8tVmlJcTlQT0xSSnRZSGY3S3F5U08zOEdyaUtiaUFmbDB0eFc?oc=5",
-        "pubDate": "Fri, 25 Sep 2026 17:15:12 GMT"
+        "title": "This Early Groq Investor Expects Half Her Bets To Fail - Crunchbase News",
+        "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOR1U2Rmg2MlRYLUVwbkpZZGJJa2V4RHFJWDM0b2NDMEo4alUwcGJvVG9xWG9CTDZJaXdoSUE2dlRtQ0paSkNwMVFxOFJoSFdxenFvOHJIMmRjMjZQcG1tTDZINHZYY0FXRFZtSXR1Ty0yck56aXl2N3RjTzJ2RVJFMmQwZTAyaUtUb3c?oc=5",
+        "pubDate": "Mon, 28 Sep 2026 11:00:06 GMT"
       },
-      "sparkline": [
-        189.17999267578125,
-        227.9600067138672,
-        218.39999389648438,
-        231,
-        215.07000732421875,
-        203.4199981689453,
-        214.97000122070312,
-        213.10000610351562,
-        210.02000427246094,
-        207.8000030517578,
-        208.86000061035156,
-        206.74000549316406,
-        235.3800048828125,
-        242.49000549316406,
-        241.36000061035156,
-        245.6999969482422,
-        237.64999389648438,
-        249.35000610351562,
-        250.05999755859375,
-        262.489990234375,
-        259.6700134277344,
-        252.1300048828125
-      ]
+      "sparkline": null
+    },
+    {
+      "name": "Scale AI",
+      "tag": "AI Data",
+      "desc": "Data labelling and RLHF infrastructure powering frontier AI",
+      "url": "https://scale.com",
+      "initials": "S",
+      "logo": "https://www.google.com/s2/favicons?domain=scale.com&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "Huawei launches SCALE system to help partners scale AI adoption - Mobile Europe",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5YaU9DU1RWSWExeVpyd2dET2Zpc0NTSHRWR3dJcGpLN2IzM19lZmdQbHFYUkZUd3Jodkc0MGJGdGk5OWt6Y2lZeEhiY1l6ZXluMjFyWGMtak1SandZWFk1NjV3NloyY2tLQWFIYQ?oc=5",
+        "pubDate": "Mon, 28 Sep 2026 10:21:15 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "xAI",
+      "tag": "LLMs",
+      "desc": "Elon Musk's AI company, developer of the Grok models",
+      "url": "https://x.ai",
+      "initials": "X",
+      "logo": "https://www.google.com/s2/favicons?domain=x.ai&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "xAi’s models to catch up OpenAI and Anthropic by year-end - Electronics Weekly",
+        "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQWXdlanJSZWhZUmVCdzVPcV9nZjNpckpkUjlfbVFWdEU1WVZ0M1lETFpyWUFPUmZZbXRFQTBucUk2TE9hVkJxZW54V3J0Z3dWUXcydFlVTThOX2JYdUdDQ0dZNm5nT1lKdFBtTlJNWjd6c1dJU2dEX0ZBeWNianNURnBPQ2tpWlVrTnVYdVlWX1U3MGZ4WWgxY2FrcFBBWFBZZDlsWW5RMzdPdUdpQXN4RHlCajE?oc=5",
+        "pubDate": "Mon, 28 Sep 2026 05:21:23 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "OpenAI",
+      "tag": "LLMs",
+      "desc": "Creator of ChatGPT and the GPT family of foundation models",
+      "url": "https://openai.com",
+      "initials": "OAI",
+      "logo": "https://www.google.com/s2/favicons?domain=openai.com&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "OpenAI halts training of latest models as reports mount of AI agents going rogue - The Guardian",
+        "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQdWZCRDBDd0E2YnBTeGJZNXhZLURBOXlJZTR2dGhwY0c1bWlNX3N6MkhWcVRiSF9oNjJLWmJfY0Nwcy05SFB0RGJ2ckhaNjdueWFxMjdnWHhodFM1MEJkRXVnUzJZTTJidXdGckk1ZkI0RDZRNmVQQXYyTmxtbnJKZFdMNFRMbFhwcWY5RHdFeGpIY3prOVo1RWstRWhPVVRldXgyV1E1Q2FaOEZxSC1rTld2eFFHWnJTcXk2WmgxRG15a0ViblgzYzh3TQ?oc=5",
+        "pubDate": "Sun, 27 Sep 2026 10:01:00 GMT"
+      },
+      "sparkline": null
     }
   ]
 }
