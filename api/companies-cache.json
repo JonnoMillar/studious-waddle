@@ -1,18 +1,18 @@
 {
-  "refreshed_at": "2026-09-29T12:28:28.958Z",
+  "refreshed_at": "2026-09-30T12:13:29.680Z",
   "companies": [
     {
-      "name": "Mistral AI",
-      "tag": "LLMs",
-      "desc": "Europe's leading open-weight AI foundation models",
-      "url": "https://mistral.ai",
-      "initials": "M",
-      "logo": "https://www.google.com/s2/favicons?domain=mistral.ai&sz=128",
+      "name": "Physical Intelligence",
+      "tag": "Embodied AI",
+      "desc": "Training AI systems to manipulate physical objects",
+      "url": "https://physicalintelligence.company",
+      "initials": "PI",
+      "logo": "https://www.google.com/s2/favicons?domain=physicalintelligence.company&sz=128",
       "ticker": null,
       "headline": {
-        "title": "Mistral CEO says U.S. AI safety debate masks competitors’ 'negligence' - CNBC",
-        "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5Xa3REXzgwTUluYVRBSnczZk9mdWl1MmszYzBYNHRPbDJicXI4RVJibFkzaEZoVy14Z05yQkx3RUtIOWNWTERMMXpMVTNTYW43Z1NsTC1EY2pRQmhLUDhEdjJnR09pelJKSm1vQ2RVbnhBWndkVTF4RFVwRdIBgAFBVV95cUxOWlUzejBYN3NvR19GanJ3M2xQalBvRUFzRWNLMFMxVlpJSTF0LUV6cDNhSEJQeUZRaEJxYkJibjBSMFlEWjlVelEyMG1FZXZaTFlXbGhjQ1dNRjlWcjBHRXhzaWY0azJXNGZPakcwTGJoNzJPOHp2ZU9kR3BOUnQ3Rg?oc=5",
-        "pubDate": "Tue, 29 Sep 2026 08:20:04 GMT"
+        "title": "At the center of physical intelligence and the robot hand - Fierce Sensors",
+        "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOVmxVMkhwLWNKdXMzdnVBSFc2VldFVm1PWWhiZHJTeEVHNEkzUWVDSHJFQU1hazV4Mmt6RTZ6Qnh6ZlZHd0xMbEN5LVMtVUZkcmlYLWp2SmgwTXdyeTNKM2h6ZlhpMU1CWHdQdHZmZTctNTdTclNUaHpQMkNxQmROVWc4dHFVY0dqaFU2U3dZNm5wdw?oc=5",
+        "pubDate": "Wed, 30 Sep 2026 10:26:49 GMT"
       },
       "sparkline": null
     },
@@ -25,39 +25,61 @@
       "logo": "https://www.google.com/s2/favicons?domain=scale.com&sz=128",
       "ticker": null,
       "headline": {
-        "title": "Nasdaq Calypso Launches Agentic Capabilities to Scale AI Adoption Across the Trade Lifecycle - Yahoo Finance",
-        "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxObmZEOVVqbXl5cTNLY0V0X1YyTDVYcUlXT01GVGwyUG9qS09OUTVKQXR4UEphV29wN2FFM0pld0JIWjVONVNQUUZ2UGNjLUtQLVluM2xtVGk0OUZiY0NreEhjMmlIcl9YLUlfTEZOR1VNYUtsUWktd2p3VFhWOWNFb09hOWpBaWk2TzVzb0VYRUZwb1JEMFh5dEtXdnE4SFVVYlVHTEtuck50UWlE?oc=5",
-        "pubDate": "Tue, 29 Sep 2026 08:00:00 GMT"
+        "title": "Microsoft, UAE Cyber Security Council and Core42 unite to scale AI-powered cyber defense across UAE government - Microsoft Source",
+        "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxOaVVZVmlkS2FyeFhSaW16LU9yV2FYdzNsMVhVM1FEMGlPZmtlTC03WGEzOWRPcEpiWU91WTJkeHFGbGV6a2Y2LXROT0Q2Q2Q3QnBVZG54ZW40Tlc4UE1FbGNNSEUwc0ttc1dKNFRCRlI5MHJfNEhmdDVhT0JnVFYtLUpkaWpGQlRrcFhSeU1WdEFPTjNieUJKWFpaa252RTdVVVFoZmVMQnBiRnhKVlV4QnFVbmRvYU1PU0d1OGFMczh2NDZaWHA1RVVsMzdVNk5mNzd6ZU81VHVkQUZ6eEJXOFlBNXNqcHNLLWxyVHZR?oc=5",
+        "pubDate": "Wed, 30 Sep 2026 08:40:47 GMT"
       },
       "sparkline": null
     },
     {
-      "name": "xAI",
-      "tag": "LLMs",
-      "desc": "Elon Musk's AI company, developer of the Grok models",
-      "url": "https://x.ai",
-      "initials": "X",
-      "logo": "https://www.google.com/s2/favicons?domain=x.ai&sz=128",
-      "ticker": null,
+      "name": "Palantir",
+      "tag": "Data Analytics",
+      "desc": "Big-data analytics platforms for government and enterprise",
+      "url": "https://palantir.com",
+      "initials": "PL",
+      "logo": "https://www.google.com/s2/favicons?domain=palantir.com&sz=128",
+      "ticker": "PLTR",
       "headline": {
-        "title": "Failed by the police, Grok deepfake victims are seeking justice themselves - TBIJ",
-        "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPNndSNmc5QmRtYnhFOWZSM2lzT1BjQVcxTlZBazJiX2x1akU2WE9RM19yd2NaZWczaDB1OVd5NHJXSTJLR1pzLWhKNWd3TVZ1SUpwT0djRENHUjhna2Y3aXBObmlZSzJBOGNyRzBCMTdmMzk5T2dMMUJpZlRWcl9HNzQyNjhHOVJ0SGdUcjZwRQ?oc=5",
-        "pubDate": "Tue, 29 Sep 2026 05:00:00 GMT"
+        "title": "Palantir CEO Alex Karl quietly purchased 37,000 acres of forests in Sweden - Fortune",
+        "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQSHVoWDVRdk93dEVBZlZRZGpWYjFqRlNUNlJuVk9vMFh4VDNvcHBveUlkalFwT0NxclFCOXB4R1NtWExLT2lGZGFXMDNyUmE1Qk9GcmFEY3M3NVJqbDlSQ1Fzb2dvYkFHZ0RaYXlYcWZBVVVZeDhNY0Q0VFFCWEJMLUs4MmtKcTNONGRCQVY1Unc2UlFsWko5REFfNVY1eWp4WDUyRmJsWGViVGxPcDVXYkFrRnM4dlJIS1g3eE9uQ1Foak9CQjVkTkFRVkNEeDlhS2ljVEJiS2N3MFVZOVE?oc=5",
+        "pubDate": "Wed, 30 Sep 2026 07:05:00 GMT"
       },
-      "sparkline": null
+      "sparkline": [
+        186.3800048828125,
+        179.9199981689453,
+        169.4600067138672,
+        182.52999877929688,
+        174.3300018310547,
+        170.3000030517578,
+        169.52999877929688,
+        165.86000061035156,
+        167.22999572753906,
+        173.30999755859375,
+        172.55999755859375,
+        174.33999633789062,
+        176.24000549316406,
+        177.63999938964844,
+        183.08999633789062,
+        184.99000549316406,
+        191.7899932861328,
+        192.58999633789062,
+        189.6699981689453,
+        187.47999572753906,
+        186.97000122070312
+      ]
     },
     {
-      "name": "Anthropic",
-      "tag": "LLMs",
-      "desc": "AI safety company behind the Claude family of models",
-      "url": "https://anthropic.com",
-      "initials": "AN",
-      "logo": "https://www.google.com/s2/favicons?domain=anthropic.com&sz=128",
+      "name": "Commonwealth Fusion",
+      "tag": "Energy",
+      "desc": "Next-generation tokamak fusion for clean energy at scale",
+      "url": "https://cfs.energy",
+      "initials": "CFS",
+      "logo": "https://www.google.com/s2/favicons?domain=cfs.energy&sz=128",
       "ticker": null,
       "headline": {
-        "title": "Anthropic warns of ‘existential risks to humanity’ in IPO prospectus - ft.com",
-        "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQSy1KbEtmZ1NBTnFEd3Fkck9jajdOcHNMRnhrRDAzNEV6UWRVaWk4LWZLdlNCeHQ2U29rWUQzaFpmd3ZfUzNQWXQxMVhmX01ELXYyMEk4MzBLRjlrRGdPT0dEMlBsZUU0UFdmZ0VmYVNhTmFtRTJtaXRPNjc5MVBCcFNNaHY?oc=5",
-        "pubDate": "Tue, 29 Sep 2026 02:36:38 GMT"
+        "title": "Commonwealth Fusion Systems Places Largest Single Purchase Order of HTS Tape with Fujikura to Accelerate Development of ARC Power Plants - PR Newswire",
+        "link": "https://news.google.com/rss/articles/CBMinAJBVV95cUxNN3dBR0xjdXhjSEZMcVF6SXJGeDlOemhWUjRKSFRGYl9DT0ZydUFmSGpWcDZMQkpJYXI0al9ZWXd5YlJiNVVmNjZzdnNqN2xZV3g1WEU5eW1jZ1BWNU1malpyd3VjU2hNZTdnSUIycUN4ZkxlSm90TkJVdGI1ZFJQZlE3RUtPWmU4MTZzcDhvbjE1SVl4VVdsMkZoMXZCZ2txOWwxY0hnRG1rUU1VaFlHVVRoYUFFbHM5S3Q1SVIyemgyYTNVSDFHS1psd05paDlIbjVIV3ZhSVhFWjhsUGpTNnQtNE9sdWg5eUxjc3UyT3NFdDlWbUltbjZ0LXI2Mk1UX3hNbkg1NTE0SzY4cVNJeGsyR0FLVnh5T1JSQw?oc=5",
+        "pubDate": "Wed, 30 Sep 2026 04:01:00 GMT"
       },
       "sparkline": null
     },
@@ -70,75 +92,76 @@
       "logo": "https://www.google.com/s2/favicons?domain=openai.com&sz=128",
       "ticker": null,
       "headline": {
-        "title": "Exclusive | OpenAI Scraps Release of New AI Model Over Safety Concerns - WSJ",
-        "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNcC0xNDExdTJodUowZi1yeWdFN3M5RlpvY3FvZ1lQeHltWGVkeG01ZTVlaHJ0TldqVVRhekJhWl9ZRTRLNHRqX1NQQVFKMW5NRnhBTmlUNWNpX1FBX3Myc3VlaGIxbFZTZDZYRlYwTGNVLTUtNnJScGJWcm5rX0hMMmNadFFmZw?oc=5",
-        "pubDate": "Mon, 28 Sep 2026 23:07:00 GMT"
+        "title": "OpenAI announces ‘dots’ agent after scrapping launch of new AI model over safety concerns - The Guardian",
+        "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNUjJKXy1xWWNFX3hLZktkaW5tZ2Q3cHoyZ3FnTDRHM2hQSlFjRVJ5X253RUNmZTg5VjJtOUFnMlhpZHN5VU5meVFGTWRFbWprUnBrb3pnMjl1bjJIUWdjQ2ZXa0w5V2g0X3E4ODloa0FmTXc3MTlHMDBQZFh6LXpYbTUwbVBYcTZSMEh1MXRQbFdyRFdBbzhPbmFn?oc=5",
+        "pubDate": "Wed, 30 Sep 2026 01:53:00 GMT"
       },
       "sparkline": null
     },
     {
-      "name": "CrowdStrike",
-      "tag": "Cybersecurity",
-      "desc": "Cloud-native endpoint protection and threat intelligence",
-      "url": "https://crowdstrike.com",
-      "initials": "CS",
-      "logo": "https://www.google.com/s2/favicons?domain=crowdstrike.com&sz=128",
-      "ticker": "CRWD",
+      "name": "xAI",
+      "tag": "LLMs",
+      "desc": "Elon Musk's AI company, developer of the Grok models",
+      "url": "https://x.ai",
+      "initials": "X",
+      "logo": "https://www.google.com/s2/favicons?domain=x.ai&sz=128",
+      "ticker": null,
       "headline": {
-        "title": "What the market needs to branch out beyond AI stocks. Plus, a win for CrowdStrike - CNBC",
-        "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPaU5zdDhXYkNjNVUtYkhqOF9PTjlKQjVJNjNRajBvam1EeVhSV3ptMGNIVG5WOW1neHBFaU9JTFd5a1dkTjhYd25oZVNXSVhMbDBNUV84cEE0Z3dLWnJUR1o1Q3U0WmZncU0wcDl5ekM5VlNMbWlRQ1lqZEE2U1Z1dzI1eTJnRlZrWXgzelAxZEJ3X1I2alBxN0R1dHFYbEF2WkVpcmVZN2NySExobnFIekdwYkhSSk5L?oc=5",
-        "pubDate": "Mon, 28 Sep 2026 18:50:31 GMT"
+        "title": "The internet is convinced Elon Musk’s xAI trolled OpenAI’s ‘Dots’ launch - TechCrunch",
+        "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQQ19vQXp6TWF6VFpOeHZPTWdKVV8yMnNadlhrczcwZXdva2JBX01MOWY2M3hmbDR4UVRnbGJVWWFVcFQwZlNHeXlSZ2dMTV9vbmh2TUZVMHNCdnBmZTlTM1ZqeHJ1a2dqMzIxWGZGQVhyUmNGcXA3aTZxVjBwRkdseFBjakE1aWRjYTlTZmEzWVk2bHBFbXNXT3ZmUzI0NHU5ZEdNbjZB?oc=5",
+        "pubDate": "Tue, 29 Sep 2026 22:20:59 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "Rocket Lab",
+      "tag": "Space",
+      "desc": "Small-satellite launch provider and space systems manufacturer",
+      "url": "https://rocketlabusa.com",
+      "initials": "RL",
+      "logo": "https://www.google.com/s2/favicons?domain=rocketlabusa.com&sz=128",
+      "ticker": "RKLB",
+      "headline": {
+        "title": "Rocket Lab Steps In Where SpaceX Just Walked Away - barchart.com",
+        "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNNXEySU02UmMtRnVFeEY0YUZObzU1em5rcV9LaklBckFJLWlYaFE2YTJXa2JrLVM1WjZTSmJrSTg4aXFoSkRGTDlVZFhVN1ZFUnRuTllqY2l0b3NtNTZVaTBLYTM4SWpVVEpJYkhXcmpMRmFTdENfUGVKX3RoSmw0NVBJaldKcHZVcVRrQnlESXpkSGlkV0ZqQw?oc=5",
+        "pubDate": "Tue, 29 Sep 2026 20:50:00 GMT"
       },
       "sparkline": [
-        231,
-        215.07000732421875,
-        203.4199981689453,
-        214.97000122070312,
-        213.10000610351562,
-        210.02000427246094,
-        207.8000030517578,
-        208.86000061035156,
-        206.74000549316406,
-        235.3800048828125,
-        242.49000549316406,
-        241.36000061035156,
-        245.6999969482422,
-        237.64999389648438,
-        249.35000610351562,
-        250.05999755859375,
-        262.489990234375,
-        259.6700134277344,
-        252.1300048828125,
-        259.25
+        63.91999816894531,
+        62.540000915527344,
+        63.099998474121094,
+        63.810001373291016,
+        64.26000213623047,
+        65.87000274658203,
+        63.06999969482422,
+        61.959999084472656,
+        62.95000076293945,
+        62.54999923706055,
+        63.54999923706055,
+        63.70000076293945,
+        67.81999969482422,
+        64.56999969482422,
+        69.88999938964844,
+        71.9800033569336,
+        70.30999755859375,
+        73.61000061035156,
+        73.94999694824219,
+        72.19000244140625,
+        69.69999694824219
       ]
     },
     {
-      "name": "Commonwealth Fusion",
-      "tag": "Energy",
-      "desc": "Next-generation tokamak fusion for clean energy at scale",
-      "url": "https://cfs.energy",
-      "initials": "CFS",
-      "logo": "https://www.google.com/s2/favicons?domain=cfs.energy&sz=128",
+      "name": "Figure AI",
+      "tag": "Robotics",
+      "desc": "Humanoid robots designed for industrial and commercial work",
+      "url": "https://figure.ai",
+      "initials": "FA",
+      "logo": "https://www.google.com/s2/favicons?domain=figure.ai&sz=128",
       "ticker": null,
       "headline": {
-        "title": "CFS' Brandon Sorbom and Helion’s David Kirtley join Disrupt 2026 - TechCrunch",
-        "link": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxNZGNxaE5EZk85amxkRzN5VkNfd0F4US1HbUNMNkRrM0F5ZHpaUTI1c1NybDU2UWFmOGFELVZrZkpJY3pDQ3BKM0FWSENuQzZkYUN0MGwtRnJMQjNONFNfVjItREp0cTR5SGdfb0dWXzNTa0I3M3hUTmZONFFaMU5JdDFaM1FTMkRRM0xUWmVHckwteUJyd1dUbmlmZ0FLdFlCWVpsYUJWb3VqSm96emZsOU0tZmpWRDNlYlJSTXVUeHFmOWpoMGZQbl9BSndzdU5iWFdualBDWWt3SnNBN0Z0dThkdWdxRmNpMEdOSk02dG1UTEk?oc=5",
-        "pubDate": "Mon, 28 Sep 2026 15:00:00 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "Cursor",
-      "tag": "Code Editor",
-      "desc": "AI-native code editor that pairs with Claude and GPT-4",
-      "url": "https://cursor.com",
-      "initials": "C",
-      "logo": "https://www.google.com/s2/favicons?domain=cursor.com&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "Wix's Base44 launches Base Code to take on Claude Code and Cursor - calcalistech.com",
-        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5hWHBVaFFYOXZRaS0tak9uN0o4RGlzUGVOd05wRUNCLVhoWm1DSUtpWTkwVWZ2WkYzSjd3U2JNOHRLd1JOd3VxZjktZUVqU281UDJ6QXhFOHYwVFV3cHZiWlJIRDZHa0U?oc=5",
-        "pubDate": "Mon, 28 Sep 2026 13:00:00 GMT"
+        "title": "Figure AI Found a Robot Scaling Law. 56% of the Time. - Vocal",
+        "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9Eb3dGNmpoTU53V29iQUlYcnVCazdfSmJraDRRcldrMndwX2pORnVZeV93c2l5QzAxMFJqd0Z2LUhRbzdtTmNPZ3h1VXlSUEo2MWdVOUNUektaUThBUUdWbkU0aC1LZzl4UWZ2dGt2V0daOWFNUlVCUkRMdENYUQ?oc=5",
+        "pubDate": "Tue, 29 Sep 2026 17:37:24 GMT"
       },
       "sparkline": null
     }
