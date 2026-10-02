@@ -1,21 +1,6 @@
 {
-  "refreshed_at": "2026-10-01T12:48:04.448Z",
+  "refreshed_at": "2026-10-02T12:11:41.668Z",
   "companies": [
-    {
-      "name": "Mistral AI",
-      "tag": "LLMs",
-      "desc": "Europe's leading open-weight AI foundation models",
-      "url": "https://mistral.ai",
-      "initials": "M",
-      "logo": "https://www.google.com/s2/favicons?domain=mistral.ai&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "ESA, Mistral sign agreement to explore space AI - Electronics Weekly",
-        "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQQnVxN25aN2VXNTZibkMwb2VaRmxzT2Q3UmxBM2NWa2J0bzViOEpYSFdzWXIwSnowSHcwdHZnbUtNNWNUNDBtdGRRNXpjTDZlLTViR2pjdGVWN1pmcnAzNHB6WXhDWGdTQ3BNXzUxb2hQcWxlTzJuZ3dsdExDaWZrMlQ5WDkzd1NrajVqQ1JXUEJTRWJaRE1TSE9aRjZIWmF6dW4wckh3?oc=5",
-        "pubDate": "Thu, 01 Oct 2026 09:09:43 GMT"
-      },
-      "sparkline": null
-    },
     {
       "name": "Scale AI",
       "tag": "AI Data",
@@ -25,76 +10,9 @@
       "logo": "https://www.google.com/s2/favicons?domain=scale.com&sz=128",
       "ticker": null,
       "headline": {
-        "title": "How enterprises can scale AI across industries - Telecoms",
-        "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE85TElyekx5MnRJaWt1Vzg0MFI0VmR4cWlDSDc1ck5RRXQxUUc1VFM3bFJXaVppOU5rNnNBa0FCdHZrZHpHZzJfMFgtVEV4Q29qOUItOUZFNWZFZzR3anNQb0FHYjZPX0RIRGVyNWxwMnZxZjIzdXhoemFLcU5PbG8?oc=5",
-        "pubDate": "Thu, 01 Oct 2026 07:32:34 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "CrowdStrike",
-      "tag": "Cybersecurity",
-      "desc": "Cloud-native endpoint protection and threat intelligence",
-      "url": "https://crowdstrike.com",
-      "initials": "CS",
-      "logo": "https://www.google.com/s2/favicons?domain=crowdstrike.com&sz=128",
-      "ticker": "CRWD",
-      "headline": {
-        "title": "Form 4 CrowdStrike Holdings Inc For: 1 October By Investing.com - Investing.com UK",
-        "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQMF95d184ZjQwVXJqd3lGR3F3TGhVMkd5c1BxWjhxVUNBY1NQQnhTYjNhZzV1aEZGZllPempmeU1tNXpBbFNGS0FZU01xcFdZZGxxR0JMS010V3BkWHh4UUoyWG0tMkI5U2pkalpya3VDXzg4elFta2phTVBtV3p1V1A0R1hLOEpTTkltaW4yR2JVeFlESVJSMUU4ajFQUkRIY2pWS213Yk01QQ?oc=5",
-        "pubDate": "Thu, 01 Oct 2026 06:32:00 GMT"
-      },
-      "sparkline": [
-        215.07000732421875,
-        203.4199981689453,
-        214.97000122070312,
-        213.10000610351562,
-        210.02000427246094,
-        207.8000030517578,
-        208.86000061035156,
-        206.74000549316406,
-        235.3800048828125,
-        242.49000549316406,
-        241.36000061035156,
-        245.6999969482422,
-        237.64999389648438,
-        249.35000610351562,
-        250.05999755859375,
-        262.489990234375,
-        259.6700134277344,
-        252.1300048828125,
-        259.25,
-        262.739990234375,
-        264.75
-      ]
-    },
-    {
-      "name": "OpenAI",
-      "tag": "LLMs",
-      "desc": "Creator of ChatGPT and the GPT family of foundation models",
-      "url": "https://openai.com",
-      "initials": "OAI",
-      "logo": "https://www.google.com/s2/favicons?domain=openai.com&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "OpenAI’s agents obscured hacking activity in government site breaches - Financial Times",
-        "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOQTlYal9nb2ktdWJoLWtwUTlRM2Y0NXM1dElRSXZ6elZkampwSFBGa2FZZWFteENTZGxKRjQ0Y05rcmQzd1hZSkhLOFcyWTJRclcwR2RUaW1hcnJTMk5xM3J3VktJWGdlN29CeXZJQ0FMN3hDbGgzdWRrZnhwSTQxYXVRMm4?oc=5",
-        "pubDate": "Thu, 01 Oct 2026 04:00:49 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "Perplexity",
-      "tag": "AI Search",
-      "desc": "Answer engine combining web search with AI-generated summaries",
-      "url": "https://perplexity.ai",
-      "initials": "P",
-      "logo": "https://www.google.com/s2/favicons?domain=perplexity.ai&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "Perplexity Releases pplx-embed-v2-context-9b-preview: A Contextual Embedding Model That Retrieves Answers and Their Supporting Evidence - MarkTechPost",
-        "link": "https://news.google.com/rss/articles/CBMihgJBVV95cUxPWkxPdVZYZ3JWLU1YY3ZNcjNwWDBQTWdZU1Z2anJaZHpnNGxXNVU3c1RrV0xLSjlYUzlBX3U5Y3FKRjNndkJoLWhNb2IzRjF4VFVjWC13aXJEM29KakhOWVVoaVJiYzJleEp3R1pibThCSUJrSDUtdFRsX0ZKWE1lY2pwbnp4N2FuanJmVjlOYmZKZHlDV2d6cXJTRENJTlZUTXVBQVNBS0szVWpjTWh2dzl3SGZIbG1zVXdjcXN0Q0w2ZzVOX3hhQllYeGtyRVBKZ3Vmc2d0SmNud1BjSnFPMjA0eWFCZktrUnpIUkNxYndULTdOWnk5alUzQjJUaXhoTXdEU0JR0gGLAkFVX3lxTFBiQVhja0ZjanMwMXllWE04OGxfUFJLc2hEYjl0Q1BoakJMMWpOMGxfTWVTNXEtaXlhcFZlSElOa1o3Y1VuSDF0QVZPMmhYYnR5aUJSRHB3TnFmN1Z3R1I0Zk0zVy03YTVLY0s0QlUwTmtXSG9LdnBESFJacHN3QmpIQzMwWFpqTzFQbEFUcnlkZ21jR0ZHTkp3S3BmeHZGN080alhwZWYyTnJvZG1KYnlqeldoWUVHQTFybDhBbEpWRk1sSlJMOFY2blVBV29oWE00d2tqQ0Q0b1E1SW1CbHN2M1FSbXBuTXNlRmRPb2ZFeGJZdDZ3a0NSZkM0aWpka3Q0QWhtdXZzWS1uYw?oc=5",
-        "pubDate": "Thu, 01 Oct 2026 03:23:39 GMT"
+        "title": "Aptitude Hires CFO to Scale AI-Native Fynapse - - Enterprise Times",
+        "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPSkhqc2xrdUxuUkQta0EyNUFhLTNOS3NJeW91bGp1cTRBSHBxRnp2OHVnQVR4ZU1rcVhXalo4elhTSTNRSVBkMk5waWtNX0JuZ2pXS0R3NFNMUUZ0VFB1Q3Z5ZFVac2Z2aHpkQlpCTGxQZTBONGVWaDZyclRsRUV5VENUaXRVcm1vaTZueFdGSFE5MVo2SGc?oc=5",
+        "pubDate": "Fri, 02 Oct 2026 11:31:34 GMT"
       },
       "sparkline": null
     },
@@ -107,12 +25,11 @@
       "logo": "https://www.google.com/s2/favicons?domain=palantir.com&sz=128",
       "ticker": "PLTR",
       "headline": {
-        "title": "More than 44,000 file legal objections to Palantir NHS platform handling their data - The Guardian",
-        "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNc2lpa0pURkdTLWNUZ25IZEthd1JacVhRN3RzRVF4S0dDSUttNmlDNXJVUVBGRmZ3cU9LZjg0Ym54Qi1hZGZnTnREWUY2QTVudDBBWEN1N3FRME4tN3IyRWNsQTc4X3Y4OGFSb21wQ0x6WXdWZU1jdjk2NUgzazNFSHhGNDBFdzJ0TVNmVk5XN2ltWk5qNGFlMXFIMWhnTGU1YmF0Q0Rn?oc=5",
-        "pubDate": "Thu, 01 Oct 2026 01:30:00 GMT"
+        "title": "Recent lobbyist for Palantir had key role in helping Andy Burnham become PM - The Guardian",
+        "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQeThjX2dCOGpwM1piel96TUdxUmVwRmJmbmNpdnNCWmFVYjRkcUhDTEU3OHIwQWZVakMtQ0VpSm9FbXZQdG1reDNIck9yeVQ5eEk0bkQ2QW8wTU9lQThZeG1aMWlfbmR5TGpaTUxtaHdyRG94TlgwTVpOalFadXloeExZdlhtWWQ3ckx2OFhEWGVrZ2hlQU1fSzF6RQ?oc=5",
+        "pubDate": "Fri, 02 Oct 2026 11:11:00 GMT"
       },
       "sparkline": [
-        179.9199981689453,
         169.4600067138672,
         182.52999877929688,
         174.3300018310547,
@@ -132,8 +49,69 @@
         189.6699981689453,
         187.47999572753906,
         186.97000122070312,
-        187.0500030517578
+        187.0500030517578,
+        190.0399932861328
       ]
+    },
+    {
+      "name": "Waymo",
+      "tag": "Autonomy",
+      "desc": "The most miles driven autonomously of any robotaxi service",
+      "url": "https://waymo.com",
+      "initials": "W",
+      "logo": "https://www.google.com/s2/favicons?domain=waymo.com&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "Robotaxi operators will face fines for blocking first responders - TechCrunch",
+        "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQTkxIUGliT0tPdU5KZzJoQm1JUDZXMVA0RGo5OHV5RV9pSm9lYzVyRUp0MV9WaFN4ZzJvdlRpMktmeHdOWDlYNG5xQk51cExkZTNtZFBKTG1yNG9nWG1aMzhCcEF2UEJXcjhIRHMtMXJCZ2lVbnVEaWRoM01BWjFtWmhCa1ZxRE5lX0hhSkJVSG5obVV1d05tamVnOFgtdzgt?oc=5",
+        "pubDate": "Fri, 02 Oct 2026 00:57:57 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "OpenAI",
+      "tag": "LLMs",
+      "desc": "Creator of ChatGPT and the GPT family of foundation models",
+      "url": "https://openai.com",
+      "initials": "OAI",
+      "logo": "https://www.google.com/s2/favicons?domain=openai.com&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "Exclusive | OpenAI Fires Researchers for Allegedly Sharing Information with AI Safety Group - wsj.com",
+        "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQQWJYd0owc0RKM3JUWFRMZHA5dVk4REotM1NxS2Z4NktpQ0RRZzh5NHVUaDdoOVMwWFBSRnkyNEtrUXlNQy1ZNTN5MnVxdHR5VFlQaG5GZDZKWDIwXzlyQWpNQXpTaWlFdnlzTUNxSlRQdzh4SDBBei1RR29seS1vTURiT1hWZHlxSDN4NlkzNWRlWFNwM0VWSHJrYmtWV1FzaXJyUWtPSkFNTEhkQ2N2OEYycUFRd0VB?oc=5",
+        "pubDate": "Thu, 01 Oct 2026 23:49:35 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "Anthropic",
+      "tag": "LLMs",
+      "desc": "AI safety company behind the Claude family of models",
+      "url": "https://anthropic.com",
+      "initials": "AN",
+      "logo": "https://www.google.com/s2/favicons?domain=anthropic.com&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "Anthropic pushes for opt-out model for Australian content as ABC warns of ‘cannibalisation’ of news - The Guardian",
+        "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQeWZoTkRIQzBZSFBSM19FVnlybXpkVVJfOWFnUjlyMjdHeF9UaUR5eVlvUDRMT0ZFLUZlWkFwMlZ2YkNLdHNmazFFMk9QYlhHWW1iNDFvWHhFQ3RETEtkQ1VzR2MtZ0N2NFpTUU5rTXFQWms2OUdoalVUbmhaNU93Z1I1NUFmdDdGdGxUcS1TN09hR1g5UzZaWkI3TXJUeXNxVUwtaVoxeEVhQ3hKS1YwTTdDSjZ6NEhMcGdz?oc=5",
+        "pubDate": "Thu, 01 Oct 2026 21:53:00 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "Neuralink",
+      "tag": "Brain-Computer",
+      "desc": "Implantable neural interfaces for restoring and augmenting human capability",
+      "url": "https://neuralink.com",
+      "initials": "NL",
+      "logo": "https://www.google.com/s2/favicons?domain=neuralink.com&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "Pretraining on 50,000 Hours of Unlabeled Brain Data - Neuralink",
+        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBaZDVWbFZHdC02S1hVam15NFRWQnduQXZuME1wU21hcnZqTUpVbmtjZmNOdVlhUVUwaEY5WmV3dk5RTXg5UmUwaDIya2ZxTDNPQmJIWkppNnV5SENWQUNJTFBVWEw2a2It?oc=5",
+        "pubDate": "Thu, 01 Oct 2026 21:17:13 GMT"
+      },
+      "sparkline": null
     },
     {
       "name": "Commonwealth Fusion",
@@ -144,24 +122,24 @@
       "logo": "https://www.google.com/s2/favicons?domain=cfs.energy&sz=128",
       "ticker": null,
       "headline": {
-        "title": "Bill Gates-backed nuclear fusion firm inks record 6,200-mile reactor tape deal for grids - Interesting Engineering",
-        "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQWnQ0d0VUaUZoWlBqSFZQX0I5ekpNeHFMLWVTSHNtQXpjbnlrbUJ2YTlkbmRxVkowU1VWbXR3QXpTSzV5ZFhqYU5fNlNNTXNvdlpkMUZab1E1Y3czMWwxU2w0VFJuRmRlaUZFV0w2Um5WZmtaQ0hjcHpFTGsxMzh6UF9UX1k?oc=5",
-        "pubDate": "Wed, 30 Sep 2026 20:40:00 GMT"
+        "title": "Historic Superconductor Deal Brings Commercial Fusion a Step Closer - Crude Oil Prices Today | OilPrice.com",
+        "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQXy1kSFUyV3dOcE5ZUERRa09yWFpueTRVVDdLT0UxbFVkckZXM255NlhFcjB5N0g2VlFRMXJzeWk0dlFyQ3JQN3B6RjA0TExpRHlRTDF0ZjNOellhLUF3QmNtUDlWRXlXcmlKR05GbjUwbk5mM1JOWTBoT3N6dDZsZTZrWllHYWREblo2cVFDZmFQVXlCbHhaaDFfWE56WmFZUjJoYW9mM3RFNUlheGhOUWY4cFZHeVZIOXBBbWt6VG45NHNv0gHKAUFVX3lxTE15MGhETm80NHNOTFZjRHg0RmR1d0VfSFgzbk5yaGhwTGpOQm9ZWkQxelNfSTgwTEtXR25kaExOekhvVFlGRURBdzByNnRRZi1Bdy14U29wYXQwVmQ0dnVxanFueGRUb0pQRzZkVzZvVGt1V2NLMV9abUlURm1hbWZTQk5HclZTeE44U3k0YzhkM2hiSzA0M2pRVlBVc2VFWDdwUE5Fcy1HRWg5ZDJhakZpSjZBUGY3LVpobWhxdUYwMG5iTHBoNWFnRnc?oc=5",
+        "pubDate": "Thu, 01 Oct 2026 16:00:00 GMT"
       },
       "sparkline": null
     },
     {
-      "name": "Physical Intelligence",
-      "tag": "Embodied AI",
-      "desc": "Training AI systems to manipulate physical objects",
-      "url": "https://physicalintelligence.company",
-      "initials": "PI",
-      "logo": "https://www.google.com/s2/favicons?domain=physicalintelligence.company&sz=128",
+      "name": "Perplexity",
+      "tag": "AI Search",
+      "desc": "Answer engine combining web search with AI-generated summaries",
+      "url": "https://perplexity.ai",
+      "initials": "P",
+      "logo": "https://www.google.com/s2/favicons?domain=perplexity.ai&sz=128",
       "ticker": null,
       "headline": {
-        "title": "Physical Intelligence raises $1B, one of the largest late-stage computer vision rounds ever - Dealroom",
-        "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNYnlOVUlTN0d1bE9mWEswaHBUVW02NUpTa21Lc0xkb01ReXExTnZjblVZOFhQNDJlbzN2MzN6YjNZcW5abkV0Q0ZUd1F1XzdnMlNDM2NQTFJQbHFfd01DdEJVMjNwNVh0VHI2WndfOGtLRWRSaE5FbzhtaFQ1al9obEFiclpGR2JOTEstcVlpNXlZb3Nld1c2NmpWVjQ0RjFhQVBJSFdreHZBU1hYNkRmbURDVXpwVTJRMGptSHZjYVE?oc=5",
-        "pubDate": "Wed, 30 Sep 2026 19:12:34 GMT"
+        "title": "Perplexity Releases pplx-embed-v2-context-9b-preview: A Contextual Embedding Model That Retrieves Answers and Their Supporting Evidence - MarkTechPost",
+        "link": "https://news.google.com/rss/articles/CBMihgJBVV95cUxPWkxPdVZYZ3JWLU1YY3ZNcjNwWDBQTWdZU1Z2anJaZHpnNGxXNVU3c1RrV0xLSjlYUzlBX3U5Y3FKRjNndkJoLWhNb2IzRjF4VFVjWC13aXJEM29KakhOWVVoaVJiYzJleEp3R1pibThCSUJrSDUtdFRsX0ZKWE1lY2pwbnp4N2FuanJmVjlOYmZKZHlDV2d6cXJTRENJTlZUTXVBQVNBS0szVWpjTWh2dzl3SGZIbG1zVXdjcXN0Q0w2ZzVOX3hhQllYeGtyRVBKZ3Vmc2d0SmNud1BjSnFPMjA0eWFCZktrUnpIUkNxYndULTdOWnk5alUzQjJUaXhoTXdEU0JR?oc=5",
+        "pubDate": "Thu, 01 Oct 2026 03:23:39 GMT"
       },
       "sparkline": null
     }
