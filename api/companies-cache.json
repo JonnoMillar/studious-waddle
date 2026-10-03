@@ -1,18 +1,33 @@
 {
-  "refreshed_at": "2026-10-02T12:11:41.668Z",
+  "refreshed_at": "2026-10-03T11:21:48.007Z",
   "companies": [
     {
-      "name": "Scale AI",
-      "tag": "AI Data",
-      "desc": "Data labelling and RLHF infrastructure powering frontier AI",
-      "url": "https://scale.com",
-      "initials": "S",
-      "logo": "https://www.google.com/s2/favicons?domain=scale.com&sz=128",
+      "name": "Mistral AI",
+      "tag": "LLMs",
+      "desc": "Europe's leading open-weight AI foundation models",
+      "url": "https://mistral.ai",
+      "initials": "M",
+      "logo": "https://www.google.com/s2/favicons?domain=mistral.ai&sz=128",
       "ticker": null,
       "headline": {
-        "title": "Aptitude Hires CFO to Scale AI-Native Fynapse - - Enterprise Times",
-        "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPSkhqc2xrdUxuUkQta0EyNUFhLTNOS3NJeW91bGp1cTRBSHBxRnp2OHVnQVR4ZU1rcVhXalo4elhTSTNRSVBkMk5waWtNX0JuZ2pXS0R3NFNMUUZ0VFB1Q3Z5ZFVac2Z2aHpkQlpCTGxQZTBONGVWaDZyclRsRUV5VENUaXRVcm1vaTZueFdGSFE5MVo2SGc?oc=5",
-        "pubDate": "Fri, 02 Oct 2026 11:31:34 GMT"
+        "title": "Morocco Releases First Open-Source Darija AI Tools From Mistral Partnership - iafrica.com",
+        "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOeEdmNko2d1RTV2xwSGxIeTg2N1loMWd2Z0x3OUpFTGpjTG9lMnFRTUFZd19PcDA4ZmllbUl4bzdVSkMtVWc3eU55cE9FZHlsbzY2bTV4REdNVllpajgwU2V6SUdscXFyeENKRXR5aloxQXFETndOaXJYR0E4U25HZnBPMWxTNkI5d3RBc0t5ZUw2V2U0aE5SWkFmQko?oc=5",
+        "pubDate": "Sat, 03 Oct 2026 08:59:01 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "OpenAI",
+      "tag": "LLMs",
+      "desc": "Creator of ChatGPT and the GPT family of foundation models",
+      "url": "https://openai.com",
+      "initials": "OAI",
+      "logo": "https://www.google.com/s2/favicons?domain=openai.com&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "OpenAI says its review into hacks, including on Australian government sites, is costing $500,000 a day - The Guardian",
+        "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPQV9vbzIxazFuRjRrZVRqQnF1c2toZ1dMcnMxTUN4Uk5ISVNFQ1Q4aGdSd0t6aE16YjMzZ09nWGVHdUYzUE1jN0IyOThnYUNVTEdBNFlEWkJ1LVhBOU0yNGZwWnRvWGgwNTUyTTVNX1BnVkRvb2g1WFlmTDBTcGdfYUd2bGhHWFdycFY4WWFiSGxYOVR2QldpR3VnN0VsLW1JWDFBTUxlTFN6UTVwRjBVRGxjRlE3M3JSRnVV?oc=5",
+        "pubDate": "Sat, 03 Oct 2026 05:40:00 GMT"
       },
       "sparkline": null
     },
@@ -25,12 +40,11 @@
       "logo": "https://www.google.com/s2/favicons?domain=palantir.com&sz=128",
       "ticker": "PLTR",
       "headline": {
-        "title": "Recent lobbyist for Palantir had key role in helping Andy Burnham become PM - The Guardian",
-        "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQeThjX2dCOGpwM1piel96TUdxUmVwRmJmbmNpdnNCWmFVYjRkcUhDTEU3OHIwQWZVakMtQ0VpSm9FbXZQdG1reDNIck9yeVQ5eEk0bkQ2QW8wTU9lQThZeG1aMWlfbmR5TGpaTUxtaHdyRG94TlgwTVpOalFadXloeExZdlhtWWQ3ckx2OFhEWGVrZ2hlQU1fSzF6RQ?oc=5",
-        "pubDate": "Fri, 02 Oct 2026 11:11:00 GMT"
+        "title": "Over 20 NHS trusts have ditched Palantir waiting-list tools, analysis shows - Financial Times",
+        "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNM2FSZ3ZpRDhGRTdGTnJ2dVVidHNCUjVJOVkyME0zbW5LVHpTLWlhcEE4by1OekNNQ0dPN1h5aWZsekROWmM5Um5pbHRySlp4N0tSNHBlay1HMVlxTU5qZnJ4VXJuMER2eFVIZTg5ZGJUSUhIcm1acE13ZmYxcG9JR0t5bXA?oc=5",
+        "pubDate": "Sat, 03 Oct 2026 04:00:20 GMT"
       },
       "sparkline": [
-        169.4600067138672,
         182.52999877929688,
         174.3300018310547,
         170.3000030517578,
@@ -50,36 +64,59 @@
         187.47999572753906,
         186.97000122070312,
         187.0500030517578,
-        190.0399932861328
+        190.0399932861328,
+        188.75
       ]
     },
     {
-      "name": "Waymo",
-      "tag": "Autonomy",
-      "desc": "The most miles driven autonomously of any robotaxi service",
-      "url": "https://waymo.com",
-      "initials": "W",
-      "logo": "https://www.google.com/s2/favicons?domain=waymo.com&sz=128",
-      "ticker": null,
+      "name": "CrowdStrike",
+      "tag": "Cybersecurity",
+      "desc": "Cloud-native endpoint protection and threat intelligence",
+      "url": "https://crowdstrike.com",
+      "initials": "CS",
+      "logo": "https://www.google.com/s2/favicons?domain=crowdstrike.com&sz=128",
+      "ticker": "CRWD",
       "headline": {
-        "title": "Robotaxi operators will face fines for blocking first responders - TechCrunch",
-        "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQTkxIUGliT0tPdU5KZzJoQm1JUDZXMVA0RGo5OHV5RV9pSm9lYzVyRUp0MV9WaFN4ZzJvdlRpMktmeHdOWDlYNG5xQk51cExkZTNtZFBKTG1yNG9nWG1aMzhCcEF2UEJXcjhIRHMtMXJCZ2lVbnVEaWRoM01BWjFtWmhCa1ZxRE5lX0hhSkJVSG5obVV1d05tamVnOFgtdzgt?oc=5",
-        "pubDate": "Fri, 02 Oct 2026 00:57:57 GMT"
+        "title": "Issues with AI models only going to get worse, says CrowdStrike President Michael Sentonas - CNBC",
+        "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQOWlXZVVDbDNmbU1Va0liRG9leHlST2tNU0JoMEtZeGt3ZXViQjFhZlBmQnpsTzFVc3d2dGtnSlhyS1FoM1FRRldMRExpLWhGRGt3X0t5dVdmNzRNaW9YcjlBVWRKMUNSZlVyZElNYjRtbUxjRmVWZktKamJpMlphOXFzTHlDRFBVLW5JUVFHTVozRXlRNUo4M1NwMW81WHhyZ3dmT3BVOTV1c05HSXhKWTU1WkxkS1NBcmNWUllSQWJhSUktQ1l5eXBNemQ?oc=5",
+        "pubDate": "Fri, 02 Oct 2026 21:25:00 GMT"
       },
-      "sparkline": null
+      "sparkline": [
+        214.97000122070312,
+        213.10000610351562,
+        210.02000427246094,
+        207.8000030517578,
+        208.86000061035156,
+        206.74000549316406,
+        235.3800048828125,
+        242.49000549316406,
+        241.36000061035156,
+        245.6999969482422,
+        237.64999389648438,
+        249.35000610351562,
+        250.05999755859375,
+        262.489990234375,
+        259.6700134277344,
+        252.1300048828125,
+        259.25,
+        262.739990234375,
+        264.75,
+        266.0899963378906,
+        270.0400085449219
+      ]
     },
     {
-      "name": "OpenAI",
+      "name": "xAI",
       "tag": "LLMs",
-      "desc": "Creator of ChatGPT and the GPT family of foundation models",
-      "url": "https://openai.com",
-      "initials": "OAI",
-      "logo": "https://www.google.com/s2/favicons?domain=openai.com&sz=128",
+      "desc": "Elon Musk's AI company, developer of the Grok models",
+      "url": "https://x.ai",
+      "initials": "X",
+      "logo": "https://www.google.com/s2/favicons?domain=x.ai&sz=128",
       "ticker": null,
       "headline": {
-        "title": "Exclusive | OpenAI Fires Researchers for Allegedly Sharing Information with AI Safety Group - wsj.com",
-        "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQQWJYd0owc0RKM3JUWFRMZHA5dVk4REotM1NxS2Z4NktpQ0RRZzh5NHVUaDdoOVMwWFBSRnkyNEtrUXlNQy1ZNTN5MnVxdHR5VFlQaG5GZDZKWDIwXzlyQWpNQXpTaWlFdnlzTUNxSlRQdzh4SDBBei1RR29seS1vTURiT1hWZHlxSDN4NlkzNWRlWFNwM0VWSHJrYmtWV1FzaXJyUWtPSkFNTEhkQ2N2OEYycUFRd0VB?oc=5",
-        "pubDate": "Thu, 01 Oct 2026 23:49:35 GMT"
+        "title": "US appeals court blocks Minnesota law barring 'nudified' photos in XAI lawsuit - Reuters",
+        "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQNms5cTdHRjlXODJ0MXpMNUZXM3lmUzl5YlNmNHBRaTcwcXRjeEg5bXB0VFZhcktpaGFBcXpfNFhxVnp0MXEzLUVITzItc2NtSC1qLWhxUjN1ajJzWEFYczhmb1E5a2E3dFF3YjlWVDFocjdEelFxcENUR3Ftd29lejNvbWpsY3NsZU5zNk9feXhVdXFxcGotV1BUVVlJN0t5YUVkZzJiekpvM0t3Mk9DWlFR?oc=5",
+        "pubDate": "Fri, 02 Oct 2026 21:14:00 GMT"
       },
       "sparkline": null
     },
@@ -92,56 +129,63 @@
       "logo": "https://www.google.com/s2/favicons?domain=anthropic.com&sz=128",
       "ticker": null,
       "headline": {
-        "title": "Anthropic pushes for opt-out model for Australian content as ABC warns of ‘cannibalisation’ of news - The Guardian",
-        "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQeWZoTkRIQzBZSFBSM19FVnlybXpkVVJfOWFnUjlyMjdHeF9UaUR5eVlvUDRMT0ZFLUZlWkFwMlZ2YkNLdHNmazFFMk9QYlhHWW1iNDFvWHhFQ3RETEtkQ1VzR2MtZ0N2NFpTUU5rTXFQWms2OUdoalVUbmhaNU93Z1I1NUFmdDdGdGxUcS1TN09hR1g5UzZaWkI3TXJUeXNxVUwtaVoxeEVhQ3hKS1YwTTdDSjZ6NEhMcGdz?oc=5",
-        "pubDate": "Thu, 01 Oct 2026 21:53:00 GMT"
+        "title": "Why does Anthropic’s IPO feel so weird? - Financial Times",
+        "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQUk83bVFSQWdpM2N2eXFCRlhJQkVxOWo3V3p1UUFBMDJ2ZWdnRWhqWUNKWXJ2UnljVkFySHdfWF8tcGlRMC0yeWRxY2kyVHZ0ZC1pbXd0dFd5YWpYQ1hxYU1NaTNZem1TR3dEbjYtUHJDWlF6ZzNXbGFzcjNMYXhIWFVrOFk?oc=5",
+        "pubDate": "Fri, 02 Oct 2026 15:21:03 GMT"
       },
       "sparkline": null
     },
     {
-      "name": "Neuralink",
-      "tag": "Brain-Computer",
-      "desc": "Implantable neural interfaces for restoring and augmenting human capability",
-      "url": "https://neuralink.com",
-      "initials": "NL",
-      "logo": "https://www.google.com/s2/favicons?domain=neuralink.com&sz=128",
+      "name": "Anduril",
+      "tag": "Defense AI",
+      "desc": "Autonomous defense systems and AI-enabled military hardware",
+      "url": "https://anduril.com",
+      "initials": "A",
+      "logo": "https://www.google.com/s2/favicons?domain=anduril.com&sz=128",
       "ticker": null,
       "headline": {
-        "title": "Pretraining on 50,000 Hours of Unlabeled Brain Data - Neuralink",
-        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBaZDVWbFZHdC02S1hVam15NFRWQnduQXZuME1wU21hcnZqTUpVbmtjZmNOdVlhUVUwaEY5WmV3dk5RTXg5UmUwaDIya2ZxTDNPQmJIWkppNnV5SENWQUNJTFBVWEw2a2It?oc=5",
-        "pubDate": "Thu, 01 Oct 2026 21:17:13 GMT"
+        "title": "Exclusive: Anduril Snaps Up Popoto Modem - Tectonic Defense",
+        "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1PQzZDWDJSZnFIYy1OWHN0c3gyTGRFN3FnRk9rLXJzYmJiOVpPdG1sOElXVU02RmlvU2g1MGFkVngxcFFnTF9qZ21ib3IxQ05HVi1wV2VXb0lPT2pLcnhXczhYelhhSGl6bzJNM18tNjVHVHFKbUE2VG1Mcjk?oc=5",
+        "pubDate": "Fri, 02 Oct 2026 14:08:49 GMT"
       },
       "sparkline": null
     },
     {
-      "name": "Commonwealth Fusion",
-      "tag": "Energy",
-      "desc": "Next-generation tokamak fusion for clean energy at scale",
-      "url": "https://cfs.energy",
-      "initials": "CFS",
-      "logo": "https://www.google.com/s2/favicons?domain=cfs.energy&sz=128",
-      "ticker": null,
+      "name": "Rocket Lab",
+      "tag": "Space",
+      "desc": "Small-satellite launch provider and space systems manufacturer",
+      "url": "https://rocketlabusa.com",
+      "initials": "RL",
+      "logo": "https://www.google.com/s2/favicons?domain=rocketlabusa.com&sz=128",
+      "ticker": "RKLB",
       "headline": {
-        "title": "Historic Superconductor Deal Brings Commercial Fusion a Step Closer - Crude Oil Prices Today | OilPrice.com",
-        "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQXy1kSFUyV3dOcE5ZUERRa09yWFpueTRVVDdLT0UxbFVkckZXM255NlhFcjB5N0g2VlFRMXJzeWk0dlFyQ3JQN3B6RjA0TExpRHlRTDF0ZjNOellhLUF3QmNtUDlWRXlXcmlKR05GbjUwbk5mM1JOWTBoT3N6dDZsZTZrWllHYWREblo2cVFDZmFQVXlCbHhaaDFfWE56WmFZUjJoYW9mM3RFNUlheGhOUWY4cFZHeVZIOXBBbWt6VG45NHNv0gHKAUFVX3lxTE15MGhETm80NHNOTFZjRHg0RmR1d0VfSFgzbk5yaGhwTGpOQm9ZWkQxelNfSTgwTEtXR25kaExOekhvVFlGRURBdzByNnRRZi1Bdy14U29wYXQwVmQ0dnVxanFueGRUb0pQRzZkVzZvVGt1V2NLMV9abUlURm1hbWZTQk5HclZTeE44U3k0YzhkM2hiSzA0M2pRVlBVc2VFWDdwUE5Fcy1HRWg5ZDJhakZpSjZBUGY3LVpobWhxdUYwMG5iTHBoNWFnRnc?oc=5",
-        "pubDate": "Thu, 01 Oct 2026 16:00:00 GMT"
+        "title": "Rocket Report: SpaceX completes launch triple-header; Rocket Lab nets big contract - Ars Technica",
+        "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNYXlwUy0wcmlCZEd3UWlrakQwX3JvWlB1eEcybVdrWHdkc2xtZVdBSlNGTlNGZENaU2hudmo5TGV0MUdKYlNSZ3pFbk5uRlZTY1dOQmtVcmxNWklKakgzV0FlR2pTNllKSE1paGJ5OTdPamVYako5NVZ2U1ZUT2xrczFPUnl0bW1nNHFYMXZiMnhUNGNtRU44SW1QRF82bUhPVnNDMEpYSVFhVk44d0pUcGtTa05FVTgtNEZJ?oc=5",
+        "pubDate": "Fri, 02 Oct 2026 13:54:34 GMT"
       },
-      "sparkline": null
-    },
-    {
-      "name": "Perplexity",
-      "tag": "AI Search",
-      "desc": "Answer engine combining web search with AI-generated summaries",
-      "url": "https://perplexity.ai",
-      "initials": "P",
-      "logo": "https://www.google.com/s2/favicons?domain=perplexity.ai&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "Perplexity Releases pplx-embed-v2-context-9b-preview: A Contextual Embedding Model That Retrieves Answers and Their Supporting Evidence - MarkTechPost",
-        "link": "https://news.google.com/rss/articles/CBMihgJBVV95cUxPWkxPdVZYZ3JWLU1YY3ZNcjNwWDBQTWdZU1Z2anJaZHpnNGxXNVU3c1RrV0xLSjlYUzlBX3U5Y3FKRjNndkJoLWhNb2IzRjF4VFVjWC13aXJEM29KakhOWVVoaVJiYzJleEp3R1pibThCSUJrSDUtdFRsX0ZKWE1lY2pwbnp4N2FuanJmVjlOYmZKZHlDV2d6cXJTRENJTlZUTXVBQVNBS0szVWpjTWh2dzl3SGZIbG1zVXdjcXN0Q0w2ZzVOX3hhQllYeGtyRVBKZ3Vmc2d0SmNud1BjSnFPMjA0eWFCZktrUnpIUkNxYndULTdOWnk5alUzQjJUaXhoTXdEU0JR?oc=5",
-        "pubDate": "Thu, 01 Oct 2026 03:23:39 GMT"
-      },
-      "sparkline": null
+      "sparkline": [
+        63.810001373291016,
+        64.26000213623047,
+        65.87000274658203,
+        63.06999969482422,
+        61.959999084472656,
+        62.95000076293945,
+        62.54999923706055,
+        63.54999923706055,
+        63.70000076293945,
+        67.81999969482422,
+        64.56999969482422,
+        69.88999938964844,
+        71.9800033569336,
+        70.30999755859375,
+        73.61000061035156,
+        73.94999694824219,
+        72.19000244140625,
+        69.69999694824219,
+        69.68000030517578,
+        70.45999908447266,
+        73.91999816894531
+      ]
     }
   ]
 }
