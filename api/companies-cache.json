@@ -1,6 +1,57 @@
 {
-  "refreshed_at": "2026-10-05T14:07:12.241Z",
+  "refreshed_at": "2026-10-06T13:04:47.269Z",
   "companies": [
+    {
+      "name": "Mistral AI",
+      "tag": "LLMs",
+      "desc": "Europe's leading open-weight AI foundation models",
+      "url": "https://mistral.ai",
+      "initials": "M",
+      "logo": "https://www.google.com/s2/favicons?domain=mistral.ai&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "France's Mistral announces new AI model - Reuters",
+        "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNcjVFRUV6ZzZmeXFiN3NIWmZwUTBGWTR3ZUx1UUhjLWRLMC0wZThtLW00a1FYNjloa3BiSTFveFdZZFkxWnd5d283Qi04MnU1UC1IUl9KdlBkX2o2X3JpQ0pUZVRZQzJ3Uk1fRzR5VnJIdGhwVGI3Q0JWc2RWOGtBZTZzek4tcWQxRTAxZnB3eWJyV2gzY2FlNjdYVk95b2lQX2UtLVNWandvMDA?oc=5",
+        "pubDate": "Tue, 06 Oct 2026 13:00:42 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "Palantir",
+      "tag": "Data Analytics",
+      "desc": "Big-data analytics platforms for government and enterprise",
+      "url": "https://palantir.com",
+      "initials": "PL",
+      "logo": "https://www.google.com/s2/favicons?domain=palantir.com&sz=128",
+      "ticker": "PLTR",
+      "headline": {
+        "title": "Palantir Just Had Its Best Quarter in a Year, Up 60% - Yahoo Finance",
+        "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPaEEwS1ZSRDdNdXVoR1ZwRXJ0TWRwdGt5UkxWVXptblY1dFNvT0FLb0kyak05djZNbXhHUTVKNUZ4YXcwMGUyd2FjWHlaeXoxNzhHY2ppclMzWWwzb2VOZHY2OVFsWFZRbUJqY2tqT3h6R05vT0RpTE5GbjhEc0VnbjhxMnpkdk03ZHhXMmpRUVhQbm1YdzROUm1hUQ?oc=5",
+        "pubDate": "Tue, 06 Oct 2026 12:21:41 GMT"
+      },
+      "sparkline": [
+        170.3000030517578,
+        169.52999877929688,
+        165.86000061035156,
+        167.22999572753906,
+        173.30999755859375,
+        172.55999755859375,
+        174.33999633789062,
+        176.24000549316406,
+        177.63999938964844,
+        183.08999633789062,
+        184.99000549316406,
+        191.7899932861328,
+        192.58999633789062,
+        189.6699981689453,
+        187.47999572753906,
+        186.97000122070312,
+        187.0500030517578,
+        190.0399932861328,
+        188.75,
+        189.39999389648438
+      ]
+    },
     {
       "name": "Rocket Lab",
       "tag": "Space",
@@ -10,9 +61,9 @@
       "logo": "https://www.google.com/s2/favicons?domain=rocketlabusa.com&sz=128",
       "ticker": "RKLB",
       "headline": {
-        "title": "Down More Than 50% From Its High, Is Rocket Lab Stock a Good Buy Right Now? - Yahoo Finance",
-        "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxONVNQdDFoLWM2TTNTZ2dOT0FYeWVyQUhUbTFoQVlxeHFHZFM0WVZhMVNNclNaZDFkMU1Pb3RiZlMzZGhtNGVONmNaMHo4TkUxMjBTUktWN3VyQnVsTEM0eFFLQ2tCSzBGNFNEOXZzc2xWa3BBN0ZtWlh6Y21yUnM4QlVCaVB1YWN1aEc3aUNhTnFsRnc?oc=5",
-        "pubDate": "Mon, 05 Oct 2026 13:40:02 GMT"
+        "title": "Can Rocket Lab Capitalize on Falcon 9’s Exit Before Neutron Slips Again - Yahoo Finance",
+        "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPOTExQ0dSQW1lWU9jTEtRWDUzTmZ6WVpNNnVmOHU4aWZ0SWZBWTZnSVNRdUtVV0lJTVB3dXFmMXNvNUxFLWxWT0FmTnMwVHFuYWExbVZocU1UbFE5SEhPcXg2aEZZR216OWVsU0lkSWZ4eWtSTy10dVJDaWFqNzVBbFlmOFF6RDhqZUZuR2N3TC1IQ1NKb25SbnI0MA?oc=5",
+        "pubDate": "Tue, 06 Oct 2026 11:41:41 GMT"
       },
       "sparkline": [
         65.87000274658203,
@@ -34,8 +85,23 @@
         69.68000030517578,
         70.45999908447266,
         73.91999816894531,
-        72.4800033569336
+        73.0199966430664
       ]
+    },
+    {
+      "name": "Cursor",
+      "tag": "Code Editor",
+      "desc": "AI-native code editor that pairs with Claude and GPT-4",
+      "url": "https://cursor.com",
+      "initials": "C",
+      "logo": "https://www.google.com/s2/favicons?domain=cursor.com&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "The first thing you should do on Googlebook is fix the trackpad - 9to5Google",
+        "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1KUTNGeENhY3h1ckZWQWZvN2tyMGFZMDN1d1hCVkMzYzBkOXoyZWJ5TkRJOU93ZUxqdE9IejE5c1p0bVZCTXpzUEpXT0dSdm1PUzdrc2hoWnd1Sk02cnNkVzNNS0FQekoycjRMNklKVml1S1R0Qmc?oc=5",
+        "pubDate": "Tue, 06 Oct 2026 11:00:00 GMT"
+      },
+      "sparkline": null
     },
     {
       "name": "Scale AI",
@@ -46,54 +112,9 @@
       "logo": "https://www.google.com/s2/favicons?domain=scale.com&sz=128",
       "ticker": null,
       "headline": {
-        "title": "Nubank Partners with Cardamon to Scale AI-Driven Regulatory Compliance Globally - FF News",
-        "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE0tcWdNdzA0RFltam95NDI5c21kSzhZVkdpdk5DMmhOeWNPX1lsb25SN09KZEJiSVZUdUJNVnpJM24wWFB3MWtQYjFOakZGcHQwSTVzdw?oc=5",
-        "pubDate": "Mon, 05 Oct 2026 10:41:40 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "Anthropic",
-      "tag": "LLMs",
-      "desc": "AI safety company behind the Claude family of models",
-      "url": "https://anthropic.com",
-      "initials": "AN",
-      "logo": "https://www.google.com/s2/favicons?domain=anthropic.com&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "Anthropic expected to IPO despite market uncertainty, AI slowdown calls - CNN",
-        "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1BdEczbUY5VGdZTlMtYm9HeVFjZWlfZzZrYTd3ZE1ydl9hNDA2bFRDR0FQV3lfTzRoQ3lxQlRRM0dJY1E5NENuVVFzT3c2ZU9iZktHLWdZbnJ3bmdNREJpd01Ua0Z3Vl8xVFJPS2JrM3UxYTI5?oc=5",
-        "pubDate": "Mon, 05 Oct 2026 09:00:45 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "Groq",
-      "tag": "AI Chips",
-      "desc": "LPU inference chips delivering industry-leading token speed",
-      "url": "https://groq.com",
-      "initials": "G",
-      "logo": "https://www.google.com/s2/favicons?domain=groq.com&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "Nvidia’s $20bn licensing deal with Groq faces lawsuit from jilted engineers - Financial Times",
-        "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQM3NDOW1Ua3hoR2xRZnF4WVl2d1ZCRi1UM1I0S1BPUEJQOE1DQ2Zmdmc3UmVDVHc4TVJwOUNXVE1JdXk1WFRyU19zVXA0ZzdRRGxuN21qdFVtQ1FWUHpwaE5Sei1VRXNobHJpUndPb2pxMUpmd1F0TzBTU3RFNFZRSEFZbHQ?oc=5",
-        "pubDate": "Mon, 05 Oct 2026 09:00:03 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "Waymo",
-      "tag": "Autonomy",
-      "desc": "The most miles driven autonomously of any robotaxi service",
-      "url": "https://waymo.com",
-      "initials": "W",
-      "logo": "https://www.google.com/s2/favicons?domain=waymo.com&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "Elon Musk admits that Tesla Robotaxis have a 'cat problem'; and one which Google’s Waymo does not ‘agree’ - The Times of India",
-        "link": "https://news.google.com/rss/articles/CBMilgJBVV95cUxPOFFUZWdBVm1CZFNRRmJYek10Q0xLNlV1TlByX1ljYmpUZWs0T0RMS19NQUppdDR5Mm44T0lSX1E3dlVvakdnNTAyTEI2NmVhVFM2S0ZVdE56c3VldzV2Ni1nYnl2ZmxFcUxfMXdLZ0tCeUlFZVdHSWprT0JUc0RObjNSZExUYWx6WUU1WjlMSHpVdkNGcFJhYjQ1Zzcza3p1NWQ5ckdDTjdfUGEyTTNxRDVWQWRKa1ZLaUxKYzAyS1hCMFJWSjhIcVd2MkItMGstZFJDZU9maUVPaUFZb3JtMFM0R2QwSTVJZ01aQVFIdi1YelJMNFRLTXJKY3FiU2hLTUx5WmhXT2dEY2Q3SG80cU1IM1ZSd9IBmwJBVV95cUxQTFc3UmtLMUlQSHp4M1NoYU1nY3BYdXZ1Zl9qSTBWaFFjMTZoOHlGZk5PdWhldkRPRW80Z2VVcmNxbm5Wd3BnZjQtNlhmZVpWQkNFX2JrTGlTdjJRNnhOaG9zVU5jZzhBR0xKQXotaS1seHN4UnkzU1d1cFJXZWd4blI2N2ZXT1dUYWdJVVZwVVBfSnByQjB2ZVM1dUtOOTJOZTVNVXBmWmlPRzNybkRUWVZ5Z295QmFZVktkMWRqSWt1bmc4LTdJZzNTSWgycDRuZ1IyUl9NYmZPN3BHY0tPZFlXZEZkTHZkVXAtdlRxVEtFNk9VU3BoSENtZWNqUkpkeUVya3VkSUVMZ0pqeTF0QzBQeU5jZ2xTV0lN?oc=5",
-        "pubDate": "Mon, 05 Oct 2026 03:11:00 GMT"
+        "title": "BBVA creates a model to scale AI across the Group and drive its customer-centric transformation - bbva.com",
+        "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNdmhQM2ZCNGpPVGg4VjJlUkdzamg4SlprcE1RaWdNUkJPQXhhWTNnVjQ4TFJTQzk2MF9wS0U3ekFwN0dFbVF4XzROaXkwS0hXSGNGMktUS2x3SmlVem9RQzRVLUZqaHVDamdRb0FHc213MVNOZENFSGJGeGJsMF9Ha1ZNNkUydHdwcG1fNDZLOTlzamtFVG9rb2xmczdFdW5zMVBKMWJNYVhmN0ZCT3BWanVuZ1ZhUTE2dzE1aWNjblhZdGFWQkNtS205WQ?oc=5",
+        "pubDate": "Tue, 06 Oct 2026 09:49:36 GMT"
       },
       "sparkline": null
     },
@@ -106,39 +127,39 @@
       "logo": "https://www.google.com/s2/favicons?domain=openai.com&sz=128",
       "ticker": null,
       "headline": {
-        "title": "Legal risks pile up for Altman as OpenAI uncovers dozens of hacks - Financial Times",
-        "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNbTIyS2l3QWYtSTZxVzB4Znp2U2ZtQzY3NHl5M0VHa3FVMU1PWTR4eWdmd0VwNnNIRTVlS0gyaU9WTVBDZ2RCRGU5dXFKWmc2bWdNWlpfazdrUHpBRGMyRmN5dTc4Qzh6OGh5cUpuZkNGb1BNZ0lxVW5FMmpwLUkycDNPcW8?oc=5",
-        "pubDate": "Sun, 04 Oct 2026 11:00:08 GMT"
+        "title": "OpenAI admits response to Australian government hacks 'not good enough' - BBC",
+        "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1KV1RrWDZUSEJCLXBQcElQSkpuQWtrWUlaVHV2VmFQdXhLRXNCSHdsUUFRNmlDZ3g0TV9kSEdVYm1PRXNucEJFSWNsQUNfdGl6Yk9lSlU4LXp4Yzk0amc?oc=5",
+        "pubDate": "Tue, 06 Oct 2026 04:39:14 GMT"
       },
       "sparkline": null
     },
     {
-      "name": "Perplexity",
-      "tag": "AI Search",
-      "desc": "Answer engine combining web search with AI-generated summaries",
-      "url": "https://perplexity.ai",
-      "initials": "P",
-      "logo": "https://www.google.com/s2/favicons?domain=perplexity.ai&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "I replaced ChatGPT, Claude, Gemini, and Perplexity with free open-source alternatives - XDA",
-        "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQUVFIXzJjc0RvN3dZZXI2d1QyelMtbTMtZzhQWDZUVWtsSHdWYUtyanEtR0RHWGQ2NVg2YXM4Ti05eUI0R2RFZGxGWTRCTGp1V3QwZmJpTGREY3NfLUhxcWM5eXJTdUR2aHdhQWtYSjRTelVZQVZaLXJpSllUazhoVnB1MkZhUUtsZ1AxVm9DYmlqZ0wxNWVJcGZJZlJVNVExMHVDdjVaeXFJdTg?oc=5",
-        "pubDate": "Sat, 03 Oct 2026 21:30:20 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "xAI",
+      "name": "Anthropic",
       "tag": "LLMs",
-      "desc": "Elon Musk's AI company, developer of the Grok models",
-      "url": "https://x.ai",
-      "initials": "X",
-      "logo": "https://www.google.com/s2/favicons?domain=x.ai&sz=128",
+      "desc": "AI safety company behind the Claude family of models",
+      "url": "https://anthropic.com",
+      "initials": "AN",
+      "logo": "https://www.google.com/s2/favicons?domain=anthropic.com&sz=128",
       "ticker": null,
       "headline": {
-        "title": "Elon Musk confirms discussions with TSMC about Terafab chipmaking collaboration — Intel is the only other named partner, Terafab to exclusively supply Tesla, SpaceX, and xAI - Tom's Hardware",
-        "link": "https://news.google.com/rss/articles/CBMiygJBVV95cUxNeXItamxLWmIyc21RQWhkVFlValdBRFZZWF9aamZYcmZrdFBXM1BZSHAzZFhydlFHcUNpMlE3bV83dlJLZ0ZIQnZtWGFuNmp4Vzh1QVA2WFFFZk5faHU2U0ZyZlE0RzJxdWplX3pFTm1QTVdibHZTMUZFOHRmTGFjWk1XRnQtSVFLTmpoVjd1cV9HR3dlRDB1TW5jdnpIMk9WZjJhUFRINXFqMWFlNjFVNldTUWxxQk1zeXJlQ1lwRzNaOHpZemdEaWNtUnd3RXdCSEpuNWphVWxuMXZpeGM5cXBYaUlRU0dVVnpGaUF1d09pMWM5MkhQY2FWQnlWeHROQ2RibUZwWVY4VXNtS1JjZ0lzZGZWS183UjZpZVJfZU9UV0NKa05Oam1SY2JNeFhMWjd5RTdYNmVnQWUzZ0lrb21GaVJpR2lWTGc?oc=5",
-        "pubDate": "Sat, 03 Oct 2026 14:50:50 GMT"
+        "title": "Pentagon stops using Anthropic AI tools after blacklisting company, BBC told - BBC",
+        "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5lT2E0bGxnU0ZWQURWQjZCU3BVX2RMSFN2RF85eW5OemNNMzVLdVdzNUJTcEo4eHduYm40R3BLVEh4ZEtoNzJ2Zml6dFFaS0lEOFRheDdtcmZRM1lnRVE?oc=5",
+        "pubDate": "Mon, 05 Oct 2026 16:13:21 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "Waymo",
+      "tag": "Autonomy",
+      "desc": "The most miles driven autonomously of any robotaxi service",
+      "url": "https://waymo.com",
+      "initials": "W",
+      "logo": "https://www.google.com/s2/favicons?domain=waymo.com&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "As robotaxi accidents increase in L.A., the data reveal the safer driver - Los Angeles Times",
+        "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPYktYa2piUzVWSjdlZnc5ODAtd0NvOVh1WlZsQzJIdmstV0paQXp0U1FiLXI1LTJvWEYxaWlmNGcyNWRuc3BrV0xfWVg1RUU1d1U2SHRRVTcwYVowY19CSHg3a25fcG5hUFE4cEd2Qm5wMm0xRjgyeFV5ZTVFUW5tMDNXcmlXMFFaQmFOMDlhOXdDMldnUFowZVowZjRHaXViYkZWTWpR?oc=5",
+        "pubDate": "Mon, 05 Oct 2026 10:00:00 GMT"
       },
       "sparkline": null
     }
