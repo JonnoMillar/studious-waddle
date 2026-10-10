@@ -1,8 +1,42 @@
 {
   "tee_times": [
     {
-      "date": "2026-10-10",
-      "tee_time": "07:22",
+      "date": "2026-10-17",
+      "tee_time": "08:00",
+      "course_name": "Ilford Golf Club",
+      "facility_id": 15715,
+      "course_rating": 2.9938,
+      "course_review_count": 112,
+      "course_address": "Illford, Essex",
+      "distance_miles": 9.0,
+      "holes": 18,
+      "max_players": 4,
+      "price_gbp": 25.0,
+      "is_hot_deal": false,
+      "rate_type": "Best Available",
+      "booking_url": "https://www.golfnow.co.uk/tee-times/facility/15715/search",
+      "scraped_date": "2026-10-10"
+    },
+    {
+      "date": "2026-10-18",
+      "tee_time": "07:30",
+      "course_name": "Chingford Golf Course",
+      "facility_id": 14042,
+      "course_rating": 4.1116,
+      "course_review_count": 362,
+      "course_address": "London, Middlesex",
+      "distance_miles": 11.0,
+      "holes": 18,
+      "max_players": 4,
+      "price_gbp": 30.5,
+      "is_hot_deal": false,
+      "rate_type": "Best Available",
+      "booking_url": "https://www.golfnow.co.uk/tee-times/facility/14042/search",
+      "scraped_date": "2026-10-10"
+    },
+    {
+      "date": "2026-10-17",
+      "tee_time": "07:42",
       "course_name": "Brent Valley Golf Club",
       "facility_id": 13883,
       "course_rating": 3.2517,
@@ -15,41 +49,7 @@
       "is_hot_deal": false,
       "rate_type": "Best Available",
       "booking_url": "https://www.golfnow.co.uk/tee-times/facility/13883/search",
-      "scraped_date": "2026-10-08"
-    },
-    {
-      "date": "2026-10-10",
-      "tee_time": "07:28",
-      "course_name": "London Airlinks Golf Course",
-      "facility_id": 15559,
-      "course_rating": 3.5296,
-      "course_review_count": 69,
-      "course_address": "Hounslow, Middlesex",
-      "distance_miles": 12.0,
-      "holes": 18,
-      "max_players": 4,
-      "price_gbp": 35.0,
-      "is_hot_deal": false,
-      "rate_type": "Best Available",
-      "booking_url": "https://www.golfnow.co.uk/tee-times/facility/15559/search",
-      "scraped_date": "2026-10-08"
-    },
-    {
-      "date": "2026-10-11",
-      "tee_time": "07:12",
-      "course_name": "London Airlinks Golf Course",
-      "facility_id": 15559,
-      "course_rating": 3.5296,
-      "course_review_count": 69,
-      "course_address": "Hounslow, Middlesex",
-      "distance_miles": 12.0,
-      "holes": 18,
-      "max_players": 4,
-      "price_gbp": 35.0,
-      "is_hot_deal": false,
-      "rate_type": "Best Available",
-      "booking_url": "https://www.golfnow.co.uk/tee-times/facility/15559/search",
-      "scraped_date": "2026-10-08"
+      "scraped_date": "2026-10-10"
     },
     {
       "date": "2026-10-17",
@@ -66,7 +66,7 @@
       "is_hot_deal": false,
       "rate_type": "Best Available",
       "booking_url": "https://www.golfnow.co.uk/tee-times/facility/15559/search",
-      "scraped_date": "2026-10-08"
+      "scraped_date": "2026-10-10"
     },
     {
       "date": "2026-10-18",
@@ -83,7 +83,7 @@
       "is_hot_deal": false,
       "rate_type": "Best Available",
       "booking_url": "https://www.golfnow.co.uk/tee-times/facility/15559/search",
-      "scraped_date": "2026-10-08"
+      "scraped_date": "2026-10-10"
     },
     {
       "date": "2026-10-17",
@@ -100,7 +100,7 @@
       "is_hot_deal": false,
       "rate_type": "Best Available",
       "booking_url": "https://www.golfnow.co.uk/tee-times/facility/15271/search",
-      "scraped_date": "2026-10-08"
+      "scraped_date": "2026-10-10"
     },
     {
       "date": "2026-10-18",
@@ -117,9 +117,9 @@
       "is_hot_deal": false,
       "rate_type": "Best Available",
       "booking_url": "https://www.golfnow.co.uk/tee-times/facility/15271/search",
-      "scraped_date": "2026-10-08"
+      "scraped_date": "2026-10-10"
     }
   ],
-  "scraped_at": "2026-10-08T21:52:01.551845+00:00",
+  "scraped_at": "2026-10-10T11:43:49.880914+00:00",
   "error": null
 }
