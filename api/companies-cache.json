@@ -1,48 +1,18 @@
 {
-  "refreshed_at": "2026-10-09T12:53:45.211Z",
+  "refreshed_at": "2026-10-10T12:11:42.096Z",
   "companies": [
     {
-      "name": "Physical Intelligence",
-      "tag": "Embodied AI",
-      "desc": "Training AI systems to manipulate physical objects",
-      "url": "https://physicalintelligence.company",
-      "initials": "PI",
-      "logo": "https://www.google.com/s2/favicons?domain=physicalintelligence.company&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "Ultra raises $62 million for fast-growing ‘robots as a service’ business, announces tie-up with AI research firm Physical Intelligence - Fortune",
-        "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOLVhxX3pmWk50WXQ5MzZ6QWpJMEJjMGZMLUMyUzJnNnNiT0RXd0JFUmVsNVJjYk84ZjdtendrRkZyRlpDUGF1TVBQQVJiaHVpX19pekR2S0lhN2RSWjZLaTBHVUJwbTJDU0lkQmd5NmRPNU9QN1NqaVFQSTZrLWFPcVB4MW1JZU5fVl93LWJuS0ZZMDR2VGswdERCc3BtVFFZQUJiOTlKUmRzYTBBR19qSXZDYTRxR1JNeFRYZWVjam5kbV9BY21xWQ?oc=5",
-        "pubDate": "Fri, 09 Oct 2026 10:33:00 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "Groq",
-      "tag": "AI Chips",
-      "desc": "LPU inference chips delivering industry-leading token speed",
-      "url": "https://groq.com",
-      "initials": "G",
-      "logo": "https://www.google.com/s2/favicons?domain=groq.com&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "Exclusive | Venture Firm Behind Chip Startup Groq Targets $10 Billion Megafund - WSJ",
-        "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNTFZFeWo3bjhVMEkxNE9XSS1YZnVSbFJSVWlYZnFTV3NHZUdDS3hfS1VHcnhlaEw5QmVlV2VuNUxpdnk1OE5MVFYyVWc1OGE1azVsM19Wd29nMVNYc1JaSENOSXlSdmZSOG1jamxacWJJVHR3ZGNnbE9rQVl0a1ZDcGlFZVN2TGp4bWZIUmZBNnFocVRGTmVGa3dka2p3cW5tWXRyYw?oc=5",
-        "pubDate": "Fri, 09 Oct 2026 10:31:35 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "OpenAI",
+      "name": "Anthropic",
       "tag": "LLMs",
-      "desc": "Creator of ChatGPT and the GPT family of foundation models",
-      "url": "https://openai.com",
-      "initials": "OAI",
-      "logo": "https://www.google.com/s2/favicons?domain=openai.com&sz=128",
+      "desc": "AI safety company behind the Claude family of models",
+      "url": "https://anthropic.com",
+      "initials": "AN",
+      "logo": "https://www.google.com/s2/favicons?domain=anthropic.com&sz=128",
       "ticker": null,
       "headline": {
-        "title": "Fired OpenAI researchers say they were let go for 'prioritising safety' - BBC",
-        "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBtTVNVWG03WnpNOHlscXY3WFBmX3ZCdDVoOGI2UXc5LUFtSVFsSnRHWW8xM3dURHh1WFhZNFVMa05aeWl1cW1ERFZadGs4UXdDU0F5R2s5MUt4OVA5ZHc?oc=5",
-        "pubDate": "Fri, 09 Oct 2026 09:30:49 GMT"
+        "title": "Rogue Anthropic AI agent gave police fake tip in unsolved murder case - BBC",
+        "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE15X3pZbWRoLUE5ODJrT0puOVNVbGNHX2VKREtlcWZYSENlWkM4cTlmV2tYUFp5dHNjM3lCZzZfQUxUYUF2ZGhtRlFyNnZEaVB0QjlkNHpYUkFwNkZEaEE?oc=5",
+        "pubDate": "Sat, 10 Oct 2026 10:06:23 GMT"
       },
       "sparkline": null
     },
@@ -55,12 +25,11 @@
       "logo": "https://www.google.com/s2/favicons?domain=palantir.com&sz=128",
       "ticker": "PLTR",
       "headline": {
-        "title": "Palantir’s Tom Watson says ‘mob rule’ must not dictate awarding of government contracts - The Guardian",
-        "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPVHdwc1RxX3JiSVBCQzJCNExpbVo1RDMtbXVFdGUtOWJ2RmpxbmJHcXo3REtqa0FwODVKOV9Udy1QdUNSMmpibGRCSHB2N2oxellvR2s1QlhjNENWWFNkUTQ1dUdkbUhjbFB1ZEc0YlNtcWVSTlk3LXJ2NXdjbGVvZlBRdjVxTlpCcElnVDNsY3J6SnZpLVYxWUpHcjhFMFZBRlE?oc=5",
-        "pubDate": "Fri, 09 Oct 2026 09:20:00 GMT"
+        "title": "Palantir AI probe leads to Met Police volunteer chief's dismissal - BBC",
+        "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1YWENMR3dYWDE5ZDgzdFpZbXI5d2RJbHg4N1h5RDJ1VlNBcmk1bXVBeGxuNlFNOGFVMF95TGVRV1Q4X0lETTYtRF9BaHltMnNQMmJ1MUlFRUVOb2plWlE?oc=5",
+        "pubDate": "Sat, 10 Oct 2026 09:19:53 GMT"
       },
       "sparkline": [
-        169.52999877929688,
         165.86000061035156,
         167.22999572753906,
         173.30999755859375,
@@ -81,51 +50,37 @@
         189.39999389648438,
         192.07000732421875,
         194.1199951171875,
-        198.77999877929688
+        198.77999877929688,
+        209.0500030517578
       ]
     },
     {
-      "name": "xAI",
-      "tag": "LLMs",
-      "desc": "Elon Musk's AI company, developer of the Grok models",
-      "url": "https://x.ai",
-      "initials": "X",
-      "logo": "https://www.google.com/s2/favicons?domain=x.ai&sz=128",
+      "name": "Cursor",
+      "tag": "Code Editor",
+      "desc": "AI-native code editor that pairs with Claude and GPT-4",
+      "url": "https://cursor.com",
+      "initials": "C",
+      "logo": "https://www.google.com/s2/favicons?domain=cursor.com&sz=128",
       "ticker": null,
       "headline": {
-        "title": "Canada: Kitasoo Xai’xais leaders demand reversal of salmon farm ban - Salmon Business",
-        "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPR1NuQmhnNE1TYXpxWmRDekNrdW9IdDZKd29od0pISTNBSUxFbDFTSVkxTm9fNUNqNHU3WVBNYy04aWtkTUt4cFRCS0w4ZEM0dS0zbVpLbUQ3S2pPcmRoZ3ZHZW85QmRFb04zUWZacFZTNUZfZjdqZVNoMDRVSFhIc2xraU5sWWdlNVZkN2VRNFJVUlVCZTN4OFhTVVl5Zw?oc=5",
-        "pubDate": "Fri, 09 Oct 2026 06:07:45 GMT"
+        "title": "Sony Patent Describes Stream Viewers Controlling a Cursor on the Streamer's Screen - TechPowerUp",
+        "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNdXVwLXpUT0gwMzdKeEpvRDhCVmg3VENrNnY5eG5hZURRcWFqX1lhUjlXME4tb0dwZ3JycWFNUmVELURWRlhpdzAzZ3FYd29lcDVneURuSFlZRUFoNXAzQmZDUmZYTkNiVjVXSTVLZ01ocnJka1pUa1lLcGlyaDFaVW5hT2VSUG0xaE45WVNkTHhENlR4OGRraGtkX3J2d0RuUExxWGhVVmRMdFJvOVRoTEhUakNVbUnSAbwBQVVfeXFMTVBjcHJqYnpFckt1bEI5MGtlWlhkVjJSQnpfLUtxNWhCeVhmMXpEcG1lcG9GSVU5VC16cl81eDl5NF9TNWtNS1VkSUZIdTk1dFM3MVQ5enE0bTlDNXIzclNWa0ViaXJMZ3ljbHNlQnMwUkdpSXFOczJ5WEMtWUVsOHpFaV9MeXdrMlZUb01HaEZKTXpaeEI5elZjb3RIWUt5alhwUE5salFsYjBrN3NDU0hCeHczZ29yc0MwR1U?oc=5",
+        "pubDate": "Sat, 10 Oct 2026 00:19:48 GMT"
       },
       "sparkline": null
     },
     {
-      "name": "Scale AI",
-      "tag": "AI Data",
-      "desc": "Data labelling and RLHF infrastructure powering frontier AI",
-      "url": "https://scale.com",
-      "initials": "S",
-      "logo": "https://www.google.com/s2/favicons?domain=scale.com&sz=128",
+      "name": "Physical Intelligence",
+      "tag": "Embodied AI",
+      "desc": "Training AI systems to manipulate physical objects",
+      "url": "https://physicalintelligence.company",
+      "initials": "PI",
+      "logo": "https://www.google.com/s2/favicons?domain=physicalintelligence.company&sz=128",
       "ticker": null,
       "headline": {
-        "title": "Rezolv Raises $12.5m Series A to Scale AI Lending Platform - The Fintech Times",
-        "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOLXZUS1Y1ZU1vWGZEN0hpS2tSTlVyVVhzc0ptSXpTTWNqXzZhdXZNX0NucmRFUDN3RGVDd2RfQ016YVlzT2ZoaUJQTnd5Yko2T3NVd1g5dTZybWNGTVoxb2IyMmZJT250WnREMmlJLTlNZ05nQTVHYXRzQVNadF9KYTdBMURwTzgyVDNSWHRDRQ?oc=5",
-        "pubDate": "Fri, 09 Oct 2026 02:00:52 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "Anthropic",
-      "tag": "LLMs",
-      "desc": "AI safety company behind the Claude family of models",
-      "url": "https://anthropic.com",
-      "initials": "AN",
-      "logo": "https://www.google.com/s2/favicons?domain=anthropic.com&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "Anthropic bans users from ‘needless abusive or cruel behavior’ towards Claude - The Guardian",
-        "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPb2lja2Y3b2J4SGw2TDhuWUNxNmxablZvTlcwSVg4eHhuSUFwNUEzQTd0WFhOTlJMd0F5UHBDSnhxTl9nVXJlNjFrZVBSc1Zic01sZ1RuZ2tTTlQ3RVVLUEw5OFI2NDcwNzNPSVpYTUJmR1pVdmd2NWkyOUtxcTg5bC05ckRhX1pnSVRZdVhLSlQ0ckU?oc=5",
-        "pubDate": "Fri, 09 Oct 2026 01:26:00 GMT"
+        "title": "Freedom: Physical Intelligence could interest tech giants with its robotics developments - Freedom Broker",
+        "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOeDBiazNRTWFKOUJFUy1Rb0V6UHlJbnFoN291eFk0MlE3cGxqTU45RGdPdUpRTHJpN0Exd2tyb2Z6ZTVsNmN4VW11aU9xOEpCVDdLU1hUSU9xbkQ0dlM4a0NiYndTRTRpajhwY1hHS2tyWXhDSVFPRW1mV3BYMWh6LXdla1lKTUNPai1tOUdZbmpodEw5LWJWWVpFS01NZ3NaZ1RqdGVsc0NoREhqRGJnblFvVUZjRk51QXlBZWg4WWlUalE?oc=5",
+        "pubDate": "Fri, 09 Oct 2026 16:27:07 GMT"
       },
       "sparkline": null
     },
@@ -138,12 +93,11 @@
       "logo": "https://www.google.com/s2/favicons?domain=rocketlabusa.com&sz=128",
       "ticker": "RKLB",
       "headline": {
-        "title": "Rocket Lab Fell Hard Over The Last 3 Months: Wall Street Pro Predicts It Doubles From Today - Yahoo Finance",
-        "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNNHNjMEdkZmlSdUsxMmJ2c1JrTDZ3bWE1NFRYRjgzY25UVjZyWmEyank2Q0o1Ni1EMjdFYlJIZHd1NUEweGRpOWJ0TWV0ZlVQeFdiT3o0Z0VIUVZGLXBINFFVaXlJb1JRdzhsNkFMT29mcG1PNU9FSXhyalJlYi1yOTB1RThHd1VhUXYzTXktRXRQdzNw?oc=5",
-        "pubDate": "Thu, 08 Oct 2026 16:45:01 GMT"
+        "title": "Rocket Lab Is Getting Closer to SpaceX - TradingView",
+        "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQSllidTBubHVTTHNQc1pHWlFfM3kzTnUzb21zV3JaQ1I4cEFEQVJnLUlzWkhDTC1uMy1iT09aek5oOFpvMFpiRDRGRXJlNWp1aG1neEg4cXVUbHR0NkpKZzBEYk5BT1BiWks4cDQtYzVBSnM1bU8tejNlSnBPb3lpbUNTZWtLcWNIbG1aaEsxNzNrN0JhMm1jNUFaVldLd2M?oc=5",
+        "pubDate": "Fri, 09 Oct 2026 12:24:14 GMT"
       },
       "sparkline": [
-        63.06999969482422,
         61.959999084472656,
         62.95000076293945,
         62.54999923706055,
@@ -164,8 +118,54 @@
         73.0199966430664,
         75.05999755859375,
         71.91999816894531,
-        68.4000015258789
+        68.4000015258789,
+        68.20999908447266
       ]
+    },
+    {
+      "name": "Scale AI",
+      "tag": "AI Data",
+      "desc": "Data labelling and RLHF infrastructure powering frontier AI",
+      "url": "https://scale.com",
+      "initials": "S",
+      "logo": "https://www.google.com/s2/favicons?domain=scale.com&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "Rezolv Raises $12.5m Series A to Scale AI Lending Platform - The Fintech Times",
+        "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOLXZUS1Y1ZU1vWGZEN0hpS2tSTlVyVVhzc0ptSXpTTWNqXzZhdXZNX0NucmRFUDN3RGVDd2RfQ016YVlzT2ZoaUJQTnd5Yko2T3NVd1g5dTZybWNGTVoxb2IyMmZJT250WnREMmlJLTlNZ05nQTVHYXRzQVNadF9KYTdBMURwTzgyVDNSWHRDRQ?oc=5",
+        "pubDate": "Fri, 09 Oct 2026 02:00:52 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "OpenAI",
+      "tag": "LLMs",
+      "desc": "Creator of ChatGPT and the GPT family of foundation models",
+      "url": "https://openai.com",
+      "initials": "OAI",
+      "logo": "https://www.google.com/s2/favicons?domain=openai.com&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "OpenAI annualised revenues $20bn less than previously signalled - Financial Times",
+        "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOZWVveXJiRHFiS1dWdDdYZWtlWDdFZ3JjckdfMnRGLVpiZWxzRjdGNGZHcnZtMmZTaXQ4U1Fmc2ZhVzhFNXBxbDRwcThvR2pVMGdKdUR2QW5fQ0ZhSDB5ZzFwOHZLellkZXA1ZW4ySUd5bFo3Uno0VE92Y1ZHVm54MU5DTVA?oc=5",
+        "pubDate": "Thu, 08 Oct 2026 16:42:34 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "Waymo",
+      "tag": "Autonomy",
+      "desc": "The most miles driven autonomously of any robotaxi service",
+      "url": "https://waymo.com",
+      "initials": "W",
+      "logo": "https://www.google.com/s2/favicons?domain=waymo.com&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "Waymo Closes $5 Billion Debt Financing to Accelerate Business Expansion - Waymo",
+        "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBnaWFGRS1PMldDZTc4WGZhbHlNRUZYUmNZY2V4YnB2Q3dSQzIzSm9pUFZPSk1xSDNNZUZ2Z2FrVS1rWU1DTG80dGVIZmRYS2VLUHVDTVdnUkNHYWxQTjBDM0dndkhJRGhOYkJNb2ppeWZ3X0RlOHI4?oc=5",
+        "pubDate": "Thu, 08 Oct 2026 13:48:57 GMT"
+      },
+      "sparkline": null
     }
   ]
 }
