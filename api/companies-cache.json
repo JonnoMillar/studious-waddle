@@ -1,6 +1,51 @@
 {
-  "refreshed_at": "2026-10-10T12:11:42.096Z",
+  "refreshed_at": "2026-10-11T12:25:51.207Z",
   "companies": [
+    {
+      "name": "Waymo",
+      "tag": "Autonomy",
+      "desc": "The most miles driven autonomously of any robotaxi service",
+      "url": "https://waymo.com",
+      "initials": "W",
+      "logo": "https://www.google.com/s2/favicons?domain=waymo.com&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "Gridlock Guy: Waymo says its robotaxis are far safer than humans and has the receipts to prove it - 11Alive.com",
+        "link": "https://news.google.com/rss/articles/CBMikgJBVV95cUxPSkh5YmpoV0dSa3BVNDBuNjRuMjZwZUxCX29SVnJmTjA2X3hhMWpjaXFzLTRvenVZa24zNGF6QS1yYkljSG9yU3hILXktQ2l5cEtPVUhWakFFZ0trdzFsZkgtTVFURWY0Zi1peWxQaEg3UGMwM3puMjZuY1VkdWF3cTdsNVZrdTZ5dkN2VUZrbXRrYXF0OV9zN3NPdjhTWDlicExibVRKVXMzLTdfc0NSTTVIRnZ5ZVVGUWhSQl9adHRzaVRzM3NYc0ZFdVZPUjJnQkxtYURHRzZ4UHd3Wm9JSUZoMkExNmFfelJiZFVhREhPSVBXWHRoYXIyMm45OTVuZWVsZXY4RUR5cHY4U2xiSDRR?oc=5",
+        "pubDate": "Sun, 11 Oct 2026 11:00:00 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "Anduril",
+      "tag": "Defense AI",
+      "desc": "Autonomous defense systems and AI-enabled military hardware",
+      "url": "https://anduril.com",
+      "initials": "A",
+      "logo": "https://www.google.com/s2/favicons?domain=anduril.com&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "Opinion | Two cheers for Anduril’s submarine-building project - The Washington Post",
+        "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPRGIwdDJxUm5ZV3E2MFVGMmpRcFI1SXdEaWQ1bW9uX19MZFBnTHBqUkctYlYyY3p0YVNqMDNQY19PZzRYanFFOTRtckw3QW1LTlBGM2tiVWJpeWxDOUdJZkFUaFFldEllQW1RVG51Q1dhM2xFWVZqTk5qajlBSEFPX2JteWg0eUtNQUI0eVQwNGdQa2ZzRlhuM0R4VVJaMVlCdDVGeE5yRWRhV0hZaUxZRkN2Y1FlbUNUWDYxOV9TSQ?oc=5",
+        "pubDate": "Sun, 11 Oct 2026 02:02:32 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "Cursor",
+      "tag": "Code Editor",
+      "desc": "AI-native code editor that pairs with Claude and GPT-4",
+      "url": "https://cursor.com",
+      "initials": "C",
+      "logo": "https://www.google.com/s2/favicons?domain=cursor.com&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "REA Tool Connects Claude Code and Cursor to Ghidra and IDA Pro to Reverse Engineer Anything - CyberSecurityNews",
+        "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1TdGhNYmxZNl9IZ2FCbUhXa1NyNmR3ZDRIaWo2SThmbDZBVFRYMXpxRmNuV0xfU2FHMWhidm9uS0xqd1gzQk56bDdSMWkydi0xYVVoZzJnMGFUX0x4MmRKT0ZoYVJFbVlOaVBMN2R30gFzQVVfeXFMTWtHbGdyUWQ0WjB4UnF4MlMzYmF5aVpoOEVXODY3VVBvSmVtelVCMDRBNHpIVVZIRjI5TVAyZEFULWZFbXZLTF9EZDh1VjZHZzEyenA2am4ySzgtVUoxc2oyLWhwYXBBR1hTa0xNZ2I4OVUzQQ?oc=5",
+        "pubDate": "Sat, 10 Oct 2026 20:55:57 GMT"
+      },
+      "sparkline": null
+    },
     {
       "name": "Anthropic",
       "tag": "LLMs",
@@ -55,32 +100,32 @@
       ]
     },
     {
-      "name": "Cursor",
-      "tag": "Code Editor",
-      "desc": "AI-native code editor that pairs with Claude and GPT-4",
-      "url": "https://cursor.com",
-      "initials": "C",
-      "logo": "https://www.google.com/s2/favicons?domain=cursor.com&sz=128",
+      "name": "OpenAI",
+      "tag": "LLMs",
+      "desc": "Creator of ChatGPT and the GPT family of foundation models",
+      "url": "https://openai.com",
+      "initials": "OAI",
+      "logo": "https://www.google.com/s2/favicons?domain=openai.com&sz=128",
       "ticker": null,
       "headline": {
-        "title": "Sony Patent Describes Stream Viewers Controlling a Cursor on the Streamer's Screen - TechPowerUp",
-        "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNdXVwLXpUT0gwMzdKeEpvRDhCVmg3VENrNnY5eG5hZURRcWFqX1lhUjlXME4tb0dwZ3JycWFNUmVELURWRlhpdzAzZ3FYd29lcDVneURuSFlZRUFoNXAzQmZDUmZYTkNiVjVXSTVLZ01ocnJka1pUa1lLcGlyaDFaVW5hT2VSUG0xaE45WVNkTHhENlR4OGRraGtkX3J2d0RuUExxWGhVVmRMdFJvOVRoTEhUakNVbUnSAbwBQVVfeXFMTVBjcHJqYnpFckt1bEI5MGtlWlhkVjJSQnpfLUtxNWhCeVhmMXpEcG1lcG9GSVU5VC16cl81eDl5NF9TNWtNS1VkSUZIdTk1dFM3MVQ5enE0bTlDNXIzclNWa0ViaXJMZ3ljbHNlQnMwUkdpSXFOczJ5WEMtWUVsOHpFaV9MeXdrMlZUb01HaEZKTXpaeEI5elZjb3RIWUt5alhwUE5salFsYjBrN3NDU0hCeHczZ29yc0MwR1U?oc=5",
-        "pubDate": "Sat, 10 Oct 2026 00:19:48 GMT"
+        "title": "‘Pure insanity’: Mathematicians will need years to make sense of OpenAI’s latest drop - The Verge",
+        "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQdkJScG5HUzNIY0FKNkR2RUNWRTd5bGFFZEFLSThucGUwS3huMVYzSE4tUEtZMFpFdHlfU3BuUzZZOFE2SzVkbHZPUlJlMDQtcFFBNFRqM1lIUEN2Z3BWSFU5d0xRYWJoc1BhcEUxY0x5dXhDWTYyU1I4NTh5NWFjX0R2U1ZVSi1YVENua05NcVlLU0s1NzFuVDh3?oc=5",
+        "pubDate": "Fri, 09 Oct 2026 19:09:44 GMT"
       },
       "sparkline": null
     },
     {
-      "name": "Physical Intelligence",
-      "tag": "Embodied AI",
-      "desc": "Training AI systems to manipulate physical objects",
-      "url": "https://physicalintelligence.company",
-      "initials": "PI",
-      "logo": "https://www.google.com/s2/favicons?domain=physicalintelligence.company&sz=128",
+      "name": "Scale AI",
+      "tag": "AI Data",
+      "desc": "Data labelling and RLHF infrastructure powering frontier AI",
+      "url": "https://scale.com",
+      "initials": "S",
+      "logo": "https://www.google.com/s2/favicons?domain=scale.com&sz=128",
       "ticker": null,
       "headline": {
-        "title": "Freedom: Physical Intelligence could interest tech giants with its robotics developments - Freedom Broker",
-        "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOeDBiazNRTWFKOUJFUy1Rb0V6UHlJbnFoN291eFk0MlE3cGxqTU45RGdPdUpRTHJpN0Exd2tyb2Z6ZTVsNmN4VW11aU9xOEpCVDdLU1hUSU9xbkQ0dlM4a0NiYndTRTRpajhwY1hHS2tyWXhDSVFPRW1mV3BYMWh6LXdla1lKTUNPai1tOUdZbmpodEw5LWJWWVpFS01NZ3NaZ1RqdGVsc0NoREhqRGJnblFvVUZjRk51QXlBZWg4WWlUalE?oc=5",
-        "pubDate": "Fri, 09 Oct 2026 16:27:07 GMT"
+        "title": "Rezolv Raises $12.5m Series A to Scale AI Lending Platform - The Fintech Times",
+        "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOLXZUS1Y1ZU1vWGZEN0hpS2tSTlVyVVhzc0ptSXpTTWNqXzZhdXZNX0NucmRFUDN3RGVDd2RfQ016YVlzT2ZoaUJQTnd5Yko2T3NVd1g5dTZybWNGTVoxb2IyMmZJT250WnREMmlJLTlNZ05nQTVHYXRzQVNadF9KYTdBMURwTzgyVDNSWHRDRQ?oc=5",
+        "pubDate": "Fri, 09 Oct 2026 02:00:52 GMT"
       },
       "sparkline": null
     },
@@ -93,9 +138,9 @@
       "logo": "https://www.google.com/s2/favicons?domain=rocketlabusa.com&sz=128",
       "ticker": "RKLB",
       "headline": {
-        "title": "Rocket Lab Is Getting Closer to SpaceX - TradingView",
-        "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQSllidTBubHVTTHNQc1pHWlFfM3kzTnUzb21zV3JaQ1I4cEFEQVJnLUlzWkhDTC1uMy1iT09aek5oOFpvMFpiRDRGRXJlNWp1aG1neEg4cXVUbHR0NkpKZzBEYk5BT1BiWks4cDQtYzVBSnM1bU8tejNlSnBPb3lpbUNTZWtLcWNIbG1aaEsxNzNrN0JhMm1jNUFaVldLd2M?oc=5",
-        "pubDate": "Fri, 09 Oct 2026 12:24:14 GMT"
+        "title": "Rocket Lab Fell Hard Over The Last 3 Months: Wall Street Pro Predicts It Doubles From Today - 24/7 Wall St.",
+        "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPZllKUHU4WmNyaEhKNHlqOGJSOGgxZ1M2djNyTGxmWXJoTXpyVXd4Q0NPRDhVS3RvNWI2amhKT0p2M2E3LVNuMGhUNDBxMVE2bzdfTmlUcUZaaW5hN1BtaExsWVBUcTZFbklZMm5UQ29nWlNwOC00dlJJTEJnYThVdDNKS1ZxdnNqcDd2NEt1ZW1mQzBlNHVlTy1SWHNtaU54VHhFU3d6T0JRdUNGbXZwLTNFeHBla0xmdHZNcVNhSEtJQ0UySTRRT1NEOXU3aEE?oc=5",
+        "pubDate": "Thu, 08 Oct 2026 16:45:00 GMT"
       },
       "sparkline": [
         61.959999084472656,
@@ -121,51 +166,6 @@
         68.4000015258789,
         68.20999908447266
       ]
-    },
-    {
-      "name": "Scale AI",
-      "tag": "AI Data",
-      "desc": "Data labelling and RLHF infrastructure powering frontier AI",
-      "url": "https://scale.com",
-      "initials": "S",
-      "logo": "https://www.google.com/s2/favicons?domain=scale.com&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "Rezolv Raises $12.5m Series A to Scale AI Lending Platform - The Fintech Times",
-        "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOLXZUS1Y1ZU1vWGZEN0hpS2tSTlVyVVhzc0ptSXpTTWNqXzZhdXZNX0NucmRFUDN3RGVDd2RfQ016YVlzT2ZoaUJQTnd5Yko2T3NVd1g5dTZybWNGTVoxb2IyMmZJT250WnREMmlJLTlNZ05nQTVHYXRzQVNadF9KYTdBMURwTzgyVDNSWHRDRQ?oc=5",
-        "pubDate": "Fri, 09 Oct 2026 02:00:52 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "OpenAI",
-      "tag": "LLMs",
-      "desc": "Creator of ChatGPT and the GPT family of foundation models",
-      "url": "https://openai.com",
-      "initials": "OAI",
-      "logo": "https://www.google.com/s2/favicons?domain=openai.com&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "OpenAI annualised revenues $20bn less than previously signalled - Financial Times",
-        "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOZWVveXJiRHFiS1dWdDdYZWtlWDdFZ3JjckdfMnRGLVpiZWxzRjdGNGZHcnZtMmZTaXQ4U1Fmc2ZhVzhFNXBxbDRwcThvR2pVMGdKdUR2QW5fQ0ZhSDB5ZzFwOHZLellkZXA1ZW4ySUd5bFo3Uno0VE92Y1ZHVm54MU5DTVA?oc=5",
-        "pubDate": "Thu, 08 Oct 2026 16:42:34 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "Waymo",
-      "tag": "Autonomy",
-      "desc": "The most miles driven autonomously of any robotaxi service",
-      "url": "https://waymo.com",
-      "initials": "W",
-      "logo": "https://www.google.com/s2/favicons?domain=waymo.com&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "Waymo Closes $5 Billion Debt Financing to Accelerate Business Expansion - Waymo",
-        "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBnaWFGRS1PMldDZTc4WGZhbHlNRUZYUmNZY2V4YnB2Q3dSQzIzSm9pUFZPSk1xSDNNZUZ2Z2FrVS1rWU1DTG80dGVIZmRYS2VLUHVDTVdnUkNHYWxQTjBDM0dndkhJRGhOYkJNb2ppeWZ3X0RlOHI4?oc=5",
-        "pubDate": "Thu, 08 Oct 2026 13:48:57 GMT"
-      },
-      "sparkline": null
     }
   ]
 }
