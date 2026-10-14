@@ -1,6 +1,89 @@
 {
-  "refreshed_at": "2026-10-13T13:53:27.822Z",
+  "refreshed_at": "2026-10-14T11:30:54.741Z",
   "companies": [
+    {
+      "name": "xAI",
+      "tag": "LLMs",
+      "desc": "Elon Musk's AI company, developer of the Grok models",
+      "url": "https://x.ai",
+      "initials": "X",
+      "logo": "https://www.google.com/s2/favicons?domain=x.ai&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "Ofcom says it still has concerns over how X removes illegal hate content - The Next Web",
+        "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQZXZ4SjhnMC1ncW1Ock9qdTFtTk1mdFVTVTJSZjZ5T0dLczRsc1J0OWVlTVJDTWJFVHR3WjRQUkE4ZE10RVJENkxLRHpSVXk4QVF0NVJXUUFBYlpNdU53RGszb1JZNUFFZFFWaGp4ZFdnekViNnFkWlp2OEIzQXVleA?oc=5",
+        "pubDate": "Wed, 14 Oct 2026 11:24:47 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "Palantir",
+      "tag": "Data Analytics",
+      "desc": "Big-data analytics platforms for government and enterprise",
+      "url": "https://palantir.com",
+      "initials": "PL",
+      "logo": "https://www.google.com/s2/favicons?domain=palantir.com&sz=128",
+      "ticker": "PLTR",
+      "headline": {
+        "title": "Palantir is worming its way into the British state – it’s time to curb this controversial US company’s influence - The Guardian",
+        "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOY2FWc1VPZEx5ajkxQU1JT3ZiVFE0UF9ucVZ2aVJXV1FQX2NBdk9KTXNPN3k3LUNrQmVnVUVxTDJsYl9HSnlHMy1MUWt6SW5zTGVDY25ETU82SDN6SHlLQ1VWcUNyQUI1Y29MYkpBQmRuM3RpX0lpYTAyLVlQR2M0U0V4TUxNMXBnMmN3S2pCXzRBVmRnbUR2b2p0WnM4WWdlNlR3RGE2ZEVkbGdZanNzMkpR?oc=5",
+        "pubDate": "Wed, 14 Oct 2026 05:00:00 GMT"
+      },
+      "sparkline": [
+        173.30999755859375,
+        172.55999755859375,
+        174.33999633789062,
+        176.24000549316406,
+        177.63999938964844,
+        183.08999633789062,
+        184.99000549316406,
+        191.7899932861328,
+        192.58999633789062,
+        189.6699981689453,
+        187.47999572753906,
+        186.97000122070312,
+        187.0500030517578,
+        190.0399932861328,
+        188.75,
+        189.39999389648438,
+        192.07000732421875,
+        194.1199951171875,
+        198.77999877929688,
+        209.0500030517578,
+        209,
+        208.6699981689453
+      ]
+    },
+    {
+      "name": "Scale AI",
+      "tag": "AI Data",
+      "desc": "Data labelling and RLHF infrastructure powering frontier AI",
+      "url": "https://scale.com",
+      "initials": "S",
+      "logo": "https://www.google.com/s2/favicons?domain=scale.com&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "Alchera raises £2.7m to scale AI for transport networks - BusinessCloud",
+        "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNVWoyVXRNSDZXR0ZqRVZGcE11eHZ1Ti1yOFE3UTVhRkEyRVBydmFLTUZlbGl5T2ZrMFRDcGtUYTFPNGtKYWVUWmliNkt2RlBQMnNadElTem5pZjExdTZ5aVBhdVM3YVFsTGxFUURlN0JwRm5yRjRPNzJEMFhPNG43Q3Fwb09kSVRHVXBWd1VFcG15QQ?oc=5",
+        "pubDate": "Tue, 13 Oct 2026 23:49:14 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "OpenAI",
+      "tag": "LLMs",
+      "desc": "Creator of ChatGPT and the GPT family of foundation models",
+      "url": "https://openai.com",
+      "initials": "OAI",
+      "logo": "https://www.google.com/s2/favicons?domain=openai.com&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "Saudi OpenAI employee arrested after recording device found in headquarters - The Guardian",
+        "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPQldkOWVYWjktZ0ZrX3lYdmRTRDhpWV9HUEV0NklDRElhWXJyZkRHNEVHQlJnNUJLR2pwb0U2NWpUUWhyYmhscjB6d2Q0WWRyOWRrRWVMY1ZXMWVydXV4YmZTS1A2c0wwTjF4bHlyUXpUTnhMMUxNcVA3eENpZTdtRVp1aEVwOEFENTVFU0ZXcmdPZ0FaNmJTWUZyb2x6RDRY?oc=5",
+        "pubDate": "Tue, 13 Oct 2026 22:08:00 GMT"
+      },
+      "sparkline": null
+    },
     {
       "name": "CrowdStrike",
       "tag": "Cybersecurity",
@@ -10,9 +93,9 @@
       "logo": "https://www.google.com/s2/favicons?domain=crowdstrike.com&sz=128",
       "ticker": "CRWD",
       "headline": {
-        "title": "XM Cyber prepares for major layoffs after $600 million CrowdStrike deal - CTech",
-        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBQb1pHWl92dE85REVqN3pCTFVlNVRaM2tTTGN1SGlfVExyemNBbnFnX0pES0pLUVprZkRNNUJjTVlJWWNIOVNuLTl2Z3EzcG16OG9PZUszcGlNODN3WTB5TWNLdlhkY28?oc=5",
-        "pubDate": "Tue, 13 Oct 2026 11:02:00 GMT"
+        "title": "XM Cyber lays off 250 of its 300 Israeli employees following $600 million CrowdStrike deal - CTech",
+        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5GNzJsQi1fQWxNX2RKckFfczJ6SkJuUkUwTEVyaHNDWkYxOXNIREYwLTBhVzRPZHNqSUhQMlB5ZnZ0VWNSTUplTWxCc25mekFEUE5wZnBRdlFaVHMyc3MyN0FGeXNEOVk?oc=5",
+        "pubDate": "Tue, 13 Oct 2026 18:16:00 GMT"
       },
       "sparkline": [
         235.3800048828125,
@@ -36,36 +119,21 @@
         263.010009765625,
         275.0400085449219,
         263.010009765625,
-        265.8900146484375
+        261.2099914550781
       ]
     },
     {
-      "name": "Anthropic",
-      "tag": "LLMs",
-      "desc": "AI safety company behind the Claude family of models",
-      "url": "https://anthropic.com",
-      "initials": "AN",
-      "logo": "https://www.google.com/s2/favicons?domain=anthropic.com&sz=128",
+      "name": "Cursor",
+      "tag": "Code Editor",
+      "desc": "AI-native code editor that pairs with Claude and GPT-4",
+      "url": "https://cursor.com",
+      "initials": "C",
+      "logo": "https://www.google.com/s2/favicons?domain=cursor.com&sz=128",
       "ticker": null,
       "headline": {
-        "title": "Anthropic warns rogue AI agents may ‘self-replicate’ to hijack ovens - Financial Times",
-        "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQYVdrSG5aLUJNY3BCQ3F1SV9TQXMwV04wM3V1ZnNnYTFHQVRZTFJHMHduMllELUVFWHNZV0t5UnlrWm9hVEJSdVA0X3phRjNfVWp0UHJ6eGVjb1N3aUJERG45LUVYaVNrTk0wVzI5VHo0eHhNdEU0dmdkbk9HTEhwMExxeWQ?oc=5",
-        "pubDate": "Tue, 13 Oct 2026 10:11:23 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "Scale AI",
-      "tag": "AI Data",
-      "desc": "Data labelling and RLHF infrastructure powering frontier AI",
-      "url": "https://scale.com",
-      "initials": "S",
-      "logo": "https://www.google.com/s2/favicons?domain=scale.com&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "Accenture Acquires Sagacity Solutions to Scale AI-Driven Customer Intelligence Across Accenture Song’s UK &amp; Ireland Operations - Accenture",
-        "link": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxQTm9xS0FVNTN3Q0FfWlFCY09Lb0M2T3djVE9CNG5CWlg5OEhCa1pDRG9BZjJvRE5QYmhtWVU4RjN3UVlETlQzZGxEUzZCb3ltVnNSWWhRbEVzbjd1MkZKTFgxUUpsdWZwX3dDNkpRVjUtaFpLb3RsbURjNGJlY3B2TGpGbmhEQ0s2MFRDSUtjVVZPT3luU0NmbFVsaldPRTJOU1ZPdzJjQ1V5M0N1Q2FQYlBpRlRYbkdYSGNtYU1NTmFzd2FkWjJXYzhkZ1VmSXVOaGIxWXp4NFBhbEhLdGFaV0o3cmZmc0lBb29ldzRQSjZvRGNwaVgwMA?oc=5",
-        "pubDate": "Tue, 13 Oct 2026 10:10:27 GMT"
+        "title": "SpaceX Unifies X Premium, Grok, and Cursor Under a Single 'X Subscription' - PCMag UK",
+        "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOQk0zOExTR2t0Z2JRZTR2cDlWUUEweFBFRzhIQWM1R1AxU2c2WGUzYm5mblR4czJ1eGx4NVRxRjhTakc3VTZUMnFhcTZEUjI2RnhZbWZ6d1NlYkRXMmVabVhFTkpZaGxyWVVKejc3RkFsald1d3N3RTJsalU4SzZTdVAyUDY4eF9wNkR1VnFJdWxDSEt1bEtIUXZfd3FGb0VQcXN3?oc=5",
+        "pubDate": "Tue, 13 Oct 2026 16:10:24 GMT"
       },
       "sparkline": null
     },
@@ -85,62 +153,17 @@
       "sparkline": null
     },
     {
-      "name": "xAI",
+      "name": "Anthropic",
       "tag": "LLMs",
-      "desc": "Elon Musk's AI company, developer of the Grok models",
-      "url": "https://x.ai",
-      "initials": "X",
-      "logo": "https://www.google.com/s2/favicons?domain=x.ai&sz=128",
+      "desc": "AI safety company behind the Claude family of models",
+      "url": "https://anthropic.com",
+      "initials": "AN",
+      "logo": "https://www.google.com/s2/favicons?domain=anthropic.com&sz=128",
       "ticker": null,
       "headline": {
-        "title": "AI company that Elon Musk’s xAI and Meta once 'fought' to partner with has filed for bankruptcy, says wil - The Times of India",
-        "link": "https://news.google.com/rss/articles/CBMiqgJBVV95cUxOZElJVjM2VHdqM09jSWVpNV9NdzBBRW1jX0JNUVdQSDZEV3RWdXFxUVRqT1BIQWJPeVRwdnJQUnF2M1hSR3dQVWg5Q0IyX1duc3BFSUxvMFRsWmdXZzU1eVVUbVB6RTY5VklpaDZ4TUk2QnJPVmdBMFN4aEl5WHBrRXlhdElNTUxkcWV5UEZmMmR0MHpGcEVQaVJYTjNnS0ZfR3o3YmpfNnlOUlhYOWF6Z3cxeFlfQWhpdFdrb2x6djJ1b3QwSkI0LVVNUHZwdEZXOGVrWEx0ZjJsLXNub0Z6TzZsNHVlQ3ItcFZOWXVPLXRDcEtEcGh0X3lqdTVXVkJ1YWwwTUlfZDVldEZ5THdiVjJfbG5LaERpWkNUSzlmYzFqVVhNclhjQ3Jn0gGvAkFVX3lxTE1kdU1IQmY3bWhDVHFPWnh6dEVEYkFTUXhTZUVNU0tHZ0lvLWdSNUNhYnVCMmlpR3oyQk1PRVBzSnFRT3BjVFVxQXlVSTBNN0NpeHVtdjQ5RXJCVnllcDBnYjdwRzg3cDdQMWRkTUhrbEZFXzgxOVlrTm1jSzAyNDlrN3dtdHQyaklCT0lMV2ZyYkRlUFZhRVczaS1WRUU3dzNTaXRjUnRfWGducS1QMDVBWk41Y29PQ21NTDhQcERsVmtORUk4aVZPSFUwR3pPRzhHM19QbTVfTFN6bzZRR004djlJaVFLLTZQWHo3ZGh2X3FZTm1IbmJWNzFzQnZMMTk0X0dfajV2QUVSVndqU0pVQVJReFI4cnRRNTdZekprNGhqaGd5bXBhRzFjd0hlaw?oc=5",
-        "pubDate": "Tue, 13 Oct 2026 06:32:00 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "Waymo",
-      "tag": "Autonomy",
-      "desc": "The most miles driven autonomously of any robotaxi service",
-      "url": "https://waymo.com",
-      "initials": "W",
-      "logo": "https://www.google.com/s2/favicons?domain=waymo.com&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "Elon Musk calls Waymo cars ‘pet destroyers’ as robotaxi rivals clash over safety - Fox Business",
-        "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxONGU5dmV1R2VERlRIblZGd1VWbDlsVTRTN3dUOEtVRkxqMUxGMWlCQ2JZVGxxNVdKQUM0dDY0RlBuTnZuM0hjWDFQa0FQWmd1MkVnaHZQcXo5dTQ3NjRFQzhoaXcwWUpaY19JOEZiZzdQMlk5WUNJVE9iV1dRUTZwNTFiY05xWGV2cHltMFJ5TjY4TEFrY19aUDhqanFXUGlJUTVnNE1ESWJpMS1IRXEyWnhYczVuX1Nu0gG-AUFVX3lxTE15ZHVUU1NnWVVfQUhhZmx3QXhNZW9ISlc3ckY3ektSV1drcThTYzlrZlU3TFl5N1l0UnlGUXBvTi1DN2JnOUhSVmxINnMwOFZDNlRSTUM1SHp2M1RzUDljTW1ORkFaUllRQ1dwUU1IcnNQb3dXY3M4LTI3YjRPelA1Q3FRTmdEMU9OWWRYc25KV2wxVU53MldBcEFzS2tRczZDVEV6T0hwa2VsajVhZ050NkEtWkEtTVg4a2J4b2c?oc=5",
-        "pubDate": "Tue, 13 Oct 2026 02:02:00 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "Neuralink",
-      "tag": "Brain-Computer",
-      "desc": "Implantable neural interfaces for restoring and augmenting human capability",
-      "url": "https://neuralink.com",
-      "initials": "NL",
-      "logo": "https://www.google.com/s2/favicons?domain=neuralink.com&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "2 Brain-Computer Interface Stocks to Watch While Neuralink Stays Private - InvestorPlace",
-        "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNYm1relItOHNDSjA1ZVlocGRmR01HZFZoY0lyWEpOWElDbGVkY3FWZlNrWHA0MGFtcGlzZ3o0eDVlVXROMDlyRnJPeWZVcTNpRUNWZWhEMnlsZVhIMkpnaXZ3TGVmaDJtWnc3WnFyRkcwaFZPVVhNUjdmV3VBRHpoT3pybXlGbThwTWhSOW9fd25UcEd6VTJnMUUxT3dlSG9DUGwya1Y1TWJSMmd6RUM3SkgxZmZFOFVrdGtGck5vNWpRNTYxMjJz?oc=5",
-        "pubDate": "Tue, 13 Oct 2026 00:53:24 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "Commonwealth Fusion",
-      "tag": "Energy",
-      "desc": "Next-generation tokamak fusion for clean energy at scale",
-      "url": "https://cfs.energy",
-      "initials": "CFS",
-      "logo": "https://www.google.com/s2/favicons?domain=cfs.energy&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "US Genesis Mission backs digital twin to predict fusion plasma in under 20 minutes - Interesting Engineering",
-        "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPX0lYNmNyenpkTnNPQ1Rlcmw5dDZsNFBhZnQ1TV9fSHMtRTMzdG1tT0llaFFUM0NhUHVGTDlhMmF5TjI5c0ExT21rZ2dkMTJlRjBPVThBdkl3cVVhLXdvODNKRjBwQTBrcnRZcjVjTmJ2Ml9nVS1VQ3BYVEUyZ3RMNmF3WktJVDVzYXlvYU1jQjE2cW8?oc=5",
-        "pubDate": "Mon, 12 Oct 2026 23:58:00 GMT"
+        "title": "Anthropic warns AI models could soon copy themselves across home devices - CNBC",
+        "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPQWNyQzh5ak9WNUlLTW1wbWV4QkhuWGFqUHBocXhiZnllY0t2VGRXMWxiVTRpX05neGhMSlBXQml4VXlOZGRmazJ3VVhMRmlhVWRkd2JzNkd1Vm9RMlpWTDNUamZnQ3lJcXZJRDJDNGFBTDlhbDNOVEF5cUxiX1h3RG10bnM3OW9JQjRZN0R1OXTSAZYBQVVfeXFMTVRBTkdGclhPT1A4aEJuZW9Gdm1ndW14S1JoZGRZamN6Zlo3TFpQV0k5cjE5TEIxWnRBSFR4R1VkY1licnBqX0x2aGVJMC1vQzRLYXVYbkszcUxaSFdNMTZ2ZVZtYk5ZZ1BXQllBUTA5Z09BcGR2ZHYtUXB5WW52OXpTci1VcUtIbWhQanNXMUxEVXFIODl3?oc=5",
+        "pubDate": "Tue, 13 Oct 2026 08:27:20 GMT"
       },
       "sparkline": null
     }
