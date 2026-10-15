@@ -1,6 +1,51 @@
 {
-  "refreshed_at": "2026-10-14T11:30:54.741Z",
+  "refreshed_at": "2026-10-15T11:08:28.280Z",
   "companies": [
+    {
+      "name": "Mistral AI",
+      "tag": "LLMs",
+      "desc": "Europe's leading open-weight AI foundation models",
+      "url": "https://mistral.ai",
+      "initials": "M",
+      "logo": "https://www.google.com/s2/favicons?domain=mistral.ai&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "CERN, Mistral Team Up to Accelerate AI for Science - Mirage News",
+        "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNVWpRdnNCWDVQSGlfVGY0clNtWHNnUi1CLWp2dlVCWG4xT1dTOWlJUi1hZDY2cE5GZHJWU1l2QlJ5UEUwX2RlYzE2TngxbzBHSzlwV1YwZXRqY2FGd3pPWU5hbE5vbjNEWXRNTVpqaHdwdmF2LUpJN252T2x1ZTFNdXd3Yw?oc=5",
+        "pubDate": "Thu, 15 Oct 2026 10:02:00 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "Scale AI",
+      "tag": "AI Data",
+      "desc": "Data labelling and RLHF infrastructure powering frontier AI",
+      "url": "https://scale.com",
+      "initials": "S",
+      "logo": "https://www.google.com/s2/favicons?domain=scale.com&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "Alchera Technologies raises £2.7M to scale AI platform for transport networks - New Civil Engineer",
+        "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPdk9zOFFJQ1JPWTNmRGY5M1N0NHBUbEZ5RVJsSE9YdEdqZXdxd2FmcGN3djBsbEZUN0dLX3FsREVkWm9oU1BPZV8wNDJkZ3lKWVNZdWpHa0FfcGZreTFQY3AxMUlkMm05WENqZUw3M09oRlJKMGZOZUFLTHJmbnM5WWpDcmtpWmRXMmJNMGVORmlUMWIycEQtbVRpSGEwVDRyaWlIUWxuUi1SRGptX2p0WDd0Zl8taU1pRXpMNEIwbWRwelAyOWdz?oc=5",
+        "pubDate": "Thu, 15 Oct 2026 09:12:56 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "Anthropic",
+      "tag": "LLMs",
+      "desc": "AI safety company behind the Claude family of models",
+      "url": "https://anthropic.com",
+      "initials": "AN",
+      "logo": "https://www.google.com/s2/favicons?domain=anthropic.com&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "Anthropic tells investors quarterly revenue up nearly 50% to $16.8bn ahead of IPO - Financial Times",
+        "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPREFXR25nQUF4WXJFTFcwN01WaS1OUWphZkFKWmRLVFlza2c3Q194d1JVdWdpRU9LWlNyZlE4REZEUEdhZzA4Ykc4UEpxZmdaaUp5ckZIcG5zNXdOYUdIYm9WQ3JxOXktR2I0d1Jab0g1T0lRcERma2FrUmx6ekZoRGJPazE?oc=5",
+        "pubDate": "Wed, 14 Oct 2026 22:06:31 GMT"
+      },
+      "sparkline": null
+    },
     {
       "name": "xAI",
       "tag": "LLMs",
@@ -10,9 +55,39 @@
       "logo": "https://www.google.com/s2/favicons?domain=x.ai&sz=128",
       "ticker": null,
       "headline": {
-        "title": "Ofcom says it still has concerns over how X removes illegal hate content - The Next Web",
-        "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQZXZ4SjhnMC1ncW1Ock9qdTFtTk1mdFVTVTJSZjZ5T0dLczRsc1J0OWVlTVJDTWJFVHR3WjRQUkE4ZE10RVJENkxLRHpSVXk4QVF0NVJXUUFBYlpNdU53RGszb1JZNUFFZFFWaGp4ZFdnekViNnFkWlp2OEIzQXVleA?oc=5",
-        "pubDate": "Wed, 14 Oct 2026 11:24:47 GMT"
+        "title": "OpenAI hands its data centre and compute operation to a former xAI executive - The Next Web",
+        "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBzRzNxZ3ktTjZZVmhvdEYwVVRXSi1mbm5DSkRTeHdpc3pGSWZ4QVQtSGdycC1TOHBjeGY2T0tqbmVES3Z1TGgxZGwxdFhVOG1WNFpLX092R19UaW83VlRnb0NfWllVVDlYZGVlOHl5N2N1bjU1c1hJ?oc=5",
+        "pubDate": "Wed, 14 Oct 2026 21:05:35 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "OpenAI",
+      "tag": "LLMs",
+      "desc": "Creator of ChatGPT and the GPT family of foundation models",
+      "url": "https://openai.com",
+      "initials": "OAI",
+      "logo": "https://www.google.com/s2/favicons?domain=openai.com&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "OpenAI’s London staff receive average of £2.3m per person annually - The Guardian",
+        "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOc2w2WlY3bjN4ZEx2QjI2ME1kemdlYU5HZ2ZBRy1TTTdVTHVFT2JqcEs2S1d5UHpFY0l3RUFiWGY2WGJVcjVHYjZ3RjVXdzZqLTMzYS1mNWFubWVmY0tiUWNnX0I4UjBKdTZQTmxPRWtGeFdWVXZVS1VjT3pUZnNnMUFIc0Z4alp0RC1iRjlkSnVMSEFIWUtTdUZsV2plNXF4?oc=5",
+        "pubDate": "Wed, 14 Oct 2026 19:15:00 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "Anduril",
+      "tag": "Defense AI",
+      "desc": "Autonomous defense systems and AI-enabled military hardware",
+      "url": "https://anduril.com",
+      "initials": "A",
+      "logo": "https://www.google.com/s2/favicons?domain=anduril.com&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "Anduril in Talks to Sell Insider Shares at Roughly $90 Billion Valuation - Bloomberg.com",
+        "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOb3N3c2s5T2p5U2FJWHh2Yy1vMUZjWWVsX19jZG0yVVFaeTIzRFJWRldScEpCcU9Lb1FMMWdNWXRkeEdvRFlZS01IRVE3a2JnWkgteXdzRmxIRGVaYXY1N3lyVE5BczhFUUhJZUpTMC04R2JKWUs0UXpJdW03Q2RiSXowdWt4cG00YnM2TW1aWUlLUTR6a0NmZHVvbVBRVi0yTW9YZV9VQlVQMldvUlh2UFVoSmlXNm9MWFhZaDVPbw?oc=5",
+        "pubDate": "Wed, 14 Oct 2026 17:16:53 GMT"
       },
       "sparkline": null
     },
@@ -25,12 +100,11 @@
       "logo": "https://www.google.com/s2/favicons?domain=palantir.com&sz=128",
       "ticker": "PLTR",
       "headline": {
-        "title": "Palantir is worming its way into the British state – it’s time to curb this controversial US company’s influence - The Guardian",
-        "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOY2FWc1VPZEx5ajkxQU1JT3ZiVFE0UF9ucVZ2aVJXV1FQX2NBdk9KTXNPN3k3LUNrQmVnVUVxTDJsYl9HSnlHMy1MUWt6SW5zTGVDY25ETU82SDN6SHlLQ1VWcUNyQUI1Y29MYkpBQmRuM3RpX0lpYTAyLVlQR2M0U0V4TUxNMXBnMmN3S2pCXzRBVmRnbUR2b2p0WnM4WWdlNlR3RGE2ZEVkbGdZanNzMkpR?oc=5",
-        "pubDate": "Wed, 14 Oct 2026 05:00:00 GMT"
+        "title": "Palantir and Sadiq Khan drop legal battle over Met contract - The Guardian",
+        "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNVFRxVnpJcGpQekFUTjg3TTBtV1lpREhJQU5oc3F3bzhGWXotZGNhdEhoLVE4WURzaUJzRFltV1FwS0pLRmNYLXppVENNcFA3RG5mOFhfU0Y2b0tkd3lxZ3Blc1hBNUNQcmpwWDdyYVlSV0p6V1AyZHVrRlluaDg2eUpjNVdLQ2ZRUF82M2lZWi1WcHFLYjByWk12TG5MelM2amxVYm1VTXlZYnRzazFV?oc=5",
+        "pubDate": "Wed, 14 Oct 2026 16:05:00 GMT"
       },
       "sparkline": [
-        173.30999755859375,
         172.55999755859375,
         174.33999633789062,
         176.24000549316406,
@@ -51,121 +125,47 @@
         198.77999877929688,
         209.0500030517578,
         209,
-        208.6699981689453
+        208.6699981689453,
+        200.97000122070312
       ]
     },
     {
-      "name": "Scale AI",
-      "tag": "AI Data",
-      "desc": "Data labelling and RLHF infrastructure powering frontier AI",
-      "url": "https://scale.com",
-      "initials": "S",
-      "logo": "https://www.google.com/s2/favicons?domain=scale.com&sz=128",
-      "ticker": null,
+      "name": "Rocket Lab",
+      "tag": "Space",
+      "desc": "Small-satellite launch provider and space systems manufacturer",
+      "url": "https://rocketlabusa.com",
+      "initials": "RL",
+      "logo": "https://www.google.com/s2/favicons?domain=rocketlabusa.com&sz=128",
+      "ticker": "RKLB",
       "headline": {
-        "title": "Alchera raises £2.7m to scale AI for transport networks - BusinessCloud",
-        "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNVWoyVXRNSDZXR0ZqRVZGcE11eHZ1Ti1yOFE3UTVhRkEyRVBydmFLTUZlbGl5T2ZrMFRDcGtUYTFPNGtKYWVUWmliNkt2RlBQMnNadElTem5pZjExdTZ5aVBhdVM3YVFsTGxFUURlN0JwRm5yRjRPNzJEMFhPNG43Q3Fwb09kSVRHVXBWd1VFcG15QQ?oc=5",
-        "pubDate": "Tue, 13 Oct 2026 23:49:14 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "OpenAI",
-      "tag": "LLMs",
-      "desc": "Creator of ChatGPT and the GPT family of foundation models",
-      "url": "https://openai.com",
-      "initials": "OAI",
-      "logo": "https://www.google.com/s2/favicons?domain=openai.com&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "Saudi OpenAI employee arrested after recording device found in headquarters - The Guardian",
-        "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPQldkOWVYWjktZ0ZrX3lYdmRTRDhpWV9HUEV0NklDRElhWXJyZkRHNEVHQlJnNUJLR2pwb0U2NWpUUWhyYmhscjB6d2Q0WWRyOWRrRWVMY1ZXMWVydXV4YmZTS1A2c0wwTjF4bHlyUXpUTnhMMUxNcVA3eENpZTdtRVp1aEVwOEFENTVFU0ZXcmdPZ0FaNmJTWUZyb2x6RDRY?oc=5",
-        "pubDate": "Tue, 13 Oct 2026 22:08:00 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "CrowdStrike",
-      "tag": "Cybersecurity",
-      "desc": "Cloud-native endpoint protection and threat intelligence",
-      "url": "https://crowdstrike.com",
-      "initials": "CS",
-      "logo": "https://www.google.com/s2/favicons?domain=crowdstrike.com&sz=128",
-      "ticker": "CRWD",
-      "headline": {
-        "title": "XM Cyber lays off 250 of its 300 Israeli employees following $600 million CrowdStrike deal - CTech",
-        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5GNzJsQi1fQWxNX2RKckFfczJ6SkJuUkUwTEVyaHNDWkYxOXNIREYwLTBhVzRPZHNqSUhQMlB5ZnZ0VWNSTUplTWxCc25mekFEUE5wZnBRdlFaVHMyc3MyN0FGeXNEOVk?oc=5",
-        "pubDate": "Tue, 13 Oct 2026 18:16:00 GMT"
+        "title": "Is Rocket Lab Stock Ready For A Neutron Delay? - Yahoo Finance",
+        "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPa2hpRUU4THNaQ0J3SWowRWVVMGtUM2RsTnZqSXpSemhkS0poRDZMcXlCeUxBYV9zMVVTNXF5bTRmRlQySlN1OVVrTTJGZXBMaUphWnc0elJ0Sk9xd2JXa3NsVXB4bHhyZUxzVlEwcUIwXzhiUHdTR2lZMHVMY0kzc3EtdkpUekpzZXJrRFVMRUhneDZmeFhtektvRQ?oc=5",
+        "pubDate": "Wed, 14 Oct 2026 12:28:59 GMT"
       },
       "sparkline": [
-        235.3800048828125,
-        242.49000549316406,
-        241.36000061035156,
-        245.6999969482422,
-        237.64999389648438,
-        249.35000610351562,
-        250.05999755859375,
-        262.489990234375,
-        259.6700134277344,
-        252.1300048828125,
-        259.25,
-        262.739990234375,
-        264.75,
-        266.0899963378906,
-        270.0400085449219,
-        272.6700134277344,
-        278.8599853515625,
-        265.44000244140625,
-        263.010009765625,
-        275.0400085449219,
-        263.010009765625,
-        261.2099914550781
+        63.54999923706055,
+        63.70000076293945,
+        67.81999969482422,
+        64.56999969482422,
+        69.88999938964844,
+        71.9800033569336,
+        70.30999755859375,
+        73.61000061035156,
+        73.94999694824219,
+        72.19000244140625,
+        69.69999694824219,
+        69.68000030517578,
+        70.45999908447266,
+        73.91999816894531,
+        73.0199966430664,
+        75.05999755859375,
+        71.91999816894531,
+        68.4000015258789,
+        68.20999908447266,
+        65.70999908447266,
+        64.22000122070312,
+        59.18000030517578
       ]
-    },
-    {
-      "name": "Cursor",
-      "tag": "Code Editor",
-      "desc": "AI-native code editor that pairs with Claude and GPT-4",
-      "url": "https://cursor.com",
-      "initials": "C",
-      "logo": "https://www.google.com/s2/favicons?domain=cursor.com&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "SpaceX Unifies X Premium, Grok, and Cursor Under a Single 'X Subscription' - PCMag UK",
-        "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOQk0zOExTR2t0Z2JRZTR2cDlWUUEweFBFRzhIQWM1R1AxU2c2WGUzYm5mblR4czJ1eGx4NVRxRjhTakc3VTZUMnFhcTZEUjI2RnhZbWZ6d1NlYkRXMmVabVhFTkpZaGxyWVVKejc3RkFsald1d3N3RTJsalU4SzZTdVAyUDY4eF9wNkR1VnFJdWxDSEt1bEtIUXZfd3FGb0VQcXN3?oc=5",
-        "pubDate": "Tue, 13 Oct 2026 16:10:24 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "Physical Intelligence",
-      "tag": "Embodied AI",
-      "desc": "Training AI systems to manipulate physical objects",
-      "url": "https://physicalintelligence.company",
-      "initials": "PI",
-      "logo": "https://www.google.com/s2/favicons?domain=physicalintelligence.company&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "Startup Releases 50-Billion-Parameter Physical General Foundation Model For Instant Robot Intelligence - Forbes",
-        "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxNTjBrd3Y2N0hPeVU2OHBybExrN3k0TUpicnhpZWFpR2RKME8tMENXbXVYSzNabEM1eFM1aC16eE41SlpzTUV3akxiZmxFZGtsTzFnMGRHNEtyR2VOYnQzUzhYN0p2X1FIdDhGc1pPelYyVmZGUXdpQWNZYW1yOGtBLUs3Y1JYMG5vZ1hWa0NCeVF5eXNLMFQ3dFZJay1HTEhnRkdVNEZGX1FKUmZ0c2F1QzVtUE8wZXdEcU9fczVrU0h6dUVfLTA1eXd2LTh5NHdYbnZaSTdFN25va3ZTV2ptUkVOcm1HZ1FlRzctWA?oc=5",
-        "pubDate": "Tue, 13 Oct 2026 09:09:50 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "Anthropic",
-      "tag": "LLMs",
-      "desc": "AI safety company behind the Claude family of models",
-      "url": "https://anthropic.com",
-      "initials": "AN",
-      "logo": "https://www.google.com/s2/favicons?domain=anthropic.com&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "Anthropic warns AI models could soon copy themselves across home devices - CNBC",
-        "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPQWNyQzh5ak9WNUlLTW1wbWV4QkhuWGFqUHBocXhiZnllY0t2VGRXMWxiVTRpX05neGhMSlBXQml4VXlOZGRmazJ3VVhMRmlhVWRkd2JzNkd1Vm9RMlpWTDNUamZnQ3lJcXZJRDJDNGFBTDlhbDNOVEF5cUxiX1h3RG10bnM3OW9JQjRZN0R1OXTSAZYBQVVfeXFMTVRBTkdGclhPT1A4aEJuZW9Gdm1ndW14S1JoZGRZamN6Zlo3TFpQV0k5cjE5TEIxWnRBSFR4R1VkY1licnBqX0x2aGVJMC1vQzRLYXVYbkszcUxaSFdNMTZ2ZVZtYk5ZZ1BXQllBUTA5Z09BcGR2ZHYtUXB5WW52OXpTci1VcUtIbWhQanNXMUxEVXFIODl3?oc=5",
-        "pubDate": "Tue, 13 Oct 2026 08:27:20 GMT"
-      },
-      "sparkline": null
     }
   ]
 }
