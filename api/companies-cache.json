@@ -1,81 +1,6 @@
 {
-  "refreshed_at": "2026-10-15T11:08:28.280Z",
+  "refreshed_at": "2026-10-16T11:03:07.697Z",
   "companies": [
-    {
-      "name": "Mistral AI",
-      "tag": "LLMs",
-      "desc": "Europe's leading open-weight AI foundation models",
-      "url": "https://mistral.ai",
-      "initials": "M",
-      "logo": "https://www.google.com/s2/favicons?domain=mistral.ai&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "CERN, Mistral Team Up to Accelerate AI for Science - Mirage News",
-        "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNVWpRdnNCWDVQSGlfVGY0clNtWHNnUi1CLWp2dlVCWG4xT1dTOWlJUi1hZDY2cE5GZHJWU1l2QlJ5UEUwX2RlYzE2TngxbzBHSzlwV1YwZXRqY2FGd3pPWU5hbE5vbjNEWXRNTVpqaHdwdmF2LUpJN252T2x1ZTFNdXd3Yw?oc=5",
-        "pubDate": "Thu, 15 Oct 2026 10:02:00 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "Scale AI",
-      "tag": "AI Data",
-      "desc": "Data labelling and RLHF infrastructure powering frontier AI",
-      "url": "https://scale.com",
-      "initials": "S",
-      "logo": "https://www.google.com/s2/favicons?domain=scale.com&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "Alchera Technologies raises £2.7M to scale AI platform for transport networks - New Civil Engineer",
-        "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPdk9zOFFJQ1JPWTNmRGY5M1N0NHBUbEZ5RVJsSE9YdEdqZXdxd2FmcGN3djBsbEZUN0dLX3FsREVkWm9oU1BPZV8wNDJkZ3lKWVNZdWpHa0FfcGZreTFQY3AxMUlkMm05WENqZUw3M09oRlJKMGZOZUFLTHJmbnM5WWpDcmtpWmRXMmJNMGVORmlUMWIycEQtbVRpSGEwVDRyaWlIUWxuUi1SRGptX2p0WDd0Zl8taU1pRXpMNEIwbWRwelAyOWdz?oc=5",
-        "pubDate": "Thu, 15 Oct 2026 09:12:56 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "Anthropic",
-      "tag": "LLMs",
-      "desc": "AI safety company behind the Claude family of models",
-      "url": "https://anthropic.com",
-      "initials": "AN",
-      "logo": "https://www.google.com/s2/favicons?domain=anthropic.com&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "Anthropic tells investors quarterly revenue up nearly 50% to $16.8bn ahead of IPO - Financial Times",
-        "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPREFXR25nQUF4WXJFTFcwN01WaS1OUWphZkFKWmRLVFlza2c3Q194d1JVdWdpRU9LWlNyZlE4REZEUEdhZzA4Ykc4UEpxZmdaaUp5ckZIcG5zNXdOYUdIYm9WQ3JxOXktR2I0d1Jab0g1T0lRcERma2FrUmx6ekZoRGJPazE?oc=5",
-        "pubDate": "Wed, 14 Oct 2026 22:06:31 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "xAI",
-      "tag": "LLMs",
-      "desc": "Elon Musk's AI company, developer of the Grok models",
-      "url": "https://x.ai",
-      "initials": "X",
-      "logo": "https://www.google.com/s2/favicons?domain=x.ai&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "OpenAI hands its data centre and compute operation to a former xAI executive - The Next Web",
-        "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBzRzNxZ3ktTjZZVmhvdEYwVVRXSi1mbm5DSkRTeHdpc3pGSWZ4QVQtSGdycC1TOHBjeGY2T0tqbmVES3Z1TGgxZGwxdFhVOG1WNFpLX092R19UaW83VlRnb0NfWllVVDlYZGVlOHl5N2N1bjU1c1hJ?oc=5",
-        "pubDate": "Wed, 14 Oct 2026 21:05:35 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "OpenAI",
-      "tag": "LLMs",
-      "desc": "Creator of ChatGPT and the GPT family of foundation models",
-      "url": "https://openai.com",
-      "initials": "OAI",
-      "logo": "https://www.google.com/s2/favicons?domain=openai.com&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "OpenAI’s London staff receive average of £2.3m per person annually - The Guardian",
-        "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOc2w2WlY3bjN4ZEx2QjI2ME1kemdlYU5HZ2ZBRy1TTTdVTHVFT2JqcEs2S1d5UHpFY0l3RUFiWGY2WGJVcjVHYjZ3RjVXdzZqLTMzYS1mNWFubWVmY0tiUWNnX0I4UjBKdTZQTmxPRWtGeFdWVXZVS1VjT3pUZnNnMUFIc0Z4alp0RC1iRjlkSnVMSEFIWUtTdUZsV2plNXF4?oc=5",
-        "pubDate": "Wed, 14 Oct 2026 19:15:00 GMT"
-      },
-      "sparkline": null
-    },
     {
       "name": "Anduril",
       "tag": "Defense AI",
@@ -85,49 +10,26 @@
       "logo": "https://www.google.com/s2/favicons?domain=anduril.com&sz=128",
       "ticker": null,
       "headline": {
-        "title": "Anduril in Talks to Sell Insider Shares at Roughly $90 Billion Valuation - Bloomberg.com",
-        "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOb3N3c2s5T2p5U2FJWHh2Yy1vMUZjWWVsX19jZG0yVVFaeTIzRFJWRldScEpCcU9Lb1FMMWdNWXRkeEdvRFlZS01IRVE3a2JnWkgteXdzRmxIRGVaYXY1N3lyVE5BczhFUUhJZUpTMC04R2JKWUs0UXpJdW03Q2RiSXowdWt4cG00YnM2TW1aWUlLUTR6a0NmZHVvbVBRVi0yTW9YZV9VQlVQMldvUlh2UFVoSmlXNm9MWFhZaDVPbw?oc=5",
-        "pubDate": "Wed, 14 Oct 2026 17:16:53 GMT"
+        "title": "Anduril CEO defends Trump administration contracts: 'We've done incredibly well under Biden' - CNBC",
+        "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNMTNxX3RoYmU4NmhSTm51bWhTa3J2MUZ4bDVHWVl0NGsyNVhaVEQwTzRzUkRVT3ljaG96ZENadW5IUWxydUFzRldSWndhajB3UVduc0dLNkE4X0hHcE04R09pNlJwV0JVNGFVNzRyeHRMSTZFYm5NNnhCV3ltUkdOYnhTV3RHZ9IBiwFBVV95cUxNbXJiZ3NudmRFbC1ETmFaMHVJaEp4Sm9NS3hkMlZKTzU0ZFE2aFVHdkZnQjBrZXE0Ulo1dkdTS0RubzBsc09lVGJPTHYxeTA2YW9fcFUwY0tXTGRwVlU3ZHZRTkZFTUNCcGlnQmNYMy1na1J3R283QUYyamNxcVh5ZG9GTEpqRk1pUDFr?oc=5",
+        "pubDate": "Thu, 15 Oct 2026 17:42:51 GMT"
       },
       "sparkline": null
     },
     {
-      "name": "Palantir",
-      "tag": "Data Analytics",
-      "desc": "Big-data analytics platforms for government and enterprise",
-      "url": "https://palantir.com",
-      "initials": "PL",
-      "logo": "https://www.google.com/s2/favicons?domain=palantir.com&sz=128",
-      "ticker": "PLTR",
+      "name": "Perplexity",
+      "tag": "AI Search",
+      "desc": "Answer engine combining web search with AI-generated summaries",
+      "url": "https://perplexity.ai",
+      "initials": "P",
+      "logo": "https://www.google.com/s2/favicons?domain=perplexity.ai&sz=128",
+      "ticker": null,
       "headline": {
-        "title": "Palantir and Sadiq Khan drop legal battle over Met contract - The Guardian",
-        "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNVFRxVnpJcGpQekFUTjg3TTBtV1lpREhJQU5oc3F3bzhGWXotZGNhdEhoLVE4WURzaUJzRFltV1FwS0pLRmNYLXppVENNcFA3RG5mOFhfU0Y2b0tkd3lxZ3Blc1hBNUNQcmpwWDdyYVlSV0p6V1AyZHVrRlluaDg2eUpjNVdLQ2ZRUF82M2lZWi1WcHFLYjByWk12TG5MelM2amxVYm1VTXlZYnRzazFV?oc=5",
-        "pubDate": "Wed, 14 Oct 2026 16:05:00 GMT"
+        "title": "Exclusive / Perplexity to give away its AI security software - Semafor",
+        "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxObjNjek4yZDJoN0RHOUhRSjBZcmQ4UjJBNldNaU00bGQ1dlQ4dUhKV2xYZlVnWVN1Q2JLd25jTEVZZVByU3FiU1VDQkhGOGFOd0dLZDhoVHVrcExBbXhRRFAxSFRST2pCaS1mSmlVRS1GZHM5OVIyeWhwY3E3VzJ4Vnh2UENFWlZ5d1FaSkgyT1Q3TDQzOHc?oc=5",
+        "pubDate": "Thu, 15 Oct 2026 17:10:00 GMT"
       },
-      "sparkline": [
-        172.55999755859375,
-        174.33999633789062,
-        176.24000549316406,
-        177.63999938964844,
-        183.08999633789062,
-        184.99000549316406,
-        191.7899932861328,
-        192.58999633789062,
-        189.6699981689453,
-        187.47999572753906,
-        186.97000122070312,
-        187.0500030517578,
-        190.0399932861328,
-        188.75,
-        189.39999389648438,
-        192.07000732421875,
-        194.1199951171875,
-        198.77999877929688,
-        209.0500030517578,
-        209,
-        208.6699981689453,
-        200.97000122070312
-      ]
+      "sparkline": null
     },
     {
       "name": "Rocket Lab",
@@ -138,12 +40,11 @@
       "logo": "https://www.google.com/s2/favicons?domain=rocketlabusa.com&sz=128",
       "ticker": "RKLB",
       "headline": {
-        "title": "Is Rocket Lab Stock Ready For A Neutron Delay? - Yahoo Finance",
-        "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPa2hpRUU4THNaQ0J3SWowRWVVMGtUM2RsTnZqSXpSemhkS0poRDZMcXlCeUxBYV9zMVVTNXF5bTRmRlQySlN1OVVrTTJGZXBMaUphWnc0elJ0Sk9xd2JXa3NsVXB4bHhyZUxzVlEwcUIwXzhiUHdTR2lZMHVMY0kzc3EtdkpUekpzZXJrRFVMRUhneDZmeFhtektvRQ?oc=5",
-        "pubDate": "Wed, 14 Oct 2026 12:28:59 GMT"
+        "title": "Neutron’s first launch slips again amid trouble with carbon composites - Ars Technica",
+        "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQYkljOUZfM2h6NWdzYW1abTRwY0ZKS3hucE9RUnZOalVDU0Naa3hub0o5ck5XU1Rka2NlMVJYVlg3Rm9jbVJCZllqOV9ncXdvRWs0V0FPcWdaazB0QXVTUlRaWnJOM0g1c2NGMmxhSVJqYmZEeDZLUWNoZ05hd2ZsTTVTeXpTOXhrQWI3eFc0VFBRQ1czempIWWgtSHhJWUk0NWNLTXdVd0JRcUwx?oc=5",
+        "pubDate": "Thu, 15 Oct 2026 16:57:24 GMT"
       },
       "sparkline": [
-        63.54999923706055,
         63.70000076293945,
         67.81999969482422,
         64.56999969482422,
@@ -164,8 +65,84 @@
         68.20999908447266,
         65.70999908447266,
         64.22000122070312,
-        59.18000030517578
+        59.18000030517578,
+        55.25
       ]
+    },
+    {
+      "name": "Scale AI",
+      "tag": "AI Data",
+      "desc": "Data labelling and RLHF infrastructure powering frontier AI",
+      "url": "https://scale.com",
+      "initials": "S",
+      "logo": "https://www.google.com/s2/favicons?domain=scale.com&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "Scale Partners With NVIDIA on Post Training - Scale AI",
+        "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBKVWs3MHNQb3ZaRmtIdlc2QzFWV3ZBdHFvRmwzWVZUVnFvVXRVbERsbWQ0SkFYc2ZTV2ZrQXpMLW1ZalRpb185VDZ3ajkwNEFIaVdLdVZ2REZEYlhTMXc?oc=5",
+        "pubDate": "Thu, 15 Oct 2026 14:52:29 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "Commonwealth Fusion",
+      "tag": "Energy",
+      "desc": "Next-generation tokamak fusion for clean energy at scale",
+      "url": "https://cfs.energy",
+      "initials": "CFS",
+      "logo": "https://www.google.com/s2/favicons?domain=cfs.energy&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "Is nuclear fusion the future of energy in Virginia? Some officials think so. - WHRO",
+        "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNNU10alItUEdUQlVDU3NNN1RyUTdscEJNM21USjBvbHVuck5leVNLb2dnRnJ1bW1jOGVqcThrTW4yS21xR29QaDNMcU41UXRLbFVWVU5tZTZDZkZpMjY5UU81b1JnRmZsbjBZNjVyQVE0QW95ZktoaldfemVnRWd1T0FEcEVrYjBLak8yaml1N1VwV083WXpicmxXQmhLUDVuVlNWMnJVYlJ6TElja0x4bTJaZU1kc1Z4aXc?oc=5",
+        "pubDate": "Thu, 15 Oct 2026 14:00:00 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "Waymo",
+      "tag": "Autonomy",
+      "desc": "The most miles driven autonomously of any robotaxi service",
+      "url": "https://waymo.com",
+      "initials": "W",
+      "logo": "https://www.google.com/s2/favicons?domain=waymo.com&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "Waymo crash map shows hundreds of driverless car collisions across LA - New York Post",
+        "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPajhtV1ZDYmVLV0N6OHVPcmRJX2p1VzQ3UlJ4TklmUDJqYTF4Vjg4LU85akpUZF9xb24yam9hSGtDamlfbGVpQ1hfTFZjbWJXU291REJRdmFJNzJkaDFzak1XR1ZkUG5NYnJmdUwycTAzV0RsR0RzU0JYdHd0dzZoa1BHUWEzUXJrMERqTElxRmczQzQ?oc=5",
+        "pubDate": "Thu, 15 Oct 2026 13:00:00 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "Mistral AI",
+      "tag": "LLMs",
+      "desc": "Europe's leading open-weight AI foundation models",
+      "url": "https://mistral.ai",
+      "initials": "M",
+      "logo": "https://www.google.com/s2/favicons?domain=mistral.ai&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "CERN and Mistral join forces to accelerate AI for science – Home - Home | CERN",
+        "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPQllxbHdUcnp1V0NUay1vZUlyNnJTNjJmZXNsbWN6Q1JCM2ZRRUNHWjVQRjYydHBlLU82UWJlUUhzX2JCc3h4TVFCUEZkT2RNLUpZMm9WLUdLNlB2ZG1ScXBJZ1hVM1ctd0JLUU9LWEluaTR5eG5HMHg4UGZGQnBYWkRB?oc=5",
+        "pubDate": "Thu, 15 Oct 2026 12:20:32 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "Anthropic",
+      "tag": "LLMs",
+      "desc": "AI safety company behind the Claude family of models",
+      "url": "https://anthropic.com",
+      "initials": "AN",
+      "logo": "https://www.google.com/s2/favicons?domain=anthropic.com&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "Anthropic tells investors quarterly revenue up nearly 50% to $16.8bn ahead of IPO - Financial Times",
+        "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPREFXR25nQUF4WXJFTFcwN01WaS1OUWphZkFKWmRLVFlza2c3Q194d1JVdWdpRU9LWlNyZlE4REZEUEdhZzA4Ykc4UEpxZmdaaUp5ckZIcG5zNXdOYUdIYm9WQ3JxOXktR2I0d1Jab0g1T0lRcERma2FrUmx6ekZoRGJPazE?oc=5",
+        "pubDate": "Wed, 14 Oct 2026 22:06:31 GMT"
+      },
+      "sparkline": null
     }
   ]
 }
