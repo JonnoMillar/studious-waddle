@@ -1,20 +1,141 @@
 {
-  "refreshed_at": "2026-10-16T11:03:07.697Z",
+  "refreshed_at": "2026-10-17T10:23:28.515Z",
   "companies": [
     {
-      "name": "Anduril",
-      "tag": "Defense AI",
-      "desc": "Autonomous defense systems and AI-enabled military hardware",
-      "url": "https://anduril.com",
-      "initials": "A",
-      "logo": "https://www.google.com/s2/favicons?domain=anduril.com&sz=128",
+      "name": "Palantir",
+      "tag": "Data Analytics",
+      "desc": "Big-data analytics platforms for government and enterprise",
+      "url": "https://palantir.com",
+      "initials": "PL",
+      "logo": "https://www.google.com/s2/favicons?domain=palantir.com&sz=128",
+      "ticker": "PLTR",
+      "headline": {
+        "title": "Palantir patient data tech rejected by many NHS trusts in England - The Guardian",
+        "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNWTRqdnpXQ2ZSM0pGMlY2Q0RJUncxenJHcC1fdEI1Sm1qWkhSNUxBNDJFQ0RYSXgxbnV2dDhjSUVqTEpQSmZ2dUx3aVJqZzl2LU5Pc3Rlb3c1cHYtQ0psZkZCVkNPVHhmTC1BYmlYTFVFVFR2WDhESzhEbFZJeGgzWWZsQ1prZXMtNDkyeFJQaFJfYWo3UEdobEJuWVJLWWp4TnpDaHktdVdsVHpsMXBqMWc2aV8yRzg?oc=5",
+        "pubDate": "Sat, 17 Oct 2026 06:00:00 GMT"
+      },
+      "sparkline": [
+        176.24000549316406,
+        177.63999938964844,
+        183.08999633789062,
+        184.99000549316406,
+        191.7899932861328,
+        192.58999633789062,
+        189.6699981689453,
+        187.47999572753906,
+        186.97000122070312,
+        187.0500030517578,
+        190.0399932861328,
+        188.75,
+        189.39999389648438,
+        192.07000732421875,
+        194.1199951171875,
+        198.77999877929688,
+        209.0500030517578,
+        209,
+        208.6699981689453,
+        200.97000122070312,
+        200.5,
+        186.02999877929688
+      ]
+    },
+    {
+      "name": "Anthropic",
+      "tag": "LLMs",
+      "desc": "AI safety company behind the Claude family of models",
+      "url": "https://anthropic.com",
+      "initials": "AN",
+      "logo": "https://www.google.com/s2/favicons?domain=anthropic.com&sz=128",
       "ticker": null,
       "headline": {
-        "title": "Anduril CEO defends Trump administration contracts: 'We've done incredibly well under Biden' - CNBC",
-        "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNMTNxX3RoYmU4NmhSTm51bWhTa3J2MUZ4bDVHWVl0NGsyNVhaVEQwTzRzUkRVT3ljaG96ZENadW5IUWxydUFzRldSWndhajB3UVduc0dLNkE4X0hHcE04R09pNlJwV0JVNGFVNzRyeHRMSTZFYm5NNnhCV3ltUkdOYnhTV3RHZ9IBiwFBVV95cUxNbXJiZ3NudmRFbC1ETmFaMHVJaEp4Sm9NS3hkMlZKTzU0ZFE2aFVHdkZnQjBrZXE0Ulo1dkdTS0RubzBsc09lVGJPTHYxeTA2YW9fcFUwY0tXTGRwVlU3ZHZRTkZFTUNCcGlnQmNYMy1na1J3R283QUYyamNxcVh5ZG9GTEpqRk1pUDFr?oc=5",
-        "pubDate": "Thu, 15 Oct 2026 17:42:51 GMT"
+        "title": "Anthropic offers Blackstone double-digit yield in latest chip financing - Financial Times",
+        "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOYmFpNlpUSHlsQlNoUVJMUVlfMXN1MjlOcElmRzVOT3RlbC1haEJNY3hsSXFpeUNrZDFHQ3FCeVZITjJaRV9BcUZsQlZ4MFlieEVjVTN2UEYxSDB5MUlPM1NrUWx6NjVOQ1NzMXpBMGo4bWRjdTMxc0t2UWRyQjFhOHlFWWE?oc=5",
+        "pubDate": "Sat, 17 Oct 2026 00:49:04 GMT"
       },
       "sparkline": null
+    },
+    {
+      "name": "Neuralink",
+      "tag": "Brain-Computer",
+      "desc": "Implantable neural interfaces for restoring and augmenting human capability",
+      "url": "https://neuralink.com",
+      "initials": "NL",
+      "logo": "https://www.google.com/s2/favicons?domain=neuralink.com&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "Musk claims Neuralink will 'help millions of people' - Breakingthenews.net",
+        "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPbk9LTlZEa1M1SFhiOGZZUmZXTWRVWEhzbW9rRE5KS0Q5bXV1a1MwTDZycV91cVdTOVFScU9aZ3NUYnY4ZTlacFJOUGg0UUg5WFVPOGhsQVFzc0xKNDE0R0dtVWxNWDEtckZmTWF4eTY1SFVNY1I2b1lRODU5NjNLdDJCYzFXanRnLXRwaFM2QUg5RlBOcFpJUE1Ea09sdw?oc=5",
+        "pubDate": "Sat, 17 Oct 2026 00:40:00 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "OpenAI",
+      "tag": "LLMs",
+      "desc": "Creator of ChatGPT and the GPT family of foundation models",
+      "url": "https://openai.com",
+      "initials": "OAI",
+      "logo": "https://www.google.com/s2/favicons?domain=openai.com&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "OpenAI models hacked a crypto wallet and breached more websites - Ars Technica",
+        "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQQkxhdi15T3hFNFNIcHQxbEx4TGZnNm5wakhGVE50UmlCRlBKRnZUcHdHRkZvQkZZZF9udjNVcXFkY0l2ZGsxaDVVTHNRbHc0MWhMbi1SQXNuTElhSFF4eG9jeHlaNF9xYk90Nl9YQzlhbmdOSzhoME03cHBad2pDSHMwS0Iza09OdW94cnVNbmloeERMRk5iSHdiNHlFaDNWSU9QMU5iWjc?oc=5",
+        "pubDate": "Fri, 16 Oct 2026 20:59:01 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "Scale AI",
+      "tag": "AI Data",
+      "desc": "Data labelling and RLHF infrastructure powering frontier AI",
+      "url": "https://scale.com",
+      "initials": "S",
+      "logo": "https://www.google.com/s2/favicons?domain=scale.com&sz=128",
+      "ticker": null,
+      "headline": {
+        "title": "Alexandr Wang, Meta’s AI wunderkind - Financial Times",
+        "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNd1BRTlBUNDNKa2J0ZUJxdDFrNmdiZVN4Mm42UVg2c3FOeEdLMFE5VldjcUxhdVRUSUxQc3dNbFdyekVoMHh3QlV5VmdTcGIzZjNSaHlIbHhfYUEyQkxyLVlLdld1eGRHMmxSMTk1RFY0ZGU2aEVXbVZ3WWl2LUE2TnhuR2k?oc=5",
+        "pubDate": "Fri, 16 Oct 2026 16:31:25 GMT"
+      },
+      "sparkline": null
+    },
+    {
+      "name": "CrowdStrike",
+      "tag": "Cybersecurity",
+      "desc": "Cloud-native endpoint protection and threat intelligence",
+      "url": "https://crowdstrike.com",
+      "initials": "CS",
+      "logo": "https://www.google.com/s2/favicons?domain=crowdstrike.com&sz=128",
+      "ticker": "CRWD",
+      "headline": {
+        "title": "Mapping the Market: Bulls beware — CrowdStrike shares could be in for more losses - Reuters",
+        "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNVzhyTExkaER4WEJ3VXV5MnMyVjNxMW16aVE3YXFlRDkwSGtseDVfUzJOVkZLci04NG1KTFlfWTB4RlFmZmFxdUs3blpoOVJDTjJ2VTFRMXJDZjY4OWFSQ0hEbUN0UnZGUGh4TDZfbFF4Ui1qZGhLbWxOdjd6OHZ5MnktMA?oc=5",
+        "pubDate": "Fri, 16 Oct 2026 10:05:50 GMT"
+      },
+      "sparkline": [
+        245.6999969482422,
+        237.64999389648438,
+        249.35000610351562,
+        250.05999755859375,
+        262.489990234375,
+        259.6700134277344,
+        252.1300048828125,
+        259.25,
+        262.739990234375,
+        264.75,
+        266.0899963378906,
+        270.0400085449219,
+        272.6700134277344,
+        278.8599853515625,
+        265.44000244140625,
+        263.010009765625,
+        275.0400085449219,
+        263.010009765625,
+        261.2099914550781,
+        249.2899932861328,
+        244.57000732421875,
+        227.38999938964844
+      ]
     },
     {
       "name": "Perplexity",
@@ -45,7 +166,6 @@
         "pubDate": "Thu, 15 Oct 2026 16:57:24 GMT"
       },
       "sparkline": [
-        63.70000076293945,
         67.81999969482422,
         64.56999969482422,
         69.88999938964844,
@@ -66,83 +186,9 @@
         65.70999908447266,
         64.22000122070312,
         59.18000030517578,
-        55.25
+        55.25,
+        50.84000015258789
       ]
-    },
-    {
-      "name": "Scale AI",
-      "tag": "AI Data",
-      "desc": "Data labelling and RLHF infrastructure powering frontier AI",
-      "url": "https://scale.com",
-      "initials": "S",
-      "logo": "https://www.google.com/s2/favicons?domain=scale.com&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "Scale Partners With NVIDIA on Post Training - Scale AI",
-        "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBKVWs3MHNQb3ZaRmtIdlc2QzFWV3ZBdHFvRmwzWVZUVnFvVXRVbERsbWQ0SkFYc2ZTV2ZrQXpMLW1ZalRpb185VDZ3ajkwNEFIaVdLdVZ2REZEYlhTMXc?oc=5",
-        "pubDate": "Thu, 15 Oct 2026 14:52:29 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "Commonwealth Fusion",
-      "tag": "Energy",
-      "desc": "Next-generation tokamak fusion for clean energy at scale",
-      "url": "https://cfs.energy",
-      "initials": "CFS",
-      "logo": "https://www.google.com/s2/favicons?domain=cfs.energy&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "Is nuclear fusion the future of energy in Virginia? Some officials think so. - WHRO",
-        "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNNU10alItUEdUQlVDU3NNN1RyUTdscEJNM21USjBvbHVuck5leVNLb2dnRnJ1bW1jOGVqcThrTW4yS21xR29QaDNMcU41UXRLbFVWVU5tZTZDZkZpMjY5UU81b1JnRmZsbjBZNjVyQVE0QW95ZktoaldfemVnRWd1T0FEcEVrYjBLak8yaml1N1VwV083WXpicmxXQmhLUDVuVlNWMnJVYlJ6TElja0x4bTJaZU1kc1Z4aXc?oc=5",
-        "pubDate": "Thu, 15 Oct 2026 14:00:00 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "Waymo",
-      "tag": "Autonomy",
-      "desc": "The most miles driven autonomously of any robotaxi service",
-      "url": "https://waymo.com",
-      "initials": "W",
-      "logo": "https://www.google.com/s2/favicons?domain=waymo.com&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "Waymo crash map shows hundreds of driverless car collisions across LA - New York Post",
-        "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPajhtV1ZDYmVLV0N6OHVPcmRJX2p1VzQ3UlJ4TklmUDJqYTF4Vjg4LU85akpUZF9xb24yam9hSGtDamlfbGVpQ1hfTFZjbWJXU291REJRdmFJNzJkaDFzak1XR1ZkUG5NYnJmdUwycTAzV0RsR0RzU0JYdHd0dzZoa1BHUWEzUXJrMERqTElxRmczQzQ?oc=5",
-        "pubDate": "Thu, 15 Oct 2026 13:00:00 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "Mistral AI",
-      "tag": "LLMs",
-      "desc": "Europe's leading open-weight AI foundation models",
-      "url": "https://mistral.ai",
-      "initials": "M",
-      "logo": "https://www.google.com/s2/favicons?domain=mistral.ai&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "CERN and Mistral join forces to accelerate AI for science – Home - Home | CERN",
-        "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPQllxbHdUcnp1V0NUay1vZUlyNnJTNjJmZXNsbWN6Q1JCM2ZRRUNHWjVQRjYydHBlLU82UWJlUUhzX2JCc3h4TVFCUEZkT2RNLUpZMm9WLUdLNlB2ZG1ScXBJZ1hVM1ctd0JLUU9LWEluaTR5eG5HMHg4UGZGQnBYWkRB?oc=5",
-        "pubDate": "Thu, 15 Oct 2026 12:20:32 GMT"
-      },
-      "sparkline": null
-    },
-    {
-      "name": "Anthropic",
-      "tag": "LLMs",
-      "desc": "AI safety company behind the Claude family of models",
-      "url": "https://anthropic.com",
-      "initials": "AN",
-      "logo": "https://www.google.com/s2/favicons?domain=anthropic.com&sz=128",
-      "ticker": null,
-      "headline": {
-        "title": "Anthropic tells investors quarterly revenue up nearly 50% to $16.8bn ahead of IPO - Financial Times",
-        "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPREFXR25nQUF4WXJFTFcwN01WaS1OUWphZkFKWmRLVFlza2c3Q194d1JVdWdpRU9LWlNyZlE4REZEUEdhZzA4Ykc4UEpxZmdaaUp5ckZIcG5zNXdOYUdIYm9WQ3JxOXktR2I0d1Jab0g1T0lRcERma2FrUmx6ekZoRGJPazE?oc=5",
-        "pubDate": "Wed, 14 Oct 2026 22:06:31 GMT"
-      },
-      "sparkline": null
     }
   ]
 }
